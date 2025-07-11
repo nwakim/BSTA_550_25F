@@ -1,0 +1,24 @@
+---
+title: "Key Info"
+date: "10/9/2024"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+
+- For office hours, we decided to do appointments!
+  - Here's my Calendly: <https://calendly.com/nickywakim/15min>
+  - I teach on Mondays and Wednesdays so I am keeping most of my meetings to Tuesdays and Thursdays
+  - For my EPI class, I have scheduled office hours on Mondays 4-5pm in VPT 627
+    - I will give priority to EPI students, but you can drop by for those as well
+    
+- I think all the dates in the schedule were correct except for next week
+
+## Key Dates
+
+- HW 1 Assignment due this Thursday at 11pm

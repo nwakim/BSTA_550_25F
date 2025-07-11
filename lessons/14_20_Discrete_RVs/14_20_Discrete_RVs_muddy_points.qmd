@@ -1,0 +1,39 @@
+---
+title: "Muddy Points"
+subtitle: "Chapter 14-20: Discrete RVs"
+date: "10/16/2024"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+### 1. In-class example of the Poisson distribution
+
+```{r}
+#| message: false
+
+library(tidyverse)
+
+x <- 0:250
+# n = c(6,14,30,60)
+p = c(0.1, 0.5)
+
+geom = expand.grid(x = x, p = p) %>%
+  mutate(y = dgeom(x, prob = p))
+
+ggplot(geom %>% filter(y > 1e-5), 
+       aes(x, y, color=factor(p))) +
+  geom_point(size=1) +
+  geom_segment(aes(x=x, xend=x, y=0, yend=y, color=factor(p)), lwd=0.8, alpha=0.5) +
+  facet_grid(rows = vars(p), scales="free_x", space="free_x") +
+  theme(legend.position = "none",
+        axis.title = element_text(size = 14),    # Axis title size
+        axis.text = element_text(size = 12),     # Axis text size
+        strip.text = element_text(size = 13)) +  # Facet label size
+  labs(x = "Number of trials", y = "Probability")
+
+```
+

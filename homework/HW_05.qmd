@@ -1,0 +1,71 @@
+---
+title: "Homework 5"
+subtitle: "BSTA 550"
+description: "Due: Thursday November 7, 2024 at 11pm"
+date-modified: "today"
+categories: [""]
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+  pdf: default 
+editor_options: 
+  chunk_output_type: console
+---
+
+## Directions
+
+[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/BSTA-550-1-14926-F24/tool/c8320b13-1b6d-42ed-9c19-134634cf25af) Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
+
+**Try to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later!** Only turn in the ones listed in the "Turn In" column. Please submit problems in the order they are listed.
+
+*You must show all of your work to receive credit.*
+
+::: center
+| Chapter | Turn In | Extra Problems |
+|:--:|:--:|:--:|
+| 10\*\* | TB \# 6, NTB \# 1 | \# 1, 8, 10, 11, 14, 17 |
+| 11\*\* | NTB \# 2, | \# 1, 2, 9\*\*\*, 17\*\*\*, 18\*\*\*, 20, NTB \# 5 |
+| 12 | NTB \# 3, 4 | \# 1, 2, 7, 11, 12, 15, 19, 25, 27, NTB \# 6 |
+| 13 (review) |  | \# 3, 4, 5, 6, 8, 9, 10, 17, 25 |
+:::
+
+\*\* Use Chapter 11 techniques when computing expected values for Chapter 11 problems, i.e. expressing the r.v. as a sum of other r.v.'s and calculating the expected value of the sum of r.v.'s. Also, as I mentioned in class and posted on Sakai, we will be skipping the more complex examples of finding expected values using indicator r.v.'s. You can skip Examples 11.5, 11.10, and 11.11. We will not be covering these techniques.
+
+\*\*\* Although Chapter 11 exercises, these are to be done using Chapter 10 techniques since we aren't covering the more complex examples of finding expected values using indicator r.v.'s.
+
+## Mid-quarter feedback
+
+Please complete the mid-quarter feedback!: <https://forms.office.com/r/rC2JR2qQTq>
+
+## Non-textbook problems (NTB)
+
+1.  Let $X_i\sim$ Binomial($n_i,p$) be independent r.v.'s for $i=1,\ldots,m$.
+
+    a.  What does the r.v. $X=\sum_{i=1}^mX_i$ count, and what is the distribution of $X$? Make sure to specify the parameters of $X$'s distribution.
+
+    b.  Find $\mathbb{E}[X]$. *Make sure to show your work for (b) and (c). However, you may use without proof what you know about the mean and variance of each* $X_i$.
+
+    c.  Find $Var[X]$.
+
+2.  Approximately 10% of U.S. Veterans are women. Suppose an investigator plans a study with 4500 participants that are Veterans. How many women can they expect to be included? *Your answer must be calculated by defining a random variable and showing how to calculate the expected value.*
+
+3.  Prove that for a r.v. $X$ and constants $a$ and $b$, that $$\mathrm{Var}[aX+b]=a^2\mathrm{Var}[X].$$
+
+4.  Let $\bar{X}$ be the random variable for the sample mean, $\bar{X}=\frac{\sum_{i=1}^nX_i}{n}$, where the $X_i$ are i.i.d. random variables with common mean $\mu$ and variance $\sigma^2$.
+
+    a.  Find $\mathbb{E}[\bar{X}]$.
+
+    b.  Find $Var[\bar{X}]$.
+
+### Extra problems
+
+5.  There is a bowl containing 30 cashews, 20 pecans, 25 almonds, and 25 walnuts. I am going to randomly pick and eat 3 nuts (without replacement). Find the expected value of the number of cashews by defining the number of cashews as a sum of random variables. (This one takes a little while if we don't rely on the
+
+<!-- -->
+
+6.  Let $\hat{p}$ be the random variable for the sample proportion, $\hat{p}=\frac{X}{n}$, where $X$ is the number of successes in a random sample of size $n$. Assume the probability of success is $p$.
+
+    a.  Find $\mathbb{E}[\hat{p}]$.
+
+    b.  Find $Var[\hat{p}]$.

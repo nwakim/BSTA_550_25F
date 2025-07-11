@@ -1,0 +1,31 @@
+---
+title: "Key Info"
+date: "11/13/2024"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+
+- HW 3 videos should be in!
+  - Some presentations today
+
+- Need to grade HW 4 solutions and HW 5 assignment STILL
+  - Happy to be flexible on the HW 5 solutions deadline 
+
+- Anything else?
+
+## Key Dates
+
+- Thursday: HW 6 due
+- Sunday: HW 5 solutions due
+  - FLEXIBLE
+
+  
+
+
+

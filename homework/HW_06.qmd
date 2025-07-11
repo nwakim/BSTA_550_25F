@@ -1,0 +1,54 @@
+---
+title: "Homework 6"
+subtitle: "BSTA 550"
+description: "Due: Thursday November 14, 2024 at 11pm"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+  pdf: default 
+editor_options: 
+  chunk_output_type: console
+---
+
+## Directions
+
+[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/BSTA-550-1-14926-F24/tool/c8320b13-1b6d-42ed-9c19-134634cf25af) Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
+
+**Try to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later!** Only turn in the ones listed in the "Turn In" column. Please submit problems in the order they are listed.
+
+*You must show all of your work to receive credit.*
+
+::: center
+|     Chapter     |    Turn In     |       Extra Problems       |
+|:---------------:|:--------------:|:--------------------------:|
+| Calculus Review |                |          NTB \# 1          |
+|       24        | TB \# 19, 20\* | \# 2, 3, 7, 17, 18, 22, 23 |
+:::
+
+\* Part b: Also find the cdf $F_X(x)$
+
+## Non-textbook problems (NTB)
+
+1.  Calculus Review
+
+    a.  $$\int_0^yc(x+y)dx$$
+
+    b.  $$\frac{d}{dx}\bigg(\frac{4}{9}x^2y^2+\frac{5}{9}xy^4\bigg)$$
+
+    c.  $$\frac{d}{dy}\bigg(\frac{4}{9}x^2y^2+\frac{5}{9}xy^4\bigg)$$
+
+    d.  $$\int_0^y2e^{-x}e^{-y}dx$$
+
+    e.  $$\int_0^\infty xye^{-(x+y)}dy$$
+
+    f.  $$\int_x^{2x} 2e^{-(x+3y)}dy$$
+
+    g.  Find the area of the region bounded by the graphs of $f(x)=2-x^2$ and $g(x)=x$ by integrating with respect to $x$.
+
+    h.  Find the area of the region bounded by the graphs of $f(x)=2-x^2$ and $g(x)=x$ by integrating with respect to $y$.
+
+    i.  Find the area of the region bounded by the graphs of $x=3-y^2$ and $y=x-1$ by integrating with respect to $x$.
+
+    j.  Find the area of the region bounded by the graphs of $x=3-y^2$ and $y=x-1$ by integrating with respect to $y$.

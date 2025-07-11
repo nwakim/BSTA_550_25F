@@ -1,0 +1,29 @@
+---
+title: "Key Info"
+date: "11/11/2024"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+
+- HW 3 presentations are graded! You did great!
+
+- HW 7 assignment: I'll grade tonight!
+
+- Anything else?
+
+## Key Dates
+
+- Thursday: NONE due
+- Sunday: HW 7 solutions due (feel free to take an additional 3 days)
+
+
+  
+
+
+

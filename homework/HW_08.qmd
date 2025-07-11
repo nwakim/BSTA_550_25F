@@ -1,0 +1,198 @@
+---
+title: "Homework 8"
+subtitle: "BSTA 550"
+description: "Due: Thursday  December 5, 2024 at 11pm"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+  pdf: default 
+editor_options: 
+  chunk_output_type: console
+---
+
+## Directions
+
+[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/BSTA-550-1-14926-F24/tool/c8320b13-1b6d-42ed-9c19-134634cf25af) Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
+
+**Try to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later!** Only turn in the ones listed in the "Turn In" column. Please submit problems in the order they are listed.
+
+*You must show all of your work to receive credit.*
+
+::: center
++---------+---------------------------+---------------------------+
+| Chapter | Turn In                   | Extra Problems            |
++:=======:+:=========================:+:=========================:+
+| 25      | TB \# 18, NTB \# 1        | \# 1, 4, 8, 17, 23, 24    |
+|         |                           |                           |
+|         |                           | Slide examples: 2, 3.3, 4 |
++---------+---------------------------+---------------------------+
+| 26\*    | TB \# 12\*\*, NTB \# 2, 3 | \# 7, 9, 19, 20           |
+|         |                           |                           |
+|         |                           | Slide examples: 3         |
++---------+---------------------------+---------------------------+
+| 27      | TB \# 12\*\*\*            | \# 6, 8, 13, 17           |
+|         |                           |                           |
+|         |                           | Slide examples: 1.2       |
++---------+---------------------------+---------------------------+
+| 28      | TB \# 18                  | TB \# 1, 10               |
++---------+---------------------------+---------------------------+
+| 29      | NTB #4                    |                           |
++---------+---------------------------+---------------------------+
+| 30      |                           | TB \# 4, 7-12             |
++---------+---------------------------+---------------------------+
+:::
+
+\* Although within Chapter 26, these exercises are primarily practicing the material from Chapter 25.
+
+\*\* For this problem, you only need to set up the integrals!!
+
+\*\*\* For Ch 27 \# 12, in order to find the conditional densities in parts (a) and (b), you will need to calculate $f_Y(y)$ for the specific regions of $y$ specified. After finding the conditional densities in parts (a) and (b), also calculate the conditional probabilities below. Please submit these together with your other work in parts (a) and (b): Find $\mathbb{P}[0.5 < X < 3 | Y = 4]$. Find $\mathbb{P}[0.5 < X < 3 | Y = 7]$.
+
+## Non-textbook problems (NTB)
+
+1.  Let $X_1, X_2, \ldots, X_n$ be i.i.d. random variables with common pdf $f_X(x)$ and cdf $F_X(x)$. Find the pdf for the random variable $Z$, where $Z = max(X_1, X_2, \ldots, X_n)$.
+
+2.  Let $X$ and $Y$ be independent random variables with respective pdf's $f_X(x)=\frac{1}{5}$, for $0\leq x\leq 5$, and $f_Y(y)=2e^{-2y}$, for $y>0$.
+
+    a.  Find the joint distribution $f_{X,Y}(x,y)$.
+    b.  Find the probability that $X$ is less than $Y$.
+    c.  Let $Z$ be the random variable that is the smaller of $X$ and $Y$. Find the cumulative distribution function for $Z$.
+    d.  Find the pdf for Z.
+
+3.  Suppose that the random variables $X$ and $Y$ have joint density $f_{X,Y}(x,y)$, for $0<x<1$, and $\frac{1}{2}<y<1$. Set up the equation for the cdf of $Z$, where $Z=X/Y$.
+
+    *Hint: First determine what the possible values for* $Z$ are. Then make a sketch of the domain of the joint pdf and shade in the region representing the cdf of Z for different values of $z$. Make sure to pay close attention to how the region we need to integrate over changes as $z$ changes. The cdf has two different cases depending on the value of $z$. Plug in specific values of $z$ and shade in the region representing the cdf to see why two different cases are needed.
+
+4.  Suppose your waiting time for a bus in the morning is uniformly distributed on \[0, 8\] (minutes), whereas waiting time in the evening is uniformly distributed on \[0, 10\] (minutes) independent of morning waiting time. *Make sure to FIRST set up an equation for calculating the total waiting time in each question before calculating the mean and variance of the total waiting time.* *You may use results from class for the expected value and variance of uniform r.v.'s without proving them.*
+
+    a.  If you take the bus each morning and evening for a week (7 days), what is your total expected waiting time?
+
+    b.  What is the variance of your total waiting time?
+
+    c.  What are the expected value and variance of the difference between morning and evening waiting times on a given day?
+
+    d.  What are the expected value and variance of the difference between total morning waiting time and total evening waiting time for a particular week?
+
+### Extra problems
+
+1.  Suppose that voters arrive at a polling station at the rate of 120 per hour.For each of the following parts, [give the name and parameter(s) of the distribution]{.underline} to be used to model the event and [set up the expression]{.underline} to find the specified probability.*You do not need to compute the probability.*
+
+    a.  The probability that the next voter will arrive in less than 30 seconds.
+
+    b.  The probability that 200 voters will arrive within two hours of each other.
+
+    c.  The probability that the $50^{th}$ voter will arrive in between 15 and 30 minutes.
+
+2.  The automatic opening device of a military cargo parachute has been designed to open when the parachute is 200 m above the ground. Suppose opening altitude actually has a normal distribution with mean value 200 m and standard deviation 30 m. Equipment damage will occur if the parachute opens at an altitude of less than 100 m. What is the probability that there is equipment damage to the payload of at least one of the five independently dropped parachutes?
+
+## Some select answers
+
+Selected answers (or hints) not provided at the end the book:
+
+-   Chapter 25
+
+    -   \# 4:   7/16
+
+    -   \# 8:  (a) $\frac{25}{228}$     (b) $f_X(x)=\frac{1}{12}(x+1)$, for $0\leq x\leq 4$     (c) $f_Y(y)=\frac{3}{76}(y^2+1)$, for $0\leq y\leq 4$
+
+    -   \# 18:  5/6
+
+    -   \# 24:  (a) $f_X(x)=-2e^{-2x}+2e^{-x}$, for $x\geq 0$     (b) $f_Y(y)=2e^{-2y}$, for $y\geq 0$
+
+-   Chapter 26
+
+    -   \# 12:  (b) $\frac{233}{256}$     (c) $\frac{65}{256}$     (d) $\frac{1}{512}$
+
+    -   \# 20:  (a) Yes.     (b) $\frac{15}{16}$
+
+    -   NTB \# 3: (b) 0.09999546   (d) $f_Z(z) =\Big(\frac{11}{5} - \frac{2z}{5}\Big)e^{-2z}$, for what values of $z$?
+
+-   Chapter 27
+
+    -   \# 6: $f_{X|Y}(x|y)=\frac{e^{-x/4-y/5}}{4(e^{-y/5}-e^{-9y/20})}$, for $0< x< y$
+
+    -   \# 8: $f_{X|Y}(x|y)=\frac{1-x^2}{1-y-\frac{(1-y)^3}{3}}$, for $0\leq x, 0\leq y, x+y\leq 1$
+
+    -   \# 12: (a) $f_{X|Y}(x|y)=\frac{1}{2}$    (c) $\frac{4}{7}$
+
+-   Chapter 28
+
+    -   \# 10: (a) 8/9     (b) 14/3     
+
+    -   \# 18: 4/5
+
+-   Chapter 29
+
+    -   \# 10: (a) 26/81     (b) 74/9
+
+    -   \# 14: (a) 67/3     (b) 1/14     (c) 25/12     (d) $\sqrt{25/12}$
+
+    -   \# 26: 250
+
+    -   \# 32: See notes (or book) for the proof from the discrete random variables case. The proof doesn't depend on what type of random variable (discrete vs. continuous) is being used.
+
+    -   NTB \# 3: (a) 63     (b) 287/3     (c) -1, 41/3     (d) -7, 287/3
+
+-   Chapter 30
+
+    -   \# 4: $f_x(x)=1/2$ for $2\leq x\leq 4$
+
+    -   \# 8: (a) T     (b) T     (c) F
+
+    -   \# 10: (a) F     (b) T
+
+    -   \# 12: (a) T     (b) T     (c) F     (d) T
+
+-   Chapter 31
+
+    -   \# 14: (a) 0.25     (b) 0.02887     (c) 0.063     (d) 0.0145     (e) 0.01625     (f) 0.0055     (f) 6.195    (g) 0.00433     (h) 61.95     (i) 0.0433
+
+    -   \# 17: 2.25
+
+    -   \# 18: 7/15
+
+-   Chapter 32
+
+    -   \# 8: 0.2526
+
+    -   \# 5: 0.8047
+
+    -   \# 10: 0.4323
+
+-   Chapter 33
+
+    -   #10: (a) $f_x(x)=\frac{x}{9}e^{-x/3}$ for $x> 0$     (b) 0.4963
+
+-   Chapter 35
+
+    -   \# 6: (a) 0     (b) -1.13     (c) $\pm 0.32$
+
+    -   \# 10: (a) 0.0475     (b) 0.0475     (c) 0.2283     (d) 68.97 to 81.03     (e) 48 to 102     (f) 68.97
+
+    -   \# 24: (a) 0.2119     (b) 0.0011
+
+    -   NTB \# 5:   0.002
+
+-   Chapter 36
+
+    -   \# 4: 0.0044
+
+    -   \# 12: (a) 0.9525     (b) 0.7939     (c) 0.7939
+
+    -   \# 14: 0.5911
+
+    -   \# 16: (a) $R=8.225\sigma+25\mu$     (b) $R=16.45\sigma+100\mu$     (c) $R=164.5\sigma+10,000\mu$     (d) $R=1.645\sqrt{n}\sigma+n\mu$
+
+-   Chapter 37
+
+    -   \# 2: 0.8869
+
+    -   \# 4: 0.0023
+
+    -   \# 20: 0.3936
+
+    -   \# 24: 0.4562
+
+    -   \# 30: (b) 0.0022     (c) $478.696\approx 479$

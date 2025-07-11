@@ -1,0 +1,23 @@
+---
+title: "Key Info"
+date: "10/28/2024"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+
+- Grading HW 03 assignment today
+- Group evals will be taken off the assessment breakdown
+- Mid-quarter feedback will be put on HW 05
+
+## Key Dates
+
+- HW 04 assignment due Thursday
+- HW 03 solutions due Sunday
+  - And we will have a presentation on this one!
+

@@ -1,0 +1,79 @@
+---
+title: "Homework 1"
+subtitle: "BSTA 550"
+description: "Due: Thursday October 10, 2024"
+date-modified: "today"
+categories: [""]
+format: 
+  html: 
+    link-external-newwindow: true
+    toc: true
+  pdf: default 
+editor_options: 
+  chunk_output_type: console
+---
+
+## Directions
+
+[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/BSTA-550-1-14926-F24/tool/c8320b13-1b6d-42ed-9c19-134634cf25af) Please submit your homework in pdf format. You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
+
+**Try to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later!** Only turn in the ones listed in the "Turn In" column. Please submit problems in the order they are listed.
+
+*You must show all of your work to receive credit.*
+
+::: center
+| Chapter |   Turn In    |              Extra Problems              |
+|:-------:|:------------:|:----------------------------------------:|
+|    1    |              |              \# 3, 7, 9, 11              |
+|    2    | NTB \# 1, 30 |     \# 1, 4, 8, 16, 19, 23, NTB \# 2     |
+:::
+
+## Group assignments
+
+[Please fill out this form to help me configure groups.](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUOURLVVRKR0pSWTU0M0IwQ1I3SUdUMTlDNy4u) I will first pair you based on people on your preferred list, then I will group pairs to balance working styles, R skills, and statistics exposure.
+
+## Non-textbook problems (NTB)
+
+1.  Suppose the following are the percentage of US adults with the following conditions:
+
+    -   $A$: Hypertension 33%
+
+    -   $B$: Diabetes 9%
+
+    -   $C$: Metabolic syndrome 24%
+
+    -   $A$ or $B$: 39%
+
+    -   $A$ or $C$: 45%
+
+    -   $B$ or $C$: 28%
+
+    -   $A$ or $B$ or $C$: 48%
+
+    a.  Make a Venn diagram of the 3 conditions labeling the percentage (or probability) for *ALL* of the 8 "sections". *Hint: Start from the last condition and work your way up!*
+    b.  For each of the following (1. - 7. below), ($i$) write out the event using unions, intersections, and/or complements of the events $A$, $B$, and $C$ (this is NOT finding the probability, that's in $ii$); ($ii$) find the probability of the event; and ($iii$) write a sentence explaining what the probability is of in terms of the context of the problem.
+        1.  $\mathbb{P}$(event at least one of the 3)
+
+        2.  $\mathbb{P}$(event none)
+
+        3.  $\mathbb{P}$(event $A$ only)
+
+        4.  $\mathbb{P}$(event exactly one)
+
+        5.  $\mathbb{P}$(event $A$ and $B$)
+
+        6.  $\mathbb{P}$(event $A$ and $B$ but not $C$)
+
+        7.  $\mathbb{P}$(event all 3)
+
+### Extra problem
+
+2.  Judith has a penny, nickel, dime, and quarter in her pocket. So does Joe. They both reach into their pockets and choose a coin (all four coins are equally likely to be selected). Let X be the larger value (in cents) of the coins selected by Judith and Joe. For reference, the penny is 1 cent, nickel is 5 cents, dime is 10 cents, and quarter is 25 cents.
+
+    a.  How many possible combinations is there for the pair of Judith's and Joe's selected coins? (Hint: we know to whom each coin belongs) 
+
+    b.  Define the sample space for X in this experiment. 
+
+    c.  Find the probability for each possible value of X. 
+
+    d.  Find the probability of the event that Judith's coin is worth more than Joe's. 

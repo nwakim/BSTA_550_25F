@@ -1,0 +1,82 @@
+---
+title: "Homework 3 Answers"
+subtitle: "BSTA 550"
+date-modified: "today"
+format: 
+  html: 
+    link-external-newwindow: true
+    toc: true
+  pdf: default 
+editor_options: 
+  chunk_output_type: console
+---
+
+## Non-textbook problems
+
+-   #1 (a) $X\sim binomial \big(\sum_{i=1}^m n_i, p\big)$      (b) $E(X) = p\sum_{i=1}^m n_i$      (c) $Var(X) = p(1-p)\sum_{i=1}^m n_i$
+
+## Textbook problems
+
+There are answers at the back of the book!! Selected answers (or hints) not provided at the end the book:
+
+-   Chapter 7
+
+    -   \# 2: $X\in(0,\infty)$, continuous; $Y\in\{0,1,2,\ldots\}$, discrete
+
+    -   \# 10: $X_j\in[0,\infty),j=1,\ldots,100$; $Y\in[0,\infty)$; both continuous
+
+    -   \# 16: $Y$ could be 0
+
+    -   \# 18: Yes, a r.v. can be both. Give an example!
+
+-   Chapter 8
+
+    -   \# 2: (a) $p(x)=\binom{7}{x}(.5)^7$ for $x=0,1,2,\ldots,7$
+
+    -   \# 9: (a) $c = \frac{1}{8}$
+
+    -   \# 10:
+
+        ::: center
+        |  $x$   |  2   |  4  |  6   |  8   |
+        |:------:|:----:|:---:|:----:|:----:|
+        | $p(x)$ | 3/10 | 1/2 | 3/20 | 1/20 |
+        :::
+
+-   Chapter 15
+
+    -   \# 18  (a) Bin(21,0.65)     (b) 4.78     
+
+-   Chapter 16
+
+    -   \# 8  (a) 14.28      (b) code below     (c) $1.03\times 10^{-6}$    (d) 10 questions: 91.43 minutes    
+    ```{r}
+    1-pgeom(q = 18, prob = 0.07)
+    ## OR
+    pgeom(q = 18, prob = 0.07, lower.tail = F)
+    ```
+
+
+-   Chapter 17
+
+    -   \# 6   (a) 400, 87.18     (b) No     
+
+    -   \# 12   (c) 0.8000
+
+-   Chapter 18
+
+    -   \# 20 (a) (b) 0.6514 (c) 0.0598
+    
+    -   \# 24  (c) 0.8571
+
+    -   \# 26  162,754.8
+
+-   Chapter 19
+
+    -   \# 6:  (c) 15.625     (d) 0.0486     (f) 0.0488
+
+    -   \# 18:   100
+
+-   Chapter 20
+
+    -   \# 2:  (a) 0.0001     (b) Discrete since $X$ has a finite number of possible values. Uniform since each outcome is equally likely.     (c) $X$ = randomly selected 4-digit ID#; $X=0000,0001,\ldots,9999$     (d) 5000.5     (e) 8,333,333.25

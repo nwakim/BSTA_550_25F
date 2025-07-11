@@ -1,0 +1,21 @@
+---
+title: "Key Info"
+date: "10/16/2024"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+
+- HW 01 assignments are graded!
+  - Solutions and videos are posted!
+
+## Key Dates
+
+- HW 02 Assignment due this Thursday at 11pm
+- No HW 01 Solutions
+

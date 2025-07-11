@@ -1,0 +1,81 @@
+---
+title: "Homework 6 Answers"
+subtitle: "BSTA 550"
+date-modified: "today"
+format: 
+  html: 
+    link-external-newwindow: true
+    toc: true
+  pdf: default 
+editor_options: 
+  chunk_output_type: console
+---
+
+## Non-textbook problems
+
+-   #1: 
+
+## Textbook problems
+
+There are answers at the back of the book!! Selected answers (or hints) not provided at the end the book:
+
+-   Calculus Review
+
+    -   (a)  $c(\frac{y^{2}}{2}+y^{2})$
+
+    -   (b)  $\frac{8}{9}xy^{2}+\frac{5}{9}y^{4}$
+
+    -   (c)  $\frac{8}{9}x^{2}y+\frac{20}{9}xy^{3}$
+
+    -   (d)  $-2e^{-2y}+2e^{-y}$
+
+    -   (e)  $xe^{-x}$
+
+    -   (f)  $-\frac{2}{3}(e^{-7x}-e^{-4x})$
+
+    -   (g)  $\frac{9}{2}$
+
+    -   (h)  $\frac{9}{2}$
+
+    -   (i)  $\frac{9}{2}$
+
+    -   (j)  $\frac{9}{2}$
+
+-   Chapter 24
+
+    -   \# 2: (a) Discrete     (b) Discrete     (c) Continuous
+    
+    -   \# 19: 
+    
+        - (a) $$F_X(x) = \left\{
+                \begin{array}{ll}
+                    0 & \quad x \leq 16 \\
+                    \frac{1}{64}x^2 - \frac{1}{2}x + 4 & \quad 16 < x\leq 24 \\
+                    1 & \quad x > 24 \\
+                \end{array}
+            \right.$$
+            
+        - (b) $a=20$
+        
+    - \# 20:
+    
+      - (a) $k=660$
+      
+      - (b) $$F_X(x) = \left\{
+                \begin{array}{ll}
+                    0 & \quad x < 0 \\
+                    55x^{12} - 120x^{11} + 55x^{10} & \quad 0 \leq x\leq 1 \\
+                    1 & \quad x > 24 \\
+                \end{array}
+            \right.$$
+
+    -   \# 22: $$f_X(x) = \left\{
+                \begin{array}{ll}
+                    0 & \quad x <0 \\
+                    \frac{7x}{4} & \quad 0\leq x\leq 1 \\
+                    0 & \quad 1< x< 7 \\
+                    \frac{1}{8} & \quad 7\leq x\leq 8 \\
+                    0 & \quad  x>8 \\
+                \end{array}
+            \right.$$
+

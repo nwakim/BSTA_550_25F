@@ -1,0 +1,99 @@
+---
+title: "Homework 9"
+subtitle: "BSTA 550"
+description: "Due: Thursday December 13, 2024 at 11pm"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+  pdf: default 
+editor_options: 
+  chunk_output_type: console
+---
+
+## Directions
+
+[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/BSTA-550-1-14926-F24/tool/c8320b13-1b6d-42ed-9c19-134634cf25af) Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
+
+**Try to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later!** Only turn in the ones listed in the "Turn In" column. Please submit problems in the order they are listed.
+
+*You must show all of your work to receive credit.*
+
+::: center
+| Chapter |     Turn In      |                 Extra Problems                  |
+|:-------:|:----------------:|:-----------------------------------------------:|
+|   36    | TB \# 12[^1], 14 |             TB \# 4, 11, 13, 15, 16             |
+|   37    |   TB \# 24, 30   |             TB \# 2, 4, 13, 20, 29              |
+|   43    |    NTB \# 1-2    | TB \# 1-4, 9[^2], 10[^3], 11, 12[^4] NTB \# 3-4 |
+:::
+
+[^1]: Assume the distances between the cars are independent.
+
+[^2]: Include in your answer an explanation as to why we need the condition that $t<\lambda$.
+
+[^3]: Do parts (a)-(c) below for #10 and #12: (a)Answer the question using the mgf $M_X(t)$ as instructed in the book. (b) Answer the question using $R_X(t)$ (as defined in class). (c) Which method did you prefer? Why?
+
+[^4]: Do parts (a)-(c) below for #10 and #12: (a)Answer the question using the mgf $M_X(t)$ as instructed in the book. (b) Answer the question using $R_X(t)$ (as defined in class). (c) Which method did you prefer? Why?
+
+## Non-textbook problems (NTB)
+
+1.  Let $R_X(t)=\ln(M_X(t))$. Show that $\text{Var}(X)=R''_X(0)$.
+
+2.  The mgf for a Gamma distribution is $M_X(t)=\frac{1}{(1-t/\lambda)^r}$. Use the mgf of an Exponential distribution (from #43.9), to show that the sum of $n$ i.i.d. Exponential($\lambda)$ random variables has a Gamma($r,\lambda$) distribution.
+
+### Extra problems
+
+3.  Using mgf's, show that the sum of $n$ i.i.d. Chi Square random variables with one degree of freedom ($\chi^2_{(1)}$) r.v.'s has a Chi Square with $n$ degrees of freedom ($\chi^2_{(n)}$) distribution.
+
+    *Hint:* First, look up the pdf of a $\chi^2_{(n)}$. This is a special case of the Gamma distribution with what parameters? Based on that and the information from \# 2 above, you can determine what the mgf of a $\chi^2_{(n)}$ is, which will help you determine whether the mgf of the sum of $n$ i.i.d. $\chi^2_{(1)}$ r.v.'s has a $\chi^2_{(n)}$ distribution.
+
+4.  Use the mgf of a Poisson distribution to find the mgf of the following distributions. If the mgf is that of a common named distribution, then name the distribution and state its parameter(s).
+
+    1.  The distribution of $\sum_{i=1}^nX_i$, if $X_i\sim$Poisson$(\lambda_i)$ and are independent.
+
+    2.  The distribution of $\sum_{i=1}^3X_i$, if $X_i\sim$Poisson$(\lambda)$ and are independent (i.i.d. in this case).
+
+    3.  The distribution of $3X$, if $X\sim$Poisson$(\lambda)$.
+
+    4.  Why are the answers to (b) and (c) different?
+
+## Some select answers
+
+-   Chapter 36
+
+    -   #4: 0.0044
+
+    -   \# 12: (a) 0.9525     (b) 0.7939     (c) 0.7939
+
+    -   \# 14: 0.5911
+
+    -   \# 16:
+
+        -   \(a\) $R=8.225\sigma+25\mu$     
+
+        -   \(b\) $R=16.45\sigma+100\mu$     
+
+        -   \(c\) $R=164.5\sigma+10,000\mu$     
+
+        -   \(d\) $R=1.645\sqrt{n}\sigma+n\mu$
+
+-   Chapter 37
+
+    -   #2: 0.8869
+
+    -   \# 4: 0.0023
+
+    -   \# 20: 0.3936
+
+    -   \# 24: 0.4562
+
+    -   \# 30: (b) 0.0022     (c) $478.696\approx 479$
+
+-   Chapter 43
+
+    -   NTB \# 3:
+        -   \(a\) Poisson$(\sum_{i=1}^n \lambda_i)$     
+        -   \(b\) Poisson$(3\lambda)$     
+        -   \(c\) $M_{3X}(t)=e{\lambda(e^{3t}-1)}$ This is not an mgf of a common probability distribution.     
+        -   \(d\) In (b) we are adding independent r.v.'s $X_i$, while in (c) we are adding dependent r.v.'s ($3X=X+X+X$; $X$ is dependent with itself).

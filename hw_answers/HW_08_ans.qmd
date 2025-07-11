@@ -1,0 +1,111 @@
+---
+title: "Homework 8 Answers"
+subtitle: "BSTA 550"
+date-modified: "today"
+format: 
+  html: 
+    link-external-newwindow: true
+    toc: true
+  pdf: default 
+editor_options: 
+  chunk_output_type: console
+---
+
+::: center
++--------------+---------------------------+---------------------------+
+| Chapter      | Turn In                   | Extra Problems            |
++:============:+:=========================:+:=========================:+
+| 25           | TB \# 18, NTB \# 1        | \# 1, 4, 8, 17, 23, 24    |
+|              |                           |                           |
+|              |                           | Slide examples: 2, 3.3, 4 |
++--------------+---------------------------+---------------------------+
+| 26\*         | TB \# 12\*\*, NTB \# 2, 3 | \# 7, 9, 19, 20           |
+|              |                           |                           |
+|              |                           | Slide examples: 3         |
++--------------+---------------------------+---------------------------+
+| 27           | TB \# 12\*\*\*            | \# 6, 8, 13, 17           |
+|              |                           |                           |
+|              |                           | Slide examples: 1.2       |
++--------------+---------------------------+---------------------------+
+| 28           | TB \# 18                  | TB \# 1, 10               |
++--------------+---------------------------+---------------------------+
+| 29           | NTB #4                    |                           |
++--------------+---------------------------+---------------------------+
+| 30           |                           | TB \# 4, 7-12             |
++--------------+---------------------------+---------------------------+
+:::
+
+\* Although within Chapter 26, these exercises are primarily practicing the material from Chapter 25.
+
+\*\* For this problem, you only need to set up the integrals!!
+
+\*\*\* For Ch 27 \# 12, in order to find the conditional densities in parts (a) and (b), you will need to calculate $f_Y(y)$ for the specific regions of $y$ specified. After finding the conditional densities in parts (a) and (b), also calculate the conditional probabilities below. Please submit these together with your other work in parts (a) and (b): Find $\mathbb{P}[0.5 < X < 3 | Y = 4]$. Find $\mathbb{P}[0.5 < X < 3 | Y = 7]$.
+
+## Non-textbook problems
+
+-   #1: $f_Z(z) = nF_X(z)^{n-1}f_X(z)$
+
+-   #2: (b) $P(X<Y) = 0.099995$
+        (d) $f_Z(z) = \dfrac{11-2z}{5}e^{-2z}$ for $0 \leq z \leq 5$
+        
+-   #3: 2 cases: when $0< z < 1$ and $1 \leq z \leq 2$
+
+-   #4: (a) 63 minutes, (b) $Var(T) = \dfrac{287}{3}$, (c) $Var(D) = \dfrac{41}{3}$, (d) expected diff is 7 minutes, variance is 283/3
+
+## Textbook problems
+
+There are answers at the back of the book!! Selected answers (or hints) not provided at the end the book:
+
+-   Chapter 25
+
+    -   \# 4:   7/16
+
+    -   \# 8:  (a) $\frac{25}{228}$     (b) $f_X(x)=\frac{1}{12}(x+1)$, for $0\leq x\leq 4$     (c) $f_Y(y)=\frac{3}{76}(y^2+1)$, for $0\leq y\leq 4$
+
+    -   \# 18:  5/6
+
+    -   \# 24:  (a) $f_X(x)=-2e^{-2x}+2e^{-x}$, for $x\geq 0$     (b) $f_Y(y)=2e^{-2y}$, for $y\geq 0$
+
+-   Chapter 26
+
+    -   \# 12:  (b) $\frac{233}{256}$     (c) $\frac{65}{256}$     (d) $\frac{1}{512}$
+
+    -   \# 20:  (a) Yes.     (b) $\frac{15}{16}$
+
+    -   NTB \# 3: (b) 0.09999546   (d) $f_Z(z) =\Big(\frac{11}{5} - \frac{2z}{5}\Big)e^{-2z}$, for what values of $z$?
+
+-   Chapter 27
+
+    -   \# 6: $f_{X|Y}(x|y)=\frac{e^{-x/4-y/5}}{4(e^{-y/5}-e^{-9y/20})}$, for $0< x< y$
+
+    -   \# 8: $f_{X|Y}(x|y)=\frac{1-x^2}{1-y-\frac{(1-y)^3}{3}}$, for $0\leq x, 0\leq y, x+y\leq 1$
+
+    -   \# 12: (a) $f_{X|Y}(x|y)=\frac{1}{2}$    (c) $\frac{4}{7}$
+
+-   Chapter 28
+
+    -   \# 10: (a) 8/9     (b) 14/3     
+
+    -   \# 18: 4/5
+
+-   Chapter 29
+
+    -   \# 10: (a) 26/81     (b) 74/9
+
+    -   \# 14: (a) 67/3     (b) 1/14     (c) 25/12     (d) $\sqrt{25/12}$
+
+    -   \# 26: 250
+
+    -   \# 32: See notes (or book) for the proof from the discrete random variables case. The proof doesn't depend on what type of random variable (discrete vs. continuous) is being used.
+
+    -   NTB \# 3: (a) 63     (b) 287/3     (c) -1, 41/3     (d) -7, 287/3
+
+-   Chapter 30
+
+    -   \# 4: $f_x(x)=1/2$ for $2\leq x\leq 4$
+
+    -   \# 8: (a) T     (b) T     (c) F
+
+    -   \# 10: (a) F     (b) T
+
+    -   \# 12: (a) T     (b) T     (c) F     (d) T

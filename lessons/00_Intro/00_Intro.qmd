@@ -1,0 +1,134 @@
+---
+title: "Welcome to BSTA 550!"
+author: "Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#006a4e"
+date: "09/30/2024"
+categories: ["Week 1"]
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    chalkboard: true
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Welcome
+---
+
+## Nicky Wakim (she/her)
+
+::: columns
+::: {.column width="45%"}
+-   **Call me "Nicky," "Dr. W," "Professor Wakim," or any combo!**
+
+-   Assistant Professor of Biostatistics
+
+     
+
+-   Grew up in DC area (Virginia side!)
+
+-   Moved here from Michigan around 2 years ago
+
+-   Two sweet kitties
+
+-   Volleyball, pickleball, ceramics, strolling around my neighborhood
+
+-   But also sleeping, TV, and reading
+
+-   Proud plant mamma
+
+-   *A few other things about myself that I will share non-publicly*
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="25%"}
+![](/images/Intro_slides/bike.JPG){width="450"} ![](/images/Intro_slides/cats.mov){width="450"} ![](/images/Intro_slides/crater_lake.jpeg){width="450"}
+:::
+
+::: {.column width="25%"}
+![](/images/Intro_slides/Narrows.JPG){width="450"}
+:::
+:::
+
+## Some important tasks
+
+-   [Join the Slack page!](https://join.slack.com/t/bsta550/shared_invite/zt-2qtfo9s8j-j6ozEaYdT7yy1KuHoT9Mhw)
+
+-   Star the class website: <https://nwakim.github.io/BSTA_550_F24/>
+
+-   Complete the [WhenIsGood](https://whenisgood.net/3giiafw) for office hours
+
+-   Complete Homework 0 by this Thursday at 11pm!
+
+    -   Includes some items above
+    -   Think about what day of the week you would like your homeworks due
+
+-   Highly suggest that you make an appointment with a learning specialist through [Student Academic Success Center](https://sakai.ohsu.edu/portal/site/Student_Support)!
+
+## Let's visit the website: Homepage
+
+![[Homepage](https://nwakim.github.io/BSTA_550_F24/)](/images/Intro_slides/site_homepage1.png)
+
+## Let's visit the website: Syllabus
+
+-   Course learning objectives
+-   Textbook in shared folder!
+-   Resources: PennState STAT 414 site!
+-   R: not a big worry in our class, you will get a lot of help in BSTA 511
+-   Assessments and grade breakdowns
+-   Homework: 3 parts + grading
+-   Feedback: in the form of exit tickets, group evals, midterm feedback, and final course
+-   How to succeed in this course: resources and assignments explained
+-   Late work policy / Attendance policy
+-   ChatGPT and other AI technology
+-   Course expectations: a few ways that I will show you respect and commitment to you as students
+    -   And a few ways I expect from you!
+-   Communicating with me: give me 24 hours to reply M-F
+    -   Online communication is not my strength!
+
+## Let's visit the website: Schedule (1/2)
+
+-   Weeks, class info, exams, homeworks
+
+![](/images/Intro_slides/site_homepage2.png)
+
+## Let's visit the website: Schedule (2/2)
+
+|                                                                                                                                                                           |              |                                                                                                                                                                              |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [[{{< iconify akar-icons info-fill size=80px >}}](lessons/01_Outcomes_Events_Sample/01_Outcomes_Events_Sample_key_info.qmd)]{style="color:#f8f5f0;"}                      | Key Info     | I will post announcements and other important class related info here. For example, if I change a due date or discuss a common mistake in homework, I will put it here.      |
+| [[{{< iconify ri slideshow-fill size=80px >}}](lessons/17_Negative_binomial_rv/17_Negative_binomial_rv.qmd)]{style="color:#f8f5f0;"}                                      | Slides QMD   | These are the basic slides that will open in your browser.                                                                                                                   |
+| [[{{< iconify bi file-earmark-pdf-fill size=80px >}}](lessons/01_Outcomes_Events_Sample/01_Outcomes_Events_Sample.pdf)]{style="color:#f8f5f0;"}                           | Slides PDF   | These are the slides in pdf form for easy note taking. I'm not always the best at posting these before class, so make sure you know how to save your own copy of pdf slides! |
+| [[{{< iconify pepicons-pop pen-circle-filled size=80px >}}](lessons/01_Outcomes_Events_Sample/01_Outcomes_Events_Sample_notes.pdf)]{style="color:#f8f5f0;"}               | Slides Notes | These are the annotated slides in pdf form. In class, I add my own notes to slides. After class, I will post them here.                                                      |
+| [[{{< iconify healthicons health-worker-form size=90px >}}](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRt)]{style="color:#f8f5f0;"} | Exit tix     | These are links to that day's exit ticket.                                                                                                                                   |
+| [[{{< iconify mdi video size=90px >}}](mothing)]{style="color:#f8f5f0;"}                                                                                                  | Recording    | I record our classes. This will be a link to the OneDrive folder containing this recording.                                                                                  |
+| [[{{< iconify pajamas question size=80px >}}](lessons/01_Outcomes_Events_Sample/01_Outcomes_Events_Sample_muddy_points.qmd)]{style="color:#f8f5f0;"}                      | Muddy Points | You will have a chance to ask questions about class in your exit tickets. If I notice a trend in confusion, I will add explanations to these "Muddy Points"                  |
+
+## Let's visit the website: Search
+
+## Let's visit the website: Homework!
+
+## Decision on Homework due dates
+
+-   I have some set due dates in the schedule
+
+-   Please look at your other classes, your calendar, etc
+
+-   Consider what day of the week you would like to turn in your assignment, solutions, and video/meeting
+
+-   Question in HW 0 to cast your vote and share your opinion
+
+## Structure for this course
+
+-   Learning the basic tools to understand statistics
+
+-   It is going to feel useless at times, but I swear it is not!
+
+-   This class will help you build a toolbox that allows to analyze data while understanding the inner theory at play
+
+## What we will cover
+
+![](../img_slides/course_map.png){fig-align="center"}

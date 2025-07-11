@@ -1,0 +1,68 @@
+---
+title: "Homework 5 Answers"
+subtitle: "BSTA 550"
+date-modified: "today"
+format: 
+  html: 
+    link-external-newwindow: true
+    toc: true
+  pdf: default 
+editor_options: 
+  chunk_output_type: console
+---
+
+## Non-textbook problems
+
+-   #1:  
+    
+    - (a) $X \sim \text{Binom}\bigg( \sum_{i=1}^m n_i, p \bigg)$
+    
+    - (b) $E(x) = p \cdot \sum_{i=1}^m n_i$
+    
+    - (c) $\text{Var}(X) = p \cdot (1-p) \cdot \sum_{i=1}^m n_i$
+
+
+-   #2: 450
+
+
+-   #3: Hint: use the definition of variance
+
+-   #4: (a) $E(\overline{X}) = \mu$    (b) $\text{Var}(\overline{X}) = \dfrac{\sigma^2}{n}$
+
+## Textbook problems
+
+There are answers at the back of the book!! Selected answers (or hints) not provided at the end the book:
+
+-   Chapter 10
+
+    -   \# 6:  750.5
+
+    -   \# 8:  0.9
+
+    -   \# 10:   201
+
+    -   \# 14:   (a) 1.875     (b) 3.125     
+
+-   Chapter 11
+
+    -   \# 2:  1.6
+
+    -   \# 18:  a) 48.5     (b) 96     
+
+    -   \# 20:  $\approx$ 23.077
+    
+-   Chapter 12
+
+    -   \# 2:  64.8
+
+    -   \# 12:  1,096,357
+
+-   Chapter 13
+
+    -   \# 4:  (a) 260/9     (b) 2.833     (c) $2.679\times 10^{-5}$     (d) Same idea as (c) Replace 10's with 100.     
+
+    -   \# 6:  (a) $p_X(x)=\binom{4}{x}.3^x .7^{4-x}$, for $x=0,1,\ldots,4$     (d) 0.3483     (e) 0.9163     (f) 0.0233     (g) 1
+
+    -   \# 8:  (a) T     (b) F     (c) F     (d) F     (e) T     (f) T    (g) T
+
+    -   \# 10:  (a) T     (b) T    (c) F     (d) T    (e) T     (f) F    (g) T     (h) T (nonnegative instead of positive)     (i) F

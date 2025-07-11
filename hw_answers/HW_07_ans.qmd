@@ -1,0 +1,116 @@
+---
+title: "Homework 7 Answers"
+subtitle: "BSTA 550"
+date-modified: "today"
+format: 
+  html: 
+    link-external-newwindow: true
+    toc: true
+  pdf: default 
+editor_options: 
+  chunk_output_type: console
+---
+
+::: center
+| Chapter |      Turn In       |          Extra Problems          |
+|:-------:|:------------------:|:--------------------------------:|
+|   28    |                    |           TB \# 1, 10            |
+| 29[^1]  |     NTB \# 1-2     | TB \# 10, 14, 23, 26, 11, 13, 32 |
+|   31    |      TB \# 18      |         TB \# 13, 14, 17         |
+|   32    |      TB \# 8       |      TB \# 3, 5, 10[^2], 15      |
+|   33    |      NTB \# 3      |          TB \# 3, 9, 10          |
+|   35    | TB \# 10, NTB \# 4 |          TB \# 6, 9, 24          |
+:::
+
+[^1]: I recommend doing the Chapter 29 Extra Problems in the order listed.
+
+[^2]: Assume $X$ and $Y$ are independent.
+
+## Non-textbook problems
+
+-   #1: See class notes for starting!
+
+-   #2:
+
+      (a) $E(V) = 87850 \text{ ft}^3$, $\text{Var}(V) = 19100116 \ (\text{ft}^3)^2$ 
+      
+      (b) Expected value correct, variance incorrect
+
+-   #3: 
+
+      (a) $1 - e^{-1}$
+      
+      (b) 0.0008216
+      
+      (c) 
+
+
+-   #4: 0.001998
+
+## Textbook problems
+
+There are answers at the back of the book!! Selected answers (or hints) not provided at the end the book:
+
+-   Chapter 28
+
+    -   \# 10: (a) 8/9     (b) 14/3     
+
+    -   \# 18: 4/5
+
+-   Chapter 29
+
+    -   \# 10: (a) 26/81     (b) 74/9
+
+    -   \# 14: (a) 67/3     (b) 1/14     (c) 25/12     (d) $\sqrt{25/12}$
+
+    -   \# 26: 250
+
+    -   \# 32: See notes (or book) for the proof from the discrete random variables case. The proof doesn't depend on what type of random variable (discrete vs. continuous) is being used.
+
+    -   NTB \# 3: (a) 63     (b) 287/3     (c) -1, 41/3     (d) -7, 287/3
+
+- Chapter 31
+  - **14.**
+    - (a) 0.25  
+    - (b) 0.02887  
+    - (c) 0.063  
+    - (d) 0.0145  
+    - (e) 0.01625  
+    - (f) 0.0055  
+    - (f) 6.195  
+    - (g) 0.00433  
+    - (h) 61.95  
+    - (i) 0.0433  
+  - **17.** 2.25  
+  - **18.** $\frac{7}{15}$  
+  <!-- Uncomment if NTB reference is needed -->
+  <!-- - **NTB** (a) 63  \ (b) $\frac{287}{3}$ \ (c) -1, $\frac{41}{3}$ \ (d) -7, $\frac{287}{3}$ -->
+
+- Chapter 32
+  - **8.** 0.2526  
+  - **5.** 0.8047  
+  - **10.** 0.4323  
+
+- Chapter 33
+  - **10.**
+    - (a) $f_x(x) = \frac{x}{9} e^{-x/3}$ for $x > 0$  
+    - (b) 0.4963  
+
+- Chapter 35
+  - **6.**
+    - (a) 0  
+    - (b) -1.13  
+    - (c) $\pm 0.32$  
+  - **10.**
+    - (a) 0.0475  
+    - (b) 0.0475  
+    - (c) 0.2283  
+    - (d) 68.97 to 81.03  
+    - (e) 48 to 102  
+    - (f) 68.97  
+  - **24.**
+    - (a) 0.2119  
+    - (b) 0.0011  
+  - **NTB Parachute Reference:** 0.002
+
+

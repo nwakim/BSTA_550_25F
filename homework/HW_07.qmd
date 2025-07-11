@@ -1,0 +1,58 @@
+---
+title: "Homework 7"
+subtitle: "BSTA 550"
+description: "Due: Thursday November 21, 2024 at 11pm"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+  pdf: default 
+editor_options: 
+  chunk_output_type: console
+---
+
+## Directions
+
+[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/BSTA-550-1-14926-F24/tool/c8320b13-1b6d-42ed-9c19-134634cf25af) Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
+
+**Try to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later!** Only turn in the ones listed in the "Turn In" column. Please submit problems in the order they are listed.
+
+*You must show all of your work to receive credit.*
+
+::: center
+| Chapter |      Turn In       |          Extra Problems          |
+|:-------:|:------------------:|:--------------------------------:|
+|   28    |                    |           TB \# 1, 10            |
+| 29[^1]  |     NTB \# 1-2     | TB \# 10, 14, 23, 26, 11, 13, 32 |
+|   31    |      TB \# 18      |         TB \# 13, 14, 17         |
+|   32    |      TB \# 8       |      TB \# 3, 5, 10[^2], 15      |
+|   33    |      NTB \# 3      |          TB \# 3, 9, 10          |
+|   35    | TB \# 10, NTB \# 4 |          TB \# 6, 9, 24          |
+:::
+
+[^1]: I recommend doing the Chapter 29 Extra Problems in the order listed.
+
+[^2]: Assume $X$ and $Y$ are independent.
+
+## Non-textbook problems (NTB)
+
+1.  Let $f_X(x)=\lambda e^{-\lambda x}$ for $x>0$, where $\lambda>0$.
+
+    a.  Show $Var[X]=\frac{1}{\lambda^2}$. You may use the result from class for $\mathbb{E}[X]$ without first proving it.
+
+2.  A shipping company handles containers in three different sizes: (1) 27 $ft^3$ (3 x 3 x 3), (2) 125 $ft^3$, and (3) 512 $ft^3$. Let $X_i$ ($i = 1, 2, 3$) denote the number of type $i$ containers shipped during a given week. Suppose that $\mu_1 =200,\sigma_1=10,\mu_2 =250,\sigma_2=12,\mu_3 =100,\sigma_3=8$.
+
+    a.  Assuming that $X_1,X_2,X_3$ are independent, calculate the expected value and variance of the total volume shipped.
+
+    b.  Would your calculations necessarily be correct if the $X_i$'s were not independent? Explain.
+
+3.  Suppose that voters arrive at a polling station at the rate of 120 per hour.For each of the following parts, [give the name and parameter(s) of the distribution]{.underline} to be used to model the event and [set up the expression]{.underline} to find the specified probability.*You do not need to compute the probability.*
+
+    a.  The probability that the next voter will arrive in less than 30 seconds.
+
+    b.  The probability that 200 voters will arrive within two hours of each other.
+
+    c.  The probability that the $50^{th}$ voter will arrive in between 15 and 30 minutes.
+
+4.  The automatic opening device of a military cargo parachute has been designed to open when the parachute is 200 m above the ground. Suppose opening altitude actually has a normal distribution with mean value 200 m and standard deviation 30 m. Equipment damage will occur if the parachute opens at an altitude of less than 100 m. What is the probability that there is equipment damage to the payload of at least one of the five independently dropped parachutes?

@@ -1,0 +1,407 @@
+---
+title: "Chapter 2: Introduction to Probability"
+author: "Meike Niederhausen and Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#006a4e"
+date: "10/02/2024"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 2 Slides
+    html-math-method: mathjax
+---
+
+# Learning Objectives
+
+1.  Define basic axioms and propositions in probability
+
+2.  Assign probabilities to events
+
+3.  Perform manipulations on probabilities to make calculations easier
+
+## Where are we?
+
+![](../img_slides/course_map.png){fig-align="center"}
+
+# Probabilities of equally likely events
+
+## Probabilities of equally likely events
+
+- "Equally likely" means the probability of any possible outcome is the same
+  - Think: each side of die is equally likely or picking a card in a deck is equally likely
+
+## Pick an *equally likely* card, any *equally likely* card
+
+::: example
+::: ex-title
+Example 1
+:::
+
+::: ex-cont
+Suppose you have a regular well-shuffled deck of cards. What's the probability of drawing:
+
+1.  any heart
+
+2.  the queen of hearts
+
+3.  any queen
+:::
+:::
+
+## Let's break down this probability
+
+If $S$ is a finite sample space, with **equally likely outcomes**, then
+
+$$\mathbb{P}(A) = \frac{|A|}{|S|}$$
+
+In human speak: 
+
+- For equally likely outcomes, the probability that a certain event occurs is: the number of outcomes within the event of interest ($|A|$) **divided by** the total number of possible outcomes ($|S|$)
+
+$$\mathbb{P}(A) = \frac{\text{total number of outcomes in event A}}{\text{total number of outcomes in sample space}}$$
+
+- Thus, it is important to be able to count the outcomes within an event
+
+## A probability is a function...
+
+- $\mathbb{P}(A)$ is a function with
+
+    -   **Input:** event $A$ from the sample space $S$, ($A \subseteq S$)
+
+        - $A \subseteq S$ means "A contained within S" or "A is a subset of S"
+
+    -   **Output:** a number between 0 and 1 (inclusive)
+    
+ 
+
+- The [**probability function**]{style="color:#E25D3B;"} maps an event (input) to value between 0 and 1 (output)
+
+  - When we speak of the probability function, we often call the values between 0 and 1 "probabilities"
+  
+    - Example: "The probability of drawing a heart is 0.25" for $P(\text{heart}) = 0.25$ 
+
+ 
+
+- The probability function needs to follow some specific rules!
+
+ 
+
+*See Probability Axioms on next slide.*
+
+# Probability Axioms
+
+## Probability Axioms
+
+::: columns
+::: column
+::: axiom
+::: axiom-title
+Axiom 1
+:::
+
+::: axiom-cont
+For every event $A$, $0\leq\mathbb{P}(A)\leq 1$. Probability is between 0 and 1.
+:::
+:::
+
+::: axiom
+::: axiom-title
+Axiom 2
+:::
+
+::: axiom-cont
+For the sample space $S$, $\mathbb{P}(S)=1$.
+:::
+:::
+
+::: axiom
+::: axiom-title
+Axiom 3
+:::
+
+::: axiom-cont
+If $A_1, A_2, A_3, \ldots$, is a collection of **disjoint** events, then $$\mathbb{P}\Big( \bigcup \limits_{i=1}^{\infty}A_i\Big) =  \sum_{i=1}^{\infty}\mathbb{P}(A_i).$$ 
+The probability of at least one $A_i$ is the sum of the individual probabilities of each.
+:::
+:::
+
+:::
+:::
+
+
+
+# Some probability properties
+
+## Some probability properties
+
+Using the Axioms, we can prove all other probability properties! Events A, B, and C are not necessarily disjoint!
+
+::: columns
+::: column
+::: proposition
+::: prop-title
+Proposition 1
+:::
+
+::: prop-cont
+For any event $A$, $\mathbb{P}(A)= 1 - \mathbb{P}(A^C)$
+:::
+:::
+
+::: proposition
+::: prop-title
+Proposition 2
+:::
+
+::: prop-cont
+$\mathbb{P}(\emptyset)=0$
+:::
+:::
+
+::: proposition
+::: prop-title
+Proposition 3
+:::
+
+::: prop-cont
+If $A \subseteq B$, then $\mathbb{P}(A) \leq \mathbb{P}(B)$
+:::
+:::
+:::
+
+::: column
+::: proposition
+::: prop-title
+Proposition 4
+:::
+
+::: prop-cont
+$$\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)$$ where $A$ and $B$ are not necessarily disjoint
+:::
+:::
+
+::: proposition
+::: prop-title
+Proposition 5
+:::
+
+::: prop-cont
+$\begin{aligned} \mathbb{P}(A \cup B & \cup C) = \mathbb{P}(A) + \mathbb{P}(B) + \\ & \mathbb{P}(C) - \mathbb{P}(A \cap B) - \mathbb{P}(A \cap C) - \\ & \mathbb{P}(B \cap C) + \mathbb{P}(A \cap B \cap C) \end{aligned}$
+:::
+:::
+:::
+:::
+
+## Proposition 1 Proof
+
+::: columns
+::: {.column width="70%"}
+::: proposition
+::: prop-title
+Proposition 1
+:::
+
+::: prop-cont
+For any event $A$, $\mathbb{P}(A)= 1 - \mathbb{P}(A^C)$
+:::
+:::
+:::
+
+::: {.column width="30%"}
+::: axiom
+::: axiom-title
+Use Axioms!
+:::
+
+::: axiom-cont
+A1: $0\leq\mathbb{P}(A)\leq 1$
+
+A2: $\mathbb{P}(S)=1$
+
+A3: For disjoint $A_i$, 
+
+$\mathbb{P}\Big( \bigcup \limits_{i=1}^{\infty}A_i\Big) =  \sum_{i=1}^{\infty}\mathbb{P}(A_i)$
+:::
+:::
+:::
+:::
+
+
+
+## Proposition 2 Proof
+
+::: columns
+::: {.column width="70%"}
+::: proposition
+::: prop-title
+Proposition 2
+:::
+
+::: prop-cont
+$\mathbb{P}(\emptyset)=0$
+:::
+:::
+:::
+
+::: {.column width="30%"}
+::: axiom
+::: axiom-title
+Use Axioms!
+:::
+
+::: axiom-cont
+A1: $0\leq\mathbb{P}(A)\leq 1$
+
+A2: $\mathbb{P}(S)=1$
+
+A3: For disjoint $A_i$, 
+
+$\mathbb{P}\Big( \bigcup \limits_{i=1}^{\infty}A_i\Big) =  \sum_{i=1}^{\infty}\mathbb{P}(A_i)$
+:::
+:::
+:::
+:::
+
+
+## Proposition 3 Proof
+
+::: columns
+::: {.column width="70%"}
+::: proposition
+::: prop-title
+Proposition 3
+:::
+
+::: prop-cont
+If $A \subseteq B$, then $\mathbb{P}(A) \leq \mathbb{P}(B)$
+:::
+:::
+:::
+
+::: {.column width="30%"}
+::: axiom
+::: axiom-title
+Use Axioms!
+:::
+
+::: axiom-cont
+A1: $0\leq\mathbb{P}(A)\leq 1$
+
+A2: $\mathbb{P}(S)=1$
+
+A3: For disjoint $A_i$, 
+
+$\mathbb{P}\Big( \bigcup \limits_{i=1}^{\infty}A_i\Big) =  \sum_{i=1}^{\infty}\mathbb{P}(A_i)$
+:::
+:::
+:::
+:::
+
+
+## Proposition 4 Visual Proof
+
+::: proposition
+::: prop-title
+Proposition 4
+:::
+
+::: prop-cont
+$\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)$
+:::
+:::
+
+## Proposition 5 Visual Proof
+
+::: proposition
+::: prop-title
+Proposition 5
+:::
+
+::: prop-cont
+$\mathbb{P}(A \cup B \cup C) = \mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \mathbb{P}(A \cap B) - \mathbb{P}(A \cap C) - \mathbb{P}(B \cap C) + \mathbb{P}(A \cap B \cap C)$
+:::
+:::
+
+## Some final remarks on these proposition
+
+- Notice how we spliced events into multiple **disjoint** events
+  - It is often easier to work with disjoint events
+  
+ 
+  
+- If we want to calculate the probability for one event, we may need to get creative with how we manipulate other events and the sample space 
+  - Helps us use any incomplete information we have 
+
+# Partitions
+
+## Partitions
+
+::: columns
+::: {.column width="60%"}
+::: definition
+::: def-title
+Definition: Partition
+:::
+
+::: def-cont
+A set of events $\{A_i\}_{i=1}^{n}$ create a **partition** of $A$, if
+
+-   the $A_i$'s are disjoint (mutually exclusive) and
+
+-   $\bigcup \limits_{i=1}^n A_i = A$
+:::
+:::
+
+::: example
+::: ex-title
+Example 2
+:::
+
+::: ex-cont
+-   If $A \subset B$, then $\{A, B \cap A^C\}$ is a partition of $B$.
+
+-   If $S = \bigcup \limits_{i=1}^n A_i$, and the $A_i$'s are disjoint, then the $A_i$'s are a partition of the sample space.
+:::
+:::
+:::
+
+::: {.column width="40%"}
+:::
+:::
+
+Creating partitions is sometimes used to help calculate probabilities, since by Axiom 3 we can add the probabilities of disjoint events.
+
+# Venn Diagram Probabilities
+
+## Weekly medications
+
+::: columns
+::: {.column width="40%"}
+::: example
+::: ex-title
+Example 3
+:::
+
+::: ex-cont
+If a subject has an
+
+-   80% chance of taking their medication *this* week,
+
+-   70% chance of taking their medication *next* week, and
+
+-   10% chance of *not* taking their medication *either* week,
+
+then find the probability of them taking their medication exactly one of the two weeks.
+:::
+:::
+:::
+
+::: {.column width="60%"}
+*Hint: Draw a Venn diagram labelling each of the parts to find the probability.*
+:::
+:::
+

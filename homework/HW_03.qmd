@@ -1,0 +1,67 @@
+---
+title: "Homework 3"
+subtitle: "BSTA 550"
+description: "Due: Thursday October 25, 2024 at 11pm"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+  pdf: default 
+editor_options: 
+  chunk_output_type: console
+---
+
+## Directions
+
+[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/BSTA-550-1-14926-F24/tool/c8320b13-1b6d-42ed-9c19-134634cf25af) Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
+
+**Try to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later!** Only turn in the ones listed in the "Turn In" column. Please submit problems in the order they are listed.
+
+*You must show all of your work to receive credit.*
+
+::: center
+| Chapter |     Turn In     |         Extra Problems          |
+|:-------:|:---------------:|:-------------------------------:|
+|    7    |                 |      \# 2, 10, 16, 17, 18       |
+|    8    | TB \# 8\*, 18\* |         \# 2, 5, 7, 10          |
+|   14    |                 |             \# 3, 7             |
+|   15    |  ~~NTB \# 1~~   |  \# 1, 5, 11, 18, 23, NTB \# 2  |
+|   16    |     TB \# 7     |       \# 3a-g, 8, 11, 21        |
+|   17    |     TB \# 9     | \# 3a-g, 6, 11, 12a-c, NTB \# 3 |
+|   18    |    TB \# 20     |        \# 1, 24, 26, 27         |
+|   19    |     TB \# 6     |          \# 1, 18, 19           |
+|   20    |                 |           \# 2, 3, 4            |
+:::
+
+\* In addition to the graphs, include piecewise defined functions for the pmf and cdf.
+
+## Non-textbook problems (NTB)
+
+Do not do this problem!!
+
+1.  ~~Let~~ $X_i\sim$ ~~Binomial(~~$n_i,p$~~) be independent r.v.'s for~~ $i=1,\ldots,m$~~.~~
+
+    a.  ~~What does the r.v.~~ $X=\sum_{i=1}^mX_i$ ~~count, and what is the distribution of~~ $X$~~? Make sure to specify the parameters of~~ $X$~~'s distribution.~~
+
+    b.  ~~Find~~ $\mathbb{E}[X]$~~. *Make sure to show your work for (b) and (c). However, you may use without proof what you know about the mean and variance of each*~~ $X_i$~~.~~
+
+    c.  ~~Find~~ $Var[X]$~~.~~
+
+### Extra Problems
+
+2.  Read the Washington Post article *The amazing woman who can smell Parkinson's disease - before symptoms appear* (<http://www.washingtonpost.com/news/morning-mix/wp/2015/10/23/scottish-woman-detects-a-musky-smell-that-could-radically-improve-how-parkinsons-disease-is-diagnosed/>)
+
+    Assuming Joy Milne does not have the ability to detect Parkinson's disease via smell, answer the following questions:
+
+    a.  What is the probability of her correctly detecting Parkinson's by smelling one t-shirt?
+
+    b.  What is the probability of her correctly detecting Parkinson's in 12 out of 12 t-shirts?
+
+3.  Let $X_i\sim$ Negative Binomial($r_i,p$) be independent r.v.'s for $i=1,\ldots,m$.
+
+    a.  What does the r.v. $X=\sum_{i=1}^mX_i$ count, and what is the distribution of $X$? Make sure to specify the parameters of $X$'s distribution.
+
+    b.  Find $\mathbb{E}[X]$. *Make sure to show your work for (b) and (c). However, you may use without proof what you know about the mean and variance of each* $X_i$.
+
+    c.  Find $Var[X]$.

@@ -1,0 +1,198 @@
+---
+title: "Chapter 27: Conditional Distributions"
+author: "Meike Niederhausen and Nicky Wakim"
+date: "11/25/2024"
+title-slide-attributes:
+    data-background-color: "#006a4e"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 27 Slides
+    html-math-method: mathjax
+---
+
+## Learning Objectives
+
+1. Calculate the conditional probability density from a joint pdf
+
+
+## Conditional probabilities we've seen before
+
+::: columns
+::: {.column width="40%"}
+**What do we know about conditional probabilities for events and discrete RVs?**
+ 
+ 
+
+For events:
+
+$$P(A | B) = \dfrac{P(A \cap B)}{P(B)}$$ 
+ 
+ 
+
+For discrete RVs: 
+$$p_{X|Y}(x|y) = P(X=x|Y=y) = \dfrac{p_{X,Y}(x,y)}{p_Y(y)}$$
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="50%"}
+**What does it mean for conditional densities of continuous RVs?**
+
+For continuous RVs:
+:::
+
+:::
+
+
+## Example starting from a joint pdf: first try!
+
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 1.1
+:::
+::: ex-cont
+Let $f_{X,Y}(x,y)= 5 e^{-x-3y}$, for
+$0 < y < \frac{x}{2}$.
+
+1.  Find $\mathbb{P}(2<X<10|Y=4)$
+
+:::
+:::
+
+:::
+:::
+
+## What is a conditional density?
+
+::: columns
+::: {.column width="45%"}
+::: definition
+::: def-title
+Definition: Conditional density
+:::
+::: def-cont
+The conditional density of a
+r.v. $X$ given $Y=y$, is $$f_{X|Y}(x|y)= \frac{f_{X,Y}(x,y)}{f_Y(y)},$$
+for $f_Y(y)> 0$
+:::
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="52%"}
+
+**Remarks**
+
+1.  It follows from the definition for the conditional density
+    $f_{X|Y}(x|y)$, that $$f_{X,Y}(x,y)= f_{X|Y}(x|y)f_Y(y).$$
+    
+ 
+ 
+ 
+
+2.  For a fixed value of $Y=y$, the conditional density $f_{X|Y}(x|y)$
+    is an actual pdf, meaning
+
+    -  $f_{X|Y}(x|y)\geq 0$ for all $x$ and $y$, and
+
+    -  $\displaystyle\int_{-\infty}^{\infty} f_{X|Y}(x|y)dx =1$.
+    
+:::
+:::
+
+## Example starting from a joint pdf: second try! (1/2)
+ 
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 1.1
+:::
+::: ex-cont
+Let $f_{X,Y}(x,y)= 5 e^{-x-3y}$, for
+$0 < y < \frac{x}{2}$.
+
+1.  Find $\mathbb{P}(2<X<10|Y=4)$
+
+:::
+:::
+
+:::
+:::
+
+## Example starting from a joint pdf: second try! (2/2)
+
+## Example starting from a joint pdf
+
+::: {.callout-important appearance="simple" icon="false"}
+Do this problem at home for extra practice. The solution is available in
+Meike's video!
+:::
+
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 1.2
+:::
+::: ex-cont
+Let $f_{X,Y}(x,y)= 5 e^{-x-3y}$, for
+$0 < y < \frac{x}{2}$.
+
+2.  Find $\mathbb{P}(X>20 |Y=5)$
+
+:::
+:::
+
+:::
+:::
+
+## Finding probability with conditional domain and pdf
+
+::: {.callout-important appearance="simple" icon="false"}
+Do this problem at home for extra practice. The solution is available in
+Meike's video!
+:::
+
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 2
+:::
+::: ex-cont
+Randomly choose a point $X$ from the interval $[0,1]$,
+and given $X=x$, randomly choose a point $Y$ from $[0,x]$. Find
+$\mathbb{P}(0 < Y < \frac14)$.
+
+:::
+:::
+
+:::
+:::
+
+## Independence and conditional distributions
+
+ 
+ 
+**Question** What is $f_{X|Y}(x|y)$ if $X$ and $Y$ are independent?
+
+$$f_{X|Y}(x|y) = \dfrac{f_{X,Y}(x,y)}{f_y(y)} = \dfrac{f_{X}(x)f_y(y)}{f_y(y)} = f_{X}(x)$$
+
+ 
+ 
+ 
+ 
+
+-   If $f_{X|Y}(x|y)$ does not depend on $y$ (including the bounds/domain), then $X$ and $Y$
+are independent.
