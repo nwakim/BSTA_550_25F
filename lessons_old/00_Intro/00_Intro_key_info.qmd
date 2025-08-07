@@ -1,0 +1,17 @@
+---
+title: "Key Info and Announcements"
+date: "09/30/2024"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+
+-   Welcome! Here is where I will put announcements for class!
+- Homework 0 is due THIS THURSDAY at 11pm!
+
+

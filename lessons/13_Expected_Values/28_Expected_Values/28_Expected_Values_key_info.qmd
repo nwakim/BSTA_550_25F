@@ -1,0 +1,32 @@
+---
+title: "Key Info"
+date: "11/11/2024"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+
+- Wow! Week 7...
+
+- HW 3 video/presentation
+  - Tomorrow! 11/12 at 11pm: recordings due if you are making that
+  - Calendly is up!! Please see me original announcement
+
+- Need to grade HW 4 solutions and HW 5 assignment
+
+- Anything else?
+
+## Key Dates
+
+- Thursday: HW 6 due
+- Sunday: HW 5 solutions due
+
+  
+
+
+

@@ -1,0 +1,236 @@
+---
+title: "Chapter 24: Continuous RVs and PDFs"
+author: "Meike Niederhausen and Nicky Wakim"
+date: "11/6/2024"
+title-slide-attributes:
+    data-background-color: "#006a4e"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 24 Slides
+    html-math-method: mathjax
+---
+
+## What is a cumulative distribution function?
+
+::: definition
+::: def-title
+Cumulative distribution function
+:::
+
+::: def-cont
+The **cumulative distribution function (cdf)** of a continuous random
+variable $X$, is the function $F_X(x)$, such that for all real values of
+$x$, $$F_X(x)= \mathbb{P}(X \leq x) = \int_{-\infty}^x f_X(s)ds$$
+:::
+:::
+
+**Remarks:** In general, $F_X(x)$ is increasing and
+
+-   $\lim_{x\rightarrow -\infty} F_X(x)= 0$
+
+-   $\lim_{x\rightarrow \infty} F_X(x)= 1$
+
+-   $P(X > a) = 1 - P(X \leq a) = 1 - F_X(a)$
+
+-   $P(a \leq X \leq b) = F_X(b) - F_X(a)$
+
+## Let's demonstrate the CDF with an example
+
+::: columns
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 2
+:::
+
+::: ex-cont
+Let $f_X(x)= 2$, for $2.5 \leq x \leq 3$. Find $F_X(x)$.
+:::
+:::
+:::
+:::
+
+## Derivatives of the CDF
+
+::: theorem
+::: thm-title
+Theorem 1
+:::
+
+::: thm-cont
+If $X$ is a continuous random variable with pdf $f_X(x)$ and cdf
+$F_X(x)$, then for all real values of $x$ at which $F'_X(x)$ exists,
+$$\frac{d}{dx} F_X(x)= F'_X(x) = f_X(x)$$
+:::
+:::
+
+## Finding the PDF from a CDF
+
+::: columns
+::: {.column width="38%"}
+::: example
+::: ex-title
+Example 3
+:::
+
+::: ex-cont
+Let $X$ be a RV with cdf $$F_X(x)= \left\{
+        \begin{array}{ll}
+            0 & \quad x < 2.5 \\
+            2x-5 & \quad 2.5 \leq x \leq 3 \\
+            1 & \quad x > 3
+        \end{array}
+    \right.$$ Find the pdf $f_X(x)$.
+:::
+:::
+:::
+:::
+
+## Let's go through another example (1/7)
+
+::: columns
+::: {.column width="100%"}
+::: example
+::: ex-title
+Example 4
+:::
+
+::: ex-cont
+Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for $x>0$.
+
+1.  Show $f_X(x)$ is a pdf.
+
+2.  Find $\mathbb{P}(1 \leq X \leq 3)$.
+
+3.  Find $F_X(x)$.
+
+4.  Given $F_X(x)$, find $f_X(x)$.
+
+5.  Find $\mathbb{P}(X \geq 1 | X \leq 3)$.
+
+6.  Find the median of the distribution of $X$.
+:::
+:::
+:::
+:::
+
+## Let's go through another example (2/7)
+
+::: columns
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 4.1
+:::
+
+::: ex-cont
+Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for $x>0$.
+
+1.  Show $f_X(x)$ is a pdf.
+:::
+:::
+:::
+:::
+
+## Let's go through another example (3/7)
+
+::: {.callout-important appearance="simple" icon="false"}
+Do this problem at home for extra practice.
+:::
+
+::: columns
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 4.2
+:::
+
+::: ex-cont
+Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for $x>0$.
+
+2.  Find $\mathbb{P}(1 \leq X \leq 3)$.
+:::
+:::
+:::
+:::
+
+## Let's go through another example (4/7)
+
+::: columns
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 4.3
+:::
+
+::: ex-cont
+Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for $x>0$.
+
+3.  Find $F_X(x)$.
+:::
+:::
+:::
+:::
+
+## Let's go through another example (5/7)
+
+::: {.callout-important appearance="simple" icon="false"}
+Do this problem at home for extra practice.
+:::
+
+::: columns
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 4.4
+:::
+
+::: ex-cont
+Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for $x>0$.
+
+4.  Given $F_X(x)$, find $f_X(x)$.
+:::
+:::
+:::
+:::
+
+## Let's go through another example (6/7)
+
+::: columns
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 4.5
+:::
+
+::: ex-cont
+Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for $x>0$.
+
+5.  Find $\mathbb{P}(X \geq 1 | X \leq 3)$.
+:::
+:::
+:::
+:::
+
+## Let's go through another example (7/7)
+
+::: columns
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 4.6
+:::
+
+::: ex-cont
+Let $X$ be a RV with pdf $f_X(x)= 2e^{-2x}$, for $x>0$.
+
+6.  Find the median of the distribution of $X$.
+:::
+:::
+:::
+:::

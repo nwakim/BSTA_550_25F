@@ -1,0 +1,94 @@
+---
+title: "Chapter 28: Expected Values of Continuous Random Variables"
+author: "Meike Niederhausen and Nicky Wakim"
+title-slide-attributes:
+    data-background-color: "#006a4e"
+date: "11/11/2024"
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Chapter 28 Slides
+    html-math-method: mathjax
+---
+
+## Learning Objectives
+
+1. Calculate the mean (expected value) of a continuous RV
+
+## Expected value of a function of a continuous RV
+
+::: columns
+::: {.column width="40%"}
+**How do we calculate expected values of discrete RVs?**
+
+ 
+ 
+ 
+ 
+
+For discrete RVs: weight average
+$$\mathbb{E}[X] = \sum_{i=1}^n x_ip_X(x_i).$$
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="50%"}
+**How do we calculate expected values of continuous RVs?**
+
+ 
+ 
+ 
+ 
+
+For continuous RVs:
+:::
+
+:::
+
+## Expected Value of the Uniform Distribution
+
+::: columns
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 1
+:::
+::: ex-cont
+Let $f_X(x)= \frac{1}{b-a}$, for $a \leq x \leq b$.
+Find $\mathbb{E}[X]$.
+:::
+:::
+
+:::
+:::
+
+## Expected Value of the Exponential Distribution
+
+::: columns
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 2
+:::
+::: ex-cont
+Let $f_X(x)= \lambda e^{-\lambda x}$, for $x > 0$ and
+$\lambda> 0$. Find $\mathbb{E}[X]$.
+:::
+:::
+
+::: theorem
+::: thm-title
+Integrating by Parts
+:::
+::: thm-cont
+$\displaystyle\int_a^b u dv = uv\bigg|^b_a - \displaystyle\int_a^b vdu$
+:::
+:::
+
+:::
+:::

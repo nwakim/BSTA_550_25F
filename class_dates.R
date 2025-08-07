@@ -7,7 +7,8 @@ first_day = as.Date("9/29/25", "%m/%d/%y")
 last_day = as.Date("12/12/25", "%m/%d/%y")
 
 # Create the calendar dates sequence
-cal_dates = seq(from = first_day, to = last_day, by = "day") %>% format("%m/%d")
+cal_dates = seq(from = first_day, to = last_day, by = "day")
+year = "2025"
 
 ## Week 1 dates
 w1d1 = cal_dates[1]

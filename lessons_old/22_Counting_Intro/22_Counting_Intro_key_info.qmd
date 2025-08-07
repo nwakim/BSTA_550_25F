@@ -1,0 +1,27 @@
+---
+title: "Key Info"
+date: "10/7/2024"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+
+- For homework 1, you will need to the textbook! There is a link in the Syllabus and a pdf in our [shared OneDrive folder](https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/F24_BSTA_550/Student_files_BSTA_550?csf=1&web=1&e=0jf6kG).
+  - What's out shared OneDrive folder?? OHSU uses OneDrive as cloud storage. Everyone should be able to access OneDrive with their OHSU email, in addition to many other Microsoft apps.  
+  - In our shared folder, I put files that I cannot share publicly. You'll see homework solutions, recordings, and textbooks in there. For the most part, I will place links on our website directly to the files. I don't always do the best job of this, so please take a look at those files as well. 
+- Due days
+  - I don't want anyone to feel anxious about when exactly HW 1 is due. Almost everyone has voted, and it looks like Thursdays will be the best day for homework assignments.
+    - A result of the voting and the notes about work schedules
+  - Consequently, I want to give you more than a week after assignments are due to turn in the solutions, so solutions will be due two Sundays after the assignment is due (10 days after).
+  - For example, the assignment for HW 1 is due 10/10 at 11pm and the solutions for HW 1 will be due 10/20 at 11pm.
+- Homework solution groups!!
+  - I added a link to a Microsoft form in Homework 1
+  - Please specify who you would like to partner with
+- Office hours
+  - Let's discuss
+  - Looks like Thursdays 1-2:30pm is best or 1-2pm on Tuesday

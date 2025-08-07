@@ -1,0 +1,38 @@
+---
+title: "Key Info"
+date: "12/4/2024"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+
+- LAST CLASS!!!!
+- Homework 7and 6 solutions are graded
+- HW 7 meetings are up on Calendly
+  - See my announcement from Sakai
+-   I will be finalizing and posting HW 9 tomorrow
+    - Optional!
+- Please do your course evals!!
+  - Especially in a small class
+- Friday 12/13 is the absolute deadline for turning in materials if you are completing the course!
+  _ Check Sakai that I have all your HW grades in!
+- Anything else?
+
+## Key Dates
+
+- Thursday (12/5): HW 8 assignment due
+- Sunday (12/8): HW 7 presentations due at 11pm
+  - I can be pretty flexible until 12/13 
+- Thursday (12/12): Optional HW 9 assignment due
+- Friday (12/13): HW 8 solutions due
+
+
+  
+
+
+

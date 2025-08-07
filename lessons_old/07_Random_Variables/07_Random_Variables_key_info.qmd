@@ -1,0 +1,28 @@
+---
+title: "Key Info"
+date: "10/14/2024"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+
+- For office hours, we decided to do appointments!
+  - Here's my Calendly: <https://calendly.com/nickywakim/15min>
+  - I have it set up mostly for Tuesdays and Thursdays
+  - It requires a day's notice for appointments - mainly so I can plan my next day
+  
+- Did you turn in HW 01 Assignment?
+
+  - I'm missing one! So double check!
+  - Then I'll post the solutions!
+
+## Key Dates
+
+- HW 02 Assignment due this Thursday at 11pm
+- No HW 01 Solutions
+

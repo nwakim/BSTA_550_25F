@@ -1,0 +1,23 @@
+---
+title: "Muddy Points"
+subtitle: "Chapter 3: Independence"
+date: "10/01/2024"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+
+### 1. How do I know if two events are independent?
+
+My main piece of advice for independence is to rely on the math to show it, not logic! Don't go into a problem thinking "Logically, these two events are independent." If the problem does not say "Assume independence," then we need to show it mathematically. 
+
+Same goes with the definition of independence. When we say "knowing the outcome of one provides no information about the outcome of the other," we once again need to show this mathematically, not just using logic. We translate the previous statement to $$P(A) = P(A|B)$$ And we need to show this mathematically!
+
+### 2. Disjoint vs. Independent Events
+
+[Here is a pretty good video](https://www.youtube.com/watch?v=aVqmWW3xmdU&ab_channel=AceTutors) breaking down disjoint (mutually exclusive) events and independent events. It includes examples as well.
+

@@ -1,0 +1,33 @@
+---
+title: "Key Info"
+subtitle: "Pre Chapter 24: Calculus Review"
+date: "11/4/2024"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+
+- HW 4 assignment due last night!
+- HW 3 solutions also due
+- Time to grade later today: HW 3 solutions or HW 4 assignment?
+- Tomorrow I will be sending out a Calendly invite for next week
+  - To make an appointment with me to present your HW 3 solutions
+  - It will be posted around 11:45am/12pm
+  - There are limited spots just based on my availability
+  
+
+## Key Dates
+
+- Thursday: HW 5 due
+- Sunday: HW 4 solutions due
+- Week of 11/11
+  - Make a meeting with me
+  - 11/12: recordings due if you are making that
+
+
+
