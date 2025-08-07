@@ -1,0 +1,357 @@
+---
+title: "Lesson 13: Independence and Conditioning"
+author: "Meike Niederhausen and Nicky Wakim"
+date: "`r library(here); source(here('class_dates.R')); w6d1`"
+title-slide-attributes:
+    data-background-color: "#006a4e"
+categories: ["Week 8"]
+format: 
+  revealjs:
+    theme: "../simple_NW.scss"
+    slide-number: true
+    show-slide-number: all
+    width: 1955
+    height: 1100
+    footer: Lesson 13 Slides
+    html-math-method: mathjax
+---
+
+
+```{r setup, include=FALSE}
+library(here)
+source(here("class_dates.R"))
+
+library(tidyverse)
+```
+
+# Learning Objectives
+
+1. Show that a joint pdf consists of two independent, continuous RVs.
+
+2. Combine two independent RVs into one joint pdf or CDF.
+
+## How do we represent independent continuous RVs in a joint pdf?
+
+::: columns
+::: {.column width="40%"}
+**What do we know about independence for events and discrete RVs?**
+
+For events: If $A \perp B$
+
+$$P(A \cap B) = P(A)P(B)$$ $$P(A|B) = P(A)$$
+
+For discrete RVs: If $X \perp Y$ $$p_{X,Y}(x,y) = p_{X}(x)p_{Y}(y)$$
+$$F_{X,Y}(x,y) = F_{X}(x)F_{Y}(y)$$ $$p_{X|Y}(x|y) = p_{X}(x)$$
+$$p_{Y|X}(y|x) = p_{Y}(y)$$
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="50%"}
+**What does it mean for continuous r.v.'s to be independent?**
+
+For continuous RVs: If $X \perp Y$
+:::
+
+:::
+
+## Constructing a joint pdf from two independent, continuous RVs
+
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 1.1
+:::
+::: ex-cont
+Let $X$ and $Y$ be independent r.v.'s with
+$f_X(x)= \frac12$, for $0 \leq x \leq 2$ and $f_Y(y)= 3y^2$, for
+$0 \leq y \leq 1$.
+
+1.  Find $f_{X,Y}(x,y)$.
+:::
+:::
+
+:::
+:::
+
+## Constructing a joint pdf from two independent, continuous RVs
+
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 1.2
+:::
+::: ex-cont
+Let $X$ and $Y$ be independent r.v.'s with
+$f_X(x)= \frac12$, for $0 \leq x \leq 2$ and $f_Y(y)= 3y^2$, for
+$0 \leq y \leq 1$.
+
+2.  Find $\mathbb{P}(0 \leq X \leq 1, 0 \leq Y \leq \frac12)$.
+:::
+:::
+
+:::
+:::
+
+## Showing independence from joint pdf
+
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 2.1
+:::
+::: ex-cont
+Let $f_{X,Y}(x,y)= 18 x^2 y^5$, for
+$0 \leq x \leq 1, \ 0 \leq y \leq 1$.
+
+1.  Are $X$ and $Y$ independent?
+:::
+:::
+
+:::
+:::
+
+## Finding CDF from two independent RVs
+
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 2.2
+:::
+::: ex-cont
+Let $f_{X,Y}(x,y)= 18 x^2 y^5$, for
+$0 \leq x \leq 1, \ 0 \leq y \leq 1$.
+
+2.  Find $F_{X,Y}(x,y)$.
+:::
+:::
+
+:::
+:::
+
+## Showing independence from joint pdf
+
+::: {.callout-important appearance="simple" icon="false"}
+Do this problem at home for extra practice. The solution is available in
+Meike's video!
+:::
+
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 3
+:::
+::: ex-cont
+Let $f_{X,Y}(x,y)= 2 e^{-(x+y)}$, for
+$0 \leq x \leq y$. Are $X$ and $Y$ independent?
+:::
+:::
+
+:::
+:::
+
+## Final statement on independence
+
+1.  If $f_{X,Y}(x,y)= g(x)h(y)$, where $g(x)$ and $h(y)$ are pdf's, then
+    $X$ and $Y$ are independent.
+
+    -   The domain of the joint pdf needs to be independent as well!!
+    
+ 
+ 
+ 
+ 
+
+2.  If $F_{X,Y}(x,y)= G(x)H(y)$, where $G(x)$ and $H(y)$ are cdf's, then
+    $X$ and $Y$ are independent.
+
+    -   The domain of the joint CDF needs to be independent as well!!
+    
+# Learning Objectives
+
+1. Calculate the conditional probability density from a joint pdf
+
+
+## Conditional probabilities we've seen before
+
+::: columns
+::: {.column width="40%"}
+**What do we know about conditional probabilities for events and discrete RVs?**
+ 
+ 
+
+For events:
+
+$$P(A | B) = \dfrac{P(A \cap B)}{P(B)}$$ 
+ 
+ 
+
+For discrete RVs: 
+$$p_{X|Y}(x|y) = P(X=x|Y=y) = \dfrac{p_{X,Y}(x,y)}{p_Y(y)}$$
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="50%"}
+**What does it mean for conditional densities of continuous RVs?**
+
+For continuous RVs:
+:::
+
+:::
+
+
+## Example starting from a joint pdf: first try!
+
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 1.1
+:::
+::: ex-cont
+Let $f_{X,Y}(x,y)= 5 e^{-x-3y}$, for
+$0 < y < \frac{x}{2}$.
+
+1.  Find $\mathbb{P}(2<X<10|Y=4)$
+
+:::
+:::
+
+:::
+:::
+
+## What is a conditional density?
+
+::: columns
+::: {.column width="45%"}
+::: definition
+::: def-title
+Definition: Conditional density
+:::
+::: def-cont
+The conditional density of a
+r.v. $X$ given $Y=y$, is $$f_{X|Y}(x|y)= \frac{f_{X,Y}(x,y)}{f_Y(y)},$$
+for $f_Y(y)> 0$
+:::
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="52%"}
+
+**Remarks**
+
+1.  It follows from the definition for the conditional density
+    $f_{X|Y}(x|y)$, that $$f_{X,Y}(x,y)= f_{X|Y}(x|y)f_Y(y).$$
+    
+ 
+ 
+ 
+
+2.  For a fixed value of $Y=y$, the conditional density $f_{X|Y}(x|y)$
+    is an actual pdf, meaning
+
+    -  $f_{X|Y}(x|y)\geq 0$ for all $x$ and $y$, and
+
+    -  $\displaystyle\int_{-\infty}^{\infty} f_{X|Y}(x|y)dx =1$.
+    
+:::
+:::
+
+## Example starting from a joint pdf: second try! (1/2)
+ 
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 1.1
+:::
+::: ex-cont
+Let $f_{X,Y}(x,y)= 5 e^{-x-3y}$, for
+$0 < y < \frac{x}{2}$.
+
+1.  Find $\mathbb{P}(2<X<10|Y=4)$
+
+:::
+:::
+
+:::
+:::
+
+## Example starting from a joint pdf: second try! (2/2)
+
+## Example starting from a joint pdf
+
+::: {.callout-important appearance="simple" icon="false"}
+Do this problem at home for extra practice. The solution is available in
+Meike's video!
+:::
+
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 1.2
+:::
+::: ex-cont
+Let $f_{X,Y}(x,y)= 5 e^{-x-3y}$, for
+$0 < y < \frac{x}{2}$.
+
+2.  Find $\mathbb{P}(X>20 |Y=5)$
+
+:::
+:::
+
+:::
+:::
+
+## Finding probability with conditional domain and pdf
+
+::: {.callout-important appearance="simple" icon="false"}
+Do this problem at home for extra practice. The solution is available in
+Meike's video!
+:::
+
+::: columns 
+::: {.column width="30%"}
+::: example
+::: ex-title
+Example 2
+:::
+::: ex-cont
+Randomly choose a point $X$ from the interval $[0,1]$,
+and given $X=x$, randomly choose a point $Y$ from $[0,x]$. Find
+$\mathbb{P}(0 < Y < \frac14)$.
+
+:::
+:::
+
+:::
+:::
+
+## Independence and conditional distributions
+
+ 
+ 
+**Question** What is $f_{X|Y}(x|y)$ if $X$ and $Y$ are independent?
+
+$$f_{X|Y}(x|y) = \dfrac{f_{X,Y}(x,y)}{f_y(y)} = \dfrac{f_{X}(x)f_y(y)}{f_y(y)} = f_{X}(x)$$
+
+ 
+ 
+ 
+ 
+
+-   If $f_{X|Y}(x|y)$ does not depend on $y$ (including the bounds/domain), then $X$ and $Y$
+are independent.
+

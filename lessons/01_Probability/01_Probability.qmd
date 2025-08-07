@@ -1,5 +1,5 @@
 ---
-title: "Lesson 1: Introduction to Probability and Simulation"
+title: "Lesson 1: Introduction to Probability"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#006a4e"
