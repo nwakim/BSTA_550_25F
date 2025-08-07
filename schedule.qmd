@@ -65,4 +65,4 @@ source(here("class_dates.R"))
 | 11 | `r w11d1 %>% format("%m/%d")` |  | Catch-up day |  |  |  |  |  |  |  |  |
 |  | [**`r hw9 %>% format("%m/%d")`**]{style="color:#006a4e;"} |  | [**Optional HW 9 due 11 pm**]{style="color:#006a4e;"} |  |  |  |  |  |  |  |  |
 
-: {.striped .hover tbl-colwidths="\[6, 6, 6, 46,6, 6, 6, 6, 6, 6, 6, 6\]"}
+: {.striped .hover tbl-colwidths="\[6, 6, 6, 40,12, 6, 6, 6, 6, 6, 6, 6\]"}
