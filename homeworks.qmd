@@ -4,16 +4,12 @@ format:
   html:
     page-layout: full
     link-external-newwindow: true
-    toc: true
-    toc-location: body
 ---
 
 ```{r setup, include=FALSE}
 library(here)
 source(here("class_dates.R"))
 ```
-
-## Files and timing information
 
 | Homework | Assignment | Assignment due (\@11pm) | Answers | Solutions | Sol'n Videos |
 |------------|------------|------------|------------|------------|------------|
