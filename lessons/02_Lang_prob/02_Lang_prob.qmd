@@ -21,29 +21,31 @@ source(here("class_dates.R"))
 ```
 
 
-## Learning Objectives
+# Learning Objectives
 
-building important definitions so that we have a mutual understanding of the language of probability
+1. Use set notation, Venn diagrams, and the concepts of unions, intersections, complements, and mutually exclusive events to represent and describe events.
 
-1.  Define basic terms related to events such as events, outcomes, and sample space.
+2. Apply the axioms of probability and related properties to calculate probabilities and prove simple results.
 
-2.  Use proper set notation for events
+4. Explain and use De Morgan’s Laws to simplify and solve probability problems.
 
-3.  Characterize possible outcomes, when something random occurs
-
-4.  Describe events into which outcomes can be grouped
-
-5.  Define important terms and rules within set theory such as unions, intersections, complements, mutually exclusive, and De Morgan's Laws
+5. Connect partitions and all rules of probability to calculate probabilities. 
 
 ## Where are we?
 
 ![](../img_slides/course_map.png){fig-align="center"}
 
-# Learning Objectives
-
 # Learning Objectives 
 
-Set Theory
+::: lob
+1. Use set notation, Venn diagrams, and the concepts of unions, intersections, complements, and mutually exclusive events to represent and describe events.
+:::
+
+2. Apply the axioms of probability and related properties to calculate probabilities and prove simple results.
+
+4. Explain and use De Morgan’s Laws to simplify and solve probability problems.
+
+5. Connect partitions and all rules of probability to calculate probabilities. 
 
 ## Set Theory (1/2)
 
@@ -111,9 +113,15 @@ Venn diagrams
 
 # Learning Objective
 
-Translate to probability function
+1. Use set notation, Venn diagrams, and the concepts of unions, intersections, complements, and mutually exclusive events to represent and describe events.
 
-# Probability Axioms
+::: lob
+2. Apply the axioms of probability and related properties to calculate probabilities and prove simple results.
+:::
+
+4. Explain and use De Morgan’s Laws to simplify and solve probability problems.
+
+5. Connect partitions and all rules of probability to calculate probabilities. 
 
 ## Probability Axioms
 
@@ -153,9 +161,6 @@ The probability of at least one $A_i$ is the sum of the individual probabilities
 :::
 :::
 
-
-
-# Some probability properties
 
 ## Some probability properties
 
@@ -360,7 +365,15 @@ $\mathbb{P}(A \cup B \cup C) = \mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \
 
 # Learning Objectives
 
-de morgans laws
+1. Use set notation, Venn diagrams, and the concepts of unions, intersections, complements, and mutually exclusive events to represent and describe events.
+
+2. Apply the axioms of probability and related properties to calculate probabilities and prove simple results.
+
+::: lob
+4. Explain and use De Morgan’s Laws to simplify and solve probability problems.
+:::
+
+5. Connect partitions and all rules of probability to calculate probabilities. 
 
 ## De Morgan's Laws
 
@@ -461,11 +474,17 @@ $$\bigcup\limits_{i=1}^{n}A_i^C = \Big(\bigcap\limits_{i=1}^{n}A_i\Big)^C$$
 
     -   This is not obvious right now, but we will see in the coming chapters why.
     
-# From probability slides
+# Learning Objectives
 
+1. Use set notation, Venn diagrams, and the concepts of unions, intersections, complements, and mutually exclusive events to represent and describe events.
 
+2. Apply the axioms of probability and related properties to calculate probabilities and prove simple results.
 
-# Partitions
+4. Explain and use De Morgan’s Laws to simplify and solve probability problems.
+
+::: lob
+5. Connect partitions and all rules of probability to calculate probabilities. 
+:::
 
 ## Partitions
 
@@ -503,8 +522,6 @@ Example 2
 :::
 
 Creating partitions is sometimes used to help calculate probabilities, since by Axiom 3 we can add the probabilities of disjoint events.
-
-# Venn Diagram Probabilities
 
 ## Weekly medications
 

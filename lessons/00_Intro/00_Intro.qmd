@@ -60,9 +60,7 @@ source(here("class_dates.R"))
 
 ## Some important tasks
 
--   [Join the Slack page!](https://join.slack.com/t/bsta550/shared_invite/zt-2qtfo9s8j-j6ozEaYdT7yy1KuHoT9Mhw)
-
--   Star the class website: <https://nwakim.github.io/BSTA_550_F24/>
+-   Star the class website: <https://nwakim.github.io/BSTA_550_25F/>
 
 -   Complete the [WhenIsGood](https://whenisgood.net/3giiafw) for office hours
 

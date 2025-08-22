@@ -49,6 +49,22 @@ div.cell-output-stdout {
 
 // My added divs
 
+
+// Learning Objectives
+.lob{
+  margin-left: 0em;
+  padding-left:  25px;
+  padding-top:  5px;
+  padding-bottom: 0.1em;
+  color: white;
+  background-color: $green;
+  font-size: 1em;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  border-radius: 15px;
+}
+
 // Definitions 
 .definition{
   margin: 1em 0;
@@ -246,6 +262,36 @@ div.cell-output-stdout {
 }
 
 .fact-cont {
+  margin-left: 0em;
+  padding-top: 5px;
+  padding-left: 15px;
+  color: black;
+  background-color: white;
+  border-bottom-right-radius: 10px;
+}
+
+// extra
+.extra{
+  border-radius: 10px;
+  margin: 1em 0;
+  border: 3px solid #E89543;
+}
+
+.ext-title {
+  margin-left: 0em;
+  padding-left:  15px;
+  padding-top:  5px;
+  padding-bottom: 0.1em;
+  color: white;
+  background-color: #E89543;
+  font-size: 1em;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  //background-image: url("goal.png");
+}
+
+.ext-cont {
   margin-left: 0em;
   padding-top: 5px;
   padding-left: 15px;

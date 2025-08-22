@@ -26,9 +26,11 @@ library(tidyverse)
 
 # Learning Objectives
 
-1.  probability and randomness
+1. Define key probability and its relationship to randomness. 
 
-3. 
+2. Use simple simulations (e.g., coin flips in R) to illustrate randomness in equally likely outcomes.
+
+3. Identify sample spaces and events for basic experiments, and define probability calculations. 
 
 ## Where are we?
 
@@ -36,7 +38,13 @@ library(tidyverse)
 
 # Learning Objectives
 
-probability and randomness
+::: lob
+1. Define key probability and its relationship to randomness. 
+:::
+
+2. Use simple simulations (e.g., coin flips in R) to illustrate randomness in equally likely outcomes.
+
+3. Identify sample spaces and events for basic experiments, and define probability calculations. 
 
 ## What is probability? (1/2)
 
@@ -60,6 +68,16 @@ probability and randomness
 - We're going off assumption that we all have some understanding of probability, so stop me if you are confused!
 
 ![](./images/Math_Lady_meme.png){fig-align="center"}
+
+# Learning Objectives
+
+1. Define key probability and its relationship to randomness. 
+
+::: lob
+2. Use simple simulations (e.g., coin flips in R) to illustrate randomness in equally likely outcomes.
+:::
+
+3. Identify sample spaces and events for basic experiments, and define probability calculations. 
 
 ## Probability and randomness
 
@@ -236,6 +254,14 @@ sum( sample(coin, 100000, replace = T) == "heads" ) / 100000
 - It is often how statisticians "run" experiments on their methods of hypotheses
 
 # Learning Objectives
+
+1. Define key probability and its relationship to randomness. 
+
+2. Use simple simulations (e.g., coin flips in R) to illustrate randomness in equally likely outcomes.
+
+::: lob
+3. Identify sample spaces and events for basic experiments, and define probability calculations. 
+:::
 
 ## Outcomes, events, sample spaces
 
