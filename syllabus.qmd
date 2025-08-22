@@ -17,7 +17,7 @@ editor_options:
   font-size: 40px;
   color: #006a4e;
   background-color: #fff;
-  padding: 8px;
+  padding: 0px;
 }
 
 .description{

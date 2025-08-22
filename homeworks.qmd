@@ -1,5 +1,6 @@
 ---
 title: "Homework"
+date-modified: "today"
 format: 
   html:
     page-layout: full
