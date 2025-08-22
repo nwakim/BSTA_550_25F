@@ -1,0 +1,29 @@
+---
+title: "Quiz Info"
+date-modified: "today"
+format: 
+  html:
+    page-layout: full
+    link-external-newwindow: true
+---
+
+```{r setup, include=FALSE}
+library(here)
+source(here("class_dates.R"))
+```
+
+Below is the general timing and lessons for each quiz:
+
+| Quiz | Lessons | Open Date \@ 3pm | Close Date \@ 11pm |
+|------------------|------------------|-------------------|-------------------|
+| 1 | 1-6 | `r q1_open %>% format("%m/%d")` | `r q1_close %>% format("%m/%d")` |
+| 2 | 7-12 | `r q2_open %>% format("%m/%d")` | `r q2_close %>% format("%m/%d")` |
+| 3 | 13-18 | `r q3_open %>% format("%m/%d")` | `r q3_close %>% format("%m/%d")` |
+
+More information specific to each quiz will be posted below.
+
+### Quiz 1
+
+### Quiz 2
+
+### Quiz 3

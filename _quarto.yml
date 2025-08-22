@@ -18,6 +18,8 @@ website:
         text: Instructor
       - href: homeworks.qmd
         text: Homework
+      - href: quiz.qmd
+        text: Quizzes
 
 execute:
   freeze: auto

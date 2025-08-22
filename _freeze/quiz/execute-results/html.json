@@ -1,0 +1,15 @@
+{
+  "hash": "b89238d9672905eaaf479b217756de9e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Quiz Info\"\ndate-modified: \"today\"\nformat: \n  html:\n    page-layout: full\n    link-external-newwindow: true\n---\n\n\n\n\n\nBelow is the general timing and lessons for each quiz:\n\n| Quiz | Lessons | Open Date \\@ 3pm | Close Date \\@ 11pm |\n|------------------|------------------|-------------------|-------------------|\n| 1 | 1-6 | 10/22 | 10/26 |\n| 2 | 7-12 | 11/05 | 11/09 |\n| 3 | 13-18 | 12/03 | 12/07 |\n\nMore information specific to each quiz will be posted below.\n\n### Quiz 1\n\n### Quiz 2\n\n### Quiz 3\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
