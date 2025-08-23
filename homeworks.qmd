@@ -5,6 +5,7 @@ format:
   html:
     page-layout: full
     link-external-newwindow: true
+    toc: false
 ---
 
 ```{r setup, include=FALSE}

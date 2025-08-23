@@ -409,7 +409,7 @@ Nicky Wakim
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>), <span class="at">size =</span> <span class="dv">2</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 3 3</code></pre>
+<pre><code>[1] 1 2</code></pre>
 </div>
 </div>
 </section></section>
@@ -469,8 +469,8 @@ Nicky Wakim
 <span id="cb5-6"><a></a><span class="fu">replicate</span>(reps, <span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
-[1,]    3    4    4    1    4    4    1    1    1     1
-[2,]    1    2    2    4    2    1    2    4    4     3</code></pre>
+[1,]    1    4    1    1    4    2    4    4    1     3
+[2,]    3    2    2    3    1    1    1    1    1     3</code></pre>
 </div>
 </div>
 <ul>
@@ -494,11 +494,11 @@ Nicky Wakim
 <span id="cb7-10"><a></a><span class="co"># Display the first 10 values for X and Y</span></span>
 <span id="cb7-11"><a></a><span class="fu">head</span>(X_simulated, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 6 3 8 5 7 6 3 4 6 8</code></pre>
+<pre><code> [1] 3 6 8 4 5 8 4 5 4 6</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">head</span>(Y_simulated, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 4 2 4 4 4 4 2 2 4 4</code></pre>
+<pre><code> [1] 2 3 4 2 3 4 3 4 2 3</code></pre>
 </div>
 </div>
 

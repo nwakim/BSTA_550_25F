@@ -17903,14 +17903,14 @@
     "href": "lessons/03_Simulations/03_Simulations.html#simulating-outcomes",
     "title": "Lesson 3: Introduction to Simulations",
     "section": "Simulating Outcomes",
-    "text": "Simulating Outcomes\n\nThe sample() function is a powerful tool for simulating draws from a box model.\n\n\n# A box model for two rolls of a fair four-sided die\nrolls &lt;- sample(x = c(1, 2, 3, 4), size = 2, replace = TRUE)\n\n# Simulate 10 repetitions, with each row representing a pair of rolls\nreps &lt;- 10\nreplicate(reps, sample(x = 1:4, size = 2, replace = TRUE))\n\n     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]\n[1,]    3    4    4    1    4    4    1    1    1     1\n[2,]    1    2    2    4    2    1    2    4    4     3\n\n\n\nsample() can handle both with (replace = TRUE) and without (replace = FALSE) replacement."
+    "text": "Simulating Outcomes\n\nThe sample() function is a powerful tool for simulating draws from a box model.\n\n\n# A box model for two rolls of a fair four-sided die\nrolls &lt;- sample(x = c(1, 2, 3, 4), size = 2, replace = TRUE)\n\n# Simulate 10 repetitions, with each row representing a pair of rolls\nreps &lt;- 10\nreplicate(reps, sample(x = 1:4, size = 2, replace = TRUE))\n\n     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]\n[1,]    1    4    1    1    4    2    4    4    1     3\n[2,]    3    2    2    3    1    1    1    1    1     3\n\n\n\nsample() can handle both with (replace = TRUE) and without (replace = FALSE) replacement."
   },
   {
     "objectID": "lessons/03_Simulations/03_Simulations.html#simulating-random-variables",
     "href": "lessons/03_Simulations/03_Simulations.html#simulating-random-variables",
     "title": "Lesson 3: Introduction to Simulations",
     "section": "Simulating Random Variables",
-    "text": "Simulating Random Variables\nWe can apply functions to the simulated outcomes to get the values of our random variables.\nLet’s simulate X (sum) and Y (max).\n\nreps &lt;- 1000\nsimulations &lt;- replicate(reps, sample(x = 1:4, size = 2, replace = TRUE))\n\n# Calculate X (the sum) for each repetition\nX_simulated &lt;- apply(simulations, 2, sum)\n\n# Calculate Y (the max) for each repetition\nY_simulated &lt;- apply(simulations, 2, max)\n\n# Display the first 10 values for X and Y\nhead(X_simulated, 10)\n\n [1] 6 3 8 5 7 6 3 4 6 8\n\nhead(Y_simulated, 10)\n\n [1] 4 2 4 4 4 4 2 2 4 4"
+    "text": "Simulating Random Variables\nWe can apply functions to the simulated outcomes to get the values of our random variables.\nLet’s simulate X (sum) and Y (max).\n\nreps &lt;- 1000\nsimulations &lt;- replicate(reps, sample(x = 1:4, size = 2, replace = TRUE))\n\n# Calculate X (the sum) for each repetition\nX_simulated &lt;- apply(simulations, 2, sum)\n\n# Calculate Y (the max) for each repetition\nY_simulated &lt;- apply(simulations, 2, max)\n\n# Display the first 10 values for X and Y\nhead(X_simulated, 10)\n\n [1] 3 6 8 4 5 8 4 5 4 6\n\nhead(Y_simulated, 10)\n\n [1] 2 3 4 2 3 4 3 4 2 3"
   },
   {
     "objectID": "lessons/03_Simulations/03_Simulations.html#types-of-simulations",
@@ -17938,7 +17938,7 @@
     "href": "lessons/03_Simulations/03_Simulations.html#how-do-we-extend-a-single-simulation-to-useful-simulations",
     "title": "Lesson 3: Introduction to Simulations",
     "section": "How do we extend a single simulation to useful simulations?",
-    "text": "How do we extend a single simulation to useful simulations?\n\nWe can also use R to sample from the box or spinner\nThe sample() function in R allows us to simulate equally likely draws\nFor example, we can simulate a coin flip\n\n\nsample(x = c(\"H\", \"T\"), size = 1, replace = TRUE)\n\n[1] \"T\"\n\n\n\nWe can simulate our example of the four sided die\n\n\nsample(x = c(1, 2, 3, 4), size = 2, replace = TRUE)\n\n[1] 3 3"
+    "text": "How do we extend a single simulation to useful simulations?\n\nWe can also use R to sample from the box or spinner\nThe sample() function in R allows us to simulate equally likely draws\nFor example, we can simulate a coin flip\n\n\nsample(x = c(\"H\", \"T\"), size = 1, replace = TRUE)\n\n[1] \"T\"\n\n\n\nWe can simulate our example of the four sided die\n\n\nsample(x = c(1, 2, 3, 4), size = 2, replace = TRUE)\n\n[1] 1 2"
   },
   {
     "objectID": "homeworks.html#file-naming",
@@ -17959,6 +17959,6 @@
     "href": "quiz.html",
     "title": "Quiz Info",
     "section": "",
-    "text": "Below is the general timing and lessons for each quiz:\n\n\n\n\n\n\n\n\n\nQuiz\nLessons\nOpen Date @ 3pm\nClose Date @ 11pm\n\n\n\n\n1\n1-6\n10/22\n10/26\n\n\n2\n7-12\n11/05\n11/09\n\n\n3\n13-18\n12/03\n12/07\n\n\n\nMore information specific to each quiz will be posted below.\n\nQuiz 1\n\n\nQuiz 2\n\n\nQuiz 3"
+    "text": "Below is the general timing and lessons for each quiz:\n\n\n\n\n\n\n\n\n\n\nQuiz\nLessons\nHWs\nOpen Date @ 3pm\nClose Date @ 11pm\n\n\n\n\n1\n1-6\n1-2\n10/22\n10/26\n\n\n2\n7-12\n3-4\n11/05\n11/09\n\n\n3\n13-18\n5-7\n12/03\n12/07\n\n\n\nQuizzes will be mostly coneptual questions with 5-10 multiple choice questions. There will be one open-ended question that will be taken from one of the homeworks.\nMore information specific to each quiz will be posted below.\n\nQuiz 1\n\n\nQuiz 2\n\n\nQuiz 3"
   }
 ]
