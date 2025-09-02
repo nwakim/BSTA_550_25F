@@ -1,8 +1,8 @@
 {
-  "hash": "d7318b15f16e13d3537f1e767f3e53ef",
+  "hash": "acc88a025e35b601b526ac97c083f28e",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Quiz Info\"\ndate-modified: \"today\"\nformat: \n  html:\n    page-layout: full\n    link-external-newwindow: true\n---\n\n\n\n\n\nBelow is the general timing and lessons for each quiz:\n\n| Quiz | Lessons | HWs | Open Date \\@ 3pm | Close Date \\@ 11pm |\n|------------------|------------------|----------------|------------------|------------------|\n| 1 | 1-6 | 1-2 | 10/22 | 10/26 |\n| 2 | 7-12 | 3-4 | 11/05 | 11/09 |\n| 3 | 13-18 | 5-7 | 12/03 | 12/07 |\n\nQuizzes will be mostly coneptual questions with 5-10 multiple choice questions. There will be one open-ended question that will be taken from one of the homeworks.\n\nMore information specific to each quiz will be posted below.\n\n### Quiz 1\n\n### Quiz 2\n\n### Quiz 3\n",
+    "markdown": "---\ntitle: \"Quiz Info\"\ndate-modified: \"today\"\nformat: \n  html:\n    page-layout: full\n    link-external-newwindow: true\n---\n\n\n\n\n\n\nBelow is the general timing and lessons for each quiz:\n\n| Quiz | Lessons | HWs | Open Date \\@ 3pm | Close Date \\@ 11pm |\n|----|----|----|----|----|\n| 1 | 1-6 | 1-2 | 10/22 | 10/26 |\n| 2 | 7-12 | 3-4 | 11/05 | 11/09 |\n| 3 | 13-18 | 5-7 | 12/03 | 12/07 |\n\nQuizzes will be mostly coneptual questions with 5-10 multiple choice questions. There will be one open-ended question that will be taken from one of the homeworks.\n\nMore information specific to each quiz will be posted below.\n\n### Quiz 1\n\n### Quiz 2\n\n### Quiz 3\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
