@@ -13,7 +13,7 @@ year = "2025"
 ## Week 1 dates
 w1d1 = cal_dates[1]
 w1d2 = cal_dates[3]
-hw0 = cal_dates[8]
+hw0 = cal_dates[4]
 
 ## Week 2 dates
 w2d1 = cal_dates[8]

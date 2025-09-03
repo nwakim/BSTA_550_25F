@@ -42,4 +42,4 @@ A total of 1 point will be given for a complete homework. The following rubric w
 
 |   | 1 point | 0 points |
 |------------------------|------------------------|------------------------|
-| Completeness | All problems and parts (like a, b, c, etc.) are thoroughly attempted. Answers can be incorrect or correct. For parts with longer processes and calculations, solution set up and calculations are required. | Entire problems or parts are skipped. -OR- The full process of a problem is not completed through the calculation. |
+| Completeness | 75% of the question parts are thoroughly worked out and have an answer. “Question parts” means the sub-questions labeled “Part \_." Answers can be incorrect or correct. For parts with longer processes and calculations, solution set up and calculations are required. | Less than 75% of question parts are thoroughly worked out. Attempts do not count as thoroughly worked out. |
