@@ -30,8 +30,9 @@ editor_options:
 
 ## Key Course Info
 
--   If an assignment on Sakai is closed or you are submitting late work, please email me your work
--   Attendance policy: attend in person and fill out exit tickets for 12 out of the 19 classes
+-   **If an assignment on Sakai is closed** or you are submitting late work, please email me AND the TAs your work
+-   **For homework, you will have TWO no-questions-asked, 3-day extensions:** one for the first assignment, and one for either the solutions or presentation. You just need to send me and the TAs a quick email saying "I am using my no-questions-asked extension for Homework \_\_ assignment."
+-   **Attendance policy:** to be determined from homework 0 responses
 -   The class will end on December 10, 2025. **All coursework is expected to be completed by December 12, 2025 at 11pm.**
 
 ## Description
@@ -62,7 +63,8 @@ Wednesdays    10:30 AM -- 12:00 PM PST in room VPT 620M
 
 ### Known Exceptions
 
-Wednesday, November 26    No class
+-   Wednesday, November 26: No class
+-   Monday, December 1: Virtual class
 
 ```{r}
 #| echo: false
@@ -73,19 +75,19 @@ g=3
 
 ### Textbook
 
-#### Introduction to Probability
+#### An Introduction to Probability and Simulation
 
--   **Authors:** Mark Daniel Ward and Ellen Gundlach
+-   **Author:** Kevin Ross
 
--   **Publisher:** W. H. Freeman
+-   **Updated:** 8/11/2022
 
--   **Edition:** 1st
-
--   **ISBN-13**: 978-0716771098
-
--   [Textbook in Sakai](https://sakai.ohsu.edu/access/content/group/BSTA-550-1-14926-F24/introduction-to-probability_compress.pdf)
+-   [Textbook available online](https://bookdown.org/kevin_davisross/probsim-book/)
 
 #### Supplemental Readings (Optional)
+
+-   Introduction to Probability, Mark Daniel Ward and Ellen Gundlach, 1st edition
+
+    -   See shared folder for textbook access
 
 -   *Statistical Inference*, Casella and Berger, 2nd ed. (This will be the textbook for BSTA 551-552 Math Stat.)
 
@@ -136,41 +138,25 @@ Your learning and practicing of R will hopefully not be limited to this course. 
 ##### Useful online R resources
 
 -   [R for the rest of us](https://rfortherestofus.com/)
-
 -   Statistical tools for high-throughput data analysis. [ggplot2 essentials](http://www.sthda.com/english/wiki/ggplot2-essentials#google_vignette)
-
 -   [R-bloggers](http://www.r-bloggers.com/)
-
 -   Stack Overflow for troubleshooting
-
 -   [R Graphical Manual](https://www.imsbio.co.jp/RGM/R_image_list)
-
 -   [Quick-R](http://www.statmethods.net/). Accessing the power of R
-
 -   [R for SAS, STATA, and SPSS Users](http://r4stats.com/)
-
 -   [ggplot2](https://ggplot2.tidyverse.org/)
-
 -   [Learn R 4 free](https://www.learnr4free.com/en/index.html)
-
 -   [Join a local R user groups](https://www.r-consortium.org/blog/2019/09/09/r-community-explorer-r-user-groups)
-
 -   [Learning Machines](https://blog.ephorie.de/learning-r-the-ultimate-introduction-incl-machine-learning)
 
 #### Online R courses to complement or refresh material from class
 
 -   [R for the rest of us](https://rfortherestofus.com/)
-
 -   Coursera: [R programming](https://www.coursera.org/learn/r-programming)
-
 -   edX: [R basics](https://www.edx.org/course/data-science-r-basics)
-
 -   Data Carpentry: For Biologists
-
 -   Data Carpentry: [For Ecologists](https://datacarpentry.org/lessons/#ecology-workshop)
-
 -   [Psychiatric R](https://psyteachr.github.io/)
-
 -   [R coder](https://r-coder.com/)
 
 ## Assessment
@@ -203,17 +189,17 @@ Letter grades will be assigned roughly according to the following scheme: A (\>=
 
 Grades will be based on homework assignments, midterm exam, class "attendance", and final exam, as follows:
 
-+:-------------------------:+:----------------------:+:--------------:+:-----------------------------:+
-| **Course activity**       | **Type of Assessment** | **Due Dates**  | **Percentage of final grade** |
-+---------------------------+------------------------+----------------+-------------------------------+
-| Homework Assignments      | Formative              | Every week     | 50%                           |
-+---------------------------+------------------------+----------------+-------------------------------+
-| Quizzes                   | Summative              | Every 3 weeks  | 36%                           |
-+---------------------------+------------------------+----------------+-------------------------------+
-| Exit tickets (Attendance) | N/A                    | Twice Weekly   | 12%                           |
-+---------------------------+------------------------+----------------+-------------------------------+
-| Mid-Quarter Feedback      | N/A                    | 10/28          | 2%                            |
-+---------------------------+------------------------+----------------+-------------------------------+
++:-------------------------:+:----------------------:+:-------------:+:-----------------------------:+
+| **Course activity**       | **Type of Assessment** | **Due Dates** | **Percentage of final grade** |
++---------------------------+------------------------+---------------+-------------------------------+
+| Homework Assignments      | Formative              | Every week    | 50%                           |
++---------------------------+------------------------+---------------+-------------------------------+
+| Quizzes                   | Summative              | Every 3 weeks | 36%                           |
++---------------------------+------------------------+---------------+-------------------------------+
+| Exit tickets (Attendance) | N/A                    | Twice Weekly  | 12%                           |
++---------------------------+------------------------+---------------+-------------------------------+
+| Mid-Quarter Feedback      | N/A                    | 10/28         | 2%                            |
++---------------------------+------------------------+---------------+-------------------------------+
 
 #### Homework grading
 
@@ -311,13 +297,13 @@ If you would like any other course resources explained in this format, please re
 
 I encourage you to make your best effort to submit all assignments on time, but I understand circumstances arise that are beyond our control. Please see this [Swansea University's page on extenuating circumstances](https://myuni.swansea.ac.uk/academic-life/extenuating-circumstances/#how-can-the-university-support-me-and-what-should-i-do=is-expanded&what-are-extenuating-circumstances=is-expanded&what-isnt-an-extenuating-circumstance=is-expanded&what-supporting-evidence-is-required=is-expanded&who-should-i-contact-to-make-an-extenuating-circumstances-application=is-expanded&who-will-make-a-decision-on-my-application=is-expanded) for some examples. Not all circumstances are covered here, so please reach out if you have questions. 
 
--   The class will end on December 9, 2024. **All coursework is expected to be completed by December 13, 2024 at 11pm.** If you have *extenuating circumstances*, and need additional time to complete class assignments, please contact me. Together, we will come up with a plan for completion and to sort out registrar logistics.
+-   The class will end on December 10, 2025. **All coursework is expected to be completed by December 12, 2025 at 11pm.** If you have *extenuating circumstances*, and need additional time to complete class assignments, please contact me. Together, we will come up with a plan for completion and to sort out registrar logistics.
 
 -   If you have extenuating circumstances that may jeopardize your ability to do work for several weeks, please contact me. We will come up with a plan to keep you on track in the course and prevent any delay in your education.
 
--   For homework, I ask you to email me and the TAs directly about any late submissions. You can explain your circumstances and may ask us for an extension. I am very likely to grant an extension, but **I want to emphasize how important it will be to stay on track with your homework**! Your group is depending on you, and delaying homework may only add stress on the next homework!
-
 -   For homework, you will have TWO no-questions-asked, 3-day extensions: one for the first assignment part and one for either the solutions or presentation. Please use this wisely! You just need to send me a quick email saying "I am using my no-questions-asked extension for Homework \_\_ assignment/solutions/presentation."
+
+-   For homework, I ask you to email me directly about any late submissions. You can explain your circumstances and may ask us for an extension. I am very likely to grant an extension, but **I want to emphasize how important it will be to stay on track with your homework**! Your group is depending on you, and delaying homework may only add stress on the next homework!
 
 -   If you have a emergency involving your self, family, pet, friend, classmate, or anything/one deemed important to you, **please do not worry about immediately contacting me**. We can work something out after your emergency. If I contact you during an emergency, it is only because I am worried, and you do NOT need to respond until you are able. 
 
@@ -416,9 +402,9 @@ E-mail should be used only for messages that are private in nature. Please send 
 
 ## Further Student Resources
 
-### SPH Writing Lab
+### Academic Success Center
 
-The School of Public Health Writing Support serves graduate students (master's and PhD) in SPH, offering help on all professional writing tasks, including class papers, dissertations, job application documents, personal statements, and grant applications, to name a few. Leslie Bienen, MFA, DVM offers one-on-one writing support and other workshops. Appointments are virtual for the time being. You can make an appointment by contacting [writingsupportsph\@pdx.edu](mailto:writingsupportsph@pdx.edu) or making an appointment through [Calendly](https://calendly.com/writingsupportsph/writing-meeting).
+OHSU houses an Academic Success Center for all students. Their mission is to create a center for learning support where ALL learners can discover the resources and community that they need for finding academic success at OHSU. They provide many services to students, including: learning skills support, writing support, English for speakers of other languages (ESOL) support, and individual and group content tutoring. [Check out the SharePoint site for the Academic Success Center.](https://ohsuitg.sharepoint.com/sites/AcademicSuccessCenter)
 
 ### Student Wellness
 
@@ -426,7 +412,7 @@ I am committed to supporting the physical and emotional well-being of my student
 
 ### Support for Food Insecurity
 
-Students across the country experience food insecurity at alarming rates. OHSU and PSU both provide a list of resources to help combat food insecurity. Of note, the Committee to Improve Student Food Security (CISFS) at PSU provides a [Free Food Market](https://www.pdx.edu/student-access-center/free-food-market) on the second Monday of each month. OHSU also provides [SNAP Enrollment Assistance](https://o2.ohsu.edu/student-central/health-wellness/student-food-resources/snap.cfm). The [Supplemental Nutrition Assistance Program (SNAP)](https://oregonhunger.org/snap-for-students/) allocates money towards food for individuals below a certain income level. If you make less than \$2,430 monthly, you may wish to enroll.
+Students across the country experience food insecurity at high rates. OHSU and PSU both provide a list of resources to help combat food insecurity. Of note, the Committee to Improve Student Food Security (CISFS) at PSU provides a [Free Food Market](https://www.pdx.edu/student-access-center/free-food-market) on the second Monday of each month. OHSU also provides [SNAP Enrollment Assistance](https://o2.ohsu.edu/student-central/health-wellness/student-food-resources/snap.cfm). The [Supplemental Nutrition Assistance Program (SNAP)](https://oregonhunger.org/snap-for-students/) allocates money towards food for individuals below a certain income level. If you make less than \$2,430 monthly, you may wish to enroll.
 
 ### Support for Students with Children
 
