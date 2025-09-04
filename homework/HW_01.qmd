@@ -1,9 +1,7 @@
 ---
 title: "Homework 1"
 subtitle: "BSTA 550"
-description: "Due: Thursday October 10, 2024"
 date-modified: "today"
-categories: [""]
 format: 
   html: 
     link-external-newwindow: true
@@ -12,6 +10,20 @@ format:
 editor_options: 
   chunk_output_type: console
 ---
+
+
+```{r}
+#| label: "setup"
+#| include: false
+knitr::opts_chunk$set(echo = TRUE)
+
+library(here)
+source(here("class_dates.R"))
+```
+
+::: {.callout-tip appearance="minimal"}
+**Due `r hw1 %>% format("%m/%d")`**
+:::
 
 ## Directions
 
@@ -27,10 +39,6 @@ editor_options:
 |    1    |              |              \# 3, 7, 9, 11              |
 |    2    | NTB \# 1, 30 |     \# 1, 4, 8, 16, 19, 23, NTB \# 2     |
 :::
-
-## Group assignments
-
-[Please fill out this form to help me configure groups.](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUOURLVVRKR0pSWTU0M0IwQ1I3SUdUMTlDNy4u) I will first pair you based on people on your preferred list, then I will group pairs to balance working styles, R skills, and statistics exposure.
 
 ## Non-textbook problems (NTB)
 
