@@ -1,6 +1,6 @@
 ---
 title: "Key Info and Announcements"
-date: "09/30/2024"
+subtitle: "Welcome"
 date-modified: "today"
 format: 
   html:
@@ -11,7 +11,15 @@ editor_options:
 
 ## Announcements
 
--   Welcome! Here is where I will put announcements for class!
+- Welcome! I will put announcements and reminders on these pages!
+- Thanks for being patient while I've been out of the country!
+
+## Key dates
+
 - Homework 0 is due THIS THURSDAY at 11pm!
+
+## Last class
+
+- There wasn't one heh
 
 
