@@ -22,13 +22,13 @@ source(here("class_dates.R"))
 
 # Learning Objectives
 
-1. intro to simulations
-2. discrete RVs simmies
-3. continuous RVs simmies
+1.  intro to simulations
+2.  discrete RVs simmies
+3.  continuous RVs simmies
 
 ## Recall: Outcomes, events, sample spaces
 
-::: definition
+::::: definition
 ::: def-title
 Definition: Outcome
 :::
@@ -36,9 +36,9 @@ Definition: Outcome
 ::: def-cont
 The possible results in a random phenomenon.
 :::
-:::
+:::::
 
-::: definition
+::::: definition
 ::: def-title
 Definition: Sample Space
 :::
@@ -46,9 +46,9 @@ Definition: Sample Space
 ::: def-cont
 The **sample space** $S$ is the set of *all* outcomes
 :::
-:::
+:::::
 
-::: definition
+::::: definition
 ::: def-title
 Definition: Event
 :::
@@ -56,34 +56,103 @@ Definition: Event
 ::: def-cont
 An **event** is a *collection of some* outcomes. An event can include multiple outcomes or no outcomes (a subset of the sample space).
 :::
-:::
+:::::
 
 When thinking about events, think about outcomes that you might be asking the probability of. For example, what is the probability that you get a heads or a tails in one flip? (Answer: 1)
+
+## We need to understand random variables 
+
+::: definition
+::: def-title
+Definition: Random Variable
+:::
+
+::: def-cont
+For a given sample space $S$, a **random variable** (r.v.) is a **function** whose domain is $S$ and whose range is the set of real numbers $\mathbb{R}$. **A random variable assigns a real number to each outcome in the sample space.**
+:::
+:::
+
+-   A random variable's value is completely determined by the outcome $\omega$, where $\omega \in S$
+
+    -   What is *random* is the outcome $\omega$
+
+-   A random variable is a function from the sample space (with outcomes $\omega$) to the set of real numbers
+
+    -   We typically write $X$ instead of $X(\omega)$, where $X$ is our random variable
+    
+- Thus, we can take our sample space (all outcomes) and make functional transformations to it
+
+## The cool (and tricky) thing about random variables
+
+Do you remember our coin example from Lesson 1? We tossed one or two coins.
+
+- For each coin, the **sample space** is heads and tails ($S = {H,T}$)
+- If we want the **sample space** for both coins in order, then we have combinations ($S={(H,H), (H,T), (T,H), (T,T)}$)
+
+ 
+
+We make the **random variable** a *function* of the **sample space**.
+
+- For one coin toss, we can say random variable $X$ is $1$ if we toss a heads ($\omega = \text{H}$) and $X=0$ if we get a tails
+- For the two coins, we can say $X$ is the count of heads, so if $\omega = \text{(H, T)}$, $X=1$
+    
+## Types of random variables
+
+There are two types of random variables:
+
+::: columns
+::: column
+
+::: theorem
+::: thm-cont
+-   [**Discrete random variables** (RVs)]{style="color:#20c997;"}: the set of possible values is either finite or can be put into a countably infinite list
+
+    -   You could *theoretically* list the specific possible outcomes that the variable can take
+
+    -   If you sum the rolls of three dice, you must get a whole number. For example, you can't get any number between 3 and 4.
+:::
+:::
+
+:::
+::: column
+
+::: axiom
+::: axiom-cont
+-   [**Continuous random variables** (RVs)]{style="color:#d9534f;"}: take on values from continuous *intervals*, or unions of continuous intervals
+
+    -   Variable takes on a range of values, but there are infinitely possible values within the range
+
+    -   If you keep track of the time you sleep, you can sleep for 8 hours or 7.9 hours or 7.99 hours or 7.999 hours ...
+:::
+:::
+:::
+:::
 
 ## What is a simulation?
 
 A **probability model** for a random phenomenon includes a sample space, events, random variables, and a probability measure.
 
-::: definition
+::::: definition
 ::: def-title
 Simulation
 :::
+
 ::: def-cont
 **Simulation** involves using a probability model to artificially recreate a random phenomenon, many times, usually using a computer.
 :::
-:::
+:::::
 
 We simulate outcomes and values of random variables according to the model's assumptions.
 
 ## The Foundation: Relative Frequencies
-- Probabilities can be interpreted as **long-run relative frequencies**
-- By simulating a random phenomenon a large number of times, we can approximate the probability of an event by calculating the relative frequency of its occurrence.
-- Simulation is a powerful tool for approximating probabilities, distributions of random variables, long-run averages, and other characteristics.
 
+-   Probabilities can be interpreted as **long-run relative frequencies**
+-   By simulating a random phenomenon a large number of times, we can approximate the probability of an event by calculating the relative frequency of its occurrence.
+-   Simulation is a powerful tool for approximating probabilities, distributions of random variables, long-run averages, and other characteristics.
 
 ## Still confused about long-run relative frequencies?
 
-[Seeing Theory, Chapter 1: Basic Probability, Chance Events](https://seeing-theory.brown.edu/basic-probability/index.html)
+[Seeing Theory, Chapter 1: Basic Probability, Chance Events](https://seeing-theory.brown.edu/basic-probability/index.html) We'll flip a coin many many times
 
 ```{css}
 #| echo: false
@@ -99,153 +168,123 @@ We simulate outcomes and values of random variables according to the model's ass
 <iframe id="frame" src="https://seeing-theory.brown.edu/basic-probability/index.html"></iframe>
 ```
 
-
-## 4 (S)teps of a Simulation
-
-::: proposition
-::: prop-title
-1. Set up
-:::
-::: prop-cont
-Define the probability space and related random variables and events, including assumptions. 
-:::
-:::
-
-::: proof1
-::: proof-title
-2. Simulate
-:::
-::: proof-cont
-Run the simulation to generate outcomes according to the assumptions.
-:::
-:::
-
-::: example
-::: ex-title
-3. Summarize
-:::
-::: ex-cont
-Analyze the output using plots and summary statistics like relative frequencies and averages.
-:::
-:::
-
-::: extra
-::: ext-title
-4. Sensitivity analysis
-:::
-::: ext-cont
-Investigate how results change when assumptions or parameters of the model are altered.
-:::
-:::
-
 ## Types of simulations
 
-- We can simulate discrete and continuous random variables
+-   We can simulate discrete and continuous random variables
 
  
 
-- **Discrete random variables** (RVs) are a little easier to understand
-  - We can use "tactile" simulations to give us a sense of what the computer is doing
-  
+-   **Discrete random variables** (RVs) are a little easier to understand
+    -   We can use "tactile" simulations to give us a sense of what the computer is doing
+
  
-  
-- **Continuous random variables** (RVs) are more complex
-  - Using the computer is the best way to simulate these
+
+-   **Continuous random variables** (RVs) are more complex
+    -   Using the computer is the best way to simulate these
 
 # Learning Objectives
 
 discrete RVs simmies
 
 ## Tactile simulations
-- We've already seen coin flips! 
-- We can also use cards, dice, and other objects to simulate discrete random variables
+
+-   We've already seen coin flips!
+-   We can also use cards, dice, and other objects to simulate discrete random variables
 
  
 
-- Other common method: A **box model** uses a box/hat/bucket of "tickets" with labels to represent possible outcomes
-  - Allows us to increase the number of "tickets" with appropriate labels
-  - **Coin flip as box model:** A box with two tickets (H and T).
-  - **90% free throw shooter:** A box with 10 tickets (9 "make" and 1 "miss").
-  - Draws can be **with replacement** (e.g., coin flips) or **without replacement** (e.g., dealing a poker hand).
+-   Other common method: A **box model** uses a box/hat/bucket of "tickets" with labels to represent possible outcomes
+    -   Allows us to increase the number of "tickets" with appropriate labels
+    -   **Coin flip as box model:** A box with two tickets (H and T).
+    -   **90% free throw shooter:** A box with 10 tickets (9 "make" and 1 "miss").
+    -   Draws can be **with replacement** (e.g., coin flips) or **without replacement** (e.g., dealing a poker hand).
 
 ## Tactile simulations: Spinners
 
-- If draws are with replacement, we can use a single circular **spinner** instead of a box
+-   If draws are with replacement, we can use a single circular **spinner** instead of a box
 
  
 
-- The area of each sector corresponds to the probability of an outcome
+-   The area of each sector corresponds to the probability of an outcome
 
  
 
-- Let's Google "spinner" and see what we find!
-  - We can try to make a spinner for a coin flip
-
+-   Let's Google "spinner" and see what we find!
+    -   We can try to make a spinner for a coin flip
 
 ## Example: Dice Rolls
 
-::: example
+::::: example
 ::: ex-title
 Example: Simulating Two Rolls of a Fair Four-Sided Die
 :::
+
 ::: ex-cont
-Let $X$ be the sum of two rolls of a fair four-sided die, and $Y$ be the larger of the two rolls. How would we simulate $X$ and $Y$ separately?
+We're going to roll two four-sided die. Let $X$ be the sum of two rolls, and $Y$ be the larger of the two rolls. How would we simulate $X$ and $Y$ separately?
 :::
-:::
+:::::
 
-## How do we extend a single simulation to useful simulations?
+Let's build up some coding tools to do this!
 
-- We can also use `R` to sample from the box or spinner
+## How do we simulate something like a single dice roll?
 
-- The `sample()` function in R allows us to simulate equally likely draws
+-   We can also use `R` to sample from the box or spinner
 
-- For example, we can simulate a coin flip
+-   The `sample()` function in R allows us to simulate equally likely draws
+
+-   For example, we can simulate a coin flip
+
+      - What is `x`? 
+      - What is `size`?
+
 ```{r}
 #| echo: true
 
-sample(x = c("H", "T"), size = 1, replace = TRUE)
+sample(x = c("H", "T"), size = 1)
 ```
 
-- We can simulate our example of the four sided die
+ 
+
+- Or a dice roll
+
+```{r}
+#| echo: true
+
+sample(x = c(1, 2, 3, 4), size = 1)
+```
+
+## What if we have multiple phenomena at once?
+
+- We can set `size` to be larger than 1 to simulate multiple draws at once
+
+```{r}
+#| echo: true
+
+sample(x = c("H", "T"), size = 5, replace = TRUE)
+```
+
+-   We can simulate our example of the two four-sided die
+
 ```{r}
 #| echo: true
 
 sample(x = c(1, 2, 3, 4), size = 2, replace = TRUE)
 ```
 
-# Learning Objectives
+ 
 
-continuous RVs simmies
+- What happens if we set `replace = FALSE`?
 
+```{r}
+#| echo: true
 
-## The Problem
-- Regina and Cady's arrival times are between noon (0 minutes) and 1 PM (60 minutes).
-- The arrival times are a **continuous random variable** on the interval $[0, 60]$.
-- We cannot use a box model because there are uncountably many possible outcomes.
-- A spinner with a continuous axis is the tactile analog.
-
-## Uniform Model
-- We can construct a spinner where the needle is equally likely to land on any value between 0 and 60.
-- We would spin it twice to get Regina's and Cady's arrival times.
-- 
-
-## Normal Model
-- What if Regina is more likely to arrive around 12:30?
-- We can create a spinner where values near 30 are "stretched" to occupy more area.
-- This is an example of a **Normal distribution**, where probabilities are concentrated around a central value.
-
-
-# Learning Objectives
-
-doing it in R
-
-## Computer Simulation in R
-
-- We can use R to perform simulations without a dedicated package like Symbulate.
-- R has built-in functions for generating random numbers from different distributions.
+sample(x = c(1, 2, 3, 4), size = 2, replace = FALSE)
+sample(x = c(1, 2, 3, 4), size = 4, replace = FALSE)
+```
 
 ## Simulating Outcomes
-- The `sample()` function is a powerful tool for simulating draws from a box model.
+
+-   The `sample()` function is a powerful tool for simulating draws from a box model.
 
 ```{r}
 #| echo: true
@@ -259,7 +298,7 @@ reps <- 10
 replicate(reps, sample(x = 1:4, size = 2, replace = TRUE))
 ```
 
-- sample() can handle both with (replace = TRUE) and without (replace = FALSE) replacement.
+-   sample() can handle both with (replace = TRUE) and without (replace = FALSE) replacement.
 
 ## Simulating Random Variables
 
@@ -284,3 +323,69 @@ Y_simulated <- apply(simulations, 2, max)
 head(X_simulated, 10)
 head(Y_simulated, 10)
 ```
+
+
+# Learning Objectives
+
+continuous RVs simmies
+
+## The Problem
+
+-   Regina and Cady's arrival times are between noon (0 minutes) and 1 PM (60 minutes).
+-   The arrival times are a **continuous random variable** on the interval $[0, 60]$.
+-   We cannot use a box model because there are uncountably many possible outcomes.
+-   A spinner with a continuous axis is the tactile analog.
+
+## Uniform Model
+
+-   We can construct a spinner where the needle is equally likely to land on any value between 0 and 60.
+-   We would spin it twice to get Regina's and Cady's arrival times.
+-   
+
+## Normal Model
+
+-   What if Regina is more likely to arrive around 12:30?
+-   We can create a spinner where values near 30 are "stretched" to occupy more area.
+-   This is an example of a **Normal distribution**, where probabilities are concentrated around a central value.
+
+## 4 (S)teps of a Simulation
+
+::::: proposition
+::: prop-title
+1.  Set up
+:::
+
+::: prop-cont
+Define the probability space and related random variables and events, including assumptions.
+:::
+:::::
+
+::::: proof1
+::: proof-title
+2.  Simulate
+:::
+
+::: proof-cont
+Run the simulation to generate outcomes according to the assumptions.
+:::
+:::::
+
+::::: example
+::: ex-title
+3.  Summarize
+:::
+
+::: ex-cont
+Analyze the output using plots and summary statistics like relative frequencies and averages.
+:::
+:::::
+
+::::: extra
+::: ext-title
+4.  Sensitivity analysis
+:::
+
+::: ext-cont
+Investigate how results change when assumptions or parameters of the model are altered.
+:::
+:::::

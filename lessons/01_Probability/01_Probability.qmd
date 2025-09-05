@@ -238,20 +238,34 @@ sum( sample(coin, 100000, replace = T) == "heads" ) / 100000
 
 - We know the probability of a heads is 0.5!
 - Why do we need to simulate 100s or 1000s of coin flips?
-- With enough repetitions, we can use simulations to approximate the probability of an event
+- With enough repetitions, we can use simulations to **approximate the probability of an event**
 - Simulations involve artificial recreation of a random phenomenon
+
+ 
+
+- Okay, but why is that helpful? (next slide!)
 
 
 ## Why are simulations important? (bigger picture)
 
-- In the previous example, coding a simulation seemed more educational than necessary
-- We can often calculate probabilities mathematically, but we will eventually get to complex calculations 
-  - Simulations can help us (or be necessary) to solve a problem when calculations are complex
-- Simulations are a great way to check your work!
-- Simulation based reasoning is helpful in statistics
-  - You'll see this in confidence intervals in Biostatistics courses
-- Simulations allow you to change assumptions easily and see how they affect your results
-- It is often how statisticians "run" experiments on their methods of hypotheses
+In the previous example, coding a simulation seemed more educational than necessary
+
+ 
+
+1. Simulations can help us (or be necessary) to **solve a problem when calculations are complex**
+    - We can often calculate probabilities mathematically, but we will eventually get to complex calculations 
+
+2. Simulations are a great way to **check your work**!
+
+
+3. Simulation based **reasoning** is helpful in statistics
+    - You'll see this in confidence intervals in Biostatistics courses
+
+    
+4. Simulations allow you to **change assumptions easily** and see how they affect your results
+
+
+5. It is often **how statisticians "run" experiments** on their methods of hypotheses
 
 # Learning Objectives
 
