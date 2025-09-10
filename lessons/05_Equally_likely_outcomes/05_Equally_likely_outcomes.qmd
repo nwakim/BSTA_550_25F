@@ -1,18 +1,19 @@
 ---
-title: "Chapter 22: Introduction to Counting"
+title: "Lesson 5: Equally Likely Outcomes"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#006a4e"
-date: "10/02/2024"
+date: " `r library(here); source(here('class_dates.R')); w1d1` "
+categories: ["Week 1"]
 format: 
   revealjs:
     theme: "../simple_NW.scss"
+    chalkboard: true
     slide-number: true
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Chapter 22 Slides
-    html-math-method: mathjax
+    footer: Lesson 5 Slides
 ---
 
 ## Learning Objectives
@@ -25,9 +26,33 @@ format:
 
 4.  Calculate the probability of sampling any combination of the following: *with or without replacement* and *order does or does not matter*
 
+
 ## Where are we?
 
+```{r setup, include=FALSE}
+library(here)
+source(here("class_dates.R"))
+```
+
+```{css}
+#| echo: false
+
+<style>
+#wrap { width: 600px; height: 390px; padding: 0; overflow: hidden; }
+#frame { width: 1300px; height: 600px; border: 1px solid black; }
+#frame { zoom: 1.5; -moz-transform: scale(1.5); -moz-transform-origin: 0 0; }
+</style>
+```
+
+
 ![](../img_slides/course_map.png){fig-align="center"}
+
+## Birthday example
+
+
+```{=html}
+<iframe id="frame" src="https://pudding.cool/2018/04/birthday-paradox/"></iframe>
+```
 
 # Basic Counting Examples
 

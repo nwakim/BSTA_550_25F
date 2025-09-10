@@ -13,6 +13,7 @@ format:
     height: 1100
     footer: Lesson 2 Slides
     html-math-method: mathjax
+    highlight-style: atom-one
 ---
 
 ```{r setup, include=FALSE}

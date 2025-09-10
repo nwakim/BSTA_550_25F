@@ -13,6 +13,7 @@ format:
     height: 1100
     footer: Lesson 1 Slides
     html-math-method: mathjax
+    highlight-style: atom-one
 execute: 
   echo: true
 ---
@@ -33,6 +34,8 @@ library(tidyverse)
 3. Identify sample spaces and events for basic experiments, and define probability calculations. 
 
 ## Where are we?
+
+- Big part of this lesson is **motivating** why we care about probability and simulations, then we'll dive into **some basics**
 
 ![](../img_slides/course_map.png){fig-align="center"}
 
@@ -63,9 +66,9 @@ library(tidyverse)
 
 ## Before we take one more step
 
-- The following few slides use some undefined words to define new words that in turn define other words
+- The following few slides *use some undefined words* to **define new words** that in turn *define the previously undefined words*
 - It's confusing! 
-- We're going off assumption that we all have some understanding of probability, so stop me if you are confused!
+- We're going off assumption that we all have some daily understanding of probability, so stop me if you are confused!
 
 ![](./images/Math_Lady_meme.png){fig-align="center"}
 
@@ -83,11 +86,11 @@ library(tidyverse)
 
 - Probability requires [**randomness**]{style="color:#29abe0;"}
 
-- Something is [**random**]{style="color:#29abe0;"} if there are many potential outcomes, but there is [**uncertainty**]{style="color:#E89543;"} which outcome will occur
+- Something is [**random**]{style="color:#29abe0;"} if there are many potential **outcomes**, but there is [**uncertainty**]{style="color:#E89543;"} which **outcome** will occur
 
  
 
-- Outcomes can be ["equally likely,"]{style="color:#d9534f;"} meaning each outcome has the same probability of happening
+- **Outcomes** can be ["equally likely,"]{style="color:#d9534f;"} meaning each **outcome** has the *same* probability of happening
   - But [**random**]{style="color:#29abe0;"} does **NOT** necessarily mean [equally likely]{style="color:#d9534f;"}
 
 - We often use physical randomness to demonstrate [equally likely]{style="color:#d9534f;"} outcomes
@@ -237,9 +240,11 @@ sum( sample(coin, 100000, replace = T) == "heads" ) / 100000
 ## What's the point?
 
 - We know the probability of a heads is 0.5!
+
+ 
+
 - Why do we need to simulate 100s or 1000s of coin flips?
-- With enough repetitions, we can use simulations to **approximate the probability of an event**
-- Simulations involve artificial recreation of a random phenomenon
+    - With enough repetitions, we can **use simulations to approximate the probability of an event**
 
  
 
@@ -436,7 +441,7 @@ The total number of possible events is $$2^{|S|}$$ where $|S|$ is the total numb
 -   We usually use capital letters from the beginning of the alphabet to denote events. However, other letters might be chosen to be more descriptive.
     - Examples: $A, B, C, A_1, A_2$
 
-- We can also define a new event as a combination of other events 
+- We can also define a new event as a combination of other events (**next lesson**)
     - Examples: $A \cup B$ (union), $A \cap B$ (intersection), $A^C$ (complement)
 
  
@@ -451,7 +456,7 @@ The total number of possible events is $$2^{|S|}$$ where $|S|$ is the total numb
 
 -   The **empty set**, denoted by $\emptyset$, is the set containing no outcomes.
 
-## Example: Keep sampling until...
+## Example: Keep sampling until... {visibility="hidden"}
 
 **Suppose you keep sampling people until you have someone with high blood pressure (BP)**
 
@@ -469,13 +474,13 @@ The total number of possible events is $$2^{|S|}$$ where $|S|$ is the total numb
 
 ## Let's define probability with events and spaces
 
-If $S$ is a finite sample space, with **equally likely outcomes**, then
+If $S$ is a finite sample space, with [**equally likely**]{style="color:#d9534f;"} **outcomes**, then
 
 $$\mathbb{P}(A) = \frac{|A|}{|S|}$$
 
 In human speak: 
 
-- For equally likely outcomes, the probability that a certain event occurs is: the number of outcomes within the event of interest ($|A|$) **divided by** the total number of possible outcomes ($|S|$)
+- For [**equally likely**]{style="color:#d9534f;"} **outcomes**, the probability that a certain event occurs is: the number of outcomes within the event of interest ($|A|$) **divided by** the total number of possible outcomes ($|S|$)
 
 $$\mathbb{P}(A) = \frac{\text{total number of outcomes in event A}}{\text{total number of outcomes in sample space}}$$
 
@@ -503,3 +508,23 @@ $$\mathbb{P}(A) = \frac{\text{total number of outcomes in event A}}{\text{total 
 
 - The probability function needs to follow some specific rules (called axioms)!
 
+## Coin Toss Example Revisited: 2 coins
+
+-   From our sample space and events:
+    -   Sample space: $S = \{HH, HT, TH, TT\}$
+
+    -   Event A: $A = \text{exactly one H} = \{HT, TH\}$
+
+    -   Event B: $B = \text{at least one H} = \{HT, TH, HH\}$
+
+ 
+
+- Calculate $P(A)$ and $P(B)$
+
+# Learning Objectives
+
+1. Define key probability and its relationship to randomness. 
+
+2. Use simple simulations (e.g., coin flips in R) to illustrate randomness in equally likely outcomes.
+
+3. Identify sample spaces and events for basic experiments, and define probability calculations. 
