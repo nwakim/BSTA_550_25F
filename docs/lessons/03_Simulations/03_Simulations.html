@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.6.42">
 
   <meta name="author" content="Nicky Wakim">
-  <meta name="dcterms.date" content="2025-10-06">
-  <title>Introduction to Probability – Lesson 3: Introduction to Simulations</title>
+  <meta name="dcterms.date" content="2025-10-01">
+  <title>Introduction to Probability – Lesson 2: Introduction to Simulations</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -95,7 +95,7 @@
     code span.vs { color: #da4453; } /* VerbatimString */
     code span.wa { color: #da4453; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-e2ec88095b3cc9c57d47fe3f5d9fa50a.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-076a3aa726d0b67dd670335e7f534111.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -193,7 +193,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-color="#006a4e" class="quarto-title-block center">
-  <h1 class="title">Lesson 3: Introduction to Simulations</h1>
+  <h1 class="title">Lesson 2: Introduction to Simulations</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -203,15 +203,34 @@ Nicky Wakim
 </div>
 </div>
 
-  <p class="date">2025-10-06</p>
+  <p class="date">2025-10-01</p>
 </section>
 <section>
 <section id="learning-objectives" class="title-slide slide level1 center">
 <h1>Learning Objectives</h1>
 <ol type="1">
-<li>intro to simulations</li>
-<li>discrete RVs simmies</li>
-<li>continuous RVs simmies</li>
+<li>Describe random variables and distinguish between discrete and continuous types</li>
+<li>Explain the role of simulation in approximating probabilities and distributions</li>
+<li>Use R to run simulations of discrete random variables</li>
+<li>Apply and interpret the four-step simulation process</li>
+</ol>
+</section>
+<section id="where-are-we" class="slide level2">
+<h2>Where are we?</h2>
+
+<img data-src="../img_slides/course_map.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<section>
+<section id="learning-objectives-1" class="title-slide slide level1 center">
+<h1>Learning Objectives</h1>
+<div class="lob">
+<ol type="1">
+<li>Describe random variables and distinguish between discrete and continuous types</li>
+</ol>
+</div>
+<ol start="2" type="1">
+<li>Explain the role of simulation in approximating probabilities and distributions</li>
+<li>Use R to run simulations of discrete random variables</li>
+<li>Apply and interpret the four-step simulation process</li>
 </ol>
 </section>
 <section id="recall-outcomes-events-sample-spaces" class="slide level2">
@@ -257,9 +276,9 @@ Nicky Wakim
 <ul>
 <li>What is <em>random</em> is the outcome <span class="math inline">\(\omega\)</span></li>
 </ul></li>
-<li><p>A random variable is a function from the sample space (with outcomes <span class="math inline">\(\omega\)</span>) to the set of real numbers</p>
+<li><p>A <strong>random variable</strong> is a function from the sample space (with outcomes <span class="math inline">\(\omega\)</span>) to the set of real numbers</p>
 <ul>
-<li>We typically write <span class="math inline">\(X\)</span> instead of <span class="math inline">\(X(\omega)\)</span>, where <span class="math inline">\(X\)</span> is our random variable</li>
+<li>We typically write <span class="math inline">\(X(\omega)\)</span> (or <span class="math inline">\(X\)</span> for short), where <span class="math inline">\(X\)</span> is our random variable</li>
 </ul></li>
 <li><p>Thus, we can take our sample space (all outcomes) and make functional transformations to it</p></li>
 </ul>
@@ -268,14 +287,14 @@ Nicky Wakim
 <h2>The cool (and tricky) thing about random variables</h2>
 <p>Do you remember our coin example from Lesson 1? We tossed one or two coins.</p>
 <ul>
-<li>For each coin, the <strong>sample space</strong> is heads and tails (<span class="math inline">\(S = {H,T}\)</span>)</li>
-<li>If we want the <strong>sample space</strong> for both coins in order, then we have combinations (<span class="math inline">\(S={(H,H), (H,T), (T,H), (T,T)}\)</span>)</li>
+<li>For each coin, the <strong>sample space</strong> is heads and tails (<span class="math inline">\(S = \{H,T\}\)</span>)</li>
+<li>If we want the <strong>sample space</strong> for both coins in order, then we have combinations (<span class="math inline">\(S=\{(H,H), (H,T), (T,H), (T,T)\}\)</span>)</li>
 </ul>
 <p>&nbsp;</p>
 <p>We make the <strong>random variable</strong> a <em>function</em> of the <strong>sample space</strong>.</p>
 <ul>
 <li>For one coin toss, we can say random variable <span class="math inline">\(X\)</span> is <span class="math inline">\(1\)</span> if we toss a heads (<span class="math inline">\(\omega = \text{H}\)</span>) and <span class="math inline">\(X=0\)</span> if we get a tails</li>
-<li>For the two coins, we can say <span class="math inline">\(X\)</span> is the count of heads, so if <span class="math inline">\(\omega = \text{(H, T)}\)</span>, <span class="math inline">\(X=1\)</span></li>
+<li>For the two coins, we can say <span class="math inline">\(X\)</span> is the count of heads, so if <span class="math inline">\(\omega = \text{(H, T)}\)</span>, then <span class="math inline">\(X=1\)</span></li>
 </ul>
 </section>
 <section id="types-of-random-variables" class="slide level2">
@@ -307,6 +326,28 @@ Nicky Wakim
 </div>
 </div>
 </div></div>
+<ul>
+<li><strong>Discrete random variables</strong> (RVs) are a little easier to simulate right now
+<ul>
+<li>We will only do discrete RVs today</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="learning-objectives-2" class="title-slide slide level1 center">
+<h1>Learning Objectives</h1>
+<ol type="1">
+<li>Describe random variables and distinguish between discrete and continuous types</li>
+</ol>
+<div class="lob">
+<ol start="2" type="1">
+<li>Explain the role of simulation in approximating probabilities and distributions</li>
+</ol>
+</div>
+<ol start="3" type="1">
+<li>Use R to run simulations of discrete random variables</li>
+<li>Apply and interpret the four-step simulation process</li>
+</ol>
 </section>
 <section id="what-is-a-simulation" class="slide level2">
 <h2>What is a simulation?</h2>
@@ -325,48 +366,49 @@ Nicky Wakim
 <h2>The Foundation: Relative Frequencies</h2>
 <ul>
 <li>Probabilities can be interpreted as <strong>long-run relative frequencies</strong></li>
-<li>By simulating a random phenomenon a large number of times, we can approximate the probability of an event by calculating the relative frequency of its occurrence.</li>
-<li>Simulation is a powerful tool for approximating probabilities, distributions of random variables, long-run averages, and other characteristics.</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>By simulating a random phenomenon a large number of times, we can approximate the probability of an event by calculating the relative frequency of its occurrence
+<ul>
+<li>Basically, out of all the trials we run, how many times did the event happen?</li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Simulation is a powerful tool to <strong>approximate a few things</strong>:
+<ul>
+<li>Probabilities</li>
+<li>Distributions of random variables</li>
+<li>Long-run averages</li>
+</ul></li>
 </ul>
 </section>
-<section id="still-confused-about-long-run-relative-frequencies" class="slide level2">
-<h2>Still confused about long-run relative frequencies?</h2>
-<p><a href="https://seeing-theory.brown.edu/basic-probability/index.html">Seeing Theory, Chapter 1: Basic Probability, Chance Events</a> We’ll flip a coin many many times</p>
-<div class="cell">
-<style type="text/css">
-<style>
-#wrap { width: 600px; height: 390px; padding: 0; overflow: hidden; }
-#frame { width: 1300px; height: 600px; border: 1px solid black; }
-#frame { zoom: 1.5; -moz-transform: scale(1.5); -moz-transform-origin: 0 0; }
-</style>
-
+<section id="we-saw-an-example-of-long-run-relative-frequency-in-our-coin-flip" class="slide level2">
+<h2>We saw an example of long-run relative frequency in our coin flip</h2>
+<p>In Lesson 1, we flipped a coin 100 times and recorded the proportion of heads.</p>
+<ul>
+<li>We tossed 50 heads out of the 100 flips</li>
+<li>Our long-run frequency was <span class="math inline">\(50/100 = 0.5\)</span>, which <strong>approximated the probability</strong> of getting a head on any one flip</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../img_slides/coin_flip.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
 </div>
-<iframe id="frame" src="https://seeing-theory.brown.edu/basic-probability/index.html"></iframe>
-</section>
-<section id="types-of-simulations" class="slide level2">
-<h2>Types of simulations</h2>
-<ul>
-<li>We can simulate discrete and continuous random variables</li>
-</ul>
-<p>&nbsp;</p>
-<ul>
-<li><strong>Discrete random variables</strong> (RVs) are a little easier to understand
-<ul>
-<li>We can use “tactile” simulations to give us a sense of what the computer is doing</li>
-</ul></li>
-</ul>
-<p>&nbsp;</p>
-<ul>
-<li><strong>Continuous random variables</strong> (RVs) are more complex
-<ul>
-<li>Using the computer is the best way to simulate these</li>
-</ul></li>
-</ul>
-</section></section>
-<section>
-<section id="learning-objectives-1" class="title-slide slide level1 center">
-<h1>Learning Objectives</h1>
-<p>discrete RVs simmies</p>
+</div><div class="column" style="width:70%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="03_Simulations_files/figure-revealjs/coin-flips-plot-1.png" width="1248"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
 </section>
 <section id="tactile-simulations" class="slide level2">
 <h2>Tactile simulations</h2>
@@ -384,26 +426,25 @@ Nicky Wakim
 <li>Draws can be <strong>with replacement</strong> (e.g., coin flips) or <strong>without replacement</strong> (e.g., dealing a poker hand).</li>
 </ul></li>
 </ul>
+</section></section>
+<section>
+<section id="learning-objectives-3" class="title-slide slide level1 center">
+<h1>Learning objectives</h1>
+<ol type="1">
+<li>Describe random variables and distinguish between discrete and continuous types</li>
+<li>Explain the role of simulation in approximating probabilities and distributions</li>
+</ol>
+<div class="lob">
+<ol start="3" type="1">
+<li>Use R to run simulations of discrete random variables</li>
+</ol>
+</div>
+<ol start="4" type="1">
+<li>Apply and interpret the four-step simulation process</li>
+</ol>
 </section>
-<section id="tactile-simulations-spinners" class="slide level2">
-<h2>Tactile simulations: Spinners</h2>
-<ul>
-<li>If draws are with replacement, we can use a single circular <strong>spinner</strong> instead of a box</li>
-</ul>
-<p>&nbsp;</p>
-<ul>
-<li>The area of each sector corresponds to the probability of an outcome</li>
-</ul>
-<p>&nbsp;</p>
-<ul>
-<li>Let’s Google “spinner” and see what we find!
-<ul>
-<li>We can try to make a spinner for a coin flip</li>
-</ul></li>
-</ul>
-</section>
-<section id="example-dice-rolls" class="slide level2">
-<h2>Example: Dice Rolls</h2>
+<section id="example-to-build-our-simulation-skills" class="slide level2">
+<h2>Example to build our simulation skills</h2>
 <div class="example">
 <div class="ex-title">
 <p>Example: Simulating Two Rolls of a Fair Four-Sided Die</p>
@@ -412,13 +453,25 @@ Nicky Wakim
 <p>We’re going to roll two four-sided die. Let <span class="math inline">\(X\)</span> be the sum of two rolls, and <span class="math inline">\(Y\)</span> be the larger of the two rolls. How would we simulate <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> separately?</p>
 </div>
 </div>
+<p>&nbsp;</p>
+<ul>
+<li>Note: this example is not asking for a probability!
+<ul>
+<li>We can simulate a random variable and looks at its distribution without calculating any probabilities.</li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>We will focus on simulating <span class="math inline">\(X\)</span> first</li>
+</ul>
+<p>&nbsp;</p>
 <p>Let’s build up some coding tools to do this!</p>
 </section>
 <section id="how-do-we-simulate-something-like-a-single-dice-roll" class="slide level2">
-<h2>How do we simulate something like a single dice roll?</h2>
+<h2>How do we simulate something like a <strong>single</strong> dice roll?</h2>
 <ul>
 <li><p>We can also use <code>R</code> to sample from the box or spinner</p></li>
-<li><p>The <code>sample()</code> function in R allows us to simulate equally likely draws</p></li>
+<li><p>The <code>sample()</code> function is a powerful tool for simulating draws from a box model.</p></li>
 <li><p>For example, we can simulate a coin flip</p>
 <ul>
 <li>What is <code>x</code>?</li>
@@ -442,24 +495,24 @@ Nicky Wakim
 </div>
 </div>
 </section>
-<section id="what-if-we-have-multiple-phenomena-at-once" class="slide level2">
-<h2>What if we have multiple phenomena at once?</h2>
+<section id="what-if-we-have-multiple-rolls-at-once" class="slide level2">
+<h2>What if we have multiple rolls at once?</h2>
 <ul>
 <li>We can set <code>size</code> to be larger than 1 to simulate multiple draws at once</li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="st">"H"</span>, <span class="st">"T"</span>), <span class="at">size =</span> <span class="dv">5</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "T" "T" "H" "H" "T"</code></pre>
+<pre><code>[1] "T" "T" "T" "H" "T"</code></pre>
 </div>
 </div>
 <ul>
-<li>We can simulate our example of the two four-sided die</li>
+<li>We can simulate our example of the two four-sided dice</li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>), <span class="at">size =</span> <span class="dv">2</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 4 3</code></pre>
+<pre><code>[1] 3 3</code></pre>
 </div>
 </div>
 <p>&nbsp;</p>
@@ -469,90 +522,148 @@ Nicky Wakim
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>), <span class="at">size =</span> <span class="dv">2</span>, <span class="at">replace =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2 3</code></pre>
+<pre><code>[1] 4 2</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>), <span class="at">size =</span> <span class="dv">4</span>, <span class="at">replace =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 1 2 4 3</code></pre>
+<pre><code>[1] 2 1 3 4</code></pre>
 </div>
 </div>
 </section>
-<section id="simulating-outcomes" class="slide level2">
-<h2>Simulating Outcomes</h2>
+<section id="can-we-start-to-simulate-many-rolls-of-two-dice" class="slide level2">
+<h2>Can we start to simulate many rolls of two dice?</h2>
+<div class="example">
+<div class="ex-title">
+<p>Example: Simulating Two Rolls of a Fair Four-Sided Die</p>
+</div>
+<div class="ex-cont">
+<p>We’re going to roll two four-sided dice. Let <span class="math inline">\(X\)</span> be the sum of two rolls, and <span class="math inline">\(Y\)</span> be the larger of the two rolls. How would we simulate <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> separately?</p>
+</div>
+</div>
 <ul>
-<li>The <code>sample()</code> function is a powerful tool for simulating draws from a box model.</li>
+<li>We’ve seen how to simulate a single pair of rolls</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="co"># A box model for two rolls of a fair four-sided die</span></span>
-<span id="cb13-2"><a></a>rolls <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>), <span class="at">size =</span> <span class="dv">2</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb13-3"><a></a></span>
-<span id="cb13-4"><a></a><span class="co"># Simulate 10 repetitions, with each row representing a pair of rolls</span></span>
-<span id="cb13-5"><a></a>reps <span class="ot">&lt;-</span> <span class="dv">10</span></span>
-<span id="cb13-6"><a></a><span class="fu">replicate</span>(reps, <span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>rolls <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>), <span class="at">size =</span> <span class="dv">2</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>We can use the <code>replicate()</code> function to repeat this process many times (we’ll do 10)</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>reps <span class="ot">&lt;-</span> <span class="dv">10</span></span>
+<span id="cb14-2"><a></a><span class="fu">replicate</span>(reps, <span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
-[1,]    4    1    4    2    3    2    1    1    2     2
-[2,]    2    2    2    4    2    3    1    3    4     4</code></pre>
+[1,]    2    3    3    3    3    3    3    1    3     3
+[2,]    1    1    2    2    2    1    4    1    4     2</code></pre>
+</div>
+</div>
+</section>
+<section id="we-need-more-reps-for-long-run-relative-frequencies" class="slide level2">
+<h2>We need more reps for long-run relative frequencies</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>reps <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
+<span id="cb16-2"><a></a>simulations <span class="ot">&lt;-</span> <span class="fu">replicate</span>(reps, <span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Let’s show the first 14 simulations</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>simulations[, <span class="dv">1</span><span class="sc">:</span><span class="dv">14</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10] [,11] [,12] [,13] [,14]
+[1,]    4    1    2    2    4    2    1    2    4     1     4     2     2     3
+[2,]    4    4    1    3    1    1    2    3    2     4     1     2     2     2</code></pre>
+</div>
+</div>
+<p>&nbsp;</p>
+<ul>
+<li><span class="math inline">\(X\)</span> is the sum of the two rolls: we could calculate that for each column</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>X_simulated <span class="ot">&lt;-</span> <span class="fu">apply</span>(simulations, <span class="dv">2</span>, sum)</span>
+<span id="cb19-2"><a></a>X_simulated[<span class="dv">1</span><span class="sc">:</span><span class="dv">14</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 8 5 3 5 5 3 3 5 6 5 5 4 4 5</code></pre>
+</div>
+</div>
+</section>
+<section id="we-can-look-at-the-plot-of-random-variable-x" class="slide level2">
+<h2>We can look at the plot of random variable <span class="math inline">\(X\)</span></h2>
+
+<img data-src="03_Simulations_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section>
+<section id="if-we-want-to-calculate-something-else-we-can" class="slide level2">
+<h2>If we want to calculate something else, we can!</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Average:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="fu">mean</span>(X_simulated)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5.0044</code></pre>
 </div>
 </div>
 <ul>
-<li>sample() can handle both with (replace = TRUE) and without (replace = FALSE) replacement.</li>
+<li>Standard deviation:</li>
 </ul>
-</section>
-<section id="simulating-random-variables" class="slide level2">
-<h2>Simulating Random Variables</h2>
-<p>We can apply functions to the simulated outcomes to get the values of our random variables.</p>
-<p>Let’s simulate X (sum) and Y (max).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>reps <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
-<span id="cb15-2"><a></a>simulations <span class="ot">&lt;-</span> <span class="fu">replicate</span>(reps, <span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb15-3"><a></a></span>
-<span id="cb15-4"><a></a><span class="co"># Calculate X (the sum) for each repetition</span></span>
-<span id="cb15-5"><a></a>X_simulated <span class="ot">&lt;-</span> <span class="fu">apply</span>(simulations, <span class="dv">2</span>, sum)</span>
-<span id="cb15-6"><a></a></span>
-<span id="cb15-7"><a></a><span class="co"># Calculate Y (the max) for each repetition</span></span>
-<span id="cb15-8"><a></a>Y_simulated <span class="ot">&lt;-</span> <span class="fu">apply</span>(simulations, <span class="dv">2</span>, max)</span>
-<span id="cb15-9"><a></a></span>
-<span id="cb15-10"><a></a><span class="co"># Display the first 10 values for X and Y</span></span>
-<span id="cb15-11"><a></a><span class="fu">head</span>(X_simulated, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a><span class="fu">sd</span>(X_simulated)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 3 6 5 4 5 5 7 8 8 5</code></pre>
+<pre><code>[1] 1.574303</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">head</span>(Y_simulated, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Probability that <span class="math inline">\(X=5\)</span>:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="fu">sum</span>(X_simulated <span class="sc">==</span> <span class="dv">5</span>) <span class="sc">/</span> reps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 2 3 3 3 3 4 4 4 4 3</code></pre>
+<pre><code>[1] 0.2468</code></pre>
 </div>
 </div>
+<ul>
+<li>Probability that <span class="math inline">\(X&lt;3\)</span>:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="fu">sum</span>(X_simulated <span class="sc">&lt;</span> <span class="dv">3</span>) <span class="sc">/</span> reps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.0584</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="proof1">
+<div class="proof-cont">
+<p>Probabilities (relative frequencies) are calculated by:</p>
+<ul>
+<li>summing the number of times an event occurs and</li>
+<li>dividing by the total number of simulations (reps)</li>
+</ul>
+</div>
+</div>
+</div></div>
 </section></section>
 <section>
-<section id="learning-objectives-2" class="title-slide slide level1 center">
-<h1>Learning Objectives</h1>
-<p>continuous RVs simmies</p>
-</section>
-<section id="the-problem" class="slide level2">
-<h2>The Problem</h2>
-<ul>
-<li>Regina and Cady’s arrival times are between noon (0 minutes) and 1 PM (60 minutes).</li>
-<li>The arrival times are a <strong>continuous random variable</strong> on the interval <span class="math inline">\([0, 60]\)</span>.</li>
-<li>We cannot use a box model because there are uncountably many possible outcomes.</li>
-<li>A spinner with a continuous axis is the tactile analog.</li>
-</ul>
-</section>
-<section id="uniform-model" class="slide level2">
-<h2>Uniform Model</h2>
-<ul>
-<li>We can construct a spinner where the needle is equally likely to land on any value between 0 and 60.</li>
-<li>We would spin it twice to get Regina’s and Cady’s arrival times.</li>
-<li></li>
-</ul>
-</section>
-<section id="normal-model" class="slide level2">
-<h2>Normal Model</h2>
-<ul>
-<li>What if Regina is more likely to arrive around 12:30?</li>
-<li>We can create a spinner where values near 30 are “stretched” to occupy more area.</li>
-<li>This is an example of a <strong>Normal distribution</strong>, where probabilities are concentrated around a central value.</li>
-</ul>
+<section id="learning-objectives-4" class="title-slide slide level1 center">
+<h1>Learning objectives</h1>
+<ol type="1">
+<li>Describe random variables and distinguish between discrete and continuous types</li>
+<li>Explain the role of simulation in approximating probabilities and distributions</li>
+<li>Use R to run simulations of discrete random variables</li>
+</ol>
+<div class="lob">
+<ol start="4" type="1">
+<li>Apply and interpret the four-step simulation process</li>
+</ol>
+</div>
 </section>
 <section id="steps-of-a-simulation" class="slide level2">
 <h2>4 (S)teps of a Simulation</h2>
@@ -596,13 +707,231 @@ Nicky Wakim
 <p>Investigate how results change when assumptions or parameters of the model are altered.</p>
 </div>
 </div>
-
-
+</section>
+<section id="example-dice-rolls" class="slide level2">
+<h2>Example: Dice Rolls</h2>
+<div class="example">
+<div class="ex-title">
+<p>Example: Simulating Two Rolls of a Fair Four-Sided Die</p>
+</div>
+<div class="ex-cont">
+<p>We’re going to roll two four-sided die. Let <span class="math inline">\(X\)</span> be the sum of two rolls, and <span class="math inline">\(Y\)</span> be the larger of the two rolls. How would we simulate <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> separately?</p>
+</div>
+</div>
+<ul>
+<li>Use the steps to run simulation for for <span class="math inline">\(Y\)</span> now</li>
+</ul>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="proposition">
+<div class="prop-title">
+<ol type="1">
+<li>Set up</li>
+</ol>
+</div>
+<div class="prop-cont">
+<p>Define the probability space and related random variables and events, including assumptions.</p>
+</div>
+</div>
+<ul>
+<li><strong>Random variable:</strong> <span class="math inline">\(Y(\omega)\)</span> is the larger of the two rolls in outcome <span class="math inline">\(\omega\)</span></li>
+<li><strong>Goal:</strong> simulate <span class="math inline">\(Y\)</span>, the larger of two rolls of a fair four-sided die</li>
+<li><strong>Sample space:</strong> all possible outcomes of rolling two four-sided die
+<ul>
+<li>Not necessary, but helpful to define the sample space</li>
+</ul></li>
+</ul>
+<p><span class="math display">\[\begin{aligned} S =  \{ &amp;(1,1), (1,2), (1,3), (1,4), (2,1), (2,2), (2,3), (2,4),\\ &amp; (3,1), (3,2), (3,3), (3,4), (4,1), (4,2), (4,3), (4,4)\} \end{aligned}\]</span></p>
+<ul>
+<li><strong>Assumptions:</strong> each die is fair and rolls are independent
+<ul>
+<li>Each outcome in <span class="math inline">\(S\)</span> is equally likely with probability <span class="math inline">\(1/16\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<div class="proof1">
+<div class="proof-title">
+<ol start="2" type="1">
+<li>Simulate</li>
+</ol>
+</div>
+<div class="proof-cont">
+<p>Run the simulation to generate outcomes according to the assumptions.</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a>reps <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
+<span id="cb29-2"><a></a>simulations <span class="ot">&lt;-</span> <span class="fu">replicate</span>(reps, <span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb29-3"><a></a>Y_simulated <span class="ot">&lt;-</span> <span class="fu">apply</span>(simulations, <span class="dv">2</span>, max)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>&nbsp;</p>
+<ul>
+<li>We can look at the first 30 simulations</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a>Y_simulated[<span class="dv">1</span><span class="sc">:</span><span class="dv">30</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 3 4 4 4 2 4 4 4 2 3 4 4 1 4 4 3 4 4 2 4 4 4 1 4 2 2 4 4 3 3</code></pre>
+</div>
+</div>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<div class="example">
+<div class="ex-title">
+<ol start="3" type="1">
+<li>Summarize</li>
+</ol>
+</div>
+<div class="ex-cont">
+<p>Analyze the output using plots and summary statistics like relative frequencies and averages.</p>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="cell">
+<details class="code-fold">
+<summary>Show/Hide Code for plotting Y</summary>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a>Y_df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(Y_simulated) <span class="sc">%&gt;%</span></span>
+<span id="cb32-2"><a></a>  <span class="fu">rename</span>(<span class="at">Y =</span> Y_simulated)</span>
+<span id="cb32-3"><a></a></span>
+<span id="cb32-4"><a></a><span class="fu">ggplot</span>(Y_df, <span class="fu">aes</span>(<span class="at">x =</span> Y)) <span class="sc">+</span></span>
+<span id="cb32-5"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">fill =</span> <span class="st">"#B3C8BF"</span>) <span class="sc">+</span></span>
+<span id="cb32-6"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">4</span>, <span class="at">by =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb32-7"><a></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Simulated Distribution of Y (Larger of Two Rolls)"</span>,</span>
+<span id="cb32-8"><a></a>       <span class="at">x =</span> <span class="st">"Value of Y"</span>,</span>
+<span id="cb32-9"><a></a>       <span class="at">y =</span> <span class="st">"Frequency"</span>) <span class="sc">+</span></span>
+<span id="cb32-10"><a></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb32-11"><a></a>  <span class="fu">theme</span>(</span>
+<span id="cb32-12"><a></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">20</span>), </span>
+<span id="cb32-13"><a></a>    <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">20</span>),</span>
+<span id="cb32-14"><a></a>    <span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">20</span>),</span>
+<span id="cb32-15"><a></a>    <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">20</span>), </span>
+<span id="cb32-16"><a></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">20</span>)</span>
+<span id="cb32-17"><a></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="03_Simulations_files/figure-revealjs/unnamed-chunk-20-1.png" width="1056"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:45%;">
+<p>If the problem asked us for something else, we could compute it:</p>
+<ul>
+<li>Average:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a><span class="fu">mean</span>(Y_simulated)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3.1199</code></pre>
+</div>
+</div>
+<ul>
+<li>Probability that <span class="math inline">\(Y=1\)</span>:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a><span class="fu">sum</span>(Y_simulated <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">/</span> reps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.0634</code></pre>
+</div>
+</div>
+<ul>
+<li>Probability that <span class="math inline">\(Y&gt;3\)</span>:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a><span class="fu">sum</span>(Y_simulated <span class="sc">&gt;</span> <span class="dv">3</span>) <span class="sc">/</span> reps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.4356</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<div class="extra">
+<div class="ext-title">
+<ol start="4" type="1">
+<li>Sensitivity analysis</li>
+</ol>
+</div>
+<div class="ext-cont">
+<p>Investigate how results change when assumptions or parameters of the model are altered.</p>
+</div>
+</div>
+<p>What if we rolled three die instead of two?</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a>reps <span class="ot">&lt;-</span> <span class="dv">10000</span></span>
+<span id="cb39-2"><a></a>die <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb39-3"><a></a>simulations <span class="ot">&lt;-</span> <span class="fu">replicate</span>(</span>
+<span id="cb39-4"><a></a>  reps, </span>
+<span id="cb39-5"><a></a>  <span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, </span>
+<span id="cb39-6"><a></a>         <span class="at">size =</span> die, </span>
+<span id="cb39-7"><a></a>         <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb39-8"><a></a>)</span>
+<span id="cb39-9"><a></a>simulations[, <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     [,1] [,2] [,3] [,4] [,5] [,6]
+[1,]    1    3    1    4    2    3
+[2,]    4    1    2    1    2    3
+[3,]    4    4    4    4    3    3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a>Y_simulated <span class="ot">&lt;-</span> <span class="fu">apply</span>(simulations, <span class="dv">2</span>, max)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<details class="code-fold">
+<summary>Show/Hide Code for plotting Y</summary>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a></a>Y_df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(Y_simulated) <span class="sc">%&gt;%</span></span>
+<span id="cb42-2"><a></a>  <span class="fu">rename</span>(<span class="at">Y =</span> Y_simulated)</span>
+<span id="cb42-3"><a></a></span>
+<span id="cb42-4"><a></a><span class="fu">ggplot</span>(Y_df, <span class="fu">aes</span>(<span class="at">x =</span> Y)) <span class="sc">+</span></span>
+<span id="cb42-5"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">fill =</span> <span class="st">"#B3C8BF"</span>) <span class="sc">+</span></span>
+<span id="cb42-6"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">4</span>, <span class="at">by =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb42-7"><a></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Simulated Distribution of Y (Larger of Two Rolls)"</span>,</span>
+<span id="cb42-8"><a></a>       <span class="at">x =</span> <span class="st">"Value of Y"</span>,</span>
+<span id="cb42-9"><a></a>       <span class="at">y =</span> <span class="st">"Frequency"</span>) <span class="sc">+</span></span>
+<span id="cb42-10"><a></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb42-11"><a></a>  <span class="fu">theme</span>(</span>
+<span id="cb42-12"><a></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">20</span>), </span>
+<span id="cb42-13"><a></a>    <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">20</span>),</span>
+<span id="cb42-14"><a></a>    <span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">20</span>),</span>
+<span id="cb42-15"><a></a>    <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">20</span>), </span>
+<span id="cb42-16"><a></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">20</span>)</span>
+<span id="cb42-17"><a></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="03_Simulations_files/figure-revealjs/unnamed-chunk-25-1.png" width="1056"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
 </section></section>
+<section id="learning-objectives-5" class="title-slide slide level1 center">
+<h1>Learning Objectives</h1>
+<ol type="1">
+<li>Describe random variables and distinguish between discrete and continuous types</li>
+<li>Explain the role of simulation in approximating probabilities and distributions</li>
+<li>Use R to run simulations of discrete random variables</li>
+<li>Apply and interpret the four-step simulation process</li>
+</ol>
+
+
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>Lesson 3 Slides</p>
+<p>Lesson 2 Slides</p>
 </div>
 </div></div>
 

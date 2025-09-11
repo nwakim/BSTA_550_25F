@@ -1,0 +1,17 @@
+---
+title: "Key Info"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+
+## Key dates
+
+- Homework 0 is due TOMORROW at 11pm!
+
+## Last class
