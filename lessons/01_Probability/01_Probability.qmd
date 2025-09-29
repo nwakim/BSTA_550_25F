@@ -27,27 +27,15 @@ library(tidyverse)
 
 # Learning Objectives
 
-1. Define key probability and its relationship to randomness. 
+1. Use simulations (e.g., coin flips in R) to illustrate randomness in equally likely outcomes.
 
-2. Use simple simulations (e.g., coin flips in R) to illustrate randomness in equally likely outcomes.
-
-3. Identify sample spaces and events for basic experiments, and define probability calculations. 
+2. Identify sample spaces and events for basic experiments, and define probability calculations. 
 
 ## Where are we?
 
 - Big part of this lesson is **motivating** why we care about probability and simulations, then we'll dive into **some basics**
 
 ![](../img_slides/course_map.png){fig-align="center"}
-
-# Learning Objectives
-
-::: lob
-1. Define key probability and its relationship to randomness. 
-:::
-
-2. Use simple simulations (e.g., coin flips in R) to illustrate randomness in equally likely outcomes.
-
-3. Identify sample spaces and events for basic experiments, and define probability calculations. 
 
 ## What is probability? (1/2)
 
@@ -74,13 +62,11 @@ library(tidyverse)
 
 # Learning Objectives
 
-1. Define key probability and its relationship to randomness. 
-
 ::: lob
-2. Use simple simulations (e.g., coin flips in R) to illustrate randomness in equally likely outcomes.
+1. Use simulations (e.g., coin flips in R) to illustrate randomness in equally likely outcomes.
 :::
 
-3. Identify sample spaces and events for basic experiments, and define probability calculations. 
+2. Identify sample spaces and events for basic experiments, and define probability calculations.
 
 ## Probability and randomness
 
@@ -274,12 +260,10 @@ In the previous example, coding a simulation seemed more educational than necess
 
 # Learning Objectives
 
-1. Define key probability and its relationship to randomness. 
-
-2. Use simple simulations (e.g., coin flips in R) to illustrate randomness in equally likely outcomes.
+1. Use simulations (e.g., coin flips in R) to illustrate randomness in equally likely outcomes.
 
 ::: lob
-3. Identify sample spaces and events for basic experiments, and define probability calculations. 
+2. Identify sample spaces and events for basic experiments, and define probability calculations.
 :::
 
 ## Outcomes, events, sample spaces
@@ -523,8 +507,6 @@ $$\mathbb{P}(A) = \frac{\text{total number of outcomes in event A}}{\text{total 
 
 # Learning Objectives
 
-1. Define key probability and its relationship to randomness. 
+1. Use simulations (e.g., coin flips in R) to illustrate randomness in equally likely outcomes.
 
-2. Use simple simulations (e.g., coin flips in R) to illustrate randomness in equally likely outcomes.
-
-3. Identify sample spaces and events for basic experiments, and define probability calculations. 
+2. Identify sample spaces and events for basic experiments, and define probability calculations.
