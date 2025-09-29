@@ -41,11 +41,9 @@ Welcome to Biostatistics and Probability! This course is designed to introduce h
 ::: g-col-3
 ### Office Hours
 
-[Office Hours Link](https://ohsu.webex.com/meet/wakim)
+Nicky {{< iconify icon-park-solid time size=24px >}} TBD
 
-{{< iconify icon-park-solid time size=24px >}} TBD
-
-
+Charles {{< iconify icon-park-solid time size=24px >}} TBD
 :::
 
 ::: g-col-3
