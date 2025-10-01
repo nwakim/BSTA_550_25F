@@ -5429,7 +5429,7 @@
     "href": "lessons/01_Probability/01_Probability_muddy_points.html",
     "title": "Muddy Points",
     "section": "",
-    "text": "The muddy points from this year were a subset of the ones from last year, so I just decided to copy those below!"
+    "text": "In class, we were wondering why/if \\(2^{|S|}\\) is the general formula for calculating the total number of possible events. We were specifically wondering if the \\(2\\) came from the fact that we had two options (heads and tails) for our outcome. Let’s work through the example of a 6-sided die to explain this further. The sample space is \\(S=\\{1, 2, 3, 4, 5, 6\\}\\). So is the total number of possible events \\(2^6\\) or \\(6^6\\) or something else? We can actually think about an event by using an indicator variable for each outcome of the sample space. An indicator variable is just a way to give us a yes/no answer to a question. So in this case, we are wondering: is this outcome a part of our event? If our event is \\(\\{1\\}\\) then for the outcome \\(1\\), the answer is “yes, the outcome is part of the event. For outcomes \\(2-6\\), the answer is”no, the outcome is not apart of the event.”\n\nFor each outcome, we have a “yes” or “no” answer. We can look at another example of an event. Let’s say our event is rolling an even number:\n\nFor \\(2\\), \\(4\\), and \\(6\\), the answer is “yes.” We can define the indicator variable for whether an outcome is in an event or not. The indicator gives a 1 or 0 for yes and no respectively.\n\nAs stated above, the \\(2\\) in \\(2^6\\) comes from the \\(2\\) options from our indicator. Each side has two options, and there are \\(6\\) sides. Thus, \\(2^6\\) possible events.\n\n\n\nI think this will become clearer when we start thinking about events in the context of probability. When we think of events outside of probability, we may think of something we actually do or something that happens, like going to a concert or coming to class or missing the streetcar. In this case, we think of the event as the single thing (out of all the options) that actually occured. For example, if I’m taking the streetcar to class, I can think of two definitive options of what might occur: I miss the streetcar or I get on the streetcar. Only one of these things can occur, which I may call an event colloquially.\nIt is important to make the distinction with events defined within probability. Events are not necessarily a single thing that occurred. Instead it can be a collection of things that may occur. In the example of the streetcar, I can define my event to include both options. Thus, my event is that I make the streetcar or I miss it. Both of these things cannot happen simultaneously, but if I want to calculate the probability that I miss or make the streetcar, then it is helpful to have the event defined."
   },
   {
     "objectID": "lessons/01_Probability/01_Probability_muddy_points.html#proofs-of-propositions",
@@ -18498,14 +18498,14 @@
     "href": "lessons/02_Simulations/02_Simulations_key_info.html",
     "title": "Key Info",
     "section": "",
-    "text": "Slack is working for a few people??\n\nhttps://join.slack.com/t/bsta550/shared_invite/zt-2qtfo9s8j-j6ozEaYdT7yy1KuHoT9Mhw"
+    "text": "Attendance policy: a little confusing"
   },
   {
     "objectID": "lessons/02_Simulations/02_Simulations_key_info.html#announcements",
     "href": "lessons/02_Simulations/02_Simulations_key_info.html#announcements",
     "title": "Key Info",
     "section": "",
-    "text": "Slack is working for a few people??\n\nhttps://join.slack.com/t/bsta550/shared_invite/zt-2qtfo9s8j-j6ozEaYdT7yy1KuHoT9Mhw"
+    "text": "Attendance policy: a little confusing"
   },
   {
     "objectID": "lessons/03_Lang_prob/03_Lang_prob.html",
@@ -18645,6 +18645,13 @@
     "href": "lessons/02_Simulations/02_Simulations_key_info.html#last-class",
     "title": "Key Info",
     "section": "Last class",
-    "text": "Last class"
+    "text": "Last class\n\nDid not finish Lesson 1, so we will finish!"
+  },
+  {
+    "objectID": "lessons/01_Probability/01_Probability_muddy_points.html#fall-2024",
+    "href": "lessons/01_Probability/01_Probability_muddy_points.html#fall-2024",
+    "title": "Muddy Points",
+    "section": "",
+    "text": "In class, we were wondering why/if \\(2^{|S|}\\) is the general formula for calculating the total number of possible events. We were specifically wondering if the \\(2\\) came from the fact that we had two options (heads and tails) for our outcome. Let’s work through the example of a 6-sided die to explain this further. The sample space is \\(S=\\{1, 2, 3, 4, 5, 6\\}\\). So is the total number of possible events \\(2^6\\) or \\(6^6\\) or something else? We can actually think about an event by using an indicator variable for each outcome of the sample space. An indicator variable is just a way to give us a yes/no answer to a question. So in this case, we are wondering: is this outcome a part of our event? If our event is \\(\\{1\\}\\) then for the outcome \\(1\\), the answer is “yes, the outcome is part of the event. For outcomes \\(2-6\\), the answer is”no, the outcome is not apart of the event.”\n\nFor each outcome, we have a “yes” or “no” answer. We can look at another example of an event. Let’s say our event is rolling an even number:\n\nFor \\(2\\), \\(4\\), and \\(6\\), the answer is “yes.” We can define the indicator variable for whether an outcome is in an event or not. The indicator gives a 1 or 0 for yes and no respectively.\n\nAs stated above, the \\(2\\) in \\(2^6\\) comes from the \\(2\\) options from our indicator. Each side has two options, and there are \\(6\\) sides. Thus, \\(2^6\\) possible events.\n\n\n\nI think this will become clearer when we start thinking about events in the context of probability. When we think of events outside of probability, we may think of something we actually do or something that happens, like going to a concert or coming to class or missing the streetcar. In this case, we think of the event as the single thing (out of all the options) that actually occured. For example, if I’m taking the streetcar to class, I can think of two definitive options of what might occur: I miss the streetcar or I get on the streetcar. Only one of these things can occur, which I may call an event colloquially.\nIt is important to make the distinction with events defined within probability. Events are not necessarily a single thing that occurred. Instead it can be a collection of things that may occur. In the example of the streetcar, I can define my event to include both options. Thus, my event is that I make the streetcar or I miss it. Both of these things cannot happen simultaneously, but if I want to calculate the probability that I miss or make the streetcar, then it is helpful to have the event defined."
   }
 ]
