@@ -32,60 +32,33 @@ source(here("class_dates.R"))
 
 *You must show all of your work to receive credit.*
 
-::: center
-+-------------+-------------+---------------------------+
-| Chapter     | Turn In     | Extra Problems            |
-+:===========:+:===========:+:=========================:+
-| 1           |             | TB \# 3, 7, 9, 11         |
-+-------------+-------------+---------------------------+
-| 2           | TB \# 30    | TB \# 1, 4, 8, 16, 19, 23 |
-|             |             |                           |
-|             | NTB \# 1    | NTB \# 2                  |
-+-------------+-------------+---------------------------+
-:::
+## Questions
 
-## Non-textbook problems (NTB)
+### 1. Outcomes, events, and sample space
 
-1.  Suppose the following are the percentage of US adults with the following conditions:
+In the below parts, please list (i) one specific outcome, (ii) one event that contains more than one outcome, and (iii) the sample space. 
 
-    -   $A$: Hypertension 33%
+a. Chris has an 6-pack of Gatorade sports drink: 1
+orange, 2 lemon-lime, and 2 fruit punch. He blindly grabs one out of the pack over and over if necessary, without replacement, until he finds an orange one. 
 
-    -   $B$: Diabetes 9%
+b. A claw machine contains 10 plush toys: 5 Red Squishies (R), 3 Blue Dinosaurs (B), and 2 Yellow Star Puffs (Y). You successfully grab a toy, remove it, and then grab a second toy (sampling without replacement). The result is the ordered pair of the two toys' colors.
 
-    -   $C$: Metabolic syndrome 24%
+c. You are opening a series of [mofusound Cat blind boxes](https://www.youtube.com/watch?v=wmehgHl8hj4). There are 4 possible figurines to collect: 1 shark cat (S), 1 orange striped fish cat (O), and 1 hen cat (H), and 1 cow cat (C). You buy a single blind box.
 
-    -   $A$ or $B$: 39%
+### 2. Running a simulation!
 
-    -   $A$ or $C$: 45%
+This assignment requires you to use the four-step simulation process in R to approximate the probability of a specific event.
 
-    -   $B$ or $C$: 28%
+**Scenario: The Mystic Orb Blind Boxes**
+The "Mystic Orb" collectible series has 5 total figures you can find in the blind boxes:
 
-    -   $A$ or $B$ or $C$: 48%
+- 1 Rare Mystery Toy (M) - The figure Nicky wants.
 
-    a.  Make a Venn diagram of the 3 conditions labeling the percentage (or probability) for *ALL* of the 8 "sections". *Hint: Start from the last condition and work your way up!*
-    b.  For each of the following (1. - 7. below), ($i$) write out the event using unions, intersections, and/or complements of the events $A$, $B$, and $C$ (this is NOT finding the probability, that's in $ii$); ($ii$) find the probability of the event; and ($iii$) write a sentence explaining what the probability is of in terms of the context of the problem.
-        1.  $\mathbb{P}$(event at least one of the 3)
+- 4 Common Figures (C) - All other figures.
 
-        2.  $\mathbb{P}$(event none)
+When you buy a blind box, you receive one of the 5 figures, and each figure is equally likely.
 
-        3.  $\mathbb{P}$(event $A$ only)
+Nicky decides to buy three Mystic Orb blind boxes. She really wants to get the Rare Mystery Toy!! The random variable of interest is X, the number of boxes out of the three that contain the Rare Mystery Toy.
 
-        4.  $\mathbb{P}$(event exactly one)
+Using the four-step simulation process, approximate the probability that Nicky gets at least one Rare Mystery Toy when she buys three boxes.
 
-        5.  $\mathbb{P}$(event $A$ and $B$)
-
-        6.  $\mathbb{P}$(event $A$ and $B$ but not $C$)
-
-        7.  $\mathbb{P}$(event all 3)
-
-### Extra problem
-
-2.  Judith has a penny, nickel, dime, and quarter in her pocket. So does Joe. They both reach into their pockets and choose a coin (all four coins are equally likely to be selected). Let X be the larger value (in cents) of the coins selected by Judith and Joe. For reference, the penny is 1 cent, nickel is 5 cents, dime is 10 cents, and quarter is 25 cents.
-
-    a.  How many possible combinations is there for the pair of Judith's and Joe's selected coins? (Hint: we know to whom each coin belongs) 
-
-    b.  Define the sample space for X in this experiment. 
-
-    c.  Find the probability for each possible value of X. 
-
-    d.  Find the probability of the event that Judith's coin is worth more than Joe's. 

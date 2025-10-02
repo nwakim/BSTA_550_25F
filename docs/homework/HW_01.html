@@ -67,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -156,9 +127,10 @@ window.Quarto = {
    
   <ul>
   <li><a href="#directions" id="toc-directions" class="nav-link active" data-scroll-target="#directions">Directions</a></li>
-  <li><a href="#non-textbook-problems-ntb" id="toc-non-textbook-problems-ntb" class="nav-link" data-scroll-target="#non-textbook-problems-ntb">Non-textbook problems (NTB)</a>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a>
   <ul class="collapse">
-  <li><a href="#extra-problem" id="toc-extra-problem" class="nav-link" data-scroll-target="#extra-problem">Extra problem</a></li>
+  <li><a href="#outcomes-events-and-sample-space" id="toc-outcomes-events-and-sample-space" class="nav-link" data-scroll-target="#outcomes-events-and-sample-space">1. Outcomes, events, and sample space</a></li>
+  <li><a href="#running-a-simulation" id="toc-running-a-simulation" class="nav-link" data-scroll-target="#running-a-simulation">2. Running a simulation!</a></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="HW_01.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -181,7 +153,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">October 1, 2025</p>
+      <p class="date-modified">October 2, 2025</p>
     </div>
   </div>
     
@@ -207,75 +179,29 @@ window.Quarto = {
 <p><strong>Please turn in this homework on Sakai.</strong> Please submit your homework in pdf format. You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.</p>
 <p><strong>Try to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later!</strong> Only turn in the ones listed in the “Turn In” column. Please submit problems in the order they are listed.</p>
 <p><em>You must show all of your work to receive credit.</em></p>
-<div class="center">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 19%">
-<col style="width: 38%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Chapter</th>
-<th style="text-align: center;">Turn In</th>
-<th style="text-align: center;">Extra Problems</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">TB # 3, 7, 9, 11</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><p>TB # 30</p>
-<p>NTB # 1</p></td>
-<td style="text-align: center;"><p>TB # 1, 4, 8, 16, 19, 23</p>
-<p>NTB # 2</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 </section>
-<section id="non-textbook-problems-ntb" class="level2">
-<h2 class="anchored" data-anchor-id="non-textbook-problems-ntb">Non-textbook problems (NTB)</h2>
-<ol type="1">
-<li><p>Suppose the following are the percentage of US adults with the following conditions:</p>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions</h2>
+<section id="outcomes-events-and-sample-space" class="level3">
+<h3 class="anchored" data-anchor-id="outcomes-events-and-sample-space">1. Outcomes, events, and sample space</h3>
+<p>In the below parts, please list (i) one specific outcome, (ii) one event that contains more than one outcome, and (iii) the sample space.</p>
+<ol type="a">
+<li><p>Chris has an 6-pack of Gatorade sports drink: 1 orange, 2 lemon-lime, and 2 fruit punch. He blindly grabs one out of the pack over and over if necessary, without replacement, until he finds an orange one.</p></li>
+<li><p>A claw machine contains 10 plush toys: 5 Red Squishies (R), 3 Blue Dinosaurs (B), and 2 Yellow Star Puffs (Y). You successfully grab a toy, remove it, and then grab a second toy (sampling without replacement). The result is the ordered pair of the two toys’ colors.</p></li>
+<li><p>You are opening a series of <a href="https://www.youtube.com/watch?v=wmehgHl8hj4">mofusound Cat blind boxes</a>. There are 4 possible figurines to collect: 1 shark cat (S), 1 orange striped fish cat (O), and 1 hen cat (H), and 1 cow cat (C). You buy a single blind box.</p></li>
+</ol>
+</section>
+<section id="running-a-simulation" class="level3">
+<h3 class="anchored" data-anchor-id="running-a-simulation">2. Running a simulation!</h3>
+<p>This assignment requires you to use the four-step simulation process in R to approximate the probability of a specific event.</p>
+<p><strong>Scenario: The Mystic Orb Blind Boxes</strong> The “Mystic Orb” collectible series has 5 total figures you can find in the blind boxes:</p>
 <ul>
-<li><p><span class="math inline">\(A\)</span>: Hypertension 33%</p></li>
-<li><p><span class="math inline">\(B\)</span>: Diabetes 9%</p></li>
-<li><p><span class="math inline">\(C\)</span>: Metabolic syndrome 24%</p></li>
-<li><p><span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span>: 39%</p></li>
-<li><p><span class="math inline">\(A\)</span> or <span class="math inline">\(C\)</span>: 45%</p></li>
-<li><p><span class="math inline">\(B\)</span> or <span class="math inline">\(C\)</span>: 28%</p></li>
-<li><p><span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span> or <span class="math inline">\(C\)</span>: 48%</p></li>
+<li><p>1 Rare Mystery Toy (M) - The figure Nicky wants.</p></li>
+<li><p>4 Common Figures (C) - All other figures.</p></li>
 </ul>
-<ol type="a">
-<li>Make a Venn diagram of the 3 conditions labeling the percentage (or probability) for <em>ALL</em> of the 8 “sections”. <em>Hint: Start from the last condition and work your way up!</em></li>
-<li>For each of the following (1. - 7. below), (<span class="math inline">\(i\)</span>) write out the event using unions, intersections, and/or complements of the events <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, and <span class="math inline">\(C\)</span> (this is NOT finding the probability, that’s in <span class="math inline">\(ii\)</span>); (<span class="math inline">\(ii\)</span>) find the probability of the event; and (<span class="math inline">\(iii\)</span>) write a sentence explaining what the probability is of in terms of the context of the problem.
-<ol type="1">
-<li><p><span class="math inline">\(\mathbb{P}\)</span>(event at least one of the 3)</p></li>
-<li><p><span class="math inline">\(\mathbb{P}\)</span>(event none)</p></li>
-<li><p><span class="math inline">\(\mathbb{P}\)</span>(event <span class="math inline">\(A\)</span> only)</p></li>
-<li><p><span class="math inline">\(\mathbb{P}\)</span>(event exactly one)</p></li>
-<li><p><span class="math inline">\(\mathbb{P}\)</span>(event <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>)</p></li>
-<li><p><span class="math inline">\(\mathbb{P}\)</span>(event <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> but not <span class="math inline">\(C\)</span>)</p></li>
-<li><p><span class="math inline">\(\mathbb{P}\)</span>(event all 3)</p></li>
-</ol></li>
-</ol></li>
-</ol>
-<section id="extra-problem" class="level3">
-<h3 class="anchored" data-anchor-id="extra-problem">Extra problem</h3>
-<ol start="2" type="1">
-<li><p>Judith has a penny, nickel, dime, and quarter in her pocket. So does Joe. They both reach into their pockets and choose a coin (all four coins are equally likely to be selected). Let X be the larger value (in cents) of the coins selected by Judith and Joe. For reference, the penny is 1 cent, nickel is 5 cents, dime is 10 cents, and quarter is 25 cents.</p>
-<ol type="a">
-<li><p>How many possible combinations is there for the pair of Judith’s and Joe’s selected coins? (Hint: we know to whom each coin belongs)&nbsp;</p></li>
-<li><p>Define the sample space for X in this experiment.&nbsp;</p></li>
-<li><p>Find the probability for each possible value of X.&nbsp;</p></li>
-<li><p>Find the probability of the event that Judith’s coin is worth more than Joe’s.&nbsp;</p></li>
-</ol></li>
-</ol>
+<p>When you buy a blind box, you receive one of the 5 figures, and each figure is equally likely.</p>
+<p>Nicky decides to buy three Mystic Orb blind boxes. She really wants to get the Rare Mystery Toy!! The random variable of interest is X, the number of boxes out of the three that contain the Rare Mystery Toy.</p>
+<p>Using the four-step simulation process, approximate the probability that Nicky gets at least one Rare Mystery Toy when she buys three boxes.</p>
 
 
 </section>

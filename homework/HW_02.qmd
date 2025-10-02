@@ -64,3 +64,63 @@ editor_options:
 
         Show that condition $(1)$ holds, but that condition $(2)$ does not.
 2.  A new drug is packaged to contain 30 pills in a bottle. Suppose that 98% of all bottles contain no defective pills, 1.5% contain one defective pill, and 0.5% contain two defective pills. Two pills from a bottle are randomly selected and tested. What is the probability that there are 2 defective pills in the bottle given that one of the two tested pills is defective?
+
+## From old HW 1
+
+::: center
++-------------+-------------+---------------------------+
+| Chapter     | Turn In     | Extra Problems            |
++:===========:+:===========:+:=========================:+
+| 1           |             | TB \# 3, 7, 9, 11         |
++-------------+-------------+---------------------------+
+| 2           | TB \# 30    | TB \# 1, 4, 8, 16, 19, 23 |
+|             |             |                           |
+|             | NTB \# 1    | NTB \# 2                  |
++-------------+-------------+---------------------------+
+:::
+
+## Non-textbook problems (NTB)
+
+1.  Suppose the following are the percentage of US adults with the following conditions:
+
+    -   $A$: Hypertension 33%
+
+    -   $B$: Diabetes 9%
+
+    -   $C$: Metabolic syndrome 24%
+
+    -   $A$ or $B$: 39%
+
+    -   $A$ or $C$: 45%
+
+    -   $B$ or $C$: 28%
+
+    -   $A$ or $B$ or $C$: 48%
+
+    a.  Make a Venn diagram of the 3 conditions labeling the percentage (or probability) for *ALL* of the 8 "sections". *Hint: Start from the last condition and work your way up!*
+    b.  For each of the following (1. - 7. below), ($i$) write out the event using unions, intersections, and/or complements of the events $A$, $B$, and $C$ (this is NOT finding the probability, that's in $ii$); ($ii$) find the probability of the event; and ($iii$) write a sentence explaining what the probability is of in terms of the context of the problem.
+        1.  $\mathbb{P}$(event at least one of the 3)
+
+        2.  $\mathbb{P}$(event none)
+
+        3.  $\mathbb{P}$(event $A$ only)
+
+        4.  $\mathbb{P}$(event exactly one)
+
+        5.  $\mathbb{P}$(event $A$ and $B$)
+
+        6.  $\mathbb{P}$(event $A$ and $B$ but not $C$)
+
+        7.  $\mathbb{P}$(event all 3)
+
+### Extra problem
+
+2.  Judith has a penny, nickel, dime, and quarter in her pocket. So does Joe. They both reach into their pockets and choose a coin (all four coins are equally likely to be selected). Let X be the larger value (in cents) of the coins selected by Judith and Joe. For reference, the penny is 1 cent, nickel is 5 cents, dime is 10 cents, and quarter is 25 cents.
+
+    a.  How many possible combinations is there for the pair of Judith's and Joe's selected coins? (Hint: we know to whom each coin belongs) 
+
+    b.  Define the sample space for X in this experiment. 
+
+    c.  Find the probability for each possible value of X. 
+
+    d.  Find the probability of the event that Judith's coin is worth more than Joe's. 
