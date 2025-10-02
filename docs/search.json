@@ -18470,7 +18470,7 @@
     "href": "lessons/02_Simulations/02_Simulations_muddy_points.html",
     "title": "Muddy Points",
     "section": "",
-    "text": "The muddy points from this year were a subset of the ones from last year, so I just decided to copy those below!"
+    "text": "When we say “with replacement,” it means that after we select an item (like drawing a card from a deck), we put it back before selecting again. This means that the probability of selecting that item remains the same for each draw. For example, if you draw a card from a standard deck of 52 cards and then put it back, the probability of drawing any specific card (like an Ace) remains 1/52 for each draw.\nOn the other hand, “without replacement” means that once an item is selected, it is not put back. This means that the probability of selecting that item changes for subsequent draws because there are fewer items left to choose from. For example, if you draw a card from a deck and do not put it back, the probability of drawing an Ace on the next draw changes because there are now only 51 cards left in the deck.\nIt’s less about the importance of replacement, but that we accurately represent whatever scenario we want to simulate!"
   },
   {
     "objectID": "lessons/02_Simulations/02_Simulations_muddy_points.html#proofs-of-propositions",
@@ -18681,5 +18681,33 @@
     "title": "Muddy Points",
     "section": "3. Partition of events",
     "text": "3. Partition of events\nWe’ve been working with event partitions throughout Chapter 2, but we have not formally identified them. Partitions are advantageous to define for two reasons:\n\nThe partitions may be easier to calculate. We can then use the partitions to reconstruct other probabilities that may be more difficult to calculate\nPartitions have nice properties as a consequence of being disjoint. For example, the probability of the union of partitions is the sum of the probabilities across each partition: \\[P\\bigg(\\bigcup_{i=1}^n A_i\\bigg) = P(A_1)P(A_2)P(A_3) \\cdot \\cdot \\cdot P(A_n)\\]"
+  },
+  {
+    "objectID": "lessons/02_Simulations/02_Simulations_muddy_points.html#fall-2025",
+    "href": "lessons/02_Simulations/02_Simulations_muddy_points.html#fall-2025",
+    "title": "Muddy Points",
+    "section": "",
+    "text": "When we say “with replacement,” it means that after we select an item (like drawing a card from a deck), we put it back before selecting again. This means that the probability of selecting that item remains the same for each draw. For example, if you draw a card from a standard deck of 52 cards and then put it back, the probability of drawing any specific card (like an Ace) remains 1/52 for each draw.\nOn the other hand, “without replacement” means that once an item is selected, it is not put back. This means that the probability of selecting that item changes for subsequent draws because there are fewer items left to choose from. For example, if you draw a card from a deck and do not put it back, the probability of drawing an Ace on the next draw changes because there are now only 51 cards left in the deck.\nIt’s less about the importance of replacement, but that we accurately represent whatever scenario we want to simulate!"
+  },
+  {
+    "objectID": "lessons/03_Lang_prob/03_Lang_prob_key_info.html",
+    "href": "lessons/03_Lang_prob/03_Lang_prob_key_info.html",
+    "title": "Key Info",
+    "section": "",
+    "text": "For muddy points, it really helps if you can asked a specific question about what you found confusing\n\nI can then address it in a more targeted way\n\nFor office hours, we decided to do appointments!\n\nHere’s my Calendly: https://calendly.com/nickywakim/15min\nI teach on Mondays and Wednesdays so I am keeping most of my meetings to Tuesdays and Thursdays\nFor my EPI class, I have scheduled office hours on Mondays 4-5pm in VPT 627\n\nI will give priority to EPI students, but you can drop by for those as well\n\n\nI think all the dates in the schedule were correct except for next week"
+  },
+  {
+    "objectID": "lessons/03_Lang_prob/03_Lang_prob_key_info.html#announcements",
+    "href": "lessons/03_Lang_prob/03_Lang_prob_key_info.html#announcements",
+    "title": "Key Info",
+    "section": "",
+    "text": "For muddy points, it really helps if you can asked a specific question about what you found confusing\n\nI can then address it in a more targeted way\n\nFor office hours, we decided to do appointments!\n\nHere’s my Calendly: https://calendly.com/nickywakim/15min\nI teach on Mondays and Wednesdays so I am keeping most of my meetings to Tuesdays and Thursdays\nFor my EPI class, I have scheduled office hours on Mondays 4-5pm in VPT 627\n\nI will give priority to EPI students, but you can drop by for those as well\n\n\nI think all the dates in the schedule were correct except for next week"
+  },
+  {
+    "objectID": "lessons/03_Lang_prob/03_Lang_prob_key_info.html#key-dates",
+    "href": "lessons/03_Lang_prob/03_Lang_prob_key_info.html#key-dates",
+    "title": "Key Info",
+    "section": "Key Dates",
+    "text": "Key Dates\n\nHW 1 Assignment due this Thursday at 11pm"
   }
 ]
