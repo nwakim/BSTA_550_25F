@@ -41,9 +41,7 @@ Welcome to Biostatistics and Probability! This course is designed to introduce h
 ::: g-col-3
 ### Office Hours
 
-Nicky {{< iconify icon-park-solid time size=24px >}} TBD
-
-Charles {{< iconify icon-park-solid time size=24px >}} TBD
+[Charles {{< iconify icon-park-solid time size=24px >}} TBD](https://ohsu.webex.com/meet/parkecha)
 :::
 
 ::: g-col-3
