@@ -41,6 +41,8 @@ source(here("class_dates.R"))
 
 ![](../img_slides/course_map.png){fig-align="center"}
 
+# Learning Objectives
+
 ## Independent Events
 
 ::: definition

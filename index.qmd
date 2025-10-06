@@ -41,7 +41,10 @@ Welcome to Biostatistics and Probability! This course is designed to introduce h
 ::: g-col-3
 ### Office Hours
 
-[Charles {{< iconify icon-park-solid time size=24px >}} TBD](https://ohsu.webex.com/meet/parkecha)
+[Charles](https://ohsu.webex.com/meet/parkecha) {{< iconify icon-park-solid time size=24px >}} Th 11am-12pm
+
+[Charles](https://ohsu.webex.com/meet/parkecha) {{< iconify icon-park-solid time size=24px >}} F 12-1pm
+
 :::
 
 ::: g-col-3
