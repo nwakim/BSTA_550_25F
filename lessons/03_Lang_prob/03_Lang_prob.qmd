@@ -21,40 +21,39 @@ library(here)
 source(here("class_dates.R"))
 ```
 
-
 # Learning Objectives
 
-1. Use set notation, Venn diagrams, and the concepts of unions, intersections, complements, and mutually exclusive events to represent and describe events.
+1.  Use set notation, Venn diagrams, and the concepts of unions, intersections, complements, and mutually exclusive events to represent and describe events.
 
-2. Apply the axioms of probability and related properties to calculate probabilities and prove simple results.
+2.  Apply the axioms of probability and related properties to calculate probabilities and prove simple results.
 
-4. Explain and use De Morgan’s Laws to simplify and solve probability problems.
+3.  Explain and use De Morgan’s Laws to simplify and solve probability problems.
 
-5. Connect partitions and all rules of probability to calculate probabilities. 
+4.  Connect partitions and all rules of probability to calculate probabilities.
 
 ## Where are we?
 
 ![](../img_slides/course_map.png){fig-align="center"}
 
-# Learning Objectives 
+# Learning Objectives
 
 ::: lob
-1. Use set notation, Venn diagrams, and the concepts of unions, intersections, complements, and mutually exclusive events to represent and describe events.
+1.  Use set notation, Venn diagrams, and the concepts of unions, intersections, complements, and mutually exclusive events to represent and describe events.
 :::
 
-2. Apply the axioms of probability and related properties to calculate probabilities and prove simple results.
+2.  Apply the axioms of probability and related properties to calculate probabilities and prove simple results.
 
-4. Explain and use De Morgan’s Laws to simplify and solve probability problems.
+3.  Explain and use De Morgan’s Laws to simplify and solve probability problems.
 
-5. Connect partitions and all rules of probability to calculate probabilities. 
+4.  Connect partitions and all rules of probability to calculate probabilities.
 
 ## Set Theory (1/2)
 
-::: columns
-::: {.column width="40%"}
+::::::::::: columns
+::::::::: {.column width="40%"}
  
 
-::: definition
+::::: definition
 ::: def-title
 Definition: Union
 :::
@@ -62,9 +61,9 @@ Definition: Union
 ::: def-cont
 The **union** of events $A$ and $B$, denoted by $A \cup B$, contains all outcomes that are in $A$ *or* $B$ or both
 :::
-:::
+:::::
 
-::: definition
+::::: definition
 ::: def-title
 Definition: Intersection
 :::
@@ -72,21 +71,21 @@ Definition: Intersection
 ::: def-cont
 The **intersection** of events $A$ and $B$, denoted by $A \cap B$, contains all outcomes that are both in $A$ *and* $B$.
 :::
-:::
-:::
+:::::
+:::::::::
 
 ::: {.column width="60%"}
 Venn diagrams
 :::
-:::
+:::::::::::
 
 ## Set Theory (2/2)
 
-::: columns
-::: {.column width="40%"}
+::::::::::: columns
+::::::::: {.column width="40%"}
  
 
-::: definition
+::::: definition
 ::: def-title
 Definition: Complement
 :::
@@ -94,9 +93,9 @@ Definition: Complement
 ::: def-cont
 The **complement** of event $A$, denoted by $A^C$ or $A'$, contains all outcomes in the sample space $S$ that are *not* in $A$ .
 :::
-:::
+:::::
 
-::: definition
+::::: definition
 ::: def-title
 Definition: Mutually Exclusive
 :::
@@ -104,31 +103,149 @@ Definition: Mutually Exclusive
 ::: def-cont
 Events $A$ and $B$ are **mutually exclusive**, or disjoint, if they have no outcomes in common. In this case $A \cap B = \emptyset$, where $\emptyset$ is the empty set.
 :::
-:::
-:::
+:::::
+:::::::::
 
 ::: {.column width="60%"}
 Venn diagrams
+:::
+:::::::::::
+
+## How can we code some of these? (1/2)
+
+::::: example
+::: ex-title
+Example: Simulating Two Rolls of a Fair Four-Sided Die
+:::
+
+::: ex-cont
+We're going to roll two four-sided dice. **This time, let's say event A is rolling matching numbers and event B is rolling at least one 2.**
+:::
+:::::
+
+- First, we simulate rolling two four-sided dice 10,000 times
+```{r}
+#| echo: true
+
+set.seed(1002)
+rolls = replicate(10000, sample(x = 1:4, size = 2, replace = TRUE))
+
+```
+
+- Now, we can create logical vectors for events A and B
+
+```{r}
+#| echo: true
+
+event_A = ( rolls[1, ] == rolls[2, ] )
+head(event_A, 10)
+
+event_B = ( rolls[1, ] == 2 | rolls[2, ] == 2 )
+head(event_B, 10)
+```
+
+## How can we code some of these? (2/2)
+
+::: columns
+
+::: {.column width="50%"}
+
+::::: proposition
+::: prop-title
+Union
+:::
+::: prop-cont
+$A \cup B$  
+`A | B`
+```{r}
+#| echo: true
+event_A_or_B = event_A | event_B
+head(event_A_or_B, 10)
+```
+
+:::
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::::: proof1
+::: proof-title
+Intersection
+:::
+::: proof-cont
+$A \cap B$
+`A & B`
+```{r}
+#| echo: true
+
+event_A_and_B = event_A & event_B
+head(event_A_and_B, 10)
+```
+:::
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: example
+::: ex-title
+Complement
+:::
+::: ex-cont
+$A^c$ or $A'$
+`!= A`
+```{r}
+#| echo: true
+
+event_not_A = !event_A
+event_not_B = event_B != TRUE
+head(event_not_A, 10)
+```
+:::
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: extra
+::: ext-title
+Mutually Exclusive
+:::
+::: ext-cont
+$A \cap B = \emptyset$
+`A & B == NA`
+```{r}
+#| echo: true
+
+sum(event_A_and_B == TRUE)
+```
+:::
+:::
+
 :::
 :::
 
 # Learning Objective
 
-1. Use set notation, Venn diagrams, and the concepts of unions, intersections, complements, and mutually exclusive events to represent and describe events.
+1.  Use set notation, Venn diagrams, and the concepts of unions, intersections, complements, and mutually exclusive events to represent and describe events.
 
 ::: lob
-2. Apply the axioms of probability and related properties to calculate probabilities and prove simple results.
+2.  Apply the axioms of probability and related properties to calculate probabilities and prove simple results.
 :::
 
-4. Explain and use De Morgan’s Laws to simplify and solve probability problems.
+4.  Explain and use De Morgan’s Laws to simplify and solve probability problems.
 
-5. Connect partitions and all rules of probability to calculate probabilities. 
+5.  Connect partitions and all rules of probability to calculate probabilities.
 
 ## Probability Axioms
 
-::: columns
-::: column
-::: axiom
+::::::::::::: columns
+:::::::::::: column
+::::: axiom
 ::: axiom-title
 Axiom 1
 :::
@@ -136,9 +253,9 @@ Axiom 1
 ::: axiom-cont
 For every event $A$, $0\leq\mathbb{P}(A)\leq 1$. Probability is between 0 and 1.
 :::
-:::
+:::::
 
-::: axiom
+::::: axiom
 ::: axiom-title
 Axiom 2
 :::
@@ -146,30 +263,27 @@ Axiom 2
 ::: axiom-cont
 For the sample space $S$, $\mathbb{P}(S)=1$.
 :::
-:::
+:::::
 
-::: axiom
+::::: axiom
 ::: axiom-title
 Axiom 3
 :::
 
 ::: axiom-cont
-If $A_1, A_2, A_3, \ldots$, is a collection of **disjoint** events, then $$\mathbb{P}\Big( \bigcup \limits_{i=1}^{\infty}A_i\Big) =  \sum_{i=1}^{\infty}\mathbb{P}(A_i).$$ 
-The probability of at least one $A_i$ is the sum of the individual probabilities of each.
+If $A_1, A_2, A_3, \ldots$, is a collection of **disjoint** events, then $$\mathbb{P}\Big( \bigcup \limits_{i=1}^{\infty}A_i\Big) =  \sum_{i=1}^{\infty}\mathbb{P}(A_i).$$ The probability of at least one $A_i$ is the sum of the individual probabilities of each.
 :::
-:::
-
-:::
-:::
-
+:::::
+::::::::::::
+:::::::::::::
 
 ## Some probability properties
 
 Using the Axioms, we can prove all other probability properties! Events A, B, and C are not necessarily disjoint!
 
-::: columns
-::: column
-::: proposition
+:::::::::::::::::::: columns
+:::::::::::: column
+::::: proposition
 ::: prop-title
 Proposition 1
 :::
@@ -177,9 +291,9 @@ Proposition 1
 ::: prop-cont
 For any event $A$, $\mathbb{P}(A)= 1 - \mathbb{P}(A^C)$
 :::
-:::
+:::::
 
-::: proposition
+::::: proposition
 ::: prop-title
 Proposition 2
 :::
@@ -187,9 +301,9 @@ Proposition 2
 ::: prop-cont
 $\mathbb{P}(\emptyset)=0$
 :::
-:::
+:::::
 
-::: proposition
+::::: proposition
 ::: prop-title
 Proposition 3
 :::
@@ -197,11 +311,11 @@ Proposition 3
 ::: prop-cont
 If $A \subseteq B$, then $\mathbb{P}(A) \leq \mathbb{P}(B)$
 :::
-:::
-:::
+:::::
+::::::::::::
 
-::: column
-::: proposition
+::::::::: column
+::::: proposition
 ::: prop-title
 Proposition 4
 :::
@@ -209,9 +323,9 @@ Proposition 4
 ::: prop-cont
 $$\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)$$ where $A$ and $B$ are not necessarily disjoint
 :::
-:::
+:::::
 
-::: proposition
+::::: proposition
 ::: prop-title
 Proposition 5
 :::
@@ -219,15 +333,15 @@ Proposition 5
 ::: prop-cont
 $\begin{aligned} \mathbb{P}(A \cup B & \cup C) = \mathbb{P}(A) + \mathbb{P}(B) + \\ & \mathbb{P}(C) - \mathbb{P}(A \cap B) - \mathbb{P}(A \cap C) - \\ & \mathbb{P}(B \cap C) + \mathbb{P}(A \cap B \cap C) \end{aligned}$
 :::
-:::
-:::
-:::
+:::::
+:::::::::
+::::::::::::::::::::
 
 ## Proposition 1 Proof
 
-::: columns
-::: {.column width="70%"}
-::: proposition
+::::::::::: columns
+:::::: {.column width="70%"}
+::::: proposition
 ::: prop-title
 Proposition 1
 :::
@@ -235,11 +349,11 @@ Proposition 1
 ::: prop-cont
 For any event $A$, $\mathbb{P}(A)= 1 - \mathbb{P}(A^C)$
 :::
-:::
-:::
+:::::
+::::::
 
-::: {.column width="30%"}
-::: axiom
+:::::: {.column width="30%"}
+::::: axiom
 ::: axiom-title
 Use Axioms!
 :::
@@ -249,21 +363,19 @@ A1: $0\leq\mathbb{P}(A)\leq 1$
 
 A2: $\mathbb{P}(S)=1$
 
-A3: For disjoint $A_i$, 
+A3: For disjoint $A_i$,
 
 $\mathbb{P}\Big( \bigcup \limits_{i=1}^{\infty}A_i\Big) =  \sum_{i=1}^{\infty}\mathbb{P}(A_i)$
 :::
-:::
-:::
-:::
-
-
+:::::
+::::::
+:::::::::::
 
 ## Proposition 2 Proof
 
-::: columns
-::: {.column width="70%"}
-::: proposition
+::::::::::: columns
+:::::: {.column width="70%"}
+::::: proposition
 ::: prop-title
 Proposition 2
 :::
@@ -271,11 +383,11 @@ Proposition 2
 ::: prop-cont
 $\mathbb{P}(\emptyset)=0$
 :::
-:::
-:::
+:::::
+::::::
 
-::: {.column width="30%"}
-::: axiom
+:::::: {.column width="30%"}
+::::: axiom
 ::: axiom-title
 Use Axioms!
 :::
@@ -285,20 +397,19 @@ A1: $0\leq\mathbb{P}(A)\leq 1$
 
 A2: $\mathbb{P}(S)=1$
 
-A3: For disjoint $A_i$, 
+A3: For disjoint $A_i$,
 
 $\mathbb{P}\Big( \bigcup \limits_{i=1}^{\infty}A_i\Big) =  \sum_{i=1}^{\infty}\mathbb{P}(A_i)$
 :::
-:::
-:::
-:::
-
+:::::
+::::::
+:::::::::::
 
 ## Proposition 3 Proof
 
-::: columns
-::: {.column width="70%"}
-::: proposition
+::::::::::: columns
+:::::: {.column width="70%"}
+::::: proposition
 ::: prop-title
 Proposition 3
 :::
@@ -306,11 +417,11 @@ Proposition 3
 ::: prop-cont
 If $A \subseteq B$, then $\mathbb{P}(A) \leq \mathbb{P}(B)$
 :::
-:::
-:::
+:::::
+::::::
 
-::: {.column width="30%"}
-::: axiom
+:::::: {.column width="30%"}
+::::: axiom
 ::: axiom-title
 Use Axioms!
 :::
@@ -320,18 +431,17 @@ A1: $0\leq\mathbb{P}(A)\leq 1$
 
 A2: $\mathbb{P}(S)=1$
 
-A3: For disjoint $A_i$, 
+A3: For disjoint $A_i$,
 
 $\mathbb{P}\Big( \bigcup \limits_{i=1}^{\infty}A_i\Big) =  \sum_{i=1}^{\infty}\mathbb{P}(A_i)$
 :::
-:::
-:::
-:::
-
+:::::
+::::::
+:::::::::::
 
 ## Proposition 4 Visual Proof
 
-::: proposition
+::::: proposition
 ::: prop-title
 Proposition 4
 :::
@@ -339,11 +449,11 @@ Proposition 4
 ::: prop-cont
 $\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)$
 :::
-:::
+:::::
 
 ## Proposition 5 Visual Proof
 
-::: proposition
+::::: proposition
 ::: prop-title
 Proposition 5
 :::
@@ -351,34 +461,33 @@ Proposition 5
 ::: prop-cont
 $\mathbb{P}(A \cup B \cup C) = \mathbb{P}(A) + \mathbb{P}(B) + \mathbb{P}(C) - \mathbb{P}(A \cap B) - \mathbb{P}(A \cap C) - \mathbb{P}(B \cap C) + \mathbb{P}(A \cap B \cap C)$
 :::
-:::
+:::::
 
 ## Some final remarks on these proposition
 
-- Notice how we spliced events into multiple **disjoint** events
-  - It is often easier to work with disjoint events
-  
- 
-  
-- If we want to calculate the probability for one event, we may need to get creative with how we manipulate other events and the sample space 
-  - Helps us use any incomplete information we have 
+-   Notice how we spliced events into multiple **disjoint** events
+    -   It is often easier to work with disjoint events
 
+ 
+
+-   If we want to calculate the probability for one event, we may need to get creative with how we manipulate other events and the sample space
+    -   Helps us use any incomplete information we have
 
 # Learning Objectives
 
-1. Use set notation, Venn diagrams, and the concepts of unions, intersections, complements, and mutually exclusive events to represent and describe events.
+1.  Use set notation, Venn diagrams, and the concepts of unions, intersections, complements, and mutually exclusive events to represent and describe events.
 
-2. Apply the axioms of probability and related properties to calculate probabilities and prove simple results.
+2.  Apply the axioms of probability and related properties to calculate probabilities and prove simple results.
 
 ::: lob
-4. Explain and use De Morgan’s Laws to simplify and solve probability problems.
+4.  Explain and use De Morgan’s Laws to simplify and solve probability problems.
 :::
 
-5. Connect partitions and all rules of probability to calculate probabilities. 
+5.  Connect partitions and all rules of probability to calculate probabilities.
 
 ## De Morgan's Laws
 
-::: theorem
+::::: theorem
 ::: thm-title
 Theorem: De Morgan's 1st Law
 :::
@@ -388,11 +497,11 @@ For a collection of events (sets) $A_1, A_2, A_3, \ldots$
 
 $$\bigcap\limits_{i=1}^{n}A_i^C = \Big(\bigcup\limits_{i=1}^{n}A_i\Big)^C$$
 :::
-:::
+:::::
 
 "all not A = $($at least one event A$)^C$" or "intersection of the complements is the complement of the union"
 
-::: theorem
+::::: theorem
 ::: thm-title
 Theorem: De Morgan's 2nd Law
 :::
@@ -402,7 +511,7 @@ For a collection of events (sets) $A_1, A_2, A_3, \ldots$
 
 $$\bigcup\limits_{i=1}^{n}A_i^C = \Big(\bigcap\limits_{i=1}^{n}A_i\Big)^C$$
 :::
-:::
+:::::
 
 "at least one event not A = $($all A$)^C$" or "union of complements is complement of the intersection"
 
@@ -458,7 +567,6 @@ $$\bigcup\limits_{i=1}^{n}A_i^C = \Big(\bigcap\limits_{i=1}^{n}A_i\Big)^C$$
 
 5.  Event at least one subject does not have high BP
 
-
 ## Remarks on De Morgan's Laws
 
 -   These laws also hold for infinite collections of events.
@@ -474,24 +582,24 @@ $$\bigcup\limits_{i=1}^{n}A_i^C = \Big(\bigcap\limits_{i=1}^{n}A_i\Big)^C$$
     -   This is because calculating the probability of the **intersection of events is often much easier than the union of events**.
 
     -   This is not obvious right now, but we will see in the coming chapters why.
-    
+
 # Learning Objectives
 
-1. Use set notation, Venn diagrams, and the concepts of unions, intersections, complements, and mutually exclusive events to represent and describe events.
+1.  Use set notation, Venn diagrams, and the concepts of unions, intersections, complements, and mutually exclusive events to represent and describe events.
 
-2. Apply the axioms of probability and related properties to calculate probabilities and prove simple results.
+2.  Apply the axioms of probability and related properties to calculate probabilities and prove simple results.
 
-4. Explain and use De Morgan’s Laws to simplify and solve probability problems.
+3.  Explain and use De Morgan’s Laws to simplify and solve probability problems.
 
 ::: lob
-5. Connect partitions and all rules of probability to calculate probabilities. 
+5.  Connect partitions and all rules of probability to calculate probabilities.
 :::
 
 ## Partitions
 
-::: columns
-::: {.column width="60%"}
-::: definition
+::::::::::: columns
+::::::::: {.column width="60%"}
+::::: definition
 ::: def-title
 Definition: Partition
 :::
@@ -503,9 +611,9 @@ A set of events $\{A_i\}_{i=1}^{n}$ create a **partition** of $A$, if
 
 -   $\bigcup \limits_{i=1}^n A_i = A$
 :::
-:::
+:::::
 
-::: example
+::::: example
 ::: ex-title
 Example 2
 :::
@@ -515,20 +623,20 @@ Example 2
 
 -   If $S = \bigcup \limits_{i=1}^n A_i$, and the $A_i$'s are disjoint, then the $A_i$'s are a partition of the sample space.
 :::
-:::
-:::
+:::::
+:::::::::
 
 ::: {.column width="40%"}
 :::
-:::
+:::::::::::
 
 Creating partitions is sometimes used to help calculate probabilities, since by Axiom 3 we can add the probabilities of disjoint events.
 
 ## Weekly medications
 
-::: columns
-::: {.column width="40%"}
-::: example
+:::::::: columns
+:::::: {.column width="40%"}
+::::: example
 ::: ex-title
 Example 3
 :::
@@ -544,12 +652,12 @@ If a subject has an
 
 then find the probability of them taking their medication exactly one of the two weeks.
 :::
-:::
-:::
+:::::
+::::::
 
 ::: {.column width="60%"}
 *Hint: Draw a Venn diagram labelling each of the parts to find the probability.*
 :::
-:::
+::::::::
 
 ## 
