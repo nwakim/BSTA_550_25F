@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-10-01">
 
-<title>Key Info – Introduction to Probability</title>
+<title>Muddy Points – Introduction to Probability</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -126,8 +156,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#announcements" id="toc-announcements" class="nav-link active" data-scroll-target="#announcements">Announcements</a></li>
-  <li><a href="#key-dates" id="toc-key-dates" class="nav-link" data-scroll-target="#key-dates">Key Dates</a></li>
+  <li><a href="#how-do-i-know-if-two-events-are-independent" id="toc-how-do-i-know-if-two-events-are-independent" class="nav-link active" data-scroll-target="#how-do-i-know-if-two-events-are-independent">1. How do I know if two events are independent?</a></li>
+  <li><a href="#disjoint-vs.-independent-events" id="toc-disjoint-vs.-independent-events" class="nav-link" data-scroll-target="#disjoint-vs.-independent-events">2. Disjoint vs.&nbsp;Independent Events</a></li>
   </ul>
 </nav>
     </div>
@@ -136,7 +166,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Key Info</h1>
+<h1 class="title">Muddy Points</h1>
+<p class="subtitle lead">Chapter 3: Independence</p>
 </div>
 
 
@@ -144,6 +175,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 1, 2024</p>
+    </div>
+  </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
@@ -159,24 +196,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="announcements" class="level2">
-<h2 class="anchored" data-anchor-id="announcements">Announcements</h2>
-<ul>
-<li>Q: Can we still turn in exit tickets even if its not the same day? For example I was here the first day but forgot to do the exit ticket, if I did it today would it still count towards my grade?
-<ul>
-<li>Yes! I check them for “attendance” after 7 (sometimes more) days after the class</li>
-</ul></li>
-<li>For muddy points, it really helps if you can asked a specific question about what you found confusing
-<ul>
-<li>I can then address it in a more targeted way</li>
-</ul></li>
-</ul>
+<section id="how-do-i-know-if-two-events-are-independent" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-i-know-if-two-events-are-independent">1. How do I know if two events are independent?</h3>
+<p>My main piece of advice for independence is to rely on the math to show it, not logic! Don’t go into a problem thinking “Logically, these two events are independent.” If the problem does not say “Assume independence,” then we need to show it mathematically.</p>
+<p>Same goes with the definition of independence. When we say “knowing the outcome of one provides no information about the outcome of the other,” we once again need to show this mathematically, not just using logic. We translate the previous statement to <span class="math display">\[P(A) = P(A|B)\]</span> And we need to show this mathematically!</p>
 </section>
-<section id="key-dates" class="level2">
-<h2 class="anchored" data-anchor-id="key-dates">Key Dates</h2>
-<ul>
-<li>HW 1 Assignment due this Thursday at 11pm</li>
-</ul>
+<section id="disjoint-vs.-independent-events" class="level3">
+<h3 class="anchored" data-anchor-id="disjoint-vs.-independent-events">2. Disjoint vs.&nbsp;Independent Events</h3>
+<p><a href="https://www.youtube.com/watch?v=aVqmWW3xmdU&amp;ab_channel=AceTutors">Here is a pretty good video</a> breaking down disjoint (mutually exclusive) events and independent events. It includes examples as well.</p>
 
 
 </section>

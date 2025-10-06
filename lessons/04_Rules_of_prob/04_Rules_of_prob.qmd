@@ -15,7 +15,6 @@ format:
     html-math-method: mathjax
 ---
 
-
 ```{r setup, include=FALSE}
 library(here)
 source(here("class_dates.R"))
@@ -27,15 +26,15 @@ source(here("class_dates.R"))
 
 2.  Calculate whether two or more events are independent
 
-1.  Use set process to calculate probability of event of interest
+3.  Use set process to calculate probability of event of interest
 
-2.  Calculate the probability of an event occurring, given that another event occurred.
+4.  Calculate the probability of an event occurring, given that another event occurred.
 
-3.  Define keys facts for conditional probabilities using notation.
+5.  Define keys facts for conditional probabilities using notation.
 
-1.  Calculate conditional probability of an event using Bayes' Theorem
+6.  Calculate conditional probability of an event using Bayes' Theorem
 
-2.  Utilize additional probability rules in probability calculations, specifically the Higher Order Multiplication Rule and the Law of Total Probabilities
+7.  Utilize additional probability rules in probability calculations, specifically the Higher Order Multiplication Rule and the Law of Total Probabilities
 
 ## Where are we?
 
@@ -45,7 +44,7 @@ source(here("class_dates.R"))
 
 ## Independent Events
 
-::: definition
+::::: definition
 ::: def-title
 Definition: Independence
 :::
@@ -53,19 +52,18 @@ Definition: Independence
 ::: def-cont
 *Events* $A$ and $B$ are **independent** if $$\mathbb{P}(A \cap B) = \mathbb{P}(A) \cdot  \mathbb{P}(B).$$
 :::
-:::
+:::::
 
 **Notation:** For shorthand, we sometimes write $A \mathrel{\unicode{x2AEB}} B,$ to denote that $A$ and $B$ are independent events.
 
  
 
-- Also note: 
-$$\begin{aligned} \mathbb{P}(A \cap B) = \mathbb{P}(A) \cdot  \mathbb{P}(B) & \implies A \mathrel{\unicode{x2AEB}} B \\
-A \mathrel{\unicode{x2AEB}} B & \implies \mathbb{P}(A \cap B) = \mathbb{P}(A) \cdot  \mathbb{P}(B) \end{aligned}$$
+-   Also note: $$\begin{aligned} \mathbb{P}(A \cap B) = \mathbb{P}(A) \cdot  \mathbb{P}(B) & \implies A \mathrel{\unicode{x2AEB}} B \\
+    A \mathrel{\unicode{x2AEB}} B & \implies \mathbb{P}(A \cap B) = \mathbb{P}(A) \cdot  \mathbb{P}(B) \end{aligned}$$
 
 ## Example of two dice
 
-::: example
+::::: example
 ::: ex-title
 Example 1
 :::
@@ -73,11 +71,11 @@ Example 1
 ::: ex-cont
 *Two dice (red and blue) are rolled. Let* $A =$ event a total of 7 appears, and $B =$ event red die is a six. Are events $A$ and $B$ independent?
 :::
-:::
+:::::
 
 ## Independence of 3 Events
 
-::: definition
+::::: definition
 ::: def-title
 Definition: Independence of 3 Events
 :::
@@ -95,7 +93,7 @@ Definition: Independence of 3 Events
 
 2.  $\mathbb{P}(A \cap B \cap C) = \mathbb{P}(A) \cdot \mathbb{P}(B) \cdot \mathbb{P}(C)$
 :::
-:::
+:::::
 
 **Remark:**
 
@@ -103,10 +101,9 @@ On your homework you will show that $(1) \not \Rightarrow (2)$ and $(2) \not \Ri
 
 ## Probability at least one smoker
 
-::: columns
-
-::: {.column width="34%"}
-::: example
+::::::: columns
+:::::: {.column width="34%"}
+::::: example
 ::: ex-title
 Example 2
 :::
@@ -120,14 +117,13 @@ Example 2
 
 Find the probability that at least one person in the random sample is a smoker.
 :::
-:::
-
-:::
-:::
+:::::
+::::::
+:::::::
 
 ## Building geometric series {visibility="hidden"}
 
-::: example
+::::: example
 ::: ex-title
 Example 3
 :::
@@ -135,7 +131,7 @@ Example 3
 ::: ex-cont
 $A, B,$ and $C$ toss a fair coin in order. The first to throw heads wins. What are their respective chances of winning?
 :::
-:::
+:::::
 
 Let
 
@@ -150,7 +146,6 @@ Let
 2.  Calculate the probability of an event occurring, given that another event occurred.
 
 3.  Define keys facts for conditional probabilities using notation.
-
 
 ## General Process for Probability Word Problems
 
@@ -176,9 +171,9 @@ Let
 
 ## Let's revisit our deck of cards
 
-::: columns
-::: {.column width="35%"}
-::: example
+:::::::: columns
+:::::: {.column width="35%"}
+::::: example
 ::: ex-title
 Example 1
 :::
@@ -186,24 +181,24 @@ Example 1
 ::: ex-cont
 Suppose we randomly draw 2 cards from a standard deck of cards. What is the probability that we draw a spade then a heart?
 :::
-:::
+:::::
 
 Let
 
 -   Let $A =$ event $1^{st}$ card is spades
 
 -   Let $B =$ event $2^{nd}$ card is heart
-:::
+::::::
 
 ::: column
 :::
-:::
+::::::::
 
 ## Conditional Probability facts (1/2)
 
-::: columns
-::: column
-::: fact
+::::::::::: columns
+:::::: column
+::::: fact
 ::: fact-title
 Fact 1: General Multiplication Rule
 :::
@@ -211,11 +206,11 @@ Fact 1: General Multiplication Rule
 ::: fact-cont
 $$\mathbb{P}(A\cap B)=\mathbb{P}(A)\cdot\mathbb{P}(B|A)$$
 :::
-:::
-:::
+:::::
+::::::
 
-::: column
-::: fact
+:::::: column
+::::: fact
 ::: fact-title
 Fact 2: Conditional Probability Definition
 :::
@@ -223,15 +218,15 @@ Fact 2: Conditional Probability Definition
 ::: fact-cont
 $$\mathbb{P}(A|B)=\frac{\mathbb{P}(A\cap B)}{\mathbb{P}(B)}$$
 :::
-:::
-:::
-:::
+:::::
+::::::
+:::::::::::
 
 ## Conditional Probability facts (2/2)
 
-::: columns
-::: column
-::: fact
+::::::::::: columns
+:::::: column
+::::: fact
 ::: fact-title
 Fact 3
 :::
@@ -239,11 +234,11 @@ Fact 3
 ::: fact-cont
 If $A$ and $B$ are independent events ($A \unicode{x2AEB}B$), then $$\mathbb{P}(A|B) = \mathbb{P}(A)$$
 :::
-:::
-:::
+:::::
+::::::
 
-::: column
-::: fact
+:::::: column
+::::: fact
 ::: fact-title
 Fact 4
 :::
@@ -251,9 +246,9 @@ Fact 4
 ::: fact-cont
 $\mathbb{P}(A|B)$ is a probability, meaning that it satisfies the probability axioms. In particular, $$\mathbb{P}(A|B) + \mathbb{P}(A^C|B) = 1$$
 :::
-:::
-:::
-:::
+:::::
+::::::
+:::::::::::
 
 ## Monty Hall Problem
 
@@ -263,9 +258,9 @@ $\mathbb{P}(A|B)$ is a probability, meaning that it satisfies the probability ax
 
 ## Conditional probability with two dice
 
-::: columns
-::: column
-::: example
+::::::: columns
+:::::: column
+::::: example
 ::: ex-title
 Example 2
 :::
@@ -273,9 +268,9 @@ Example 2
 ::: ex-cont
 Two dice (red and blue) are rolled. If the dice do not show the same face, what is the probability that one of the dice is a 1?
 :::
-:::
-:::
-:::
+:::::
+::::::
+:::::::
 
 # Learning Objectives
 
@@ -295,9 +290,9 @@ Two dice (red and blue) are rolled. If the dice do not show the same face, what 
 
 ## Bayes' Rule for two events
 
-::: columns
-::: column
-::: theorem
+::::::: columns
+:::::: column
+::::: theorem
 ::: thm-title
 Theorem: Bayes' Rule (for two events)
 :::
@@ -309,15 +304,15 @@ $$\mathbb{P}(A| B) =
 \frac{\mathbb{P}(A) \cdot \mathbb{P}(B|A)}
 {\mathbb{P}(B)}$$
 :::
-:::
-:::
-:::
+:::::
+::::::
+:::::::
 
 ## Calculating probability with Higher Order Multiplication Rule
 
-::: columns
-::: column
-::: example
+::::::::::: columns
+:::::: column
+::::: example
 ::: ex-title
 Example 1
 :::
@@ -325,11 +320,11 @@ Example 1
 ::: ex-cont
 Suppose we draw 5 cards from a standard shuffled deck of 52 cards. What is the probability of a flush, that is all the cards are of the same suit (including straight flushes)?
 :::
-:::
-:::
+:::::
+::::::
 
-::: column
-::: fact
+:::::: column
+::::: fact
 ::: fact-title
 Higher Order Multiplication Rule
 :::
@@ -338,15 +333,15 @@ Higher Order Multiplication Rule
 $$\mathbb{P}(A_1\cap A_2 \cap  \ldots \cap A_n)=\mathbb{P}(A_1)\cdot\mathbb{P}(A_2|A_1) \cdot \\
 \mathbb{P}(A_3|A_1A_2)\ldots \cdot\mathbb{P}(A_n|A_1A_2\ldots A_{n-1})$$
 :::
-:::
-:::
-:::
+:::::
+::::::
+:::::::::::
 
 ## Calculating probability with Law of Total Probability
 
-::: columns
-::: column
-::: example
+::::::::::: columns
+:::::: column
+::::: example
 ::: ex-title
 Example 2
 :::
@@ -354,11 +349,11 @@ Example 2
 ::: ex-cont
 Suppose 1% of people assigned female at birth (AFAB) and 5% of people assigned male at birth (AMAB) are color-blind. Assume person born is equally likely AFAB or AMAB (not including intersex). What is the probability that a person chosen at random is color-blind?
 :::
-:::
-:::
+:::::
+::::::
 
-::: column
-::: fact
+:::::: column
+::::: fact
 ::: fact-title
 Law of Total Probability for 2 Events
 :::
@@ -373,13 +368,13 @@ $$%\left(
 \end{array}
 %\right)$$
 :::
-:::
-:::
-:::
+:::::
+::::::
+:::::::::::
 
 ## General Law of Total Proability
 
-::: fact
+::::: fact
 ::: fact-title
 Law of Total Probability (general)
 :::
@@ -394,7 +389,7 @@ $$%\left(
 \end{array}
 %\right)$$
 :::
-:::
+:::::
 
 ## Calculating probability with generalized Law of Total Probability {.smaller}
 
@@ -402,9 +397,9 @@ $$%\left(
 
 ## Calculating probability with generalized Law of Total Probability {visibility="hidden"}
 
-::: columns
-::: {.column width="40%"}
-::: example
+:::::::: columns
+:::::: {.column width="40%"}
+::::: example
 ::: ex-title
 Example 3
 :::
@@ -428,19 +423,19 @@ The probability of requiring chemotherapy ($C$) differs among the three forms of
 
 Based solely on the preliminary test of being diagnosed with the cancer, what is the probability of requiring chemotherapy (the event C)?
 :::
-:::
-:::
+:::::
+::::::
 
 ::: column
 Skipping in class! Let me know if you would like me to post solutions to this if you work through it!
 :::
-:::
+::::::::
 
 ## Let's revisit the color-blind example
 
-::: columns
-::: {.column width="40%"}
-::: example
+::::::: columns
+:::::: {.column width="40%"}
+::::: example
 ::: ex-title
 Example 4
 :::
@@ -456,15 +451,15 @@ Recall the color-blind example (Example [2](#Ex_colorblind){reference-type="ref"
 
 Assuming people are AMAB or AFAB, find the probability that a color-blind person is AMAB.
 :::
-:::
-:::
-:::
+:::::
+::::::
+:::::::
 
 ## Calculate probability with both rules
 
-::: columns
-::: {.column width="40%"}
-::: example
+::::::: columns
+:::::: {.column width="40%"}
+::::: example
 ::: ex-title
 Example 5
 :::
@@ -480,13 +475,13 @@ Suppose
 
 What is the probability that an AFAB person has breast cancer given that they just had a positive test?
 :::
-:::
-:::
-:::
+:::::
+::::::
+:::::::
 
 ## Bayes' Rule
 
-::: theorem
+::::: theorem
 ::: thm-title
 Theorem: Bayes' Rule
 :::
@@ -498,4 +493,4 @@ $$\mathbb{P}(A_j | B) =
 \frac{\mathbb{P}(B|A_j) \cdot \mathbb{P}(A_j)}
 {\sum_{i=1}^{n} \mathbb{P}(B|A_i) \cdot \mathbb{P}(A_i)}$$
 :::
-:::
+:::::
