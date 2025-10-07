@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-09-30">
 
 <title>Muddy Points – Introduction to Probability</title>
 <style>
@@ -156,12 +155,14 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#why-is-the-number-of-possible-events-2s" id="toc-why-is-the-number-of-possible-events-2s" class="nav-link active" data-scroll-target="#why-is-the-number-of-possible-events-2s">1. Why is the number of possible events <span class="math inline">\(2^{|S|}\)</span>?</a></li>
-  <li><a href="#what-is-an-event" id="toc-what-is-an-event" class="nav-link" data-scroll-target="#what-is-an-event">2. What is an event??</a></li>
-  <li><a href="#confusion-on-the-venn-diagram-for-the-high-blood-pressure-example" id="toc-confusion-on-the-venn-diagram-for-the-high-blood-pressure-example" class="nav-link" data-scroll-target="#confusion-on-the-venn-diagram-for-the-high-blood-pressure-example">3. Confusion on the Venn Diagram for the high blood pressure example</a></li>
+  <li><a href="#fall-2025" id="toc-fall-2025" class="nav-link active" data-scroll-target="#fall-2025">Fall 2025</a></li>
+  <li><a href="#fall-2024" id="toc-fall-2024" class="nav-link" data-scroll-target="#fall-2024">Fall 2024</a>
+  <ul class="collapse">
+  <li><a href="#confusion-on-de-morgans-law-and-the-high-blood-pressure-example" id="toc-confusion-on-de-morgans-law-and-the-high-blood-pressure-example" class="nav-link" data-scroll-target="#confusion-on-de-morgans-law-and-the-high-blood-pressure-example">3. Confusion on De Morgan’s law and the high blood pressure example</a></li>
   <li><a href="#proofs-of-propositions" id="toc-proofs-of-propositions" class="nav-link" data-scroll-target="#proofs-of-propositions">4. Proofs of propositions</a></li>
   <li><a href="#example-at-end-of-chapter-2-slides-venn-diagram" id="toc-example-at-end-of-chapter-2-slides-venn-diagram" class="nav-link" data-scroll-target="#example-at-end-of-chapter-2-slides-venn-diagram">5. Example at end of Chapter 2 slides (Venn Diagram)</a></li>
   <li><a href="#partition-of-events" id="toc-partition-of-events" class="nav-link" data-scroll-target="#partition-of-events">6. Partition of events</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -171,7 +172,6 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Muddy Points</h1>
-<p class="subtitle lead">Chapter 1: Outcomes, Events, and Sample Space</p>
 </div>
 
 
@@ -179,17 +179,11 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 30, 2024</p>
-    </div>
-  </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">September 10, 2025</p>
+      <p class="date-modified">October 6, 2025</p>
     </div>
   </div>
     
@@ -200,28 +194,15 @@ window.Quarto = {
 </header>
 
 
-<section id="why-is-the-number-of-possible-events-2s" class="level3">
-<h3 class="anchored" data-anchor-id="why-is-the-number-of-possible-events-2s">1. Why is the number of possible events <span class="math inline">\(2^{|S|}\)</span>?</h3>
-<p>In class, we were wondering why/if <span class="math inline">\(2^{|S|}\)</span> is the general formula for calculating the total number of possible events. We were specifically wondering if the <span class="math inline">\(2\)</span> came from the fact that we had two options (heads and tails) for our outcome. Let’s work through the example of a 6-sided die to explain this further. The sample space is <span class="math inline">\(S=\{1, 2, 3, 4, 5, 6\}\)</span>. So is the total number of possible events <span class="math inline">\(2^6\)</span> or <span class="math inline">\(6^6\)</span> or something else? We can actually think about an event by using an indicator variable for each outcome of the sample space. An indicator variable is just a way to give us a yes/no answer to a question. So in this case, we are wondering: is this outcome a part of our event? If our <strong>event</strong> is <span class="math inline">\(\{1\}\)</span> then for the outcome <span class="math inline">\(1\)</span>, the answer is “yes, the outcome is part of the event. For outcomes <span class="math inline">\(2-6\)</span>, the answer is”no, the outcome is not apart of the event.”</p>
-<p><img src="images/event_1.png" class="img-fluid"></p>
-<p>For each outcome, we have a “yes” or “no” answer. We can look at another example of an event. Let’s say our event is rolling an even number:</p>
-<p><img src="images/event_2.png" class="img-fluid"></p>
-<p>For <span class="math inline">\(2\)</span>, <span class="math inline">\(4\)</span>, and <span class="math inline">\(6\)</span>, the answer is “yes.” We can define the indicator variable for whether an outcome is in an event or not. The indicator gives a 1 or 0 for yes and no respectively.</p>
-<p><img src="images/indicator.png" class="img-fluid"></p>
-<p>As stated above, the <span class="math inline">\(2\)</span> in <span class="math inline">\(2^6\)</span> comes from the <span class="math inline">\(2\)</span> options from our indicator. Each side has two options, and there are <span class="math inline">\(6\)</span> sides. Thus, <span class="math inline">\(2^6\)</span> possible events.</p>
+<section id="fall-2025" class="level2">
+<h2 class="anchored" data-anchor-id="fall-2025">Fall 2025</h2>
+<p>See below for questions on De Morgan’s laws and propositions from last year.</p>
 </section>
-<section id="what-is-an-event" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-an-event">2. What is an event??</h3>
-<p>I think this will become clearer when we start thinking about events in the context of probability. When we think of <strong>events outside of probability</strong>, we may think of something we actually do or something that happens, like going to a concert or coming to class or missing the streetcar. In this case, we think of the event as the single thing (out of all the options) that actually occured. For example, if I’m taking the streetcar to class, I can think of two definitive options of what <em>might</em> occur: I miss the streetcar or I get on the streetcar. Only one of these things can occur, which I may call an event <em>colloquially</em>.</p>
-<p>It is important to make the distinction with <strong>events defined within probability</strong>. Events are not necessarily a single thing that occurred. Instead it can be a collection of things that may occur. In the example of the streetcar, I can define my event to include both options. Thus, my event is that I make the streetcar or I miss it. Both of these things cannot happen simultaneously, but if I want to calculate the probability that I miss or make the streetcar, then it is helpful to have the event defined.</p>
-<section id="and-what-is-the-difference-between-event-and-outcome" class="level4">
-<h4 class="anchored" data-anchor-id="and-what-is-the-difference-between-event-and-outcome">And what is the difference between event and outcome?</h4>
-<p>An outcome is a single result. The two options in the above example, missing the streetcar or getting on the streetcar, are two potential outcomes. Events are the collection of 0, 1, or more outcomes. So the possible events are: the empty set, missing the streetcar, getting on the streetcar, or the set of missing the streetcar and getting on the streetcar.</p>
-</section>
-</section>
-<section id="confusion-on-the-venn-diagram-for-the-high-blood-pressure-example" class="level3">
-<h3 class="anchored" data-anchor-id="confusion-on-the-venn-diagram-for-the-high-blood-pressure-example">3. Confusion on the Venn Diagram for the high blood pressure example</h3>
-<p>This is in reference to the Chapter 1 notes on “BP example variation (3/3)” slide. I explained the event that at least one subject does not have high blood pressure using a venn diagram. In this venn diagram, I assumed <span class="math inline">\(n=4\)</span>, and I wanted to show that the union of complements is equal to the complement of unions: <span class="math inline">\(\bigcup\limits_{i=1}^{n}H_i^C = \Big(\bigcap\limits_{i=1}^{n}H_i\Big)^C\)</span>.</p>
+<section id="fall-2024" class="level2">
+<h2 class="anchored" data-anchor-id="fall-2024">Fall 2024</h2>
+<section id="confusion-on-de-morgans-law-and-the-high-blood-pressure-example" class="level3">
+<h3 class="anchored" data-anchor-id="confusion-on-de-morgans-law-and-the-high-blood-pressure-example">3. Confusion on De Morgan’s law and the high blood pressure example</h3>
+<p>This is in reference to the Lesson 3 notes on “BP example variation (3/3)” slide. I explained the event that at least one subject does not have high blood pressure using a venn diagram. In this venn diagram, I assumed <span class="math inline">\(n=4\)</span>, and I wanted to show that the union of complements is equal to the complement of unions: <span class="math inline">\(\bigcup\limits_{i=1}^{n}H_i^C = \Big(\bigcap\limits_{i=1}^{n}H_i\Big)^C\)</span>, which is De Morgan’s 2nd Law.</p>
 <p><img src="images/Muddy_point_3_1.png" class="img-fluid"></p>
 <p><img src="images/Muddy_point_3_2.png" class="img-fluid"> Now we can look at <span class="math inline">\(\bigcup\limits_{i=1}^{4}H_i^C\)</span>. We first need to define <span class="math inline">\(H_i^c\)</span></p>
 <p><img src="images/Muddy_point_3_3.png" class="img-fluid"></p>
@@ -260,7 +241,7 @@ window.Quarto = {
 </section>
 <section id="example-at-end-of-chapter-2-slides-venn-diagram" class="level3">
 <h3 class="anchored" data-anchor-id="example-at-end-of-chapter-2-slides-venn-diagram">5. Example at end of Chapter 2 slides (Venn Diagram)</h3>
-<p>I will post this in the previous week’s Muddy Points as well. <a href="https://ohsuitg-my.sharepoint.com/personal/wakim_ohsu_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fwakim%5Fohsu%5Fedu%2FDocuments%2FTeaching%2FClasses%2FF2023%5FBSTA%5F550%2FRecordings%2F02%5FProbability%5Fexample%2Emp4&amp;referrer=OneDriveForBusiness&amp;referrerScenario=OpenFile">Please follow this link for my work through of the example.</a> And <a href="../../slides_annotated/02_Probability_example.pdf">here is the PDF with my work</a>.</p>
+<p>I will post this in the previous week’s Muddy Points as well. <a href="https://ohsuitg-my.sharepoint.com/:v:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/BSTA_550_25F/Student_files_BSTA_550/Recordings/03_Lang_prob_example.mp4?csf=1&amp;web=1&amp;nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=KBlHiu">Please follow this link for my work through of the example.</a> And <a href="../../lessons/03_Lang_prob/03_Lang_prob_example.pdf">here is the PDF with my work</a>.</p>
 <p><strong>Sub-question:</strong> why don’t we just multiply the probability of A and B to get the intersection? This is a specific property of probability when A and B are independent. Only when A and B are independent can we conclude that <span class="math inline">\(P(A \cap B) = P(A)P(B)\)</span>.</p>
 </section>
 <section id="partition-of-events" class="level3">
@@ -272,6 +253,7 @@ window.Quarto = {
 </ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
