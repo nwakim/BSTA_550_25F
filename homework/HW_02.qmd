@@ -66,7 +66,7 @@ Please submit your homework in pdf format. You can type your work on your comput
 
         7.  $\mathbb{P}$(event all 3)
 
-2.  Guessing on an exam. While taking a probability exam, you come to three questions that you have no clue how to answer. You would have known the answers if you had taken the time to study the night before instead of going to a party, but you did not make a good life choice, and you vow to never party on a school night again if you fail this exam. Each question on the exam is multiple choice with the correct answer being either a, b, c, d, or e. (Your guesses are independent.) What is the probability that:
+2.  **Guessing on an exam.** While taking a probability exam, you come to three questions that you have no clue how to answer. You would have known the answers if you had taken the time to study the night before instead of going to a party, but you did not make a good life choice, and you vow to never party on a school night again if you fail this exam. Each question on the exam is multiple choice with the correct answer being either a, b, c, d, or e. (Your guesses are independent.) What is the probability that:
 
     a.  you randomly guess the right answer to all three questions?
 
@@ -101,7 +101,7 @@ Please submit your homework in pdf format. You can type your work on your comput
 
         Show that condition $(1)$ holds, but that condition $(2)$ does not.
 
-4.  Parity of spinning. A spinner has the left side (numbers 1, 2, 3, 4, and 5) colored red and the right side colored white (numbers 6, 7, 8, and 9), with all numbers equally likely.
+4.  **Parity of spinning.** A spinner has the left side (numbers 1, 2, 3, 4, and 5) colored red and the right side colored white (numbers 6, 7, 8, and 9), with all numbers equally likely.
 
     a.  What is the probability the spinner lands on an odd number?
 
@@ -109,7 +109,7 @@ Please submit your homework in pdf format. You can type your work on your comput
 
     c.  Given that the spinner landed on a white number, what is the chance it landed on an odd number?
 
-5.  Weather. The weather on any given day can either be sunny, cloudy, or partially cloudy. Each day is also classified as dry or rainy. The probability of a sunny day is 0.48, and the probability of a cloudy day is 0.39. The probability of having a sunny and dry day is 0.48. The probability of a cloudy and dry day is 0.14. The probability of a partially cloudy and dry day is 0.09.
+5.  **Weather.** The weather on any given day can either be sunny, cloudy, or partially cloudy. Each day is also classified as dry or rainy. The probability of a sunny day is 0.48, and the probability of a cloudy day is 0.39. The probability of having a sunny and dry day is 0.48. The probability of a cloudy and dry day is 0.14. The probability of a partially cloudy and dry day is 0.09.
 
     a.  Find the probability of a dry day.
 
@@ -123,7 +123,7 @@ Please submit your homework in pdf format. You can type your work on your comput
 
     f.  Find the probability that it is a rainy day given that it is a cloudy day
 
-6. Simulation problem
+6. Simulation problem??
 
 ### Extra problems
 
