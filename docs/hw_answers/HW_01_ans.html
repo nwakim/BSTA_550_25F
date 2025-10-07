@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -126,8 +155,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#outcomes-events-and-sample-space" id="toc-outcomes-events-and-sample-space" class="nav-link active" data-scroll-target="#outcomes-events-and-sample-space">1. Outcomes, events, and sample space</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">2.</a></li>
+  <li><a href="#running-a-simulation" id="toc-running-a-simulation" class="nav-link active" data-scroll-target="#running-a-simulation">2. Running a simulation!</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="HW_01_ans.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -149,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">October 5, 2025</p>
+      <p class="date-modified">October 6, 2025</p>
     </div>
   </div>
     
@@ -160,11 +188,67 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="outcomes-events-and-sample-space" class="level3">
-<h3 class="anchored" data-anchor-id="outcomes-events-and-sample-space">1. Outcomes, events, and sample space</h3>
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<section id="outcomes-events-and-sample-space" class="level4">
+<h4 class="anchored" data-anchor-id="outcomes-events-and-sample-space">1. Outcomes, events, and sample space</h4>
+<p>In the below parts, please list (i) one specific outcome, (ii) one event that contains more than one outcome, and (iii) the sample space.</p>
+<ol type="a">
+<li>Chris has an 5-pack of Gatorade sports drink: 1 orange, 2 lemon-lime, and 2 fruit punch. He blindly grabs one out of the pack over and over if necessary, without replacement, until he finds an orange one. <em>Note, each lemon-lime is indistinguishable, and each fruit punch is indistinguishable.</em></li>
+</ol>
+<div class="blue">
+<p>Let <span class="math inline">\(L\)</span> = Lemon-Lime, <span class="math inline">\(P\)</span> = Fruit Punch, and <span class="math inline">\(O\)</span> = Orange. Since <span class="math inline">\(L\)</span> and <span class="math inline">\(P\)</span> are indistinguishable, we do not need include more information on the two bottles.</p>
+<section id="i.-specific-outcome" class="level5">
+<h5 class="anchored" data-anchor-id="i.-specific-outcome">i. Specific Outcome</h5>
+<p><span class="math inline">\((L, P, O)\)</span> OR <span class="math inline">\((P, O)\)</span></p>
 </section>
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section">2.</h3>
+<section id="ii.-event-with-more-than-one-outcome" class="level5">
+<h5 class="anchored" data-anchor-id="ii.-event-with-more-than-one-outcome">ii. Event with More Than One Outcome</h5>
+</section>
+<section id="iii.-sample-space-omega" class="level5">
+<h5 class="anchored" data-anchor-id="iii.-sample-space-omega">iii. Sample Space (<span class="math inline">\(\Omega\)</span>)</h5>
+<p>19 total outcomes</p>
+</section>
+</div>
+<ol start="2" type="a">
+<li>A claw machine contains 10 plush toys: 5 Red Squishies (R), 3 Blue Dinosaurs (B), and 2 Yellow Star Puffs (Y). You successfully grab a toy, remove it, and then grab a second toy (sampling without replacement). The result is the ordered pair of the two toys’ colors.</li>
+</ol>
+<div class="blue">
+<section id="i.-specific-outcome-1" class="level5">
+<h5 class="anchored" data-anchor-id="i.-specific-outcome-1">i. Specific Outcome</h5>
+<p>(R, Y) OR (B, R)</p>
+</section>
+<section id="ii.-event-with-more-than-one-outcome-1" class="level5">
+<h5 class="anchored" data-anchor-id="ii.-event-with-more-than-one-outcome-1">ii. Event with More Than One Outcome</h5>
+</section>
+<section id="iii.-sample-space-omega-1" class="level5">
+<h5 class="anchored" data-anchor-id="iii.-sample-space-omega-1">iii. Sample Space (<span class="math inline">\(\Omega\)</span>)</h5>
+<p>9 total outcomes</p>
+</section>
+</div>
+<ol start="3" type="a">
+<li>You are opening a series of <a href="https://www.youtube.com/watch?v=wmehgHl8hj4">mofusound Cat blind boxes</a>. There are 4 possible figurines to collect: 1 shark cat (S), 1 orange striped fish cat (O), and 1 hen cat (H), and 1 cow cat (C). You buy a single blind box.</li>
+</ol>
+<div class="blue">
+<section id="i.-specific-outcome-2" class="level5">
+<h5 class="anchored" data-anchor-id="i.-specific-outcome-2">i. Specific Outcome</h5>
+<p>S (Shark Cat) OR O (Orange Striped Fish Cat)</p>
+</section>
+<section id="ii.-event-with-more-than-one-outcome-2" class="level5">
+<h5 class="anchored" data-anchor-id="ii.-event-with-more-than-one-outcome-2">ii. Event with More Than One Outcome</h5>
+</section>
+<section id="iii.-sample-space-omega-2" class="level5">
+<h5 class="anchored" data-anchor-id="iii.-sample-space-omega-2">iii. Sample Space (<span class="math inline">\(\Omega\)</span>)</h5>
+<p>4 total outcomes</p>
+</section>
+</div>
+</section>
+<section id="running-a-simulation" class="level3">
+<h3 class="anchored" data-anchor-id="running-a-simulation">2. Running a simulation!</h3>
+<div class="blue">
+<p>We’ll all have slightly different answers, but with 100,000 simulations, I got the probability of 0.489.</p>
+</div>
 
 
 </section>
