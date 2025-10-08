@@ -24,11 +24,9 @@ source(here("class_dates.R"))
 
 1.  Define independence of 2-3 events and decide whether two or more events are independent
 
-4.  Define key facts for conditional probabilities and calculate conditional probabilities.
+2.  Define key facts for conditional probabilities and calculate conditional probabilities.
 
-6.  Calculate conditional probability of an event using Bayes' Theorem
-
-7.  Utilize additional probability rules in probability calculations, specifically the Higher Order Multiplication Rule and the Law of Total Probabilities
+3.  Calculate the probability of an event using Bayes' Theorem, Higher Order Multiplication Rule, and the Law of Total Probabilities
 
 ## Where are we?
 
@@ -56,7 +54,15 @@ source(here("class_dates.R"))
 
 6.  (For own check) Make sure the calculated probability follows the axioms. Is is between 0 and 1?
 
-# Learning Objectives
+# Learning objectives
+
+::: lob
+1.  Define independence of 2-3 events and decide whether two or more events are independent
+:::
+
+2.  Define key facts for conditional probabilities and calculate conditional probabilities.
+
+3.  Calculate the probability of an event using Bayes' Theorem, Higher Order Multiplication Rule, and the Law of Total Probabilities
 
 ## Independent Events
 
@@ -207,13 +213,15 @@ Let
 
 -   Similarly define $B_H$, $B_T$, $C_H$, and $C_T$.
 
-# Learning Objectives
+# Learning objectives
 
-1.  Use set process to calculate probability of event of interest
+1.  Define independence of 2-3 events and decide whether two or more events are independent
 
-2.  Calculate the probability of an event occurring, given that another event occurred.
+::: lob
+2.  Define key facts for conditional probabilities and calculate conditional probabilities.
+:::
 
-3.  Define keys facts for conditional probabilities using notation.
+3.  Calculate the probability of an event using Bayes' Theorem, Higher Order Multiplication Rule, and the Law of Total Probabilities
 
 ## Let's revisit our deck of cards {visibility="hidden"}
 
@@ -347,11 +355,15 @@ sum(event_B & event_A) / sum(event_A)
 
 [With the Wiki page on it!](https://en.wikipedia.org/wiki/Monty_Hall_problem)
 
-# Learning Objectives
+# Learning objectives
 
-1.  Calculate conditional probability of an event using Bayes' Theorem
+1.  Define independence of 2-3 events and decide whether two or more events are independent
 
-2.  Utilize additional probability rules in probability calculations, specifically the Higher Order Multiplication Rule and the Law of Total Probabilities
+2.  Define key facts for conditional probabilities and calculate conditional probabilities.
+
+::: lob
+3.  Calculate the probability of an event using Bayes' Theorem, Higher Order Multiplication Rule, and the Law of Total Probabilities
+:::
 
 ## Bayes' Rule for two events
 
