@@ -1,6 +1,5 @@
 ---
 title: "Key Info"
-date: "10/9/2024"
 date-modified: "today"
 format: 
   html:
@@ -10,6 +9,11 @@ editor_options:
 ---
 
 ## Announcements
+
+- No office hours from me this week - I have a standing appointment 
+  - But we will start next week!
+
+- Drop deadline with 100% refund: this Friday, 10/10
 
 - New AI Video Tutorials! If anyone is looking for course materials on the responsible use of generative AI tools such as ChatGPT, I wanted to highlight that the OHSU library has released a new set of AI video tutorials!
 

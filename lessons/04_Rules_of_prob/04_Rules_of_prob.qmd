@@ -22,15 +22,9 @@ source(here("class_dates.R"))
 
 # Learning objectives
 
-1.  Define independence of 2-3 events given probability notation
+1.  Define independence of 2-3 events and decide whether two or more events are independent
 
-2.  Calculate whether two or more events are independent
-
-3.  Use set process to calculate probability of event of interest
-
-4.  Calculate the probability of an event occurring, given that another event occurred.
-
-5.  Define keys facts for conditional probabilities using notation.
+4.  Define key facts for conditional probabilities and calculate conditional probabilities.
 
 6.  Calculate conditional probability of an event using Bayes' Theorem
 
@@ -39,6 +33,28 @@ source(here("class_dates.R"))
 ## Where are we?
 
 ![](../img_slides/course_map.png){fig-align="center"}
+
+## General Process for Probability Word Problems
+
+1.  Clearly define your events of interest
+
+2.  Translate question to probability using defined events OR Venn Diagram
+
+3.  Ask yourself:
+
+    -   Are we sampling with or without replacement?
+
+    -   Does order matter?
+
+4.  Use axioms, properties, partitions, facts, etc. to define the end probability calculation into smaller parts
+
+    -   If probabilities are given to you, Venn Diagrams may help you parse out the events and probability calculations
+
+    -   If you need to find probabilities with counting, pictures or diagrams might help here
+
+5.  Write out a concluding statement that gives the probability context
+
+6.  (For own check) Make sure the calculated probability follows the axioms. Is is between 0 and 1?
 
 # Learning Objectives
 
@@ -50,7 +66,7 @@ Definition: Independence
 :::
 
 ::: def-cont
-*Events* $A$ and $B$ are **independent** if $$\mathbb{P}(A \cap B) = \mathbb{P}(A) \cdot  \mathbb{P}(B).$$
+Events $A$ and $B$ are **independent** if $$\mathbb{P}(A \cap B) = \mathbb{P}(A) \cdot  \mathbb{P}(B).$$
 :::
 :::::
 
@@ -69,9 +85,61 @@ Example 1
 :::
 
 ::: ex-cont
-*Two dice (red and blue) are rolled. Let* $A =$ event a total of 7 appears, and $B =$ event red die is a six. Are events $A$ and $B$ independent?
+Two dice (green and blue) are rolled. Let $A =$ event a total of 7 appears, and $B =$ event green die is a six. Are events $A$ and $B$ independent?
 :::
 :::::
+
+![](/lessons/img_slides/indep_2dice.png)
+
+## Example of two dice: simulating in R (1/2)
+
+::::: example
+::: ex-title
+Example 1
+:::
+
+::: ex-cont
+Two dice (green and blue) are rolled. Let $A =$ event a total of 7 appears, and $B =$ event green die is a six. Are events $A$ and $B$ independent?
+:::
+:::::
+
+```{r}
+#| echo: true
+
+set.seed(1002)
+reps = 10000
+rolls = replicate(reps, sample(x = 1:6, size = 2, replace = TRUE))
+rolls[, 1:10]
+
+event_A = ( rolls[1, ] + rolls[2, ] == 7 )
+head(event_A, 10)
+
+
+event_B = ( rolls[1, ] == 6 )
+head(event_B, 10)
+```
+
+## Example of two dice: simulating in R (1/2)
+
+::::: example
+::: ex-title
+Example 1
+:::
+
+::: ex-cont
+Two dice (green and blue) are rolled. Let $A =$ event a total of 7 appears, and $B =$ event green die is a six. Are events $A$ and $B$ independent?
+:::
+:::::
+
+```{r}
+#| echo: true
+
+( sum(event_A) / reps ) * ( sum(event_B) / reps )
+
+event_A_and_B = ( rolls[1, ] + rolls[2, ] == 7 ) & ( rolls[1, ] == 6 )
+head(event_A_and_B, 10)
+sum(event_A_and_B) / reps
+```
 
 ## Independence of 3 Events
 
@@ -109,7 +177,7 @@ Example 2
 :::
 
 ::: ex-cont
-*Suppose you take a random sample of* $n$ people, of which people are smokers and non-smokers independently of each other. Let
+Suppose you take a random sample of $n$ people, of which people are smokers and non-smokers independently of each other. Let
 
 -   $A_i =$ event person $i$ is a smoker, for $i=1, \ldots ,n$, and
 
@@ -147,29 +215,7 @@ Let
 
 3.  Define keys facts for conditional probabilities using notation.
 
-## General Process for Probability Word Problems
-
-1.  Clearly define your events of interest
-
-2.  Translate question to probability using defined events OR Venn Diagram
-
-3.  Ask yourself:
-
-    -   Are we sampling with or without replacement?
-
-    -   Does order matter?
-
-4.  Use axioms, properties, partitions, facts, etc. to define the end probability calculation into smaller parts
-
-    -   If probabilities are given to you, Venn Diagrams may help you parse out the events and probability calculations
-
-    -   If you need to find probabilities with counting, pictures or diagrams might help here
-
-5.  Write out a concluding statement that gives the probability context
-
-6.  (For own check) Make sure the calculated probability follows the axioms. Is is between 0 and 1?
-
-## Let's revisit our deck of cards
+## Let's revisit our deck of cards {visibility="hidden"}
 
 :::::::: columns
 :::::: {.column width="35%"}
@@ -250,27 +296,56 @@ $\mathbb{P}(A|B)$ is a probability, meaning that it satisfies the probability ax
 ::::::
 :::::::::::
 
-## Monty Hall Problem
-
-[Survivor Season 42](https://www.youtube.com/watch?v=6JGyiISwY1k)
-
-[With the Wiki page on it!](https://en.wikipedia.org/wiki/Monty_Hall_problem)
-
 ## Conditional probability with two dice
 
 ::::::: columns
 :::::: column
 ::::: example
 ::: ex-title
-Example 2
+Example 3
 :::
 
 ::: ex-cont
-Two dice (red and blue) are rolled. If the dice do not show the same face, what is the probability that one of the dice is a 1?
+Two dice (green and blue) are rolled. If the dice do not show the same face, what is the probability that one of the dice is a 1?
 :::
 :::::
+![](/lessons/img_slides/indep_2dice.png)
 ::::::
 :::::::
+
+## Conditional probability with two dice: simulations
+
+::::: example
+::: ex-title
+Example 3
+:::
+
+::: ex-cont
+Two dice (green and blue) are rolled. If the dice do not show the same face, what is the probability that one of the dice is a 1?
+:::
+:::::
+
+```{r}
+#| echo: true
+
+set.seed(1002)
+rolls = replicate(reps, sample(x = 1:6, size = 2, replace = TRUE))
+rolls[, 1:10]
+
+event_A = ( rolls[1, ] != rolls[2, ] )
+head(event_A, 10)
+
+event_B = ( rolls[1, ] == 1 | rolls[2, ] == 1 )
+head(event_B, 10)
+
+sum(event_B & event_A) / sum(event_A)
+```
+
+## Monty Hall Problem
+
+[Survivor Season 42](https://www.youtube.com/watch?v=6JGyiISwY1k)
+
+[With the Wiki page on it!](https://en.wikipedia.org/wiki/Monty_Hall_problem)
 
 # Learning Objectives
 
@@ -278,17 +353,9 @@ Two dice (red and blue) are rolled. If the dice do not show the same face, what 
 
 2.  Utilize additional probability rules in probability calculations, specifically the Higher Order Multiplication Rule and the Law of Total Probabilities
 
-## Introduction
-
--   So we learned about conditional probabilities
-
-    -   We learned how the occurrence of event A affects event B (B conditional on A)
-
--   Can we figure out information on how the occurrence of event B affects event A?
+## Bayes' Rule for two events
 
 -   We can use the conditional probability ($\mathbb{P}(A|B)$) to get information on the flipped conditional probability ($\mathbb{P}(B|A)$)
-
-## Bayes' Rule for two events
 
 ::::::: columns
 :::::: column
@@ -314,7 +381,7 @@ $$\mathbb{P}(A| B) =
 :::::: column
 ::::: example
 ::: ex-title
-Example 1
+Example 4
 :::
 
 ::: ex-cont
@@ -330,8 +397,9 @@ Higher Order Multiplication Rule
 :::
 
 ::: fact-cont
-$$\mathbb{P}(A_1\cap A_2 \cap  \ldots \cap A_n)=\mathbb{P}(A_1)\cdot\mathbb{P}(A_2|A_1) \cdot \\
-\mathbb{P}(A_3|A_1A_2)\ldots \cdot\mathbb{P}(A_n|A_1A_2\ldots A_{n-1})$$
+$$\begin{aligned} \mathbb{P}(A_1\cap & A_2 \cap  \ldots \cap A_n)= \\ & \mathbb{P}(A_1)\cdot\mathbb{P}(A_2|A_1) \cdot \\
+& \mathbb{P}(A_3|A_1A_2)\ldots \cdot\mathbb{P}(A_n|A_1A_2\ldots A_{n-1}) 
+\end{aligned}$$
 :::
 :::::
 ::::::
@@ -343,7 +411,7 @@ $$\mathbb{P}(A_1\cap A_2 \cap  \ldots \cap A_n)=\mathbb{P}(A_1)\cdot\mathbb{P}(A
 :::::: column
 ::::: example
 ::: ex-title
-Example 2
+Example 5
 :::
 
 ::: ex-cont
@@ -431,7 +499,7 @@ Skipping in class! Let me know if you would like me to post solutions to this if
 :::
 ::::::::
 
-## Let's revisit the color-blind example
+## Let's revisit the color-blind example {visibility="hidden"}
 
 ::::::: columns
 :::::: {.column width="40%"}
@@ -461,7 +529,7 @@ Assuming people are AMAB or AFAB, find the probability that a color-blind person
 :::::: {.column width="40%"}
 ::::: example
 ::: ex-title
-Example 5
+Example 6
 :::
 
 ::: ex-cont

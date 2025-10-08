@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "BSTA 550: Introduction to Probability",
     "section": "",
-    "text": "BSTA 550: Introduction to Probability\n\nFall 2025\n \nWelcome to Biostatistics and Probability! This course is designed to introduce history, concepts and distributions in probability, Monte Carlo simulation techniques, and Markov chains. Students will also learn how to write R codes for various statistical computations and plots. Previous experience in R is not required. R is free software available from http://www.r-project.org.\n \n\n\n\n\n\n\n\nInstructor\n Dr. Nicky Wakim\n Vanport 622A\n wakim@ohsu.edu\n\n\nOffice Hours\nCharles  Th 11am-12pm\nCharles  F 12-1pm\n\n\nCourse details\n Mondays, Wednesdays\n Sept 29 - Dec 10\n 10:30 AM - 12 PM\n In-person, VPT 620M\n\n\nContacting me\nE-mail or Slack is the best way to get in contact with me. I will try to respond to all course-related e-mails within 24 hours Monday-Friday.\n\n\n\n\n\n\n\n\n View the source on GitHub"
+    "text": "BSTA 550: Introduction to Probability\n\nFall 2025\n \nWelcome to Biostatistics and Probability! This course is designed to introduce history, concepts and distributions in probability, Monte Carlo simulation techniques, and Markov chains. Students will also learn how to write R codes for various statistical computations and plots. Previous experience in R is not required. R is free software available from http://www.r-project.org.\n \n\n\n\n\n\n\n\nInstructor\n Dr. Nicky Wakim\n Vanport 622A\n wakim@ohsu.edu\n\n\nOffice Hours\nCharles  Th 11am-12pm\nCharles  F 12-1pm\nNicky  Th 10-11am\n\n\nCourse details\n Mondays, Wednesdays\n Sept 29 - Dec 10\n 10:30 AM - 12 PM\n In-person, VPT 620M\n\n\nContacting me\nE-mail or Slack is the best way to get in contact with me. I will try to respond to all course-related e-mails within 24 hours Monday-Friday.\n\n\n\n\n\n\n\n\n View the source on GitHub"
   },
   {
     "objectID": "schedule.html",
@@ -11141,7 +11141,7 @@
     "href": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#example-of-two-dice",
     "title": "Lesson 4: Rules of probability",
     "section": "Example of two dice",
-    "text": "Example of two dice\n\n\nExample 1\n\n\nTwo dice (red and blue) are rolled. Let \\(A =\\) event a total of 7 appears, and \\(B =\\) event red die is a six. Are events \\(A\\) and \\(B\\) independent?"
+    "text": "Example of two dice\n\n\nExample 1\n\n\nTwo dice (green and blue) are rolled. Let \\(A =\\) event a total of 7 appears, and \\(B =\\) event green die is a six. Are events \\(A\\) and \\(B\\) independent?"
   },
   {
     "objectID": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#independence-of-3-events",
@@ -11204,7 +11204,7 @@
     "href": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#conditional-probability-with-two-dice",
     "title": "Lesson 4: Rules of probability",
     "section": "Conditional probability with two dice",
-    "text": "Conditional probability with two dice\n\n\n\n\nExample 2\n\n\nTwo dice (red and blue) are rolled. If the dice do not show the same face, what is the probability that one of the dice is a 1?"
+    "text": "Conditional probability with two dice\n\n\n\n\nExample 3\n\n\nTwo dice (green and blue) are rolled. If the dice do not show the same face, what is the probability that one of the dice is a 1?"
   },
   {
     "objectID": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#introduction",
@@ -11218,21 +11218,21 @@
     "href": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#bayes-rule-for-two-events",
     "title": "Lesson 4: Rules of probability",
     "section": "Bayes’ Rule for two events",
-    "text": "Bayes’ Rule for two events\n\n\n\n\nTheorem: Bayes’ Rule (for two events)\n\n\nFor any two events \\(A\\) and \\(B\\) with nonzero probabilties,\n\\[\\mathbb{P}(A| B) =\n\\frac{\\mathbb{P}(A) \\cdot \\mathbb{P}(B|A)}\n{\\mathbb{P}(B)}\\]"
+    "text": "Bayes’ Rule for two events\n\nWe can use the conditional probability (\\(\\mathbb{P}(A|B)\\)) to get information on the flipped conditional probability (\\(\\mathbb{P}(B|A)\\))\n\n\n\n\n\nTheorem: Bayes’ Rule (for two events)\n\n\nFor any two events \\(A\\) and \\(B\\) with nonzero probabilties,\n\\[\\mathbb{P}(A| B) =\n\\frac{\\mathbb{P}(A) \\cdot \\mathbb{P}(B|A)}\n{\\mathbb{P}(B)}\\]"
   },
   {
     "objectID": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#calculating-probability-with-higher-order-multiplication-rule",
     "href": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#calculating-probability-with-higher-order-multiplication-rule",
     "title": "Lesson 4: Rules of probability",
     "section": "Calculating probability with Higher Order Multiplication Rule",
-    "text": "Calculating probability with Higher Order Multiplication Rule\n\n\n\n\nExample 1\n\n\nSuppose we draw 5 cards from a standard shuffled deck of 52 cards. What is the probability of a flush, that is all the cards are of the same suit (including straight flushes)?\n\n\n\n\n\nHigher Order Multiplication Rule\n\n\n\\[\\mathbb{P}(A_1\\cap A_2 \\cap  \\ldots \\cap A_n)=\\mathbb{P}(A_1)\\cdot\\mathbb{P}(A_2|A_1) \\cdot \\\\\n\\mathbb{P}(A_3|A_1A_2)\\ldots \\cdot\\mathbb{P}(A_n|A_1A_2\\ldots A_{n-1})\\]"
+    "text": "Calculating probability with Higher Order Multiplication Rule\n\n\n\n\nExample 4\n\n\nSuppose we draw 5 cards from a standard shuffled deck of 52 cards. What is the probability of a flush, that is all the cards are of the same suit (including straight flushes)?\n\n\n\n\n\nHigher Order Multiplication Rule\n\n\n\\[\\begin{aligned} \\mathbb{P}(A_1\\cap & A_2 \\cap  \\ldots \\cap A_n)= \\\\ & \\mathbb{P}(A_1)\\cdot\\mathbb{P}(A_2|A_1) \\cdot \\\\\n& \\mathbb{P}(A_3|A_1A_2)\\ldots \\cdot\\mathbb{P}(A_n|A_1A_2\\ldots A_{n-1})\n\\end{aligned}\\]"
   },
   {
     "objectID": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#calculating-probability-with-law-of-total-probability",
     "href": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#calculating-probability-with-law-of-total-probability",
     "title": "Lesson 4: Rules of probability",
     "section": "Calculating probability with Law of Total Probability",
-    "text": "Calculating probability with Law of Total Probability\n\n\n\n\nExample 2\n\n\nSuppose 1% of people assigned female at birth (AFAB) and 5% of people assigned male at birth (AMAB) are color-blind. Assume person born is equally likely AFAB or AMAB (not including intersex). What is the probability that a person chosen at random is color-blind?\n\n\n\n\n\nLaw of Total Probability for 2 Events\n\n\nFor events \\(A\\) and \\(B\\),\n\\[%\\left(\n\\begin{array}{ccl}\n\\mathbb{P}(B)&=&\\mathbb{P}(B \\cap A) + \\mathbb{P}(B \\cap A^C)\\\\\n           &=& \\mathbb{P}(B|A) \\cdot \\mathbb{P}(A)+ \\mathbb{P}(B | A^C)\\cdot \\mathbb{P}(A^C)\n\\end{array}\n%\\right)\\]"
+    "text": "Calculating probability with Law of Total Probability\n\n\n\n\nExample 5\n\n\nSuppose 1% of people assigned female at birth (AFAB) and 5% of people assigned male at birth (AMAB) are color-blind. Assume person born is equally likely AFAB or AMAB (not including intersex). What is the probability that a person chosen at random is color-blind?\n\n\n\n\n\nLaw of Total Probability for 2 Events\n\n\nFor events \\(A\\) and \\(B\\),\n\\[%\\left(\n\\begin{array}{ccl}\n\\mathbb{P}(B)&=&\\mathbb{P}(B \\cap A) + \\mathbb{P}(B \\cap A^C)\\\\\n           &=& \\mathbb{P}(B|A) \\cdot \\mathbb{P}(A)+ \\mathbb{P}(B | A^C)\\cdot \\mathbb{P}(A^C)\n\\end{array}\n%\\right)\\]"
   },
   {
     "objectID": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#general-law-of-total-proability",
@@ -11267,7 +11267,7 @@
     "href": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#calculate-probability-with-both-rules",
     "title": "Lesson 4: Rules of probability",
     "section": "Calculate probability with both rules",
-    "text": "Calculate probability with both rules\n\n\n\n\nExample 5\n\n\nSuppose\n\n1% of people who are AFAB aged 40-50 years have breast cancer,\nan AFAB person with breast cancer has a 90% chance of a positive test from a mammogram, and\nan AFAB person has a 10% chance of a false-positive result from a mammogram.\n\nWhat is the probability that an AFAB person has breast cancer given that they just had a positive test?"
+    "text": "Calculate probability with both rules\n\n\n\n\nExample 6\n\n\nSuppose\n\n1% of people who are AFAB aged 40-50 years have breast cancer,\nan AFAB person with breast cancer has a 90% chance of a positive test from a mammogram, and\nan AFAB person has a 10% chance of a false-positive result from a mammogram.\n\nWhat is the probability that an AFAB person has breast cancer given that they just had a positive test?"
   },
   {
     "objectID": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#bayes-rule",
@@ -18834,14 +18834,14 @@
     "href": "lessons/04_Rules_of_prob/04_Rules_of_prob_key_info.html",
     "title": "Key Info",
     "section": "",
-    "text": "New AI Video Tutorials! If anyone is looking for course materials on the responsible use of generative AI tools such as ChatGPT, I wanted to highlight that the OHSU library has released a new set of AI video tutorials!\n\nCreated by librarian David Carson, this series of short videos (3-4 minutes each) is based on the Kickstart Your Writing with AI workshop taught with writing specialist Zoe Speidel. Each video is standalone and can be viewed in any order, so faculty can share and reuse whichever are most relevant. The topics include effective prompting, AI and publishing, and how to cite or disclose AI. The videos are designed to be flexible resources and are available to embed directly into Sakai. This series is available on the Library’s Generative AI student guide."
+    "text": "No office hours from me this week - I have a standing appointment\n\nBut we will start next week!\n\nDrop deadline with 100% refund: this Friday, 10/10\nNew AI Video Tutorials! If anyone is looking for course materials on the responsible use of generative AI tools such as ChatGPT, I wanted to highlight that the OHSU library has released a new set of AI video tutorials!\n\nCreated by librarian David Carson, this series of short videos (3-4 minutes each) is based on the Kickstart Your Writing with AI workshop taught with writing specialist Zoe Speidel. Each video is standalone and can be viewed in any order, so faculty can share and reuse whichever are most relevant. The topics include effective prompting, AI and publishing, and how to cite or disclose AI. The videos are designed to be flexible resources and are available to embed directly into Sakai. This series is available on the Library’s Generative AI student guide."
   },
   {
     "objectID": "lessons/04_Rules_of_prob/04_Rules_of_prob_key_info.html#announcements",
     "href": "lessons/04_Rules_of_prob/04_Rules_of_prob_key_info.html#announcements",
     "title": "Key Info",
     "section": "",
-    "text": "New AI Video Tutorials! If anyone is looking for course materials on the responsible use of generative AI tools such as ChatGPT, I wanted to highlight that the OHSU library has released a new set of AI video tutorials!\n\nCreated by librarian David Carson, this series of short videos (3-4 minutes each) is based on the Kickstart Your Writing with AI workshop taught with writing specialist Zoe Speidel. Each video is standalone and can be viewed in any order, so faculty can share and reuse whichever are most relevant. The topics include effective prompting, AI and publishing, and how to cite or disclose AI. The videos are designed to be flexible resources and are available to embed directly into Sakai. This series is available on the Library’s Generative AI student guide."
+    "text": "No office hours from me this week - I have a standing appointment\n\nBut we will start next week!\n\nDrop deadline with 100% refund: this Friday, 10/10\nNew AI Video Tutorials! If anyone is looking for course materials on the responsible use of generative AI tools such as ChatGPT, I wanted to highlight that the OHSU library has released a new set of AI video tutorials!\n\nCreated by librarian David Carson, this series of short videos (3-4 minutes each) is based on the Kickstart Your Writing with AI workshop taught with writing specialist Zoe Speidel. Each video is standalone and can be viewed in any order, so faculty can share and reuse whichever are most relevant. The topics include effective prompting, AI and publishing, and how to cite or disclose AI. The videos are designed to be flexible resources and are available to embed directly into Sakai. This series is available on the Library’s Generative AI student guide."
   },
   {
     "objectID": "lessons/04_Rules_of_prob/04_Rules_of_prob_key_info.html#key-dates",
@@ -18877,5 +18877,40 @@
     "title": "Homework 2 Answers",
     "section": "Questions",
     "text": "Questions\n\n\n (b) Answers for part (ii) for each:\n\n\n0.48\n0.52\n0.2\n0.32\n0.03\n0.01\n0.02\n\n\n0.384 If you have the right answer to (c), then you should be able to figure out the rest (see (e)).\n\n\n1 does not hold because \\(0 \\neq \\dfrac{1}{216}\\)      (b) 2 does not hold because \\(P(B \\cap C) \\neq P(B)P(C)\\)\n\n\n5/9; b. 2/5; c. 2/4\n\n\n0.71; b. 0.29; c. 48/71; d. 1; e. 25/29; f. 25/39\n\n\n\nExtra problem\n\n\n16, (c) for one, \\(P(X=10) = \\dfrac{5}{16}\\), (d) 0.375"
+  },
+  {
+    "objectID": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#can-we-flip-the-conditional-probability",
+    "href": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#can-we-flip-the-conditional-probability",
+    "title": "Lesson 4: Rules of probability",
+    "section": "Can we flip the conditional probability?",
+    "text": "Can we flip the conditional probability?\n\nSo we learned about conditional probabilities\n\nWe learned how the occurrence of event A affects event B (B conditional on A)\n\n\n \n\nCan we figure out information on how the occurrence of event B affects event A?\n\n \n\nWe can use the conditional probability (\\(\\mathbb{P}(A|B)\\)) to get information on the flipped conditional probability (\\(\\mathbb{P}(B|A)\\))"
+  },
+  {
+    "objectID": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#example-of-two-dice-simulating-in-r",
+    "href": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#example-of-two-dice-simulating-in-r",
+    "title": "Lesson 4: Rules of probability",
+    "section": "Example of two dice: simulating in R",
+    "text": "Example of two dice: simulating in R\n\n\nExample 1\n\n\nTwo dice (green and blue) are rolled. Let \\(A =\\) event a total of 7 appears, and \\(B =\\) event green die is a six. Are events \\(A\\) and \\(B\\) independent?\n\n\n\nset.seed(1002)\nrolls = replicate(10000, sample(x = 1:6, size = 2, replace = TRUE))\nrolls[, 1:10]\n\n     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]\n[1,]    4    5    5    5    6    5    2    4    3     4\n[2,]    1    4    6    3    1    1    5    5    6     3\n\nevent_A = ( rolls[1, ] + rolls[2, ] == 7)\nhead(event_A, 10)\n\n [1] FALSE FALSE FALSE FALSE  TRUE FALSE  TRUE FALSE FALSE  TRUE\n\nevent_B = ( rolls[1, ] == 6 )\nhead(event_B, 10)\n\n [1] FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE"
+  },
+  {
+    "objectID": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#example-of-two-dice-simulating-in-r-12",
+    "href": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#example-of-two-dice-simulating-in-r-12",
+    "title": "Lesson 4: Rules of probability",
+    "section": "Example of two dice: simulating in R (1/2)",
+    "text": "Example of two dice: simulating in R (1/2)\n\n\nExample 1\n\n\nTwo dice (green and blue) are rolled. Let \\(A =\\) event a total of 7 appears, and \\(B =\\) event green die is a six. Are events \\(A\\) and \\(B\\) independent?\n\n\n\nset.seed(1002)\nreps = 10000\nrolls = replicate(reps, sample(x = 1:6, size = 2, replace = TRUE))\nrolls[, 1:10]\n\n     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]\n[1,]    4    5    5    5    6    5    2    4    3     4\n[2,]    1    4    6    3    1    1    5    5    6     3\n\nevent_A = ( rolls[1, ] + rolls[2, ] == 7 )\nhead(event_A, 10)\n\n [1] FALSE FALSE FALSE FALSE  TRUE FALSE  TRUE FALSE FALSE  TRUE\n\nevent_B = ( rolls[1, ] == 6 )\nhead(event_B, 10)\n\n [1] FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE"
+  },
+  {
+    "objectID": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#example-of-two-dice-simulating-in-r-12-1",
+    "href": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#example-of-two-dice-simulating-in-r-12-1",
+    "title": "Lesson 4: Rules of probability",
+    "section": "Example of two dice: simulating in R (1/2)",
+    "text": "Example of two dice: simulating in R (1/2)\n\n\nExample 1\n\n\nTwo dice (green and blue) are rolled. Let \\(A =\\) event a total of 7 appears, and \\(B =\\) event green die is a six. Are events \\(A\\) and \\(B\\) independent?\n\n\n\n( sum(event_A) / reps ) * ( sum(event_B) / reps )\n\n[1] 0.0286608\n\nevent_A_and_B = ( rolls[1, ] + rolls[2, ] == 7 ) & ( rolls[1, ] == 6 )\nhead(event_A_and_B, 10)\n\n [1] FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE\n\nsum(event_A_and_B) / reps\n\n[1] 0.0284"
+  },
+  {
+    "objectID": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#conditional-probability-with-two-dice-simulations",
+    "href": "lessons/04_Rules_of_prob/04_Rules_of_prob.html#conditional-probability-with-two-dice-simulations",
+    "title": "Lesson 4: Rules of probability",
+    "section": "Conditional probability with two dice: simulations",
+    "text": "Conditional probability with two dice: simulations\n\n\nExample 3\n\n\nTwo dice (green and blue) are rolled. If the dice do not show the same face, what is the probability that one of the dice is a 1?\n\n\n\nset.seed(1002)\nrolls = replicate(reps, sample(x = 1:6, size = 2, replace = TRUE))\nrolls[, 1:10]\n\n     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]\n[1,]    4    5    5    5    6    5    2    4    3     4\n[2,]    1    4    6    3    1    1    5    5    6     3\n\nevent_A = ( rolls[1, ] != rolls[2, ] )\nhead(event_A, 10)\n\n [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE\n\nevent_B = ( rolls[1, ] == 1 | rolls[2, ] == 1 )\nhead(event_B, 10)\n\n [1]  TRUE FALSE FALSE FALSE  TRUE  TRUE FALSE FALSE FALSE FALSE\n\nsum(event_B & event_A) / sum(event_A)\n\n[1] 0.3315328"
   }
 ]

@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-076a3aa726d0b67dd670335e7f534111.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -144,11 +209,8 @@ Meike Niederhausen and Nicky Wakim
 <section id="learning-objectives" class="title-slide slide level1 center">
 <h1>Learning objectives</h1>
 <ol type="1">
-<li><p>Define independence of 2-3 events given probability notation</p></li>
-<li><p>Calculate whether two or more events are independent</p></li>
-<li><p>Use set process to calculate probability of event of interest</p></li>
-<li><p>Calculate the probability of an event occurring, given that another event occurred.</p></li>
-<li><p>Define keys facts for conditional probabilities using notation.</p></li>
+<li><p>Define independence of 2-3 events and decide whether two or more events are independent</p></li>
+<li><p>Define key facts for conditional probabilities and calculate conditional probabilities.</p></li>
 <li><p>Calculate conditional probability of an event using Bayes’ Theorem</p></li>
 <li><p>Utilize additional probability rules in probability calculations, specifically the Higher Order Multiplication Rule and the Law of Total Probabilities</p></li>
 </ol>
@@ -156,7 +218,26 @@ Meike Niederhausen and Nicky Wakim
 <section id="where-are-we" class="slide level2">
 <h2>Where are we?</h2>
 
-<img data-src="../img_slides/course_map.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<img data-src="../img_slides/course_map.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="general-process-for-probability-word-problems" class="slide level2">
+<h2>General Process for Probability Word Problems</h2>
+<ol type="1">
+<li><p>Clearly define your events of interest</p></li>
+<li><p>Translate question to probability using defined events OR Venn Diagram</p></li>
+<li><p>Ask yourself:</p>
+<ul>
+<li><p>Are we sampling with or without replacement?</p></li>
+<li><p>Does order matter?</p></li>
+</ul></li>
+<li><p>Use axioms, properties, partitions, facts, etc. to define the end probability calculation into smaller parts</p>
+<ul>
+<li><p>If probabilities are given to you, Venn Diagrams may help you parse out the events and probability calculations</p></li>
+<li><p>If you need to find probabilities with counting, pictures or diagrams might help here</p></li>
+</ul></li>
+<li><p>Write out a concluding statement that gives the probability context</p></li>
+<li><p>(For own check) Make sure the calculated probability follows the axioms. Is is between 0 and 1?</p></li>
+</ol>
+</section></section>
 <section>
 <section id="learning-objectives-1" class="title-slide slide level1 center">
 <h1>Learning Objectives</h1>
@@ -169,7 +250,7 @@ Meike Niederhausen and Nicky Wakim
 <p>Definition: Independence</p>
 </div>
 <div class="def-cont">
-<p><em>Events</em> <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are <strong>independent</strong> if <span class="math display">\[\mathbb{P}(A \cap B) = \mathbb{P}(A) \cdot  \mathbb{P}(B).\]</span></p>
+<p>Events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are <strong>independent</strong> if <span class="math display">\[\mathbb{P}(A \cap B) = \mathbb{P}(A) \cdot  \mathbb{P}(B).\]</span></p>
 </div>
 </div>
 <p><strong>Notation:</strong> For shorthand, we sometimes write <span class="math inline">\(A \mathrel{\unicode{x2AEB}} B,\)</span> to denote that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent events.</p>
@@ -186,7 +267,66 @@ A \mathrel{\unicode{x2AEB}} B &amp; \implies \mathbb{P}(A \cap B) = \mathbb{P}(A
 <p>Example 1</p>
 </div>
 <div class="ex-cont">
-<p><em>Two dice (red and blue) are rolled. Let</em> <span class="math inline">\(A =\)</span> event a total of 7 appears, and <span class="math inline">\(B =\)</span> event red die is a six. Are events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> independent?</p>
+<p>Two dice (green and blue) are rolled. Let <span class="math inline">\(A =\)</span> event a total of 7 appears, and <span class="math inline">\(B =\)</span> event green die is a six. Are events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> independent?</p>
+</div>
+</div>
+
+<img data-src="../../lessons/img_slides/indep_2dice.png" class="r-stretch"></section>
+<section id="example-of-two-dice-simulating-in-r-12" class="slide level2">
+<h2>Example of two dice: simulating in R (1/2)</h2>
+<div class="example">
+<div class="ex-title">
+<p>Example 1</p>
+</div>
+<div class="ex-cont">
+<p>Two dice (green and blue) are rolled. Let <span class="math inline">\(A =\)</span> event a total of 7 appears, and <span class="math inline">\(B =\)</span> event green die is a six. Are events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> independent?</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">set.seed</span>(<span class="dv">1002</span>)</span>
+<span id="cb1-2"><a></a>reps <span class="ot">=</span> <span class="dv">10000</span></span>
+<span id="cb1-3"><a></a>rolls <span class="ot">=</span> <span class="fu">replicate</span>(reps, <span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb1-4"><a></a>rolls[, <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+[1,]    4    5    5    5    6    5    2    4    3     4
+[2,]    1    4    6    3    1    1    5    5    6     3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>event_A <span class="ot">=</span> ( rolls[<span class="dv">1</span>, ] <span class="sc">+</span> rolls[<span class="dv">2</span>, ] <span class="sc">==</span> <span class="dv">7</span> )</span>
+<span id="cb3-2"><a></a><span class="fu">head</span>(event_A, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] FALSE FALSE FALSE FALSE  TRUE FALSE  TRUE FALSE FALSE  TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>event_B <span class="ot">=</span> ( rolls[<span class="dv">1</span>, ] <span class="sc">==</span> <span class="dv">6</span> )</span>
+<span id="cb5-2"><a></a><span class="fu">head</span>(event_B, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE</code></pre>
+</div>
+</div>
+</section>
+<section id="example-of-two-dice-simulating-in-r-12-1" class="slide level2">
+<h2>Example of two dice: simulating in R (1/2)</h2>
+<div class="example">
+<div class="ex-title">
+<p>Example 1</p>
+</div>
+<div class="ex-cont">
+<p>Two dice (green and blue) are rolled. Let <span class="math inline">\(A =\)</span> event a total of 7 appears, and <span class="math inline">\(B =\)</span> event green die is a six. Are events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> independent?</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>( <span class="fu">sum</span>(event_A) <span class="sc">/</span> reps ) <span class="sc">*</span> ( <span class="fu">sum</span>(event_B) <span class="sc">/</span> reps )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.0286608</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>event_A_and_B <span class="ot">=</span> ( rolls[<span class="dv">1</span>, ] <span class="sc">+</span> rolls[<span class="dv">2</span>, ] <span class="sc">==</span> <span class="dv">7</span> ) <span class="sc">&amp;</span> ( rolls[<span class="dv">1</span>, ] <span class="sc">==</span> <span class="dv">6</span> )</span>
+<span id="cb9-2"><a></a><span class="fu">head</span>(event_A_and_B, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">sum</span>(event_A_and_B) <span class="sc">/</span> reps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.0284</code></pre>
 </div>
 </div>
 </section>
@@ -220,7 +360,7 @@ A \mathrel{\unicode{x2AEB}} B &amp; \implies \mathbb{P}(A \cap B) = \mathbb{P}(A
 <p>Example 2</p>
 </div>
 <div class="ex-cont">
-<p><em>Suppose you take a random sample of</em> <span class="math inline">\(n\)</span> people, of which people are smokers and non-smokers independently of each other. Let</p>
+<p>Suppose you take a random sample of <span class="math inline">\(n\)</span> people, of which people are smokers and non-smokers independently of each other. Let</p>
 <ul>
 <li><p><span class="math inline">\(A_i =\)</span> event person <span class="math inline">\(i\)</span> is a smoker, for <span class="math inline">\(i=1, \ldots ,n\)</span>, and</p></li>
 <li><p><span class="math inline">\(p_i =\)</span> probability person <span class="math inline">\(i\)</span> is a smoker, for <span class="math inline">\(i=1, \ldots ,n\)</span>.</p></li>
@@ -240,46 +380,7 @@ A \mathrel{\unicode{x2AEB}} B &amp; \implies \mathbb{P}(A \cap B) = \mathbb{P}(A
 <li><p>Define keys facts for conditional probabilities using notation.</p></li>
 </ol>
 </section>
-<section id="general-process-for-probability-word-problems" class="slide level2">
-<h2>General Process for Probability Word Problems</h2>
-<ol type="1">
-<li><p>Clearly define your events of interest</p></li>
-<li><p>Translate question to probability using defined events OR Venn Diagram</p></li>
-<li><p>Ask yourself:</p>
-<ul>
-<li><p>Are we sampling with or without replacement?</p></li>
-<li><p>Does order matter?</p></li>
-</ul></li>
-<li><p>Use axioms, properties, partitions, facts, etc. to define the end probability calculation into smaller parts</p>
-<ul>
-<li><p>If probabilities are given to you, Venn Diagrams may help you parse out the events and probability calculations</p></li>
-<li><p>If you need to find probabilities with counting, pictures or diagrams might help here</p></li>
-</ul></li>
-<li><p>Write out a concluding statement that gives the probability context</p></li>
-<li><p>(For own check) Make sure the calculated probability follows the axioms. Is is between 0 and 1?</p></li>
-</ol>
-</section>
-<section id="lets-revisit-our-deck-of-cards" class="slide level2">
-<h2>Let’s revisit our deck of cards</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 1</p>
-</div>
-<div class="ex-cont">
-<p>Suppose we randomly draw 2 cards from a standard deck of cards. What is the probability that we draw a spade then a heart?</p>
-</div>
-</div>
-<p>Let</p>
-<ul>
-<li><p>Let <span class="math inline">\(A =\)</span> event <span class="math inline">\(1^{st}\)</span> card is spades</p></li>
-<li><p>Let <span class="math inline">\(B =\)</span> event <span class="math inline">\(2^{nd}\)</span> card is heart</p></li>
-</ul>
-</div><div class="column">
 
-</div></div>
-</section>
 <section id="conditional-probability-facts-12" class="slide level2">
 <h2>Conditional Probability facts (1/2)</h2>
 <div class="columns">
@@ -326,24 +427,60 @@ A \mathrel{\unicode{x2AEB}} B &amp; \implies \mathbb{P}(A \cap B) = \mathbb{P}(A
 </div>
 </div></div>
 </section>
-<section id="monty-hall-problem" class="slide level2">
-<h2>Monty Hall Problem</h2>
-<p><a href="https://www.youtube.com/watch?v=6JGyiISwY1k">Survivor Season 42</a></p>
-<p><a href="https://en.wikipedia.org/wiki/Monty_Hall_problem">With the Wiki page on it!</a></p>
-</section>
 <section id="conditional-probability-with-two-dice" class="slide level2">
 <h2>Conditional probability with two dice</h2>
 <div class="columns">
 <div class="column">
 <div class="example">
 <div class="ex-title">
-<p>Example 2</p>
+<p>Example 3</p>
 </div>
 <div class="ex-cont">
-<p>Two dice (red and blue) are rolled. If the dice do not show the same face, what is the probability that one of the dice is a 1?</p>
+<p>Two dice (green and blue) are rolled. If the dice do not show the same face, what is the probability that one of the dice is a 1?</p>
 </div>
 </div>
+<p><img data-src="../../lessons/img_slides/indep_2dice.png"></p>
 </div></div>
+</section>
+<section id="conditional-probability-with-two-dice-simulations" class="slide level2">
+<h2>Conditional probability with two dice: simulations</h2>
+<div class="example">
+<div class="ex-title">
+<p>Example 3</p>
+</div>
+<div class="ex-cont">
+<p>Two dice (green and blue) are rolled. If the dice do not show the same face, what is the probability that one of the dice is a 1?</p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">set.seed</span>(<span class="dv">1002</span>)</span>
+<span id="cb13-2"><a></a>rolls <span class="ot">=</span> <span class="fu">replicate</span>(reps, <span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb13-3"><a></a>rolls[, <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]
+[1,]    4    5    5    5    6    5    2    4    3     4
+[2,]    1    4    6    3    1    1    5    5    6     3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>event_A <span class="ot">=</span> ( rolls[<span class="dv">1</span>, ] <span class="sc">!=</span> rolls[<span class="dv">2</span>, ] )</span>
+<span id="cb15-2"><a></a><span class="fu">head</span>(event_A, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>event_B <span class="ot">=</span> ( rolls[<span class="dv">1</span>, ] <span class="sc">==</span> <span class="dv">1</span> <span class="sc">|</span> rolls[<span class="dv">2</span>, ] <span class="sc">==</span> <span class="dv">1</span> )</span>
+<span id="cb17-2"><a></a><span class="fu">head</span>(event_B, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  TRUE FALSE FALSE FALSE  TRUE  TRUE FALSE FALSE FALSE FALSE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="fu">sum</span>(event_B <span class="sc">&amp;</span> event_A) <span class="sc">/</span> <span class="fu">sum</span>(event_A)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.3315328</code></pre>
+</div>
+</div>
+</section>
+<section id="monty-hall-problem" class="slide level2">
+<h2>Monty Hall Problem</h2>
+<p><a href="https://www.youtube.com/watch?v=6JGyiISwY1k">Survivor Season 42</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Monty_Hall_problem">With the Wiki page on it!</a></p>
 </section></section>
 <section>
 <section id="learning-objectives-3" class="title-slide slide level1 center">
@@ -353,19 +490,11 @@ A \mathrel{\unicode{x2AEB}} B &amp; \implies \mathbb{P}(A \cap B) = \mathbb{P}(A
 <li><p>Utilize additional probability rules in probability calculations, specifically the Higher Order Multiplication Rule and the Law of Total Probabilities</p></li>
 </ol>
 </section>
-<section id="introduction" class="slide level2">
-<h2>Introduction</h2>
-<ul>
-<li><p>So we learned about conditional probabilities</p>
-<ul>
-<li>We learned how the occurrence of event A affects event B (B conditional on A)</li>
-</ul></li>
-<li><p>Can we figure out information on how the occurrence of event B affects event A?</p></li>
-<li><p>We can use the conditional probability (<span class="math inline">\(\mathbb{P}(A|B)\)</span>) to get information on the flipped conditional probability (<span class="math inline">\(\mathbb{P}(B|A)\)</span>)</p></li>
-</ul>
-</section>
 <section id="bayes-rule-for-two-events" class="slide level2">
 <h2>Bayes’ Rule for two events</h2>
+<ul>
+<li>We can use the conditional probability (<span class="math inline">\(\mathbb{P}(A|B)\)</span>) to get information on the flipped conditional probability (<span class="math inline">\(\mathbb{P}(B|A)\)</span>)</li>
+</ul>
 <div class="columns">
 <div class="column">
 <div class="theorem">
@@ -387,7 +516,7 @@ A \mathrel{\unicode{x2AEB}} B &amp; \implies \mathbb{P}(A \cap B) = \mathbb{P}(A
 <div class="column">
 <div class="example">
 <div class="ex-title">
-<p>Example 1</p>
+<p>Example 4</p>
 </div>
 <div class="ex-cont">
 <p>Suppose we draw 5 cards from a standard shuffled deck of 52 cards. What is the probability of a flush, that is all the cards are of the same suit (including straight flushes)?</p>
@@ -399,8 +528,9 @@ A \mathrel{\unicode{x2AEB}} B &amp; \implies \mathbb{P}(A \cap B) = \mathbb{P}(A
 <p>Higher Order Multiplication Rule</p>
 </div>
 <div class="fact-cont">
-<p><span class="math display">\[\mathbb{P}(A_1\cap A_2 \cap  \ldots \cap A_n)=\mathbb{P}(A_1)\cdot\mathbb{P}(A_2|A_1) \cdot \\
-\mathbb{P}(A_3|A_1A_2)\ldots \cdot\mathbb{P}(A_n|A_1A_2\ldots A_{n-1})\]</span></p>
+<p><span class="math display">\[\begin{aligned} \mathbb{P}(A_1\cap &amp; A_2 \cap  \ldots \cap A_n)= \\ &amp; \mathbb{P}(A_1)\cdot\mathbb{P}(A_2|A_1) \cdot \\
+&amp; \mathbb{P}(A_3|A_1A_2)\ldots \cdot\mathbb{P}(A_n|A_1A_2\ldots A_{n-1})
+\end{aligned}\]</span></p>
 </div>
 </div>
 </div></div>
@@ -411,7 +541,7 @@ A \mathrel{\unicode{x2AEB}} B &amp; \implies \mathbb{P}(A \cap B) = \mathbb{P}(A
 <div class="column">
 <div class="example">
 <div class="ex-title">
-<p>Example 2</p>
+<p>Example 5</p>
 </div>
 <div class="ex-cont">
 <p>Suppose 1% of people assigned female at birth (AFAB) and 5% of people assigned male at birth (AMAB) are color-blind. Assume person born is equally likely AFAB or AMAB (not including intersex). What is the probability that a person chosen at random is color-blind?</p>
@@ -456,33 +586,14 @@ A \mathrel{\unicode{x2AEB}} B &amp; \implies \mathbb{P}(A \cap B) = \mathbb{P}(A
 
 <img data-src="../img_slides/Chp_05_ex_03.jpeg" class="quarto-figure quarto-figure-center r-stretch"></section>
 
-<section id="lets-revisit-the-color-blind-example" class="slide level2">
-<h2>Let’s revisit the color-blind example</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 4</p>
-</div>
-<div class="ex-cont">
-<p>Recall the color-blind example (Example <a href="#/Ex_colorblind" data-reference-type="ref" data-reference="Ex_colorblind">2</a>), where</p>
-<ul>
-<li><p>a person is AMAB with probability 0.5,</p></li>
-<li><p>AMAB people are color-blind with probability 0.05, and</p></li>
-<li><p>all people are color-blind with probability 0.03.</p></li>
-</ul>
-<p>Assuming people are AMAB or AFAB, find the probability that a color-blind person is AMAB.</p>
-</div>
-</div>
-</div></div>
-</section>
+
 <section id="calculate-probability-with-both-rules" class="slide level2">
 <h2>Calculate probability with both rules</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
 <div class="example">
 <div class="ex-title">
-<p>Example 5</p>
+<p>Example 6</p>
 </div>
 <div class="ex-cont">
 <p>Suppose</p>

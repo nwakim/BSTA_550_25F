@@ -45,6 +45,8 @@ Welcome to Biostatistics and Probability! This course is designed to introduce h
 
 [Charles](https://ohsu.webex.com/meet/parkecha) {{< iconify icon-park-solid time size=24px >}} F 12-1pm
 
+[Nicky](https://ohsu.webex.com/meet/wakim) {{< iconify icon-park-solid time size=24px >}} Th 10-11am
+
 :::
 
 ::: g-col-3
