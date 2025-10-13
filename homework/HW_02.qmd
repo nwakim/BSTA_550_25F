@@ -1,6 +1,7 @@
 ---
 title: "Homework 2"
 subtitle: "BSTA 550"
+description: "Due: `r library(here); source(here('class_dates.R')); hw2 %>% format('%m/%d')` at 11pm"
 date-modified: "today"
 format: 
   html:
@@ -19,10 +20,6 @@ knitr::opts_chunk$set(echo = TRUE)
 library(here)
 source(here("class_dates.R"))
 ```
-
-::: {.callout-tip appearance="minimal"}
-**Due `r hw2 %>% format("%m/%d")`** at 11pm
-:::
 
 ## Directions
 
@@ -122,8 +119,6 @@ Please submit your homework in pdf format. You can type your work on your comput
     e.  Find the probability of a cloudy day given that it is a rainy day.
 
     f.  Find the probability that it is a rainy day given that it is a cloudy day
-
-6. Simulation problem??
 
 ### Extra problems
 

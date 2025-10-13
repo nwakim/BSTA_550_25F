@@ -21,4 +21,4 @@ editor_options:
 
 ## Key Dates
 
-- HW 1 Assignment due this Thursday at 11pm
+- HW 1 Assignment due this Sunday at 11pm

@@ -1,10 +1,9 @@
 ---
-title: "Lesson 5: Equally Likely Outcomes"
+title: "Lesson 5: Equally Likely Outcomes and Counting"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#006a4e"
-date: " `r library(here); source(here('class_dates.R')); w1d1` "
-categories: ["Week 1"]
+date: " `r library(here); source(here('class_dates.R')); w3d1` "
 format: 
   revealjs:
     theme: "../simple_NW.scss"

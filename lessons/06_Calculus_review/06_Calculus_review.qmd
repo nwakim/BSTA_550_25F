@@ -1,7 +1,7 @@
 ---
-title: "Pre Chapter 24: Calculus Review"
+title: "Lesson 6: Calculus Review"
 author: "Meike Niederhausen and Nicky Wakim"
-date: "11/4/2024"
+date: " `r library(here); source(here('class_dates.R')); w3d2` "
 title-slide-attributes:
     data-background-color: "#006a4e"
 format: 
@@ -11,7 +11,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Pre Chapter 24 Slides
+    footer: Lesson 6 Slides
     html-math-method: mathjax
 ---
 
@@ -24,6 +24,11 @@ format:
 ## Where are we?
 
 ![](../img_slides/course_map.png){fig-align="center"}
+
+```{r setup, include=FALSE}
+library(here)
+source(here("class_dates.R"))
+```
 
 # Differentiation
 

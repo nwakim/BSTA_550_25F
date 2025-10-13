@@ -1,0 +1,18 @@
+---
+title: "Key Info and Announcements"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Key Info
+
+- Next class is optional 
+   - It will be a calculus review 
+
+## Announcements
+
+- Fire drills this week!

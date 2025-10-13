@@ -1,7 +1,7 @@
 ---
 title: "Homework 3"
 subtitle: "BSTA 550"
-description: "Due: Thursday October 25, 2024 at 11pm"
+description: "Due: `r library(here); source(here('class_dates.R')); hw3 %>% format('%m/%d')` at 11pm"
 date-modified: "today"
 format: 
   html:
@@ -12,45 +12,39 @@ editor_options:
   chunk_output_type: console
 ---
 
+```{r}
+#| label: "setup"
+#| include: false
+knitr::opts_chunk$set(echo = TRUE)
+
+library(here)
+source(here("class_dates.R"))
+```
+
 ## Directions
 
-[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/BSTA-550-1-14926-F24/tool/c8320b13-1b6d-42ed-9c19-134634cf25af) Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
-
-**Try to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later!** Only turn in the ones listed in the "Turn In" column. Please submit problems in the order they are listed.
+**Please turn in this homework on Sakai.** Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
 
 *You must show all of your work to receive credit.*
 
-::: center
-| Chapter |     Turn In     |         Extra Problems          |
-|:-------:|:---------------:|:-------------------------------:|
-|    7    |                 |      \# 2, 10, 16, 17, 18       |
-|    8    | TB \# 8\*, 18\* |         \# 2, 5, 7, 10          |
-|   14    |                 |             \# 3, 7             |
-|   15    |  ~~NTB \# 1~~   |  \# 1, 5, 11, 18, 23, NTB \# 2  |
-|   16    |     TB \# 7     |       \# 3a-g, 8, 11, 21        |
-|   17    |     TB \# 9     | \# 3a-g, 6, 11, 12a-c, NTB \# 3 |
-|   18    |    TB \# 20     |        \# 1, 24, 26, 27         |
-|   19    |     TB \# 6     |          \# 1, 18, 19           |
-|   20    |                 |           \# 2, 3, 4            |
-:::
+## Questions
 
-\* In addition to the graphs, include piecewise defined functions for the pmf and cdf.
+1. **Cookies.** Consider a jar of 9 chocolate chip and 11 peanut butter cookies. You randomly select 2 cookies to eat. All possible choices are equally likely.
 
-## Non-textbook problems (NTB)
+    a. What is the probability that the 2 you select will both will be chocolate chip? *Calculate your answer "by hand."*
+    b. What is the probability that at least one of your cookies will be peanut butter? *Calculate your answer "by hand" then verify your answer by simulating the experiment in R at least 1000 times.*
+    c. What is the probability that last 2 cookies left in the jar (after 18 have been eaten) will be chocolate chip? (Is this answer the same or different than part a? Why or why not?) *Calculate your answer "by hand" then verify your answer by simulating the experiment in R at least 1000 times.*
 
-Do not do this problem!!
+2. **Raffle tickets.** There are 30 raffle tickets in a bowl. Three winning tickets will be selected. Each ticket can win at most one prize. How many ways can the prizes be distributed if the following additional information is known?
+    
+    a. All 3 winners receive goldfish (the goldfish are indistinguishable).
+    b. The 1st winner receives a car, the 2nd a bicycle, and the 3rd a goldfish.
 
-1.  ~~Let~~ $X_i\sim$ ~~Binomial(~~$n_i,p$~~) be independent r.v.'s for~~ $i=1,\ldots,m$~~.~~
+3.  A new drug is packaged to contain 30 pills in a bottle. Suppose that 98% of all bottles contain no defective pills, 1.5% contain one defective pill, and 0.5% contain two defective pills. Two pills from a bottle are randomly selected and tested. What is the probability that there are 2 defective pills in the bottle given that one of the two tested pills is defective?
 
-    a.  ~~What does the r.v.~~ $X=\sum_{i=1}^mX_i$ ~~count, and what is the distribution of~~ $X$~~? Make sure to specify the parameters of~~ $X$~~'s distribution.~~
+## Extra Problems
 
-    b.  ~~Find~~ $\mathbb{E}[X]$~~. *Make sure to show your work for (b) and (c). However, you may use without proof what you know about the mean and variance of each*~~ $X_i$~~.~~
-
-    c.  ~~Find~~ $Var[X]$~~.~~
-
-### Extra Problems
-
-2.  Read the Washington Post article *The amazing woman who can smell Parkinson's disease - before symptoms appear* (<http://www.washingtonpost.com/news/morning-mix/wp/2015/10/23/scottish-woman-detects-a-musky-smell-that-could-radically-improve-how-parkinsons-disease-is-diagnosed/>)
+1.  Read the Washington Post article *The amazing woman who can smell Parkinson's disease - before symptoms appear* (<http://www.washingtonpost.com/news/morning-mix/wp/2015/10/23/scottish-woman-detects-a-musky-smell-that-could-radically-improve-how-parkinsons-disease-is-diagnosed/>)
 
     Assuming Joy Milne does not have the ability to detect Parkinson's disease via smell, answer the following questions:
 
@@ -58,10 +52,25 @@ Do not do this problem!!
 
     b.  What is the probability of her correctly detecting Parkinson's in 12 out of 12 t-shirts?
 
-3.  Let $X_i\sim$ Negative Binomial($r_i,p$) be independent r.v.'s for $i=1,\ldots,m$.
+2.  Calculus Review
 
-    a.  What does the r.v. $X=\sum_{i=1}^mX_i$ count, and what is the distribution of $X$? Make sure to specify the parameters of $X$'s distribution.
+    a.  $$\int_0^yc(x+y)dx$$
 
-    b.  Find $\mathbb{E}[X]$. *Make sure to show your work for (b) and (c). However, you may use without proof what you know about the mean and variance of each* $X_i$.
+    b.  $$\frac{d}{dx}\bigg(\frac{4}{9}x^2y^2+\frac{5}{9}xy^4\bigg)$$
 
-    c.  Find $Var[X]$.
+    c.  $$\frac{d}{dy}\bigg(\frac{4}{9}x^2y^2+\frac{5}{9}xy^4\bigg)$$
+
+    d.  $$\int_0^y2e^{-x}e^{-y}dx$$
+
+    e.  $$\int_0^\infty xye^{-(x+y)}dy$$
+
+    f.  $$\int_x^{2x} 2e^{-(x+3y)}dy$$
+
+    g.  Find the area of the region bounded by the graphs of $f(x)=2-x^2$ and $g(x)=x$ by integrating with respect to $x$.
+
+    h.  Find the area of the region bounded by the graphs of $f(x)=2-x^2$ and $g(x)=x$ by integrating with respect to $y$.
+
+    i.  Find the area of the region bounded by the graphs of $x=3-y^2$ and $y=x-1$ by integrating with respect to $x$.
+
+    j.  Find the area of the region bounded by the graphs of $x=3-y^2$ and $y=x-1$ by integrating with respect to $y$.
+
