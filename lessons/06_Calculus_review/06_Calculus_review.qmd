@@ -1,7 +1,7 @@
 ---
 title: "Lesson 6: Calculus Review"
 author: "Meike Niederhausen and Nicky Wakim"
-date: " `r library(here); source(here('class_dates.R')); w3d2` "
+date: " `r library(here); source(here('class_dates.R')); w3d1` "
 title-slide-attributes:
     data-background-color: "#006a4e"
 format: 

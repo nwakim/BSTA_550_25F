@@ -1,7 +1,6 @@
 ---
 title: "Muddy Points"
-subtitle: "Pre Chapter 24: Calculus Review"
-date: "11/04/2024"
+subtitle: "Lesson 6: Calculus Review"
 date-modified: "today"
 format: 
   html:
@@ -10,7 +9,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-Muddy points from Fall 2023:
+## Fall 2023
 
 ### 1. Why we are allowed to "split" the operator d/dx into two pieces as if it were a fraction when it's an operator
 
