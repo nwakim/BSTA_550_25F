@@ -18148,14 +18148,14 @@
     "href": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes.html#some-combinations-properties",
     "title": "Lesson 5: Equally Likely Outcomes and Counting",
     "section": "Some combinations properties",
-    "text": "Some combinations properties\n\n\n\n\n\n\n\nProperty\nProof\n\n\n\n\n\\[\\binom{n}{r} = \\binom{n}{n-r}\\]\n\\(\\binom{n}{r} = \\dfrac{n!}{r!(n-r)!}\\) and \\(\\binom{n}{n-r} = \\dfrac{n!}{(n-r)!(n-(n-r))!} = \\dfrac{n!}{(n-r)!r!}\\)\n\n\n\\[\\binom{n}{1} = n\\]\n\\[\\binom{n}{1} = \\dfrac{n!}{1!(n-1)!}=\\dfrac{n\\cdot(n-1)\\cdot(n-2)\\cdots1}{1! \\cdot (n-1)\\cdot(n-2)\\cdots1} = \\dfrac{n\\cdot(n-1)!}{1\\cdot (n-1)!} = \\dfrac{n}{1}=n\\]\n\n\n\\[\\binom{n}{0} = 1\\]\n\\[\\binom{n}{0} = \\dfrac{n!}{0!(n-0)!}=\\dfrac{n!}{1\\cdot n!} = 1\\]"
+    "text": "Some combinations properties\n\n\n\n\n\n\n\n\nProperty\n\nProof\n\n\n\n\n\\[\\binom{n}{r} = \\binom{n}{n-r}\\]\n\n\\(\\binom{n}{r} = \\dfrac{n!}{r!(n-r)!}\\) and \\(\\binom{n}{n-r} = \\dfrac{n!}{(n-r)!(n-(n-r))!} = \\dfrac{n!}{(n-r)!r!}\\)\n\n\n\\[\\binom{n}{1} = n\\]\n\n\\[\\binom{n}{1} = \\dfrac{n!}{1!(n-1)!}=\\dfrac{n\\cdot(n-1)\\cdot(n-2)\\cdots1}{1! \\cdot (n-1)\\cdot(n-2)\\cdots1} = \\dfrac{n\\cdot(n-1)!}{1\\cdot (n-1)!} = \\dfrac{n}{1}=n\\]\n\n\n\\[\\binom{n}{0} = 1\\]\n\n\\[\\binom{n}{0} = \\dfrac{n!}{0!(n-0)!}=\\dfrac{n!}{1\\cdot n!} = 1\\]"
   },
   {
     "objectID": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes.html#table-of-different-cases",
     "href": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes.html#table-of-different-cases",
     "title": "Lesson 5: Equally Likely Outcomes and Counting",
     "section": "Table of different cases",
-    "text": "Table of different cases\nSee table on pg. 277 of textbook\n\n\\(n\\) = total number of objects\n\\(r\\) = number objects needed\n\n\n\n\n\n\n\n\n\nwith replacement\nwithout replacement\n\n\n\n\norder matters\n\\[n^r\\]\n\\[n\\text{P}r = \\frac{n!}{(n-r)!}\\]\n\n\norder doesn’t matter\n\\[ \\binom{n+r-1}{r}\\]\n\\[n\\text{C}r = \\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\]"
+    "text": "Table of different cases\n\n\\(n\\) = total number of objects\n\\(r\\) = number objects needed\n\n\n\n\n\n\n\n\n\nwith replacement\nwithout replacement\n\n\n\n\norder matters\n\\[n^r\\]\n\\[n\\text{P}r = \\frac{n!}{(n-r)!}\\]\n\n\norder doesn’t matter\n\\[ \\binom{n+r-1}{r}\\]\n\\[n\\text{C}r = \\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\]"
   },
   {
     "objectID": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes.html#enumerating-events-and-sample-space",
@@ -18932,14 +18932,14 @@
     "href": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes_key_info.html",
     "title": "Key Info and Announcements",
     "section": "",
-    "text": "Next class is optional\n\nIt will be a calculus review"
+    "text": "Next class is optional\n\nIt will be a calculus review\n\nFire drills this week!"
   },
   {
     "objectID": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes_key_info.html#announcements",
     "href": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes_key_info.html#announcements",
     "title": "Key Info and Announcements",
     "section": "Announcements",
-    "text": "Announcements\n\nFire drills this week!"
+    "text": "Announcements\n\nHomework 2 due this Sunday at 11pm"
   },
   {
     "objectID": "homework/HW_03.html#questions",
@@ -18974,7 +18974,7 @@
     "href": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes_key_info.html#key-info",
     "title": "Key Info and Announcements",
     "section": "",
-    "text": "Next class is optional\n\nIt will be a calculus review"
+    "text": "Next class is optional\n\nIt will be a calculus review\n\nFire drills this week!"
   },
   {
     "objectID": "lessons/06_Calculus_review/06_Calculus_review.html#learning-objectives",
@@ -19199,5 +19199,26 @@
     "title": "Muddy Points",
     "section": "",
     "text": "Here is a pretty helpful StackExchange post talking about this!\n\n\n\nI have two approaches to identifying \\(u\\) and \\(dv\\):\n\nTry to find a \\(u\\) that will eventually differentiate into a constant. This usually works unless you’re left with a \\(dv\\) that is hard to integrate.\n\nFor example, \\(u=x^6\\). the first derivative, \\(u'=6x^5\\), which may lead us to do another integration by parts, but eventually, at the 6th derivative, we get 720. This means, in our integration by parts, we eventually get an integral that only has \\(x\\) in the function once.\n\nIn this example, \\(x^6\\) would result in many integration by parts. I feel like we don’t typically see that many in our work.\n\nIn Example 3.5 in Calculus Review, setting \\(u=x^2\\) is a bad idea because we don’t really know how to integrate \\(dv=ln(x)\\) into \\(v\\).\n\nTry to find a \\(u\\) where \\(du\\) is the reciprocal of \\(v\\) or \\(du\\) cancels with \\(v\\).\n\nLook again at Example 3.5 in the notes! Hint: What is the derivative of \\(ln(x)\\)? And what does \\(\\dfrac{1}{x}x^3\\) equal?\n\n\n\n\n\nI just stumbled upon this website! Just a bunch of calculus practice problems! Might be some help."
+  },
+  {
+    "objectID": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes.html#another-example-order-matters-vs.-not-12",
+    "href": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes.html#another-example-order-matters-vs.-not-12",
+    "title": "Lesson 5: Equally Likely Outcomes and Counting",
+    "section": "Another example: order matters vs. not (1/2)",
+    "text": "Another example: order matters vs. not (1/2)\n\n\n\n\nExample 2\n\n\nSuppose we draw 2 cards from a standard deck without replacement. What is the probability that both are spades when\n\norder matters?\norder doesn’t matter?"
+  },
+  {
+    "objectID": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes.html#another-example-order-matters-vs.-not-12-1",
+    "href": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes.html#another-example-order-matters-vs.-not-12-1",
+    "title": "Lesson 5: Equally Likely Outcomes and Counting",
+    "section": "Another example: order matters vs. not (1/2)",
+    "text": "Another example: order matters vs. not (1/2)\n\n\n\n\nExample 2\n\n\nSuppose we draw 2 cards from a standard deck without replacement. What is the probability that both are spades when\n\norder matters?\norder doesn’t matter?\n\n\n\n\nWe can do a simulation!\n\nset.seed(1234)\nn_sim &lt;- 1000000\ncards = c(rep(\"S\", 13), \n          rep(\"H\", 13), \n          rep(\"C\", 13), \n          rep(\"D\", 13))\ndraws &lt;- replicate(n_sim, \n                   sample(cards, 2, replace = FALSE))\ndraws[, 1:10]\n\n     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]\n[1,] \"C\"  \"H\"  \"D\"  \"S\"  \"C\"  \"S\"  \"C\"  \"H\"  \"H\"  \"D\"  \n[2,] \"H\"  \"C\"  \"D\"  \"S\"  \"H\"  \"C\"  \"H\"  \"S\"  \"H\"  \"H\"  \n\nspades_2 = sum( draws[1, ] == \"S\" & draws[2, ] == \"S\" )\nspades_2 / n_sim\n\n[1] 0.058727"
+  },
+  {
+    "objectID": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes.html#another-example-order-matters-vs.-not-22",
+    "href": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes.html#another-example-order-matters-vs.-not-22",
+    "title": "Lesson 5: Equally Likely Outcomes and Counting",
+    "section": "Another example: order matters vs. not (2/2)",
+    "text": "Another example: order matters vs. not (2/2)\n\n\n\n\nExample 2\n\n\nSuppose we draw 2 cards from a standard deck without replacement. What is the probability that both are spades when\n\norder matters?\norder doesn’t matter?\n\n\n\n\nWe can do a simulation!\n\nset.seed(1234)\nn_sim &lt;- 1000000\ncards = c(rep(\"S\", 13), \n          rep(\"H\", 13), \n          rep(\"C\", 13), \n          rep(\"D\", 13))\ndraws &lt;- replicate(n_sim, \n                   sample(cards, 2, replace = FALSE))\ndraws[, 1:10]\n\n     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]\n[1,] \"C\"  \"H\"  \"D\"  \"S\"  \"C\"  \"S\"  \"C\"  \"H\"  \"H\"  \"D\"  \n[2,] \"H\"  \"C\"  \"D\"  \"S\"  \"H\"  \"C\"  \"H\"  \"S\"  \"H\"  \"H\"  \n\nspades_2 = sum( draws[1, ] == \"S\" & draws[2, ] == \"S\" )\nspades_2 / n_sim\n\n[1] 0.058727"
   }
 ]
