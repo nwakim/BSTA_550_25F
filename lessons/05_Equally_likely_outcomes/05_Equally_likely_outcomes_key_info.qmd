@@ -26,3 +26,4 @@ editor_options:
 ## Announcements
 
 - Homework 2 due this Sunday at 11pm
+- Quiz 1 opens on 10/22 at 3pm
