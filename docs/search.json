@@ -1691,7 +1691,7 @@
     "href": "homeworks.html",
     "title": "Homework",
     "section": "",
-    "text": "Homework\nAssignment\nAssignment due (@11pm)\nAnswers\nSolutions\nSol’n Videos\n\n\n\n\n0\n\n10/02\n\n\n\n\n\n1\n\n10/12\n\n\n\n\n\n2\n\n10/19\n\n\n\n\n\n3\n\n10/26\n\n\n\n\n\n4\n\n11/02\n\n\n\n\n\n5\n\n11/09\n\n\n\n\n\n6\n\n11/16\n\n\n\n\n\n7\n\n11/23\n\n\n\n\n\n8\n\n12/07\n\n\n\n\n\n9 (optional)\n\n12/11"
+    "text": "Homework\nAssignment\nAssignment due (@11pm)\nAnswers\nSolutions & videos\n\n\n\n\n0\n\n10/02\n\n\n\n\n1\n\n10/12\n\n\n\n\n2\n\n10/19\n\n\n\n\n3\n\n10/26\n\n\n\n\n4\n\n11/02\n\n\n\n\n5\n\n11/09\n\n\n\n\n6\n\n11/16\n\n\n\n\n7\n\n11/23\n\n\n\n\n8\n\n12/07\n\n\n\n\n9 (optional)\n\n12/11"
   },
   {
     "objectID": "homeworks.html#assignments",
@@ -2881,14 +2881,14 @@
     "href": "homework/HW_03.html",
     "title": "Homework 3",
     "section": "",
-    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nYou must show all of your work to receive credit."
+    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf or html format.\nYou can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nYou must show all of your work to receive credit."
   },
   {
     "objectID": "homework/HW_03.html#directions",
     "href": "homework/HW_03.html#directions",
     "title": "Homework 3",
     "section": "",
-    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nYou must show all of your work to receive credit."
+    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf or html format.\nYou can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nYou must show all of your work to receive credit."
   },
   {
     "objectID": "homework/HW_03.html#non-textbook-problems-ntb",
@@ -3000,14 +3000,14 @@
     "href": "homework/HW_04.html",
     "title": "Homework 4",
     "section": "",
-    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nTry to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later! Only turn in the ones listed in the “Turn In” column. Please submit problems in the order they are listed.\nYou must show all of your work to receive credit.\n\n\n\n\nChapter\nTurn In\nExtra Problems\n\n\n\n\n9\nNTB # 1, 2\n# 1, 2, 4, \\(8^{\\#}\\), 9, 10\n\n\n10**\nTB # 6, NTB # 3\n# 1, 8, 10, 11, 14, 17\n\n\n\n\n\\(^\\#\\) Break up your solution to Chapter 9 #8 into the following 5 parts:\n\nMake a table of the joint probabilities for \\(X\\) and \\(Y\\).\nUsing the table in the previous part, write down the piecewise-defined equation for \\(p_{X,Y}(x,y)\\). There should be only 3 pieces (cases) for \\(p_{X,Y}(x,y)\\).\nExpress \\(p_Y(y)\\) as a formula (i.e. a function in terms of \\(y\\)).\nFind the conditional pmf \\(p_{X|Y}(x|y)\\) and express your answer as a piecewise-defined equation. There should be only 3 pieces (cases) for \\(p_{X|Y}(x|y)\\).\nMake a table of the joint cdf \\(F_{X,Y}(x,y)\\) values.\n\n* In addition to the graphs, include piecewise defined functions for the pmf and cdf.\n** Use Chapter 10 techniques when computing expected values for Chapter 10 problems, i.e. computing the expected value directly using the definition of \\(\\mathbb{E}[X]\\)."
+    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf or html format.\nYou can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nYou must show all of your work to receive credit."
   },
   {
     "objectID": "homework/HW_04.html#directions",
     "href": "homework/HW_04.html#directions",
     "title": "Homework 4",
     "section": "",
-    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nTry to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later! Only turn in the ones listed in the “Turn In” column. Please submit problems in the order they are listed.\nYou must show all of your work to receive credit.\n\n\n\n\nChapter\nTurn In\nExtra Problems\n\n\n\n\n9\nNTB # 1, 2\n# 1, 2, 4, \\(8^{\\#}\\), 9, 10\n\n\n10**\nTB # 6, NTB # 3\n# 1, 8, 10, 11, 14, 17\n\n\n\n\n\\(^\\#\\) Break up your solution to Chapter 9 #8 into the following 5 parts:\n\nMake a table of the joint probabilities for \\(X\\) and \\(Y\\).\nUsing the table in the previous part, write down the piecewise-defined equation for \\(p_{X,Y}(x,y)\\). There should be only 3 pieces (cases) for \\(p_{X,Y}(x,y)\\).\nExpress \\(p_Y(y)\\) as a formula (i.e. a function in terms of \\(y\\)).\nFind the conditional pmf \\(p_{X|Y}(x|y)\\) and express your answer as a piecewise-defined equation. There should be only 3 pieces (cases) for \\(p_{X|Y}(x|y)\\).\nMake a table of the joint cdf \\(F_{X,Y}(x,y)\\) values.\n\n* In addition to the graphs, include piecewise defined functions for the pmf and cdf.\n** Use Chapter 10 techniques when computing expected values for Chapter 10 problems, i.e. computing the expected value directly using the definition of \\(\\mathbb{E}[X]\\)."
+    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf or html format.\nYou can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nYou must show all of your work to receive credit."
   },
   {
     "objectID": "homework/HW_04.html#non-textbook-problems-ntb",
@@ -4428,7 +4428,7 @@
     "href": "hw_answers/HW_04_ans.html",
     "title": "Homework 4 Answers",
     "section": "",
-    "text": "There are answers at the back of the book!! Selected answers (or hints) not provided at the end the book:\n\nChapter 9\n\nNTB # 1 Partial answers:\n\n\n\\(p_{X|Y}(X=\\text{high school}| Y=\\text{no smoking at all}) = 0.476\\)\n\n\n\\(p_{Y|X}( Y=\\text{no smoking at all}|X=\\text{high school}) = 0.200\\)\n\n\nNTB # 2\n\n\n\\(p_{X,Y}(x,y) = [0.99^{x-1}0.01][0.97^{y-1}0.03]\\) for \\(x,y = 0, 1, 2, ...\\)\n\n\n And hint:"
+    "text": "Not given\nNot given\n\n\\[F_X(x) = \\left\\{\n         \\begin{array}{ll}\n             0 & \\quad x \\leq 16 \\\\\n             \\frac{1}{64}x^2 - \\frac{1}{2}x + 4 & \\quad 16 &lt; x\\leq 24 \\\\\n             1 & \\quad x &gt; 24 \\\\\n         \\end{array}\n     \\right.\\]\n\\(a=20\\)\n\n\n\\(k=660\\)\n\\[F_X(x) = \\left\\{\n        \\begin{array}{ll}\n            0 & \\quad x &lt; 0 \\\\\n            55x^{12} - 120x^{11} + 55x^{10} & \\quad 0 \\leq x\\leq 1 \\\\\n            1 & \\quad x &gt; 24 \\\\\n        \\end{array}\n    \\right.\\]"
   },
   {
     "objectID": "homeworks.html#rubrics",
@@ -17959,7 +17959,7 @@
     "href": "quiz.html",
     "title": "Quiz Info",
     "section": "",
-    "text": "Below is the general timing and lessons for each quiz:\n\n\n\nQuiz\nLessons\nHWs\nOpen Date @ 3pm\nClose Date @ 11pm\n\n\n\n\n1\n1-6\n1-2\n10/22\n10/26\n\n\n2\n7-12\n3-4\n11/05\n11/09\n\n\n3\n13-18\n5-7\n12/03\n12/07\n\n\n\nQuizzes will be mostly coneptual questions with 5-10 multiple choice questions. There will be one open-ended question that will be taken from one of the homeworks.\nMore information specific to each quiz will be posted below.\n\nQuiz 1\n\n\nQuiz 2\n\n\nQuiz 3"
+    "text": "Below is the general timing and lessons for each quiz:\nQuizzes will be mostly conceptual questions with 10-15 multiple choice questions. Some calculations will need to be done for certain questions, but the focus will be on understanding concepts.\nMore information specific to each quiz will be posted below."
   },
   {
     "objectID": "lessons/00_Intro/00_Intro_key_info.html#key-dates",
@@ -19220,5 +19220,54 @@
     "title": "Lesson 5: Equally Likely Outcomes and Counting",
     "section": "Another example: order matters vs. not (2/2)",
     "text": "Another example: order matters vs. not (2/2)\n\n\n\n\nExample 2\n\n\nSuppose we draw 2 cards from a standard deck without replacement. What is the probability that both are spades when\n\norder matters?\norder doesn’t matter?\n\n\n\n\nWe can do a simulation!\n\nset.seed(1234)\nn_sim &lt;- 1000000\ncards = c(rep(\"S\", 13), \n          rep(\"H\", 13), \n          rep(\"C\", 13), \n          rep(\"D\", 13))\ndraws &lt;- replicate(n_sim, \n                   sample(cards, 2, replace = FALSE))\ndraws[, 1:10]\n\n     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8] [,9] [,10]\n[1,] \"C\"  \"H\"  \"D\"  \"S\"  \"C\"  \"S\"  \"C\"  \"H\"  \"H\"  \"D\"  \n[2,] \"H\"  \"C\"  \"D\"  \"S\"  \"H\"  \"C\"  \"H\"  \"S\"  \"H\"  \"H\"  \n\nspades_2 = sum( draws[1, ] == \"S\" & draws[2, ] == \"S\" )\nspades_2 / n_sim\n\n[1] 0.058727"
+  },
+  {
+    "objectID": "homework/HW_04.html#questions",
+    "href": "homework/HW_04.html#questions",
+    "title": "Homework 4",
+    "section": "Questions",
+    "text": "Questions\n\nMystery constant. Suppose \\(X\\) is a discrete random variable with a probability mass function \\(p_X(x) = c(4- x)\\) for \\(x\\) in \\(\\{-1, 2, 3\\}\\) and \\(p_X(x) = 0\\) otherwise.\n\nWhat is the value of c so that \\(p_X(x)\\) is a mass?\nMake a plot of the probability mass function and write the piecewise pmf\nWhat is the CDF of \\(X\\)? Write the piecewise CDF.\nMake a plot of the CDF.\n\nWastebasket basketball. Chris tries to throw a ball of paper in the wastebasket behind his back (without looking). He estimates that his chance of success each time, regardless of the outcome of the other attempts, is \\(1/3\\). Let \\(X\\) be the number of attempts required. If he is not successful within the first 5 attempts, then he quits, and he lets \\(X = 6\\) in such a case.\n\nDraw the mass of \\(X\\) and define the piecewise pmf.\nDraw the CDF of \\(X\\) and define the piecewise CDF.\n\nSuppose a density \\(f_X(x)\\) increases linearly from \\((16, 0)\\) to \\(\\left(24, \\dfrac{1}{4}\\right)\\).\n\nFind the CDF of \\(X\\).\nWhat is the value of \\(a\\) so that \\(P(X &gt; a) = 0:75\\)?\n\nFor the following pdf \\[f_X(x) = \\begin{cases} kx^9(1-x)^2 & \\text{if } 0 \\leq x \\leq 1 \\\\ 0 & \\text{otherwise} \\end{cases}\\]\n\nWhat is the constant \\(k\\) that makes the following function a valid density?\nWhat is the cumulative distribution function (cdf) \\(F_X(x)\\)?"
+  },
+  {
+    "objectID": "homework/HW_04.html#extra-problems",
+    "href": "homework/HW_04.html#extra-problems",
+    "title": "Homework 4",
+    "section": "Extra Problems",
+    "text": "Extra Problems"
+  },
+  {
+    "objectID": "hw_answers/HW_04_ans.html#questions",
+    "href": "hw_answers/HW_04_ans.html#questions",
+    "title": "Homework 4 Answers",
+    "section": "",
+    "text": "Not given\nNot given\n\n\\[F_X(x) = \\left\\{\n         \\begin{array}{ll}\n             0 & \\quad x \\leq 16 \\\\\n             \\frac{1}{64}x^2 - \\frac{1}{2}x + 4 & \\quad 16 &lt; x\\leq 24 \\\\\n             1 & \\quad x &gt; 24 \\\\\n         \\end{array}\n     \\right.\\]\n\\(a=20\\)\n\n\n\\(k=660\\)\n\\[F_X(x) = \\left\\{\n        \\begin{array}{ll}\n            0 & \\quad x &lt; 0 \\\\\n            55x^{12} - 120x^{11} + 55x^{10} & \\quad 0 \\leq x\\leq 1 \\\\\n            1 & \\quad x &gt; 24 \\\\\n        \\end{array}\n    \\right.\\]"
+  },
+  {
+    "objectID": "hw_answers/HW_04_ans.html#extra-problems",
+    "href": "hw_answers/HW_04_ans.html#extra-problems",
+    "title": "Homework 4 Answers",
+    "section": "Extra Problems",
+    "text": "Extra Problems"
+  },
+  {
+    "objectID": "quiz.html#quiz-1",
+    "href": "quiz.html#quiz-1",
+    "title": "Quiz Info",
+    "section": "Quiz 1",
+    "text": "Quiz 1"
+  },
+  {
+    "objectID": "quiz.html#quiz-2",
+    "href": "quiz.html#quiz-2",
+    "title": "Quiz Info",
+    "section": "Quiz 2",
+    "text": "Quiz 2"
+  },
+  {
+    "objectID": "quiz.html#quiz-3",
+    "href": "quiz.html#quiz-3",
+    "title": "Quiz Info",
+    "section": "Quiz 3",
+    "text": "Quiz 3"
   }
 ]
