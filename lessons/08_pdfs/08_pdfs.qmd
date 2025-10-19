@@ -1,7 +1,7 @@
 ---
-title: "Chapter 24: Continuous RVs and PDFs"
+title: "Lesson 8: Probability distribution functions (PDFs)"
 author: "Meike Niederhausen and Nicky Wakim"
-date: "11/6/2024"
+date: " `r library(here); source(here('class_dates.R')); w4d1` "
 title-slide-attributes:
     data-background-color: "#006a4e"
 format: 
@@ -11,20 +11,41 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Chapter 24 Slides
+    footer: Lesson 8 Slides
     html-math-method: mathjax
 ---
 
-## Learning Objectives
+```{r setup, include=FALSE}
+library(here)
+library(tidyverse)
+source(here("class_dates.R"))
+
+theme_set(theme_minimal(base_size = 28))
+theme_update(plot.title = element_text(size = 28, hjust = 0.5))
+knitr::opts_chunk$set(warning=FALSE, message=FALSE, echo = TRUE)
+```
+
+# Learning Objectives
 
 1.  Distinguish between discrete and continuous random variables.
 
 2.  Calculate probabilities for continuous random variables.
 
-3.  Calculate and graph a density (i.e., probability density function,
-    PDF).
+3.  Use R to simulate known continuous distributions.
 
-4.  Calculate and graph a CDF (i.e., a cumulative distribution function)
+## Where are we?
+
+![](../img_slides/course_map.png){fig-align="center"}
+
+# Learning Objectives
+
+::: lob
+1.  Distinguish between discrete and continuous random variables.
+:::
+
+2.  Calculate probabilities for continuous random variables.
+
+3.  Use R to simulate known continuous distributions.
 
 ## Discrete vs. Continuous RVs
 
@@ -55,6 +76,7 @@ Discrete RV $X$:
 #| fig-height: 6
 #| fig-width: 7
 #| fig-align: center
+#| echo: false
 
 library(ggplot2)
 data = data.frame(x = seq(0, 10, 1), y = seq(0, 0.5, 0.05))
@@ -73,6 +95,7 @@ Continuous RV $X$:
 #| fig-height: 6
 #| fig-width: 7
 #| fig-align: center
+#| echo: false
 
 library(ggplot2)
 data = data.frame(x = seq(0, 10, 1), y = seq(0, 1, 0.1))
@@ -113,6 +136,16 @@ $$\mathbb{P}(a \leq X \leq b) = \int_a^b f_X(x)dx$$
     -   $f_X(x) \geq 0$ for all $x$
 
     -   $\int_{-\infty}^{\infty} f_X(x)dx=1$
+
+# Learning Objectives
+
+1.  Distinguish between discrete and continuous random variables.
+
+::: lob
+2.  Calculate probabilities for continuous random variables.
+:::
+
+3.  Use R to simulate known continuous distributions.
 
 ## Let's demonstrate the PDF with an example (1/5)
 
@@ -203,3 +236,45 @@ Let $f_X(x)= 2$, for $a \leq x \leq 3$.
 :::
 :::
 :::
+
+# Learning Objectives
+
+1.  Distinguish between discrete and continuous random variables.
+
+2.  Calculate probabilities for continuous random variables.
+
+::: lob
+3.  Use R to simulate known continuous distributions.
+:::
+
+## Use R to simulate known distributions
+
+- We can use R to simulate continuous random variables and visualize their distributions
+- For example, we can simulate a *uniform* distribution between 2.5 and 3
+
+```{r}
+#| echo: true
+#| output-location: column
+#| fig-align: center
+#| fig-height: 6
+#| fig-width: 9
+
+uniform = tibble(
+  x = runif(n=10000, min=2.5, max=3)
+)
+
+ggplot(uniform, 
+       aes(x = x, 
+           y = after_stat(density))) +
+  geom_histogram( binwidth = 0.001) + 
+  geom_abline(intercept = 2, slope = 0) + 
+  labs(
+    title = "Probability distribution function (pdf) of X",
+    x = "x",
+    y = "pdf"
+  ) 
+```
+
+## Use R to simulate any continuous distribution
+
+- We will discuss other ways to simulate continuous distributions once we cover cumulative distribution functions (CDFs) and inverse CDFs

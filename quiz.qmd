@@ -40,9 +40,17 @@ Wikipedia, Googling expected value of specific distribution, etc.).
     - Using question and answer threads typically seen on sites like StackExchange, WikiHow, Quora, Reddit, StackOverflow, Chegg, etc.
     - Asking other students, sharing quiz work or sharing quiz results.
     
-4. Each question is worth 3 points, including multiple choice and free response questions.
+4. Each question is worth 1 point, including multiple choice and free response questions.
 
 ## Quiz 1
+
+- A practice quiz is posted if you would like to do a trial run before the actual quiz
+- Includes Lessons 1-5
+    - Covers some probability rules and calculations (about half the questions)
+- Three problems have **calculations** with probabilities
+- One (ish) question on counting, but not too complicated
+- For most questions, you will be given a scenario, and you will need to connect it back to probability rules
+    - Example: If two events are mutually exclusive, what is the probability of their intersection?
 
 ## Quiz 2
 

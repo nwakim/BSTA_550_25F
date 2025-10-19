@@ -1,7 +1,7 @@
 ---
 title: "Chapter 24: Continuous RVs and PDFs"
 author: "Meike Niederhausen and Nicky Wakim"
-date: "11/6/2024"
+date: " `r library(here); source(here('class_dates.R')); w3d1` "
 title-slide-attributes:
     data-background-color: "#006a4e"
 format: 
@@ -14,6 +14,12 @@ format:
     footer: Chapter 24 Slides
     html-math-method: mathjax
 ---
+
+# Learning Objectives
+
+1. Calculate and graph a cumulative distribution function (CDF)
+
+
 
 ## What is a cumulative distribution function?
 
@@ -38,6 +44,11 @@ $x$, $$F_X(x)= \mathbb{P}(X \leq x) = \int_{-\infty}^x f_X(s)ds$$
 -   $P(X > a) = 1 - P(X \leq a) = 1 - F_X(a)$
 
 -   $P(a \leq X \leq b) = F_X(b) - F_X(a)$
+
+```{r setup, include=FALSE}
+library(here)
+source(here("class_dates.R"))
+```
 
 ## Let's demonstrate the CDF with an example
 
