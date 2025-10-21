@@ -19378,56 +19378,56 @@
   {
     "objectID": "lessons/08_pdfs/08_pdfs.html#discrete-vs.-continuous-rvs",
     "href": "lessons/08_pdfs/08_pdfs.html#discrete-vs.-continuous-rvs",
-    "title": "Lesson 8: Probability distribution functions (PDFs)",
+    "title": "Lesson 8: Probability density functions (PDFs)",
     "section": "Discrete vs. Continuous RVs",
     "text": "Discrete vs. Continuous RVs\n\n\n\nFor a discrete RV, the set of possible values is either finite or can be put into a countably infinite list.\n \nContinuous RVs take on values from continuous intervals, or unions of continuous intervals\n\n\n\n\n\nFigure from Introduction to Probability TB (pg. 301)"
   },
   {
     "objectID": "lessons/08_pdfs/08_pdfs.html#how-to-define-probabilities-for-continuous-rvs",
     "href": "lessons/08_pdfs/08_pdfs.html#how-to-define-probabilities-for-continuous-rvs",
-    "title": "Lesson 8: Probability distribution functions (PDFs)",
+    "title": "Lesson 8: Probability density functions (PDFs)",
     "section": "How to define probabilities for continuous RVs?",
     "text": "How to define probabilities for continuous RVs?\n\n\nDiscrete RV \\(X\\):\n\n\n\n\n\n\n\n\n\n\npmf: \\(p_X(x) = P(X=x)\\)\n\n\nContinuous RV \\(X\\):\n\n\n\n\n\n\n\n\n\n\ndensity: \\(f_X(x)\\)\nprobability: \\(P(a \\leq X \\leq b) = \\int_a^b f_X(x)dx\\)"
   },
   {
     "objectID": "lessons/08_pdfs/08_pdfs.html#what-is-a-probability-density-function",
     "href": "lessons/08_pdfs/08_pdfs.html#what-is-a-probability-density-function",
-    "title": "Lesson 8: Probability distribution functions (PDFs)",
+    "title": "Lesson 8: Probability density functions (PDFs)",
     "section": "What is a probability density function?",
     "text": "What is a probability density function?\n\n\nProbability density function\n\n\nThe probability distribution, or probability density function (pdf), of a continuous random variable \\(X\\) is a function \\(f_X(x)\\), such that for all real values \\(a,b\\) with \\(a \\leq b\\),\n\\[\\mathbb{P}(a \\leq X \\leq b) = \\int_a^b f_X(x)dx\\]\n\n\nRemarks:\n\nNote that \\(f_X(x) \\neq \\mathbb{P}(X=x)\\)!!!\nIn order for \\(f_X(x)\\) to be a pdf, it needs to satisfy the properties\n\n\\(f_X(x) \\geq 0\\) for all \\(x\\)\n\\(\\int_{-\\infty}^{\\infty} f_X(x)dx=1\\)"
   },
   {
     "objectID": "lessons/08_pdfs/08_pdfs.html#lets-demonstrate-the-pdf-with-an-example-15",
     "href": "lessons/08_pdfs/08_pdfs.html#lets-demonstrate-the-pdf-with-an-example-15",
-    "title": "Lesson 8: Probability distribution functions (PDFs)",
+    "title": "Lesson 8: Probability density functions (PDFs)",
     "section": "Let’s demonstrate the PDF with an example (1/5)",
     "text": "Let’s demonstrate the PDF with an example (1/5)\n\n\n\n\nExample 1.1\n\n\nLet \\(f_X(x)= 2\\), for \\(a \\leq x \\leq 3\\).\n\nFind the value of \\(a\\) so that \\(f_X(x)\\) is a pdf."
   },
   {
     "objectID": "lessons/08_pdfs/08_pdfs.html#lets-demonstrate-the-pdf-with-an-example-25",
     "href": "lessons/08_pdfs/08_pdfs.html#lets-demonstrate-the-pdf-with-an-example-25",
-    "title": "Lesson 8: Probability distribution functions (PDFs)",
+    "title": "Lesson 8: Probability density functions (PDFs)",
     "section": "Let’s demonstrate the PDF with an example (2/5)",
     "text": "Let’s demonstrate the PDF with an example (2/5)\n\n\n\n\nExample 1.2\n\n\nLet \\(f_X(x)= 2\\), for \\(a \\leq x \\leq 3\\).\n\nFind \\(\\mathbb{P}(2.7 \\leq X \\leq 2.9)\\)."
   },
   {
     "objectID": "lessons/08_pdfs/08_pdfs.html#lets-demonstrate-the-pdf-with-an-example-35",
     "href": "lessons/08_pdfs/08_pdfs.html#lets-demonstrate-the-pdf-with-an-example-35",
-    "title": "Lesson 8: Probability distribution functions (PDFs)",
+    "title": "Lesson 8: Probability density functions (PDFs)",
     "section": "Let’s demonstrate the PDF with an example (3/5)",
     "text": "Let’s demonstrate the PDF with an example (3/5)\n\n\n\n\nExample 1.3\n\n\nLet \\(f_X(x)= 2\\), for \\(a \\leq x \\leq 3\\).\n\nFind \\(\\mathbb{P}(2.7 &lt; X \\leq 2.9)\\)."
   },
   {
     "objectID": "lessons/08_pdfs/08_pdfs.html#lets-demonstrate-the-pdf-with-an-example-45",
     "href": "lessons/08_pdfs/08_pdfs.html#lets-demonstrate-the-pdf-with-an-example-45",
-    "title": "Lesson 8: Probability distribution functions (PDFs)",
+    "title": "Lesson 8: Probability density functions (PDFs)",
     "section": "Let’s demonstrate the PDF with an example (4/5)",
     "text": "Let’s demonstrate the PDF with an example (4/5)\n\n\n\n\nExample 1.4\n\n\nLet \\(f_X(x)= 2\\), for \\(a \\leq x \\leq 3\\).\n\nFind \\(\\mathbb{P}(X = 2.9)\\)."
   },
   {
     "objectID": "lessons/08_pdfs/08_pdfs.html#lets-demonstrate-the-pdf-with-an-example-55",
     "href": "lessons/08_pdfs/08_pdfs.html#lets-demonstrate-the-pdf-with-an-example-55",
-    "title": "Lesson 8: Probability distribution functions (PDFs)",
+    "title": "Lesson 8: Probability density functions (PDFs)",
     "section": "Let’s demonstrate the PDF with an example (5/5)",
     "text": "Let’s demonstrate the PDF with an example (5/5)\n\n\n\n\nExample 1.5\n\n\nLet \\(f_X(x)= 2\\), for \\(a \\leq x \\leq 3\\).\n\nFind \\(\\mathbb{P}(X \\leq 2.8)\\)."
   },
@@ -19513,7 +19513,7 @@
     "href": "lessons/07_pmfs/07_pmfs.html#from-lesson-2-types-of-random-variables",
     "title": "Lesson 7: Probability Mass Functions (pmf’s)",
     "section": "From Lesson 2: Types of random variables",
-    "text": "From Lesson 2: Types of random variables\nThere are two types of random variables:\n\n\n\n\n\nDiscrete random variables (RVs): the set of possible values is either finite or can be put into a countably infinite list\n\nYou could theoretically list the specific possible outcomes that the variable can take\nIf you sum the rolls of three dice, you must get a whole number. For example, you can’t get any number between 3 and 4.\n\n\n\n\n\n\n\n\nContinuous random variables (RVs): take on values from continuous intervals, or unions of continuous intervals\n\nVariable takes on a range of values, but there are infinitely possible values within the range\nIf you keep track of the time you sleep, you can sleep for 8 hours or 7.9 hours or 7.99 hours or 7.999 hours …\n\n\n\n\n\n\nDiscrete random variables (RVs) are a little easier to simulate right now\n\nWe will only do discrete RVs today"
+    "text": "From Lesson 2: Types of random variables\nThere are two types of random variables:\n\n\n\n\n\nDiscrete random variables (RVs): the set of possible values is either finite or can be put into a countably infinite list\n\nYou could theoretically list the specific possible outcomes that the variable can take\nIf you sum the rolls of three dice, you must get a whole number. For example, you can’t get any number between 3 and 4.\n\n\n\n\n\n\n\n\nContinuous random variables (RVs): take on values from continuous intervals, or unions of continuous intervals\n\nVariable takes on a range of values, but there are infinitely possible values within the range\nIf you keep track of the time you sleep, you can sleep for 8 hours or 7.9 hours or 7.99 hours or 7.999 hours …\n\n\n\n\n\n\n\nDiscrete random variables (RVs) are a little easier to simulate right now\n\nWe will only do discrete RVs today"
   },
   {
     "objectID": "lessons/07_pmfs/07_pmfs.html#from-lesson-2-we-need-more-reps-for-long-run-relative-frequencies",
@@ -19688,7 +19688,7 @@
     "href": "lessons/07_pmfs/07_pmfs.html#falls-in-older-adults-35",
     "title": "Lesson 7: Probability Mass Functions (pmf’s)",
     "section": "Falls in Older Adults (3/5)",
-    "text": "Falls in Older Adults (3/5)\n\n\n\n\nExample 1: Falls in Older Adults\n\n\n\nWrite the probability mass function (pmf) for \\(X\\).\n\n\n\n\n\\[P(X = x) = \\binom{n}{x} p^x (1-p)^{n-x},  x= 0, 1, 2, \\dots, n \\]"
+    "text": "Falls in Older Adults (3/5)\n\n\n\n\nExample 1: Falls in Older Adults\n\n\n\nWrite the probability mass function (pmf) for \\(X\\).\n\n\n\n\n\n\\[P(X = x) = \\binom{n}{x} p^x (1-p)^{n-x},  x= 0, 1, 2, \\dots, n \\]"
   },
   {
     "objectID": "lessons/07_pmfs/07_pmfs.html#falls-in-older-adults-45",
@@ -19742,21 +19742,21 @@
   {
     "objectID": "lessons/08_pdfs/08_pdfs.html#use-r-to-simulate-known-distributions",
     "href": "lessons/08_pdfs/08_pdfs.html#use-r-to-simulate-known-distributions",
-    "title": "Lesson 8: Probability distribution functions (PDFs)",
+    "title": "Lesson 8: Probability density functions (PDFs)",
     "section": "Use R to simulate known distributions",
-    "text": "Use R to simulate known distributions\n\nWe can use R to simulate continuous random variables and visualize their distributions\nFor example, we can simulate a uniform distribution between 2.5 and 3\n\n\n\nuniform = tibble(\n  x = runif(n=10000, min=2.5, max=3)\n)\n\nggplot(uniform, \n       aes(x = x, \n           y = after_stat(density))) +\n  geom_histogram( binwidth = 0.001) + \n  geom_abline(intercept = 2, slope = 0) + \n  labs(\n    title = \"Probability distribution function (pdf) of X\",\n    x = \"x\",\n    y = \"pdf\"\n  )"
+    "text": "Use R to simulate known distributions\n\nWe can use R to simulate continuous random variables and visualize their distributions\nFor example, we can simulate a uniform distribution between 2.5 and 3\n\n\n\nuniform = tibble(\n  x = runif(n=10000, min=2.5, max=3)\n)\n\nggplot(uniform, \n       aes(x = x, \n           y = after_stat(density))) +\n  geom_histogram( binwidth = 0.001) + \n  geom_abline(intercept = 2, slope = 0) + \n  labs(\n    title = \"Probability density function (pdf) of X\",\n    x = \"x\",\n    y = \"pdf\"\n  )"
   },
   {
     "objectID": "lessons/08_pdfs/08_pdfs.html#use-r-to-simulate-any-continuous-distribution",
     "href": "lessons/08_pdfs/08_pdfs.html#use-r-to-simulate-any-continuous-distribution",
-    "title": "Lesson 8: Probability distribution functions (PDFs)",
+    "title": "Lesson 8: Probability density functions (PDFs)",
     "section": "Use R to simulate any continuous distribution",
     "text": "Use R to simulate any continuous distribution\n\nWe will discuss other ways to simulate continuous distributions once we cover cumulative distribution functions (CDFs) and inverse CDFs"
   },
   {
     "objectID": "lessons/08_pdfs/08_pdfs.html#where-are-we",
     "href": "lessons/08_pdfs/08_pdfs.html#where-are-we",
-    "title": "Lesson 8: Probability distribution functions (PDFs)",
+    "title": "Lesson 8: Probability density functions (PDFs)",
     "section": "Where are we?",
     "text": "Where are we?"
   },
@@ -19780,5 +19780,61 @@
     "title": "Key Info and Announcements",
     "section": "Announcements",
     "text": "Announcements\n\nHomework 3 due this Sunday at 11pm\nQuiz 1 opens on 10/22 at 3pm"
+  },
+  {
+    "objectID": "lessons/07_pmfs/Untitled.html",
+    "href": "lessons/07_pmfs/Untitled.html",
+    "title": "Untitled",
+    "section": "",
+    "text": "Let’s write the pdf for a binomial distribution: \\[f(x) = \\binom{n}{x} p^x (1-p)^{n-x}\\] where \\(x = 0, 1, 2, \\ldots, n\\).\nLet’s take the integral of this function from \\(-\\infty\\) to \\(\\infty\\):\n\\[\nF_X(x) = \\int_{-\\infty}^{\\infty} f(x) \\, dx\n\\]"
+  },
+  {
+    "objectID": "lessons/07_pmfs/07_pmfs_muddy_points.html",
+    "href": "lessons/07_pmfs/07_pmfs_muddy_points.html",
+    "title": "Muddy Points",
+    "section": "",
+    "text": "I think you’re on the right track… \\(P(X)\\), \\(P(X=x)\\), and \\(p_X(x)\\) represent probabilities.\nFor discrete random variables, we can use \\(P(X=x)\\) or \\(p_X(x)\\) to represent the probability that the random variable \\(X\\) takes on the value \\(x\\). And then we can discuss the probability mass function (pmf) as the probability distribution as well!\nFor continuous random variables, we use \\(f_X(x)\\) to represent the probability density function (pdf) of \\(X\\) at the value \\(x\\), BUT it is not equal to the actual probability! Aka \\(f_X(x)\\) does not represent a probability, but the area under the curve of \\(f_X(x)\\) over an interval gives us the probability."
+  },
+  {
+    "objectID": "lessons/07_pmfs/07_pmfs_muddy_points.html#fall-2025",
+    "href": "lessons/07_pmfs/07_pmfs_muddy_points.html#fall-2025",
+    "title": "Muddy Points",
+    "section": "",
+    "text": "I think you’re on the right track… \\(P(X)\\), \\(P(X=x)\\), and \\(p_X(x)\\) represent probabilities.\nFor discrete random variables, we can use \\(P(X=x)\\) or \\(p_X(x)\\) to represent the probability that the random variable \\(X\\) takes on the value \\(x\\). And then we can discuss the probability mass function (pmf) as the probability distribution as well!\nFor continuous random variables, we use \\(f_X(x)\\) to represent the probability density function (pdf) of \\(X\\) at the value \\(x\\), BUT it is not equal to the actual probability! Aka \\(f_X(x)\\) does not represent a probability, but the area under the curve of \\(f_X(x)\\) over an interval gives us the probability."
+  },
+  {
+    "objectID": "lessons/08_pdfs/08_pdfs_muddy_points.html",
+    "href": "lessons/08_pdfs/08_pdfs_muddy_points.html",
+    "title": "Muddy Points",
+    "section": "",
+    "text": "I think you’re on the right track… \\(P(X)\\), \\(P(X=x)\\), and \\(p_X(x)\\) represent probabilities.\nFor discrete random variables, we can use \\(P(X=x)\\) or \\(p_X(x)\\) to represent the probability that the random variable \\(X\\) takes on the value \\(x\\). And then we can discuss the probability mass function (pmf) as the probability distribution as well!\nFor continuous random variables, we use \\(f_X(x)\\) to represent the probability density function (pdf) of \\(X\\) at the value \\(x\\), BUT it is not equal to the actual probability! Aka \\(f_X(x)\\) does not represent a probability, but the area under the curve of \\(f_X(x)\\) over an interval gives us the probability."
+  },
+  {
+    "objectID": "lessons/07_pmfs/07_pmfs.html",
+    "href": "lessons/07_pmfs/07_pmfs.html",
+    "title": "Lesson 7: Probability Mass Functions (pmf’s)",
+    "section": "",
+    "text": "Identify a probability mass function (pmf) from past simulations\nIdentify a binomial random variable and its parameters from a word problem\nUse R to calculate probabilities and simulate binomial random variables"
+  },
+  {
+    "objectID": "lessons/08_pdfs/08_pdfs_muddy_points.html#fall-2025",
+    "href": "lessons/08_pdfs/08_pdfs_muddy_points.html#fall-2025",
+    "title": "Muddy Points",
+    "section": "",
+    "text": "I think you’re on the right track… \\(P(X)\\), \\(P(X=x)\\), and \\(p_X(x)\\) represent probabilities.\nFor discrete random variables, we can use \\(P(X=x)\\) or \\(p_X(x)\\) to represent the probability that the random variable \\(X\\) takes on the value \\(x\\). And then we can discuss the probability mass function (pmf) as the probability distribution as well!\nFor continuous random variables, we use \\(f_X(x)\\) to represent the probability density function (pdf) of \\(X\\) at the value \\(x\\), BUT it is not equal to the actual probability! Aka \\(f_X(x)\\) does not represent a probability, but the area under the curve of \\(f_X(x)\\) over an interval gives us the probability."
+  },
+  {
+    "objectID": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes_muddy_points.html",
+    "href": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes_muddy_points.html",
+    "title": "Muddy Points",
+    "section": "",
+    "text": "Here’s the slide: \nLet’s think of a different scenario (Scenario 1): Let’s find the probability of drawing a spade and a heart from a standard deck of cards when drawing two cards without replacement.\nThere are 52 cards in a standard deck, with 13 spades and 13 hearts.\n\nLet’s look at the sample space size, \\(|S|\\). We need to enumerate all the possible combinations of two cards. \\[\\binom{52}{2} = \\frac{52 \\times 51}{2} = 1326\\]\nThe more difficult part is the size of our event A, \\(|A|\\). We need to enumerate all the ways to draw 1 spade and 1 heart:\n\nWays to choose 1 spade from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 1 heart from 13: \\(\\binom{13}{1} = 13\\)\nFor each potential spade we draw, there are 13 potential hearts we could draw. So we can multiply the two together to get the total number of ways to draw a spade and a heart: \\[|A| = 13 \\times 13 = 169\\]\n\n\nThen we could calculate the probability of drawing a spade and a heart as: \\[P(A) = \\frac{|A|}{|S|} = \\frac{13 \\times 13}{1326} = \\frac{169}{1326} = 0.1275\\]\nWe can keep expanding our scenario (Scenario 2): Let’s find the probability of drawing one spade, one heart, one diamond, and one club without replacement.\n\nLet’s look at the sample space size, \\(|S|\\). We need to enumerate all the possible combinations of two cards. \\[\\binom{52}{4} = \\frac{52 \\times 51 \\times 50 \\times 49}{4 \\times 3 \\times 2 \\times 1} = 270725\\]\nNow, size of event A, \\(|A|\\). We need to enumerate all the ways to draw one spade, one heart, one diamond, and one club:\n\nWays to choose 1 spade from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 1 heart from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 1 diamond from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 1 club from 13: \\(\\binom{13}{1} = 13\\)\nFor each potential spade we draw, there are 13 potential hearts we could draw. And from each specific spade and heart combo, there are 13 potential diamonds, etc. So we can multiply all four together to get the total number of ways to draw a spade and a heart: \\[|A| = 13 \\times 13 \\times 13 \\times 13 = 28561\\]\n\n\nThen we could calculate the probability of drawing a spade and a heart as: \\[P(A) = \\frac{|A|}{|S|} = \\frac{13 \\times 13 \\times 13 \\times 13}{270725} = \\frac{28561}{270725} = 0.1055\\]\nIn both the above scenarios, we calculated the size of event A only with the cards we DRAW I just wanted to emphasize that for each suit of cards, we can technically enumerate all the ways to draw a certain number of cards, including 0.\nIf we go back to scenario 1, we could also calculate the size of our event A, \\(|A|\\) as:\n\nWays to choose 1 spade from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 1 heart from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 0 diamonds from 13: \\(\\binom{13}{0} = 1\\)\nWays to choose 0 clubs from 13: \\(\\binom{13}{0} = 1\\)\nFor each potential spade we draw, there are 13 potential hearts we could draw. So we can multiply the four together to get the total number of ways to draw a spade and a heart and 0 diamonds and 0 clubs: \\[|A| = 13 \\times 13 \\times 1 \\times 1 = 169\\]"
+  },
+  {
+    "objectID": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes_muddy_points.html#fall-2025",
+    "href": "lessons/05_Equally_likely_outcomes/05_Equally_likely_outcomes_muddy_points.html#fall-2025",
+    "title": "Muddy Points",
+    "section": "",
+    "text": "Here’s the slide: \nLet’s think of a different scenario (Scenario 1): Let’s find the probability of drawing a spade and a heart from a standard deck of cards when drawing two cards without replacement.\nThere are 52 cards in a standard deck, with 13 spades and 13 hearts.\n\nLet’s look at the sample space size, \\(|S|\\). We need to enumerate all the possible combinations of two cards. \\[\\binom{52}{2} = \\frac{52 \\times 51}{2} = 1326\\]\nThe more difficult part is the size of our event A, \\(|A|\\). We need to enumerate all the ways to draw 1 spade and 1 heart:\n\nWays to choose 1 spade from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 1 heart from 13: \\(\\binom{13}{1} = 13\\)\nFor each potential spade we draw, there are 13 potential hearts we could draw. So we can multiply the two together to get the total number of ways to draw a spade and a heart: \\[|A| = 13 \\times 13 = 169\\]\n\n\nThen we could calculate the probability of drawing a spade and a heart as: \\[P(A) = \\frac{|A|}{|S|} = \\frac{13 \\times 13}{1326} = \\frac{169}{1326} = 0.1275\\]\nWe can keep expanding our scenario (Scenario 2): Let’s find the probability of drawing one spade, one heart, one diamond, and one club without replacement.\n\nLet’s look at the sample space size, \\(|S|\\). We need to enumerate all the possible combinations of two cards. \\[\\binom{52}{4} = \\frac{52 \\times 51 \\times 50 \\times 49}{4 \\times 3 \\times 2 \\times 1} = 270725\\]\nNow, size of event A, \\(|A|\\). We need to enumerate all the ways to draw one spade, one heart, one diamond, and one club:\n\nWays to choose 1 spade from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 1 heart from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 1 diamond from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 1 club from 13: \\(\\binom{13}{1} = 13\\)\nFor each potential spade we draw, there are 13 potential hearts we could draw. And from each specific spade and heart combo, there are 13 potential diamonds, etc. So we can multiply all four together to get the total number of ways to draw a spade and a heart: \\[|A| = 13 \\times 13 \\times 13 \\times 13 = 28561\\]\n\n\nThen we could calculate the probability of drawing a spade and a heart as: \\[P(A) = \\frac{|A|}{|S|} = \\frac{13 \\times 13 \\times 13 \\times 13}{270725} = \\frac{28561}{270725} = 0.1055\\]\nIn both the above scenarios, we calculated the size of event A only with the cards we DRAW I just wanted to emphasize that for each suit of cards, we can technically enumerate all the ways to draw a certain number of cards, including 0.\nIf we go back to scenario 1, we could also calculate the size of our event A, \\(|A|\\) as:\n\nWays to choose 1 spade from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 1 heart from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 0 diamonds from 13: \\(\\binom{13}{0} = 1\\)\nWays to choose 0 clubs from 13: \\(\\binom{13}{0} = 1\\)\nFor each potential spade we draw, there are 13 potential hearts we could draw. So we can multiply the four together to get the total number of ways to draw a spade and a heart and 0 diamonds and 0 clubs: \\[|A| = 13 \\times 13 \\times 1 \\times 1 = 169\\]"
   }
 ]

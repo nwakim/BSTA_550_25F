@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Muddy Points – Introduction to Probability</title>
+<title>Untitled – Introduction to Probability</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -153,25 +153,15 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#fall-2025" id="toc-fall-2025" class="nav-link active" data-scroll-target="#fall-2025">Fall 2025</a>
-  <ul class="collapse">
-  <li><a href="#going-through-page-14-of-the-equally-likely-outcomes-slides-the-ptwo-spades-equation-makes-less-sense-the-more-i-think-about-it-create-toy-examples-to-try-to-understand.-could-just-be-overthinking-it-maybe-the-best-thing-to-do-would-be-to-not-think-about-it" id="toc-going-through-page-14-of-the-equally-likely-outcomes-slides-the-ptwo-spades-equation-makes-less-sense-the-more-i-think-about-it-create-toy-examples-to-try-to-understand.-could-just-be-overthinking-it-maybe-the-best-thing-to-do-would-be-to-not-think-about-it" class="nav-link" data-scroll-target="#going-through-page-14-of-the-equally-likely-outcomes-slides-the-ptwo-spades-equation-makes-less-sense-the-more-i-think-about-it-create-toy-examples-to-try-to-understand.-could-just-be-overthinking-it-maybe-the-best-thing-to-do-would-be-to-not-think-about-it">1. Going through page 14 of the equally likely outcomes slides, the P(two spades) equation makes less sense the more I think about it &amp; create toy examples to try to understand. Could just be overthinking it, maybe the best thing to do would be to not think about it</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Muddy Points</h1>
-<p class="subtitle lead">Lesson 5: Equally Likely Outcomes</p>
+<h1 class="title">Untitled</h1>
 </div>
 
 
@@ -180,12 +170,6 @@ window.Quarto = {
 
     
   
-    <div>
-    <div class="quarto-title-meta-heading">Modified</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date-modified">October 20, 2025</p>
-    </div>
-  </div>
     
   </div>
   
@@ -194,49 +178,13 @@ window.Quarto = {
 </header>
 
 
-<section id="fall-2025" class="level2">
-<h2 class="anchored" data-anchor-id="fall-2025">Fall 2025</h2>
-<section id="going-through-page-14-of-the-equally-likely-outcomes-slides-the-ptwo-spades-equation-makes-less-sense-the-more-i-think-about-it-create-toy-examples-to-try-to-understand.-could-just-be-overthinking-it-maybe-the-best-thing-to-do-would-be-to-not-think-about-it" class="level3">
-<h3 class="anchored" data-anchor-id="going-through-page-14-of-the-equally-likely-outcomes-slides-the-ptwo-spades-equation-makes-less-sense-the-more-i-think-about-it-create-toy-examples-to-try-to-understand.-could-just-be-overthinking-it-maybe-the-best-thing-to-do-would-be-to-not-think-about-it">1. Going through page 14 of the equally likely outcomes slides, the P(two spades) equation makes less sense the more I think about it &amp; create toy examples to try to understand. Could just be overthinking it, maybe the best thing to do would be to not think about it</h3>
-<p>Here’s the slide: <img src="slide_shot.png" class="img-fluid"></p>
-<p><strong>Let’s think of a different scenario (Scenario 1): Let’s find the probability of drawing a spade and a heart from a standard deck of cards when drawing two cards without replacement.</strong></p>
-<p>There are 52 cards in a standard deck, with 13 spades and 13 hearts.</p>
-<ul>
-<li><p>Let’s look at the sample space size, <span class="math inline">\(|S|\)</span>. We need to enumerate all the possible combinations of two cards. <span class="math display">\[\binom{52}{2} = \frac{52 \times 51}{2} = 1326\]</span></p></li>
-<li><p>The more difficult part is the size of our event A, <span class="math inline">\(|A|\)</span>. We need to enumerate all the ways to draw 1 spade and 1 heart:</p>
-<ul>
-<li>Ways to choose 1 spade from 13: <span class="math inline">\(\binom{13}{1} = 13\)</span></li>
-<li>Ways to choose 1 heart from 13: <span class="math inline">\(\binom{13}{1} = 13\)</span></li>
-<li>For each potential spade we draw, there are 13 potential hearts we could draw. So we can multiply the two together to get the total number of ways to draw a spade and a heart: <span class="math display">\[|A| = 13 \times 13 = 169\]</span></li>
-</ul></li>
-</ul>
-<p>Then we could calculate the probability of drawing a spade and a heart as: <span class="math display">\[P(A) = \frac{|A|}{|S|} = \frac{13 \times 13}{1326} = \frac{169}{1326} = 0.1275\]</span></p>
-<p><strong>We can keep expanding our scenario (Scenario 2): Let’s find the probability of drawing one spade, one heart, one diamond, and one club without replacement.</strong></p>
-<ul>
-<li><p>Let’s look at the sample space size, <span class="math inline">\(|S|\)</span>. We need to enumerate all the possible combinations of two cards. <span class="math display">\[\binom{52}{4} = \frac{52 \times 51 \times 50 \times 49}{4 \times 3 \times 2 \times 1} = 270725\]</span></p></li>
-<li><p>Now, size of event A, <span class="math inline">\(|A|\)</span>. We need to enumerate all the ways to draw one spade, one heart, one diamond, and one club:</p>
-<ul>
-<li>Ways to choose 1 spade from 13: <span class="math inline">\(\binom{13}{1} = 13\)</span></li>
-<li>Ways to choose 1 heart from 13: <span class="math inline">\(\binom{13}{1} = 13\)</span></li>
-<li>Ways to choose 1 diamond from 13: <span class="math inline">\(\binom{13}{1} = 13\)</span></li>
-<li>Ways to choose 1 club from 13: <span class="math inline">\(\binom{13}{1} = 13\)</span></li>
-<li>For each potential spade we draw, there are 13 potential hearts we could draw. And from each specific spade and heart combo, there are 13 potential diamonds, etc. So we can multiply all four together to get the total number of ways to draw a spade and a heart: <span class="math display">\[|A| = 13 \times 13 \times 13 \times 13 = 28561\]</span></li>
-</ul></li>
-</ul>
-<p>Then we could calculate the probability of drawing a spade and a heart as: <span class="math display">\[P(A) = \frac{|A|}{|S|} = \frac{13 \times 13 \times 13 \times 13}{270725} = \frac{28561}{270725} = 0.1055\]</span></p>
-<p><strong>In both the above scenarios, we calculated the size of event A only with the cards we DRAW</strong> I just wanted to emphasize that for each suit of cards, we can technically enumerate all the ways to draw a certain number of cards, including 0.</p>
-<p>If we go back to scenario 1, we could also calculate the size of our event A, <span class="math inline">\(|A|\)</span> as:</p>
-<ul>
-<li>Ways to choose 1 spade from 13: <span class="math inline">\(\binom{13}{1} = 13\)</span></li>
-<li>Ways to choose 1 heart from 13: <span class="math inline">\(\binom{13}{1} = 13\)</span></li>
-<li>Ways to choose 0 diamonds from 13: <span class="math inline">\(\binom{13}{0} = 1\)</span></li>
-<li>Ways to choose 0 clubs from 13: <span class="math inline">\(\binom{13}{0} = 1\)</span></li>
-<li>For each potential spade we draw, there are 13 potential hearts we could draw. So we can multiply the four together to get the total number of ways to draw a spade and a heart and 0 diamonds and 0 clubs: <span class="math display">\[|A| = 13 \times 13 \times 1 \times 1 = 169\]</span></li>
-</ul>
+<p>Let’s write the pdf for a binomial distribution: <span class="math display">\[f(x) = \binom{n}{x} p^x (1-p)^{n-x}\]</span> where <span class="math inline">\(x = 0, 1, 2, \ldots, n\)</span>.</p>
+<p>Let’s take the integral of this function from <span class="math inline">\(-\infty\)</span> to <span class="math inline">\(\infty\)</span>:</p>
+<p><span class="math display">\[
+F_X(x) = \int_{-\infty}^{\infty} f(x) \, dx
+\]</span></p>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -326,11 +274,6 @@ window.Quarto = {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

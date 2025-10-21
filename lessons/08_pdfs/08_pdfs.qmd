@@ -1,5 +1,5 @@
 ---
-title: "Lesson 8: Probability distribution functions (PDFs)"
+title: "Lesson 8: Probability density functions (PDFs)"
 author: "Meike Niederhausen and Nicky Wakim"
 date: " `r library(here); source(here('class_dates.R')); w4d1` "
 title-slide-attributes:
@@ -269,7 +269,7 @@ ggplot(uniform,
   geom_histogram( binwidth = 0.001) + 
   geom_abline(intercept = 2, slope = 0) + 
   labs(
-    title = "Probability distribution function (pdf) of X",
+    title = "Probability density function (pdf) of X",
     x = "x",
     y = "pdf"
   ) 
