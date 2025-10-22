@@ -31,5 +31,5 @@ source(here("class_dates.R"))
 ## Announcements
 
 - Homework 3 due `r q1_close %>% format("%m/%d")` at 11pm
-- Quiz 1 opens on `r q1_close %>% format("%m/%d")` at 3pm
+- Quiz 1 opens on `r q1_open %>% format("%m/%d")` at 3pm
   - Closes `r q1_close %>% format("%m/%d")` at 11pm
