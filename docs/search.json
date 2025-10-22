@@ -19434,77 +19434,77 @@
   {
     "objectID": "lessons/09_CDFs/09_CDFs.html#what-is-a-cumulative-distribution-function",
     "href": "lessons/09_CDFs/09_CDFs.html#what-is-a-cumulative-distribution-function",
-    "title": "Chapter 24: Continuous RVs and PDFs",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
     "section": "What is a cumulative distribution function?",
-    "text": "What is a cumulative distribution function?\n\n\nCumulative distribution function\n\n\nThe cumulative distribution function (cdf) of a continuous random variable \\(X\\), is the function \\(F_X(x)\\), such that for all real values of \\(x\\), \\[F_X(x)= \\mathbb{P}(X \\leq x) = \\int_{-\\infty}^x f_X(s)ds\\]\n\n\nRemarks: In general, \\(F_X(x)\\) is increasing and\n\n\\(\\lim_{x\\rightarrow -\\infty} F_X(x)= 0\\)\n\\(\\lim_{x\\rightarrow \\infty} F_X(x)= 1\\)\n\\(P(X &gt; a) = 1 - P(X \\leq a) = 1 - F_X(a)\\)\n\\(P(a \\leq X \\leq b) = F_X(b) - F_X(a)\\)"
+    "text": "What is a cumulative distribution function?\n\n\n\n\nCumulative distribution function (CDF) for discrete random variable\n\n\nThe cumulative distribution function (cdf) of a discrete RV \\(X\\) with pmf \\(p_X(x)\\), is defined for every value \\(x\\) by \\[F_X(x) = \\mathbb{P}(X \\leq x) = \\sum \\limits_{\\{all\\ y:\\ y\\leq x\\}}p_X(y)\\]\n\n\n\n\\(F(x)\\) is increasing or flat (never decreasing)\n\\(\\min\\limits_x F(x) = 0\\)\n\\(\\max\\limits_xF(x)=1\\)\nCDF is a step function\n\n\n\n\nCumulative distribution function (CDF) for continuous random variable\n\n\nThe cumulative distribution function (cdf) of a continuous RV \\(X\\), is the function \\(F_X(x)\\), such that for all real values of \\(x\\), \\[F_X(x)= \\mathbb{P}(X \\leq x) = \\int_{-\\infty}^x f_X(s)ds\\]\n\n\nRemarks: In general, \\(F_X(x)\\) is increasing and\n\n\\(\\lim_{x\\rightarrow -\\infty} F_X(x)= 0\\)\n\\(\\lim_{x\\rightarrow \\infty} F_X(x)= 1\\)\n\\(P(X &gt; a) = 1 - P(X \\leq a) = 1 - F_X(a)\\)\n\\(P(a \\leq X \\leq b) = F_X(b) - F_X(a)\\)"
   },
   {
     "objectID": "lessons/09_CDFs/09_CDFs.html#lets-demonstrate-the-cdf-with-an-example",
     "href": "lessons/09_CDFs/09_CDFs.html#lets-demonstrate-the-cdf-with-an-example",
-    "title": "Chapter 24: Continuous RVs and PDFs",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
     "section": "Let’s demonstrate the CDF with an example",
     "text": "Let’s demonstrate the CDF with an example\n\n\n\n\nExample 2\n\n\nLet \\(f_X(x)= 2\\), for \\(2.5 \\leq x \\leq 3\\). Find \\(F_X(x)\\)."
   },
   {
     "objectID": "lessons/09_CDFs/09_CDFs.html#derivatives-of-the-cdf",
     "href": "lessons/09_CDFs/09_CDFs.html#derivatives-of-the-cdf",
-    "title": "Chapter 24: Continuous RVs and PDFs",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
     "section": "Derivatives of the CDF",
     "text": "Derivatives of the CDF\n\n\nTheorem 1\n\n\nIf \\(X\\) is a continuous random variable with pdf \\(f_X(x)\\) and cdf \\(F_X(x)\\), then for all real values of \\(x\\) at which \\(F'_X(x)\\) exists, \\[\\frac{d}{dx} F_X(x)= F'_X(x) = f_X(x)\\]"
   },
   {
     "objectID": "lessons/09_CDFs/09_CDFs.html#finding-the-pdf-from-a-cdf",
     "href": "lessons/09_CDFs/09_CDFs.html#finding-the-pdf-from-a-cdf",
-    "title": "Chapter 24: Continuous RVs and PDFs",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
     "section": "Finding the PDF from a CDF",
     "text": "Finding the PDF from a CDF\n\n\n\n\nExample 3\n\n\nLet \\(X\\) be a RV with cdf \\[F_X(x)= \\left\\{\n        \\begin{array}{ll}\n            0 & \\quad x &lt; 2.5 \\\\\n            2x-5 & \\quad 2.5 \\leq x \\leq 3 \\\\\n            1 & \\quad x &gt; 3\n        \\end{array}\n    \\right.\\] Find the pdf \\(f_X(x)\\)."
   },
   {
     "objectID": "lessons/09_CDFs/09_CDFs.html#lets-go-through-another-example-17",
     "href": "lessons/09_CDFs/09_CDFs.html#lets-go-through-another-example-17",
-    "title": "Chapter 24: Continuous RVs and PDFs",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
     "section": "Let’s go through another example (1/7)",
     "text": "Let’s go through another example (1/7)\n\n\n\n\nExample 4\n\n\nLet \\(X\\) be a RV with pdf \\(f_X(x)= 2e^{-2x}\\), for \\(x&gt;0\\).\n\nShow \\(f_X(x)\\) is a pdf.\nFind \\(\\mathbb{P}(1 \\leq X \\leq 3)\\).\nFind \\(F_X(x)\\).\nGiven \\(F_X(x)\\), find \\(f_X(x)\\).\nFind \\(\\mathbb{P}(X \\geq 1 | X \\leq 3)\\).\nFind the median of the distribution of \\(X\\)."
   },
   {
     "objectID": "lessons/09_CDFs/09_CDFs.html#lets-go-through-another-example-27",
     "href": "lessons/09_CDFs/09_CDFs.html#lets-go-through-another-example-27",
-    "title": "Chapter 24: Continuous RVs and PDFs",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
     "section": "Let’s go through another example (2/7)",
     "text": "Let’s go through another example (2/7)\n\n\n\n\nExample 4.1\n\n\nLet \\(X\\) be a RV with pdf \\(f_X(x)= 2e^{-2x}\\), for \\(x&gt;0\\).\n\nShow \\(f_X(x)\\) is a pdf."
   },
   {
     "objectID": "lessons/09_CDFs/09_CDFs.html#lets-go-through-another-example-37",
     "href": "lessons/09_CDFs/09_CDFs.html#lets-go-through-another-example-37",
-    "title": "Chapter 24: Continuous RVs and PDFs",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
     "section": "Let’s go through another example (3/7)",
     "text": "Let’s go through another example (3/7)\n\n\n\nDo this problem at home for extra practice.\n\n\n\n\n\n\n\nExample 4.2\n\n\nLet \\(X\\) be a RV with pdf \\(f_X(x)= 2e^{-2x}\\), for \\(x&gt;0\\).\n\nFind \\(\\mathbb{P}(1 \\leq X \\leq 3)\\)."
   },
   {
     "objectID": "lessons/09_CDFs/09_CDFs.html#lets-go-through-another-example-47",
     "href": "lessons/09_CDFs/09_CDFs.html#lets-go-through-another-example-47",
-    "title": "Chapter 24: Continuous RVs and PDFs",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
     "section": "Let’s go through another example (4/7)",
     "text": "Let’s go through another example (4/7)\n\n\n\n\nExample 4.3\n\n\nLet \\(X\\) be a RV with pdf \\(f_X(x)= 2e^{-2x}\\), for \\(x&gt;0\\).\n\nFind \\(F_X(x)\\)."
   },
   {
     "objectID": "lessons/09_CDFs/09_CDFs.html#lets-go-through-another-example-57",
     "href": "lessons/09_CDFs/09_CDFs.html#lets-go-through-another-example-57",
-    "title": "Chapter 24: Continuous RVs and PDFs",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
     "section": "Let’s go through another example (5/7)",
     "text": "Let’s go through another example (5/7)\n\n\n\nDo this problem at home for extra practice.\n\n\n\n\n\n\n\nExample 4.4\n\n\nLet \\(X\\) be a RV with pdf \\(f_X(x)= 2e^{-2x}\\), for \\(x&gt;0\\).\n\nGiven \\(F_X(x)\\), find \\(f_X(x)\\)."
   },
   {
     "objectID": "lessons/09_CDFs/09_CDFs.html#lets-go-through-another-example-67",
     "href": "lessons/09_CDFs/09_CDFs.html#lets-go-through-another-example-67",
-    "title": "Chapter 24: Continuous RVs and PDFs",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
     "section": "Let’s go through another example (6/7)",
     "text": "Let’s go through another example (6/7)\n\n\n\n\nExample 4.5\n\n\nLet \\(X\\) be a RV with pdf \\(f_X(x)= 2e^{-2x}\\), for \\(x&gt;0\\).\n\nFind \\(\\mathbb{P}(X \\geq 1 | X \\leq 3)\\)."
   },
   {
     "objectID": "lessons/09_CDFs/09_CDFs.html#lets-go-through-another-example-77",
     "href": "lessons/09_CDFs/09_CDFs.html#lets-go-through-another-example-77",
-    "title": "Chapter 24: Continuous RVs and PDFs",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
     "section": "Let’s go through another example (7/7)",
     "text": "Let’s go through another example (7/7)\n\n\n\n\nExample 4.6\n\n\nLet \\(X\\) be a RV with pdf \\(f_X(x)= 2e^{-2x}\\), for \\(x&gt;0\\).\n\nFind the median of the distribution of \\(X\\)."
   },
@@ -19836,5 +19836,82 @@
     "title": "Muddy Points",
     "section": "",
     "text": "Here’s the slide: \nLet’s think of a different scenario (Scenario 1): Let’s find the probability of drawing a spade and a heart from a standard deck of cards when drawing two cards without replacement.\nThere are 52 cards in a standard deck, with 13 spades and 13 hearts.\n\nLet’s look at the sample space size, \\(|S|\\). We need to enumerate all the possible combinations of two cards. \\[\\binom{52}{2} = \\frac{52 \\times 51}{2} = 1326\\]\nThe more difficult part is the size of our event A, \\(|A|\\). We need to enumerate all the ways to draw 1 spade and 1 heart:\n\nWays to choose 1 spade from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 1 heart from 13: \\(\\binom{13}{1} = 13\\)\nFor each potential spade we draw, there are 13 potential hearts we could draw. So we can multiply the two together to get the total number of ways to draw a spade and a heart: \\[|A| = 13 \\times 13 = 169\\]\n\n\nThen we could calculate the probability of drawing a spade and a heart as: \\[P(A) = \\frac{|A|}{|S|} = \\frac{13 \\times 13}{1326} = \\frac{169}{1326} = 0.1275\\]\nWe can keep expanding our scenario (Scenario 2): Let’s find the probability of drawing one spade, one heart, one diamond, and one club without replacement.\n\nLet’s look at the sample space size, \\(|S|\\). We need to enumerate all the possible combinations of two cards. \\[\\binom{52}{4} = \\frac{52 \\times 51 \\times 50 \\times 49}{4 \\times 3 \\times 2 \\times 1} = 270725\\]\nNow, size of event A, \\(|A|\\). We need to enumerate all the ways to draw one spade, one heart, one diamond, and one club:\n\nWays to choose 1 spade from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 1 heart from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 1 diamond from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 1 club from 13: \\(\\binom{13}{1} = 13\\)\nFor each potential spade we draw, there are 13 potential hearts we could draw. And from each specific spade and heart combo, there are 13 potential diamonds, etc. So we can multiply all four together to get the total number of ways to draw a spade and a heart: \\[|A| = 13 \\times 13 \\times 13 \\times 13 = 28561\\]\n\n\nThen we could calculate the probability of drawing a spade and a heart as: \\[P(A) = \\frac{|A|}{|S|} = \\frac{13 \\times 13 \\times 13 \\times 13}{270725} = \\frac{28561}{270725} = 0.1055\\]\nIn both the above scenarios, we calculated the size of event A only with the cards we DRAW I just wanted to emphasize that for each suit of cards, we can technically enumerate all the ways to draw a certain number of cards, including 0.\nIf we go back to scenario 1, we could also calculate the size of our event A, \\(|A|\\) as:\n\nWays to choose 1 spade from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 1 heart from 13: \\(\\binom{13}{1} = 13\\)\nWays to choose 0 diamonds from 13: \\(\\binom{13}{0} = 1\\)\nWays to choose 0 clubs from 13: \\(\\binom{13}{0} = 1\\)\nFor each potential spade we draw, there are 13 potential hearts we could draw. So we can multiply the four together to get the total number of ways to draw a spade and a heart and 0 diamonds and 0 clubs: \\[|A| = 13 \\times 13 \\times 1 \\times 1 = 169\\]"
+  },
+  {
+    "objectID": "lessons/09_CDFs/09_CDFs.html#where-are-we",
+    "href": "lessons/09_CDFs/09_CDFs.html#where-are-we",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
+    "section": "Where are we?",
+    "text": "Where are we?"
+  },
+  {
+    "objectID": "lessons/09_CDFs/09_CDFs.html#how-to-define-cdfs-for-discrete-and-continuous-rvs",
+    "href": "lessons/09_CDFs/09_CDFs.html#how-to-define-cdfs-for-discrete-and-continuous-rvs",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
+    "section": "How to define CDFs for discrete and continuous RVs?",
+    "text": "How to define CDFs for discrete and continuous RVs?\n\n\nDiscrete RV \\(X\\):\n\n\n\n\n\n\n\n\n\n\npmf: \\(p_X(x) = P(X=x)\\)\nCDF: \\(F_X(x) = P(X \\leq x) = \\sum\\limits_{\\{all\\ y:\\ y\\leq x\\}} p_X(y)\\)\n\n\nContinuous RV \\(X\\):\n\n\n\n\n\n\n\n\n\n\ndensity: \\(f_X(x)\\)\nprobability: \\(P(a \\leq X \\leq b) = \\int_a^b f_X(x)dx\\)\nCDF: \\(F_X(x) = P(X \\leq x) = \\int_{-\\infty}^x f_X(s)ds\\)"
+  },
+  {
+    "objectID": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-14",
+    "href": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-14",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
+    "section": "Falls in Older Adults Revisited (1/4)",
+    "text": "Falls in Older Adults Revisited (1/4)\n\n\n\n\nExample 1: Falls in Older Adults\n\n\nA major public health concern is falls among older adults (age 65+). National data suggests that 25% of older adults will experience at least one fall within a given year. A community health program is tracking a random group of \\(n = 8\\) older adults for one year. Assume the likelihood of falling is independent from person to person.\nLet \\(X\\) be the random variable representing the number of individuals in this group who experience at least one fall.\n\nWrite the CDF of \\(X\\) and make a table of values.\nUse R to calculate the cumulative probability for each possible value of \\(X\\).\nPlot the CDF of \\(X\\).\nSimulate \\(X\\) for 10000 groups and plot the approximated CDF.\n\n\n\n\nRecall our pmf: \\[P(X = x) = \\binom{8}{x} 0.25^x 0.75^{8-x},  x= 0, 1, 2, \\dots, 8 \\]"
+  },
+  {
+    "objectID": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-14-1",
+    "href": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-14-1",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
+    "section": "Falls in Older Adults Revisited (1/4)",
+    "text": "Falls in Older Adults Revisited (1/4)\n\n\n\n\nExample 1: Falls in Older Adults\n\n\n\nWrite the CDF of \\(X\\).\n\n\n\n\nRecall our pmf: \\[P(X = x) = \\binom{8}{x} 0.25^x 0.75^{8-x},  x= 0, 1, 2, \\dots, 8 \\]"
+  },
+  {
+    "objectID": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-24",
+    "href": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-24",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
+    "section": "Falls in Older Adults Revisited (2/4)",
+    "text": "Falls in Older Adults Revisited (2/4)\n\n\n\n\nExample 1: Falls in Older Adults\n\n\n\nWrite the CDF of \\(X\\).\n\n\n\n\nRecall our pmf: \\[P(X = x) = \\binom{8}{x} 0.25^x 0.75^{8-x},  x= 0, 1, 2, \\dots, 8 \\]\n\\[F_X(x) = P(X \\leq x) = \\sum \\limits_{k=0}^{x} \\binom{8}{k} 0.25^y 0.75^{8-k}\\]"
+  },
+  {
+    "objectID": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-34",
+    "href": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-34",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
+    "section": "Falls in Older Adults Revisited (3/4)",
+    "text": "Falls in Older Adults Revisited (3/4)\n\n\n\n\nExample 1: Falls in Older Adults\n\n\n\nUse R to calculate the cumulative probability for each possible value of \\(X\\).\n\n\n\n\nn = 8\np = 0.25\n\nfalls_cdf &lt;- tibble(\n  x = 0:n,\n  prob = pbinom(x, size = n, prob = p)\n)\n\n\n \n \n\nfalls_cdf\n\n# A tibble: 9 × 2\n      x  prob\n  &lt;int&gt; &lt;dbl&gt;\n1     0 0.100\n2     1 0.367\n3     2 0.679\n4     3 0.886\n5     4 0.973\n6     5 0.996\n7     6 1.00 \n8     7 1.00 \n9     8 1"
+  },
+  {
+    "objectID": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-15",
+    "href": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-15",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
+    "section": "Falls in Older Adults Revisited (1/5)",
+    "text": "Falls in Older Adults Revisited (1/5)\n\n\n\n\nExample 1: Falls in Older Adults\n\n\nA major public health concern is falls among older adults (age 65+). National data suggests that 25% of older adults will experience at least one fall within a given year. A community health program is tracking a random group of \\(n = 8\\) older adults for one year. Assume the likelihood of falling is independent from person to person.\nLet \\(X\\) be the random variable representing the number of individuals in this group who experience at least one fall.\n\nWrite the CDF of \\(X\\) and make a table of values.\nUse R to calculate the cumulative probability for each possible value of \\(X\\).\nPlot the CDF of \\(X\\).\nSimulate \\(X\\) for 10000 groups and plot the approximated CDF.\n\n\n\n\nRecall our pmf: \\[P(X = x) = \\binom{8}{x} 0.25^x 0.75^{8-x},  x= 0, 1, 2, \\dots, 8 \\]"
+  },
+  {
+    "objectID": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-25",
+    "href": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-25",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
+    "section": "Falls in Older Adults Revisited (2/5)",
+    "text": "Falls in Older Adults Revisited (2/5)\n\n\n\n\nExample 1: Falls in Older Adults\n\n\n\nWrite the CDF of \\(X\\).\n\n\n\n\nRecall our pmf: \\[P(X = x) = \\binom{8}{x} 0.25^x 0.75^{8-x},  x= 0, 1, 2, \\dots, 8 \\]\n\\[F_X(x) = P(X \\leq x) = \\sum \\limits_{k=0}^{x} \\binom{8}{k} 0.25^y 0.75^{8-k}\\]"
+  },
+  {
+    "objectID": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-35",
+    "href": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-35",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
+    "section": "Falls in Older Adults Revisited (3/5)",
+    "text": "Falls in Older Adults Revisited (3/5)\n\n\n\n\nExample 1: Falls in Older Adults\n\n\n\nUse R to calculate the cumulative probability for each possible value of \\(X\\).\n\n\n\n\nn = 8\np = 0.25\n\nfalls_cdf &lt;- tibble(\n  x = 0:n,\n  c_prob = pbinom(x, size = n, prob = p)\n)\n\n\n \n \n\nfalls_cdf\n\n# A tibble: 9 × 2\n      x c_prob\n  &lt;int&gt;  &lt;dbl&gt;\n1     0  0.100\n2     1  0.367\n3     2  0.679\n4     3  0.886\n5     4  0.973\n6     5  0.996\n7     6  1.00 \n8     7  1.00 \n9     8  1"
+  },
+  {
+    "objectID": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-45",
+    "href": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-45",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
+    "section": "Falls in Older Adults Revisited (4/5)",
+    "text": "Falls in Older Adults Revisited (4/5)\n\n\nExample 1: Falls in Older Adults\n\n\n\nPlot the CDF of \\(X\\).\n\n\n\n\n\nggplot(\n  falls_cdf,\n  aes(x = x, y = c_prob)\n       ) +\n  geom_step(\n    size = 1, \n    color = \"black\"\n    ) +\n  labs(\n    x = \"Number of Falls\",\n    y = \"Cumulative Probability\",\n    title = \"CDF of X\"\n    )"
+  },
+  {
+    "objectID": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-45-1",
+    "href": "lessons/09_CDFs/09_CDFs.html#falls-in-older-adults-revisited-45-1",
+    "title": "Lesson 9: Cumulative distribution functions (CDFs)",
+    "section": "Falls in Older Adults Revisited (4/5)",
+    "text": "Falls in Older Adults Revisited (4/5)\n\n\n\n\nExample 1: Falls in Older Adults\n\n\n\nSimulate \\(X\\) for 10000 groups and plot the approximated CDF.\n\n\n\n\nset.seed(4764)\nreps = 10000\n\nsims = rbinom(n = reps, \n              size = n, \n              prob = p)\n\nsims %&gt;% head(., 14)\n\n [1] 2 1 2 1 3 3 2 2 4 2 3 0 2 0\n\nfalls2 &lt;- tibble(x = 0:n) %&gt;%\n  rowwise() %&gt;%\n  mutate(c_prob = sum(sims &lt;= x) / reps)\n\n\n\nggplot(falls2, aes(x = x, y = c_prob)) +\n  geom_step(size = 1, color = \"black\") +\n  labs(\n    title = \"Approximate CDF of X\",\n    x = \"Number of adults (x)\",\n    y = \"Approximate Cumulative Probability\"\n  )"
   }
 ]
