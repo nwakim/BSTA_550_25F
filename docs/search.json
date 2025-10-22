@@ -19913,5 +19913,26 @@
     "title": "Lesson 9: Cumulative distribution functions (CDFs)",
     "section": "Falls in Older Adults Revisited (4/5)",
     "text": "Falls in Older Adults Revisited (4/5)\n\n\n\n\nExample 1: Falls in Older Adults\n\n\n\nSimulate \\(X\\) for 10000 groups and plot the approximated CDF.\n\n\n\n\nset.seed(4764)\nreps = 10000\n\nsims = rbinom(n = reps, \n              size = n, \n              prob = p)\n\nsims %&gt;% head(., 14)\n\n [1] 2 1 2 1 3 3 2 2 4 2 3 0 2 0\n\nfalls2 &lt;- tibble(x = 0:n) %&gt;%\n  rowwise() %&gt;%\n  mutate(c_prob = sum(sims &lt;= x) / reps)\n\n\n\nggplot(falls2, aes(x = x, y = c_prob)) +\n  geom_step(size = 1, color = \"black\") +\n  labs(\n    title = \"Approximate CDF of X\",\n    x = \"Number of adults (x)\",\n    y = \"Approximate Cumulative Probability\"\n  )"
+  },
+  {
+    "objectID": "lessons/09_CDFs/09_CDFs_key_info.html",
+    "href": "lessons/09_CDFs/09_CDFs_key_info.html",
+    "title": "Key Info and Announcements",
+    "section": "",
+    "text": "Quiz 1 questions?\nCharles is still grading HW 2\n\nPosted solutions so you have as a reference during quiz\n\nIf links do not work on this site, there are two places where the files live:\n\nGithub page: https://github.com/nwakim/BSTA_550_25F\n\nLink also on this homepage\n\nOHSU OneDrive\n\nYou should have access to this folder\n\n\nIf you want to attend class virtually when we’re in-person, then you can use: https://pdx.zoom.us/j/82027616951\n\nHowever, I will not support virtual attendance when we’re in-person\nI will not be monitoring the chat or helping with technical issues"
+  },
+  {
+    "objectID": "lessons/09_CDFs/09_CDFs_key_info.html#key-info",
+    "href": "lessons/09_CDFs/09_CDFs_key_info.html#key-info",
+    "title": "Key Info and Announcements",
+    "section": "",
+    "text": "Quiz 1 questions?\nCharles is still grading HW 2\n\nPosted solutions so you have as a reference during quiz\n\nIf links do not work on this site, there are two places where the files live:\n\nGithub page: https://github.com/nwakim/BSTA_550_25F\n\nLink also on this homepage\n\nOHSU OneDrive\n\nYou should have access to this folder\n\n\nIf you want to attend class virtually when we’re in-person, then you can use: https://pdx.zoom.us/j/82027616951\n\nHowever, I will not support virtual attendance when we’re in-person\nI will not be monitoring the chat or helping with technical issues"
+  },
+  {
+    "objectID": "lessons/09_CDFs/09_CDFs_key_info.html#announcements",
+    "href": "lessons/09_CDFs/09_CDFs_key_info.html#announcements",
+    "title": "Key Info and Announcements",
+    "section": "Announcements",
+    "text": "Announcements\n\nHomework 3 due 10/26 at 11pm\nQuiz 1 opens on 10/26 at 3pm\n\nCloses 10/26 at 11pm"
   }
 ]
