@@ -1,9 +1,8 @@
 ---
 title: "Homework 5"
 subtitle: "BSTA 550"
-description: "Due: Thursday November 7, 2024 at 11pm"
+description: "Due: `r library(here); source(here('class_dates.R')); hw4 %>% format('%m/%d')` at 11pm"
 date-modified: "today"
-categories: [""]
 format: 
   html:
     link-external-newwindow: true
@@ -13,59 +12,58 @@ editor_options:
   chunk_output_type: console
 ---
 
+```{r}
+#| label: "setup"
+#| include: false
+knitr::opts_chunk$set(echo = TRUE)
+
+library(here)
+source(here("class_dates.R"))
+```
+
 ## Directions
 
-[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/BSTA-550-1-14926-F24/tool/c8320b13-1b6d-42ed-9c19-134634cf25af) Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
+**Please turn in this homework on Sakai.** Please submit your homework in pdf or html format. 
 
-**Try to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later!** Only turn in the ones listed in the "Turn In" column. Please submit problems in the order they are listed.
+You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
 
 *You must show all of your work to receive credit.*
 
-::: center
-| Chapter | Turn In | Extra Problems |
-|:--:|:--:|:--:|
-| 10\*\* | TB \# 6, NTB \# 1 | \# 1, 8, 10, 11, 14, 17 |
-| 11\*\* | NTB \# 2, | \# 1, 2, 9\*\*\*, 17\*\*\*, 18\*\*\*, 20, NTB \# 5 |
-| 12 | NTB \# 3, 4 | \# 1, 2, 7, 11, 12, 15, 19, 25, 27, NTB \# 6 |
-| 13 (review) |  | \# 3, 4, 5, 6, 8, 9, 10, 17, 25 |
-:::
+Extra problems do not need to be turned in!
 
-\*\* Use Chapter 11 techniques when computing expected values for Chapter 11 problems, i.e. expressing the r.v. as a sum of other r.v.'s and calculating the expected value of the sum of r.v.'s. Also, as I mentioned in class and posted on Sakai, we will be skipping the more complex examples of finding expected values using indicator r.v.'s. You can skip Examples 11.5, 11.10, and 11.11. We will not be covering these techniques.
+## Questions
 
-\*\*\* Although Chapter 11 exercises, these are to be done using Chapter 10 techniques since we aren't covering the more complex examples of finding expected values using indicator r.v.'s.
+1.  The following table shows the results of a survey in which the subjects were a sample of 300 adults residing in a certain metropolitan area. Each subject was asked to indicate which of three policies they favored with respect to smoking in public places. (Table is from *Biostatistics: A Foundation for Analysis in the Health Sciences*, 10th Edition, Daniel, Wayne W.; Cross, Chad L., pg. 630)
 
-## Mid-quarter feedback
+    ![](Table_Smoking_vs_Education_Level.png){fig-align="center" width="6in"}
 
-Please complete the mid-quarter feedback!: <https://forms.office.com/r/rC2JR2qQTq>
+    Let $X=$ highest education level and $Y=$ policy favored. We can let $X=1$ for college graduate, $X=2$ for high-school graduate, etc., and similarly for $Y$, or just keep the category names for the different levels of $X$ and $Y$
 
-## Non-textbook problems (NTB)
+    a.  Make a table for the joint pmf $p_{X,Y}(x,y)$ and briefly describe in words what the values are the probability of.
 
-1.  Let $X_i\sim$ Binomial($n_i,p$) be independent r.v.'s for $i=1,\ldots,m$.
+    b.  Find the marginal pmf $p_{X}(x)$ and briefly describe in words what the values are the probability of.
 
-    a.  What does the r.v. $X=\sum_{i=1}^mX_i$ count, and what is the distribution of $X$? Make sure to specify the parameters of $X$'s distribution.
+    c.  Find the marginal pmf $p_{Y}(y)$ and briefly describe in words what the values are the probability of.
 
-    b.  Find $\mathbb{E}[X]$. *Make sure to show your work for (b) and (c). However, you may use without proof what you know about the mean and variance of each* $X_i$.
+    d.  Make a table for the joint cdf $F_{X,Y}(x,y)$ and briefly describe in words what the values are the probability of.
 
-    c.  Find $Var[X]$.
+    e.  Find the marginal cdf $F_{X}(x)$ and briefly describe in words what the values are the probability of.
 
-2.  Approximately 10% of U.S. Veterans are women. Suppose an investigator plans a study with 4500 participants that are Veterans. How many women can they expect to be included? *Your answer must be calculated by defining a random variable and showing how to calculate the expected value.*
+    f.  Find the marginal cdf $F_{Y}(y)$ and briefly describe in words what the values are the probability of.
 
-3.  Prove that for a r.v. $X$ and constants $a$ and $b$, that $$\mathrm{Var}[aX+b]=a^2\mathrm{Var}[X].$$
+    g.  Make a table for the conditional pmf $p_{X|Y}(x|y)$ and briefly describe in words what the values are the probability of.
 
-4.  Let $\bar{X}$ be the random variable for the sample mean, $\bar{X}=\frac{\sum_{i=1}^nX_i}{n}$, where the $X_i$ are i.i.d. random variables with common mean $\mu$ and variance $\sigma^2$.
+    h.  Make a table for the conditional pmf $p_{Y|X}(y|x)$ and briefly describe in words what the values are the probability of.
 
-    a.  Find $\mathbb{E}[\bar{X}]$.
+2.  Each day, Maude has a 1% chance of losing her cell phone (her behavior on different days is independent). Each day, Maude has a 3% chance of forgetting to eat breakfast (again, her behavior on different days is independent). Her breakfast and cell phone habits are independent. Let $X$ be the number of days until she first loses her cell phone. Let $Y$ be the number of days until she first forgets to eat breakfast. (Here, $X$ and $Y$ are independent.)
 
-    b.  Find $Var[\bar{X}]$.
+    a.  Find the joint probability mass function of $X$ and $Y$.
 
-### Extra problems
+    b.  Find the joint cdf of $X$ and $Y$ and briefly explain what $F_{X,Y}(x,y)$ represents in the context of the problem.
 
-5.  There is a bowl containing 30 cashews, 20 pecans, 25 almonds, and 25 walnuts. I am going to randomly pick and eat 3 nuts (without replacement). Find the expected value of the number of cashews by defining the number of cashews as a sum of random variables. (This one takes a little while if we don't rely on the
+    c.  Find the conditional pmf $p_{Y|X}(y|x)$.
 
-<!-- -->
 
-6.  Let $\hat{p}$ be the random variable for the sample proportion, $\hat{p}=\frac{X}{n}$, where $X$ is the number of successes in a random sample of size $n$. Assume the probability of success is $p$.
+3.  Let $X_1, X_2, \ldots, X_n$ be i.i.d. random variables with common pdf $f_X(x)$ and cdf $F_X(x)$. Find the pdf for the random variable $Z$, where $Z = \max(X_1, X_2, \ldots, X_n)$.
 
-    a.  Find $\mathbb{E}[\hat{p}]$.
-
-    b.  Find $Var[\hat{p}]$.
+4. Freddy and Jane have entered a game in which they each win between 0 and 2 dollars. If X is the amount Freddy wins, and Y is the amount that Jane wins, they believe that the joint density of their winnings will be $$f_{X,Y}(x, y) = \dfrac{1}{4}xy \text{ for } 0 \leq x \leq 2 \text{ and } 0 \leq y \leq 2$$ and $f_{X,Y}(x, y) = 0$ otherwise. Find the probability that their combined winnings exceed 2, i.e., find $P(X + Y > 2)$.

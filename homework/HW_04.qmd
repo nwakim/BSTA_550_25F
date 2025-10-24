@@ -42,7 +42,9 @@ You can type your work on your computer or submit a photo of your written work o
 
     a. Draw the mass of $X$ and define the piecewise pmf.
     b. Draw the CDF of $X$ and define the piecewise CDF.
-
+    c. Simulate 10,000 trials of this experiment in R and plot the approximate probability distribution.
+  
+  
 3. Suppose a density $f_X(x)$ increases linearly from $(16, 0)$ to
 $\left(24, \dfrac{1}{4}\right)$.
 
@@ -54,4 +56,3 @@ $\left(24, \dfrac{1}{4}\right)$.
     a. What is the constant $k$ that makes the following function a valid density?
     b. What is the cumulative distribution function (cdf) $F_X(x)$?
 
-## Extra Problems
