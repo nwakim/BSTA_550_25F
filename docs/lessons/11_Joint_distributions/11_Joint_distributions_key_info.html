@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Meike Niederhausen and Nicky Wakim">
-<meta name="dcterms.date" content="2025-11-03">
+<meta name="dcterms.date" content="2024-10-21">
 
-<title>Lesson 13: Independence and Conditioning – Introduction to Probability</title>
+<title>Key Info – Introduction to Probability</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -160,59 +130,37 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a>
-  <ul class="collapse">
-  <li><a href="#how-do-we-represent-independent-continuous-rvs-in-a-joint-pdf" id="toc-how-do-we-represent-independent-continuous-rvs-in-a-joint-pdf" class="nav-link" data-scroll-target="#how-do-we-represent-independent-continuous-rvs-in-a-joint-pdf">How do we represent independent continuous RVs in a joint pdf?</a></li>
-  <li><a href="#constructing-a-joint-pdf-from-two-independent-continuous-rvs" id="toc-constructing-a-joint-pdf-from-two-independent-continuous-rvs" class="nav-link" data-scroll-target="#constructing-a-joint-pdf-from-two-independent-continuous-rvs">Constructing a joint pdf from two independent, continuous RVs</a></li>
-  <li><a href="#constructing-a-joint-pdf-from-two-independent-continuous-rvs-1" id="toc-constructing-a-joint-pdf-from-two-independent-continuous-rvs-1" class="nav-link" data-scroll-target="#constructing-a-joint-pdf-from-two-independent-continuous-rvs-1">Constructing a joint pdf from two independent, continuous RVs</a></li>
-  <li><a href="#showing-independence-from-joint-pdf" id="toc-showing-independence-from-joint-pdf" class="nav-link" data-scroll-target="#showing-independence-from-joint-pdf">Showing independence from joint pdf</a></li>
-  <li><a href="#finding-cdf-from-two-independent-rvs" id="toc-finding-cdf-from-two-independent-rvs" class="nav-link" data-scroll-target="#finding-cdf-from-two-independent-rvs">Finding CDF from two independent RVs</a></li>
-  <li><a href="#showing-independence-from-joint-pdf-1" id="toc-showing-independence-from-joint-pdf-1" class="nav-link" data-scroll-target="#showing-independence-from-joint-pdf-1">Showing independence from joint pdf</a></li>
-  <li><a href="#final-statement-on-independence" id="toc-final-statement-on-independence" class="nav-link" data-scroll-target="#final-statement-on-independence">Final statement on independence</a></li>
-  </ul></li>
-  <li><a href="#learning-objectives-1" id="toc-learning-objectives-1" class="nav-link" data-scroll-target="#learning-objectives-1">Learning Objectives</a>
-  <ul class="collapse">
-  <li><a href="#conditional-probabilities-weve-seen-before" id="toc-conditional-probabilities-weve-seen-before" class="nav-link" data-scroll-target="#conditional-probabilities-weve-seen-before">Conditional probabilities we’ve seen before</a></li>
-  <li><a href="#example-starting-from-a-joint-pdf-first-try" id="toc-example-starting-from-a-joint-pdf-first-try" class="nav-link" data-scroll-target="#example-starting-from-a-joint-pdf-first-try">Example starting from a joint pdf: first try!</a></li>
-  <li><a href="#what-is-a-conditional-density" id="toc-what-is-a-conditional-density" class="nav-link" data-scroll-target="#what-is-a-conditional-density">What is a conditional density?</a></li>
-  <li><a href="#example-starting-from-a-joint-pdf-second-try-12" id="toc-example-starting-from-a-joint-pdf-second-try-12" class="nav-link" data-scroll-target="#example-starting-from-a-joint-pdf-second-try-12">Example starting from a joint pdf: second try! (1/2)</a></li>
-  <li><a href="#example-starting-from-a-joint-pdf-second-try-22" id="toc-example-starting-from-a-joint-pdf-second-try-22" class="nav-link" data-scroll-target="#example-starting-from-a-joint-pdf-second-try-22">Example starting from a joint pdf: second try! (2/2)</a></li>
-  <li><a href="#example-starting-from-a-joint-pdf" id="toc-example-starting-from-a-joint-pdf" class="nav-link" data-scroll-target="#example-starting-from-a-joint-pdf">Example starting from a joint pdf</a></li>
-  <li><a href="#finding-probability-with-conditional-domain-and-pdf" id="toc-finding-probability-with-conditional-domain-and-pdf" class="nav-link" data-scroll-target="#finding-probability-with-conditional-domain-and-pdf">Finding probability with conditional domain and pdf</a></li>
-  <li><a href="#independence-and-conditional-distributions" id="toc-independence-and-conditional-distributions" class="nav-link" data-scroll-target="#independence-and-conditional-distributions">Independence and conditional distributions</a></li>
-  </ul></li>
+  <li><a href="#announcements" id="toc-announcements" class="nav-link active" data-scroll-target="#announcements">Announcements</a></li>
+  <li><a href="#key-dates" id="toc-key-dates" class="nav-link" data-scroll-target="#key-dates">Key Dates</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="12_Independence_conditioning.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lesson 13: Independence and Conditioning</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Week 8</div>
-  </div>
-  </div>
+<h1 class="title">Key Info</h1>
+</div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Meike Niederhausen and Nicky Wakim </p>
-          </div>
-  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 3, 2025</p>
+      <p class="date">October 21, 2024</p>
     </div>
   </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">October 24, 2025</p>
+    </div>
+  </div>
     
   </div>
   
@@ -221,296 +169,29 @@ window.Quarto = {
 </header>
 
 
-<section id="learning-objectives" class="level1">
-<h1>Learning Objectives</h1>
-<ol type="1">
-<li><p>Show that a joint pdf consists of two independent, continuous RVs.</p></li>
-<li><p>Combine two independent RVs into one joint pdf or CDF.</p></li>
-</ol>
-<section id="how-do-we-represent-independent-continuous-rvs-in-a-joint-pdf" class="level2">
-<h2 class="anchored" data-anchor-id="how-do-we-represent-independent-continuous-rvs-in-a-joint-pdf">How do we represent independent continuous RVs in a joint pdf?</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><strong>What do we know about independence for events and discrete RVs?</strong></p>
-<p>For events: If <span class="math inline">\(A \perp B\)</span></p>
-<p><span class="math display">\[P(A \cap B) = P(A)P(B)\]</span> <span class="math display">\[P(A|B) = P(A)\]</span></p>
-<p>For discrete RVs: If <span class="math inline">\(X \perp Y\)</span> <span class="math display">\[p_{X,Y}(x,y) = p_{X}(x)p_{Y}(y)\]</span> <span class="math display">\[F_{X,Y}(x,y) = F_{X}(x)F_{Y}(y)\]</span> <span class="math display">\[p_{X|Y}(x|y) = p_{X}(x)\]</span> <span class="math display">\[p_{Y|X}(y|x) = p_{Y}(y)\]</span></p>
-</div><div class="column" style="width:10%;">
-
-</div><div class="column" style="width:50%;">
-<p><strong>What does it mean for continuous r.v.’s to be independent?</strong></p>
-<p>For continuous RVs: If <span class="math inline">\(X \perp Y\)</span></p>
-</div>
-</div>
-</section>
-<section id="constructing-a-joint-pdf-from-two-independent-continuous-rvs" class="level2">
-<h2 class="anchored" data-anchor-id="constructing-a-joint-pdf-from-two-independent-continuous-rvs">Constructing a joint pdf from two independent, continuous RVs</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 1.1</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be independent r.v.’s with <span class="math inline">\(f_X(x)= \frac12\)</span>, for <span class="math inline">\(0 \leq x \leq 2\)</span> and <span class="math inline">\(f_Y(y)= 3y^2\)</span>, for <span class="math inline">\(0 \leq y \leq 1\)</span>.</p>
-<ol type="1">
-<li>Find <span class="math inline">\(f_{X,Y}(x,y)\)</span>.</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="constructing-a-joint-pdf-from-two-independent-continuous-rvs-1" class="level2">
-<h2 class="anchored" data-anchor-id="constructing-a-joint-pdf-from-two-independent-continuous-rvs-1">Constructing a joint pdf from two independent, continuous RVs</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 1.2</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be independent r.v.’s with <span class="math inline">\(f_X(x)= \frac12\)</span>, for <span class="math inline">\(0 \leq x \leq 2\)</span> and <span class="math inline">\(f_Y(y)= 3y^2\)</span>, for <span class="math inline">\(0 \leq y \leq 1\)</span>.</p>
-<ol start="2" type="1">
-<li>Find <span class="math inline">\(\mathbb{P}(0 \leq X \leq 1, 0 \leq Y \leq \frac12)\)</span>.</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="showing-independence-from-joint-pdf" class="level2">
-<h2 class="anchored" data-anchor-id="showing-independence-from-joint-pdf">Showing independence from joint pdf</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 2.1</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(f_{X,Y}(x,y)= 18 x^2 y^5\)</span>, for <span class="math inline">\(0 \leq x \leq 1, \ 0 \leq y \leq 1\)</span>.</p>
-<ol type="1">
-<li>Are <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> independent?</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="finding-cdf-from-two-independent-rvs" class="level2">
-<h2 class="anchored" data-anchor-id="finding-cdf-from-two-independent-rvs">Finding CDF from two independent RVs</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 2.2</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(f_{X,Y}(x,y)= 18 x^2 y^5\)</span>, for <span class="math inline">\(0 \leq x \leq 1, \ 0 \leq y \leq 1\)</span>.</p>
-<ol start="2" type="1">
-<li>Find <span class="math inline">\(F_{X,Y}(x,y)\)</span>.</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="showing-independence-from-joint-pdf-1" class="level2">
-<h2 class="anchored" data-anchor-id="showing-independence-from-joint-pdf-1">Showing independence from joint pdf</h2>
-<div class="callout callout-style-simple callout-important no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Do this problem at home for extra practice. The solution is available in Meike’s video!</p>
-</div>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 3</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(f_{X,Y}(x,y)= 2 e^{-(x+y)}\)</span>, for <span class="math inline">\(0 \leq x \leq y\)</span>. Are <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> independent?</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="final-statement-on-independence" class="level2">
-<h2 class="anchored" data-anchor-id="final-statement-on-independence">Final statement on independence</h2>
-<ol type="1">
-<li><p>If <span class="math inline">\(f_{X,Y}(x,y)= g(x)h(y)\)</span>, where <span class="math inline">\(g(x)\)</span> and <span class="math inline">\(h(y)\)</span> are pdf’s, then <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are independent.</p>
+<section id="announcements" class="level2">
+<h2 class="anchored" data-anchor-id="announcements">Announcements</h2>
 <ul>
-<li>The domain of the joint pdf needs to be independent as well!!</li>
+<li>HW 02 assignments are graded!
+<ul>
+<li>Solutions and videos are posted!</li>
 </ul></li>
-</ol>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;</p>
-<ol start="2" type="1">
-<li><p>If <span class="math inline">\(F_{X,Y}(x,y)= G(x)H(y)\)</span>, where <span class="math inline">\(G(x)\)</span> and <span class="math inline">\(H(y)\)</span> are cdf’s, then <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are independent.</p>
+<li>Finish the discrete distributions notes
 <ul>
-<li>The domain of the joint CDF needs to be independent as well!!</li>
+<li>Then get into joint distributions</li>
 </ul></li>
-</ol>
+</ul>
 </section>
-</section>
-<section id="learning-objectives-1" class="level1">
-<h1>Learning Objectives</h1>
-<ol type="1">
-<li>Calculate the conditional probability density from a joint pdf</li>
-</ol>
-<section id="conditional-probabilities-weve-seen-before" class="level2">
-<h2 class="anchored" data-anchor-id="conditional-probabilities-weve-seen-before">Conditional probabilities we’ve seen before</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><strong>What do we know about conditional probabilities for events and discrete RVs?</strong> &nbsp; &nbsp;</p>
-<p>For events:</p>
-<p><span class="math display">\[P(A | B) = \dfrac{P(A \cap B)}{P(B)}\]</span> &nbsp; &nbsp;</p>
-<p>For discrete RVs: <span class="math display">\[p_{X|Y}(x|y) = P(X=x|Y=y) = \dfrac{p_{X,Y}(x,y)}{p_Y(y)}\]</span></p>
-</div><div class="column" style="width:10%;">
-
-</div><div class="column" style="width:50%;">
-<p><strong>What does it mean for conditional densities of continuous RVs?</strong></p>
-<p>For continuous RVs:</p>
-</div>
-</div>
-</section>
-<section id="example-starting-from-a-joint-pdf-first-try" class="level2">
-<h2 class="anchored" data-anchor-id="example-starting-from-a-joint-pdf-first-try">Example starting from a joint pdf: first try!</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 1.1</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(f_{X,Y}(x,y)= 5 e^{-x-3y}\)</span>, for <span class="math inline">\(0 &lt; y &lt; \frac{x}{2}\)</span>.</p>
-<ol type="1">
-<li>Find <span class="math inline">\(\mathbb{P}(2&lt;X&lt;10|Y=4)\)</span></li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="what-is-a-conditional-density" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-a-conditional-density">What is a conditional density?</h2>
-<div class="columns">
-<div class="column" style="width:45%;">
-<div class="definition">
-<div class="def-title">
-<p>Definition: Conditional density</p>
-</div>
-<div class="def-cont">
-<p>The conditional density of a r.v. <span class="math inline">\(X\)</span> given <span class="math inline">\(Y=y\)</span>, is <span class="math display">\[f_{X|Y}(x|y)= \frac{f_{X,Y}(x,y)}{f_Y(y)},\]</span> for <span class="math inline">\(f_Y(y)&gt; 0\)</span></p>
-</div>
-</div>
-</div><div class="column" style="width:3%;">
-
-</div><div class="column" style="width:52%;">
-<p><strong>Remarks</strong></p>
-<ol type="1">
-<li>It follows from the definition for the conditional density <span class="math inline">\(f_{X|Y}(x|y)\)</span>, that <span class="math display">\[f_{X,Y}(x,y)= f_{X|Y}(x|y)f_Y(y).\]</span></li>
-</ol>
-<p>&nbsp; &nbsp; &nbsp;</p>
-<ol start="2" type="1">
-<li><p>For a fixed value of <span class="math inline">\(Y=y\)</span>, the conditional density <span class="math inline">\(f_{X|Y}(x|y)\)</span> is an actual pdf, meaning</p>
+<section id="key-dates" class="level2">
+<h2 class="anchored" data-anchor-id="key-dates">Key Dates</h2>
 <ul>
-<li><p><span class="math inline">\(f_{X|Y}(x|y)\geq 0\)</span> for all <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, and</p></li>
-<li><p><span class="math inline">\(\displaystyle\int_{-\infty}^{\infty} f_{X|Y}(x|y)dx =1\)</span>.</p></li>
+<li>HW 03 Assignment due this Thursday at 11pm
+<ul>
+<li>I updated the homework assignment on the 18th!</li>
 </ul></li>
-</ol>
-</div>
-</div>
-</section>
-<section id="example-starting-from-a-joint-pdf-second-try-12" class="level2">
-<h2 class="anchored" data-anchor-id="example-starting-from-a-joint-pdf-second-try-12">Example starting from a joint pdf: second try! (1/2)</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 1.1</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(f_{X,Y}(x,y)= 5 e^{-x-3y}\)</span>, for <span class="math inline">\(0 &lt; y &lt; \frac{x}{2}\)</span>.</p>
-<ol type="1">
-<li>Find <span class="math inline">\(\mathbb{P}(2&lt;X&lt;10|Y=4)\)</span></li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="example-starting-from-a-joint-pdf-second-try-22" class="level2">
-<h2 class="anchored" data-anchor-id="example-starting-from-a-joint-pdf-second-try-22">Example starting from a joint pdf: second try! (2/2)</h2>
-</section>
-<section id="example-starting-from-a-joint-pdf" class="level2">
-<h2 class="anchored" data-anchor-id="example-starting-from-a-joint-pdf">Example starting from a joint pdf</h2>
-<div class="callout callout-style-simple callout-important no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Do this problem at home for extra practice. The solution is available in Meike’s video!</p>
-</div>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 1.2</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(f_{X,Y}(x,y)= 5 e^{-x-3y}\)</span>, for <span class="math inline">\(0 &lt; y &lt; \frac{x}{2}\)</span>.</p>
-<ol start="2" type="1">
-<li>Find <span class="math inline">\(\mathbb{P}(X&gt;20 |Y=5)\)</span></li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="finding-probability-with-conditional-domain-and-pdf" class="level2">
-<h2 class="anchored" data-anchor-id="finding-probability-with-conditional-domain-and-pdf">Finding probability with conditional domain and pdf</h2>
-<div class="callout callout-style-simple callout-important no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Do this problem at home for extra practice. The solution is available in Meike’s video!</p>
-</div>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 2</p>
-</div>
-<div class="ex-cont">
-<p>Randomly choose a point <span class="math inline">\(X\)</span> from the interval <span class="math inline">\([0,1]\)</span>, and given <span class="math inline">\(X=x\)</span>, randomly choose a point <span class="math inline">\(Y\)</span> from <span class="math inline">\([0,x]\)</span>. Find <span class="math inline">\(\mathbb{P}(0 &lt; Y &lt; \frac14)\)</span>.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="independence-and-conditional-distributions" class="level2">
-<h2 class="anchored" data-anchor-id="independence-and-conditional-distributions">Independence and conditional distributions</h2>
-<p>&nbsp; &nbsp; <strong>Question</strong> What is <span class="math inline">\(f_{X|Y}(x|y)\)</span> if <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are independent?</p>
-<p><span class="math display">\[f_{X|Y}(x|y) = \dfrac{f_{X,Y}(x,y)}{f_y(y)} = \dfrac{f_{X}(x)f_y(y)}{f_y(y)} = f_{X}(x)\]</span></p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;</p>
-<ul>
-<li>If <span class="math inline">\(f_{X|Y}(x|y)\)</span> does not depend on <span class="math inline">\(y\)</span> (including the bounds/domain), then <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are independent.</li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -601,6 +282,11 @@ window.Quarto = {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
