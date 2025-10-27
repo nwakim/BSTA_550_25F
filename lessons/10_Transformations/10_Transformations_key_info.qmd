@@ -17,9 +17,11 @@ source(here("class_dates.R"))
 
 ## Announcements
 
-
+- Quiz 1 grades look pretty good! Everyone got score above 11/15
+  - Feedback released at 12:10pm today
+  - Will go over questions next class
 
 ## Key Dates
 
 - Homework 4 due `r hw4 %>% format("%m/%d")` at 11pm
-- Quiz 1 grades up maybe
+
