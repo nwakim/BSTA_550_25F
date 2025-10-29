@@ -11,6 +11,9 @@ editor_options:
 ## Announcements
 
 - Midterm feedback!
+- Homework
+  - You NEED to show your work! I am asking Charles to give half credit if you do not show sufficient work
+  - If you have an html file and images of work, please insert the image into your html!
 - Homework 2 feedback from Charles
   - People forgot to use combinations for binary distribution
   - Some people didn't get all of the combinations for question 3
