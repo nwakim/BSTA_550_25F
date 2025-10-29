@@ -14590,51 +14590,51 @@
   {
     "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#how-do-we-represent-independent-continuous-rvs-in-a-joint-pdf",
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#how-do-we-represent-independent-continuous-rvs-in-a-joint-pdf",
-    "title": "Lesson 13: Independence and Conditioning",
-    "section": "",
-    "text": "What do we know about independence for events and discrete RVs?\nFor events: If \\(A \\perp B\\)\n\\[P(A \\cap B) = P(A)P(B)\\] \\[P(A|B) = P(A)\\]\nFor discrete RVs: If \\(X \\perp Y\\) \\[p_{X,Y}(x,y) = p_{X}(x)p_{Y}(y)\\] \\[F_{X,Y}(x,y) = F_{X}(x)F_{Y}(y)\\] \\[p_{X|Y}(x|y) = p_{X}(x)\\] \\[p_{Y|X}(y|x) = p_{Y}(y)\\]\n\n\n\nWhat does it mean for continuous r.v.’s to be independent?\nFor continuous RVs: If \\(X \\perp Y\\)"
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "How do we represent independent continuous RVs in a joint pdf?",
+    "text": "How do we represent independent continuous RVs in a joint pdf?\n\n\nWhat do we know about independence for events and discrete RVs?\nFor events: If \\(A \\perp B\\)\n\\[P(A \\cap B) = P(A)P(B)\\] \\[P(A|B) = P(A)\\]\nFor discrete RVs: If \\(X \\perp Y\\) \\[p_{X,Y}(x,y) = p_{X}(x)p_{Y}(y)\\] \\[F_{X,Y}(x,y) = F_{X}(x)F_{Y}(y)\\] \\[p_{X|Y}(x|y) = p_{X}(x)\\] \\[p_{Y|X}(y|x) = p_{Y}(y)\\]\n\n\n\nWhat does it mean for continuous r.v.’s to be independent?\nFor continuous RVs: If \\(X \\perp Y\\)"
   },
   {
     "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#constructing-a-joint-pdf-from-two-independent-continuous-rvs",
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#constructing-a-joint-pdf-from-two-independent-continuous-rvs",
-    "title": "Lesson 13: Independence and Conditioning",
-    "section": "",
-    "text": "Example 1.1\n\n\nLet \\(X\\) and \\(Y\\) be independent r.v.’s with \\(f_X(x)= \\frac12\\), for \\(0 \\leq x \\leq 2\\) and \\(f_Y(y)= 3y^2\\), for \\(0 \\leq y \\leq 1\\).\n\nFind \\(f_{X,Y}(x,y)\\)."
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "Constructing a joint pdf from two independent, continuous RVs",
+    "text": "Constructing a joint pdf from two independent, continuous RVs\n\n\n\n\nExample 1.1\n\n\nLet \\(X\\) and \\(Y\\) be independent r.v.’s with \\(f_X(x)= \\frac12\\), for \\(0 \\leq x \\leq 2\\) and \\(f_Y(y)= 3y^2\\), for \\(0 \\leq y \\leq 1\\).\n\nFind \\(f_{X,Y}(x,y)\\)."
   },
   {
     "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#constructing-a-joint-pdf-from-two-independent-continuous-rvs-1",
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#constructing-a-joint-pdf-from-two-independent-continuous-rvs-1",
-    "title": "Lesson 13: Independence and Conditioning",
-    "section": "",
-    "text": "Example 1.2\n\n\nLet \\(X\\) and \\(Y\\) be independent r.v.’s with \\(f_X(x)= \\frac12\\), for \\(0 \\leq x \\leq 2\\) and \\(f_Y(y)= 3y^2\\), for \\(0 \\leq y \\leq 1\\).\n\nFind \\(\\mathbb{P}(0 \\leq X \\leq 1, 0 \\leq Y \\leq \\frac12)\\)."
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "Constructing a joint pdf from two independent, continuous RVs",
+    "text": "Constructing a joint pdf from two independent, continuous RVs\n\n\n\n\nExample 1.2\n\n\nLet \\(X\\) and \\(Y\\) be independent r.v.’s with \\(f_X(x)= \\frac12\\), for \\(0 \\leq x \\leq 2\\) and \\(f_Y(y)= 3y^2\\), for \\(0 \\leq y \\leq 1\\).\n\nFind \\(\\mathbb{P}(0 \\leq X \\leq 1, 0 \\leq Y \\leq \\frac12)\\)."
   },
   {
     "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#showing-independence-from-joint-pdf",
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#showing-independence-from-joint-pdf",
-    "title": "Lesson 13: Independence and Conditioning",
-    "section": "",
-    "text": "Example 2.1\n\n\nLet \\(f_{X,Y}(x,y)= 18 x^2 y^5\\), for \\(0 \\leq x \\leq 1, \\ 0 \\leq y \\leq 1\\).\n\nAre \\(X\\) and \\(Y\\) independent?"
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "Showing independence from joint pdf",
+    "text": "Showing independence from joint pdf\n\n\n\n\nExample 2.1\n\n\nLet \\(f_{X,Y}(x,y)= 18 x^2 y^5\\), for \\(0 \\leq x \\leq 1, \\ 0 \\leq y \\leq 1\\).\n\nAre \\(X\\) and \\(Y\\) independent?"
   },
   {
     "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#finding-cdf-from-two-independent-rvs",
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#finding-cdf-from-two-independent-rvs",
-    "title": "Lesson 13: Independence and Conditioning",
-    "section": "",
-    "text": "Example 2.2\n\n\nLet \\(f_{X,Y}(x,y)= 18 x^2 y^5\\), for \\(0 \\leq x \\leq 1, \\ 0 \\leq y \\leq 1\\).\n\nFind \\(F_{X,Y}(x,y)\\)."
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "Finding CDF from two independent RVs",
+    "text": "Finding CDF from two independent RVs\n\n\n\n\nExample 2.2\n\n\nLet \\(f_{X,Y}(x,y)= 18 x^2 y^5\\), for \\(0 \\leq x \\leq 1, \\ 0 \\leq y \\leq 1\\).\n\nFind \\(F_{X,Y}(x,y)\\)."
   },
   {
     "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#showing-independence-from-joint-pdf-1",
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#showing-independence-from-joint-pdf-1",
-    "title": "Lesson 13: Independence and Conditioning",
-    "section": "",
-    "text": "Do this problem at home for extra practice. The solution is available in Meike’s video!\n\n\n\n\n\n\n\nExample 3\n\n\nLet \\(f_{X,Y}(x,y)= 2 e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\). Are \\(X\\) and \\(Y\\) independent?"
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "Showing independence from joint pdf",
+    "text": "Showing independence from joint pdf\n\n\n\nDo this problem at home for extra practice. The solution is available in Meike’s video!\n\n\n\n\n\n\n\nExample 3\n\n\nLet \\(f_{X,Y}(x,y)= 2 e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\). Are \\(X\\) and \\(Y\\) independent?"
   },
   {
     "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#final-statement-on-independence",
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#final-statement-on-independence",
-    "title": "Lesson 13: Independence and Conditioning",
-    "section": "",
-    "text": "If \\(f_{X,Y}(x,y)= g(x)h(y)\\), where \\(g(x)\\) and \\(h(y)\\) are pdf’s, then \\(X\\) and \\(Y\\) are independent.\n\nThe domain of the joint pdf needs to be independent as well!!\n\n\n       \n\nIf \\(F_{X,Y}(x,y)= G(x)H(y)\\), where \\(G(x)\\) and \\(H(y)\\) are cdf’s, then \\(X\\) and \\(Y\\) are independent.\n\nThe domain of the joint CDF needs to be independent as well!!"
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "Final statement on independence",
+    "text": "Final statement on independence\n\nIf \\(f_{X,Y}(x,y)= g(x)h(y)\\), where \\(g(x)\\) and \\(h(y)\\) are pdf’s, then \\(X\\) and \\(Y\\) are independent.\n\nThe domain of the joint pdf needs to be independent as well!!\n\n\n       \n\nIf \\(F_{X,Y}(x,y)= G(x)H(y)\\), where \\(G(x)\\) and \\(H(y)\\) are cdf’s, then \\(X\\) and \\(Y\\) are independent.\n\nThe domain of the joint CDF needs to be independent as well!!"
   },
   {
     "objectID": "lessons/15_Variance/12_Variance_key_info.html",
@@ -19968,21 +19968,21 @@
     "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#this-chapters-main-example",
     "title": "Lesson 11: Joint distributions",
     "section": "This chapter’s main example",
-    "text": "This chapter’s main example\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(p_{X,Y}(x,y)\\).\nFind \\(\\mathbb{P}(X+Y=3).\\)\nFind \\(\\mathbb{P}(Y = 1).\\)\nFind \\(\\mathbb{P}(Y \\leq 2).\\)\nFind the joint CDF \\(F_{X,Y}(x,y)\\) for the joint pmf \\(p_{X,Y}(x,y)\\)\nFind the marginal CDFs \\(F_{X}(x)\\) and \\(F_{Y}(y)\\)\nFind \\(p_{X|Y}(x|y)\\).\nAre \\(X\\) and \\(Y\\) independent? Why or why not?"
+    "text": "This chapter’s main example\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(p_{X,Y}(x,y)\\).\nFind \\(\\mathbb{P}(X+Y=3).\\)\nFind \\(\\mathbb{P}(Y = 1).\\)\nFind \\(\\mathbb{P}(Y \\leq 2).\\)\nFind the joint CDF \\(F_{X,Y}(x,y)\\) for the joint pmf \\(p_{X,Y}(x,y)\\)\nFind the marginal CDFs \\(F_{X}(x)\\) and \\(F_{Y}(y)\\)"
   },
   {
     "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-pmf",
     "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-pmf",
     "title": "Lesson 11: Joint distributions",
     "section": "Joint pmf",
-    "text": "Joint pmf\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(p_{X,Y}(x,y)\\).\nFind \\(\\mathbb{P}(X+Y=3).\\)"
+    "text": "Joint pmf\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(p_{X,Y}(x,y)\\)\nFind \\(\\mathbb{P}(X+Y=3)\\)"
   },
   {
     "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#marginal-pmfs",
     "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#marginal-pmfs",
     "title": "Lesson 11: Joint distributions",
     "section": "Marginal pmf’s",
-    "text": "Marginal pmf’s\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(\\mathbb{P}(Y = 1).\\)\nFind \\(\\mathbb{P}(Y \\leq 2).\\)"
+    "text": "Marginal pmf’s\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(\\mathbb{P}(Y = 1)\\)\nFind \\(\\mathbb{P}(Y \\leq 2)\\)"
   },
   {
     "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#remarks-on-the-joint-pmf",
@@ -19996,7 +19996,7 @@
     "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#what-is-a-joint-cdf",
     "title": "Lesson 11: Joint distributions",
     "section": "What is a joint CDF?",
-    "text": "What is a joint CDF?\n\n\nDefinition: joint CDF\n\n\nThe joint CDF of a pair of discrete r.v.’s \\(X\\) and \\(Y\\) is \\[F_{X,Y}(x,y) = \\mathbb{P}(X \\leq x\\ and\\ Y \\leq y) = \\mathbb{P}(X \\leq x, Y \\leq y)\\]"
+    "text": "What is a joint CDF?\n\n\nDefinition: joint CDF\n\n\nThe joint CDF of a pair of discrete RV’s \\(X\\) and \\(Y\\) is \\[F_{X,Y}(x,y) = \\mathbb{P}(X \\leq x\\ and\\ Y \\leq y) = \\mathbb{P}(X \\leq x, Y \\leq y)\\]"
   },
   {
     "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-cdfs",
@@ -20017,7 +20017,7 @@
     "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#remarks-on-the-joint-and-marginal-cdf",
     "title": "Lesson 11: Joint distributions",
     "section": "Remarks on the joint and marginal CDF",
-    "text": "Remarks on the joint and marginal CDF\n\n\\(F_X(x)\\): right most columns of the CDf table (where the \\(Y\\) values are largest)\n\\(F_Y(y)\\): bottom row of the table (where X values are largest)\n\\(F_X(x)=\\lim\\limits_{y\\rightarrow\\infty}F_{X, Y}(x,y)\\)\n\\(F_Y(y)=\\lim\\limits_{x\\rightarrow\\infty}F_{X, Y}(x,y)\\)"
+    "text": "Remarks on the joint and marginal CDF\n\n\\(F_X(x)\\): right most columns of the CDF table (where the \\(Y\\) values are largest)\n\\(F_Y(y)\\): bottom row of the table (where X values are largest)\n\\(F_X(x)=\\lim\\limits_{y\\rightarrow\\infty}F_{X, Y}(x,y)\\)\n\\(F_Y(y)=\\lim\\limits_{x\\rightarrow\\infty}F_{X, Y}(x,y)\\)"
   },
   {
     "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#independence-and-conditioning",
@@ -20101,21 +20101,21 @@
     "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#what-are-the-marginal-pdfs",
     "title": "Lesson 11: Joint distributions",
     "section": "What are the marginal pdf’s?",
-    "text": "What are the marginal pdf’s?\n\n\nDefinition: Marginal pdf’s\n\n\nSuppose \\(X\\) and \\(Y\\) are continuous r.v.’s, with joint pdf \\(f_{X,Y}(x,y)\\). Then the marginal probability density functions are \\[\\begin{aligned}\nf_X(x)&=& \\int_{-\\infty}^{\\infty} f_{X,Y}(x,y)dy\\\\\nf_Y(y)&=& \\int_{-\\infty}^{\\infty} f_{X,Y}(x,y)dx\n\\end{aligned}\\]"
+    "text": "What are the marginal pdf’s?\n\n\nDefinition: Marginal pdf’s\n\n\nSuppose \\(X\\) and \\(Y\\) are continuous RV’s, with joint pdf \\(f_{X,Y}(x,y)\\). Then the marginal probability density functions are \\[\\begin{aligned}\nf_X(x)&=& \\int_{-\\infty}^{\\infty} f_{X,Y}(x,y)dy\\\\\nf_Y(y)&=& \\int_{-\\infty}^{\\infty} f_{X,Y}(x,y)dx\n\\end{aligned}\\]"
   },
   {
     "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#common-steps-for-solving-problems",
     "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#common-steps-for-solving-problems",
     "title": "Lesson 11: Joint distributions",
     "section": "Common steps for solving problems",
-    "text": "Common steps for solving problems\n\nSet up the domain of the pdf with a picture\nTranslate to needed integrands\n\nFor probability: shade in the area of interest, then translate\nFor expected value: translate domain\n\nSet up integral: \\(dxdy\\) or \\(dydx\\)?\nSolve integral!"
+    "text": "Common steps for solving problems\n\nSet up the domain of the pdf with a picture\n\n \n\nTranslate to needed integrands\n\nFor probability: shade in the area of interest, then translate\nFor expected value: translate domain\n\n\n \n\nSet up integral: \\(dxdy\\) or \\(dydx\\)?\n\n \n\nSolve integral!"
   },
   {
     "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-of-joint-pdf",
     "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-of-joint-pdf",
     "title": "Lesson 11: Joint distributions",
     "section": "Example of joint pdf",
-    "text": "Example of joint pdf\n\n\n\n\nExample 1.1\n\n\nLet \\(f_{X,Y}(x,y)= \\frac32 y^2\\), for \\(0 \\leq x \\leq 2, \\ 0 \\leq y \\leq 1\\).\n\nFind \\(\\mathbb{P}(0 \\leq X \\leq 1, 0 \\leq Y \\leq \\frac12)\\)."
+    "text": "Example of joint pdf\n\n\n\n\nExample 1.1\n\n\nLet \\(f_{X,Y}(x,y)= \\frac32 y^2\\), for \\(0 \\leq x \\leq 2, \\ 0 \\leq y \\leq 1\\).\n\nFind \\(\\mathbb{P}(0 \\leq X \\leq 1, 0 \\leq Y \\leq \\frac12)\\)"
   },
   {
     "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-of-joint-pdf-1",
@@ -20143,7 +20143,7 @@
     "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#lets-complicate-this-even-more",
     "title": "Lesson 11: Joint distributions",
     "section": "Let’s complicate this even more!",
-    "text": "Let’s complicate this even more!\n\n\n\n\nExample 3.1\n\n\nLet \\(X\\) and \\(Y\\) have constant density on the square \\(0 \\leq X \\leq 4, 0 \\leq Y \\leq 4\\).\n\nFind \\(\\mathbb{P}(|X-Y| &lt; 2)\\)"
+    "text": "Let’s complicate this even more!\n\n\n\n\nExample 3.2\n\n\nLet \\(X\\) and \\(Y\\) have constant density on the square \\(0 \\leq X \\leq 4, 0 \\leq Y \\leq 4\\).\n\nLet \\(M = \\max(X,Y)\\). Find the pdf for \\(M\\), that is \\(f_M(m)\\)"
   },
   {
     "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#finding-the-pdf-of-a-transformation",
@@ -20157,7 +20157,7 @@
     "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#lets-complicate-this-even-more-1",
     "title": "Lesson 11: Joint distributions",
     "section": "Let’s complicate this even more!",
-    "text": "Let’s complicate this even more!\n\n\n\n\nExample 3.2\n\n\nLet \\(X\\) and \\(Y\\) have constant density on the square \\(0 \\leq X \\leq 4, 0 \\leq Y \\leq 4\\).\n\nLet \\(M = \\max(X,Y)\\). Find the pdf for \\(M\\), that is \\(f_M(m)\\)."
+    "text": "Let’s complicate this even more!\n\n\n\n\nExample 3.3\n\n\nLet \\(X\\) and \\(Y\\) have constant density on the square \\(0 \\leq X \\leq 4, 0 \\leq Y \\leq 4\\).\n\nLet \\(Z = \\min(X,Y)\\). Find the pdf for \\(Z\\), that is \\(f_Z(z)\\).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDo this problem at home for extra practice. I’ll add the solution to the annotated notes!"
   },
   {
     "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#lets-complicate-this-even-more-2",
@@ -20171,7 +20171,7 @@
     "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#lets-complicate-this-even-further",
     "title": "Lesson 11: Joint distributions",
     "section": "Let’s complicate this even further!",
-    "text": "Let’s complicate this even further!\n\n\n\nDo this problem at home for extra practice. I’ll add the solution to the annotated notes!\n\n\n\n\n\n\n\nExample 4\n\n\nLet \\(X\\) and \\(Y\\) have joint density \\(f_{X,Y}(x,y)= \\frac85(x+y)\\) in the region \\(0 &lt; x &lt; 1,\\ \\frac12 &lt; y &lt;1\\). Find the pdf of the r.v. \\(Z\\), where \\(Z=XY\\)."
+    "text": "Let’s complicate this even further!\n\n\n\nDo this problem at home for extra practice. I’ll add the solution to the annotated notes!\n\n\n\n\n\n\n\nExample 4\n\n\nLet \\(X\\) and \\(Y\\) have joint density \\(f_{X,Y}(x,y)= \\frac85(x+y)\\) in the region \\(0 &lt; x &lt; 1,\\ \\frac12 &lt; y &lt;1\\). Find the pdf of the RV \\(Z\\), where \\(Z=XY\\)."
   },
   {
     "objectID": "lessons/10_Transformations/10_Transformations.html#cdf-method",
@@ -20890,56 +20890,56 @@
   {
     "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#conditional-probabilities-weve-seen-before",
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#conditional-probabilities-weve-seen-before",
-    "title": "Lesson 13: Independence and Conditioning",
+    "title": "Lesson 12: Independence and Conditioning",
     "section": "Conditional probabilities we’ve seen before",
     "text": "Conditional probabilities we’ve seen before\n\n\nWhat do we know about conditional probabilities for events and discrete RVs?    \nFor events:\n\\[P(A | B) = \\dfrac{P(A \\cap B)}{P(B)}\\]    \nFor discrete RVs: \\[p_{X|Y}(x|y) = P(X=x|Y=y) = \\dfrac{p_{X,Y}(x,y)}{p_Y(y)}\\]\n\n\n\nWhat does it mean for conditional densities of continuous RVs?\nFor continuous RVs:"
   },
   {
     "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#example-starting-from-a-joint-pdf-first-try",
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#example-starting-from-a-joint-pdf-first-try",
-    "title": "Lesson 13: Independence and Conditioning",
+    "title": "Lesson 12: Independence and Conditioning",
     "section": "Example starting from a joint pdf: first try!",
     "text": "Example starting from a joint pdf: first try!\n\n\n\n\nExample 1.1\n\n\nLet \\(f_{X,Y}(x,y)= 5 e^{-x-3y}\\), for \\(0 &lt; y &lt; \\frac{x}{2}\\).\n\nFind \\(\\mathbb{P}(2&lt;X&lt;10|Y=4)\\)"
   },
   {
     "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#what-is-a-conditional-density",
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#what-is-a-conditional-density",
-    "title": "Lesson 13: Independence and Conditioning",
+    "title": "Lesson 12: Independence and Conditioning",
     "section": "What is a conditional density?",
     "text": "What is a conditional density?\n\n\n\n\nDefinition: Conditional density\n\n\nThe conditional density of a r.v. \\(X\\) given \\(Y=y\\), is \\[f_{X|Y}(x|y)= \\frac{f_{X,Y}(x,y)}{f_Y(y)},\\] for \\(f_Y(y)&gt; 0\\)\n\n\n\n\n\nRemarks\n\nIt follows from the definition for the conditional density \\(f_{X|Y}(x|y)\\), that \\[f_{X,Y}(x,y)= f_{X|Y}(x|y)f_Y(y).\\]\n\n     \n\nFor a fixed value of \\(Y=y\\), the conditional density \\(f_{X|Y}(x|y)\\) is an actual pdf, meaning\n\n\\(f_{X|Y}(x|y)\\geq 0\\) for all \\(x\\) and \\(y\\), and\n\\(\\displaystyle\\int_{-\\infty}^{\\infty} f_{X|Y}(x|y)dx =1\\)."
   },
   {
     "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#example-starting-from-a-joint-pdf-second-try-12",
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#example-starting-from-a-joint-pdf-second-try-12",
-    "title": "Lesson 13: Independence and Conditioning",
+    "title": "Lesson 12: Independence and Conditioning",
     "section": "Example starting from a joint pdf: second try! (1/2)",
     "text": "Example starting from a joint pdf: second try! (1/2)\n\n\n\n\nExample 1.1\n\n\nLet \\(f_{X,Y}(x,y)= 5 e^{-x-3y}\\), for \\(0 &lt; y &lt; \\frac{x}{2}\\).\n\nFind \\(\\mathbb{P}(2&lt;X&lt;10|Y=4)\\)"
   },
   {
     "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#example-starting-from-a-joint-pdf-second-try-22",
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#example-starting-from-a-joint-pdf-second-try-22",
-    "title": "Lesson 13: Independence and Conditioning",
+    "title": "Lesson 12: Independence and Conditioning",
     "section": "Example starting from a joint pdf: second try! (2/2)",
     "text": "Example starting from a joint pdf: second try! (2/2)"
   },
   {
     "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#example-starting-from-a-joint-pdf",
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#example-starting-from-a-joint-pdf",
-    "title": "Lesson 13: Independence and Conditioning",
+    "title": "Lesson 12: Independence and Conditioning",
     "section": "Example starting from a joint pdf",
-    "text": "Example starting from a joint pdf\n\n\n\n\n\n\nDo this problem at home for extra practice. The solution is available in Meike’s video!\n\n\n\n\n\n\n\nExample 1.2\n\n\nLet \\(f_{X,Y}(x,y)= 5 e^{-x-3y}\\), for \\(0 &lt; y &lt; \\frac{x}{2}\\).\n\nFind \\(\\mathbb{P}(X&gt;20 |Y=5)\\)"
+    "text": "Example starting from a joint pdf\n\n\n\nDo this problem at home for extra practice. The solution is available in Meike’s video!\n\n\n\n\n\n\n\nExample 1.2\n\n\nLet \\(f_{X,Y}(x,y)= 5 e^{-x-3y}\\), for \\(0 &lt; y &lt; \\frac{x}{2}\\).\n\nFind \\(\\mathbb{P}(X&gt;20 |Y=5)\\)"
   },
   {
     "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#finding-probability-with-conditional-domain-and-pdf",
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#finding-probability-with-conditional-domain-and-pdf",
-    "title": "Lesson 13: Independence and Conditioning",
+    "title": "Lesson 12: Independence and Conditioning",
     "section": "Finding probability with conditional domain and pdf",
-    "text": "Finding probability with conditional domain and pdf\n\n\n\n\n\n\nDo this problem at home for extra practice. The solution is available in Meike’s video!\n\n\n\n\n\n\n\nExample 2\n\n\nRandomly choose a point \\(X\\) from the interval \\([0,1]\\), and given \\(X=x\\), randomly choose a point \\(Y\\) from \\([0,x]\\). Find \\(\\mathbb{P}(0 &lt; Y &lt; \\frac14)\\)."
+    "text": "Finding probability with conditional domain and pdf\n\n\n\nDo this problem at home for extra practice. The solution is available in Meike’s video!\n\n\n\n\n\n\n\nExample 2\n\n\nRandomly choose a point \\(X\\) from the interval \\([0,1]\\), and given \\(X=x\\), randomly choose a point \\(Y\\) from \\([0,x]\\). Find \\(\\mathbb{P}(0 &lt; Y &lt; \\frac14)\\)."
   },
   {
     "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#independence-and-conditional-distributions",
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#independence-and-conditional-distributions",
-    "title": "Lesson 13: Independence and Conditioning",
+    "title": "Lesson 12: Independence and Conditioning",
     "section": "Independence and conditional distributions",
     "text": "Independence and conditional distributions\n    Question What is \\(f_{X|Y}(x|y)\\) if \\(X\\) and \\(Y\\) are independent?\n\\[f_{X|Y}(x|y) = \\dfrac{f_{X,Y}(x,y)}{f_y(y)} = \\dfrac{f_{X}(x)f_y(y)}{f_y(y)} = f_{X}(x)\\]\n       \n\nIf \\(f_{X|Y}(x|y)\\) does not depend on \\(y\\) (including the bounds/domain), then \\(X\\) and \\(Y\\) are independent."
   },
@@ -20948,21 +20948,21 @@
     "href": "lessons/11_Joint_distributions/11_Joint_distributions_key_info.html",
     "title": "Key Info",
     "section": "",
-    "text": "HW 02 assignments are graded!\n\nSolutions and videos are posted!\n\nFinish the discrete distributions notes\n\nThen get into joint distributions"
+    "text": "Midterm feedback!\nHomework 2 feedback from Charles\n\nPeople forgot to use combinations for binary distribution\nSome people didn’t get all of the combinations for question 3\nSome didn’t know how to break up the venn diagram to find each prob. Or label it correctly\nSome people inserted \\(A \\cup B\\), \\(A \\cup C\\), \\(B \\cup C\\) into the equation for \\(A \\cup B \\cup C\\) …somehow it gets the same probability for A&B&C even though that the wrong way to do it"
   },
   {
     "objectID": "lessons/11_Joint_distributions/11_Joint_distributions_key_info.html#announcements",
     "href": "lessons/11_Joint_distributions/11_Joint_distributions_key_info.html#announcements",
     "title": "Key Info",
     "section": "",
-    "text": "HW 02 assignments are graded!\n\nSolutions and videos are posted!\n\nFinish the discrete distributions notes\n\nThen get into joint distributions"
+    "text": "Midterm feedback!\nHomework 2 feedback from Charles\n\nPeople forgot to use combinations for binary distribution\nSome people didn’t get all of the combinations for question 3\nSome didn’t know how to break up the venn diagram to find each prob. Or label it correctly\nSome people inserted \\(A \\cup B\\), \\(A \\cup C\\), \\(B \\cup C\\) into the equation for \\(A \\cup B \\cup C\\) …somehow it gets the same probability for A&B&C even though that the wrong way to do it"
   },
   {
     "objectID": "lessons/11_Joint_distributions/11_Joint_distributions_key_info.html#key-dates",
     "href": "lessons/11_Joint_distributions/11_Joint_distributions_key_info.html#key-dates",
     "title": "Key Info",
     "section": "Key Dates",
-    "text": "Key Dates\n\nHW 03 Assignment due this Thursday at 11pm\n\nI updated the homework assignment on the 18th!"
+    "text": "Key Dates\n\nHW 04 due this Sunday!\nMidterm feedback due Sunday as well!"
   },
   {
     "objectID": "lessons/11_Joint_distributions/25_Joint_densities_muddy_points.html",
@@ -20970,5 +20970,215 @@
     "title": "Muddy Points",
     "section": "",
     "text": "Muddy points from Fall 2023:\n\n1. How do pdf, CDF, and probability interact with each other?\nLet’s say we have a pdf, \\(f_X(x) = \\dfrac{1}{9}x^2\\) for \\(0 \\leq x \\leq 3\\). This is just a function. The pdf is not used on its own to report any probability. We must integrate over the pdf to find a probability.\n\nlibrary(\"ggplot2\")\neq = function(x){(1/9)*x^2}\nggplot(data.frame(x=c(1, 50)), aes(x=x)) + \n  stat_function(fun=eq) +\n  xlab(\"x\") + ylab(\"pdf\") +\n  xlim(0,3)\n\n\n\n\n\n\n\n\nThe total area under the pdf is 1. This makes our pdf valid.\n\neq = function(x){(1/9)*x^2}\nggplot(data.frame(x=c(1, 50)), aes(x=x)) + \n  stat_function(fun=eq) +\n  xlab(\"x\") + ylab(\"pdf\") +\n  xlim(0,3) +\n  stat_function(fun=eq, \n                xlim = c(0, 3),\n                geom = \"area\", \n                aes(fill = \"red\")) +\n  theme(legend.position = \"none\") +\n  annotate(\"text\", x = 0.5, y = 0.7, label = \"AUC = 1\", color = \"black\")\n\n\n\n\n\n\n\n\nIf we only look at a proportion of the area under the pdf, then we start constructing our probabilities. For example, we can look at probability that we have a value between 0 and 1.5.\n\nggplot(data.frame(x=c(1, 50)), aes(x=x)) + \n  stat_function(fun=eq) +\n  xlab(\"x\") + ylab(\"pdf\") +\n  xlim(0,3) +\n  stat_function(fun=eq, \n                xlim = c(0, 1.5),\n                geom = \"area\", \n                aes(fill = \"blue\")) +\n  theme(legend.position = \"none\") +\n  annotate(\"text\", x = 0.5, y = 0.7, label = \"AUC = 0.125\", color = \"black\")\n\n\n\n\n\n\n\n\nInstead of calculating the EXACT probability for each value between 0 and 3, we can find the CDF of the pdf.\nThe CDF is: \\[\nF_X(x) = \\left\\{\n        \\begin{array}{ll}\n            0 & \\quad x&lt;3 \\quad \\\\\n            \\dfrac{1}{27}x^3 & \\quad 0 \\leq x \\leq 3\\quad \\\\\n            1 & \\quad x&gt;3 \\quad\n        \\end{array}\n    \\right.\n\\]\n\ncdf = function(x){(1/27)*x^3}\nggplot(data.frame(x=c(1, 50)), aes(x=x)) + \n  stat_function(fun=cdf) +\n  xlab(\"x\") + ylab(\"CDF\") +\n  xlim(0,3) +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\nWhen \\(x=1.5\\), we can calculate the probability using the CDF. Remember that \\(F_X(x) = P(X \\leq x)\\). So we can say \\(P(X \\leq 1.5) = F_X(1.5) = \\dfrac{1}{27}(1.5)^3\\), which equals 0.125.\n\ncdf = function(x){(1/27)*x^3}\nggplot(data.frame(x=c(1, 50)), aes(x=x)) + \n  stat_function(fun=cdf) +\n  xlab(\"x\") + ylab(\"CDF\") +\n  xlim(0,3) +\n  theme(legend.position = \"none\") +\n  geom_point(aes(x=1.5, y=.125), colour=\"blue\", size=3) +\n  annotate(\"text\", x = 0.5, y = 0.7, label = \"CDF = 0.125\", color = \"black\")\n\nWarning in geom_point(aes(x = 1.5, y = 0.125), colour = \"blue\", size = 3): All aesthetics have length 1, but the data has 2 rows.\nℹ Please consider using `annotate()` or provide this layer with data containing\n  a single row.\n\n\n\n\n\n\n\n\n\nWe can also calculate the probability with an integral: \\(P(X \\leq 1.5) = \\displaystyle\\int_0^{1.5} \\dfrac{1}{9}x^2 dx\\).\nWe can also find the probability that X is between two numbers. \\(P(1\\leq X \\leq 1.5) = F_X(1.5) - F_X(1)\\) or \\(P(1\\leq X \\leq 1.5) = \\displaystyle\\int_1^{1.5} \\dfrac{1}{9}x^2 dx\\).\n\n\n2. Joint vs marginal vs conditional: How are we calculating the probability?\nIf we start at a joint probability \\(f_{X,Y}(x,y)\\)…. we can look at a few probabilities:\n\nJoint probability: \\(P(a \\leq X \\leq b, c \\leq Y \\leq d)\\)\n\\[P(a \\leq X \\leq b, c \\leq Y \\leq d) = \\displaystyle\\int_{x=a}^{x=b}\\displaystyle\\int_{y=c}^{y=d} f_{X,Y}(x,y) dydx\\]\nMarginal probability: \\(P(a \\leq X \\leq b)\\)\n\\[P(a \\leq X \\leq b) = \\displaystyle\\int_{x=a}^{x=b} f_{X}(x) dx\\]\nOR\n\\[P(a \\leq X \\leq b) = \\displaystyle\\int_{x=a}^{x=b}\\displaystyle\\int_{y=-\\inf}^{y=\\inf} f_{X,Y}(x,y) dydx\\]\nConditional probability: \\(P(a \\leq X \\leq b | Y = c)\\)\n\\[P(a \\leq X \\leq b | Y=c) = \\displaystyle\\int_{x=a}^{x=b} f_{X|Y}(x|y=c) dx\\]\nYou cannot calculate \\(P(a \\leq X \\leq b | Y = c)\\) by \\(\\dfrac{P(a \\leq X \\leq b, Y=c)}{P(Y = c)}\\) because \\(P(Y = c)\\) is 0. Instead, we need to find \\(f_{X|Y}(x|y=c)\\) by \\(\\dfrac{f_{X,Y}(x,y=c)}{f_{Y}(y=c)}\\) and THEN integrate over X.\n\n\n\n3. What are we actually finding by solving the double integral. In the first example, we found the probability was 1/16 after integrating but what does 1/16 mean in relation to the random variables X and Y?\nIt means that the volume contained by \\(0\\leq X \\leq 1\\), \\(0\\leq Y \\leq 1/2\\), and their joint pdf is 1/16 of the total volume contained by \\(0\\leq X \\leq 2\\), \\(0\\leq Y \\leq 1\\), and their joint pdf. The probability for a joint pdf is now a measure of the proportion of the volume.\nThis is not be confused with a probability from marginal pdf or pdf from one RV. The probability for marginal/single RV pdfs is the proportion of the area under the pdf for a specific range of values.\n\n\n4. Here’s a 3D plot of one of our joint pdf’s\n\\[\nf_{X,Y}(x,y) = 5e^{-x-3y} \\text{ for } 0 \\leq y \\leq x/2\n\\]\n\nlibrary(plotly)\n\nx = seq(0, 5, 0.1)\ny = seq(0, max(x)/2, 0.1/2)\nfn = expand.grid(x=x,y=y)\nfn$z = ifelse(fn$y&lt;fn$x/2, 5*exp( (-1)*fn$x - 3*fn$y), NA)\n\nz = matrix(fn$z, ncol = 51, nrow = 51, byrow = T)\n\nfig &lt;- plot_ly(x = x, y=y, z=z) %&gt;% add_surface()\n\nfig"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#how-to-define-the-joint-pdf-for-continuous-rvs",
+    "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#how-to-define-the-joint-pdf-for-continuous-rvs",
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "How to define the joint pdf for continuous RVs?",
+    "text": "How to define the joint pdf for continuous RVs?\n\n\nFor a single continuous RV \\(X\\) is a function \\(f_X(x)\\), such that for all real values \\(a,b\\) with \\(a \\leq b\\), \\[\\mathbb{P}(a \\leq X \\leq b) = \\int_a^b f_X(x)dx\\]\n\nFor two continuous RVs (\\(X\\) and \\(Y\\)), we can define the joint pdf, \\(f_{X,Y}(x,y)\\), such that for all real values \\(a,b, c, d\\) with \\(a \\leq b\\) and \\(c \\leq d\\), \\[\\mathbb{P}(a \\leq X \\leq b, c \\leq Y \\leq d) = \\int_a^b \\int_c^d f_{X,Y}(x,y)dydx\\]\n\n\nLearning Objectives\n\nShow that a joint pdf consists of two independent, continuous RVs.\nCombine two independent RVs into one joint pdf or CDF.\n\n\n\nHow do we represent independent continuous RVs in a joint pdf?\n\n\nWhat do we know about independence for events and discrete RVs?\nFor events: If \\(A \\perp B\\)\n\\[P(A \\cap B) = P(A)P(B)\\] \\[P(A|B) = P(A)\\]\nFor discrete RVs: If \\(X \\perp Y\\) \\[p_{X,Y}(x,y) = p_{X}(x)p_{Y}(y)\\] \\[F_{X,Y}(x,y) = F_{X}(x)F_{Y}(y)\\] \\[p_{X|Y}(x|y) = p_{X}(x)\\] \\[p_{Y|X}(y|x) = p_{Y}(y)\\]\n\n\n\nWhat does it mean for continuous r.v.’s to be independent?\nFor continuous RVs: If \\(X \\perp Y\\)\n\n\n\nConstructing a joint pdf from two independent, continuous RVs\n\n\n\n\nExample 1.1\n\n\nLet \\(X\\) and \\(Y\\) be independent r.v.’s with \\(f_X(x)= \\frac12\\), for \\(0 \\leq x \\leq 2\\) and \\(f_Y(y)= 3y^2\\), for \\(0 \\leq y \\leq 1\\).\n\nFind \\(f_{X,Y}(x,y)\\).\n\n\n\n\n\n\nConstructing a joint pdf from two independent, continuous RVs\n\n\n\n\nExample 1.2\n\n\nLet \\(X\\) and \\(Y\\) be independent r.v.’s with \\(f_X(x)= \\frac12\\), for \\(0 \\leq x \\leq 2\\) and \\(f_Y(y)= 3y^2\\), for \\(0 \\leq y \\leq 1\\).\n\nFind \\(\\mathbb{P}(0 \\leq X \\leq 1, 0 \\leq Y \\leq \\frac12)\\).\n\n\n\n\n\n\nShowing independence from joint pdf\n\n\n\n\nExample 2.1\n\n\nLet \\(f_{X,Y}(x,y)= 18 x^2 y^5\\), for \\(0 \\leq x \\leq 1, \\ 0 \\leq y \\leq 1\\).\n\nAre \\(X\\) and \\(Y\\) independent?\n\n\n\n\n\n\nFinding CDF from two independent RVs\n\n\n\n\nExample 2.2\n\n\nLet \\(f_{X,Y}(x,y)= 18 x^2 y^5\\), for \\(0 \\leq x \\leq 1, \\ 0 \\leq y \\leq 1\\).\n\nFind \\(F_{X,Y}(x,y)\\).\n\n\n\n\n\n\nShowing independence from joint pdf\n\n\n\nDo this problem at home for extra practice. The solution is available in Meike’s video!\n\n\n\n\n\n\n\nExample 3\n\n\nLet \\(f_{X,Y}(x,y)= 2 e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\). Are \\(X\\) and \\(Y\\) independent?\n\n\n\n\n\nFinal statement on independence\n\nIf \\(f_{X,Y}(x,y)= g(x)h(y)\\), where \\(g(x)\\) and \\(h(y)\\) are pdf’s, then \\(X\\) and \\(Y\\) are independent.\n\nThe domain of the joint pdf needs to be independent as well!!\n\n\n       \n\nIf \\(F_{X,Y}(x,y)= G(x)H(y)\\), where \\(G(x)\\) and \\(H(y)\\) are cdf’s, then \\(X\\) and \\(Y\\) are independent.\n\nThe domain of the joint CDF needs to be independent as well!!\n\n\n\n\n\nLearning Objectives\n\nCalculate the conditional probability density from a joint pdf\n\n\n\nConditional probabilities we’ve seen before\n\n\nWhat do we know about conditional probabilities for events and discrete RVs?    \nFor events:\n\\[P(A | B) = \\dfrac{P(A \\cap B)}{P(B)}\\]    \nFor discrete RVs: \\[p_{X|Y}(x|y) = P(X=x|Y=y) = \\dfrac{p_{X,Y}(x,y)}{p_Y(y)}\\]\n\n\n\nWhat does it mean for conditional densities of continuous RVs?\nFor continuous RVs:\n\n\n\nExample starting from a joint pdf: first try!\n\n\n\n\nExample 1.1\n\n\nLet \\(f_{X,Y}(x,y)= 5 e^{-x-3y}\\), for \\(0 &lt; y &lt; \\frac{x}{2}\\).\n\nFind \\(\\mathbb{P}(2&lt;X&lt;10|Y=4)\\)\n\n\n\n\n\n\nWhat is a conditional density?\n\n\n\n\nDefinition: Conditional density\n\n\nThe conditional density of a r.v. \\(X\\) given \\(Y=y\\), is \\[f_{X|Y}(x|y)= \\frac{f_{X,Y}(x,y)}{f_Y(y)},\\] for \\(f_Y(y)&gt; 0\\)\n\n\n\n\n\nRemarks\n\nIt follows from the definition for the conditional density \\(f_{X|Y}(x|y)\\), that \\[f_{X,Y}(x,y)= f_{X|Y}(x|y)f_Y(y).\\]\n\n     \n\nFor a fixed value of \\(Y=y\\), the conditional density \\(f_{X|Y}(x|y)\\) is an actual pdf, meaning\n\n\\(f_{X|Y}(x|y)\\geq 0\\) for all \\(x\\) and \\(y\\), and\n\\(\\displaystyle\\int_{-\\infty}^{\\infty} f_{X|Y}(x|y)dx =1\\).\n\n\n\n\n\nExample starting from a joint pdf: second try! (1/2)\n\n\n\n\nExample 1.1\n\n\nLet \\(f_{X,Y}(x,y)= 5 e^{-x-3y}\\), for \\(0 &lt; y &lt; \\frac{x}{2}\\).\n\nFind \\(\\mathbb{P}(2&lt;X&lt;10|Y=4)\\)\n\n\n\n\n\n\nExample starting from a joint pdf: second try! (2/2)\n\n\nExample starting from a joint pdf\n\n\n\nDo this problem at home for extra practice. The solution is available in Meike’s video!\n\n\n\n\n\n\n\nExample 1.2\n\n\nLet \\(f_{X,Y}(x,y)= 5 e^{-x-3y}\\), for \\(0 &lt; y &lt; \\frac{x}{2}\\).\n\nFind \\(\\mathbb{P}(X&gt;20 |Y=5)\\)\n\n\n\n\n\n\nFinding probability with conditional domain and pdf\n\n\n\nDo this problem at home for extra practice. The solution is available in Meike’s video!\n\n\n\n\n\n\n\nExample 2\n\n\nRandomly choose a point \\(X\\) from the interval \\([0,1]\\), and given \\(X=x\\), randomly choose a point \\(Y\\) from \\([0,x]\\). Find \\(\\mathbb{P}(0 &lt; Y &lt; \\frac14)\\).\n\n\n\n\n\nIndependence and conditional distributions\n    Question What is \\(f_{X|Y}(x|y)\\) if \\(X\\) and \\(Y\\) are independent?\n\\[f_{X|Y}(x|y) = \\dfrac{f_{X,Y}(x,y)}{f_y(y)} = \\dfrac{f_{X}(x)f_y(y)}{f_y(y)} = f_{X}(x)\\]\n       \n\nIf \\(f_{X|Y}(x|y)\\) does not depend on \\(y\\) (including the bounds/domain), then \\(X\\) and \\(Y\\) are independent."
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#what-is-a-joint-distribution",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#what-is-a-joint-distribution",
+    "title": "Lesson 11: Joint distributions",
+    "section": "What is a joint distribution?",
+    "text": "What is a joint distribution?\n\n\n\n\nDefinition: joint pmf\n\n\nThe joint pmf of a pair of discrete RV’s \\(X\\) and \\(Y\\) is \\[\\begin{aligned}\np_{X,Y}(x,y) = & \\mathbb{P}(X=x \\cap Y=y) \\\\ = & \\mathbb{P}(X=x, Y=y)\n\\end{aligned}\\]\n\n\n\n\n\nDefinition: joint pdf\n\n\nThe joint pdf for two continuous RVs (\\(X\\) and \\(Y\\)) is \\(f_{X,Y}(x,y)\\), such that we have the following joint probability: \\[\\begin{aligned}\n\\mathbb{P}(a \\leq X \\leq b, & c \\leq Y \\leq d) = \\\\ & \\int_a^b \\int_c^d f_{X,Y}(x,y)dydx\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#important-properties-of-joint-distributions",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#important-properties-of-joint-distributions",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Important properties of joint distributions",
+    "text": "Important properties of joint distributions\n\n\n\n\nProperties of joint pmf’s\n\n\n\nA joint pmf \\(p_{X,Y}(x,y)\\) must satisfy the following properties:\n\n\\(0 \\geq p_{X,Y}(x,y) \\leq 1\\) for all \\(x, y\\)\n\n \n\n\\(\\sum \\limits_{\\{all\\ x\\}} \\sum \\limits_{\\{all\\ y\\}} p_{X,Y}(x,y)=1\\)\n\n\n\n\n\n\n\nProperties of joint pdf’s\n\n\n\nA joint pdf \\(f_{X,Y}(x,y)\\) must satisfy the following properties:\n\n\\(f_{X,Y}(x,y)\\geq 0\\) for all \\(x,y\\)\n\n \n\n\\(\\displaystyle\\int_{-\\infty}^{\\infty}\\displaystyle\\int_{-\\infty}^{\\infty} f_{X,Y}(x,y)dxdy=1\\)\n\n\n \n\nRemember that \\(f_{X,Y}(x,y)\\neq \\mathbb{P}(X=x, Y=y)\\)!!!"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#marginal-distributions",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#marginal-distributions",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Marginal distributions",
+    "text": "Marginal distributions\n\n\n\n\nMarginal pmf’s\n\n\nSuppose \\(X\\) and \\(Y\\) are discrete RV’s, with joint pmf \\(p_{X,Y}(x,y)\\). Then the marginal probability mass functions are\n\\[p_X(x) = \\sum \\limits_{\\{all\\ y\\}} p_{X,Y}(x,y)\\]\n\\[p_Y(y) = \\sum \\limits_{\\{all\\ x\\}} p_{X,Y}(x,y)\\]\n\n\n\n\n\nMarginal pdf’s\n\n\nSuppose \\(X\\) and \\(Y\\) are continuous RV’s, with joint pdf \\(f_{X,Y}(x,y)\\). Then the marginal probability density functions are \\[\\begin{aligned}\nf_X(x)&=& \\int_{-\\infty}^{\\infty} f_{X,Y}(x,y)dy\\\\\nf_Y(y)&=& \\int_{-\\infty}^{\\infty} f_{X,Y}(x,y)dx\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-cumulative-distribution-functions-cdfs",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-cumulative-distribution-functions-cdfs",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Joint cumulative distribution functions (CDFs)",
+    "text": "Joint cumulative distribution functions (CDFs)\n\n\n\n\nJoint CDF for discrete RVs\n\n\nThe joint CDF of a pair of discrete RV’s \\(X\\) and \\(Y\\) is \\[\\begin{aligned}\nF_{X,Y}(x,y) = &\\mathbb{P}(X \\leq x\\ and\\ Y \\leq y) \\\\ = &\\mathbb{P}(X \\leq x, Y \\leq y)\n\\end{aligned}\\]\n\n\n\n\n\nJoint CDF for continuous RVs\n\n\nThe joint CDF of continuous random variables \\(X\\) and \\(Y\\), is the function \\(F_{X,Y}(x,y)\\), such that for all real values of \\(x\\) and \\(y\\), \\[\\begin{aligned}\nF_{X,Y}(x,y)= \\mathbb{P}(X \\leq x, & Y \\leq y) = \\\\\n& \\int_{-\\infty}^x\\int_{-\\infty}^y f_{X,Y}(s,t)dtds\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Joint distribution for two discrete random variables",
+    "text": "Joint distribution for two discrete random variables\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(p_{X,Y}(x,y)\\)\nFind \\(\\mathbb{P}(X+Y=3)\\)\nFind \\(\\mathbb{P}(Y = 1)\\)\nFind \\(\\mathbb{P}(Y \\leq 2)\\)\nFind the joint CDF \\(F_{X,Y}(x,y)\\) for the joint pmf \\(p_{X,Y}(x,y)\\)\nFind the marginal CDFs \\(F_{X}(x)\\) and \\(F_{Y}(y)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#another-example-lets-complicate-this-even-more",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#another-example-lets-complicate-this-even-more",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Another example: let’s complicate this even more!",
+    "text": "Another example: let’s complicate this even more!\n\n\n\n\nExample 3.1\n\n\nLet \\(X\\) and \\(Y\\) have constant density on the square \\(0 \\leq X \\leq 4, 0 \\leq Y \\leq 4\\).\n\nFind \\(\\mathbb{P}(|X-Y| &lt; 2)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#recall-finding-the-pdf-of-a-transformation",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#recall-finding-the-pdf-of-a-transformation",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Recall: Finding the pdf of a transformation",
+    "text": "Recall: Finding the pdf of a transformation\n\nLet \\(M\\) be a transformation of \\(X\\) and \\(Y\\): \\(M = g(X, Y)\\)\nWhen we have a transformation of \\(X\\) and \\(Y\\), \\(M\\), we need to follow the CDF method to find the pdf of \\(M\\)\n\nWe follow CDF method:\n\nStart with the joint pdf for \\(X\\) and \\(Y\\)\n\naka \\(f_{X,Y}(x, y)\\)\n\nTranslate the domain of \\(X\\) and \\(Y\\) to \\(M\\): find possible values of \\(M\\)\nFind the CDF of \\(M\\)\n\naka \\(F_M(m) = P(M \\leq m) = P(g(X, Y) \\leq m)\\)\n\nTake the derivative of the CDF of \\(M\\) with respect to \\(m\\) to find the pdf of \\(M\\)\n\naka \\(f_M(m) = \\dfrac{d}{dm}F_M(m)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-16",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-16",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Joint distribution for two discrete random variables (1/6)",
+    "text": "Joint distribution for two discrete random variables (1/6)\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(p_{X,Y}(x,y)\\)\nFind \\(\\mathbb{P}(X+Y=3)\\)\nFind \\(\\mathbb{P}(Y = 1)\\)\nFind \\(\\mathbb{P}(Y \\leq 2)\\)\nFind the joint CDF \\(F_{X,Y}(x,y)\\) for the joint pmf \\(p_{X,Y}(x,y)\\)\nFind the marginal CDFs \\(F_{X}(x)\\) and \\(F_{Y}(y)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-16-1",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-16-1",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Joint distribution for two discrete random variables (1/6)",
+    "text": "Joint distribution for two discrete random variables (1/6)\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(p_{X,Y}(x,y)\\)\nFind \\(\\mathbb{P}(X+Y=3)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-16-2",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-16-2",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Joint distribution for two discrete random variables (1/6)",
+    "text": "Joint distribution for two discrete random variables (1/6)\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(\\mathbb{P}(Y = 1)\\)\nFind \\(\\mathbb{P}(Y \\leq 2)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-16-3",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-16-3",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Joint distribution for two discrete random variables (1/6)",
+    "text": "Joint distribution for two discrete random variables (1/6)\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind the marginal CDFs \\(F_{X}(x)\\) and \\(F_{Y}(y)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-15",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-15",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Joint distribution for two discrete random variables (1/5)",
+    "text": "Joint distribution for two discrete random variables (1/5)\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(p_{X,Y}(x,y)\\)\nFind \\(\\mathbb{P}(X+Y=3)\\)\nFind \\(\\mathbb{P}(Y = 1)\\)\nFind \\(\\mathbb{P}(Y \\leq 2)\\)\nFind the joint CDF \\(F_{X,Y}(x,y)\\) for the joint pmf \\(p_{X,Y}(x,y)\\)\nFind the marginal CDFs \\(F_{X}(x)\\) and \\(F_{Y}(y)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-25",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-25",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Joint distribution for two discrete random variables (2/5)",
+    "text": "Joint distribution for two discrete random variables (2/5)\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(p_{X,Y}(x,y)\\)\nFind \\(\\mathbb{P}(X+Y=3)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-35",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-35",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Joint distribution for two discrete random variables (3/5)",
+    "text": "Joint distribution for two discrete random variables (3/5)\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(\\mathbb{P}(Y = 1)\\)\nFind \\(\\mathbb{P}(Y \\leq 2)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-45",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-45",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Joint distribution for two discrete random variables (4/5)",
+    "text": "Joint distribution for two discrete random variables (4/5)\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind the joint CDF \\(F_{X,Y}(x,y)\\) for the joint pmf \\(p_{X,Y}(x,y)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-55",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#joint-distribution-for-two-discrete-random-variables-55",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Joint distribution for two discrete random variables (5/5)",
+    "text": "Joint distribution for two discrete random variables (5/5)\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind the marginal CDFs \\(F_{X}(x)\\) and \\(F_{Y}(y)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#common-steps-for-joint-pdfs-and-cdfs",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#common-steps-for-joint-pdfs-and-cdfs",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Common steps for joint pdfs and CDFs",
+    "text": "Common steps for joint pdfs and CDFs\n\nSet up the domain of the pdf with a picture\n\n \n\nTranslate to needed integrands\n\nFor probability: shade in the area of interest, then translate\nFor expected value: translate domain\n\n\n \n\nSet up integral: \\(dxdy\\) or \\(dydx\\)?\n\n \n\nSolve integral!"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-1-joint-pdf-12",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-1-joint-pdf-12",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Example 1: Joint pdf (1/2)",
+    "text": "Example 1: Joint pdf (1/2)\n\n\n\n\nExample 1.1\n\n\nLet \\(f_{X,Y}(x,y)= \\frac32 y^2\\), for \\(0 \\leq x \\leq 2, \\ 0 \\leq y \\leq 1\\).\n\nFind \\(\\mathbb{P}(0 \\leq X \\leq 1, 0 \\leq Y \\leq \\frac12)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-1-joint-pdf-22",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-1-joint-pdf-22",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Example 1: Joint pdf (2/2)",
+    "text": "Example 1: Joint pdf (2/2)\n\n\n\n\nExample 1.2\n\n\nLet \\(f_{X,Y}(x,y)= \\frac32 y^2\\), for \\(0 \\leq x \\leq 2, \\ 0 \\leq y \\leq 1\\).\n\nFind \\(f_X(x)\\) and \\(f_Y(y)\\)."
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-with-more-complicated-pdf-12",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-with-more-complicated-pdf-12",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Example with more complicated pdf (1/2)",
+    "text": "Example with more complicated pdf (1/2)\n\n\n\nDo this problem at home for extra practice. I’ll add the solution to the annotated notes!\n\n\n\n\n\n\n\nExample 3.1\n\n\nLet \\(f_{X,Y}(x,y)= 2 e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\).\n\nFind \\(f_X(x)\\) and \\(f_Y(y)\\)."
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-with-more-complicated-pdf-22",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-with-more-complicated-pdf-22",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Example with more complicated pdf (2/2)",
+    "text": "Example with more complicated pdf (2/2)\n\n\n\nDo this problem at home for extra practice. I’ll add the solution to the annotated notes!\n\n\n\n\n\n\n\nExample 3.2\n\n\nLet \\(f_{X,Y}(x,y)= 2 e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\).\n\nFind \\(\\mathbb{P}(Y &lt; 3)\\)."
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-of-a-joint-pdf-with-a-transformation-12",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-of-a-joint-pdf-with-a-transformation-12",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Example of a joint pdf with a transformation (1/2)",
+    "text": "Example of a joint pdf with a transformation (1/2)\n\n\n\n\nExample 4.1\n\n\nLet \\(X\\) and \\(Y\\) have constant density on the square \\(0 \\leq X \\leq 4, 0 \\leq Y \\leq 4\\).\n\nFind \\(\\mathbb{P}(|X-Y| &lt; 2)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-of-a-joint-pdf-with-a-transformation-12-1",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-of-a-joint-pdf-with-a-transformation-12-1",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Example of a joint pdf with a transformation (1/2)",
+    "text": "Example of a joint pdf with a transformation (1/2)\n\n\n\n\nExample 4.2\n\n\nLet \\(X\\) and \\(Y\\) have constant density on the square \\(0 \\leq X \\leq 4, 0 \\leq Y \\leq 4\\).\n\nLet \\(M = \\max(X,Y)\\). Find the pdf for \\(M\\), that is \\(f_M(m)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-of-a-joint-pdf-with-a-transformation-12-2",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-of-a-joint-pdf-with-a-transformation-12-2",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Example of a joint pdf with a transformation (1/2)",
+    "text": "Example of a joint pdf with a transformation (1/2)\n\n\n\n\nExample 4.3\n\n\nLet \\(X\\) and \\(Y\\) have constant density on the square \\(0 \\leq X \\leq 4, 0 \\leq Y \\leq 4\\).\n\nLet \\(Z = \\min(X,Y)\\). Find the pdf for \\(Z\\), that is \\(f_Z(z)\\).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDo this problem at home for extra practice. I’ll add the solution to the annotated notes!"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#last-example-more-complicated-transformation",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#last-example-more-complicated-transformation",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Last example: more complicated transformation",
+    "text": "Last example: more complicated transformation\n\n\n\nDo this problem at home for extra practice. I’ll add the solution to the annotated notes!\n\n\n\n\n\n\n\nExample 4\n\n\nLet \\(X\\) and \\(Y\\) have joint density \\(f_{X,Y}(x,y)= \\frac85(x+y)\\) in the region \\(0 &lt; x &lt; 1,\\ \\frac12 &lt; y &lt;1\\). Find the pdf of the RV \\(Z\\), where \\(Z=XY\\)."
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#last-example-for-home-more-complicated-transformation",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#last-example-for-home-more-complicated-transformation",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Last example for home: more complicated transformation",
+    "text": "Last example for home: more complicated transformation\n\n\n\n\nExample 5\n\n\nLet \\(X\\) and \\(Y\\) have joint density \\(f_{X,Y}(x,y)= \\frac85(x+y)\\) in the region \\(0 &lt; x &lt; 1,\\ \\frac12 &lt; y &lt;1\\). Find the pdf of the RV \\(Z\\), where \\(Z=XY\\)."
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-2-joint-pdf-12",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-2-joint-pdf-12",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Example 2: Joint pdf (1/2)",
+    "text": "Example 2: Joint pdf (1/2)\n\n\n\n\nExample 2.1\n\n\nLet \\(f_{X,Y}(x,y)= \\frac32 y^2\\), for \\(0 \\leq x \\leq 2, \\ 0 \\leq y \\leq 1\\).\n\nFind \\(\\mathbb{P}(0 \\leq X \\leq 1, 0 \\leq Y \\leq \\frac12)\\)"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-2-joint-pdf-22",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#example-2-joint-pdf-22",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Example 2: Joint pdf (2/2)",
+    "text": "Example 2: Joint pdf (2/2)\n\n\n\n\nExample 2.2\n\n\nLet \\(f_{X,Y}(x,y)= \\frac32 y^2\\), for \\(0 \\leq x \\leq 2, \\ 0 \\leq y \\leq 1\\).\n\nFind \\(f_X(x)\\) and \\(f_Y(y)\\)."
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions.html#quick-remarks-on-the-joint-and-marginal-cdf",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions.html#quick-remarks-on-the-joint-and-marginal-cdf",
+    "title": "Lesson 11: Joint distributions",
+    "section": "Quick remarks on the joint and marginal CDF",
+    "text": "Quick remarks on the joint and marginal CDF\n\n\\(F_X(x)\\): right most columns of the CDF table (where the \\(Y\\) values are largest)\n\\(F_Y(y)\\): bottom row of the table (where X values are largest)\n\\(F_X(x)=\\lim\\limits_{y\\rightarrow\\infty}F_{X, Y}(x,y)\\)\n\\(F_Y(y)=\\lim\\limits_{x\\rightarrow\\infty}F_{X, Y}(x,y)\\)"
   }
 ]

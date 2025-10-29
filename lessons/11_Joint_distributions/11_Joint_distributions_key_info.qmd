@@ -1,6 +1,5 @@
 ---
 title: "Key Info"
-date: "10/21/2024"
 date-modified: "today"
 format: 
   html:
@@ -11,12 +10,14 @@ editor_options:
 
 ## Announcements
 
-- HW 02 assignments are graded!
-  - Solutions and videos are posted!
-- Finish the discrete distributions notes
-  - Then get into joint distributions
+- Midterm feedback!
+- Homework 2 feedback from Charles
+  - People forgot to use combinations for binary distribution
+  - Some people didn't get all of the combinations for question 3
+  - Some didn't know how to break up the venn diagram to find each prob. Or label it correctly
+  - Some people inserted $A \cup B$, $A \cup C$, $B \cup C$ into the equation for $A \cup B \cup C$ ...somehow it gets the same probability for A&B&C even though that the wrong way to do it
 
 ## Key Dates
 
-- HW 03 Assignment due this Thursday at 11pm
-  - I updated the homework assignment on the 18th!
+- HW 04 due this Sunday!
+- Midterm feedback due Sunday as well!
