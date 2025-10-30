@@ -161,6 +161,7 @@ window.Quarto = {
   <ul>
   <li><a href="#directions" id="toc-directions" class="nav-link active" data-scroll-target="#directions">Directions</a></li>
   <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
+  <li><a href="#extra-problems" id="toc-extra-problems" class="nav-link" data-scroll-target="#extra-problems">Extra problems</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="HW_05.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -187,7 +188,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">October 23, 2025</p>
+      <p class="date-modified">October 30, 2025</p>
     </div>
   </div>
     
@@ -218,12 +219,12 @@ window.Quarto = {
 <ol type="a">
 <li><p>Make a table for the joint pmf <span class="math inline">\(p_{X,Y}(x,y)\)</span> and briefly describe in words what the values are the probability of.</p></li>
 <li><p>Find the marginal pmf <span class="math inline">\(p_{X}(x)\)</span> and briefly describe in words what the values are the probability of.</p></li>
-<li><p>Find the marginal pmf <span class="math inline">\(p_{Y}(y)\)</span> and briefly describe in words what the values are the probability of.</p></li>
+<li><p><strong>(Optional)</strong> Find the marginal pmf <span class="math inline">\(p_{Y}(y)\)</span> and briefly describe in words what the values are the probability of.</p></li>
 <li><p>Make a table for the joint cdf <span class="math inline">\(F_{X,Y}(x,y)\)</span> and briefly describe in words what the values are the probability of.</p></li>
-<li><p>Find the marginal cdf <span class="math inline">\(F_{X}(x)\)</span> and briefly describe in words what the values are the probability of.</p></li>
+<li><p><strong>(Optional)</strong> Find the marginal cdf <span class="math inline">\(F_{X}(x)\)</span> and briefly describe in words what the values are the probability of.</p></li>
 <li><p>Find the marginal cdf <span class="math inline">\(F_{Y}(y)\)</span> and briefly describe in words what the values are the probability of.</p></li>
 <li><p>Make a table for the conditional pmf <span class="math inline">\(p_{X|Y}(x|y)\)</span> and briefly describe in words what the values are the probability of.</p></li>
-<li><p>Make a table for the conditional pmf <span class="math inline">\(p_{Y|X}(y|x)\)</span> and briefly describe in words what the values are the probability of.</p></li>
+<li><p><strong>(Optional)</strong> Make a table for the conditional pmf <span class="math inline">\(p_{Y|X}(y|x)\)</span> and briefly describe in words what the values are the probability of.</p></li>
 </ol></li>
 <li><p>Each day, Maude has a 1% chance of losing her cell phone (her behavior on different days is independent). Each day, Maude has a 3% chance of forgetting to eat breakfast (again, her behavior on different days is independent). Her breakfast and cell phone habits are independent. Let <span class="math inline">\(X\)</span> be the number of days until she first loses her cell phone. Let <span class="math inline">\(Y\)</span> be the number of days until she first forgets to eat breakfast. (Here, <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are independent.)</p>
 <ol type="a">
@@ -232,7 +233,21 @@ window.Quarto = {
 <li><p>Find the conditional pmf <span class="math inline">\(p_{Y|X}(y|x)\)</span>.</p></li>
 </ol></li>
 <li><p>Let <span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> be i.i.d. random variables with common pdf <span class="math inline">\(f_X(x)\)</span> and cdf <span class="math inline">\(F_X(x)\)</span>. Find the pdf for the random variable <span class="math inline">\(Z\)</span>, where <span class="math inline">\(Z = \max(X_1, X_2, \ldots, X_n)\)</span>.</p></li>
-<li><p>Freddy and Jane have entered a game in which they each win between 0 and 2 dollars. If X is the amount Freddy wins, and Y is the amount that Jane wins, they believe that the joint density of their winnings will be <span class="math display">\[f_{X,Y}(x, y) = \dfrac{1}{4}xy \text{ for } 0 \leq x \leq 2 \text{ and } 0 \leq y \leq 2\]</span> and <span class="math inline">\(f_{X,Y}(x, y) = 0\)</span> otherwise. Find the probability that their combined winnings exceed 2, i.e., find <span class="math inline">\(P(X + Y &gt; 2)\)</span>.</p></li>
+<li><p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be independent random variables with respective pdf’s <span class="math inline">\(f_X(x)=\frac{1}{5}\)</span>, for <span class="math inline">\(0\leq x\leq 5\)</span>, and <span class="math inline">\(f_Y(y)=2e^{-2y}\)</span>, for <span class="math inline">\(y&gt;0\)</span>.</p>
+<ol type="a">
+<li>Find the joint distribution <span class="math inline">\(f_{X,Y}(x,y)\)</span>.</li>
+<li>Find the probability that <span class="math inline">\(X\)</span> is less than <span class="math inline">\(Y\)</span>.</li>
+<li>Let <span class="math inline">\(Z\)</span> be the random variable that is the smaller of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. Find the cumulative distribution function for <span class="math inline">\(Z\)</span>.</li>
+<li>Find the pdf for Z.</li>
+</ol></li>
+<li><p>Suppose that the random variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> have joint density <span class="math inline">\(f_{X,Y}(x,y)\)</span>, for <span class="math inline">\(0&lt;x&lt;1\)</span>, and <span class="math inline">\(\frac{1}{2}&lt;y&lt;1\)</span>. Set up the equation for the cdf of <span class="math inline">\(Z\)</span>, where <span class="math inline">\(Z=X/Y\)</span>.</p>
+<p><em>Hint: First determine what the possible values for</em> <span class="math inline">\(Z\)</span> are. Then make a sketch of the domain of the joint pdf and shade in the region representing the cdf of Z for different values of <span class="math inline">\(z\)</span>. Make sure to pay close attention to how the region we need to integrate over changes as <span class="math inline">\(z\)</span> changes. The cdf has two different cases depending on the value of <span class="math inline">\(z\)</span>. Plug in specific values of <span class="math inline">\(z\)</span> and shade in the region representing the cdf to see why two different cases are needed.</p></li>
+</ol>
+</section>
+<section id="extra-problems" class="level2">
+<h2 class="anchored" data-anchor-id="extra-problems">Extra problems</h2>
+<ol type="1">
+<li>Freddy and Jane have entered a game in which they each win between 0 and 2 dollars. If X is the amount Freddy wins, and Y is the amount that Jane wins, they believe that the joint density of their winnings will be <span class="math display">\[f_{X,Y}(x, y) = \dfrac{1}{4}xy \text{ for } 0 \leq x \leq 2 \text{ and } 0 \leq y \leq 2\]</span> and <span class="math inline">\(f_{X,Y}(x, y) = 0\)</span> otherwise. Find the probability that their combined winnings exceed 2, i.e., find <span class="math inline">\(P(X + Y &gt; 2)\)</span>.</li>
 </ol>
 
 
