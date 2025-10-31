@@ -49,7 +49,7 @@ You can type your work on your computer or submit a photo of your written work o
 $\left(24, \dfrac{1}{4}\right)$.
 
     a. Find the CDF of $X$.
-    b. What is the value of $a$ so that $P(X > a) = 0:75$?
+    b. What is the value of $a$ so that $P(X > a) = 0.75$?
 
 4. For the following pdf $$f_X(x) = \begin{cases} kx^9(1-x)^2 & \text{if } 0 \leq x \leq 1 \\ 0 & \text{otherwise} \end{cases}$$
     
