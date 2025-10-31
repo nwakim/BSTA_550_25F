@@ -25,90 +25,52 @@ library(tidyverse)
 
 # From Chapter 9 with pmf's
 
+## How to define the joint pdf for continuous RVs?
+
+::: columns
+::: {.column width="37%"}
+
+For a single continuous RV $X$ is a function $f_X(x)$, such that for all real values $a,b$ with $a \leq b$, $$\mathbb{P}(a \leq X \leq b) = \int_a^b f_X(x)dx$$
+
+:::
+
+::: {.column width="62%"}
+
+For two continuous RVs ($X$ and $Y$), we can define the **joint pdf**, $f_{X,Y}(x,y)$, such that for all real values $a,b, c, d$ with $a \leq b$ and $c \leq d$, $$\mathbb{P}(a \leq X \leq b, c \leq Y \leq d) = \int_a^b \int_c^d f_{X,Y}(x,y)dydx$$
+
+:::
+
+
+:::0.21
+
 # Learning Objectives
 
 1. Show that a joint pdf consists of two independent, continuous RVs.
 
 2. Combine two independent RVs into one joint pdf or CDF.
 
-## How do we represent independent RVs in a joint pmf/pdf?
+## How do we represent independent continuous RVs in a joint pdf?
 
-**What do we know about independence for events?**
+::: columns
+::: {.column width="40%"}
+**What do we know about independence for events and discrete RVs?**
 
 For events: If $A \perp B$
 
 $$P(A \cap B) = P(A)P(B)$$ $$P(A|B) = P(A)$$
 
-::: columns
-::: {.column width="48%"}
-::::: proof1
-::: proof-title
-For discrete RVs: If $X \perp Y$ 
-:::
-::: proof-cont
-
-$$p_{X,Y}(x,y) = p_{X}(x)p_{Y}(y)$$
+For discrete RVs: If $X \perp Y$ $$p_{X,Y}(x,y) = p_{X}(x)p_{Y}(y)$$
 $$F_{X,Y}(x,y) = F_{X}(x)F_{Y}(y)$$ $$p_{X|Y}(x|y) = p_{X}(x)$$
 $$p_{Y|X}(y|x) = p_{Y}(y)$$
 :::
-:::
+
+::: {.column width="10%"}
 :::
 
-::: {.column width="4%"}
-:::
+::: {.column width="50%"}
+**What does it mean for continuous r.v.'s to be independent?**
 
-::: {.column width="48%"}
-::: theorem
-::: thm-title
 For continuous RVs: If $X \perp Y$
-:::
-::: thm-cont
-$$f_{X,Y}(x,y) = f_{X}(x)f_{Y}(y)$$
-$$F_{X,Y}(x,y) = F_{X}(x)F_{Y}(y)$$ 
-$$f_{X|Y}(x|y) = f_{X}(x)$$
-$$f_{Y|X}(y|x) = f_{Y}(y)$$
-:::
-:::
-:::
-
-:::
-
-## How do we represent conditional pmfs/pdfs?
-
-For events:
-
-$$P(A | B) = \dfrac{P(A \cap B)}{P(B)}$$ 
-
-::: columns
-::: {.column width="48%"}
-::::: proof1
-::: proof-title
-For discrete RVs:
-:::
-::: proof-cont
-
-$$p_{X|Y}(x|y) = P(X=x|Y=y) = \dfrac{p_{X,Y}(x,y)}{p_Y(y)}$$
-$$p_{Y|X}(y|x) = P(Y=y|X=x) = \dfrac{p_{X,Y}(x,y)}{p_X(x)}$$
-
-:::
-:::
-:::
-
-::: {.column width="4%"}
-:::
-
-::: {.column width="48%"}
-::: theorem
-::: thm-title
-For continuous RVs:
-:::
-::: thm-cont
-
-$$f_{X|Y}(x|y) = \dfrac{f_{X,Y}(x,y)}{f_Y(y)}$$
-$$f_{Y|X}(y|x) = \dfrac{f_{X,Y}(x,y)}{f_X(x)}$$
-
-:::
-:::
 :::
 
 :::
@@ -126,14 +88,14 @@ Let $X$ and $Y$ be independent r.v.'s with
 $f_X(x)= \frac12$, for $0 \leq x \leq 2$ and $f_Y(y)= 3y^2$, for
 $0 \leq y \leq 1$.
 
-1.  Find $f_{X,Y}(x,y)$
+1.  Find $f_{X,Y}(x,y)$.
 :::
 :::
 
 :::
 :::
 
-## Probability from joint pdf from two independent, continuous RVs
+## Constructing a joint pdf from two independent, continuous RVs
 
 ::: columns 
 ::: {.column width="30%"}
@@ -146,7 +108,7 @@ Let $X$ and $Y$ be independent r.v.'s with
 $f_X(x)= \frac12$, for $0 \leq x \leq 2$ and $f_Y(y)= 3y^2$, for
 $0 \leq y \leq 1$.
 
-2.  Find $\mathbb{P}(0 \leq X \leq 1, 0 \leq Y \leq \frac12)$
+2.  Find $\mathbb{P}(0 \leq X \leq 1, 0 \leq Y \leq \frac12)$.
 :::
 :::
 
@@ -229,15 +191,6 @@ $0 \leq x \leq y$. Are $X$ and $Y$ independent?
     $X$ and $Y$ are independent.
 
     -   The domain of the joint CDF needs to be independent as well!!
-    
- 
- 
- 
- 
-    
-- Make sure that:
-  - $X$ domain does NOT depend on $Y$
-  - $Y$ domain does NOT depend on $X$
     
 # Learning Objectives
 

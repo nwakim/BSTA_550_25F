@@ -140,19 +140,12 @@ Meike Niederhausen and Nicky Wakim
 
   <p class="date">2025-11-03</p>
 </section>
-<section>
 <section id="from-chapter-9-with-pmfs" class="title-slide slide level1 center">
 <h1>From Chapter 9 with pmf’s</h1>
 
 </section>
-<section id="how-to-define-the-joint-pdf-for-continuous-rvs" class="slide level2">
-<h2>How to define the joint pdf for continuous RVs?</h2>
-<div class="columns">
-<div class="column" style="width:37%;">
-<p>For a single continuous RV <span class="math inline">\(X\)</span> is a function <span class="math inline">\(f_X(x)\)</span>, such that for all real values <span class="math inline">\(a,b\)</span> with <span class="math inline">\(a \leq b\)</span>, <span class="math display">\[\mathbb{P}(a \leq X \leq b) = \int_a^b f_X(x)dx\]</span></p>
-</div><div class="column" style="width:62%;">
-<p>For two continuous RVs (<span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>), we can define the <strong>joint pdf</strong>, <span class="math inline">\(f_{X,Y}(x,y)\)</span>, such that for all real values <span class="math inline">\(a,b, c, d\)</span> with <span class="math inline">\(a \leq b\)</span> and <span class="math inline">\(c \leq d\)</span>, <span class="math display">\[\mathbb{P}(a \leq X \leq b, c \leq Y \leq d) = \int_a^b \int_c^d f_{X,Y}(x,y)dydx\]</span></p>
-</div><div class="0.21">
+
+<section>
 <section id="learning-objectives" class="title-slide slide level1 center">
 <h1>Learning Objectives</h1>
 <ol type="1">
@@ -160,19 +153,59 @@ Meike Niederhausen and Nicky Wakim
 <li><p>Combine two independent RVs into one joint pdf or CDF.</p></li>
 </ol>
 </section>
-<section id="how-do-we-represent-independent-continuous-rvs-in-a-joint-pdf" class="slide level2">
-<h2>How do we represent independent continuous RVs in a joint pdf?</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><strong>What do we know about independence for events and discrete RVs?</strong></p>
+<section id="how-do-we-represent-independent-rvs-in-a-joint-pmfpdf" class="slide level2">
+<h2>How do we represent independent RVs in a joint pmf/pdf?</h2>
+<p><strong>What do we know about independence for events?</strong></p>
 <p>For events: If <span class="math inline">\(A \perp B\)</span></p>
 <p><span class="math display">\[P(A \cap B) = P(A)P(B)\]</span> <span class="math display">\[P(A|B) = P(A)\]</span></p>
-<p>For discrete RVs: If <span class="math inline">\(X \perp Y\)</span> <span class="math display">\[p_{X,Y}(x,y) = p_{X}(x)p_{Y}(y)\]</span> <span class="math display">\[F_{X,Y}(x,y) = F_{X}(x)F_{Y}(y)\]</span> <span class="math display">\[p_{X|Y}(x|y) = p_{X}(x)\]</span> <span class="math display">\[p_{Y|X}(y|x) = p_{Y}(y)\]</span></p>
-</div><div class="column" style="width:10%;">
+<div class="columns">
+<div class="column" style="width:48%;">
+<div class="proof1">
+<div class="proof-title">
+<p>For discrete RVs: If <span class="math inline">\(X \perp Y\)</span></p>
+</div>
+<div class="proof-cont">
+<p><span class="math display">\[p_{X,Y}(x,y) = p_{X}(x)p_{Y}(y)\]</span> <span class="math display">\[F_{X,Y}(x,y) = F_{X}(x)F_{Y}(y)\]</span> <span class="math display">\[p_{X|Y}(x|y) = p_{X}(x)\]</span> <span class="math display">\[p_{Y|X}(y|x) = p_{Y}(y)\]</span></p>
+</div>
+</div>
+</div><div class="column" style="width:4%;">
 
-</div><div class="column" style="width:50%;">
-<p><strong>What does it mean for continuous r.v.’s to be independent?</strong></p>
+</div><div class="column" style="width:48%;">
+<div class="theorem">
+<div class="thm-title">
 <p>For continuous RVs: If <span class="math inline">\(X \perp Y\)</span></p>
+</div>
+<div class="thm-cont">
+<p><span class="math display">\[f_{X,Y}(x,y) = f_{X}(x)f_{Y}(y)\]</span> <span class="math display">\[F_{X,Y}(x,y) = F_{X}(x)F_{Y}(y)\]</span> <span class="math display">\[f_{X|Y}(x|y) = f_{X}(x)\]</span> <span class="math display">\[f_{Y|X}(y|x) = f_{Y}(y)\]</span></p>
+</div>
+</div>
+</div></div>
+</section>
+<section id="how-do-we-represent-conditional-pmfspdfs" class="slide level2">
+<h2>How do we represent conditional pmfs/pdfs?</h2>
+<p>For events:</p>
+<p><span class="math display">\[P(A | B) = \dfrac{P(A \cap B)}{P(B)}\]</span></p>
+<div class="columns">
+<div class="column" style="width:48%;">
+<div class="proof1">
+<div class="proof-title">
+<p>For discrete RVs:</p>
+</div>
+<div class="proof-cont">
+<p><span class="math display">\[p_{X|Y}(x|y) = P(X=x|Y=y) = \dfrac{p_{X,Y}(x,y)}{p_Y(y)}\]</span> <span class="math display">\[p_{Y|X}(y|x) = P(Y=y|X=x) = \dfrac{p_{X,Y}(x,y)}{p_X(x)}\]</span></p>
+</div>
+</div>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:48%;">
+<div class="theorem">
+<div class="thm-title">
+<p>For continuous RVs:</p>
+</div>
+<div class="thm-cont">
+<p><span class="math display">\[f_{X|Y}(x|y) = \dfrac{f_{X,Y}(x,y)}{f_Y(y)}\]</span> <span class="math display">\[f_{Y|X}(y|x) = \dfrac{f_{X,Y}(x,y)}{f_X(x)}\]</span></p>
+</div>
+</div>
 </div></div>
 </section>
 <section id="constructing-a-joint-pdf-from-two-independent-continuous-rvs" class="slide level2">
@@ -186,14 +219,14 @@ Meike Niederhausen and Nicky Wakim
 <div class="ex-cont">
 <p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be independent r.v.’s with <span class="math inline">\(f_X(x)= \frac12\)</span>, for <span class="math inline">\(0 \leq x \leq 2\)</span> and <span class="math inline">\(f_Y(y)= 3y^2\)</span>, for <span class="math inline">\(0 \leq y \leq 1\)</span>.</p>
 <ol type="1">
-<li>Find <span class="math inline">\(f_{X,Y}(x,y)\)</span>.</li>
+<li>Find <span class="math inline">\(f_{X,Y}(x,y)\)</span></li>
 </ol>
 </div>
 </div>
 </div></div>
 </section>
-<section id="constructing-a-joint-pdf-from-two-independent-continuous-rvs-1" class="slide level2">
-<h2>Constructing a joint pdf from two independent, continuous RVs</h2>
+<section id="probability-from-joint-pdf-from-two-independent-continuous-rvs" class="slide level2">
+<h2>Probability from joint pdf from two independent, continuous RVs</h2>
 <div class="columns">
 <div class="column" style="width:30%;">
 <div class="example">
@@ -203,7 +236,7 @@ Meike Niederhausen and Nicky Wakim
 <div class="ex-cont">
 <p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be independent r.v.’s with <span class="math inline">\(f_X(x)= \frac12\)</span>, for <span class="math inline">\(0 \leq x \leq 2\)</span> and <span class="math inline">\(f_Y(y)= 3y^2\)</span>, for <span class="math inline">\(0 \leq y \leq 1\)</span>.</p>
 <ol start="2" type="1">
-<li>Find <span class="math inline">\(\mathbb{P}(0 \leq X \leq 1, 0 \leq Y \leq \frac12)\)</span>.</li>
+<li>Find <span class="math inline">\(\mathbb{P}(0 \leq X \leq 1, 0 \leq Y \leq \frac12)\)</span></li>
 </ol>
 </div>
 </div>
@@ -279,8 +312,16 @@ Meike Niederhausen and Nicky Wakim
 <li>The domain of the joint CDF needs to be independent as well!!</li>
 </ul></li>
 </ol>
-</section>
-
+<p>&nbsp; &nbsp; &nbsp; &nbsp;</p>
+<ul>
+<li>Make sure that:
+<ul>
+<li><span class="math inline">\(X\)</span> domain does NOT depend on <span class="math inline">\(Y\)</span></li>
+<li><span class="math inline">\(Y\)</span> domain does NOT depend on <span class="math inline">\(X\)</span></li>
+</ul></li>
+</ul>
+</section></section>
+<section>
 <section id="learning-objectives-1" class="title-slide slide level1 center">
 <h1>Learning Objectives</h1>
 <ol type="1">
@@ -423,10 +464,6 @@ Meike Niederhausen and Nicky Wakim
 </ul>
 
 
-</section>
-
-</div>
-</div>
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

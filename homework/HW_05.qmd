@@ -43,25 +43,13 @@ Extra problems do not need to be turned in!
 
     b.  Find the marginal pmf $p_{X}(x)$ and briefly describe in words what the values are the probability of.
 
-    c.  **(Optional)** Find the marginal pmf $p_{Y}(y)$ and briefly describe in words what the values are the probability of.
+    c.  Find the marginal pmf $p_{Y}(y)$ and briefly describe in words what the values are the probability of.
 
     d.  Make a table for the joint cdf $F_{X,Y}(x,y)$ and briefly describe in words what the values are the probability of.
 
-    e.  **(Optional)** Find the marginal cdf $F_{X}(x)$ and briefly describe in words what the values are the probability of.
+    e.  Find the marginal cdf $F_{X}(x)$ and briefly describe in words what the values are the probability of.
 
     f.  Find the marginal cdf $F_{Y}(y)$ and briefly describe in words what the values are the probability of.
-
-    g.  Make a table for the conditional pmf $p_{X|Y}(x|y)$ and briefly describe in words what the values are the probability of.
-
-    h.  **(Optional)** Make a table for the conditional pmf $p_{Y|X}(y|x)$ and briefly describe in words what the values are the probability of.
-
-2.  Each day, Maude has a 1% chance of losing her cell phone (her behavior on different days is independent). Each day, Maude has a 3% chance of forgetting to eat breakfast (again, her behavior on different days is independent). Her breakfast and cell phone habits are independent. Let $X$ be the number of days until she first loses her cell phone. Let $Y$ be the number of days until she first forgets to eat breakfast. (Here, $X$ and $Y$ are independent.)
-
-    a.  Find the joint probability mass function of $X$ and $Y$.
-
-    b.  Find the joint cdf of $X$ and $Y$ and briefly explain what $F_{X,Y}(x,y)$ represents in the context of the problem.
-
-    c.  Find the conditional pmf $p_{Y|X}(y|x)$.
 
 3.  Let $X_1, X_2, \ldots, X_n$ be i.i.d. random variables with common pdf $f_X(x)$ and cdf $F_X(x)$. Find the pdf for the random variable $Z$, where $Z = \max(X_1, X_2, \ldots, X_n)$.
 

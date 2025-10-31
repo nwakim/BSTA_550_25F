@@ -12,43 +12,33 @@ editor_options:
   chunk_output_type: console
 ---
 
+
 ## Directions
 
-[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/BSTA-550-1-14926-F24/tool/c8320b13-1b6d-42ed-9c19-134634cf25af) Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
+**Please turn in this homework on Sakai.** Please submit your homework in pdf or html format. 
 
-**Try to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later!** Only turn in the ones listed in the "Turn In" column. Please submit problems in the order they are listed.
+You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
 
 *You must show all of your work to receive credit.*
 
-::: center
-|     Chapter     |    Turn In     |       Extra Problems       |
-|:---------------:|:--------------:|:--------------------------:|
-| Calculus Review |                |          NTB \# 1          |
-|       24        | TB \# 19, 20\* | \# 2, 3, 7, 17, 18, 22, 23 |
-:::
+Extra problems do not need to be turned in!
 
-\* Part b: Also find the cdf $F_X(x)$
+## Questions
 
-## Non-textbook problems (NTB)
+1.  From last homework: The following table shows the results of a survey in which the subjects were a sample of 300 adults residing in a certain metropolitan area. Each subject was asked to indicate which of three policies they favored with respect to smoking in public places. (Table is from *Biostatistics: A Foundation for Analysis in the Health Sciences*, 10th Edition, Daniel, Wayne W.; Cross, Chad L., pg. 630)
 
-1.  Calculus Review
+    ![](Table_Smoking_vs_Education_Level.png){fig-align="center" width="6in"}
 
-    a.  $$\int_0^yc(x+y)dx$$
+    Let $X=$ highest education level and $Y=$ policy favored. We can let $X=1$ for college graduate, $X=2$ for high-school graduate, etc., and similarly for $Y$, or just keep the category names for the different levels of $X$ and $Y$
 
-    b.  $$\frac{d}{dx}\bigg(\frac{4}{9}x^2y^2+\frac{5}{9}xy^4\bigg)$$
+    g.  Make a table for the conditional pmf $p_{X|Y}(x|y)$ and briefly describe in words what the values are the probability of.
 
-    c.  $$\frac{d}{dy}\bigg(\frac{4}{9}x^2y^2+\frac{5}{9}xy^4\bigg)$$
+    h.  Make a table for the conditional pmf $p_{Y|X}(y|x)$ and briefly describe in words what the values are the probability of.
+    
+2.  Each day, Maude has a 1% chance of losing her cell phone (her behavior on different days is independent). Each day, Maude has a 3% chance of forgetting to eat breakfast (again, her behavior on different days is independent). Her breakfast and cell phone habits are independent. Let $X$ be the number of days until she first loses her cell phone. Let $Y$ be the number of days until she first forgets to eat breakfast. (Here, $X$ and $Y$ are independent.)
 
-    d.  $$\int_0^y2e^{-x}e^{-y}dx$$
+    a.  Find the joint probability mass function of $X$ and $Y$.
 
-    e.  $$\int_0^\infty xye^{-(x+y)}dy$$
+    b.  Find the joint cdf of $X$ and $Y$ and briefly explain what $F_{X,Y}(x,y)$ represents in the context of the problem.
 
-    f.  $$\int_x^{2x} 2e^{-(x+3y)}dy$$
-
-    g.  Find the area of the region bounded by the graphs of $f(x)=2-x^2$ and $g(x)=x$ by integrating with respect to $x$.
-
-    h.  Find the area of the region bounded by the graphs of $f(x)=2-x^2$ and $g(x)=x$ by integrating with respect to $y$.
-
-    i.  Find the area of the region bounded by the graphs of $x=3-y^2$ and $y=x-1$ by integrating with respect to $x$.
-
-    j.  Find the area of the region bounded by the graphs of $x=3-y^2$ and $y=x-1$ by integrating with respect to $y$.
+    c.  Find the conditional pmf $p_{Y|X}(y|x)$.
