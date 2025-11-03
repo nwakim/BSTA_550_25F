@@ -21536,7 +21536,7 @@
     "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#how-do-we-represent-conditional-pmfspdfs",
     "title": "Lesson 12: Independence and Conditioning",
     "section": "How do we represent conditional pmfs/pdfs?",
-    "text": "How do we represent conditional pmfs/pdfs?\nFor events:\n\\[P(A | B) = \\dfrac{P(A \\cap B)}{P(B)}\\]\n\n\n\n\nFor discrete RVs:\n\n\n\\[p_{X|Y}(x|y) = P(X=x|Y=y) = \\dfrac{p_{X,Y}(x,y)}{p_Y(y)}\\] \\[p_{Y|X}(y|x) = P(Y=y|X=x) = \\dfrac{p_{X,Y}(x,y)}{p_X(x)}\\]\n\n\n\n\n\n\n\nFor continuous RVs:\n\n\n\\[f_{X|Y}(x|y) = \\dfrac{f_{X,Y}(x,y)}{f_Y(y)}\\] \\[f_{Y|X}(y|x) = \\dfrac{f_{X,Y}(x,y)}{f_X(x)}\\]"
+    "text": "How do we represent conditional pmfs/pdfs?\nFor events:\n\\[P(A | B) = \\dfrac{P(A \\cap B)}{P(B)}\\]\n\n\n\n\nFor discrete RVs:\n\n\n\\[p_{X|Y}(x|y) = P(X=x|Y=y) = \\dfrac{p_{X,Y}(x,y)}{p_Y(y)}\\] \\[p_{Y|X}(y|x) = P(Y=y|X=x) = \\dfrac{p_{X,Y}(x,y)}{p_X(x)}\\]\nif denominator is greater than 0 (\\(p_Y(y) &gt; 0\\) or \\(p_X(x) &gt; 0\\))\n\n\n\n\n\n\n\nFor continuous RVs:\n\n\n\\[f_{X|Y}(x|y) = \\dfrac{f_{X,Y}(x,y)}{f_Y(y)}\\] \\[f_{Y|X}(y|x) = \\dfrac{f_{X,Y}(x,y)}{f_X(x)}\\]\nif denominator is greater than 0 (\\(f_Y(y) &gt; 0\\) or \\(f_X(x) &gt; 0\\))"
   },
   {
     "objectID": "homework/HW_06.html#questions",
@@ -21551,5 +21551,166 @@
     "title": "Homework 6 Answers",
     "section": "",
     "text": "Partial answers:\n\n\n\n\\(p_{X|Y}(X=\\text{high school}| Y=\\text{no smoking at all}) = 0.476\\)\n\n\n\\(p_{Y|X}( Y=\\text{no smoking at all}|X=\\text{high school}) = 0.200\\)\n\n\n\n\n\n\\(p_{X,Y}(x,y) = [0.99^{x-1}0.01][0.97^{y-1}0.03]\\) for \\(x,y = 0, 1, 2, ...\\)\n\n\n And hint:"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#learning-objectives",
+    "href": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#learning-objectives",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nCalculate probabilities for a pair of discrete random variables\nCalculate a joint, marginal, and conditional probability mass function (pmf)\nCalculate a joint, marginal, and conditional cumulative distribution function (CDF)"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#where-are-we",
+    "href": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#where-are-we",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
+    "section": "Where are we?",
+    "text": "Where are we?"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#what-is-a-joint-pmf",
+    "href": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#what-is-a-joint-pmf",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
+    "section": "What is a joint pmf?",
+    "text": "What is a joint pmf?\n\n\nDefinition: joint pmf\n\n\nThe joint pmf of a pair of discrete r.v.’s \\(X\\) and \\(Y\\) is \\[p_{X,Y}(x,y) = \\mathbb{P}(X=x\\ and\\ Y=y) = \\mathbb{P}(X=x, Y=y)\\]"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#this-chapters-main-example",
+    "href": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#this-chapters-main-example",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
+    "section": "This chapter’s main example",
+    "text": "This chapter’s main example\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(p_{X,Y}(x,y)\\).\nFind \\(\\mathbb{P}(X+Y=3).\\)\nFind \\(\\mathbb{P}(Y = 1).\\)\nFind \\(\\mathbb{P}(Y \\leq 2).\\)\nFind the joint CDF \\(F_{X,Y}(x,y)\\) for the joint pmf \\(p_{X,Y}(x,y)\\)\nFind the marginal CDFs \\(F_{X}(x)\\) and \\(F_{Y}(y)\\)\nFind \\(p_{X|Y}(x|y)\\).\nAre \\(X\\) and \\(Y\\) independent? Why or why not?"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#joint-pmf",
+    "href": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#joint-pmf",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
+    "section": "Joint pmf",
+    "text": "Joint pmf\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(p_{X,Y}(x,y)\\).\nFind \\(\\mathbb{P}(X+Y=3).\\)"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#marginal-pmfs",
+    "href": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#marginal-pmfs",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
+    "section": "Marginal pmf’s",
+    "text": "Marginal pmf’s\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(\\mathbb{P}(Y = 1).\\)\nFind \\(\\mathbb{P}(Y \\leq 2).\\)"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#remarks-on-the-joint-pmf",
+    "href": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#remarks-on-the-joint-pmf",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
+    "section": "Remarks on the joint pmf",
+    "text": "Remarks on the joint pmf\nSome properties of joint pmf’s:\n\nA joint pmf \\(p_{X,Y}(x,y)\\) must satisfy the following properties:\n\n\\(p_{X,Y}(x,y)\\geq 0\\) for all \\(x, y\\).\n\\(\\sum \\limits_{\\{all\\ x\\}} \\sum \\limits_{\\{all\\ y\\}} p_{X,Y}(x,y)=1\\).\n\nMarginal pmf’s:\n\n\\(p_X(x) = \\sum \\limits_{\\{all\\ y\\}} p_{X,Y}(x,y)\\)\n\\(p_Y(y) = \\sum \\limits_{\\{all\\ x\\}} p_{X,Y}(x,y)\\)"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#what-is-a-joint-cdf",
+    "href": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#what-is-a-joint-cdf",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
+    "section": "What is a joint CDF?",
+    "text": "What is a joint CDF?\n\n\nDefinition: joint CDF\n\n\nThe joint CDF of a pair of discrete r.v.’s \\(X\\) and \\(Y\\) is \\[F_{X,Y}(x,y) = \\mathbb{P}(X \\leq x\\ and\\ Y \\leq y) = \\mathbb{P}(X \\leq x, Y \\leq y)\\]"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#joint-cdfs",
+    "href": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#joint-cdfs",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
+    "section": "Joint CDFs",
+    "text": "Joint CDFs\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind the joint CDF \\(F_{X,Y}(x,y)\\) for the joint pmf \\(p_{X,Y}(x,y)\\)"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#marginal-cdfs",
+    "href": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#marginal-cdfs",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
+    "section": "Marginal CDFs",
+    "text": "Marginal CDFs\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind the marginal CDFs \\(F_{X}(x)\\) and \\(F_{Y}(y)\\)"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#remarks-on-the-joint-and-marginal-cdf",
+    "href": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#remarks-on-the-joint-and-marginal-cdf",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
+    "section": "Remarks on the joint and marginal CDF",
+    "text": "Remarks on the joint and marginal CDF\n\n\\(F_X(x)\\): right most columns of the CDf table (where the \\(Y\\) values are largest)\n\\(F_Y(y)\\): bottom row of the table (where X values are largest)\n\\(F_X(x)=\\lim\\limits_{y\\rightarrow\\infty}F_{X, Y}(x,y)\\)\n\\(F_Y(y)=\\lim\\limits_{x\\rightarrow\\infty}F_{X, Y}(x,y)\\)"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#independence-and-conditioning",
+    "href": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#independence-and-conditioning",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
+    "section": "Independence and Conditioning",
+    "text": "Independence and Conditioning\nRecall that for events \\(A\\) and \\(B\\),\n\n\\(\\mathbb{P}(A|B) = \\frac{\\mathbb{P}(A \\cap B)}{\\mathbb{P}(B)}\\)\n\\(A\\) and \\(B\\) are independent if and only if\n\n\\(\\mathbb{P}(A|B) = \\mathbb{P}(A)\\)\n\\(\\mathbb{P}(A \\cap B) = \\mathbb{P}(A)\\cdot\\mathbb{P}(B)\\)\n\n\nIndependence and conditioning are defined similarly for r.v.’s, since \\[p_X(x) = \\mathbb{P}(X=x)\\ \\mathrm{and}\\ \\ p_{X,Y}(x,y) = \\mathbb{P}(X = x ,Y = y).\\]"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#what-is-the-conditional-pmf",
+    "href": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#what-is-the-conditional-pmf",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
+    "section": "What is the conditional pmf?",
+    "text": "What is the conditional pmf?\n\n\nDefinition: conditional pmf\n\n\nThe conditional pmf of a pair of discrete r.v.’s \\(X\\) and \\(Y\\) is defined as \\[p_{X|Y}(x|y) = \\mathbb{P}(X = x |Y = y) = \\frac{\\mathbb{P}(X = x\\ and\\ Y = y)}{\\mathbb{P}(Y = y)}\n=\\frac{p_{X,Y}(x,y) }{p_{Y}(y) }\\] if \\(p_{Y}(y) &gt; 0\\)."
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#remarks-on-the-conditional-pmf",
+    "href": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#remarks-on-the-conditional-pmf",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
+    "section": "Remarks on the conditional pmf",
+    "text": "Remarks on the conditional pmf\nThe following properties follow from the conditional pmf definition:\n\nIf \\(X \\perp Y\\) (independent)\n\n\\(p_{X|Y}(x|y) = p_X(x)\\) for all \\(x\\) and \\(y\\)\n\\(p_{X,Y}(x,y) = p_X(x)p_Y(y)\\) for all \\(x\\) and \\(y\\)\nWhich also implies (\\(\\Rightarrow\\)): \\(F_{X,Y}(x,y) = F_X(x)F_Y(y)\\) for all \\(x\\) and \\(y\\)\n\nIf \\(X_1, X_2, …, X_n\\) are independent\n\n\\[p_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = P(X_1=x_1, X_2=x_2, …, X_n=x_n)=\\prod\\limits_{i=1}^np_{X_i}(x_i)\\]\n\\[F_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = P(X_1\\leq x_1, X_2\\leq x_2, …, X_n\\leq x_n)=\\prod\\limits_{i=1}^nP(X_i \\leq x_i) = \\prod\\limits_{i=1}^nF_{X_i}(x_i)\\]"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#conditional-pmfs",
+    "href": "lessons/12_Independence_Conditioning/09_Joint_distributions.html#conditional-pmfs",
+    "title": "Chapter 9: Independence and Conditioning (Joint Distributions)",
+    "section": "Conditional pmf’s",
+    "text": "Conditional pmf’s\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(p_{X|Y}(x|y)\\).\nAre \\(X\\) and \\(Y\\) independent? Why or why not?\n\n\n\n\n\nRemark:\n\nTo show that \\(X\\) and \\(Y\\) are not independent, we just need to find one counter example\nHowever, to show that they are independent, we need to verify this for all possible pairs of \\(x\\) and \\(y\\)"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#joint-distribution-for-two-discrete-random-variables-15",
+    "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#joint-distribution-for-two-discrete-random-variables-15",
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "Joint distribution for two discrete random variables (1/5)",
+    "text": "Joint distribution for two discrete random variables (1/5)\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(p_{X|Y}(x|y)\\).\nAre \\(X\\) and \\(Y\\) independent? Why or why not?\n\n\n\n\n\nRemark:\n\nTo show that \\(X\\) and \\(Y\\) are not independent, we just need to find one counter example\nHowever, to show that they are independent, we need to verify this for all possible pairs of \\(x\\) and \\(y\\)"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#remarks-on-the-conditional-pmf",
+    "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#remarks-on-the-conditional-pmf",
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "Remarks on the conditional pmf",
+    "text": "Remarks on the conditional pmf\nThe following properties follow from the conditional pmf definition:\n\nIf \\(X \\perp Y\\) (independent)\n\n\\(p_{X|Y}(x|y) = p_X(x)\\) for all \\(x\\) and \\(y\\)\n\\(p_{X,Y}(x,y) = p_X(x)p_Y(y)\\) for all \\(x\\) and \\(y\\)\nWhich also implies (\\(\\Rightarrow\\)): \\(F_{X,Y}(x,y) = F_X(x)F_Y(y)\\) for all \\(x\\) and \\(y\\)\n\nIf \\(X_1, X_2, …, X_n\\) are independent\n\n\\[p_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = P(X_1=x_1, X_2=x_2, …, X_n=x_n)=\\prod\\limits_{i=1}^np_{X_i}(x_i)\\]\n\\[F_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = P(X_1\\leq x_1, X_2\\leq x_2, …, X_n\\leq x_n)=\\prod\\limits_{i=1}^nP(X_i \\leq x_i) = \\prod\\limits_{i=1}^nF_{X_i}(x_i)\\]"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#last-class-joint-distribution-for-two-discrete-random-variables-12",
+    "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#last-class-joint-distribution-for-two-discrete-random-variables-12",
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "Last class: joint distribution for two discrete random variables (1/2)",
+    "text": "Last class: joint distribution for two discrete random variables (1/2)\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nFind \\(p_{X|Y}(x|y)\\)."
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#last-class-joint-distribution-for-two-discrete-random-variables-22",
+    "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#last-class-joint-distribution-for-two-discrete-random-variables-22",
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "Last class: joint distribution for two discrete random variables (2/2)",
+    "text": "Last class: joint distribution for two discrete random variables (2/2)\n\n\n\n\nExample 1\n\n\nLet \\(X\\) and \\(Y\\) be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.\n\nAre \\(X\\) and \\(Y\\) independent? Why or why not?\n\n\n\n\n\nRemark:\n\nTo show that \\(X\\) and \\(Y\\) are not independent, we just need to find one counter example\nHowever, to show that they are independent, we need to verify this for all possible pairs of \\(x\\) and \\(y\\)"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#where-are-we",
+    "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#where-are-we",
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "Where are we?",
+    "text": "Where are we?"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#extra-notes-and-remarks",
+    "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#extra-notes-and-remarks",
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "Extra notes and remarks",
+    "text": "Extra notes and remarks\n\nIf \\(X_1, X_2, …, X_n\\) are independent\n\n\\[p_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = P(X_1=x_1, X_2=x_2, …, X_n=x_n)=\\prod\\limits_{i=1}^np_{X_i}(x_i)\\] \\[f_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = \\prod\\limits_{i=1}^nf_{X_i}(x_i)\\] \\[F_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = P(X_1\\leq x_1, X_2\\leq x_2, …, X_n\\leq x_n)=\\prod\\limits_{i=1}^nP(X_i \\leq x_i) = \\prod\\limits_{i=1}^nF_{X_i}(x_i)\\]\n\nDon’t forget, you can manipulate the conditional density to get the joint: \\[f_{X,Y}(x,y)= f_{X|Y}(x|y)f_Y(y)\\]\nFor a fixed value of \\(Y=y\\), the conditional density \\(f_{X|Y}(x|y)\\) is an actual pdf, meaning\n\n\\(f_{X|Y}(x|y)\\geq 0\\) for all \\(x\\) and \\(y\\), and\n\\(\\displaystyle\\int_{-\\infty}^{\\infty} f_{X|Y}(x|y)dx =1\\)."
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#remember-our-probability-rules-must-hold-for-these",
+    "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#remember-our-probability-rules-must-hold-for-these",
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "Remember: our probability rules must hold for these!",
+    "text": "Remember: our probability rules must hold for these!\n\n\n\n\nFor discrete RVs\n\n\nFor a valid joint pmf, we need:\n\n\\(0 \\geq p_{X,Y}(x,y) \\leq 1\\) for all \\(x, y\\)\n\\(\\sum \\limits_{\\{all\\ x\\}} \\sum \\limits_{\\{all\\ y\\}} p_{X,Y}(x,y)=1\\)\n\nFor a valid conditional pmf, we need:\n\n\\(0 \\geq p_{X|Y}(x|y) \\leq 1\\) for all \\(x, y\\)\n\\(\\sum \\limits_{\\{all\\ x\\}} p_{X|Y}(x|y)=1\\)\n\n\n\n\n\n\n\n\nFor continuous RVs\n\n\nFor a valid joint pdf, we need:\n\n\\(f_{X,Y}(x,y)\\geq 0\\) for all \\(x,y\\)\n\\(\\displaystyle\\int_{-\\infty}^{\\infty}\\displaystyle\\int_{-\\infty}^{\\infty} f_{X,Y}(x,y)dxdy=1\\)\n\nFor a valid conditional pdf, we need:\n\n\\(f_{X|Y}(x|y)\\geq 0\\) for all \\(x\\) and \\(y\\)\n\\(\\displaystyle\\int_{-\\infty}^{\\infty} f_{X|Y}(x|y)dx =1\\)"
+  },
+  {
+    "objectID": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#extra-notes",
+    "href": "lessons/12_Independence_Conditioning/12_Independence_conditioning.html#extra-notes",
+    "title": "Lesson 12: Independence and Conditioning",
+    "section": "Extra notes",
+    "text": "Extra notes\n\nIf \\(X_1, X_2, …, X_n\\) are independent\n\n\\[p_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = P(X_1=x_1, X_2=x_2, …, X_n=x_n)=\\prod\\limits_{i=1}^np_{X_i}(x_i)\\] \\[f_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = \\prod\\limits_{i=1}^nf_{X_i}(x_i)\\] \\[F_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = P(X_1\\leq x_1, X_2\\leq x_2, …, X_n\\leq x_n)=\\prod\\limits_{i=1}^nP(X_i \\leq x_i) = \\prod\\limits_{i=1}^nF_{X_i}(x_i)\\]\n\nDon’t forget, you can manipulate the conditional density to get the joint: \\[f_{X,Y}(x,y)= f_{X|Y}(x|y)f_Y(y)\\]"
   }
 ]

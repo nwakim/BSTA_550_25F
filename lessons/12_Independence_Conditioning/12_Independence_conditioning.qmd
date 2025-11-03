@@ -23,13 +23,78 @@ source(here("class_dates.R"))
 library(tidyverse)
 ```
 
-# From Chapter 9 with pmf's
+# Learning Objectives
+
+1. Identify the formula for joint distributions for independent RVs and conditional distributions (PMFs/PDFs)
+
+2. Find conditional pmf from a joint pmf and check if two RVs are independent.
+
+3. Construct a joint distribution for two independent continuous RVs from their marginal distributions.
+
+4. Calculate conditional probabilities and distributions for continuous RVs.
+
+
+## Where are we?
+
+![](../img_slides/course_map.png){fig-align="center"}
 
 # Learning Objectives
 
-1. Show that a joint pdf consists of two independent, continuous RVs.
+::: lob
+1. Identify the formula for joint distributions for independent RVs and conditional distributions (PMFs/PDFs)
+:::
 
-2. Combine two independent RVs into one joint pdf or CDF.
+2. Find conditional pmf from a joint pmf and check if two RVs are independent.
+
+3. Construct a joint distribution for two independent continuous RVs from their marginal distributions.
+
+4. Calculate conditional probabilities and distributions for continuous RVs.
+
+## How do we represent conditional pmfs/pdfs?
+
+For events:
+
+$$P(A | B) = \dfrac{P(A \cap B)}{P(B)}$$ 
+
+::: columns
+::: {.column width="48%"}
+::::: proof1
+::: proof-title
+For discrete RVs:
+:::
+::: proof-cont
+
+$$p_{X|Y}(x|y) = P(X=x|Y=y) = \dfrac{p_{X,Y}(x,y)}{p_Y(y)}$$
+$$p_{Y|X}(y|x) = P(Y=y|X=x) = \dfrac{p_{X,Y}(x,y)}{p_X(x)}$$
+
+if denominator is greater than 0 ($p_Y(y) > 0$ or $p_X(x) > 0$)
+
+:::
+:::
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+::: theorem
+::: thm-title
+For continuous RVs:
+:::
+::: thm-cont
+
+$$f_{X|Y}(x|y) = \dfrac{f_{X,Y}(x,y)}{f_Y(y)}$$
+$$f_{Y|X}(y|x) = \dfrac{f_{X,Y}(x,y)}{f_X(x)}$$
+
+if denominator is greater than 0 ($f_Y(y) > 0$ or $f_X(x) > 0$)
+
+:::
+:::
+:::
+
+:::
+
+
 
 ## How do we represent independent RVs in a joint pmf/pdf?
 
@@ -73,23 +138,24 @@ $$f_{Y|X}(y|x) = f_{Y}(y)$$
 
 :::
 
-## How do we represent conditional pmfs/pdfs?
-
-For events:
-
-$$P(A | B) = \dfrac{P(A \cap B)}{P(B)}$$ 
+## Remember: our probability rules must hold for these!
 
 ::: columns
 ::: {.column width="48%"}
 ::::: proof1
 ::: proof-title
-For discrete RVs:
+For discrete RVs
 :::
 ::: proof-cont
+For a valid joint pmf, we need:
 
-$$p_{X|Y}(x|y) = P(X=x|Y=y) = \dfrac{p_{X,Y}(x,y)}{p_Y(y)}$$
-$$p_{Y|X}(y|x) = P(Y=y|X=x) = \dfrac{p_{X,Y}(x,y)}{p_X(x)}$$
+-   $0 \geq p_{X,Y}(x,y) \leq 1$ for all $x, y$
+-   $\sum \limits_{\{all\ x\}} \sum \limits_{\{all\ y\}} p_{X,Y}(x,y)=1$
 
+For a valid conditional pmf, we need:
+
+-   $0 \geq p_{X|Y}(x|y) \leq 1$ for all $x, y$
+-   $\sum \limits_{\{all\ x\}} p_{X|Y}(x|y)=1$
 :::
 :::
 :::
@@ -100,18 +166,116 @@ $$p_{Y|X}(y|x) = P(Y=y|X=x) = \dfrac{p_{X,Y}(x,y)}{p_X(x)}$$
 ::: {.column width="48%"}
 ::: theorem
 ::: thm-title
-For continuous RVs:
+For continuous RVs
 :::
 ::: thm-cont
+For a valid joint pdf, we need:
 
-$$f_{X|Y}(x|y) = \dfrac{f_{X,Y}(x,y)}{f_Y(y)}$$
-$$f_{Y|X}(y|x) = \dfrac{f_{X,Y}(x,y)}{f_X(x)}$$
+-   $f_{X,Y}(x,y)\geq 0$ for all $x,y$
+-   $\displaystyle\int_{-\infty}^{\infty}\displaystyle\int_{-\infty}^{\infty} f_{X,Y}(x,y)dxdy=1$
+
+For a valid conditional pdf, we need:
+
+- $f_{X|Y}(x|y)\geq 0$ for all $x$ and $y$
+- $\displaystyle\int_{-\infty}^{\infty} f_{X|Y}(x|y)dx =1$
 
 :::
 :::
 :::
 
 :::
+
+## Extra notes
+
+-   If $X_1, X_2, …, X_n$ are **independent**
+
+$$p_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = P(X_1=x_1, X_2=x_2, …, X_n=x_n)=\prod\limits_{i=1}^np_{X_i}(x_i)$$
+$$f_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = \prod\limits_{i=1}^nf_{X_i}(x_i)$$
+$$F_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = P(X_1\leq x_1, X_2\leq x_2, …, X_n\leq x_n)=\prod\limits_{i=1}^nP(X_i \leq x_i) = \prod\limits_{i=1}^nF_{X_i}(x_i)$$
+
+- Don't forget, you can manipulate the conditional density to get the joint: $$f_{X,Y}(x,y)= f_{X|Y}(x|y)f_Y(y)$$
+
+# Learning Objectives
+
+1. Identify the formula for joint distributions for independent RVs and conditional distributions (PMFs/PDFs)
+
+::: lob
+2. Find conditional pmf from a joint pmf and check if two RVs are independent.
+:::
+
+3. Construct a joint distribution for two independent continuous RVs from their marginal distributions.
+
+4. Calculate conditional probabilities and distributions for continuous RVs.
+
+## Last class: joint distribution for two discrete random variables (1/2)
+
+::: columns
+::: {.column width="35%"}
+::: example
+::: ex-title
+Example 1
+:::
+
+::: ex-cont
+Let $X$ and $Y$ be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.
+
+7.  Find $p_{X|Y}(x|y)$.
+:::
+:::
+
+![](/lessons/img_slides/joint_pmf.png){width="520"}
+
+:::
+
+
+:::
+
+## Last class: joint distribution for two discrete random variables (2/2)
+
+::: columns
+::: {.column width="35%"}
+::: example
+::: ex-title
+Example 1
+:::
+
+::: ex-cont
+Let $X$ and $Y$ be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.
+
+8.  Are $X$ and $Y$ independent? Why or why not?
+:::
+:::
+
+
+::: example
+::: ex-cont
+<font size=6ex>Remark:
+
+-   To show that $X$ and $Y$ are *not* independent, we just need to find one counter example
+-   However, to show that they *are* independent, we need to verify this for all possible pairs of $x$ and $y$ 
+
+</font>
+:::
+:::
+:::
+
+::: {.column width="65%"}
+![](/lessons/img_slides/joint_pmf.png){width="520"}
+:::
+
+:::
+
+# Learning Objectives
+
+1. Identify the formula for joint distributions for independent RVs and conditional distributions (PMFs/PDFs)
+
+2. Find conditional pmf from a joint pmf and check if two RVs are independent.
+
+::: lob
+3. Construct a joint distribution for two independent continuous RVs from their marginal distributions.
+:::
+
+4. Calculate conditional probabilities and distributions for continuous RVs.
 
 ## Constructing a joint pdf from two independent, continuous RVs
 
@@ -241,38 +405,15 @@ $0 \leq x \leq y$. Are $X$ and $Y$ independent?
     
 # Learning Objectives
 
-1. Calculate the conditional probability density from a joint pdf
+1. Identify the formula for joint distributions for independent RVs and conditional distributions (PMFs/PDFs)
 
+2. Find conditional pmf from a joint pmf and check if two RVs are independent.
 
-## Conditional probabilities we've seen before
+3. Construct a joint distribution for two independent continuous RVs from their marginal distributions.
 
-::: columns
-::: {.column width="40%"}
-**What do we know about conditional probabilities for events and discrete RVs?**
- 
- 
-
-For events:
-
-$$P(A | B) = \dfrac{P(A \cap B)}{P(B)}$$ 
- 
- 
-
-For discrete RVs: 
-$$p_{X|Y}(x|y) = P(X=x|Y=y) = \dfrac{p_{X,Y}(x,y)}{p_Y(y)}$$
+::: lob
+4. Calculate conditional probabilities and distributions for continuous RVs.
 :::
-
-::: {.column width="10%"}
-:::
-
-::: {.column width="50%"}
-**What does it mean for conditional densities of continuous RVs?**
-
-For continuous RVs:
-:::
-
-:::
-
 
 ## Example starting from a joint pdf: first try!
 
@@ -291,46 +432,6 @@ $0 < y < \frac{x}{2}$.
 :::
 :::
 
-:::
-:::
-
-## What is a conditional density?
-
-::: columns
-::: {.column width="45%"}
-::: definition
-::: def-title
-Definition: Conditional density
-:::
-::: def-cont
-The conditional density of a
-r.v. $X$ given $Y=y$, is $$f_{X|Y}(x|y)= \frac{f_{X,Y}(x,y)}{f_Y(y)},$$
-for $f_Y(y)> 0$
-:::
-:::
-:::
-
-::: {.column width="3%"}
-:::
-
-::: {.column width="52%"}
-
-**Remarks**
-
-1.  It follows from the definition for the conditional density
-    $f_{X|Y}(x|y)$, that $$f_{X,Y}(x,y)= f_{X|Y}(x|y)f_Y(y).$$
-    
- 
- 
- 
-
-2.  For a fixed value of $Y=y$, the conditional density $f_{X|Y}(x|y)$
-    is an actual pdf, meaning
-
-    -  $f_{X|Y}(x|y)\geq 0$ for all $x$ and $y$, and
-
-    -  $\displaystyle\int_{-\infty}^{\infty} f_{X|Y}(x|y)dx =1$.
-    
 :::
 :::
 
@@ -404,20 +505,3 @@ $\mathbb{P}(0 < Y < \frac14)$.
 
 :::
 :::
-
-## Independence and conditional distributions
-
- 
- 
-**Question** What is $f_{X|Y}(x|y)$ if $X$ and $Y$ are independent?
-
-$$f_{X|Y}(x|y) = \dfrac{f_{X,Y}(x,y)}{f_y(y)} = \dfrac{f_{X}(x)f_y(y)}{f_y(y)} = f_{X}(x)$$
-
- 
- 
- 
- 
-
--   If $f_{X|Y}(x|y)$ does not depend on $y$ (including the bounds/domain), then $X$ and $Y$
-are independent.
-

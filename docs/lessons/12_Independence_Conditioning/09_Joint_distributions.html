@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Meike Niederhausen and Nicky Wakim">
-  <meta name="dcterms.date" content="2025-11-03">
-  <title>Introduction to Probability – Lesson 12: Independence and Conditioning</title>
+  <meta name="dcterms.date" content="2024-10-21">
+  <title>Introduction to Probability – Chapter 9: Independence and Conditioning (Joint Distributions)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -128,7 +128,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-color="#006a4e" class="quarto-title-block center">
-  <h1 class="title">Lesson 12: Independence and Conditioning</h1>
+  <h1 class="title">Chapter 9: Independence and Conditioning (Joint Distributions)</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -138,164 +138,205 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </div>
 
-  <p class="date">2025-11-03</p>
+  <p class="date">2024-10-21</p>
 </section>
-<section>
-<section id="learning-objectives" class="title-slide slide level1 center">
-<h1>Learning Objectives</h1>
+<section id="learning-objectives" class="slide level2">
+<h2>Learning Objectives</h2>
 <ol type="1">
-<li><p>Identify the formula for joint distributions for independent RVs and conditional distributions (PMFs/PDFs)</p></li>
-<li><p>Find conditional pmf from a joint pmf and check if two RVs are independent.</p></li>
-<li><p>Construct a joint distribution for two independent continuous RVs from their marginal distributions.</p></li>
-<li><p>Calculate conditional probabilities and distributions for continuous RVs.</p></li>
+<li><p>Calculate probabilities for a pair of discrete random variables</p></li>
+<li><p>Calculate a <em>joint, marginal, and conditional</em> probability mass function (pmf)</p></li>
+<li><p>Calculate a <em>joint, marginal, and conditional</em> cumulative distribution function (CDF)</p></li>
 </ol>
 </section>
 <section id="where-are-we" class="slide level2">
 <h2>Where are we?</h2>
 
-<img data-src="../img_slides/course_map.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
-<section>
-<section id="learning-objectives-1" class="title-slide slide level1 center">
-<h1>Learning Objectives</h1>
-<div class="lob">
+<img data-src="../img_slides/course_map.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="what-is-a-joint-pmf" class="slide level2">
+<h2>What is a joint pmf?</h2>
+<div class="definition">
+<div class="def-title">
+<p>Definition: joint pmf</p>
+</div>
+<div class="def-cont">
+<p>The <strong>joint pmf</strong> of a pair of discrete r.v.’s <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> is <span class="math display">\[p_{X,Y}(x,y) = \mathbb{P}(X=x\ and\ Y=y) = \mathbb{P}(X=x, Y=y)\]</span></p>
+</div>
+</div>
+</section>
+<section id="this-chapters-main-example" class="slide level2">
+<h2>This chapter’s main example</h2>
+<div class="columns">
+<div class="column" style="width:100%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 1</p>
+</div>
+<div class="ex-cont">
+<p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.</p>
 <ol type="1">
-<li>Identify the formula for joint distributions for independent RVs and conditional distributions (PMFs/PDFs)</li>
+<li><p>Find <span class="math inline">\(p_{X,Y}(x,y)\)</span>.</p></li>
+<li><p>Find <span class="math inline">\(\mathbb{P}(X+Y=3).\)</span></p></li>
+<li><p>Find <span class="math inline">\(\mathbb{P}(Y = 1).\)</span></p></li>
+<li><p>Find <span class="math inline">\(\mathbb{P}(Y \leq 2).\)</span></p></li>
+<li><p>Find the joint CDF <span class="math inline">\(F_{X,Y}(x,y)\)</span> for the joint pmf <span class="math inline">\(p_{X,Y}(x,y)\)</span></p></li>
+<li><p>Find the marginal CDFs <span class="math inline">\(F_{X}(x)\)</span> and <span class="math inline">\(F_{Y}(y)\)</span></p></li>
+<li><p>Find <span class="math inline">\(p_{X|Y}(x|y)\)</span>.</p></li>
+<li><p>Are <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> independent? Why or why not?</p></li>
 </ol>
 </div>
-<ol start="2" type="1">
-<li><p>Find conditional pmf from a joint pmf and check if two RVs are independent.</p></li>
-<li><p>Construct a joint distribution for two independent continuous RVs from their marginal distributions.</p></li>
-<li><p>Calculate conditional probabilities and distributions for continuous RVs.</p></li>
-</ol>
-</section>
-<section id="how-do-we-represent-conditional-pmfspdfs" class="slide level2">
-<h2>How do we represent conditional pmfs/pdfs?</h2>
-<p>For events:</p>
-<p><span class="math display">\[P(A | B) = \dfrac{P(A \cap B)}{P(B)}\]</span></p>
-<div class="columns">
-<div class="column" style="width:48%;">
-<div class="proof1">
-<div class="proof-title">
-<p>For discrete RVs:</p>
-</div>
-<div class="proof-cont">
-<p><span class="math display">\[p_{X|Y}(x|y) = P(X=x|Y=y) = \dfrac{p_{X,Y}(x,y)}{p_Y(y)}\]</span> <span class="math display">\[p_{Y|X}(y|x) = P(Y=y|X=x) = \dfrac{p_{X,Y}(x,y)}{p_X(x)}\]</span></p>
-<p>if denominator is greater than 0 (<span class="math inline">\(p_Y(y) &gt; 0\)</span> or <span class="math inline">\(p_X(x) &gt; 0\)</span>)</p>
-</div>
-</div>
-</div><div class="column" style="width:4%;">
-
-</div><div class="column" style="width:48%;">
-<div class="theorem">
-<div class="thm-title">
-<p>For continuous RVs:</p>
-</div>
-<div class="thm-cont">
-<p><span class="math display">\[f_{X|Y}(x|y) = \dfrac{f_{X,Y}(x,y)}{f_Y(y)}\]</span> <span class="math display">\[f_{Y|X}(y|x) = \dfrac{f_{X,Y}(x,y)}{f_X(x)}\]</span></p>
-<p>if denominator is greater than 0 (<span class="math inline">\(f_Y(y) &gt; 0\)</span> or <span class="math inline">\(f_X(x) &gt; 0\)</span>)</p>
-</div>
 </div>
 </div></div>
 </section>
-<section id="how-do-we-represent-independent-rvs-in-a-joint-pmfpdf" class="slide level2">
-<h2>How do we represent independent RVs in a joint pmf/pdf?</h2>
-<p><strong>What do we know about independence for events?</strong></p>
-<p>For events: If <span class="math inline">\(A \perp B\)</span></p>
-<p><span class="math display">\[P(A \cap B) = P(A)P(B)\]</span> <span class="math display">\[P(A|B) = P(A)\]</span></p>
+<section id="joint-pmf" class="slide level2">
+<h2>Joint pmf</h2>
 <div class="columns">
-<div class="column" style="width:48%;">
-<div class="proof1">
-<div class="proof-title">
-<p>For discrete RVs: If <span class="math inline">\(X \perp Y\)</span></p>
+<div class="column" style="width:35%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 1</p>
 </div>
-<div class="proof-cont">
-<p><span class="math display">\[p_{X,Y}(x,y) = p_{X}(x)p_{Y}(y)\]</span> <span class="math display">\[F_{X,Y}(x,y) = F_{X}(x)F_{Y}(y)\]</span> <span class="math display">\[p_{X|Y}(x|y) = p_{X}(x)\]</span> <span class="math display">\[p_{Y|X}(y|x) = p_{Y}(y)\]</span></p>
-</div>
-</div>
-</div><div class="column" style="width:4%;">
-
-</div><div class="column" style="width:48%;">
-<div class="theorem">
-<div class="thm-title">
-<p>For continuous RVs: If <span class="math inline">\(X \perp Y\)</span></p>
-</div>
-<div class="thm-cont">
-<p><span class="math display">\[f_{X,Y}(x,y) = f_{X}(x)f_{Y}(y)\]</span> <span class="math display">\[F_{X,Y}(x,y) = F_{X}(x)F_{Y}(y)\]</span> <span class="math display">\[f_{X|Y}(x|y) = f_{X}(x)\]</span> <span class="math display">\[f_{Y|X}(y|x) = f_{Y}(y)\]</span></p>
-</div>
-</div>
-</div></div>
-</section>
-<section id="remember-our-probability-rules-must-hold-for-these" class="slide level2">
-<h2>Remember: our probability rules must hold for these!</h2>
-<div class="columns">
-<div class="column" style="width:48%;">
-<div class="proof1">
-<div class="proof-title">
-<p>For discrete RVs</p>
-</div>
-<div class="proof-cont">
-<p>For a valid joint pmf, we need:</p>
-<ul>
-<li><span class="math inline">\(0 \geq p_{X,Y}(x,y) \leq 1\)</span> for all <span class="math inline">\(x, y\)</span></li>
-<li><span class="math inline">\(\sum \limits_{\{all\ x\}} \sum \limits_{\{all\ y\}} p_{X,Y}(x,y)=1\)</span></li>
-</ul>
-<p>For a valid conditional pmf, we need:</p>
-<ul>
-<li><span class="math inline">\(0 \geq p_{X|Y}(x|y) \leq 1\)</span> for all <span class="math inline">\(x, y\)</span></li>
-<li><span class="math inline">\(\sum \limits_{\{all\ x\}} p_{X|Y}(x|y)=1\)</span></li>
-</ul>
-</div>
-</div>
-</div><div class="column" style="width:4%;">
-
-</div><div class="column" style="width:48%;">
-<div class="theorem">
-<div class="thm-title">
-<p>For continuous RVs</p>
-</div>
-<div class="thm-cont">
-<p>For a valid joint pdf, we need:</p>
-<ul>
-<li><span class="math inline">\(f_{X,Y}(x,y)\geq 0\)</span> for all <span class="math inline">\(x,y\)</span></li>
-<li><span class="math inline">\(\displaystyle\int_{-\infty}^{\infty}\displaystyle\int_{-\infty}^{\infty} f_{X,Y}(x,y)dxdy=1\)</span></li>
-</ul>
-<p>For a valid conditional pdf, we need:</p>
-<ul>
-<li><span class="math inline">\(f_{X|Y}(x|y)\geq 0\)</span> for all <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span></li>
-<li><span class="math inline">\(\displaystyle\int_{-\infty}^{\infty} f_{X|Y}(x|y)dx =1\)</span></li>
-</ul>
-</div>
-</div>
-</div></div>
-</section>
-<section id="extra-notes" class="slide level2">
-<h2>Extra notes</h2>
-<ul>
-<li>If <span class="math inline">\(X_1, X_2, …, X_n\)</span> are <strong>independent</strong></li>
-</ul>
-<p><span class="math display">\[p_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = P(X_1=x_1, X_2=x_2, …, X_n=x_n)=\prod\limits_{i=1}^np_{X_i}(x_i)\]</span> <span class="math display">\[f_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = \prod\limits_{i=1}^nf_{X_i}(x_i)\]</span> <span class="math display">\[F_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = P(X_1\leq x_1, X_2\leq x_2, …, X_n\leq x_n)=\prod\limits_{i=1}^nP(X_i \leq x_i) = \prod\limits_{i=1}^nF_{X_i}(x_i)\]</span></p>
-<ul>
-<li>Don’t forget, you can manipulate the conditional density to get the joint: <span class="math display">\[f_{X,Y}(x,y)= f_{X|Y}(x|y)f_Y(y)\]</span></li>
-</ul>
-</section></section>
-<section>
-<section id="learning-objectives-2" class="title-slide slide level1 center">
-<h1>Learning Objectives</h1>
+<div class="ex-cont">
+<p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.</p>
 <ol type="1">
-<li>Identify the formula for joint distributions for independent RVs and conditional distributions (PMFs/PDFs)</li>
-</ol>
-<div class="lob">
-<ol start="2" type="1">
-<li>Find conditional pmf from a joint pmf and check if two RVs are independent.</li>
+<li><p>Find <span class="math inline">\(p_{X,Y}(x,y)\)</span>.</p></li>
+<li><p>Find <span class="math inline">\(\mathbb{P}(X+Y=3).\)</span></p></li>
 </ol>
 </div>
+</div>
+</div></div>
+</section>
+<section id="marginal-pmfs" class="slide level2">
+<h2>Marginal pmf’s</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 1</p>
+</div>
+<div class="ex-cont">
+<p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.</p>
 <ol start="3" type="1">
-<li><p>Construct a joint distribution for two independent continuous RVs from their marginal distributions.</p></li>
-<li><p>Calculate conditional probabilities and distributions for continuous RVs.</p></li>
+<li><p>Find <span class="math inline">\(\mathbb{P}(Y = 1).\)</span></p></li>
+<li><p>Find <span class="math inline">\(\mathbb{P}(Y \leq 2).\)</span></p></li>
 </ol>
+</div>
+</div>
+</div></div>
 </section>
-<section id="last-class-joint-distribution-for-two-discrete-random-variables-12" class="slide level2">
-<h2>Last class: joint distribution for two discrete random variables (1/2)</h2>
+<section id="remarks-on-the-joint-pmf" class="slide level2">
+<h2>Remarks on the joint pmf</h2>
+<p>Some properties of joint pmf’s:</p>
+<ul>
+<li><p>A joint pmf <span class="math inline">\(p_{X,Y}(x,y)\)</span> must satisfy the following properties:</p>
+<ul>
+<li><p><span class="math inline">\(p_{X,Y}(x,y)\geq 0\)</span> for all <span class="math inline">\(x, y\)</span>.</p></li>
+<li><p><span class="math inline">\(\sum \limits_{\{all\ x\}} \sum \limits_{\{all\ y\}} p_{X,Y}(x,y)=1\)</span>.</p></li>
+</ul></li>
+<li><p>Marginal pmf’s:</p>
+<ul>
+<li><p><span class="math inline">\(p_X(x) = \sum \limits_{\{all\ y\}} p_{X,Y}(x,y)\)</span></p></li>
+<li><p><span class="math inline">\(p_Y(y) = \sum \limits_{\{all\ x\}} p_{X,Y}(x,y)\)</span></p></li>
+</ul></li>
+</ul>
+</section>
+<section id="what-is-a-joint-cdf" class="slide level2">
+<h2>What is a joint CDF?</h2>
+<div class="definition">
+<div class="def-title">
+<p>Definition: joint CDF</p>
+</div>
+<div class="def-cont">
+<p>The <strong>joint CDF</strong> of a pair of discrete r.v.’s <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> is <span class="math display">\[F_{X,Y}(x,y) = \mathbb{P}(X \leq x\ and\ Y \leq y) = \mathbb{P}(X \leq x, Y \leq y)\]</span></p>
+</div>
+</div>
+</section>
+<section id="joint-cdfs" class="slide level2">
+<h2>Joint CDFs</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 1</p>
+</div>
+<div class="ex-cont">
+<p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.</p>
+<ol start="5" type="1">
+<li>Find the joint CDF <span class="math inline">\(F_{X,Y}(x,y)\)</span> for the joint pmf <span class="math inline">\(p_{X,Y}(x,y)\)</span></li>
+</ol>
+</div>
+</div>
+</div></div>
+</section>
+<section id="marginal-cdfs" class="slide level2">
+<h2>Marginal CDFs</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 1</p>
+</div>
+<div class="ex-cont">
+<p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.</p>
+<ol start="6" type="1">
+<li>Find the marginal CDFs <span class="math inline">\(F_{X}(x)\)</span> and <span class="math inline">\(F_{Y}(y)\)</span></li>
+</ol>
+</div>
+</div>
+</div></div>
+</section>
+<section id="remarks-on-the-joint-and-marginal-cdf" class="slide level2">
+<h2>Remarks on the joint and marginal CDF</h2>
+<ul>
+<li><p><span class="math inline">\(F_X(x)\)</span>: right most columns of the CDf table (where the <span class="math inline">\(Y\)</span> values are largest)</p></li>
+<li><p><span class="math inline">\(F_Y(y)\)</span>: bottom row of the table (where X values are largest)</p></li>
+<li><p><span class="math inline">\(F_X(x)=\lim\limits_{y\rightarrow\infty}F_{X, Y}(x,y)\)</span></p></li>
+<li><p><span class="math inline">\(F_Y(y)=\lim\limits_{x\rightarrow\infty}F_{X, Y}(x,y)\)</span></p></li>
+</ul>
+</section>
+<section id="independence-and-conditioning" class="slide level2">
+<h2>Independence and Conditioning</h2>
+<p>Recall that for <em>events</em> <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>,</p>
+<ul>
+<li><p><span class="math inline">\(\mathbb{P}(A|B) = \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(B)}\)</span></p></li>
+<li><p><span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent if and only if</p>
+<ul>
+<li><p><span class="math inline">\(\mathbb{P}(A|B) = \mathbb{P}(A)\)</span></p></li>
+<li><p><span class="math inline">\(\mathbb{P}(A \cap B) = \mathbb{P}(A)\cdot\mathbb{P}(B)\)</span></p></li>
+</ul></li>
+</ul>
+<p>Independence and conditioning are defined similarly for r.v.’s, since <span class="math display">\[p_X(x) = \mathbb{P}(X=x)\ \mathrm{and}\ \ p_{X,Y}(x,y) = \mathbb{P}(X = x ,Y = y).\]</span></p>
+</section>
+<section id="what-is-the-conditional-pmf" class="slide level2">
+<h2>What is the conditional pmf?</h2>
+<div class="definition">
+<div class="def-title">
+<p>Definition: conditional pmf</p>
+</div>
+<div class="def-cont">
+<p>The <strong>conditional pmf</strong> of a pair of discrete r.v.’s <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> is defined as <span class="math display">\[p_{X|Y}(x|y) = \mathbb{P}(X = x |Y = y) = \frac{\mathbb{P}(X = x\ and\ Y = y)}{\mathbb{P}(Y = y)}
+=\frac{p_{X,Y}(x,y) }{p_{Y}(y) }\]</span> if <span class="math inline">\(p_{Y}(y) &gt; 0\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="remarks-on-the-conditional-pmf" class="slide level2">
+<h2>Remarks on the conditional pmf</h2>
+<p>The following properties follow from the conditional pmf definition:</p>
+<ul>
+<li><p>If <span class="math inline">\(X \perp Y\)</span> (independent)</p>
+<ul>
+<li><span class="math inline">\(p_{X|Y}(x|y) = p_X(x)\)</span> for all <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span></li>
+<li><span class="math inline">\(p_{X,Y}(x,y) = p_X(x)p_Y(y)\)</span> for all <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span></li>
+<li>Which also implies (<span class="math inline">\(\Rightarrow\)</span>): <span class="math inline">\(F_{X,Y}(x,y) = F_X(x)F_Y(y)\)</span> for all <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span></li>
+</ul></li>
+<li><p>If <span class="math inline">\(X_1, X_2, …, X_n\)</span> are independent</p>
+<ul>
+<li><span class="math display">\[p_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = P(X_1=x_1, X_2=x_2, …, X_n=x_n)=\prod\limits_{i=1}^np_{X_i}(x_i)\]</span></li>
+<li><span class="math display">\[F_{X_1, X_2, …, X_n}(x_1, x_2, …, x_n) = P(X_1\leq x_1, X_2\leq x_2, …, X_n\leq x_n)=\prod\limits_{i=1}^nP(X_i \leq x_i) = \prod\limits_{i=1}^nF_{X_i}(x_i)\]</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="conditional-pmfs" class="slide level2">
+<h2>Conditional pmf’s</h2>
 <div class="columns">
 <div class="column" style="width:35%;">
 <div class="example">
@@ -306,23 +347,6 @@ Meike Niederhausen and Nicky Wakim
 <p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.</p>
 <ol start="7" type="1">
 <li>Find <span class="math inline">\(p_{X|Y}(x|y)\)</span>.</li>
-</ol>
-</div>
-</div>
-<p><img data-src="../../lessons/img_slides/joint_pmf.png" width="520"></p>
-</div></div>
-</section>
-<section id="last-class-joint-distribution-for-two-discrete-random-variables-22" class="slide level2">
-<h2>Last class: joint distribution for two discrete random variables (2/2)</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 1</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be two random draws from a box containing balls labelled 1, 2, and 3 without replacement.</p>
-<ol start="8" type="1">
 <li>Are <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> independent? Why or why not?</li>
 </ol>
 </div>
@@ -337,241 +361,13 @@ Meike Niederhausen and Nicky Wakim
 </font><p><font size="6ex"></font></p>
 </div>
 </div>
-</div><div class="column" style="width:65%;">
-<p><img data-src="../../lessons/img_slides/joint_pmf.png" width="520"></p>
-</div></div>
-</section></section>
-<section>
-<section id="learning-objectives-3" class="title-slide slide level1 center">
-<h1>Learning Objectives</h1>
-<ol type="1">
-<li><p>Identify the formula for joint distributions for independent RVs and conditional distributions (PMFs/PDFs)</p></li>
-<li><p>Find conditional pmf from a joint pmf and check if two RVs are independent.</p></li>
-</ol>
-<div class="lob">
-<ol start="3" type="1">
-<li>Construct a joint distribution for two independent continuous RVs from their marginal distributions.</li>
-</ol>
-</div>
-<ol start="4" type="1">
-<li>Calculate conditional probabilities and distributions for continuous RVs.</li>
-</ol>
-</section>
-<section id="constructing-a-joint-pdf-from-two-independent-continuous-rvs" class="slide level2">
-<h2>Constructing a joint pdf from two independent, continuous RVs</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 1.1</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be independent r.v.’s with <span class="math inline">\(f_X(x)= \frac12\)</span>, for <span class="math inline">\(0 \leq x \leq 2\)</span> and <span class="math inline">\(f_Y(y)= 3y^2\)</span>, for <span class="math inline">\(0 \leq y \leq 1\)</span>.</p>
-<ol type="1">
-<li>Find <span class="math inline">\(f_{X,Y}(x,y)\)</span></li>
-</ol>
-</div>
-</div>
 </div></div>
 </section>
-<section id="probability-from-joint-pdf-from-two-independent-continuous-rvs" class="slide level2">
-<h2>Probability from joint pdf from two independent, continuous RVs</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 1.2</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be independent r.v.’s with <span class="math inline">\(f_X(x)= \frac12\)</span>, for <span class="math inline">\(0 \leq x \leq 2\)</span> and <span class="math inline">\(f_Y(y)= 3y^2\)</span>, for <span class="math inline">\(0 \leq y \leq 1\)</span>.</p>
-<ol start="2" type="1">
-<li>Find <span class="math inline">\(\mathbb{P}(0 \leq X \leq 1, 0 \leq Y \leq \frac12)\)</span></li>
-</ol>
-</div>
-</div>
-</div></div>
-</section>
-<section id="showing-independence-from-joint-pdf" class="slide level2">
-<h2>Showing independence from joint pdf</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 2.1</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(f_{X,Y}(x,y)= 18 x^2 y^5\)</span>, for <span class="math inline">\(0 \leq x \leq 1, \ 0 \leq y \leq 1\)</span>.</p>
-<ol type="1">
-<li>Are <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> independent?</li>
-</ol>
-</div>
-</div>
-</div></div>
-</section>
-<section id="finding-cdf-from-two-independent-rvs" class="slide level2">
-<h2>Finding CDF from two independent RVs</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 2.2</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(f_{X,Y}(x,y)= 18 x^2 y^5\)</span>, for <span class="math inline">\(0 \leq x \leq 1, \ 0 \leq y \leq 1\)</span>.</p>
-<ol start="2" type="1">
-<li>Find <span class="math inline">\(F_{X,Y}(x,y)\)</span>.</li>
-</ol>
-</div>
-</div>
-</div></div>
-</section>
-<section id="showing-independence-from-joint-pdf-1" class="slide level2">
-<h2>Showing independence from joint pdf</h2>
-<div class="callout callout-important no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Do this problem at home for extra practice. The solution is available in Meike’s video!</p>
-</div>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 3</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(f_{X,Y}(x,y)= 2 e^{-(x+y)}\)</span>, for <span class="math inline">\(0 \leq x \leq y\)</span>. Are <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> independent?</p>
-</div>
-</div>
-</div></div>
-</section>
-<section id="final-statement-on-independence" class="slide level2">
-<h2>Final statement on independence</h2>
-<ol type="1">
-<li><p>If <span class="math inline">\(f_{X,Y}(x,y)= g(x)h(y)\)</span>, where <span class="math inline">\(g(x)\)</span> and <span class="math inline">\(h(y)\)</span> are pdf’s, then <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are independent.</p>
-<ul>
-<li>The domain of the joint pdf needs to be independent as well!!</li>
-</ul></li>
-</ol>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;</p>
-<ol start="2" type="1">
-<li><p>If <span class="math inline">\(F_{X,Y}(x,y)= G(x)H(y)\)</span>, where <span class="math inline">\(G(x)\)</span> and <span class="math inline">\(H(y)\)</span> are cdf’s, then <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are independent.</p>
-<ul>
-<li>The domain of the joint CDF needs to be independent as well!!</li>
-</ul></li>
-</ol>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;</p>
-<ul>
-<li>Make sure that:
-<ul>
-<li><span class="math inline">\(X\)</span> domain does NOT depend on <span class="math inline">\(Y\)</span></li>
-<li><span class="math inline">\(Y\)</span> domain does NOT depend on <span class="math inline">\(X\)</span></li>
-</ul></li>
-</ul>
-</section></section>
-<section>
-<section id="learning-objectives-4" class="title-slide slide level1 center">
-<h1>Learning Objectives</h1>
-<ol type="1">
-<li><p>Identify the formula for joint distributions for independent RVs and conditional distributions (PMFs/PDFs)</p></li>
-<li><p>Find conditional pmf from a joint pmf and check if two RVs are independent.</p></li>
-<li><p>Construct a joint distribution for two independent continuous RVs from their marginal distributions.</p></li>
-</ol>
-<div class="lob">
-<ol start="4" type="1">
-<li>Calculate conditional probabilities and distributions for continuous RVs.</li>
-</ol>
-</div>
-</section>
-<section id="example-starting-from-a-joint-pdf-first-try" class="slide level2">
-<h2>Example starting from a joint pdf: first try!</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 1.1</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(f_{X,Y}(x,y)= 5 e^{-x-3y}\)</span>, for <span class="math inline">\(0 &lt; y &lt; \frac{x}{2}\)</span>.</p>
-<ol type="1">
-<li>Find <span class="math inline">\(\mathbb{P}(2&lt;X&lt;10|Y=4)\)</span></li>
-</ol>
-</div>
-</div>
-</div></div>
-</section>
-<section id="example-starting-from-a-joint-pdf-second-try-12" class="slide level2">
-<h2>Example starting from a joint pdf: second try! (1/2)</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 1.1</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(f_{X,Y}(x,y)= 5 e^{-x-3y}\)</span>, for <span class="math inline">\(0 &lt; y &lt; \frac{x}{2}\)</span>.</p>
-<ol type="1">
-<li>Find <span class="math inline">\(\mathbb{P}(2&lt;X&lt;10|Y=4)\)</span></li>
-</ol>
-</div>
-</div>
-</div></div>
-</section>
-<section id="example-starting-from-a-joint-pdf-second-try-22" class="slide level2">
-<h2>Example starting from a joint pdf: second try! (2/2)</h2>
-</section>
-<section id="example-starting-from-a-joint-pdf" class="slide level2">
-<h2>Example starting from a joint pdf</h2>
-<div class="callout callout-important no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Do this problem at home for extra practice. The solution is available in Meike’s video!</p>
-</div>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 1.2</p>
-</div>
-<div class="ex-cont">
-<p>Let <span class="math inline">\(f_{X,Y}(x,y)= 5 e^{-x-3y}\)</span>, for <span class="math inline">\(0 &lt; y &lt; \frac{x}{2}\)</span>.</p>
-<ol start="2" type="1">
-<li>Find <span class="math inline">\(\mathbb{P}(X&gt;20 |Y=5)\)</span></li>
-</ol>
-</div>
-</div>
-</div></div>
-</section>
-<section id="finding-probability-with-conditional-domain-and-pdf" class="slide level2">
-<h2>Finding probability with conditional domain and pdf</h2>
-<div class="callout callout-important no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>Do this problem at home for extra practice. The solution is available in Meike’s video!</p>
-</div>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 2</p>
-</div>
-<div class="ex-cont">
-<p>Randomly choose a point <span class="math inline">\(X\)</span> from the interval <span class="math inline">\([0,1]\)</span>, and given <span class="math inline">\(X=x\)</span>, randomly choose a point <span class="math inline">\(Y\)</span> from <span class="math inline">\([0,x]\)</span>. Find <span class="math inline">\(\mathbb{P}(0 &lt; Y &lt; \frac14)\)</span>.</p>
-</div>
-</div>
-</div></div>
 
-
-</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>Lesson 12 Slides</p>
+<p>Chapter 9 Slides</p>
 </div>
 </div></div>
 
@@ -783,44 +579,6 @@ Meike Niederhausen and Nicky Wakim
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
