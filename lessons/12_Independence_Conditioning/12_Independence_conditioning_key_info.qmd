@@ -10,11 +10,16 @@ editor_options:
 
 ## Announcements
 
-- 
+- Did everyone turn in their midquarter feedback?
+- Quiz 2 opens on Wednesday
+  - Lessons 7-9: pmfs, pdfs, and CDFs
+- Finish up example from last class
 
 ## Key Dates
 
-- 
+- Homework 5 due this Sunday
+- Quiz 2 due this Sunday
+  - Opens Wednesday!
 
 
   
