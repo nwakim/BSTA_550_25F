@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-11-25">
 
-<title>Homework – Introduction to Probability</title>
+<title>Muddy Points – Introduction to Probability</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9945c5c3bf24965647d4ea0e1a99ef83.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/iconify-1.0.0-beta.2/iconify-icon.min.js"></script>
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-9945c5c3bf24965647d4ea0e1a99ef83.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -80,11 +109,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-sm " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/bsta_550_hex_3.png" alt="" class="navbar-logo light-content">
-    <img src="./images/bsta_550_hex_3.png" alt="" class="navbar-logo dark-content">
+    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../images/bsta_550_hex_3.png" alt="" class="navbar-logo light-content">
+    <img src="../../../../images/bsta_550_hex_3.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">Introduction to Probability</span>
     </a>
   </div>
@@ -95,23 +124,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
+    <a class="nav-link" href="../../../../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../../../../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./instructors.html"> 
+    <a class="nav-link" href="../../../../instructors.html"> 
 <span class="menu-text">Instructor</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./homeworks.html" aria-current="page"> 
+    <a class="nav-link" href="../../../../homeworks.html"> 
 <span class="menu-text">Homework</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./quiz.html"> 
+    <a class="nav-link" href="../../../../quiz.html"> 
 <span class="menu-text">Quizzes</span></a>
   </li>  
 </ul>
@@ -122,23 +151,38 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#how-do-we-set-the-bounds-on-a-double-integral" id="toc-how-do-we-set-the-bounds-on-a-double-integral" class="nav-link active" data-scroll-target="#how-do-we-set-the-bounds-on-a-double-integral">2. How do we set the bounds on a double integral?</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Homework</h1>
+<h1 class="title">Muddy Points</h1>
+<p class="subtitle lead">Chapter 28 revisited: Expected Values of Joint distributions</p>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 25, 2024</p>
+    </div>
+  </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
@@ -154,128 +198,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Homework</th>
-<th>Assignment</th>
-<th>Assignment due (@11pm)</th>
-<th>Answers</th>
-<th>Solutions &amp; videos</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_00.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>10/02</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>1</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_01.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>10/12</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_01_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><a href="https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/BSTA_550_25F/Student_files_BSTA_550/HW_solns/HW_01?csf=1&amp;web=1&amp;e=MkybbV"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></a></span></td>
-</tr>
-<tr class="odd">
-<td>2</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_02.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>10/19</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_02_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><a href="https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/BSTA_550_25F/Student_files_BSTA_550/HW_solns/HW_02?csf=1&amp;web=1&amp;e=NJoXh9"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></a></span></td>
-</tr>
-<tr class="even">
-<td>3</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_03.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>10/26</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_03_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><a href="https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/BSTA_550_25F/Student_files_BSTA_550/HW_solns/HW_03?csf=1&amp;web=1&amp;e=0dp4TC"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></a></span></td>
-</tr>
-<tr class="odd">
-<td>4</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_04.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>11/02</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_04_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></span></td>
-</tr>
-<tr class="even">
-<td>5</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_05.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>11/09</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_05_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></span></td>
-</tr>
-<tr class="odd">
-<td>6</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_06.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>11/16</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_06_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></span></td>
-</tr>
-<tr class="even">
-<td>7</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_07.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>11/23</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_07_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></span></td>
-</tr>
-<tr class="odd">
-<td>8</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_08.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>12/07</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_08_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></span></td>
-</tr>
-<tr class="even">
-<td>9 (optional)</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_09.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>12/11</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_09_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></span></td>
-</tr>
-</tbody>
-</table>
-<section id="file-naming" class="level2">
-<h2 class="anchored" data-anchor-id="file-naming">File Naming</h2>
-<ul>
-<li><p>For HW <strong>Assignments</strong>, please use the following file naming: “HW01_LastName_FirstInitial”</p>
-<ul>
-<li><p>For homeworks without R, this should be a pdf file</p></li>
-<li><p>For homeworks with R, this may be a pdf file (with the code in the pdf) or an html file</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="rubric" class="level2">
-<h2 class="anchored" data-anchor-id="rubric">Rubric</h2>
-<section id="assignments" class="level3">
-<h3 class="anchored" data-anchor-id="assignments">Assignments</h3>
-<p>A total of 1 point will be given for a complete homework. The following rubric will be used:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>1 point</th>
-<th>0 points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Completeness</td>
-<td>75% of the question parts are thoroughly worked out and have an answer. “Question parts” means the sub-questions labeled “Part _.” Answers can be incorrect or correct. For parts with longer processes and calculations, solution set up and calculations are required.</td>
-<td>Less than 75% of question parts are thoroughly worked out. Attempts do not count as thoroughly worked out.</td>
-</tr>
-</tbody>
-</table>
+<p>Muddy points from Fall 2023:</p>
+<section id="how-do-we-set-the-bounds-on-a-double-integral" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-we-set-the-bounds-on-a-double-integral">2. How do we set the bounds on a double integral?</h3>
+<p>When the domain of the RVs are not dependent on each other, then we use the bounds as is. In example 2 of Chapter 26 notes, we have the joint pdf <span class="math inline">\(f_{X,Y}(x,y)= 18 x^2 y^5\)</span>, for<span class="math inline">\(0 \leq x \leq 1, \ 0 \leq y \leq 1\)</span>. If we wanted to calculate something like <span class="math inline">\(E(X)\)</span>, then we could use the bounds as they are. Below is the domain for <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Muddy_point_w5_02_01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="412"></p>
+</figure>
+</div>
+<p>Here is the integral for the expected value where we integrate over the whole domain of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>:</p>
+<p><span class="math display">\[ E(X) = \displaystyle\int_0^1 \displaystyle\int_0^1 x (18 x^2 y^5 )dy dx \]</span>If we want to find the probability <span class="math inline">\(P(0.25 \leq X \leq 0.5, 0.5 \leq Y \leq 0.75)\)</span>, then we can look at the specific values of the probability:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Muddy_point_w5_02_02.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
+</figure>
+</div>
+<p>Note the blue lines above indicate how we integrate over <span class="math inline">\(y\)</span> first from 0.5 to 0.75 and the green lines indicate how integrate over <span class="math inline">\(x\)</span> first from 0.25 to 0.5. It seems like we’ve integrated over an area that isn’t within our specified probability. However, the integrated area is ONLY the overlap of the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> bounds for the probability.</p>
+<p><span class="math display">\[P(0.25 \leq X \leq 0.5, 0.5 \leq Y \leq 0.75) = \displaystyle\int_{0.25}^{0.5} \displaystyle\int_{0.5}^{0.75} 18 x^2 y^5 dy dx\]</span></p>
+<p>Let’s use the same pdf, but now the domain of the two RVs is dependent on one another. We have the joint pdf <span class="math inline">\(f_{X,Y}(x,y)= 18 x^2 y^5\)</span>, for<span class="math inline">\(0 \leq x \leq y\leq1\)</span></p>
+<p>If we wanted to calculate something like <span class="math inline">\(E(X)\)</span>, then we need to account for fact that <span class="math inline">\(x\)</span> must be less than of equal to <span class="math inline">\(y\)</span>. We can look back at the domain for this:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Muddy_point_w5_02_03.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
+</figure>
+</div>
+<p>Note the blue lines above still indicate how we integrate over <span class="math inline">\(y\)</span> first from <span class="math inline">\(x\)</span> to 1, and the green lines indicate how integrate over <span class="math inline">\(x\)</span> first from 0 to 1. Once again, it seems like we’ve integrated over an area that isn’t within the domain. However, the integrated area is ONLY the overlap of the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> bounds. Thus, once we’ve restricted <span class="math inline">\(y\)</span> to the area between <span class="math inline">\(x\)</span> and 1, we no longer need to restrict <span class="math inline">\(x\)</span> to the are of 0 to <span class="math inline">\(y\)</span>.</p>
+<p><span class="math display">\[ E(X) = \displaystyle\int_0^1 \displaystyle\int_x^1 x (18 x^2 y^5 )dy dx \]</span> If we want to find the probability <span class="math inline">\(P(0.25 \leq X \leq 0.5, 0.5 \leq Y \leq 0.75)\)</span>, then we should look back at our domain. For now, we are focusing on the orange area:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Muddy_point_w5_02_04.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="400"></p>
+</figure>
+</div>
+<p>Because the orange area is totally within our domain, we can leave our integral our bounds as the exact values we specified:</p>
+<p><span class="math display">\[P(0.25 \leq X \leq 0.5, 0.5 \leq Y \leq 0.75) = \displaystyle\int_{0.25}^{0.5} \displaystyle\int_{0.5}^{0.75} 18 x^2 y^5 dy dx\]</span></p>
+<p>However, if we want the probability <span class="math inline">\(P(0.5 \leq X \leq 0.75, 0.5 \leq Y \leq 0.75)\)</span>, we would focus on the pink area above. We would limit one of our integrals to the <span class="math inline">\(y=x\)</span> equation:</p>
+<p><span class="math display">\[P(0.5 \leq X \leq 0.75, 0.5 \leq Y \leq 0.75) = \displaystyle\int_{0.5}^{0.75} \displaystyle\int_{x}^{0.75} 18 x^2 y^5 dy dx\]</span></p>
+<p>OR</p>
+<p><span class="math display">\[P(0.5 \leq X \leq 0.75, 0.5 \leq Y \leq 0.75) = \displaystyle\int_{0.5}^{0.75} \displaystyle\int_{0.5}^{y} 18 x^2 y^5 dx dy\]</span></p>
+<p>The key to these probabilities is that the bounds with the other variable is on the inside integral! Otherwise we end up with a answer that includes a RV.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

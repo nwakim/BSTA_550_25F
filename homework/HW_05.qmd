@@ -1,7 +1,7 @@
 ---
 title: "Homework 5"
 subtitle: "BSTA 550"
-description: "Due: `r library(here); source(here('class_dates.R')); hw4 %>% format('%m/%d')` at 11pm"
+description: "Due: `r library(here); source(here('class_dates.R')); hw5 %>% format('%m/%d')` at 11pm"
 date-modified: "today"
 format: 
   html:

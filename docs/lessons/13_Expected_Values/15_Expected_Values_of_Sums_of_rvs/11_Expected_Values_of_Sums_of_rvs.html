@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Meike Niederhausen and Nicky Wakim">
+<meta name="dcterms.date" content="2024-10-23">
 
-<title>Homework – Introduction to Probability</title>
+<title>Chapter 11: Expected Values of Sums of Discrete RVs – Introduction to Probability</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9945c5c3bf24965647d4ea0e1a99ef83.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/iconify-1.0.0-beta.2/iconify-icon.min.js"></script>
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-9945c5c3bf24965647d4ea0e1a99ef83.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -80,11 +110,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-sm " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/bsta_550_hex_3.png" alt="" class="navbar-logo light-content">
-    <img src="./images/bsta_550_hex_3.png" alt="" class="navbar-logo dark-content">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../images/bsta_550_hex_3.png" alt="" class="navbar-logo light-content">
+    <img src="../../../images/bsta_550_hex_3.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Introduction to Probability</span>
     </a>
   </div>
@@ -95,23 +125,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
+    <a class="nav-link" href="../../../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../../../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./instructors.html"> 
+    <a class="nav-link" href="../../../instructors.html"> 
 <span class="menu-text">Instructor</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./homeworks.html" aria-current="page"> 
+    <a class="nav-link" href="../../../homeworks.html"> 
 <span class="menu-text">Homework</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./quiz.html"> 
+    <a class="nav-link" href="../../../quiz.html"> 
 <span class="menu-text">Quizzes</span></a>
   </li>  
 </ul>
@@ -122,30 +152,50 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#where-are-we" id="toc-where-are-we" class="nav-link" data-scroll-target="#where-are-we">Where are we?</a></li>
+  <li><a href="#revisiting-our-two-card-draw" id="toc-revisiting-our-two-card-draw" class="nav-link" data-scroll-target="#revisiting-our-two-card-draw">Revisiting our two card draw</a></li>
+  <li><a href="#what-if-we-draw-a-lot-of-cards" id="toc-what-if-we-draw-a-lot-of-cards" class="nav-link" data-scroll-target="#what-if-we-draw-a-lot-of-cards">What if we draw A LOT of cards?</a></li>
+  <li><a href="#sum-of-discrete-rvs" id="toc-sum-of-discrete-rvs" class="nav-link" data-scroll-target="#sum-of-discrete-rvs">Sum of discrete RVs</a></li>
+  <li><a href="#corollaries-from-thm-11.1" id="toc-corollaries-from-thm-11.1" class="nav-link" data-scroll-target="#corollaries-from-thm-11.1">Corollaries from Thm 11.1</a></li>
+  <li><a href="#cost-of-hotel-rooms" id="toc-cost-of-hotel-rooms" class="nav-link" data-scroll-target="#cost-of-hotel-rooms">Cost of hotel rooms</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="11_Expected_Values_of_Sums_of_rvs.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Homework</h1>
+<h1 class="title">Chapter 11: Expected Values of Sums of Discrete RVs</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
-    
-  
     <div>
-    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">November 4, 2025</p>
+             <p>Meike Niederhausen and Nicky Wakim </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 23, 2024</p>
     </div>
   </div>
+  
     
   </div>
   
@@ -154,128 +204,123 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Homework</th>
-<th>Assignment</th>
-<th>Assignment due (@11pm)</th>
-<th>Answers</th>
-<th>Solutions &amp; videos</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_00.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>10/02</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>1</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_01.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>10/12</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_01_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><a href="https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/BSTA_550_25F/Student_files_BSTA_550/HW_solns/HW_01?csf=1&amp;web=1&amp;e=MkybbV"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></a></span></td>
-</tr>
-<tr class="odd">
-<td>2</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_02.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>10/19</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_02_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><a href="https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/BSTA_550_25F/Student_files_BSTA_550/HW_solns/HW_02?csf=1&amp;web=1&amp;e=NJoXh9"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></a></span></td>
-</tr>
-<tr class="even">
-<td>3</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_03.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>10/26</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_03_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><a href="https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/BSTA_550_25F/Student_files_BSTA_550/HW_solns/HW_03?csf=1&amp;web=1&amp;e=0dp4TC"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></a></span></td>
-</tr>
-<tr class="odd">
-<td>4</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_04.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>11/02</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_04_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></span></td>
-</tr>
-<tr class="even">
-<td>5</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_05.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>11/09</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_05_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></span></td>
-</tr>
-<tr class="odd">
-<td>6</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_06.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>11/16</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_06_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></span></td>
-</tr>
-<tr class="even">
-<td>7</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_07.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>11/23</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_07_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></span></td>
-</tr>
-<tr class="odd">
-<td>8</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_08.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>12/07</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_08_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></span></td>
-</tr>
-<tr class="even">
-<td>9 (optional)</td>
-<td><span style="color:#f8f5f0;"><a href="./homework/HW_09.html"><iconify-icon inline="" icon="material-symbols:assignment" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td>12/11</td>
-<td><span style="color:#f8f5f0;"><a href="./hw_answers/HW_09_ans.html"><iconify-icon inline="" icon="ph:key-fill" style="font-size: 29px;"></iconify-icon></a></span></td>
-<td><span style="color:#f8f5f0;"><iconify-icon inline="" icon="icon-park-twotone:file-code" style="font-size: 29px;"></iconify-icon></span></td>
-</tr>
-</tbody>
-</table>
-<section id="file-naming" class="level2">
-<h2 class="anchored" data-anchor-id="file-naming">File Naming</h2>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<ol type="1">
+<li>Calculate the mean (expected value) of <em>sums of</em> discrete random variables</li>
+</ol>
+</section>
+<section id="where-are-we" class="level2">
+<h2 class="anchored" data-anchor-id="where-are-we">Where are we?</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img_slides/course_map.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="revisiting-our-two-card-draw" class="level2">
+<h2 class="anchored" data-anchor-id="revisiting-our-two-card-draw">Revisiting our two card draw</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 1</p>
+</div>
+<div class="ex-cont">
+<p>Suppose you draw 2 cards from a standard deck of cards <em>with</em> replacement. Let <span class="math inline">\(X\)</span> be the number of hearts you draw. Find <span class="math inline">\(\mathbb{E}[X]\)</span>.</p>
+</div>
+</div>
+<div class="example">
+<div class="ex-cont">
+<p><font size="6ex">Recall Binomial RV with <span class="math inline">\(n=2\)</span>:</font></p><font size="6ex">
+<p><span class="math display">\[p_X(x) = {2 \choose x}p^x(1-p)^{2-x} \text{&nbsp; for } x = 0, 1, 2\]</span></p>
+</font><p><font size="6ex"></font></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="what-if-we-draw-a-lot-of-cards" class="level2">
+<h2 class="anchored" data-anchor-id="what-if-we-draw-a-lot-of-cards">What if we draw A LOT of cards?</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 2</p>
+</div>
+<div class="ex-cont">
+<p>What is the expected number of hearts in Example 1 if you draw 200 cards?</p>
+</div>
+</div>
+<div class="example">
+<div class="ex-cont">
+<p><font size="6ex">Recall Binomial RV with <span class="math inline">\(n=200\)</span>:</font></p><font size="6ex">
+<p><span class="math display">\[p_X(x) = {200 \choose x}p^x(1-p)^{200-x}\]</span> <span class="math display">\[\text{&nbsp; for } x = 0, 1, 2, ..., 200\]</span></p>
+</font><p><font size="6ex"></font></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="sum-of-discrete-rvs" class="level2">
+<h2 class="anchored" data-anchor-id="sum-of-discrete-rvs">Sum of discrete RVs</h2>
+<div class="theorem">
+<div class="thm-title">
+<p>Theorem 11.1: Sum of discrete RVs</p>
+</div>
+<div class="thm-cont">
+<p>For discrete r.v.’s <span class="math inline">\(X_i\)</span> and constants <span class="math inline">\(a_i\)</span>, <span class="math inline">\(i=1,2,\dots, n\)</span>, <span class="math display">\[\mathbb{E}\Bigg[\sum_{i=1}^n a_iX_i\Bigg] = \sum_{i=1}^n a_i\mathbb{E}[X_i] .\]</span> <strong>Remark:</strong> The theorem holds for infinitely r.v.’s <span class="math inline">\(X_i\)</span> as well.</p>
+</div>
+</div>
 <ul>
-<li><p>For HW <strong>Assignments</strong>, please use the following file naming: “HW01_LastName_FirstInitial”</p>
+<li>For two RVs, <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>:
 <ul>
-<li><p>For homeworks without R, this should be a pdf file</p></li>
-<li><p>For homeworks with R, this may be a pdf file (with the code in the pdf) or an html file</p></li>
+<li>We can say <span class="math inline">\(E[X+Y] = E[X] + E[Y]\)</span></li>
+<li>… and constant numbers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, we can also say <span class="math inline">\(E[aX+bY] = aE[X] + bE[Y]\)</span></li>
+<li>We can also also say <span class="math inline">\(E[X-Y] = E[X] - E[Y]\)</span>, since <span class="math inline">\(b=-1\)</span></li>
 </ul></li>
 </ul>
 </section>
-<section id="rubric" class="level2">
-<h2 class="anchored" data-anchor-id="rubric">Rubric</h2>
-<section id="assignments" class="level3">
-<h3 class="anchored" data-anchor-id="assignments">Assignments</h3>
-<p>A total of 1 point will be given for a complete homework. The following rubric will be used:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>1 point</th>
-<th>0 points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Completeness</td>
-<td>75% of the question parts are thoroughly worked out and have an answer. “Question parts” means the sub-questions labeled “Part _.” Answers can be incorrect or correct. For parts with longer processes and calculations, solution set up and calculations are required.</td>
-<td>Less than 75% of question parts are thoroughly worked out. Attempts do not count as thoroughly worked out.</td>
-</tr>
-</tbody>
-</table>
-
-
+<section id="corollaries-from-thm-11.1" class="level2">
+<h2 class="anchored" data-anchor-id="corollaries-from-thm-11.1">Corollaries from Thm 11.1</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="proposition">
+<div class="prop-title">
+<p>Corollary 11.1.1</p>
+</div>
+<div class="prop-cont">
+<p>For a discrete r.v. <span class="math inline">\(X\)</span>, and constants <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, <span class="math display">\[\mathbb{E}[aX+b] = a\mathbb{E}[X] + b.\]</span></p>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="proposition">
+<div class="prop-title">
+<p>Corollary 11.1.2</p>
+</div>
+<div class="prop-cont">
+<p>If <span class="math inline">\(X_i\)</span>, <span class="math inline">\(i=1,2,\dots, n\)</span>, are identically distributed r.v.’s, then <span class="math display">\[\mathbb{E}\bigg[\sum_{i=1}^n X_i\bigg] = n\mathbb{E}[X_1] .\]</span></p>
+</div>
+</div>
+</div>
+</div>
 </section>
+<section id="cost-of-hotel-rooms" class="level2">
+<h2 class="anchored" data-anchor-id="cost-of-hotel-rooms">Cost of hotel rooms</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 4</p>
+</div>
+<div class="ex-cont">
+<p>A tour group is planning a visit to the city of Minneapolis and needs to book 30 hotel rooms. The average price of a room is $200. In addition, there is a 10% tourism tax for each room. What is the expected cost for the 30 hotel rooms?</p>
+</div>
+</div>
+</div>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -366,11 +411,6 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
