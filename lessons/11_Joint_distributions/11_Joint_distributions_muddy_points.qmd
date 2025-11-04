@@ -1,0 +1,39 @@
+---
+title: "Muddy Points"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Fall 2024
+
+### 1. What are we actually finding by solving the double integral. In the first example, we found the probability was 1/16 after integrating but what does 1/16 mean in relation to the random variables X and Y?
+
+It means that the volume contained by $0\leq X \leq 1$, $0\leq Y \leq 1/2$, and their joint pdf is 1/16 of the total volume contained by $0\leq X \leq 2$, $0\leq Y \leq 1$, and their joint pdf. The probability for a joint pdf is now a measure of the proportion of the volume.
+
+This is not be confused with a probability from marginal pdf or pdf from one RV. The probability for marginal/single RV pdfs is the proportion of the area under the pdf for a specific range of values.
+
+### 2. Here's a 3D plot of one of our joint pdf's
+
+$$
+f_{X,Y}(x,y) = 5e^{-x-3y} \text{ for } 0 \leq y \leq x/2
+$$
+
+```{r}
+#| warning: false
+library(plotly)
+
+x = seq(0, 5, 0.1)
+y = seq(0, max(x)/2, 0.1/2)
+fn = expand.grid(x=x,y=y)
+fn$z = ifelse(fn$y<fn$x/2, 5*exp( (-1)*fn$x - 3*fn$y), NA)
+
+z = matrix(fn$z, ncol = 51, nrow = 51, byrow = T)
+
+fig <- plot_ly(x = x, y=y, z=z) %>% add_surface()
+
+fig
+```
