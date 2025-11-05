@@ -297,7 +297,7 @@ fig <- plot_ly(x = x, y=y, z=z) %>% add_surface()
 fig
 ```
 
-And let's look at $P(Z \leq 0.5)$ aka $P(XY \leq 0.5)$ to get a better sense of the volume needed:
+And let's look at $P(Z \leq 0.5)$ aka $P(XY \leq 0.5)$ to get a better sense of the volume needed: 
 
 ```{r}
 #| warning: false
