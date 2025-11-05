@@ -484,7 +484,7 @@ We follow **CDF method**:
 
     -   aka $f_M(m) = \dfrac{d}{dm}F_M(m)$
 
-## Example of a joint pdf with a transformation (1/2)
+## Example of a joint pdf with a transformation (1/3)
 
 ::::::: columns
 :::::: {.column width="30%"}
@@ -522,7 +522,7 @@ x_y_plot2
 ::::::
 :::::::
 
-## Example of a joint pdf with a transformation (1/2)
+## Example of a joint pdf with a transformation (2/3)
 
 ::::::: columns
 :::::: {.column width="30%"}
@@ -548,7 +548,7 @@ x_y_plot2
 ::::::
 :::::::
 
-## Example of a joint pdf with a transformation (1/2)
+## Example of a joint pdf with a transformation (3/3)
 
 ::::::: columns
 :::::: {.column width="30%"}
