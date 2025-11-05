@@ -36,7 +36,7 @@ editor_options:
     (b) $$F_X(x) = \left\{
                 \begin{array}{ll}
                     0 & \quad x < 0 \\
-                    55x^{12} - 120x^{11} + 55x^{10} & \quad 0 \leq x\leq 1 \\
+                    55x^{12} - 120x^{11} + 66x^{10} & \quad 0 \leq x\leq 1 \\
                     1 & \quad x > 24 \\
                 \end{array}
             \right.$$

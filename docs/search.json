@@ -4428,7 +4428,7 @@
     "href": "hw_answers/HW_04_ans.html",
     "title": "Homework 4 Answers",
     "section": "",
-    "text": "Not given\nNot given\n\n\\[F_X(x) = \\left\\{\n         \\begin{array}{ll}\n             0 & \\quad x \\leq 16 \\\\\n             \\frac{1}{64}x^2 - \\frac{1}{2}x + 4 & \\quad 16 &lt; x\\leq 24 \\\\\n             1 & \\quad x &gt; 24 \\\\\n         \\end{array}\n     \\right.\\]\n\\(a=20\\)\n\n\n\\(k=660\\)\n\\[F_X(x) = \\left\\{\n        \\begin{array}{ll}\n            0 & \\quad x &lt; 0 \\\\\n            55x^{12} - 120x^{11} + 55x^{10} & \\quad 0 \\leq x\\leq 1 \\\\\n            1 & \\quad x &gt; 24 \\\\\n        \\end{array}\n    \\right.\\]"
+    "text": "Not given\nNot given\n\n\\[F_X(x) = \\left\\{\n         \\begin{array}{ll}\n             0 & \\quad x \\leq 16 \\\\\n             \\frac{1}{64}x^2 - \\frac{1}{2}x + 4 & \\quad 16 &lt; x\\leq 24 \\\\\n             1 & \\quad x &gt; 24 \\\\\n         \\end{array}\n     \\right.\\]\n\\(a=20\\)\n\n\n\\(k=660\\)\n\\[F_X(x) = \\left\\{\n        \\begin{array}{ll}\n            0 & \\quad x &lt; 0 \\\\\n            55x^{12} - 120x^{11} + 66x^{10} & \\quad 0 \\leq x\\leq 1 \\\\\n            1 & \\quad x &gt; 24 \\\\\n        \\end{array}\n    \\right.\\]"
   },
   {
     "objectID": "homeworks.html#rubrics",
@@ -19240,7 +19240,7 @@
     "href": "hw_answers/HW_04_ans.html#questions",
     "title": "Homework 4 Answers",
     "section": "",
-    "text": "Not given\nNot given\n\n\\[F_X(x) = \\left\\{\n         \\begin{array}{ll}\n             0 & \\quad x \\leq 16 \\\\\n             \\frac{1}{64}x^2 - \\frac{1}{2}x + 4 & \\quad 16 &lt; x\\leq 24 \\\\\n             1 & \\quad x &gt; 24 \\\\\n         \\end{array}\n     \\right.\\]\n\\(a=20\\)\n\n\n\\(k=660\\)\n\\[F_X(x) = \\left\\{\n        \\begin{array}{ll}\n            0 & \\quad x &lt; 0 \\\\\n            55x^{12} - 120x^{11} + 55x^{10} & \\quad 0 \\leq x\\leq 1 \\\\\n            1 & \\quad x &gt; 24 \\\\\n        \\end{array}\n    \\right.\\]"
+    "text": "Not given\nNot given\n\n\\[F_X(x) = \\left\\{\n         \\begin{array}{ll}\n             0 & \\quad x \\leq 16 \\\\\n             \\frac{1}{64}x^2 - \\frac{1}{2}x + 4 & \\quad 16 &lt; x\\leq 24 \\\\\n             1 & \\quad x &gt; 24 \\\\\n         \\end{array}\n     \\right.\\]\n\\(a=20\\)\n\n\n\\(k=660\\)\n\\[F_X(x) = \\left\\{\n        \\begin{array}{ll}\n            0 & \\quad x &lt; 0 \\\\\n            55x^{12} - 120x^{11} + 66x^{10} & \\quad 0 \\leq x\\leq 1 \\\\\n            1 & \\quad x &gt; 24 \\\\\n        \\end{array}\n    \\right.\\]"
   },
   {
     "objectID": "hw_answers/HW_04_ans.html#extra-problems",
