@@ -23665,5 +23665,26 @@
     "title": "Lesson 11: Joint distributions",
     "section": "Example of a joint pdf with a transformation (3/3)",
     "text": "Example of a joint pdf with a transformation (3/3)\n\n\n\n\nExample 4.3\n\n\nLet \\(X\\) and \\(Y\\) have constant density on the square \\(0 \\leq X \\leq 4, 0 \\leq Y \\leq 4\\).\n\nLet \\(Z = \\min(X,Y)\\). Find the pdf for \\(Z\\), that is \\(f_Z(z)\\)."
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions_review_key_info.html",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions_review_key_info.html",
+    "title": "Key Info",
+    "section": "",
+    "text": "Midterm feedback!\nWe will be taking a pause before expected values\n\nFinish conditional pdf problem\nReview joint distributions"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions_review_key_info.html#announcements",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions_review_key_info.html#announcements",
+    "title": "Key Info",
+    "section": "",
+    "text": "Midterm feedback!\nWe will be taking a pause before expected values\n\nFinish conditional pdf problem\nReview joint distributions"
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions_review_key_info.html#key-dates",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions_review_key_info.html#key-dates",
+    "title": "Key Info",
+    "section": "Key Dates",
+    "text": "Key Dates\n\nHW 05 due this Sunday!"
   }
 ]

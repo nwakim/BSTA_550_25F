@@ -1,0 +1,20 @@
+---
+title: "Key Info"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+
+- Midterm feedback!
+- We will be taking a pause before expected values
+  - Finish conditional pdf problem
+  - Review joint distributions
+
+## Key Dates
+
+- HW 05 due this Sunday!
