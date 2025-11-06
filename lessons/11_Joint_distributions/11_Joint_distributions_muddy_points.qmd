@@ -8,6 +8,22 @@ editor_options:
   chunk_output_type: console
 ---
 
+## Fall 2025
+
+### 1. What is M? Is it just the function of X and Y?
+
+Yes! $M$ is just a transformation of $X$ and $Y$! Think of creating a new random variable that is dependent on $X$ and $Y$. We have created a single random variable from two. Then we want to see for the random variable, M, what does its pdf look like?
+
+### 2. What indicates to us when to do single and double integrals? If it's marginal we do single and joint we do double?
+
+Yes! If we are going from a joint pdf to a marginal, we can to integrate over one of the random variables. If we want a marginal of X, then we integrate over Y, and that will be a single integral. 
+
+If we are working with a joint pdf, then we need to have two integrals if we have two random variables. 
+
+### 3. it gets hard keeping track of which quantities are 1d, 2d, 3d, etc. & why
+
+I feel that. In general, a transformation (say $M$) of $X$ and $Y$ will be in the 3rd dimension (3D plot). The joint pdf of $X$ and $Y$ will be in the 3rd dimension (3D plot). But once we have $M$ and its CDF/pdf, those are in 2D plot of $M$ vs. $f_M(m)$.  
+
 ## Fall 2024
 
 ### 1. What are we actually finding by solving the double integral. In the first example, we found the probability was 1/16 after integrating but what does 1/16 mean in relation to the random variables X and Y?
