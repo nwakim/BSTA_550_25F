@@ -25,3 +25,7 @@ editor_options:
     - (b) ![](./images/HW_04_NTB_2_B.png) And hint: ![](./images/Hint_NTB_9_02.png)
         
     - (c) ![](./images/HW_04_NTB_2_C.png)
+
+3.  
+    - (a) $f_{X|Y}(x|y)=\frac{1}{2}$ for (need $x$ and $y$ domains) 
+    - (c) $\frac{4}{7}$

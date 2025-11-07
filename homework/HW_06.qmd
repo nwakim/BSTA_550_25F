@@ -1,7 +1,6 @@
 ---
 title: "Homework 6"
 subtitle: "BSTA 550"
-description: "Due: Thursday November 14, 2024 at 11pm"
 date-modified: "today"
 format: 
   html:
@@ -42,3 +41,11 @@ Extra problems do not need to be turned in!
     b.  Find the joint cdf of $X$ and $Y$ and briefly explain what $F_{X,Y}(x,y)$ represents in the context of the problem.
 
     c.  Find the conditional pmf $p_{Y|X}(y|x)$.
+
+3. Consider a pair of random variables $X$, $Y$ with constant joint density on the quadrilateral with vertices $(0,0)$, $(2,0)$, $(2,6)$, $(0,12)$.
+
+    a. For $0 \leq y \leq 6$, find the conditional density $f_{X|Y}(x,y)$ of $X$, given $Y=y$.
+    b. For $6 \leq y \leq 12$, find the conditional density $f_{X|Y}(x,y)$ of $X$, given $Y=y$.
+    c. Find the conditional probability that $X \geq 1$, given $3 \leq Y \leq 9$.
+    d. Find $P(0.5 \leq X \leq 3 | Y=4)$
+    e. Find $P(0.5 \leq X \leq 3 | Y=7)$
