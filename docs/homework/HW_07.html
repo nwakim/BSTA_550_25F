@@ -203,13 +203,6 @@ window.Quarto = {
 <section id="questions" class="level2">
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
 <ol type="1">
-<li><p>Let <span class="math inline">\(X_i\sim\)</span> Binomial(<span class="math inline">\(n_i,p\)</span>) be independent r.v.’s for <span class="math inline">\(i=1,\ldots,m\)</span>.</p>
-<ol type="a">
-<li><p>What does the r.v. <span class="math inline">\(X=\sum_{i=1}^mX_i\)</span> count, and what is the distribution of <span class="math inline">\(X\)</span>? Make sure to specify the parameters of <span class="math inline">\(X\)</span>’s distribution.</p></li>
-<li><p>Find <span class="math inline">\(\mathbb{E}[X]\)</span>. <em>Make sure to show your work for (b) and (c). However, you may use without proof what you know about the mean and variance of each</em> <span class="math inline">\(X_i\)</span>.</p></li>
-<li><p>Find <span class="math inline">\(Var[X]\)</span>.</p></li>
-</ol></li>
-<li><p>Approximately 10% of U.S. Veterans are women. Suppose an investigator plans a study with 4500 participants that are Veterans. How many women can they expect to be included? <em>Your answer must be calculated by defining a random variable and showing how to calculate the expected value.</em></p></li>
 <li><p>Prove that for a r.v. <span class="math inline">\(X\)</span> and constants <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, that <span class="math display">\[\mathrm{Var}[aX+b]=a^2\mathrm{Var}[X].\]</span></p></li>
 <li><p>Let <span class="math inline">\(\overline{X}\)</span> be the random variable for the sample mean, <span class="math inline">\(\overline{X}=\frac{\sum_{i=1}^nX_i}{n}\)</span>, where the <span class="math inline">\(X_i\)</span> are i.i.d. random variables with common mean <span class="math inline">\(\mu\)</span> and variance <span class="math inline">\(\sigma^2\)</span>.</p>
 <ol type="a">
@@ -225,7 +218,7 @@ window.Quarto = {
 <li><p>Assuming that <span class="math inline">\(X_1,X_2,X_3\)</span> are independent, calculate the expected value and variance of the total volume shipped.</p></li>
 <li><p>Would your calculations necessarily be correct if the <span class="math inline">\(X_i\)</span>’s were not independent? Explain.</p></li>
 </ol></li>
-<li><p>The automatic opening device of a military cargo parachute has been designed to open when the parachute is 200 m above the ground. Suppose opening altitude actually has a normal distribution with mean value 200 m and standard deviation 30 m. Equipment damage will occur if the parachute opens at an altitude of less than 100 m. What is the probability that there is equipment damage to the payload of at least one of the five independently dropped parachutes?</p></li>
+<li><p>Consider the joint density of <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>: <span class="math display">\[f_{X,Y}(x,y)= \dfrac32 x y\]</span> for <span class="math inline">\(0 \leq x\)</span> and <span class="math inline">\(0 \leq y\)</span> and <span class="math inline">\(x+y \leq 2\)</span> and <span class="math inline">\(f_{X,Y}(x,y)=0\)</span> otherwise. Find <span class="math inline">\(E(Y)\)</span>.</p></li>
 </ol>
 </section>
 <section id="extra-problems" class="level2">
@@ -236,6 +229,13 @@ window.Quarto = {
 <ol type="a">
 <li><p>Find <span class="math inline">\(\mathbb{E}[\hat{p}]\)</span>.</p></li>
 <li><p>Find <span class="math inline">\(Var[\hat{p}]\)</span>.</p></li>
+</ol></li>
+<li><p>Suppose your waiting time for a bus in the morning is uniformly distributed on [0, 8] (minutes), whereas waiting time in the evening is uniformly distributed on [0, 10] (minutes) independent of morning waiting time. <em>Make sure to FIRST set up an equation for calculating the total waiting time in each question before calculating the mean and variance of the total waiting time.</em> <em>You may use results from class for the expected value and variance of uniform r.v.’s without proving them.</em></p>
+<ol type="a">
+<li><p>If you take the bus each morning and evening for a week (7 days), what is your total expected waiting time?</p></li>
+<li><p>What is the variance of your total waiting time?</p></li>
+<li><p>What are the expected value and variance of the difference between morning and evening waiting times on a given day?</p></li>
+<li><p>What are the expected value and variance of the difference between total morning waiting time and total evening waiting time for a particular week?</p></li>
 </ol></li>
 </ol>
 

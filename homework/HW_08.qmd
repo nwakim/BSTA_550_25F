@@ -52,28 +52,15 @@ editor_options:
 
 ## Non-textbook problems (NTB)
 
-1.  Let $X_1, X_2, \ldots, X_n$ be i.i.d. random variables with common pdf $f_X(x)$ and cdf $F_X(x)$. Find the pdf for the random variable $Z$, where $Z = max(X_1, X_2, \ldots, X_n)$.
+1.  Let $X_i\sim$ Binomial($n_i,p$) be independent r.v.'s for $i=1,\ldots,m$.
 
-2.  Let $X$ and $Y$ be independent random variables with respective pdf's $f_X(x)=\frac{1}{5}$, for $0\leq x\leq 5$, and $f_Y(y)=2e^{-2y}$, for $y>0$.
+    a.  What does the r.v. $X=\sum_{i=1}^mX_i$ count, and what is the distribution of $X$? Make sure to specify the parameters of $X$'s distribution.
 
-    a.  Find the joint distribution $f_{X,Y}(x,y)$.
-    b.  Find the probability that $X$ is less than $Y$.
-    c.  Let $Z$ be the random variable that is the smaller of $X$ and $Y$. Find the cumulative distribution function for $Z$.
-    d.  Find the pdf for Z.
+    b.  Find $\mathbb{E}[X]$. *Make sure to show your work for (b) and (c). However, you may use without proof what you know about the mean and variance of each* $X_i$.
 
-3.  Suppose that the random variables $X$ and $Y$ have joint density $f_{X,Y}(x,y)$, for $0<x<1$, and $\frac{1}{2}<y<1$. Set up the equation for the cdf of $Z$, where $Z=X/Y$.
+    c.  Find $Var[X]$.
+    
 
-    *Hint: First determine what the possible values for* $Z$ are. Then make a sketch of the domain of the joint pdf and shade in the region representing the cdf of Z for different values of $z$. Make sure to pay close attention to how the region we need to integrate over changes as $z$ changes. The cdf has two different cases depending on the value of $z$. Plug in specific values of $z$ and shade in the region representing the cdf to see why two different cases are needed.
-
-4.  Suppose your waiting time for a bus in the morning is uniformly distributed on \[0, 8\] (minutes), whereas waiting time in the evening is uniformly distributed on \[0, 10\] (minutes) independent of morning waiting time. *Make sure to FIRST set up an equation for calculating the total waiting time in each question before calculating the mean and variance of the total waiting time.* *You may use results from class for the expected value and variance of uniform r.v.'s without proving them.*
-
-    a.  If you take the bus each morning and evening for a week (7 days), what is your total expected waiting time?
-
-    b.  What is the variance of your total waiting time?
-
-    c.  What are the expected value and variance of the difference between morning and evening waiting times on a given day?
-
-    d.  What are the expected value and variance of the difference between total morning waiting time and total evening waiting time for a particular week?
 
 ### Extra problems
 
