@@ -21760,7 +21760,7 @@
     "href": "lessons/13_Expected_Values/13_Expected_Values.html#what-is-an-expected-value",
     "title": "Lesson 13: Expected Values",
     "section": "What is an expected value?",
-    "text": "What is an expected value?\n\n\nDefinition: Expected value\n\n\nThe expected value of a discrete r.v. \\(X\\) that takes on values \\(x_1, x_2, \\ldots, x_n\\) is \\[\\mathbb{E}[X] = \\sum_{i=1}^n x_ip_X(x_i).\\]\n\n\n\nExpected values are not necessarily an actual outcome\n\nIn previous example, we cannot roll a 3.5\nIt could be that our expected value is not in the sample space (\\(E(X) \\notin S\\))\n\nDefinition holds when \\(X\\) takes on countably infinitely many values:\n\n\\[\\mathbb{E}[X] = \\sum_{i=1}^\\infty x_ip_X(x_i)\\]"
+    "text": "What is an expected value?\n\n\n\n\nDefinition: Expected value of discrete RV\n\n\nThe expected value of a discrete RV \\(X\\) that takes on values \\(x_1, x_2, \\ldots, x_n\\) is \\[\\mathbb{E}[X] = \\sum_{i=1}^n x_ip_X(x_i)\\] where \\(n\\) can be \\(\\infty\\)\n\n\n\n\n\nDefinition: Expected value of continuous RV\n\n\nThe expected value of a continuous RV \\(X\\) is \\[\\mathbb{E}[X] = \\displaystyle\\int_{-\\infty}^\\infty xf_X(x) dx\\] where we adjust the integrand based on the bounds of \\(X\\)\n\n\n\n\nExpected values are not necessarily an actual outcome\n\nIn previous example, we cannot roll a 3.5\nIt could be that our expected value is not in the sample space (\\(E(X) \\notin S\\))"
   },
   {
     "objectID": "lessons/13_Expected_Values/13_Expected_Values.html#our-good-and-not-so-fair-friend-the-6-sided-die",
@@ -21809,14 +21809,14 @@
     "href": "lessons/13_Expected_Values/13_Expected_Values.html#sum-of-discrete-rvs",
     "title": "Lesson 13: Expected Values",
     "section": "Sum of discrete RVs",
-    "text": "Sum of discrete RVs\n\n\nTheorem 11.1: Sum of discrete RVs\n\n\nFor discrete r.v.’s \\(X_i\\) and constants \\(a_i\\), \\(i=1,2,\\dots, n\\), \\[\\mathbb{E}\\Bigg[\\sum_{i=1}^n a_iX_i\\Bigg] = \\sum_{i=1}^n a_i\\mathbb{E}[X_i] .\\] Remark: The theorem holds for infinitely r.v.’s \\(X_i\\) as well.\n\n\n\nFor two RVs, \\(X\\) and \\(Y\\):\n\nWe can say \\(E[X+Y] = E[X] + E[Y]\\)\n… and constant numbers \\(a\\) and \\(b\\), we can also say \\(E[aX+bY] = aE[X] + bE[Y]\\)\nWe can also also say \\(E[X-Y] = E[X] - E[Y]\\), since \\(b=-1\\)"
+    "text": "Sum of discrete RVs\n\n\nTheorem 11.1: Sum of discrete RVs\n\n\nFor discrete RV’s \\(X_i\\) and constants \\(a_i\\), \\(i=1,2,\\dots, n\\), \\[\\mathbb{E}\\Bigg[\\sum_{i=1}^n a_iX_i\\Bigg] = \\sum_{i=1}^n a_i\\mathbb{E}[X_i] .\\] Remark: The theorem holds for infinitely RV’s \\(X_i\\) as well.\n\n\n\nFor two RVs, \\(X\\) and \\(Y\\):\n\nWe can say \\(E[X+Y] = E[X] + E[Y]\\)\n… and constant numbers \\(a\\) and \\(b\\), we can also say \\(E[aX+bY] = aE[X] + bE[Y]\\)\nWe can also also say \\(E[X-Y] = E[X] - E[Y]\\), since \\(b=-1\\)"
   },
   {
     "objectID": "lessons/13_Expected_Values/13_Expected_Values.html#corollaries-from-thm-11.1",
     "href": "lessons/13_Expected_Values/13_Expected_Values.html#corollaries-from-thm-11.1",
     "title": "Lesson 13: Expected Values",
     "section": "Corollaries from Thm 11.1",
-    "text": "Corollaries from Thm 11.1\n\n\n\n\nCorollary 11.1.1\n\n\nFor a discrete r.v. \\(X\\), and constants \\(a\\) and \\(b\\), \\[\\mathbb{E}[aX+b] = a\\mathbb{E}[X] + b.\\]\n\n\n\n\n\nCorollary 11.1.2\n\n\nIf \\(X_i\\), \\(i=1,2,\\dots, n\\), are identically distributed r.v.’s, then \\[\\mathbb{E}\\bigg[\\sum_{i=1}^n X_i\\bigg] = n\\mathbb{E}[X_1] .\\]"
+    "text": "Corollaries from Thm 11.1\n\n\n\n\nFunction with two constants\n\n\nFor a RV \\(X\\), and constants \\(a\\) and \\(b\\), \\[\\mathbb{E}[aX+b] = a\\mathbb{E}[X] + b.\\]\n\n\n\n\n\nExpected value of sum of identically distributed RVs\n\n\nIf \\(X_i\\), \\(i=1,2,\\dots, n\\), are identically distributed RV’s, then \\[\\mathbb{E}\\bigg[\\sum_{i=1}^n X_i\\bigg] = n\\mathbb{E}[X_1] .\\]"
   },
   {
     "objectID": "lessons/13_Expected_Values/13_Expected_Values.html#cost-of-hotel-rooms",
@@ -23025,37 +23025,37 @@
   {
     "objectID": "lessons/14_Variance/14_Variance.html#lets-start-building-the-variance-through-expected-values-of-functions",
     "href": "lessons/14_Variance/14_Variance.html#lets-start-building-the-variance-through-expected-values-of-functions",
-    "title": "Lesson 16: Variance",
-    "section": "",
-    "text": "Example 1\n\n\nLet \\(g\\) be a function and let \\(g(x) = ax+b\\), for real-valued constants \\(a\\) and \\(b\\). What is \\(\\mathbb{E}[g(X)]\\)?"
+    "title": "Lesson 14: Variance",
+    "section": "Let’s start building the variance through expected values of functions",
+    "text": "Let’s start building the variance through expected values of functions\n\n\n\n\nExample 1\n\n\nLet \\(g\\) be a function and let \\(g(x) = ax+b\\), for real-valued constants \\(a\\) and \\(b\\). What is \\(\\mathbb{E}[g(X)]\\)?"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#what-is-the-expected-value-of-a-function",
     "href": "lessons/14_Variance/14_Variance.html#what-is-the-expected-value-of-a-function",
-    "title": "Lesson 16: Variance",
-    "section": "",
-    "text": "Definition: Expected value of function of RV\n\n\nFor any function \\(g\\) and discrete r.v. \\(X\\), the expected value of \\(g(X)\\) is \\[\\mathbb{E}[g(X)] = \\sum_{\\{all\\ x\\}}\\ g(x) p_X(x).\\]"
+    "title": "Lesson 14: Variance",
+    "section": "What is the expected value of a function?",
+    "text": "What is the expected value of a function?\n\n\n\n\nExpected value of function of discrete RV\n\n\nFor any function \\(g\\) and discrete RV \\(X\\), the expected value of \\(g(X)\\) is \\[\\mathbb{E}[g(X)] = \\sum_{\\{all\\ x\\}}\\ g(x) p_X(x)\\]\n\n\n\n\n\nExpected value of function of continuous RV\n\n\nFor any function \\(g\\) and continuous RV \\(X\\), the expected value of \\(g(X)\\) is \\[\\mathbb{E}[g(X)] = \\displaystyle\\int_{-\\infty}^\\infty g(x)f_X(x) dx\\]\n\n\n\n\nFor example, if we have \\(g(x)=x^2\\), then \\[\\mathbb{E}[X^2)] = \\sum_{\\{all\\ x\\}}\\ x^2 p_X(x) \\neq \\left(\\sum_{\\{all\\ x\\}}\\ x p_X(x)) \\right)^2 = \\left( \\mathbb{E}[X] \\right)^2\\]"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#lets-revisit-the-card-example-12",
     "href": "lessons/14_Variance/14_Variance.html#lets-revisit-the-card-example-12",
-    "title": "Lesson 16: Variance",
-    "section": "",
-    "text": "Example 2\n\n\nSuppose you draw 2 cards from a standard deck of cards with replacement. Let \\(X\\) be the number of hearts you draw.\n\nFind \\(\\mathbb{E}[X^2]\\).\n\n\n\n\n\nRecall Binomial RV with \\(n=2\\):\n\\[p_X(x) = {2 \\choose x}p^x(1-p)^{2-x} \\text{  for } x = 0, 1, 2\\]"
+    "title": "Lesson 14: Variance",
+    "section": "Let’s revisit the card example (1/2)",
+    "text": "Let’s revisit the card example (1/2)\n\n\n\n\nExample 2\n\n\nSuppose you draw 2 cards from a standard deck of cards with replacement. Let \\(X\\) be the number of hearts you draw.\n\nFind \\(\\mathbb{E}[X^2]\\).\n\n\n\n\n\nRecall Binomial RV with \\(n=2\\):\n\\[p_X(x) = {2 \\choose x}p^x(1-p)^{2-x} \\text{  for } x = 0, 1, 2\\]"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#lets-revisit-the-card-example-22",
     "href": "lessons/14_Variance/14_Variance.html#lets-revisit-the-card-example-22",
-    "title": "Lesson 16: Variance",
-    "section": "",
-    "text": "Example 2\n\n\nSuppose you draw 2 cards from a standard deck of cards with replacement. Let \\(X\\) be the number of hearts you draw.\n\nFind \\(\\mathbb{E}\\big[\\big(X-\\frac{1}{2}\\big)^2\\big]\\).\n\n\n\n\n\nRecall Binomial RV with \\(n=2\\):\n\\[p_X(x) = {2 \\choose x}p^x(1-p)^{2-x} \\text{  for } x = 0, 1, 2\\]"
+    "title": "Lesson 14: Variance",
+    "section": "Let’s revisit the card example (2/2)",
+    "text": "Let’s revisit the card example (2/2)\n\n\n\n\nExample 2\n\n\nSuppose you draw 2 cards from a standard deck of cards with replacement. Let \\(X\\) be the number of hearts you draw.\n\nFind \\(\\mathbb{E}\\big[\\big(X-\\frac{1}{2}\\big)^2\\big]\\).\n\n\n\n\n\nRecall Binomial RV with \\(n=2\\):\n\\[p_X(x) = {2 \\choose x}p^x(1-p)^{2-x} \\text{  for } x = 0, 1, 2\\]"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#variance-of-a-rv",
     "href": "lessons/14_Variance/14_Variance.html#variance-of-a-rv",
-    "title": "Lesson 16: Variance",
-    "section": "",
-    "text": "Definition: Variance of RV\n\n\nThe variance of a r.v. \\(X\\), with (finite) expected value \\(\\mu_X=\\mathbb{E}[X]\\) is \\[\\sigma_X^2=Var(X)=\\mathbb{E}[(X-\\mu_X)^2] = \\mathbb{E}[(X-\\mathbb{E}[X])^2]\\]\n\n\n\n\nDefinition: Standard deviation of RV\n\n\nThe standard deviation of a r.v. \\(X\\) is \\[\\sigma_X = SD(X) = \\sqrt{\\sigma_X^2}=\\sqrt{Var(X)}.\\]"
+    "title": "Lesson 14: Variance",
+    "section": "Variance of a RV",
+    "text": "Variance of a RV\n\n\nDefinition: Variance of RV\n\n\nThe variance of a RV \\(X\\), with (finite) expected value \\(\\mu_X=\\mathbb{E}[X]\\) is \\[\\sigma_X^2=Var(X)=\\mathbb{E}[(X-\\mu_X)^2] = \\mathbb{E}[(X-\\mathbb{E}[X])^2]\\]\n\n\n\n\nDefinition: Standard deviation of RV\n\n\nThe standard deviation of a RV \\(X\\) is \\[\\sigma_X = SD(X) = \\sqrt{\\sigma_X^2}=\\sqrt{Var(X)}.\\]"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#questions",
@@ -23067,98 +23067,98 @@
   {
     "objectID": "lessons/14_Variance/14_Variance.html#lets-calculate-the-variance-and-prove-it",
     "href": "lessons/14_Variance/14_Variance.html#lets-calculate-the-variance-and-prove-it",
-    "title": "Lesson 16: Variance",
-    "section": "",
-    "text": "Lemma 6: “Computation formula” for Variance\n\n\nThe variance of a r.v. \\(X\\), can be computed as \\[\\begin{align}\n\\sigma_X^2 & =Var(X) \\\\ & = \\mathbb{E}[X^2]-\\mu_X^2 \\\\ & = \\mathbb{E}[X^2] - (\\mathbb{E}[X])^2\n\\end{align}\\]"
+    "title": "Lesson 14: Variance",
+    "section": "Let’s calculate the variance and prove it!",
+    "text": "Let’s calculate the variance and prove it!\n\n\n\n\nLemma 6: “Computation formula” for Variance\n\n\nThe variance of a RV \\(X\\), can be computed as \\[\\begin{align}\n\\sigma_X^2 & =Var(X) \\\\ & = \\mathbb{E}[X^2]-\\mu_X^2 \\\\ & = \\mathbb{E}[X^2] - (\\mathbb{E}[X])^2\n\\end{align}\\]"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#variance-of-a-function-with-a-single-rv",
     "href": "lessons/14_Variance/14_Variance.html#variance-of-a-function-with-a-single-rv",
-    "title": "Lesson 16: Variance",
+    "title": "Lesson 14: Variance",
     "section": "Variance of a function with a single RV",
-    "text": "Variance of a function with a single RV\n\n\nLemma 7\n\n\nFor a r.v. \\(X\\) and constants \\(a\\) and \\(b\\), \\[Var(aX+b) = a^2Var(X).\\]\n\n\nProof will be exercise in homework. It’s fun! In a mathy kinda way."
+    "text": "Variance of a function with a single RV\n\n\nLemma 7\n\n\nFor a RV \\(X\\) and constants \\(a\\) and \\(b\\), \\[Var(aX+b) = a^2Var(X).\\]\n\n\nProof will be exercise in homework. It’s fun! In a mathy kinda way."
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#important-results-for-independent-rvs",
     "href": "lessons/14_Variance/14_Variance.html#important-results-for-independent-rvs",
-    "title": "Lesson 16: Variance",
+    "title": "Lesson 14: Variance",
     "section": "Important results for independent RVs",
-    "text": "Important results for independent RVs\n\n\nTheorem 8\n\n\nFor independent r.v.’s \\(X\\) and \\(Y\\), and functions \\(g\\) and \\(h\\), \\[\\mathbb{E}[g(X)h(Y)] = \\mathbb{E}[g(X)]\\mathbb{E}[h(Y)].\\]\n\n\n\n\nCorollary 1\n\n\nFor independent r.v.’s \\(X\\) and \\(Y\\), \\[\\mathbb{E}[XY] = \\mathbb{E}[X]\\mathbb{E}[Y].\\]"
+    "text": "Important results for independent RVs\n\n\nTheorem 8\n\n\nFor independent RV’s \\(X\\) and \\(Y\\), and functions \\(g\\) and \\(h\\), \\[\\mathbb{E}[g(X)h(Y)] = \\mathbb{E}[g(X)]\\mathbb{E}[h(Y)].\\]\n\n\n\n\nCorollary 1\n\n\nFor independent RV’s \\(X\\) and \\(Y\\), \\[\\mathbb{E}[XY] = \\mathbb{E}[X]\\mathbb{E}[Y].\\]"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#variance-of-sum-of-independent-discrete-rvs",
     "href": "lessons/14_Variance/14_Variance.html#variance-of-sum-of-independent-discrete-rvs",
-    "title": "Lesson 16: Variance",
+    "title": "Lesson 14: Variance",
     "section": "Variance of sum of independent discrete RVs",
-    "text": "Variance of sum of independent discrete RVs\n\n\nTheorem 9: Variance of sum of independent discrete r.v.’s\n\n\nFor independent discrete r.v.’s \\(X_i\\) and constants \\(a_i\\), \\(i=1,2,\\dots, n\\), \\[Var\\Bigg(\\sum_{i=1}^n a_iX_i\\Bigg) = \\sum_{i=1}^n a_i^2Var(X_i).\\]\n\n\nSimpler version:\n\\[Var(a_1 X + a_2 Y) = Var(a_1X) + Var(a_2 Y) = a_1^2 Var(X) + a_2^2 Var(Y)\\]"
+    "text": "Variance of sum of independent discrete RVs\n\n\nTheorem 9: Variance of sum of independent discrete RV’s\n\n\nFor independent discrete RV’s \\(X_i\\) and constants \\(a_i\\), \\(i=1,2,\\dots, n\\), \\[Var\\Bigg(\\sum_{i=1}^n a_iX_i\\Bigg) = \\sum_{i=1}^n a_i^2Var(X_i).\\]\n\n\nSimpler version:\n\\[Var(a_1 X + a_2 Y) = Var(a_1X) + Var(a_2 Y) = a_1^2 Var(X) + a_2^2 Var(Y)\\]"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#corollaries",
     "href": "lessons/14_Variance/14_Variance.html#corollaries",
-    "title": "Lesson 16: Variance",
+    "title": "Lesson 14: Variance",
     "section": "Corollaries",
-    "text": "Corollaries\n\n\nCorollary 2\n\n\nFor independent discrete r.v.’s \\(X_i\\), \\(i=1,2,\\dots, n\\), \\[Var\\Bigg(\\sum_{i=1}^n X_i\\Bigg) = \\sum_{i=1}^n Var(X_i).\\]\n\n\n\n\nCorollary 3\n\n\nFor independent identically distributed (i.i.d.) discrete r.v.’s \\(X_i\\), \\(i=1,2,\\dots, n\\), \\[Var\\Bigg(\\sum_{i=1}^n X_i\\Bigg) = n Var(X_1).\\]"
+    "text": "Corollaries\n\n\nCorollary 2\n\n\nFor independent discrete RV’s \\(X_i\\), \\(i=1,2,\\dots, n\\), \\[Var\\Bigg(\\sum_{i=1}^n X_i\\Bigg) = \\sum_{i=1}^n Var(X_i).\\]\n\n\n\n\nCorollary 3\n\n\nFor independent identically distributed (i.i.d.) discrete RV’s \\(X_i\\), \\(i=1,2,\\dots, n\\), \\[Var\\Bigg(\\sum_{i=1}^n X_i\\Bigg) = n Var(X_1).\\]"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#lets-look-at-a-ghost-problem-with-replacement",
     "href": "lessons/14_Variance/14_Variance.html#lets-look-at-a-ghost-problem-with-replacement",
-    "title": "Lesson 16: Variance",
+    "title": "Lesson 14: Variance",
     "section": "Let’s look at a ghost problem with replacement",
     "text": "Let’s look at a ghost problem with replacement\n\n\n\n\nExample 3.2\n\n\nThe ghost is trick-or-treating at a different house now. In this case it is known that the bag of candy has 10 chocolates, 20 lollipops, and 30 laffy taffies. The ghost grabs a handful of five pieces of candy. What is the variance for the number of chocolates the ghost takes? Let’s solve this for the cases with replacement.\n\n\n\n\nRecall probability with replacement:\n\\[\np_X(x) = {n \\choose k}p^k(1-p)^{n-k}\n\\]"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#back-to-our-hotel-example-from-chapter-11",
     "href": "lessons/14_Variance/14_Variance.html#back-to-our-hotel-example-from-chapter-11",
-    "title": "Lesson 16: Variance",
+    "title": "Lesson 14: Variance",
     "section": "Back to our hotel example from Chapter 11",
     "text": "Back to our hotel example from Chapter 11\n\n\n\n\nExample 4\n\n\nA tour group is planning a visit to the city of Minneapolis and needs to book 30 hotel rooms. The average price of a room is $200 with standard deviation $10. In addition, there is a 10% tourism tax for each room. What is the standard deviation of the cost for the 30 hotel rooms? Assume rooms are independent.\n\n\nProblem to do at home if we don’t have enough time."
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#expected-value-of-a-function-of-a-continuous-rv",
     "href": "lessons/14_Variance/14_Variance.html#expected-value-of-a-function-of-a-continuous-rv",
-    "title": "Lesson 16: Variance",
+    "title": "Lesson 14: Variance",
     "section": "Expected value of a function of a continuous RV",
     "text": "Expected value of a function of a continuous RV\n\n\nHow do we calculate the expected value of a function of a discrete RV or joint RVs?\n   \nFor discrete RVs:\n\\[\\mathbb{E}[g(X)] = \\sum_{\\{all\\ x\\}}\\ g(x) p_X(x).\\] \\[\\mathbb{E}[g(X, Y)] = \\sum_{\\{all\\ x\\}}\\sum_{\\{all\\ y\\}}\\ g(x,y) p_{X,Y}(x,y).\\]\n\n\n\nHow do we calculate the expected value of a function of a continuous RV or joint RVs?\n   \nFor continuous RVs:"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#important-properties-of-expected-values-of-functions-of-continuous-rvs",
     "href": "lessons/14_Variance/14_Variance.html#important-properties-of-expected-values-of-functions-of-continuous-rvs",
-    "title": "Lesson 16: Variance",
+    "title": "Lesson 14: Variance",
     "section": "Important properties of expected values of functions of continuous RVs",
     "text": "Important properties of expected values of functions of continuous RVs\n\n\n\n\nFunction of RV with two constants\n\n\n\\(\\mathbb{E}[aX+b] =a\\mathbb{E}[X]+b\\)\n\n\n\n\nFunction of two RVs added\n\n\n\\(\\mathbb{E}[X+Y] =\\mathbb{E}[X]+\\mathbb{E}[Y]\\)\n\n\n\n\nExpected value of sum of independent RVs pt 1\n\n\nIf \\(X_1, X_2, \\ldots X_n\\) are continuous RVs and \\(a_1, a_2, \\ldots a_n\\) are constants, then \\[\\mathbb{E}\\Bigg[\\sum_{i=1}^{n} a_i X_i\\Bigg] = \\sum_{i=1}^{n}a_i\\mathbb{E}[X_i]\\]\n\n\n\n\n\nExpected value of multiplication of function of independent RVs\n\n\nIf \\(X\\) and \\(Y\\) are independent continuous RVs, and \\(g\\) and \\(h\\) are functions, then \\[\\mathbb{E}[g(X)h(Y)] =\\mathbb{E}[g(X)]\\mathbb{E}[h(Y)]\\]\n\n\n\n\nExpected value of multiplication of independent RVs\n\n\nIf \\(X\\) and \\(Y\\) are independent continuous RVs, then \\[\\mathbb{E}[XY] = \\mathbb{E}[X] \\mathbb{E}[Y] \\]"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#variance-of-continuous-rvs",
     "href": "lessons/14_Variance/14_Variance.html#variance-of-continuous-rvs",
-    "title": "Lesson 16: Variance",
+    "title": "Lesson 14: Variance",
     "section": "Variance of continuous RVs",
     "text": "Variance of continuous RVs\n\n\nHow do we calculate the variance of a discrete RV?\n   \nFor discrete RVs:\n\\[\n\\begin{align}\nVar(X) & =\n\\mathbb{E}[(X-\\mu_X)^2] \\\\ & = \\mathbb{E}[(X-\\mathbb{E}[X])^2] \\\\ &= \\mathbb{E}[X^2]-(\\mathbb{E}[X])^2 \\\\ & = \\sum_{\\{all\\ x\\}}(x-\\mu_x)^2 p_{X}(x)\n\\end{align}\n\\]\n\n\n\nHow do we calculate the variance of a continuous RV?\n    \nFor continuous RVs:"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#variance-of-an-uniform-distribution",
     "href": "lessons/14_Variance/14_Variance.html#variance-of-an-uniform-distribution",
-    "title": "Lesson 16: Variance",
+    "title": "Lesson 14: Variance",
     "section": "Variance of an Uniform distribution",
     "text": "Variance of an Uniform distribution\n\n\n\n\nExample 2\n\n\nLet \\(f_X(x)= \\frac{1}{b-a}\\), for \\(a \\leq x \\leq b\\). Find \\(Var[X]\\)."
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#variance-of-exponential-distribution",
     "href": "lessons/14_Variance/14_Variance.html#variance-of-exponential-distribution",
-    "title": "Lesson 16: Variance",
+    "title": "Lesson 14: Variance",
     "section": "Variance of exponential distribution",
     "text": "Variance of exponential distribution\n\n\nIn the homework:\n\n\nExample 3\n\n\nLet \\(f_X(x)= \\lambda e^{-\\lambda x}\\), for \\(x &gt; 0\\) and \\(\\lambda&gt; 0\\). Find \\(Var[X]\\)."
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#important-properties-of-variances-of-continuous-rvs",
     "href": "lessons/14_Variance/14_Variance.html#important-properties-of-variances-of-continuous-rvs",
-    "title": "Lesson 16: Variance",
+    "title": "Lesson 14: Variance",
     "section": "Important properties of variances of continuous RVs",
     "text": "Important properties of variances of continuous RVs\n\n\n\n\nFunction of RV with two constants\n\n\n\\[Var[aX+b] = a^2Var[X]\\]\n\n\n\n\n\nVariance of sum of independent RVs pt 1\n\n\nIf \\(X_1, X_2, \\ldots X_n\\) are independent continuous RVs and \\(a_1, a_2, \\ldots a_n\\) are constants, then \\[Var\\Bigg(\\sum_{i=1}^{n} a_i X_i\\Bigg) =\\sum_{i=1}^{n} a^2_i Var(X_i)\\]\n\n\n\n\nVariance of sum of independent RVs pt 2\n\n\nIf \\(X_1, X_2, \\ldots X_n\\) are independent continuous RVs, then \\[Var\\Bigg(\\sum_{i=1}^{n} X_i\\Bigg) = \\sum_{i=1}^{n} Var(X_i)\\]"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#find-the-mean-and-sd-from-word-problem",
     "href": "lessons/14_Variance/14_Variance.html#find-the-mean-and-sd-from-word-problem",
-    "title": "Lesson 16: Variance",
+    "title": "Lesson 14: Variance",
     "section": "Find the mean and sd from word problem",
     "text": "Find the mean and sd from word problem\n\n\n\n\nExample 4\n\n\nA machine manufactures cubes with a side length that varies uniformly from 1 to 2 inches. Assume the sides of the base and height are equal. The cost to make a cube is 10 ¢ per cubic inch, and 5 ¢ cents for the general cost per cube. Find the mean and standard deviation of the cost to make 10 cubes."
   },
@@ -23707,5 +23707,82 @@
     "title": "Homework 7",
     "section": "Extra problems",
     "text": "Extra problems\n\nThere is a bowl containing 30 cashews, 20 pecans, 25 almonds, and 25 walnuts. I am going to randomly pick and eat 3 nuts (without replacement). Find the expected value of the number of cashews by defining the number of cashews as a sum of random variables. (This one takes a little while if we don’t rely on the\nLet \\(\\hat{p}\\) be the random variable for the sample proportion, \\(\\hat{p}=\\frac{X}{n}\\), where \\(X\\) is the number of successes in a random sample of size \\(n\\). Assume the probability of success is \\(p\\).\n\nFind \\(\\mathbb{E}[\\hat{p}]\\).\nFind \\(Var[\\hat{p}]\\).\n\nSuppose your waiting time for a bus in the morning is uniformly distributed on [0, 8] (minutes), whereas waiting time in the evening is uniformly distributed on [0, 10] (minutes) independent of morning waiting time. Make sure to FIRST set up an equation for calculating the total waiting time in each question before calculating the mean and variance of the total waiting time. You may use results from class for the expected value and variance of uniform r.v.’s without proving them.\n\nIf you take the bus each morning and evening for a week (7 days), what is your total expected waiting time?\nWhat is the variance of your total waiting time?\nWhat are the expected value and variance of the difference between morning and evening waiting times on a given day?\nWhat are the expected value and variance of the difference between total morning waiting time and total evening waiting time for a particular week?"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/13_Expected_Values.html#sums-of-random-variables",
+    "href": "lessons/13_Expected_Values/13_Expected_Values.html#sums-of-random-variables",
+    "title": "Lesson 13: Expected Values",
+    "section": "Sums of Random Variables",
+    "text": "Sums of Random Variables\n\n\nTheorem: Sum of random variables\n\n\nFor RVs (discrete or continuous) \\(X_i\\) and constants \\(a_i\\), \\(i=1,2,\\dots, n\\), \\[\\mathbb{E}\\Bigg[\\sum_{i=1}^n a_iX_i\\Bigg] = \\sum_{i=1}^n a_i\\mathbb{E}[X_i] .\\] Remark: The theorem holds for infinitely RV’s \\(X_i\\) as well.\n\n\n\nFor two RVs, \\(X\\) and \\(Y\\):\n\nWe can say \\(E[X+Y] = E[X] + E[Y]\\)\n… and constant numbers \\(a\\) and \\(b\\), we can also say \\(E[aX+bY] = aE[X] + bE[Y]\\)\nWe can also also say \\(E[X-Y] = E[X] - E[Y]\\), since \\(b=-1\\)"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/13_Expected_Values.html#corollaries-from-theorem",
+    "href": "lessons/13_Expected_Values/13_Expected_Values.html#corollaries-from-theorem",
+    "title": "Lesson 13: Expected Values",
+    "section": "Corollaries from Theorem",
+    "text": "Corollaries from Theorem\n\n\n\n\nFunction with two constants\n\n\nFor a RV \\(X\\), and constants \\(a\\) and \\(b\\), \\[\\mathbb{E}[aX+b] = a\\mathbb{E}[X] + b.\\]\n\n\n\n\n\nExpected value of sum of identically distributed RVs\n\n\nIf \\(X_i\\), \\(i=1,2,\\dots, n\\), are identically distributed RV’s, then \\[\\mathbb{E}\\bigg[\\sum_{i=1}^n X_i\\bigg] = n\\mathbb{E}[X_1] .\\]"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/13_Expected_Values.html#manufacturing-cubes",
+    "href": "lessons/13_Expected_Values/13_Expected_Values.html#manufacturing-cubes",
+    "title": "Lesson 13: Expected Values",
+    "section": "Manufacturing cubes",
+    "text": "Manufacturing cubes\n\n\n\n\nExample 4\n\n\nA machine manufactures cubes with a side length that varies uniformly from 1 to 2 inches. Assume the sides of the base and height are equal. The cost to make a cube is 10 ¢ per cubic inch, and 5 ¢ cents for the general cost per cube. Find the mean of the cost to make 10 cubes."
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/13_Expected_Values.html#expected-value-of-one-rv-from-joint-pdf",
+    "href": "lessons/13_Expected_Values/13_Expected_Values.html#expected-value-of-one-rv-from-joint-pdf",
+    "title": "Lesson 13: Expected Values",
+    "section": "Expected value of one RV from joint pdf",
+    "text": "Expected value of one RV from joint pdf\nIf you have a joint distribution \\(f_{X,Y}(x,y)\\) and want to calculate \\(\\mathbb{E}[X]\\), you have two options:\n\nFind \\(f_X(x)\\) and use it to calculate \\(\\mathbb{E}[X]\\).\nCalculate \\(\\mathbb{E}[X]\\) using the joint density: \\[\\mathbb{E}[X] = \\int_{-\\infty}^{\\infty}\\int_{-\\infty}^{\\infty}x f_{X,Y}(x,y)dydx.\\]\n\nYou can do the same for \\(\\mathbb{E}[Y]\\)!"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/13_Expected_Values.html#option-1-find-marginal-first",
+    "href": "lessons/13_Expected_Values/13_Expected_Values.html#option-1-find-marginal-first",
+    "title": "Lesson 13: Expected Values",
+    "section": "Option 1: Find marginal first",
+    "text": "Option 1: Find marginal first\n\n\n\n\nExample 3\n\n\nLet \\(f_{X,Y}(x,y)= 2e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\). Find \\(\\mathbb{E}[X]\\).\n\n\n\nDo this one at home by finding \\(f_X(x)\\) then \\(\\mathbb{E}[X] = \\displaystyle\\int_{-\\infty}^\\infty xf_X(x) dx\\). See if you get the same result as next page’s answer!"
+  },
+  {
+    "objectID": "lessons/14_Variance/14_Variance.html#where-are-we",
+    "href": "lessons/14_Variance/14_Variance.html#where-are-we",
+    "title": "Lesson 14: Variance",
+    "section": "Where are we?",
+    "text": "Where are we?"
+  },
+  {
+    "objectID": "lessons/14_Variance/14_Variance.html#lets-calculate-the-variance-and-prove-it-12",
+    "href": "lessons/14_Variance/14_Variance.html#lets-calculate-the-variance-and-prove-it-12",
+    "title": "Lesson 14: Variance",
+    "section": "Let’s calculate the variance and prove it! (1/2)",
+    "text": "Let’s calculate the variance and prove it! (1/2)\n\n\n\n\nLemma 6: “Computation formula” for Variance\n\n\nThe variance of a RV \\(X\\), can be computed as \\[\\begin{align}\n\\sigma_X^2 & =Var(X) \\\\ & = \\mathbb{E}[X^2]-\\mu_X^2 \\\\ & = \\mathbb{E}[X^2] - (\\mathbb{E}[X])^2\n\\end{align}\\]"
+  },
+  {
+    "objectID": "lessons/14_Variance/14_Variance.html#lets-calculate-the-variance-and-prove-it-22",
+    "href": "lessons/14_Variance/14_Variance.html#lets-calculate-the-variance-and-prove-it-22",
+    "title": "Lesson 14: Variance",
+    "section": "Let’s calculate the variance and prove it! (2/2)",
+    "text": "Let’s calculate the variance and prove it! (2/2)"
+  },
+  {
+    "objectID": "lessons/14_Variance/14_Variance.html#variance-of-discrete-and-continuous-rvs",
+    "href": "lessons/14_Variance/14_Variance.html#variance-of-discrete-and-continuous-rvs",
+    "title": "Lesson 14: Variance",
+    "section": "Variance of discrete and continuous RVs",
+    "text": "Variance of discrete and continuous RVs\n\n\nHow do we calculate the variance of a discrete RV?\n   \nFor discrete RVs:\n\\[\n\\begin{align}\nVar(X) & = \\\\ & = \\sum_{\\{all\\ x\\}}(x-\\mu_x)^2 p_{X}(x) \\\\ & =\n\\mathbb{E}[(X-\\mu_X)^2] \\\\ & = \\mathbb{E}[(X-\\mathbb{E}[X])^2] \\\\ &= \\mathbb{E}[X^2]-(\\mathbb{E}[X])^2\n\\end{align}\n\\]\n\n\n\nHow do we calculate the variance of a continuous RV?\n    \nFor continuous RVs:\n\\[\n\\begin{align}\nVar(X) & =\n\\displaystyle\\int_{-\\infty}^\\infty (x-\\mu_X)^2f_X(x) dx \\\\ & = \\mathbb{E}[(X-\\mu_X)^2] \\\\ & = \\mathbb{E}[(X-\\mathbb{E}[X])^2] \\\\ &= \\mathbb{E}[X^2]-(\\mathbb{E}[X])^2 \\end{align}\n\\]"
+  },
+  {
+    "objectID": "lessons/14_Variance/14_Variance.html#ghost-problem-with-replacement",
+    "href": "lessons/14_Variance/14_Variance.html#ghost-problem-with-replacement",
+    "title": "Lesson 14: Variance",
+    "section": "Ghost problem: with replacement",
+    "text": "Ghost problem: with replacement\n\n\n\n\nExample 3.2\n\n\nThe ghost is trick-or-treating at a different house now. In this case it is known that the bag of candy has 10 chocolates, 20 lollipops, and 30 laffy taffies. The ghost grabs a handful of five pieces of candy. What is the variance for the number of chocolates the ghost takes? Let’s solve this for the cases with replacement.\n\n\n\n\nRecall probability with replacement:\n\\[\np_X(x) = {n \\choose k}p^k(1-p)^{n-k}\n\\]"
+  },
+  {
+    "objectID": "lessons/14_Variance/14_Variance.html#back-to-our-hotel-example-from-lesson-13",
+    "href": "lessons/14_Variance/14_Variance.html#back-to-our-hotel-example-from-lesson-13",
+    "title": "Lesson 14: Variance",
+    "section": "Back to our hotel example from Lesson 13",
+    "text": "Back to our hotel example from Lesson 13\n\n\n\n\nExample 4\n\n\nA tour group is planning a visit to the city of Minneapolis and needs to book 30 hotel rooms. The average price of a room is $200 with standard deviation $10. In addition, there is a 10% tourism tax for each room. What is the standard deviation of the cost for the 30 hotel rooms? Assume rooms are independent.\n\n\nProblem to do at home if we don’t have enough time."
   }
 ]

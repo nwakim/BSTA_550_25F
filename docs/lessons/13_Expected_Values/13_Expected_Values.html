@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Meike Niederhausen and Nicky Wakim">
-  <meta name="dcterms.date" content="2025-11-05">
+  <meta name="dcterms.date" content="2025-11-10">
   <title>Introduction to Probability – Lesson 13: Expected Values</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -138,17 +138,17 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </div>
 
-  <p class="date">2025-11-05</p>
+  <p class="date">2025-11-10</p>
 </section>
 <section>
 <section id="learning-objectives" class="title-slide slide level1 center">
 <h1>Learning Objectives</h1>
 <ol type="1">
-<li><p>Define expected value</p></li>
-<li><p>Calculate the mean (expected value) of a single discrete RV</p></li>
-<li><p>Calculate expected value for sum of discrete RVs</p></li>
-<li><p>Calculate the mean (expected value) of a single continuous RV</p></li>
-<li><p>Calculate expected value for joint distributions (continuous RV)</p></li>
+<li><p>Define the expected value for discrete and continuous RVs</p></li>
+<li><p>Calculate the expected value (mean) of a single discrete RV</p></li>
+<li><p>Calculate the expected value (mean) of a single continuous RV</p></li>
+<li><p>Calculate expected value for the sum of discrete or continuous RVs</p></li>
+<li><p>Calculate expected value for joint densities (continuous RVs)</p></li>
 </ol>
 </section>
 <section id="where-are-we" class="slide level2">
@@ -158,7 +158,17 @@ Meike Niederhausen and Nicky Wakim
 <section>
 <section id="learning-objectives-1" class="title-slide slide level1 center">
 <h1>Learning Objectives</h1>
-<p>definitions</p>
+<div class="lob">
+<ol type="1">
+<li>Define the expected value for discrete and continuous RVs</li>
+</ol>
+</div>
+<ol start="2" type="1">
+<li><p>Calculate the expected value (mean) of a single discrete RV</p></li>
+<li><p>Calculate the expected value (mean) of a single continuous RV</p></li>
+<li><p>Calculate expected value for the sum of discrete or continuous RVs</p></li>
+<li><p>Calculate expected value for joint densities (continuous RVs)</p></li>
+</ol>
 </section>
 <section id="our-good-and-fair-friend-the-6-sided-die" class="slide level2">
 <h2>Our good and fair friend, the 6-sided die</h2>
@@ -176,28 +186,50 @@ Meike Niederhausen and Nicky Wakim
 </section>
 <section id="what-is-an-expected-value" class="slide level2">
 <h2>What is an expected value?</h2>
-<div class="definition">
-<div class="def-title">
-<p>Definition: Expected value</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="proof1">
+<div class="proof-title">
+<p>Definition: Expected value of <strong>discrete</strong> RV</p>
 </div>
-<div class="def-cont">
-<p>The <strong>expected value</strong> of a discrete r.v. <span class="math inline">\(X\)</span> that takes on values <span class="math inline">\(x_1, x_2, \ldots, x_n\)</span> is <span class="math display">\[\mathbb{E}[X] = \sum_{i=1}^n x_ip_X(x_i).\]</span></p>
+<div class="proof-cont">
+<p>The <strong>expected value</strong> of a <strong>discrete RV</strong> <span class="math inline">\(X\)</span> that takes on values <span class="math inline">\(x_1, x_2, \ldots, x_n\)</span> is <span class="math display">\[\mathbb{E}[X] = \sum_{i=1}^n x_ip_X(x_i)\]</span> where <span class="math inline">\(n\)</span> can be <span class="math inline">\(\infty\)</span></p>
 </div>
 </div>
+</div><div class="column" style="width:50%;">
+<div class="theorem">
+<div class="thm-title">
+<p>Definition: Expected value of <strong>continuous</strong> RV</p>
+</div>
+<div class="thm-cont">
+<p>The <strong>expected value</strong> of a <strong>continuous RV</strong> <span class="math inline">\(X\)</span> is <span class="math display">\[\mathbb{E}[X] = \displaystyle\int_{-\infty}^\infty xf_X(x) dx\]</span> where we adjust the integrand based on the bounds of <span class="math inline">\(X\)</span></p>
+</div>
+</div>
+</div></div>
 <ul>
 <li>Expected values are not necessarily an actual outcome
 <ul>
 <li>In previous example, we cannot roll a 3.5</li>
 <li>It could be that our expected value is not in the sample space (<span class="math inline">\(E(X) \notin S\)</span>)</li>
 </ul></li>
-<li>Definition holds when <span class="math inline">\(X\)</span> takes on countably infinitely many values:</li>
 </ul>
-<p><span class="math display">\[\mathbb{E}[X] = \sum_{i=1}^\infty x_ip_X(x_i)\]</span></p>
 </section></section>
 <section>
 <section id="learning-objectives-2" class="title-slide slide level1 center">
 <h1>Learning Objectives</h1>
-
+<ol type="1">
+<li>Define the expected value for discrete and continuous RVs</li>
+</ol>
+<div class="lob">
+<ol start="2" type="1">
+<li>Calculate the expected value (mean) of a single discrete RV</li>
+</ol>
+</div>
+<ol start="3" type="1">
+<li><p>Calculate the expected value (mean) of a single continuous RV</p></li>
+<li><p>Calculate expected value for the sum of discrete or continuous RVs</p></li>
+<li><p>Calculate expected value for joint densities (continuous RVs)</p></li>
+</ol>
 </section>
 <section id="our-good-and-not-so-fair-friend-the-6-sided-die" class="slide level2">
 <h2>Our good and not-so-fair friend, the 6-sided die</h2>
@@ -287,146 +319,24 @@ Meike Niederhausen and Nicky Wakim
 </div></div>
 </section>
 
-<section id="ghost" class="slide level2">
-<h2>Ghost! 👻</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 6</p>
-</div>
-<div class="ex-cont">
-<p>A ghost is trick-or-treating. It comes to a house where it is known that there are 30 candies in the bag and only one is a watermelon Jolly Rancher, which is the ghost’s favorite. The ghost takes pieces of candy without replacement until it gets the watermelon Jolly Rancher. How many pieces of candy do we expect the ghost to take?</p>
-</div>
-</div>
-<p>Can we model this with a distribution?</p>
-</div></div>
-</section>
-</section>
-<section>
-<section id="learning-objective" class="title-slide slide level1 center">
-<h1>Learning Objective</h1>
 
 </section>
-<section id="revisiting-our-two-card-draw" class="slide level2">
-<h2>Revisiting our two card draw</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 1</p>
-</div>
-<div class="ex-cont">
-<p>Suppose you draw 2 cards from a standard deck of cards <em>with</em> replacement. Let <span class="math inline">\(X\)</span> be the number of hearts you draw. Find <span class="math inline">\(\mathbb{E}[X]\)</span>.</p>
-</div>
-</div>
-<div class="example">
-<div class="ex-cont">
-<p><font size="6ex">Recall Binomial RV with <span class="math inline">\(n=2\)</span>:</font></p><font size="6ex">
-<p><span class="math display">\[p_X(x) = {2 \choose x}p^x(1-p)^{2-x} \text{&nbsp; for } x = 0, 1, 2\]</span></p>
-</font><p><font size="6ex"></font></p>
-</div>
-</div>
-</div></div>
-</section>
-<section id="what-if-we-draw-a-lot-of-cards" class="slide level2">
-<h2>What if we draw A LOT of cards?</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 2</p>
-</div>
-<div class="ex-cont">
-<p>What is the expected number of hearts in Example 1 if you draw 200 cards?</p>
-</div>
-</div>
-<div class="example">
-<div class="ex-cont">
-<p><font size="6ex">Recall Binomial RV with <span class="math inline">\(n=200\)</span>:</font></p><font size="6ex">
-<p><span class="math display">\[p_X(x) = {200 \choose x}p^x(1-p)^{200-x}\]</span> <span class="math display">\[\text{&nbsp; for } x = 0, 1, 2, ..., 200\]</span></p>
-</font><p><font size="6ex"></font></p>
-</div>
-</div>
-</div></div>
-</section>
-<section id="sum-of-discrete-rvs" class="slide level2">
-<h2>Sum of discrete RVs</h2>
-<div class="theorem">
-<div class="thm-title">
-<p>Theorem 11.1: Sum of discrete RVs</p>
-</div>
-<div class="thm-cont">
-<p>For discrete r.v.’s <span class="math inline">\(X_i\)</span> and constants <span class="math inline">\(a_i\)</span>, <span class="math inline">\(i=1,2,\dots, n\)</span>, <span class="math display">\[\mathbb{E}\Bigg[\sum_{i=1}^n a_iX_i\Bigg] = \sum_{i=1}^n a_i\mathbb{E}[X_i] .\]</span> <strong>Remark:</strong> The theorem holds for infinitely r.v.’s <span class="math inline">\(X_i\)</span> as well.</p>
-</div>
-</div>
-<ul>
-<li>For two RVs, <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>:
-<ul>
-<li>We can say <span class="math inline">\(E[X+Y] = E[X] + E[Y]\)</span></li>
-<li>… and constant numbers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, we can also say <span class="math inline">\(E[aX+bY] = aE[X] + bE[Y]\)</span></li>
-<li>We can also also say <span class="math inline">\(E[X-Y] = E[X] - E[Y]\)</span>, since <span class="math inline">\(b=-1\)</span></li>
-</ul></li>
-</ul>
-</section>
-<section id="corollaries-from-thm-11.1" class="slide level2">
-<h2>Corollaries from Thm 11.1</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="proposition">
-<div class="prop-title">
-<p>Corollary 11.1.1</p>
-</div>
-<div class="prop-cont">
-<p>For a discrete r.v. <span class="math inline">\(X\)</span>, and constants <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, <span class="math display">\[\mathbb{E}[aX+b] = a\mathbb{E}[X] + b.\]</span></p>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="proposition">
-<div class="prop-title">
-<p>Corollary 11.1.2</p>
-</div>
-<div class="prop-cont">
-<p>If <span class="math inline">\(X_i\)</span>, <span class="math inline">\(i=1,2,\dots, n\)</span>, are identically distributed r.v.’s, then <span class="math display">\[\mathbb{E}\bigg[\sum_{i=1}^n X_i\bigg] = n\mathbb{E}[X_1] .\]</span></p>
-</div>
-</div>
-</div></div>
-</section>
-<section id="cost-of-hotel-rooms" class="slide level2">
-<h2>Cost of hotel rooms</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="example">
-<div class="ex-title">
-<p>Example 4</p>
-</div>
-<div class="ex-cont">
-<p>A tour group is planning a visit to the city of Minneapolis and needs to book 30 hotel rooms. The average price of a room is $200. In addition, there is a 10% tourism tax for each room. What is the expected cost for the 30 hotel rooms?</p>
-</div>
-</div>
-</div></div>
-</section></section>
 <section>
 <section id="learning-objectives-3" class="title-slide slide level1 center">
 <h1>Learning Objectives</h1>
 <ol type="1">
-<li>Calculate the mean (expected value) of a continuous RV</li>
+<li><p>Define the expected value for discrete and continuous RVs</p></li>
+<li><p>Calculate the expected value (mean) of a single discrete RV</p></li>
 </ol>
-</section>
-<section id="expected-value-of-a-function-of-a-continuous-rv" class="slide level2">
-<h2>Expected value of a function of a continuous RV</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><strong>How do we calculate expected values of discrete RVs?</strong></p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;</p>
-<p>For discrete RVs: weight average <span class="math display">\[\mathbb{E}[X] = \sum_{i=1}^n x_ip_X(x_i).\]</span></p>
-</div><div class="column" style="width:10%;">
-
-</div><div class="column" style="width:50%;">
-<p><strong>How do we calculate expected values of continuous RVs?</strong></p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;</p>
-<p>For continuous RVs:</p>
-</div></div>
+<div class="lob">
+<ol start="3" type="1">
+<li>Calculate the expected value (mean) of a single continuous RV</li>
+</ol>
+</div>
+<ol start="4" type="1">
+<li><p>Calculate expected value for the sum of discrete or continuous RVs</p></li>
+<li><p>Calculate expected value for joint densities (continuous RVs)</p></li>
+</ol>
 </section>
 <section id="expected-value-of-the-uniform-distribution" class="slide level2">
 <h2>Expected Value of the Uniform Distribution</h2>
@@ -467,18 +377,124 @@ Meike Niederhausen and Nicky Wakim
 <section>
 <section id="learning-objectives-4" class="title-slide slide level1 center">
 <h1>Learning Objectives</h1>
-<p>JOINT</p>
-</section>
-<section id="remark-on-expected-value-of-one-rv-from-joint-pdf" class="slide level2">
-<h2>Remark on expected value of one RV from joint pdf</h2>
-<p>If you are given <span class="math inline">\(f_{X,Y}(x,y)\)</span> and want to calculate <span class="math inline">\(\mathbb{E}[X]\)</span>, you have two options:</p>
 <ol type="1">
-<li><p>Find <span class="math inline">\(f_X(x)\)</span> and use it to calculate <span class="math inline">\(\mathbb{E}[X]\)</span>.</p></li>
-<li><p>Or, calculate <span class="math inline">\(\mathbb{E}[X]\)</span> using the joint density: <span class="math display">\[\mathbb{E}[X] = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}x f_{X,Y}(x,y)dydx.\]</span></p></li>
+<li><p>Define the expected value for discrete and continuous RVs</p></li>
+<li><p>Calculate the expected value (mean) of a single discrete RV</p></li>
+<li><p>Calculate the expected value (mean) of a single continuous RV</p></li>
+</ol>
+<div class="lob">
+<ol start="4" type="1">
+<li>Calculate expected value for the sum of discrete or continuous RVs</li>
+</ol>
+</div>
+<ol start="5" type="1">
+<li>Calculate expected value for joint densities (continuous RVs)</li>
 </ol>
 </section>
-<section id="option-1-expected-value-from-a-joint-distribution" class="slide level2">
-<h2>Option 1: Expected value from a joint distribution</h2>
+<section id="revisiting-our-two-card-draw" class="slide level2">
+<h2>Revisiting our two card draw</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 1</p>
+</div>
+<div class="ex-cont">
+<p>Suppose you draw 2 cards from a standard deck of cards <em>with</em> replacement. Let <span class="math inline">\(X\)</span> be the number of hearts you draw. Find <span class="math inline">\(\mathbb{E}[X]\)</span>.</p>
+</div>
+</div>
+<div class="example">
+<div class="ex-cont">
+<p><font size="6ex">Recall Binomial RV with <span class="math inline">\(n=2\)</span>:</font></p><font size="6ex">
+<p><span class="math display">\[p_X(x) = {2 \choose x}p^x(1-p)^{2-x} \text{&nbsp; for } x = 0, 1, 2\]</span></p>
+</font><p><font size="6ex"></font></p>
+</div>
+</div>
+</div></div>
+</section>
+
+<section id="sums-of-random-variables" class="slide level2">
+<h2>Sums of Random Variables</h2>
+<div class="definition">
+<div class="def-title">
+<p>Theorem: Sum of random variables</p>
+</div>
+<div class="def-cont">
+<p>For RVs (discrete or continuous) <span class="math inline">\(X_i\)</span> and constants <span class="math inline">\(a_i\)</span>, <span class="math inline">\(i=1,2,\dots, n\)</span>, <span class="math display">\[\mathbb{E}\Bigg[\sum_{i=1}^n a_iX_i\Bigg] = \sum_{i=1}^n a_i\mathbb{E}[X_i] .\]</span> <strong>Remark:</strong> The theorem holds for infinitely RV’s <span class="math inline">\(X_i\)</span> as well.</p>
+</div>
+</div>
+<ul>
+<li>For two RVs, <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>:
+<ul>
+<li>We can say <span class="math inline">\(E[X+Y] = E[X] + E[Y]\)</span></li>
+<li>… and constant numbers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, we can also say <span class="math inline">\(E[aX+bY] = aE[X] + bE[Y]\)</span></li>
+<li>We can also also say <span class="math inline">\(E[X-Y] = E[X] - E[Y]\)</span>, since <span class="math inline">\(b=-1\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="corollaries-from-theorem" class="slide level2">
+<h2>Corollaries from Theorem</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="proposition">
+<div class="prop-title">
+<p>Function with two constants</p>
+</div>
+<div class="prop-cont">
+<p>For a RV <span class="math inline">\(X\)</span>, and constants <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, <span class="math display">\[\mathbb{E}[aX+b] = a\mathbb{E}[X] + b.\]</span></p>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="proposition">
+<div class="prop-title">
+<p>Expected value of sum of identically distributed RVs</p>
+</div>
+<div class="prop-cont">
+<p>If <span class="math inline">\(X_i\)</span>, <span class="math inline">\(i=1,2,\dots, n\)</span>, are identically distributed RV’s, then <span class="math display">\[\mathbb{E}\bigg[\sum_{i=1}^n X_i\bigg] = n\mathbb{E}[X_1] .\]</span></p>
+</div>
+</div>
+</div></div>
+</section>
+<section id="cost-of-hotel-rooms" class="slide level2">
+<h2>Cost of hotel rooms</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="example">
+<div class="ex-title">
+<p>Example 4</p>
+</div>
+<div class="ex-cont">
+<p>A tour group is planning a visit to the city of Minneapolis and needs to book 30 hotel rooms. The average price of a room is $200. In addition, there is a 10% tourism tax for each room. What is the expected cost for the 30 hotel rooms?</p>
+</div>
+</div>
+</div></div>
+</section></section>
+<section>
+<section id="learning-objectives-5" class="title-slide slide level1 center">
+<h1>Learning Objectives</h1>
+<ol type="1">
+<li><p>Define the expected value for discrete and continuous RVs</p></li>
+<li><p>Calculate the expected value (mean) of a single discrete RV</p></li>
+<li><p>Calculate the expected value (mean) of a single continuous RV</p></li>
+<li><p>Calculate expected value for the sum of discrete or continuous RVs</p></li>
+</ol>
+<div class="lob">
+<ol start="5" type="1">
+<li>Calculate expected value for joint densities (continuous RVs)</li>
+</ol>
+</div>
+</section>
+<section id="expected-value-of-one-rv-from-joint-pdf" class="slide level2">
+<h2>Expected value of one RV from joint pdf</h2>
+<p>If you have a joint distribution <span class="math inline">\(f_{X,Y}(x,y)\)</span> and want to calculate <span class="math inline">\(\mathbb{E}[X]\)</span>, you have two options:</p>
+<ol type="1">
+<li><p>Find <span class="math inline">\(f_X(x)\)</span> and use it to calculate <span class="math inline">\(\mathbb{E}[X]\)</span>.</p></li>
+<li><p>Calculate <span class="math inline">\(\mathbb{E}[X]\)</span> using the joint density: <span class="math display">\[\mathbb{E}[X] = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}x f_{X,Y}(x,y)dydx.\]</span></p></li>
+</ol>
+<p>You can do the same for <span class="math inline">\(\mathbb{E}[Y]\)</span>!</p>
+</section>
+<section id="option-1-find-marginal-first" class="slide level2">
+<h2>Option 1: Find marginal first</h2>
 <div class="columns">
 <div class="column" style="width:30%;">
 <div class="example">
@@ -489,6 +505,8 @@ Meike Niederhausen and Nicky Wakim
 <p>Let <span class="math inline">\(f_{X,Y}(x,y)= 2e^{-(x+y)}\)</span>, for <span class="math inline">\(0 \leq x \leq y\)</span>. Find <span class="math inline">\(\mathbb{E}[X]\)</span>.</p>
 </div>
 </div>
+</div><div class="column" style="width:70%;">
+<p>Do this one at home by finding <span class="math inline">\(f_X(x)\)</span> then <span class="math inline">\(\mathbb{E}[X] = \displaystyle\int_{-\infty}^\infty xf_X(x) dx\)</span>. See if you get the same result as next page’s answer!</p>
 </div></div>
 </section>
 <section id="option-2-expected-value-from-a-joint-distribution" class="slide level2">
@@ -504,9 +522,19 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </div>
 </div></div>
-
-
 </section></section>
+<section id="learning-objectives-6" class="title-slide slide level1 center">
+<h1>Learning Objectives</h1>
+<ol type="1">
+<li><p>Define the expected value for discrete and continuous RVs</p></li>
+<li><p>Calculate the expected value (mean) of a single discrete RV</p></li>
+<li><p>Calculate the expected value (mean) of a single continuous RV</p></li>
+<li><p>Calculate expected value for the sum of discrete or continuous RVs</p></li>
+<li><p>Calculate expected value for joint densities (continuous RVs)</p></li>
+</ol>
+
+
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
