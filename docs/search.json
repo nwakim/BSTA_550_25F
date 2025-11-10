@@ -22173,21 +22173,21 @@
     "href": "lessons/13_Expected_Values/13_Expected_Values_key_info.html",
     "title": "Key Info",
     "section": "",
-    "text": "Grading HW 03 assignment today\nGroup evals will be taken off the assessment breakdown\nMid-quarter feedback will be put on HW 05"
+    "text": "Quiz 2 back: everyone got at least a 12/14! Woo!\n\nMost common mistake: Question 10 - the fact that \\(f_X(x)\\) can be greater than 1 is:\n\nWrong answer: Invalid, because a pdf (like a probability) can never be greater than 1\nCorrect answer: Valid, because the area under the curve from 0 to 1 is 1, even if the height of the function is greater than 1\n\n\nFeel free to use your no-questions-asked extensions on homework\n\nAnd remember that there is no grade penalty for turning in homework late\n\nCharles is not obligated to give you feedback though"
   },
   {
     "objectID": "lessons/13_Expected_Values/13_Expected_Values_key_info.html#announcements",
     "href": "lessons/13_Expected_Values/13_Expected_Values_key_info.html#announcements",
     "title": "Key Info",
     "section": "",
-    "text": "Grading HW 03 assignment today\nGroup evals will be taken off the assessment breakdown\nMid-quarter feedback will be put on HW 05"
+    "text": "Quiz 2 back: everyone got at least a 12/14! Woo!\n\nMost common mistake: Question 10 - the fact that \\(f_X(x)\\) can be greater than 1 is:\n\nWrong answer: Invalid, because a pdf (like a probability) can never be greater than 1\nCorrect answer: Valid, because the area under the curve from 0 to 1 is 1, even if the height of the function is greater than 1\n\n\nFeel free to use your no-questions-asked extensions on homework\n\nAnd remember that there is no grade penalty for turning in homework late\n\nCharles is not obligated to give you feedback though"
   },
   {
     "objectID": "lessons/13_Expected_Values/13_Expected_Values_key_info.html#key-dates",
     "href": "lessons/13_Expected_Values/13_Expected_Values_key_info.html#key-dates",
     "title": "Key Info",
     "section": "Key Dates",
-    "text": "Key Dates\n\nHW 04 assignment due Thursday\nHW 03 solutions due Sunday\n\nAnd we will have a presentation on this one!"
+    "text": "Key Dates\n\nHW 6 due this Sunday"
   },
   {
     "objectID": "lessons/15_Discrete_RVs/17_Discrete_RVs_key_info.html",
