@@ -17,6 +17,8 @@ editor_options:
 - Feel free to use your no-questions-asked extensions on homework
   - And remember that there is no **grade** penalty for turning in homework late
     - Charles is not obligated to give you feedback though
+- Sadly, there is no audio in the class on 11/5
+  - Not sure if human error or computer issue
 
 ## Key Dates
 
