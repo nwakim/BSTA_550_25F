@@ -173,7 +173,7 @@ Suppose $$X = \left\{
 ::: {.column width="40%"}
 ::: example
 ::: ex-title
-Example 5
+Example 4
 :::
 
 ::: ex-cont
@@ -250,7 +250,7 @@ Both examples are repeated random processes. They are fundamentally different th
 ::: {.column width="30%"}
 ::: example
 ::: ex-title
-Example 1
+Example 5
 :::
 ::: ex-cont
 Let $f_X(x)= \frac{1}{b-a}$, for $a \leq x \leq b$.
@@ -267,7 +267,7 @@ Find $\mathbb{E}[X]$.
 ::: {.column width="30%"}
 ::: example
 ::: ex-title
-Example 2
+Example 6
 :::
 ::: ex-cont
 Let $f_X(x)= \lambda e^{-\lambda x}$, for $x > 0$ and
@@ -309,7 +309,7 @@ $\displaystyle\int_a^b u dv = uv\bigg|^b_a - \displaystyle\int_a^b vdu$
 ::: {.column width="40%"}
 ::: example
 ::: ex-title
-Example 1
+Example 7
 :::
 
 ::: ex-cont
@@ -336,7 +336,7 @@ $$p_X(x) = {2 \choose x}p^x(1-p)^{2-x} \text{  for } x = 0, 1, 2$$
 ::: {.column width="40%"}
 ::: example
 ::: ex-title
-Example 2
+Example 8
 :::
 
 ::: ex-cont
@@ -409,7 +409,7 @@ If $X_i$, $i=1,2,\dots, n$, are identically distributed RV's, then $$\mathbb{E}\
 ::: {.column width="40%"}
 ::: example
 ::: ex-title
-Example 4
+Example 8
 :::
 
 ::: ex-cont
@@ -452,7 +452,7 @@ You can do the same for $\mathbb{E}[Y]$!
 ::: {.column width="30%"}
 ::: example
 ::: ex-title
-Example 3
+Example 9
 :::
 ::: ex-cont
 Let $f_{X,Y}(x,y)= 2e^{-(x+y)}$, for
@@ -474,7 +474,7 @@ Do this one at home by finding $f_X(x)$ then $\mathbb{E}[X] = \displaystyle\int_
 ::: {.column width="30%"}
 ::: example
 ::: ex-title
-Example 1
+Example 9
 :::
 
 ::: ex-cont

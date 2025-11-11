@@ -21781,7 +21781,7 @@
     "href": "lessons/13_Expected_Values/13_Expected_Values.html#lets-slightly-change-our-random-variable",
     "title": "Lesson 13: Expected Values",
     "section": "Let’s slightly change our random variable",
-    "text": "Let’s slightly change our random variable\n\n\n\n\nExample 5\n\n\nSuppose \\[X = \\left\\{\n        \\begin{array}{ll}\n            1 & \\quad \\mathrm{with\\ probability}\\ p \\\\\n            -1 & \\quad \\mathrm{with\\ probability}\\ 1-p\n        \\end{array}\n    \\right.\\] Find the expected value of \\(X\\)."
+    "text": "Let’s slightly change our random variable\n\n\n\n\nExample 4\n\n\nSuppose \\[X = \\left\\{\n        \\begin{array}{ll}\n            1 & \\quad \\mathrm{with\\ probability}\\ p \\\\\n            -1 & \\quad \\mathrm{with\\ probability}\\ 1-p\n        \\end{array}\n    \\right.\\] Find the expected value of \\(X\\)."
   },
   {
     "objectID": "lessons/13_Expected_Values/13_Expected_Values.html#ghost",
@@ -21795,7 +21795,7 @@
     "href": "lessons/13_Expected_Values/13_Expected_Values.html#revisiting-our-two-card-draw",
     "title": "Lesson 13: Expected Values",
     "section": "Revisiting our two card draw",
-    "text": "Revisiting our two card draw\n\n\n\n\nExample 1\n\n\nSuppose you draw 2 cards from a standard deck of cards with replacement. Let \\(X\\) be the number of hearts you draw. Find \\(\\mathbb{E}[X]\\).\n\n\n\n\nRecall Binomial RV with \\(n=2\\):\n\\[p_X(x) = {2 \\choose x}p^x(1-p)^{2-x} \\text{  for } x = 0, 1, 2\\]"
+    "text": "Revisiting our two card draw\n\n\n\n\nExample 7\n\n\nSuppose you draw 2 cards from a standard deck of cards with replacement. Let \\(X\\) be the number of hearts you draw. Find \\(\\mathbb{E}[X]\\).\n\n\n\n\nRecall Binomial RV with \\(n=2\\):\n\\[p_X(x) = {2 \\choose x}p^x(1-p)^{2-x} \\text{  for } x = 0, 1, 2\\]"
   },
   {
     "objectID": "lessons/13_Expected_Values/13_Expected_Values.html#what-if-we-draw-a-lot-of-cards",
@@ -21823,7 +21823,7 @@
     "href": "lessons/13_Expected_Values/13_Expected_Values.html#cost-of-hotel-rooms",
     "title": "Lesson 13: Expected Values",
     "section": "Cost of hotel rooms",
-    "text": "Cost of hotel rooms\n\n\n\n\nExample 4\n\n\nA tour group is planning a visit to the city of Minneapolis and needs to book 30 hotel rooms. The average price of a room is $200. In addition, there is a 10% tourism tax for each room. What is the expected cost for the 30 hotel rooms?"
+    "text": "Cost of hotel rooms\n\n\n\n\nExample 8\n\n\nA tour group is planning a visit to the city of Minneapolis and needs to book 30 hotel rooms. The average price of a room is $200. In addition, there is a 10% tourism tax for each room. What is the expected cost for the 30 hotel rooms?"
   },
   {
     "objectID": "lessons/13_Expected_Values/13_Expected_Values.html#expected-value-of-a-function-of-a-continuous-rv",
@@ -21837,14 +21837,14 @@
     "href": "lessons/13_Expected_Values/13_Expected_Values.html#expected-value-of-the-uniform-distribution",
     "title": "Lesson 13: Expected Values",
     "section": "Expected Value of the Uniform Distribution",
-    "text": "Expected Value of the Uniform Distribution\n\n\n\n\nExample 1\n\n\nLet \\(f_X(x)= \\frac{1}{b-a}\\), for \\(a \\leq x \\leq b\\). Find \\(\\mathbb{E}[X]\\)."
+    "text": "Expected Value of the Uniform Distribution\n\n\n\n\nExample 5\n\n\nLet \\(f_X(x)= \\frac{1}{b-a}\\), for \\(a \\leq x \\leq b\\). Find \\(\\mathbb{E}[X]\\)."
   },
   {
     "objectID": "lessons/13_Expected_Values/13_Expected_Values.html#expected-value-of-the-exponential-distribution",
     "href": "lessons/13_Expected_Values/13_Expected_Values.html#expected-value-of-the-exponential-distribution",
     "title": "Lesson 13: Expected Values",
     "section": "Expected Value of the Exponential Distribution",
-    "text": "Expected Value of the Exponential Distribution\n\n\n\n\nExample 2\n\n\nLet \\(f_X(x)= \\lambda e^{-\\lambda x}\\), for \\(x &gt; 0\\) and \\(\\lambda&gt; 0\\). Find \\(\\mathbb{E}[X]\\).\n\n\n\n\nIntegrating by Parts\n\n\n\\(\\displaystyle\\int_a^b u dv = uv\\bigg|^b_a - \\displaystyle\\int_a^b vdu\\)"
+    "text": "Expected Value of the Exponential Distribution\n\n\n\n\nExample 6\n\n\nLet \\(f_X(x)= \\lambda e^{-\\lambda x}\\), for \\(x &gt; 0\\) and \\(\\lambda&gt; 0\\). Find \\(\\mathbb{E}[X]\\).\n\n\n\n\nIntegrating by Parts\n\n\n\\(\\displaystyle\\int_a^b u dv = uv\\bigg|^b_a - \\displaystyle\\int_a^b vdu\\)"
   },
   {
     "objectID": "lessons/13_Expected_Values/13_Expected_Values.html#remark-on-expected-value-of-one-rv-from-joint-pdf",
@@ -21865,7 +21865,7 @@
     "href": "lessons/13_Expected_Values/13_Expected_Values.html#option-2-expected-value-from-a-joint-distribution",
     "title": "Lesson 13: Expected Values",
     "section": "Option 2: Expected value from a joint distribution",
-    "text": "Option 2: Expected value from a joint distribution\n\n\n\n\nExample 1\n\n\nLet \\(f_{X,Y}(x,y)= 2e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\). Find \\(\\mathbb{E}[X]\\)."
+    "text": "Option 2: Expected value from a joint distribution\n\n\n\n\nExample 9\n\n\nLet \\(f_{X,Y}(x,y)= 2e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\). Find \\(\\mathbb{E}[X]\\)."
   },
   {
     "objectID": "lessons/16_Cont_RVs/18_Cont_RVs_key_info.html",
@@ -22432,7 +22432,7 @@
     "href": "lessons/13_Expected_Values/13_Expected_Values_muddy_points.html",
     "title": "Muddy Points",
     "section": "",
-    "text": "If we start at a joint probability \\(f_{X,Y}(x,y)\\)…. we can look at a few probabilities:\n\nJoint probability: \\(P(a \\leq X \\leq b, c \\leq Y \\leq d)\\)\n\\[P(a \\leq X \\leq b, c \\leq Y \\leq d) = \\displaystyle\\int_{x=a}^{x=b}\\displaystyle\\int_{y=c}^{y=d} f_{X,Y}(x,y) dydx\\]\nMarginal probability: \\(P(a \\leq X \\leq b)\\)\n\\[P(a \\leq X \\leq b) = \\displaystyle\\int_{x=a}^{x=b} f_{X}(x) dx\\]\nOR\n\\[P(a \\leq X \\leq b) = \\displaystyle\\int_{x=a}^{x=b}\\displaystyle\\int_{y=-\\inf}^{y=\\inf} f_{X,Y}(x,y) dydx\\]\nConditional probability: \\(P(a \\leq X \\leq b | Y = c)\\)\n\\[P(a \\leq X \\leq b | Y=c) = \\displaystyle\\int_{x=a}^{x=b} f_{X|Y}(x|y=c) dx\\]\nYou cannot calculate \\(P(a \\leq X \\leq b | Y = c)\\) by \\(\\dfrac{P(a \\leq X \\leq b, Y=c)}{P(Y = c)}\\) because \\(P(Y = c)\\) is 0. Instead, we need to find \\(f_{X|Y}(x|y=c)\\) by \\(\\dfrac{f_{X,Y}(x,y=c)}{f_{Y}(y=c)}\\) and THEN integrate over X."
+    "text": "Here’s a pretty good video on integration by parts!\nHere’s the Calc review muddy points with a few words on integration by parts.\n\n\n\nGot a little help from Chatgpt:\nThink back to our discrete example with the die. Our expected value was the weighted average of all the possible outcomes (weighted by their probability). So our expected value for discrete RVs will always be that weighted average: \\[\\mathbb{E}[X] = \\sum_{i=1}^n x_ip_X(x_i)\\]\nFor continuous RVs, they can take infinite possible values, so we cannot sum across the pdf the same way. We still want the weighted average, so we need to find a way to “sum” the weighted outcomes for the continuous RV, which translates to an integral.\nHere’s a fairly good explanation on StackExchange..)\n\n\n\nFinal example: Let \\(f_{X,Y}(x,y)= 2e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\). Find \\(\\mathbb{E}[X]\\).\nLet’s start with a plot for the domain. We have \\(0 \\leq x \\leq y\\), so we know that \\(x\\geq0\\) and because \\(y\\geq x\\), then \\(y\\geq0\\), so we’ll have a plot of all positive values of \\(x\\) and \\(y\\):\n\n\n\n\n\n\n\n\n\nOkay, now let’s add the information that \\(y \\geq x\\). We can look at the line, \\(y=x\\), and identify the area on the side of the line that upholds \\(y \\geq x\\):\n\n\n\n\n\n\n\n\n\nThe area above the line is where \\(y\\geq x\\):\n\n\n\n\n\n\n\n\n\nSo we need to find the bounds for the orange region in terms of \\(x\\) and \\(y\\).\nWhichever random variable is on the inner integral will need to incorporate the \\(y=x\\) line. If we integrate over \\(y\\) first, we will integrate from \\(y=x\\) to \\(y=\\infty\\). Once we have incorporated the line into our first integral, then we no longer need to worry about the \\(y=x\\) line. For \\(x\\), we can integrate from \\(x=0\\) to \\(x=\\infty\\)."
   },
   {
     "objectID": "lessons/13_Expected_Values/13_Expected_Values_muddy_points.html#fall-2023",
@@ -23741,7 +23741,7 @@
     "href": "lessons/13_Expected_Values/13_Expected_Values.html#option-1-find-marginal-first",
     "title": "Lesson 13: Expected Values",
     "section": "Option 1: Find marginal first",
-    "text": "Option 1: Find marginal first\n\n\n\n\nExample 3\n\n\nLet \\(f_{X,Y}(x,y)= 2e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\). Find \\(\\mathbb{E}[X]\\).\n\n\n\nDo this one at home by finding \\(f_X(x)\\) then \\(\\mathbb{E}[X] = \\displaystyle\\int_{-\\infty}^\\infty xf_X(x) dx\\). See if you get the same result as next page’s answer!"
+    "text": "Option 1: Find marginal first\n\n\n\n\nExample 9\n\n\nLet \\(f_{X,Y}(x,y)= 2e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\). Find \\(\\mathbb{E}[X]\\).\n\n\n\nDo this one at home by finding \\(f_X(x)\\) then \\(\\mathbb{E}[X] = \\displaystyle\\int_{-\\infty}^\\infty xf_X(x) dx\\). See if you get the same result as next page’s answer!"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html#where-are-we",
@@ -23784,5 +23784,173 @@
     "title": "Lesson 14: Variance",
     "section": "Back to our hotel example from Lesson 13",
     "text": "Back to our hotel example from Lesson 13\n\n\n\n\nExample 4\n\n\nA tour group is planning a visit to the city of Minneapolis and needs to book 30 hotel rooms. The average price of a room is $200 with standard deviation $10. In addition, there is a 10% tourism tax for each room. What is the standard deviation of the cost for the 30 hotel rooms? Assume rooms are independent.\n\n\nProblem to do at home if we don’t have enough time."
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/28_29_Joint_expected_value_Variance/28_29_Joint_expected_value_Variance_muddy_points.html",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/28_29_Joint_expected_value_Variance/28_29_Joint_expected_value_Variance_muddy_points.html",
+    "title": "Muddy Points",
+    "section": "",
+    "text": "Muddy points from Fall 2023:\n\n2. How do we set the bounds on a double integral?\nWhen the domain of the RVs are not dependent on each other, then we use the bounds as is. In example 2 of Chapter 26 notes, we have the joint pdf \\(f_{X,Y}(x,y)= 18 x^2 y^5\\), for\\(0 \\leq x \\leq 1, \\ 0 \\leq y \\leq 1\\). If we wanted to calculate something like \\(E(X)\\), then we could use the bounds as they are. Below is the domain for \\(x\\) and \\(y\\):\n\n\n\n\n\nHere is the integral for the expected value where we integrate over the whole domain of \\(x\\) and \\(y\\):\n\\[ E(X) = \\displaystyle\\int_0^1 \\displaystyle\\int_0^1 x (18 x^2 y^5 )dy dx \\]If we want to find the probability \\(P(0.25 \\leq X \\leq 0.5, 0.5 \\leq Y \\leq 0.75)\\), then we can look at the specific values of the probability:\n\n\n\n\n\nNote the blue lines above indicate how we integrate over \\(y\\) first from 0.5 to 0.75 and the green lines indicate how integrate over \\(x\\) first from 0.25 to 0.5. It seems like we’ve integrated over an area that isn’t within our specified probability. However, the integrated area is ONLY the overlap of the \\(x\\) and \\(y\\) bounds for the probability.\n\\[P(0.25 \\leq X \\leq 0.5, 0.5 \\leq Y \\leq 0.75) = \\displaystyle\\int_{0.25}^{0.5} \\displaystyle\\int_{0.5}^{0.75} 18 x^2 y^5 dy dx\\]\nLet’s use the same pdf, but now the domain of the two RVs is dependent on one another. We have the joint pdf \\(f_{X,Y}(x,y)= 18 x^2 y^5\\), for\\(0 \\leq x \\leq y\\leq1\\)\nIf we wanted to calculate something like \\(E(X)\\), then we need to account for fact that \\(x\\) must be less than of equal to \\(y\\). We can look back at the domain for this:\n\n\n\n\n\nNote the blue lines above still indicate how we integrate over \\(y\\) first from \\(x\\) to 1, and the green lines indicate how integrate over \\(x\\) first from 0 to 1. Once again, it seems like we’ve integrated over an area that isn’t within the domain. However, the integrated area is ONLY the overlap of the \\(x\\) and \\(y\\) bounds. Thus, once we’ve restricted \\(y\\) to the area between \\(x\\) and 1, we no longer need to restrict \\(x\\) to the are of 0 to \\(y\\).\n\\[ E(X) = \\displaystyle\\int_0^1 \\displaystyle\\int_x^1 x (18 x^2 y^5 )dy dx \\] If we want to find the probability \\(P(0.25 \\leq X \\leq 0.5, 0.5 \\leq Y \\leq 0.75)\\), then we should look back at our domain. For now, we are focusing on the orange area:\n\n\n\n\n\nBecause the orange area is totally within our domain, we can leave our integral our bounds as the exact values we specified:\n\\[P(0.25 \\leq X \\leq 0.5, 0.5 \\leq Y \\leq 0.75) = \\displaystyle\\int_{0.25}^{0.5} \\displaystyle\\int_{0.5}^{0.75} 18 x^2 y^5 dy dx\\]\nHowever, if we want the probability \\(P(0.5 \\leq X \\leq 0.75, 0.5 \\leq Y \\leq 0.75)\\), we would focus on the pink area above. We would limit one of our integrals to the \\(y=x\\) equation:\n\\[P(0.5 \\leq X \\leq 0.75, 0.5 \\leq Y \\leq 0.75) = \\displaystyle\\int_{0.5}^{0.75} \\displaystyle\\int_{x}^{0.75} 18 x^2 y^5 dy dx\\]\nOR\n\\[P(0.5 \\leq X \\leq 0.75, 0.5 \\leq Y \\leq 0.75) = \\displaystyle\\int_{0.5}^{0.75} \\displaystyle\\int_{0.5}^{y} 18 x^2 y^5 dx dy\\]\nThe key to these probabilities is that the bounds with the other variable is on the inside integral! Otherwise we end up with a answer that includes a RV."
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html",
+    "title": "Chapter 11: Expected Values of Sums of Discrete RVs",
+    "section": "",
+    "text": "Calculate the mean (expected value) of sums of discrete random variables"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html#learning-objectives",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html#learning-objectives",
+    "title": "Chapter 11: Expected Values of Sums of Discrete RVs",
+    "section": "",
+    "text": "Calculate the mean (expected value) of sums of discrete random variables"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html#where-are-we",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html#where-are-we",
+    "title": "Chapter 11: Expected Values of Sums of Discrete RVs",
+    "section": "Where are we?",
+    "text": "Where are we?"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html#revisiting-our-two-card-draw",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html#revisiting-our-two-card-draw",
+    "title": "Chapter 11: Expected Values of Sums of Discrete RVs",
+    "section": "Revisiting our two card draw",
+    "text": "Revisiting our two card draw\n\n\n\n\nExample 1\n\n\nSuppose you draw 2 cards from a standard deck of cards with replacement. Let \\(X\\) be the number of hearts you draw. Find \\(\\mathbb{E}[X]\\).\n\n\n\n\nRecall Binomial RV with \\(n=2\\):\n\\[p_X(x) = {2 \\choose x}p^x(1-p)^{2-x} \\text{  for } x = 0, 1, 2\\]"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html#what-if-we-draw-a-lot-of-cards",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html#what-if-we-draw-a-lot-of-cards",
+    "title": "Chapter 11: Expected Values of Sums of Discrete RVs",
+    "section": "What if we draw A LOT of cards?",
+    "text": "What if we draw A LOT of cards?\n\n\n\n\nExample 2\n\n\nWhat is the expected number of hearts in Example 1 if you draw 200 cards?\n\n\n\n\nRecall Binomial RV with \\(n=200\\):\n\\[p_X(x) = {200 \\choose x}p^x(1-p)^{200-x}\\] \\[\\text{  for } x = 0, 1, 2, ..., 200\\]"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html#sum-of-discrete-rvs",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html#sum-of-discrete-rvs",
+    "title": "Chapter 11: Expected Values of Sums of Discrete RVs",
+    "section": "Sum of discrete RVs",
+    "text": "Sum of discrete RVs\n\n\nTheorem 11.1: Sum of discrete RVs\n\n\nFor discrete r.v.’s \\(X_i\\) and constants \\(a_i\\), \\(i=1,2,\\dots, n\\), \\[\\mathbb{E}\\Bigg[\\sum_{i=1}^n a_iX_i\\Bigg] = \\sum_{i=1}^n a_i\\mathbb{E}[X_i] .\\] Remark: The theorem holds for infinitely r.v.’s \\(X_i\\) as well.\n\n\n\nFor two RVs, \\(X\\) and \\(Y\\):\n\nWe can say \\(E[X+Y] = E[X] + E[Y]\\)\n… and constant numbers \\(a\\) and \\(b\\), we can also say \\(E[aX+bY] = aE[X] + bE[Y]\\)\nWe can also also say \\(E[X-Y] = E[X] - E[Y]\\), since \\(b=-1\\)"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html#corollaries-from-thm-11.1",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html#corollaries-from-thm-11.1",
+    "title": "Chapter 11: Expected Values of Sums of Discrete RVs",
+    "section": "Corollaries from Thm 11.1",
+    "text": "Corollaries from Thm 11.1\n\n\n\n\nCorollary 11.1.1\n\n\nFor a discrete r.v. \\(X\\), and constants \\(a\\) and \\(b\\), \\[\\mathbb{E}[aX+b] = a\\mathbb{E}[X] + b.\\]\n\n\n\n\n\nCorollary 11.1.2\n\n\nIf \\(X_i\\), \\(i=1,2,\\dots, n\\), are identically distributed r.v.’s, then \\[\\mathbb{E}\\bigg[\\sum_{i=1}^n X_i\\bigg] = n\\mathbb{E}[X_1] .\\]"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html#cost-of-hotel-rooms",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/11_Expected_Values_of_Sums_of_rvs.html#cost-of-hotel-rooms",
+    "title": "Chapter 11: Expected Values of Sums of Discrete RVs",
+    "section": "Cost of hotel rooms",
+    "text": "Cost of hotel rooms\n\n\n\n\nExample 4\n\n\nA tour group is planning a visit to the city of Minneapolis and needs to book 30 hotel rooms. The average price of a room is $200. In addition, there is a 10% tourism tax for each room. What is the expected cost for the 30 hotel rooms?"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv.html",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv.html",
+    "title": "Chapter 36: Sums of Independent Normal RVs",
+    "section": "",
+    "text": "Calculate probability of a sample mean using a Normally distributed population"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv.html#learning-objectives",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv.html#learning-objectives",
+    "title": "Chapter 36: Sums of Independent Normal RVs",
+    "section": "",
+    "text": "Calculate probability of a sample mean using a Normally distributed population"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv.html#sum-of-normal-rvs",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv.html#sum-of-normal-rvs",
+    "title": "Chapter 36: Sums of Independent Normal RVs",
+    "section": "Sum of Normal RVs",
+    "text": "Sum of Normal RVs\n\n\nTheorem 1\n\n\nLet \\(X\\sim N(\\mu, \\sigma^2)\\), and let \\(Y=aX+b\\), where \\(a\\) and \\(b\\) are constants. Then \\[Y \\sim N(a\\mu+b, a^2\\sigma^2)\\]\n\n\n\n\nTheorem 2\n\n\nLet \\(X_i \\sim N(\\mu_i, \\sigma_i^2)\\) be independent normal rv’s, for \\(i=1,2,\\ldots,n\\). Then \\[\\sum_{i=1}^n X_i \\sim N\\Bigg(\\sum_{i=1}^n \\mu_i , \\sum_{i=1}^n \\sigma^2_i\\Bigg)\\]"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv.html#special-cases",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv.html#special-cases",
+    "title": "Chapter 36: Sums of Independent Normal RVs",
+    "section": "Special Cases",
+    "text": "Special Cases\n\nLet \\(X_i \\sim N(\\mu, \\sigma^2)\\) be iid normal rv’s, for \\(i=1,2,\\ldots,n\\). Then \\[\\sum_{i=1}^n X_i \\sim N\\big(n\\mu, n \\sigma^2\\big)\\]\nLet \\(X_i \\sim N(\\mu, \\sigma^2)\\) be iid normal rv’s, for \\(i=1,2,\\ldots,n\\). Then \\[\\bar{X}=\\frac{\\sum_{i=1}^n X_i}{n} \\sim N\\big(\\mu, \\sigma^2 / n\\big)\\]\nLet \\(X\\sim N(\\mu_X,\\sigma_X^2)\\), and \\(Y\\sim N(\\mu_Y,\\sigma_Y^2)\\). Then \\[X-Y \\sim N\\big(\\mu_X - \\mu_Y, \\sigma^2_X + \\sigma^2_Y \\big)\\]"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv.html#detecting-and-solving-sums-of-normal-rvs-from-a-word-problem",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv.html#detecting-and-solving-sums-of-normal-rvs-from-a-word-problem",
+    "title": "Chapter 36: Sums of Independent Normal RVs",
+    "section": "Detecting and solving sums of Normal RVs from a word problem",
+    "text": "Detecting and solving sums of Normal RVs from a word problem\n\n\n\n\nExample 1\n\n\nGlaucoma is an eye disease that is manifested by high intraocular pressure (IOP). The distribution of IOP in the general population is approximately normal with mean 16 mmHg and standard deviation 3 mmHg.\n\nSuppose a patient has 40 IOP readings. What is the probability that their average reading is greater than 20.32 mmHg, assuming their eyes are healthy?\nRepeat the previous question for a patient with 10 IOP readings."
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv_key_info.html",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv_key_info.html",
+    "title": "Key Info",
+    "section": "",
+    "text": "Homework 7 presentations due soon!\n\nI will check your HW 7 solutions ASAP!\n\nDepending on how far we get today and Wednesday, I might cancel the 12/9 class\nAnything else?"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv_key_info.html#announcements",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv_key_info.html#announcements",
+    "title": "Key Info",
+    "section": "",
+    "text": "Homework 7 presentations due soon!\n\nI will check your HW 7 solutions ASAP!\n\nDepending on how far we get today and Wednesday, I might cancel the 12/9 class\nAnything else?"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv_key_info.html#key-dates",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/36_Sums_of_Independent_Normal_rv/36_Sums_of_Independent_Normal_rv_key_info.html#key-dates",
+    "title": "Key Info",
+    "section": "Key Dates",
+    "text": "Key Dates\n\nThursday: HW 8 assignment due\nSunday: HW 7 presentations due at 11pm"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/28_29_Joint_expected_value_Variance/28_29_Joint_expected_value_Variance.html",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/28_29_Joint_expected_value_Variance/28_29_Joint_expected_value_Variance.html",
+    "title": "Chapter 28: Revisiting Expected Values for Joint Distributions",
+    "section": "",
+    "text": "Calculate the mean (expected value) of a joint distribution of continuous RV"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/28_29_Joint_expected_value_Variance/28_29_Joint_expected_value_Variance.html#learning-objectives",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/28_29_Joint_expected_value_Variance/28_29_Joint_expected_value_Variance.html#learning-objectives",
+    "title": "Chapter 28: Revisiting Expected Values for Joint Distributions",
+    "section": "",
+    "text": "Calculate the mean (expected value) of a joint distribution of continuous RV"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/28_29_Joint_expected_value_Variance/28_29_Joint_expected_value_Variance.html#remark-on-expected-value-of-one-rv-from-joint-pdf",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/28_29_Joint_expected_value_Variance/28_29_Joint_expected_value_Variance.html#remark-on-expected-value-of-one-rv-from-joint-pdf",
+    "title": "Chapter 28: Revisiting Expected Values for Joint Distributions",
+    "section": "Remark on expected value of one RV from joint pdf",
+    "text": "Remark on expected value of one RV from joint pdf\nIf you are given \\(f_{X,Y}(x,y)\\) and want to calculate \\(\\mathbb{E}[X]\\), you have two options:\n\nFind \\(f_X(x)\\) and use it to calculate \\(\\mathbb{E}[X]\\).\nOr, calculate \\(\\mathbb{E}[X]\\) using the joint density: \\[\\mathbb{E}[X] = \\int_{-\\infty}^{\\infty}\\int_{-\\infty}^{\\infty}x f_{X,Y}(x,y)dydx.\\]"
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/28_29_Joint_expected_value_Variance/28_29_Joint_expected_value_Variance.html#option-1-expected-value-from-a-joint-distribution",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/28_29_Joint_expected_value_Variance/28_29_Joint_expected_value_Variance.html#option-1-expected-value-from-a-joint-distribution",
+    "title": "Chapter 28: Revisiting Expected Values for Joint Distributions",
+    "section": "Option 1: Expected value from a joint distribution",
+    "text": "Option 1: Expected value from a joint distribution\n\n\n\n\nExample 3\n\n\nLet \\(f_{X,Y}(x,y)= 2e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\). Find \\(\\mathbb{E}[X]\\)."
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/28_29_Joint_expected_value_Variance/28_29_Joint_expected_value_Variance.html#option-2-expected-value-from-a-joint-distribution",
+    "href": "lessons/13_Expected_Values/old_notes/15_Expected_Values_of_Sums_of_rvs/28_29_Joint_expected_value_Variance/28_29_Joint_expected_value_Variance.html#option-2-expected-value-from-a-joint-distribution",
+    "title": "Chapter 28: Revisiting Expected Values for Joint Distributions",
+    "section": "Option 2: Expected value from a joint distribution",
+    "text": "Option 2: Expected value from a joint distribution\n\n\n\n\nExample 1\n\n\nLet \\(f_{X,Y}(x,y)= 2e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\). Find \\(\\mathbb{E}[X]\\)."
+  },
+  {
+    "objectID": "lessons/11_Joint_distributions/11_Joint_distributions_muddy_points.html#fall-2023",
+    "href": "lessons/11_Joint_distributions/11_Joint_distributions_muddy_points.html#fall-2023",
+    "title": "Muddy Points",
+    "section": "Fall 2023",
+    "text": "Fall 2023\n\n1. How do we set the bounds on a double integral?\nWhen the domain of the RVs are not dependent on each other, then we use the bounds as is. In example 2 of Chapter 26 notes, we have the joint pdf \\(f_{X,Y}(x,y)= 18 x^2 y^5\\), for\\(0 \\leq x \\leq 1, \\ 0 \\leq y \\leq 1\\). If we wanted to calculate something like \\(E(X)\\), then we could use the bounds as they are. Below is the domain for \\(x\\) and \\(y\\):\n\n\n\n\n\nHere is the integral for the expected value where we integrate over the whole domain of \\(x\\) and \\(y\\):\n\\[ E(X) = \\displaystyle\\int_0^1 \\displaystyle\\int_0^1 x (18 x^2 y^5 )dy dx \\]If we want to find the probability \\(P(0.25 \\leq X \\leq 0.5, 0.5 \\leq Y \\leq 0.75)\\), then we can look at the specific values of the probability:\n\n\n\n\n\nNote the blue lines above indicate how we integrate over \\(y\\) first from 0.5 to 0.75 and the green lines indicate how integrate over \\(x\\) first from 0.25 to 0.5. It seems like we’ve integrated over an area that isn’t within our specified probability. However, the integrated area is ONLY the overlap of the \\(x\\) and \\(y\\) bounds for the probability.\n\\[P(0.25 \\leq X \\leq 0.5, 0.5 \\leq Y \\leq 0.75) = \\displaystyle\\int_{0.25}^{0.5} \\displaystyle\\int_{0.5}^{0.75} 18 x^2 y^5 dy dx\\]\nLet’s use the same pdf, but now the domain of the two RVs is dependent on one another. We have the joint pdf \\(f_{X,Y}(x,y)= 18 x^2 y^5\\), for\\(0 \\leq x \\leq y\\leq1\\)\nIf we wanted to calculate something like \\(E(X)\\), then we need to account for fact that \\(x\\) must be less than of equal to \\(y\\). We can look back at the domain for this:\n\n\n\n\n\nNote the blue lines above still indicate how we integrate over \\(y\\) first from \\(x\\) to 1, and the green lines indicate how integrate over \\(x\\) first from 0 to 1. Once again, it seems like we’ve integrated over an area that isn’t within the domain. However, the integrated area is ONLY the overlap of the \\(x\\) and \\(y\\) bounds. Thus, once we’ve restricted \\(y\\) to the area between \\(x\\) and 1, we no longer need to restrict \\(x\\) to the are of 0 to \\(y\\).\n\\[ E(X) = \\displaystyle\\int_0^1 \\displaystyle\\int_x^1 x (18 x^2 y^5 )dy dx \\] If we want to find the probability \\(P(0.25 \\leq X \\leq 0.5, 0.5 \\leq Y \\leq 0.75)\\), then we should look back at our domain. For now, we are focusing on the orange area:\n\n\n\n\n\nBecause the orange area is totally within our domain, we can leave our integral our bounds as the exact values we specified:\n\\[P(0.25 \\leq X \\leq 0.5, 0.5 \\leq Y \\leq 0.75) = \\displaystyle\\int_{0.25}^{0.5} \\displaystyle\\int_{0.5}^{0.75} 18 x^2 y^5 dy dx\\]\nHowever, if we want the probability \\(P(0.5 \\leq X \\leq 0.75, 0.5 \\leq Y \\leq 0.75)\\), we would focus on the pink area above. We would limit one of our integrals to the \\(y=x\\) equation:\n\\[P(0.5 \\leq X \\leq 0.75, 0.5 \\leq Y \\leq 0.75) = \\displaystyle\\int_{0.5}^{0.75} \\displaystyle\\int_{x}^{0.75} 18 x^2 y^5 dy dx\\]\nOR\n\\[P(0.5 \\leq X \\leq 0.75, 0.5 \\leq Y \\leq 0.75) = \\displaystyle\\int_{0.5}^{0.75} \\displaystyle\\int_{0.5}^{y} 18 x^2 y^5 dx dy\\]\nThe key to these probabilities is that the bounds with the other variable is on the inside integral! Otherwise we end up with a answer that includes a RV."
+  },
+  {
+    "objectID": "lessons/13_Expected_Values/13_Expected_Values_muddy_points.html#fall-2025",
+    "href": "lessons/13_Expected_Values/13_Expected_Values_muddy_points.html#fall-2025",
+    "title": "Muddy Points",
+    "section": "",
+    "text": "Here’s a pretty good video on integration by parts!\nHere’s the Calc review muddy points with a few words on integration by parts.\n\n\n\nGot a little help from Chatgpt:\nThink back to our discrete example with the die. Our expected value was the weighted average of all the possible outcomes (weighted by their probability). So our expected value for discrete RVs will always be that weighted average: \\[\\mathbb{E}[X] = \\sum_{i=1}^n x_ip_X(x_i)\\]\nFor continuous RVs, they can take infinite possible values, so we cannot sum across the pdf the same way. We still want the weighted average, so we need to find a way to “sum” the weighted outcomes for the continuous RV, which translates to an integral.\nHere’s a fairly good explanation on StackExchange..)\n\n\n\nFinal example: Let \\(f_{X,Y}(x,y)= 2e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\). Find \\(\\mathbb{E}[X]\\).\nLet’s start with a plot for the domain. We have \\(0 \\leq x \\leq y\\), so we know that \\(x\\geq0\\) and because \\(y\\geq x\\), then \\(y\\geq0\\), so we’ll have a plot of all positive values of \\(x\\) and \\(y\\):\n\n\n\n\n\n\n\n\n\nOkay, now let’s add the information that \\(y \\geq x\\). We can look at the line, \\(y=x\\), and identify the area on the side of the line that upholds \\(y \\geq x\\):\n\n\n\n\n\n\n\n\n\nThe area above the line is where \\(y\\geq x\\):\n\n\n\n\n\n\n\n\n\nSo we need to find the bounds for the orange region in terms of \\(x\\) and \\(y\\).\nWhichever random variable is on the inner integral will need to incorporate the \\(y=x\\) line. If we integrate over \\(y\\) first, we will integrate from \\(y=x\\) to \\(y=\\infty\\). Once we have incorporated the line into our first integral, then we no longer need to worry about the \\(y=x\\) line. For \\(x\\), we can integrate from \\(x=0\\) to \\(x=\\infty\\)."
   }
 ]
