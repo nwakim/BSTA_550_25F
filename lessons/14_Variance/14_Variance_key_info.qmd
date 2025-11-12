@@ -1,7 +1,5 @@
 ---
-title: "Key Info"
-subtitle: "Pre Chapter 24: Calculus Review"
-date: "11/4/2024"
+title: "Key Info and Announcements"
 date-modified: "today"
 format: 
   html:
@@ -12,11 +10,22 @@ editor_options:
 
 ## Announcements
 
-- HW 4 assignment due last night!
-- HW 3 solutions also due
-- Time to grade later today: HW 3 solutions or HW 4 assignment?
+- Homework 5
+  - Charles said it looks good! Impressed with everyone's work on questions 3 and 4!
+
+### Free Biostatistics Peer Tutoring Available Starting November 17th! 
+
+We have had a little delay with onboarding new peer-tutors this year, but **Charles Parker** will be available starting **November 17th** to support folks with biostatistics! 
+
+Unlike TAs, tutors are not closely associated with any particular course sections or professors, nor do they have any grading responsibilities. Consider meeting with a tutor when you feel stuck on a project, need help with R coding, want to review course concepts, or simply complete assignments in a social learning environment. There is no cost to use tutoring. ​
+
+Charles is looking forward to working with you in a one-to-one or group setting, depending on your needs. **Starting November 17th, [you will be able to schedule to meet with them.](https://traccloud.go-redrock.com/ohsu)   **
+
+You can contact  the Academic Success Center with questions learningsupport@ohsu.edu.​
+
 
 ## Key Dates
 
-
+- Homework 6 due 11/16
+- Homework 7 due 11/23
 
