@@ -23952,5 +23952,82 @@
     "title": "Muddy Points",
     "section": "",
     "text": "Here’s a pretty good video on integration by parts!\nHere’s the Calc review muddy points with a few words on integration by parts.\n\n\n\nGot a little help from Chatgpt:\nThink back to our discrete example with the die. Our expected value was the weighted average of all the possible outcomes (weighted by their probability). So our expected value for discrete RVs will always be that weighted average: \\[\\mathbb{E}[X] = \\sum_{i=1}^n x_ip_X(x_i)\\]\nFor continuous RVs, they can take infinite possible values, so we cannot sum across the pdf the same way. We still want the weighted average, so we need to find a way to “sum” the weighted outcomes for the continuous RV, which translates to an integral.\nHere’s a fairly good explanation on StackExchange..)\n\n\n\nFinal example: Let \\(f_{X,Y}(x,y)= 2e^{-(x+y)}\\), for \\(0 \\leq x \\leq y\\). Find \\(\\mathbb{E}[X]\\).\nLet’s start with a plot for the domain. We have \\(0 \\leq x \\leq y\\), so we know that \\(x\\geq0\\) and because \\(y\\geq x\\), then \\(y\\geq0\\), so we’ll have a plot of all positive values of \\(x\\) and \\(y\\):\n\n\n\n\n\n\n\n\n\nOkay, now let’s add the information that \\(y \\geq x\\). We can look at the line, \\(y=x\\), and identify the area on the side of the line that upholds \\(y \\geq x\\):\n\n\n\n\n\n\n\n\n\nThe area above the line is where \\(y\\geq x\\):\n\n\n\n\n\n\n\n\n\nSo we need to find the bounds for the orange region in terms of \\(x\\) and \\(y\\).\nWhichever random variable is on the inner integral will need to incorporate the \\(y=x\\) line. If we integrate over \\(y\\) first, we will integrate from \\(y=x\\) to \\(y=\\infty\\). Once we have incorporated the line into our first integral, then we no longer need to worry about the \\(y=x\\) line. For \\(x\\), we can integrate from \\(x=0\\) to \\(x=\\infty\\)."
+  },
+  {
+    "objectID": "lessons/14_Variance/14_Variance.html#find-the-mean-and-sd-from-word-problem-12",
+    "href": "lessons/14_Variance/14_Variance.html#find-the-mean-and-sd-from-word-problem-12",
+    "title": "Lesson 14: Variance",
+    "section": "Find the mean and sd from word problem (1/2)",
+    "text": "Find the mean and sd from word problem (1/2)\n\n\n\n\nExample 4\n\n\nA machine manufactures cubes with a side length that varies uniformly from 1 to 2 inches. Assume the sides of the base and height are equal. The cost to make a cube is 10 ¢ per cubic inch, and 5 ¢ cents for the general cost per cube. Find the mean and standard deviation of the cost to make 10 cubes."
+  },
+  {
+    "objectID": "lessons/14_Variance/14_Variance.html#find-the-mean-and-sd-from-word-problem-12-1",
+    "href": "lessons/14_Variance/14_Variance.html#find-the-mean-and-sd-from-word-problem-12-1",
+    "title": "Lesson 14: Variance",
+    "section": "Find the mean and sd from word problem (1/2)",
+    "text": "Find the mean and sd from word problem (1/2)"
+  },
+  {
+    "objectID": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html",
+    "href": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html",
+    "title": "Chapter 29: Variance of Continuous Random Variables",
+    "section": "",
+    "text": "Calculate expected value of functions of RVs\nCalculate variance of RVs"
+  },
+  {
+    "objectID": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#learning-objectives",
+    "href": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#learning-objectives",
+    "title": "Chapter 29: Variance of Continuous Random Variables",
+    "section": "",
+    "text": "Calculate expected value of functions of RVs\nCalculate variance of RVs"
+  },
+  {
+    "objectID": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#expected-value-of-a-function-of-a-continuous-rv",
+    "href": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#expected-value-of-a-function-of-a-continuous-rv",
+    "title": "Chapter 29: Variance of Continuous Random Variables",
+    "section": "Expected value of a function of a continuous RV",
+    "text": "Expected value of a function of a continuous RV\n\n\nHow do we calculate the expected value of a function of a discrete RV or joint RVs?\n   \nFor discrete RVs:\n\\[\\mathbb{E}[g(X)] = \\sum_{\\{all\\ x\\}}\\ g(x) p_X(x).\\] \\[\\mathbb{E}[g(X, Y)] = \\sum_{\\{all\\ x\\}}\\sum_{\\{all\\ y\\}}\\ g(x,y) p_{X,Y}(x,y).\\]\n\n\n\nHow do we calculate the expected value of a function of a continuous RV or joint RVs?\n   \nFor continuous RVs:"
+  },
+  {
+    "objectID": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#important-properties-of-expected-values-of-functions-of-continuous-rvs",
+    "href": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#important-properties-of-expected-values-of-functions-of-continuous-rvs",
+    "title": "Chapter 29: Variance of Continuous Random Variables",
+    "section": "Important properties of expected values of functions of continuous RVs",
+    "text": "Important properties of expected values of functions of continuous RVs\n\n\n\n\nFunction of RV with two constants\n\n\n\\(\\mathbb{E}[aX+b] =a\\mathbb{E}[X]+b\\)\n\n\n\n\nFunction of two RVs added\n\n\n\\(\\mathbb{E}[X+Y] =\\mathbb{E}[X]+\\mathbb{E}[Y]\\)\n\n\n\n\nExpected value of sum of independent RVs pt 1\n\n\nIf \\(X_1, X_2, \\ldots X_n\\) are continuous RVs and \\(a_1, a_2, \\ldots a_n\\) are constants, then \\[\\mathbb{E}\\Bigg[\\sum_{i=1}^{n} a_i X_i\\Bigg] = \\sum_{i=1}^{n}a_i\\mathbb{E}[X_i]\\]\n\n\n\n\n\nExpected value of multiplication of function of independent RVs\n\n\nIf \\(X\\) and \\(Y\\) are independent continuous RVs, and \\(g\\) and \\(h\\) are functions, then \\[\\mathbb{E}[g(X)h(Y)] =\\mathbb{E}[g(X)]\\mathbb{E}[h(Y)]\\]\n\n\n\n\nExpected value of multiplication of independent RVs\n\n\nIf \\(X\\) and \\(Y\\) are independent continuous RVs, then \\[\\mathbb{E}[XY] = \\mathbb{E}[X] \\mathbb{E}[Y] \\]"
+  },
+  {
+    "objectID": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#variance-of-continuous-rvs",
+    "href": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#variance-of-continuous-rvs",
+    "title": "Chapter 29: Variance of Continuous Random Variables",
+    "section": "Variance of continuous RVs",
+    "text": "Variance of continuous RVs\n\n\nHow do we calculate the variance of a discrete RV?\n   \nFor discrete RVs:\n\\[\n\\begin{align}\nVar(X) & =\n\\mathbb{E}[(X-\\mu_X)^2] \\\\ & = \\mathbb{E}[(X-\\mathbb{E}[X])^2] \\\\ &= \\mathbb{E}[X^2]-(\\mathbb{E}[X])^2 \\\\ & = \\sum_{\\{all\\ x\\}}(x-\\mu_x)^2 p_{X}(x)\n\\end{align}\n\\]\n\n\n\nHow do we calculate the variance of a continuous RV?\n    \nFor continuous RVs:"
+  },
+  {
+    "objectID": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#variance-of-an-uniform-distribution",
+    "href": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#variance-of-an-uniform-distribution",
+    "title": "Chapter 29: Variance of Continuous Random Variables",
+    "section": "Variance of an Uniform distribution",
+    "text": "Variance of an Uniform distribution\n\n\n\n\nExample 2\n\n\nLet \\(f_X(x)= \\frac{1}{b-a}\\), for \\(a \\leq x \\leq b\\). Find \\(Var[X]\\)."
+  },
+  {
+    "objectID": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#variance-of-exponential-distribution",
+    "href": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#variance-of-exponential-distribution",
+    "title": "Chapter 29: Variance of Continuous Random Variables",
+    "section": "Variance of exponential distribution",
+    "text": "Variance of exponential distribution\n\n\nIn the homework:\n\n\nExample 3\n\n\nLet \\(f_X(x)= \\lambda e^{-\\lambda x}\\), for \\(x &gt; 0\\) and \\(\\lambda&gt; 0\\). Find \\(Var[X]\\)."
+  },
+  {
+    "objectID": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#important-properties-of-variances-of-continuous-rvs",
+    "href": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#important-properties-of-variances-of-continuous-rvs",
+    "title": "Chapter 29: Variance of Continuous Random Variables",
+    "section": "Important properties of variances of continuous RVs",
+    "text": "Important properties of variances of continuous RVs\n\n\n\n\nFunction of RV with two constants\n\n\n\\[Var[aX+b] = a^2Var[X]\\]\n\n\n\n\n\nVariance of sum of independent RVs pt 1\n\n\nIf \\(X_1, X_2, \\ldots X_n\\) are independent continuous RVs and \\(a_1, a_2, \\ldots a_n\\) are constants, then \\[Var\\Bigg(\\sum_{i=1}^{n} a_i X_i\\Bigg) =\\sum_{i=1}^{n} a^2_i Var(X_i)\\]\n\n\n\n\nVariance of sum of independent RVs pt 2\n\n\nIf \\(X_1, X_2, \\ldots X_n\\) are independent continuous RVs, then \\[Var\\Bigg(\\sum_{i=1}^{n} X_i\\Bigg) = \\sum_{i=1}^{n} Var(X_i)\\]"
+  },
+  {
+    "objectID": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#find-the-mean-and-sd-from-word-problem",
+    "href": "lessons/14_Variance/old_lessons/29_Variance_and_Sums_of_rv.html#find-the-mean-and-sd-from-word-problem",
+    "title": "Chapter 29: Variance of Continuous Random Variables",
+    "section": "Find the mean and sd from word problem",
+    "text": "Find the mean and sd from word problem\n\n\n\n\nExample 4\n\n\nA machine manufactures cubes with a side length that varies uniformly from 1 to 2 inches. Assume the sides of the base and height are equal. The cost to make a cube is 10 ¢ per cubic inch, and 5 ¢ cents for the general cost per cube. Find the mean and standard deviation of the cost to make 10 cubes."
   }
 ]

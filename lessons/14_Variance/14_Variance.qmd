@@ -24,10 +24,10 @@ library(tidyverse)
 
 # Learning Objectives
 
-1.  Define the expected value for a function of discrete and continuous RVs
+1.  Define and calculate the expected value for a function of discrete and continuous RVs
 
-2.  Define and calculate variance for a single random variable.
-3.  Define and calculate variance for multiple random variables.
+2.  Define and calculate variance for a single random variable
+3.  Define and calculate variance for multiple random variables
 
 ## Where are we?
 
@@ -35,6 +35,12 @@ library(tidyverse)
 
 # Learning Objectives
 
+::: lob
+1.  Define and calculate the expected value for a function of discrete and continuous RVs
+:::
+
+2.  Define and calculate variance for a single random variable
+3.  Define and calculate variance for multiple random variables
 
 ## Let's start building the variance through expected values of functions
 
@@ -86,10 +92,6 @@ is $$\mathbb{E}[g(X)] = \displaystyle\int_{-\infty}^\infty g(x)f_X(x) dx$$
 :::
 
 - For example, if we have $g(x)=x^2$, then $$\mathbb{E}[X^2)] = \sum_{\{all\ x\}}\ x^2 p_X(x) \neq \left(\sum_{\{all\ x\}}\ x p_X(x)) \right)^2 = \left( \mathbb{E}[X] \right)^2$$
-
-# Learning Objectives
-
-calc disrcrete function
 
 ## Let's revisit the card example (1/2)
 
@@ -148,6 +150,17 @@ $$p_X(x) = {2 \choose x}p^x(1-p)^{2-x} \text{  for } x = 0, 1, 2$$
 :::
 :::
 :::
+
+
+# Learning Objectives
+
+1.  Define and calculate the expected value for a function of discrete and continuous RVs
+
+::: lob
+2.  Define and calculate variance for a single random variable
+:::
+
+3.  Define and calculate variance for multiple random variables
 
 ## Variance of a RV
 
@@ -279,6 +292,15 @@ $Var[X]$.
 
 
 # Learning Objectives 
+
+1.  Define and calculate the expected value for a function of discrete and continuous RVs
+
+2.  Define and calculate variance for a single random variable
+
+::: lob
+3.  Define and calculate variance for multiple random variables
+:::
+
 
 ## Variance of a function with a single RV
 
@@ -415,7 +437,7 @@ Problem to do at home if we don't have enough time.
 :::
 :::
 
-## Find the mean and sd from word problem
+## Find the mean and sd from word problem (1/2)
 
 ::: columns
 ::: {.column width="30%"}
@@ -434,3 +456,5 @@ to make 10 cubes.
 :::
 :::
 :::
+
+## Find the mean and sd from word problem (1/2)
