@@ -1,5 +1,5 @@
 ---
-title: "Lesson 18: Some Important Continuous RVs"
+title: "Lesson 16: Some Important Continuous RVs"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#006a4e"
@@ -11,7 +11,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Lesson 18 Slides
+    footer: Lesson 16 Slides
     html-math-method: mathjax
 editor: 
   markdown: 
