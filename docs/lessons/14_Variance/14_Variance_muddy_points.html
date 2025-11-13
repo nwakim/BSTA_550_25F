@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-10-30">
 
 <title>Muddy Points – Introduction to Probability</title>
 <style>
@@ -159,8 +158,17 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#proof-of-variance-formula" id="toc-proof-of-variance-formula" class="nav-link active" data-scroll-target="#proof-of-variance-formula">1. Proof of variance formula</a></li>
+  <li><a href="#fall-2025" id="toc-fall-2025" class="nav-link active" data-scroll-target="#fall-2025">Fall 2025</a>
+  <ul class="collapse">
+  <li><a href="#i-dont-quite-get-why-we-occasionally-choose-to-treat-things-as-iid.-last-class-we-talked-about-how-the-hotel-prices-could-be-190-or-210-then-in-this-class-we-decided-they-were-all-iid.-that-seems-arbitrary-to-me." id="toc-i-dont-quite-get-why-we-occasionally-choose-to-treat-things-as-iid.-last-class-we-talked-about-how-the-hotel-prices-could-be-190-or-210-then-in-this-class-we-decided-they-were-all-iid.-that-seems-arbitrary-to-me." class="nav-link" data-scroll-target="#i-dont-quite-get-why-we-occasionally-choose-to-treat-things-as-iid.-last-class-we-talked-about-how-the-hotel-prices-could-be-190-or-210-then-in-this-class-we-decided-they-were-all-iid.-that-seems-arbitrary-to-me.">1. I don’t quite get why we occasionally choose to treat things as iid. Last class we talked about how the hotel prices could be $190 or $210, then in this class we decided they were all iid. That seems arbitrary to me.</a></li>
+  <li><a href="#the-math-breakdown-of-x-ex2---ex2-im-not-sure-where-the-x-value-in-the-term-2-summation-mu_xxp_xx-where-did-xp_xx-go" id="toc-the-math-breakdown-of-x-ex2---ex2-im-not-sure-where-the-x-value-in-the-term-2-summation-mu_xxp_xx-where-did-xp_xx-go" class="nav-link" data-scroll-target="#the-math-breakdown-of-x-ex2---ex2-im-not-sure-where-the-x-value-in-the-term-2-summation-mu_xxp_xx-where-did-xp_xx-go">2. The math breakdown of $(X) = E[X^2] - E[X]^2 I’m not sure where the <span class="math inline">\(X\)</span> value in the term 2 summation <span class="math inline">\(\mu_xXp_x(x)\)</span> where did <span class="math inline">\(Xp_x(x)\)</span> go?</a></li>
+  <li><a href="#i-think-what-i-am-muddy-on-the-difference-between-the-corollary-2-and-corollary-3-is-the-n.-where-does-the-n-come-from-in-corollary-3." id="toc-i-think-what-i-am-muddy-on-the-difference-between-the-corollary-2-and-corollary-3-is-the-n.-where-does-the-n-come-from-in-corollary-3." class="nav-link" data-scroll-target="#i-think-what-i-am-muddy-on-the-difference-between-the-corollary-2-and-corollary-3-is-the-n.-where-does-the-n-come-from-in-corollary-3.">3. I think what I am muddy on the difference between the Corollary 2 and Corollary 3, is the “n.” Where does the “n” come from in Corollary 3.</a></li>
+  </ul></li>
+  <li><a href="#fall-2023" id="toc-fall-2023" class="nav-link" data-scroll-target="#fall-2023">Fall 2023</a>
+  <ul class="collapse">
+  <li><a href="#proof-of-variance-formula" id="toc-proof-of-variance-formula" class="nav-link" data-scroll-target="#proof-of-variance-formula">1. Proof of variance formula</a></li>
   <li><a href="#what-progression-are-we-following-in-the-course" id="toc-what-progression-are-we-following-in-the-course" class="nav-link" data-scroll-target="#what-progression-are-we-following-in-the-course">2. What progression are we following in the course??</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -170,7 +178,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Muddy Points</h1>
-<p class="subtitle lead">Chapter 12: Variance of Discrete RVs</p>
+<p class="subtitle lead">Lesson 14: Variance</p>
 </div>
 
 
@@ -178,17 +186,11 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">October 30, 2024</p>
-    </div>
-  </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">November 4, 2025</p>
+      <p class="date-modified">November 12, 2025</p>
     </div>
   </div>
     
@@ -199,10 +201,44 @@ window.Quarto = {
 </header>
 
 
-<p>Muddy Points from Fall 2023:</p>
+<section id="fall-2025" class="level2">
+<h2 class="anchored" data-anchor-id="fall-2025">Fall 2025</h2>
+<section id="i-dont-quite-get-why-we-occasionally-choose-to-treat-things-as-iid.-last-class-we-talked-about-how-the-hotel-prices-could-be-190-or-210-then-in-this-class-we-decided-they-were-all-iid.-that-seems-arbitrary-to-me." class="level3">
+<h3 class="anchored" data-anchor-id="i-dont-quite-get-why-we-occasionally-choose-to-treat-things-as-iid.-last-class-we-talked-about-how-the-hotel-prices-could-be-190-or-210-then-in-this-class-we-decided-they-were-all-iid.-that-seems-arbitrary-to-me.">1. I don’t quite get why we occasionally choose to treat things as iid. Last class we talked about how the hotel prices could be $190 or $210, then in this class we decided they were all iid. That seems arbitrary to me.</h3>
+<p>You are right, the hotel room problem did not need the identical distributions in either class. I definitely mispoke by saying they were iid. Even though they have the same expected value and variance, they are not necessarily from the same distribution. They are independent, but not necessarily identically distributed. They all have the same variance, so I can still use <span class="math display">\[\sum_{i=1}^{30} Var(X_i) = 30Var(X)\]</span></p>
+<p>It was more that, last class, we did not specify the standard deviation. We could find the expected value of the total cost without knowing the standard deviation, and thus without necessarily assuming the cost of the hotel rooms were identical random variables. In this class, we needed the standard deviation for the cost of each hotel room. We could have made them different, but we made all of them $10.</p>
+</section>
+<section id="the-math-breakdown-of-x-ex2---ex2-im-not-sure-where-the-x-value-in-the-term-2-summation-mu_xxp_xx-where-did-xp_xx-go" class="level3">
+<h3 class="anchored" data-anchor-id="the-math-breakdown-of-x-ex2---ex2-im-not-sure-where-the-x-value-in-the-term-2-summation-mu_xxp_xx-where-did-xp_xx-go">2. The math breakdown of $(X) = E[X^2] - E[X]^2 I’m not sure where the <span class="math inline">\(X\)</span> value in the term 2 summation <span class="math inline">\(\mu_xXp_x(x)\)</span> where did <span class="math inline">\(Xp_x(x)\)</span> go?</h3>
+<p>I go through that breakdown in the first muddy point from Fall 2023 (below). Check out the term 2 part that is highlighted in green-ish.</p>
+</section>
+<section id="i-think-what-i-am-muddy-on-the-difference-between-the-corollary-2-and-corollary-3-is-the-n.-where-does-the-n-come-from-in-corollary-3." class="level3">
+<h3 class="anchored" data-anchor-id="i-think-what-i-am-muddy-on-the-difference-between-the-corollary-2-and-corollary-3-is-the-n.-where-does-the-n-come-from-in-corollary-3.">3. I think what I am muddy on the difference between the Corollary 2 and Corollary 3, is the “n.” Where does the “n” come from in Corollary 3.</h3>
+<p>Here are the corollaries:</p>
+<div class="proposition">
+<div class="prop-title">
+<p>Corollary 2</p>
+</div>
+<div class="prop-cont">
+<p>For independent RV’s <span class="math inline">\(X_i\)</span>, <span class="math inline">\(i=1,2,\dots, n\)</span>, <span class="math display">\[Var\Bigg(\sum_{i=1}^n X_i\Bigg) = \sum_{i=1}^n Var(X_i).\]</span></p>
+</div>
+</div>
+<div class="proposition">
+<div class="prop-title">
+<p>Corollary 3</p>
+</div>
+<div class="prop-cont">
+<p>For independent identically distributed (i.i.d.) RV’s <span class="math inline">\(X_i\)</span>, <span class="math inline">\(i=1,2,\dots, n\)</span>, <span class="math display">\[Var\Bigg(\sum_{i=1}^n X_i\Bigg) = n Var(X_1).\]</span></p>
+</div>
+</div>
+<p>In Corollary 2, the variance can be different for each <span class="math inline">\(X_i\)</span> so we need to sum each together. In Corollary 3, the variance is the same for each <span class="math inline">\(X_i\)</span> so we can recognize that we will have <span class="math inline">\(n\)</span> identical terms to sum together.</p>
+</section>
+</section>
+<section id="fall-2023" class="level2">
+<h2 class="anchored" data-anchor-id="fall-2023">Fall 2023</h2>
 <section id="proof-of-variance-formula" class="level3">
 <h3 class="anchored" data-anchor-id="proof-of-variance-formula">1. Proof of variance formula</h3>
-<p>Here is the variance formula that we worked through on slide 9 of <a href="../../lessons/12_Variance/12_Variance.qmd">Chapter 12’s notes</a>.</p>
+<p>Here is the variance formula that we worked through in class:</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -223,10 +259,11 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="what-progression-are-we-following-in-the-course">2. What progression are we following in the course??</h3>
 <p>Someone asked if this is our progression: RV is function <span class="math inline">\(\to\)</span> Expected value is function to describe mean of RV <span class="math inline">\(\to\)</span> Use functions within expected value to set up variance</p>
 <p>Basically, yes! The random variable is a function of a random process. The RV inherits that randomness.</p>
-<p>From there, we’ve been working towards calculating the probability of a realized value ($x$) of the RV. The probability can be different for different realized values (as it links back to the random process).</p>
+<p>From there, we’ve been working towards calculating the probability of a realized value (<span class="math inline">\(x\)</span>) of the RV. The probability can be different for different realized values (as it links back to the random process).</p>
 <p>We also want to construct ways to describe our random variables. We may want to figure out what to expect from our random variable (which translates to the mean value of the RV). Since our RV is rooted in a random process, we may want to get an idea of how spread out our realized values are. We use our expected value (mean) as an anchor in our spread. Variance is one way to measure this spread.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
