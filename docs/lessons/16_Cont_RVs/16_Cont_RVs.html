@@ -210,8 +210,8 @@ Meike Niederhausen and Nicky Wakim
 <section id="learning-objectives" class="title-slide slide level1 center">
 <h1>Learning Objectives</h1>
 <ol type="1">
-<li>Distinguish between Uniform, Exponential, Gamma, and Normal distributions when reading a story.</li>
-<li>Identify the variable and the parameters in a story, and state what the variable and parameters mean.</li>
+<li>Distinguish between Uniform, Exponential, Gamma, and Normal distributions when reading a word roblem.</li>
+<li>Identify the variable and the parameters in a word problem, and state what the variable and parameters mean.</li>
 <li>Use the formulas for the pdf/CDF, expected value, and variance to answer questions and find probabilities.</li>
 </ol>
 </section>
@@ -220,8 +220,8 @@ Meike Niederhausen and Nicky Wakim
 
 <img data-src="../img_slides/course_map.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
 <section>
-<section id="chapter-31-uniform-rvs" class="title-slide slide level1 center">
-<h1>Chapter 31: Uniform RVs</h1>
+<section id="continuous-uniform-rvs" class="title-slide slide level1 center">
+<h1>Continuous uniform RVs</h1>
 
 </section>
 <section id="properties-of-continuous-uniform-rvs" class="slide level2">
@@ -295,9 +295,9 @@ F_X(x) = \left\{
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">20</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">60</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 56.967469 25.212245 44.617616 55.886718 46.410880 51.556488 35.964274
- [8] 24.801642 54.770069 11.009484 29.763959  0.858973  5.604796 30.556963
-[15] 20.102669 57.362914 31.444034 53.743304 33.575800 10.399484</code></pre>
+<pre><code> [1] 11.537330 20.763566 41.149166 48.401013 10.840272 14.599941 30.785291
+ [8] 48.322957 56.124869 36.098409  7.691958 10.762103 50.411925 14.916491
+[15] 54.756954 34.131878 51.982451 59.510464 38.949201 18.904117</code></pre>
 </div>
 </div></li>
 </ul>
@@ -317,8 +317,8 @@ F_X(x) = \left\{
 </div></div>
 </section></section>
 <section>
-<section id="chapter-32-exponential-rvs" class="title-slide slide level1 center">
-<h1>Chapter 32: Exponential RVs</h1>
+<section id="exponential-rvs" class="title-slide slide level1 center">
+<h1>Exponential RVs</h1>
 
 </section>
 <section id="properties-of-exponential-rvs" class="slide level2">
@@ -400,10 +400,10 @@ F_X(x) = \left\{
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">rexp</span>(<span class="at">n =</span> <span class="dv">20</span>, <span class="at">rate =</span> <span class="dv">1</span><span class="sc">/</span><span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 10.6138038  0.9713137  5.6924229  6.9733424  0.1553849  0.4991276
- [7] 31.8796681 18.2965952 11.1036748 14.2118949  7.5463649  6.6624134
-[13] 11.0277946 24.8145046  3.6129072  0.3420258  1.1985957  0.9802446
-[19] 13.3355631 17.7267282</code></pre>
+<pre><code> [1] 10.2740927 11.0587855  0.6952628  0.6923004  8.3747546  4.9750368
+ [7]  7.0696642 15.0921797  0.4031240 12.0909713  5.2511893 39.6633840
+[13] 22.2212875  0.6872283  4.1141095 14.7248950  1.0012084  2.7592241
+[19] 29.2912268 25.4325409</code></pre>
 </div>
 </div></li>
 </ul>
@@ -424,8 +424,8 @@ F_X(x) = \left\{
 </div></div>
 </section></section>
 <section>
-<section id="chapter-33-gamma-rvs" class="title-slide slide level1 center">
-<h1>Chapter 33: Gamma RVs</h1>
+<section id="gamma-rvs" class="title-slide slide level1 center">
+<h1>Gamma RVs</h1>
 
 </section>
 <section id="properties-of-gamma-rvs" class="slide level2">
@@ -507,9 +507,9 @@ F_X(x) = \left\{
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="fu">rgamma</span>(<span class="at">n =</span> <span class="dv">20</span>, <span class="at">scale =</span> <span class="dv">10</span>, <span class="at">shape =</span> <span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 37.953887 17.865779 37.322701 86.021247 17.643621 37.402933 27.319616
- [8] 48.865036 46.227215 40.532089 69.234528  8.749831 62.670010 33.202410
-[15] 32.498908 55.040896 37.787894 69.442107 57.481915 44.512683</code></pre>
+<pre><code> [1] 25.48853 49.07734 20.35846 49.92988 56.04761 25.57237 55.38420  9.01671
+ [9] 59.22275 24.66216 30.91312 24.03411 33.15909 20.86586 61.39410 95.95339
+[17] 33.70383 51.09711 49.81510 20.16700</code></pre>
 </div>
 </div></li>
 </ul>
@@ -558,8 +558,8 @@ F_X(x) = \left\{
 </ul>
 </section></section>
 <section>
-<section id="chapter-35-normal-rvs" class="title-slide slide level1 center">
-<h1>Chapter 35: Normal RVs</h1>
+<section id="normal-rvs" class="title-slide slide level1 center">
+<h1>Normal RVs</h1>
 
 </section>
 <section id="properties-of-normal-rvs" class="slide level2">
@@ -605,9 +605,9 @@ f_X(x) = \dfrac{1}{\sqrt{2\pi \sigma^2}}e^{-(x-\mu)^2/(2\sigma^2)} \text{, for} 
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a><span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">20</span>, <span class="at">mean =</span> <span class="dv">50</span>, <span class="at">sd =</span> <span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 49.41675 51.85025 41.93493 49.20527 49.04360 56.06757 49.86800 53.62689
- [9] 49.35725 51.31231 56.72893 55.69094 47.40846 50.10447 50.03346 53.57176
-[17] 49.55593 50.85721 42.08858 46.57249</code></pre>
+<pre><code> [1] 50.69847 45.82029 50.23074 51.49632 38.83445 52.88795 47.35063 45.27866
+ [9] 52.69936 49.40946 55.58152 47.19998 54.10182 45.85241 50.11604 57.26391
+[17] 50.75254 53.25402 46.90868 53.67786</code></pre>
 </div>
 </div></li>
 </ul>

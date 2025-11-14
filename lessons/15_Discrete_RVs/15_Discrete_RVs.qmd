@@ -18,13 +18,20 @@ editor:
     wrap: 72
 ---
 
-## Learning Objectives
+```{r setup, include=FALSE}
+library(here)
+source(here("class_dates.R"))
+
+library(tidyverse)
+```
+
+# Learning Objectives
 
 1.  Distinguish between Bernoulli, Binomial, Geometric, Hypergeometric,
     Discrete Uniform, Negative Binomial, and Poisson distributions when
-    reading a story.
-2.  Identify the variable and the parameters in a story, and state what
-    the variable and parameters mean.
+    reading a world problem.
+2.  Identify the variable and the parameters in a world problem, and
+    state what the variable and parameters mean.
 3.  Use the formulas for the pmf/CDF, expected value, and variance to
     answer questions and find probabilities.
 
@@ -32,7 +39,7 @@ editor:
 
 ![](../img_slides/course_map.png){fig-align="center"}
 
-# Chapter 14: Bernoulli RVs
+# Bernoulli RVs
 
 ## Properties of Bernoulli RVs
 
@@ -78,7 +85,7 @@ Example 1
 ::::::
 :::::::
 
-# Chapter 15: Binomial RVs {#chapter-15-binomial-r.v.s .unnumbered}
+# Binomial RVs {#chapter-15-binomial-RVs .unnumbered}
 
 ## Properties of Binomial RVs
 
@@ -120,7 +127,7 @@ Example 2
 ::::::
 :::::::
 
-# Chapter 16: Geometric RVs {#chapter-16-geometric-r.v.s .unnumbered}
+# Geometric RVs {#chapter-16-geometric-RVs .unnumbered}
 
 ## Geometric RVs
 
@@ -132,25 +139,30 @@ Example 2
 -   Shorthand: $X \sim \text{Geo}(p)$ or $X \sim \text{Geometric}(p)$ or
     $X \sim \text{G}(p)$
 
-+----------------------------------+----------------------------------+
-| $X =$ Number of trials needed    | $X =$ Number of failures before  |
-| for first success (count $x$     | first success (count $x$ *does   |
-| *includes* the success)          | not include* the success)        |
-+:================================:+:================================:+
-| $p _                             | $p _X (x)= P(X=x) = (1-p)^{x}p$  |
-|  X( x ) = P(X=x) = (1-p)^{x-1}p$ |                                  |
-|                                  | for $x=0, 1,2,...$               |
-| for $x=1,2, 3,...$               |                                  |
-|                                  | $$F_X ( x                        |
-| $$F_                             | )                                |
-| X(x ) = P(X\leq x) = 1-(1-p)^x$$ |  = P(X\leq x) = 1-(1-p)^{x+1}$$  |
-|                                  |                                  |
-| for $x=1,2, 3,...$               | for $x=0, 1,2,...$               |
-+----------------------------------+----------------------------------+
-| $E(X)=\dfrac{1}{p}$              | $E(X)=\dfrac{1-p}{p}$            |
-|                                  |                                  |
-| $Var(X)= \dfrac{1-p}{p^2}$       | $Var(X) = \dfrac{1-p}{p^2}$      |
-+----------------------------------+----------------------------------+
++-----------------------------+-----------------------------+
+| $X =$ Number of trials      | $X =$ Number of failures    |
+| needed for first success    | before first success (count |
+| (count $x$ *includes* the   | $x$ *does not include* the  |
+| success)                    | success)                    |
++:===========================:+:===========================:+
+| \$p \_                      | \$ p \_X (x)= P(X=x) =      |
+|                             | (1-p)\^{x}p\$               |
+| X( x ) = P(X=x) =           |                             |
+| (1-p)\^{x-1}p\$             | for $x=0, 1,2,...$          |
+|                             |                             |
+| for $x=1,2, 3,...$          | \$\$F_X ( x )               |
+|                             |                             |
+| \$\$F\_ X ( x               | = P(X\leq x) =              |
+|                             | 1-(1-p)\^{x+1}\$\$          |
+| ) = P(X\leq x) =            |                             |
+| 1-(1-p)\^x\$\$              | for $x=0, 1,2,...$          |
+|                             |                             |
+| for $x=1,2, 3,...$          |                             |
++-----------------------------+-----------------------------+
+| $E(X)=\dfrac{1}{p}$         | $E(X)=\dfrac{1-p}{p}$       |
+|                             |                             |
+| $Var(X)= \dfrac{1-p}{p^2}$  | $Var(X) = \dfrac{1-p}{p^2}$ |
++-----------------------------+-----------------------------+
 
 ## Bullseye (1/4)
 
@@ -258,7 +270,7 @@ probability of $X > k+j$ is just the probability that $X>k$.
 $P(X > k+j |X > j) = P(X > k)$
 $$ P(X > k+j |X > j) = \dfrac{P(X>k+j \text{ and } X>j)}{P(X>j)} = \dfrac{P(X>k+j)}{P(X>j)} = \dfrac{(1-p)^{k+j}}{(1-p)^{j}} = (1-p)^{k} $$
 
-# Chapter 17: Negative Binomial RVs
+# Negative Binomial RVs
 
 ## Properties of Negative Binomial RVs
 
@@ -323,12 +335,13 @@ probability of hitting the bullseye is 0.01 for each throw.
 
 # 5 minute break
 
-# Chapter 18: Poisson RVs
+# Poisson RVs
 
 ## Properties of Poisson RVs
 
 -   **Scenario:** We are counting the number of successes in a fixed
-    time period, which has a constant rate of successes
+    time period (or fixed space), which has a constant rate ($\lambda$)
+    of successes
 -   Shorthand: $X \sim \text{Poisson}(\lambda)$ or
     $X \sim \text{Pois}(\lambda)$
 
@@ -352,7 +365,7 @@ $$\text{Var}(X) = \lambda$$
 
     -   that each have the same probability of success $p$.
 
--   Poisson r.v.'s are similar,
+-   Poisson RV's are similar,
 
     -   except that instead of having $n$ discrete independent trials,
 
@@ -427,9 +440,9 @@ number of visitors to both?
 
 ## Poisson Approximation of the Binomial
 
-Both Poisson and Binomial r.v.'s are counting the number of successes
+Both Poisson and Binomial RV's are counting the number of successes
 
--   If for a Binomial r.v.
+-   If for a Binomial RV
 
     -   the number of trials $n$ is very large, and
 
@@ -470,7 +483,7 @@ To do for extra practice - will also see a similar problem in BSTA 511
 :::
 ::::::::
 
-# Chapter 19: Hypergeometric RVs {#chapter-19-hypergeometric-r.v.s .unnumbered}
+# Hypergeometric RVs {#chapter-19-hypergeometric-RVs .unnumbered}
 
 ## Hypergeometric RVs
 
@@ -564,7 +577,7 @@ Suppose a specific study region is known to have 2400 wolves, of which
 ::::::
 :::::::
 
-# Chapter 20: Discrete Uniform RVs {#chapter-20-discrete-uniform-r.v.s .unnumbered}
+# Discrete Uniform RVs {#chapter-20-discrete-uniform-RVs .unnumbered}
 
 ## Discrete Uniform RVs
 
@@ -599,3 +612,36 @@ Examples of discrete uniform RVs
 :::::
 ::::::
 :::::::
+
+## All the R code for these!
+
+[Check out this page with all the different functions for distributions
+in R](https://www.stat.umn.edu/geyer/old/5101/rlook.html)
+
+Example of R commands for hypergeometric distribution with their
+[input]{style="color:#BF396F"} and [output]{style="color:#367B79"}:
+
++----------------+----------------------------------------+
+| R code         | What does it return?                   |
++================+========================================+
+| `rhyper()`     | returns [sample of random              |
+|                | variables]{style="color:#367B79"} with |
+|                | [specified                             |
+|                | distribution]{style="color:#BF396F"}   |
++----------------+----------------------------------------+
+| `dhyper()`     | returns [value of probability          |
+|                | density]{style="color:#367B79"} at     |
+|                | [certain point of the                  |
+|                | distribution]{style="color:#BF396F"}   |
++----------------+----------------------------------------+
+| `phyper()`     | returns [cumulative                    |
+|                | probability]{style="color:#367B79"} of |
+|                | getting [certain point (or less) of    |
+|                | the normal                             |
+|                | distribution]{style="color:#BF396F"}   |
++----------------+----------------------------------------+
+| `qhyper()`     | returns [inverse                       |
+|                | CDF]{style="color:#367B79"}            |
+|                | corresponding to [desired              |
+|                | quantile]{style="color:#BF396F"}       |
++----------------+----------------------------------------+

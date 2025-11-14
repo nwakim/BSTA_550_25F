@@ -10,6 +10,7 @@
   <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Meike Niederhausen and Nicky Wakim">
+  <meta name="dcterms.date" content="2025-11-17">
   <title>Introduction to Probability – Lesson 15: Some Important Discrete RVs</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -137,23 +138,24 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </div>
 
-  <p class="date">Invalid Date</p>
+  <p class="date">2025-11-17</p>
 </section>
-<section id="learning-objectives" class="slide level2">
-<h2>Learning Objectives</h2>
+<section>
+<section id="learning-objectives" class="title-slide slide level1 center">
+<h1>Learning Objectives</h1>
 <ol type="1">
-<li>Distinguish between Bernoulli, Binomial, Geometric, Hypergeometric, Discrete Uniform, Negative Binomial, and Poisson distributions when reading a story.</li>
-<li>Identify the variable and the parameters in a story, and state what the variable and parameters mean.</li>
+<li>Distinguish between Bernoulli, Binomial, Geometric, Hypergeometric, Discrete Uniform, Negative Binomial, and Poisson distributions when reading a world problem.</li>
+<li>Identify the variable and the parameters in a world problem, and state what the variable and parameters mean.</li>
 <li>Use the formulas for the pmf/CDF, expected value, and variance to answer questions and find probabilities.</li>
 </ol>
 </section>
 <section id="where-are-we" class="slide level2">
 <h2>Where are we?</h2>
 
-<img data-src="../img_slides/course_map.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="../img_slides/course_map.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
 <section>
-<section id="chapter-14-bernoulli-rvs" class="title-slide slide level1 center">
-<h1>Chapter 14: Bernoulli RVs</h1>
+<section id="bernoulli-rvs" class="title-slide slide level1 center">
+<h1>Bernoulli RVs</h1>
 
 </section>
 <section id="properties-of-bernoulli-rvs" class="slide level2">
@@ -196,8 +198,8 @@ p_X(x) = P(X=x) = p^x(1-p)^{1-x} \text{ for } x=0,1
 </div></div>
 </section></section>
 <section>
-<section id="chapter-15-binomial-r.v.s" class="title-slide slide level1 unnumbered center">
-<h1>Chapter 15: Binomial RVs</h1>
+<section id="chapter-15-binomial-RVs" class="title-slide slide level1 unnumbered center">
+<h1>Binomial RVs</h1>
 
 </section>
 <section id="properties-of-binomial-rvs" class="slide level2">
@@ -234,8 +236,8 @@ p_X(x) = P(X=x) = {n \choose x}p^x(1-p)^{n-x} \text{ for } x=0,1,2,  ..., n
 </div></div>
 </section></section>
 <section>
-<section id="chapter-16-geometric-r.v.s" class="title-slide slide level1 unnumbered center">
-<h1>Chapter 16: Geometric RVs</h1>
+<section id="chapter-16-geometric-RVs" class="title-slide slide level1 unnumbered center">
+<h1>Geometric RVs</h1>
 
 </section>
 <section id="geometric-rvs" class="slide level2">
@@ -244,10 +246,10 @@ p_X(x) = P(X=x) = {n \choose x}p^x(1-p)^{n-x} \text{ for } x=0,1,2,  ..., n
 <li><p><strong>Scenario:</strong> There are repeated independent trials, each resulting in a success or failure, with constant probability of success for each trial. We are counting the number of trials until the first success.</p></li>
 <li><p>Shorthand: <span class="math inline">\(X \sim \text{Geo}(p)\)</span> or <span class="math inline">\(X \sim \text{Geometric}(p)\)</span> or <span class="math inline">\(X \sim \text{G}(p)\)</span></p></li>
 </ul>
-<table class="caption-top" style="width:97%;">
+<table class="caption-top" style="width:83%;">
 <colgroup>
-<col style="width: 48%">
-<col style="width: 48%">
+<col style="width: 41%">
+<col style="width: 41%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -257,17 +259,16 @@ p_X(x) = P(X=x) = {n \choose x}p^x(1-p)^{n-x} \text{ for } x=0,1,2,  ..., n
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><p><span class="math inline">\(p _
-X( x ) = P(X=x) = (1-p)^{x-1}p\)</span></p>
+<td style="text-align: center;"><p>$p _</p>
+<p>X( x ) = P(X=x) = (1-p)^{x-1}p$</p>
 <p>for <span class="math inline">\(x=1,2, 3,...\)</span></p>
-<p><span class="math display">\[F_
-X(x ) = P(X\leq x) = 1-(1-p)^x\]</span></p>
+<p>$$F_ X ( x</p>
+<p>) = P(Xx) = 1-(1-p)^x$$</p>
 <p>for <span class="math inline">\(x=1,2, 3,...\)</span></p></td>
-<td style="text-align: center;"><p><span class="math inline">\(p _X (x)= P(X=x) = (1-p)^{x}p\)</span></p>
+<td style="text-align: center;"><p>$ p _X (x)= P(X=x) = (1-p)^{x}p$</p>
 <p>for <span class="math inline">\(x=0, 1,2,...\)</span></p>
-<p><span class="math display">\[F_X ( x
-)
-= P(X\leq x) = 1-(1-p)^{x+1}\]</span></p>
+<p>$$F_X ( x )</p>
+<p>= P(Xx) = 1-(1-p)^{x+1}$$</p>
 <p>for <span class="math inline">\(x=0, 1,2,...\)</span></p></td>
 </tr>
 <tr class="even">
@@ -364,8 +365,8 @@ X(x ) = P(X\leq x) = 1-(1-p)^x\]</span></p>
 <p><span class="math inline">\(P(X &gt; k+j |X &gt; j) = P(X &gt; k)\)</span> <span class="math display">\[ P(X &gt; k+j |X &gt; j) = \dfrac{P(X&gt;k+j \text{ and } X&gt;j)}{P(X&gt;j)} = \dfrac{P(X&gt;k+j)}{P(X&gt;j)} = \dfrac{(1-p)^{k+j}}{(1-p)^{j}} = (1-p)^{k} \]</span></p>
 </section></section>
 <section>
-<section id="chapter-17-negative-binomial-rvs" class="title-slide slide level1 center">
-<h1>Chapter 17: Negative Binomial RVs</h1>
+<section id="negative-binomial-rvs" class="title-slide slide level1 center">
+<h1>Negative Binomial RVs</h1>
 
 </section>
 <section id="properties-of-negative-binomial-rvs" class="slide level2">
@@ -422,14 +423,14 @@ X = \text{Number of independent trials until } r^{th} \text{ success}
 </section>
 
 <section>
-<section id="chapter-18-poisson-rvs" class="title-slide slide level1 center">
-<h1>Chapter 18: Poisson RVs</h1>
+<section id="poisson-rvs" class="title-slide slide level1 center">
+<h1>Poisson RVs</h1>
 
 </section>
 <section id="properties-of-poisson-rvs" class="slide level2">
 <h2>Properties of Poisson RVs</h2>
 <ul>
-<li><strong>Scenario:</strong> We are counting the number of successes in a fixed time period, which has a constant rate of successes</li>
+<li><strong>Scenario:</strong> We are counting the number of successes in a fixed time period (or fixed space), which has a constant rate (<span class="math inline">\(\lambda\)</span>) of successes</li>
 <li>Shorthand: <span class="math inline">\(X \sim \text{Poisson}(\lambda)\)</span> or <span class="math inline">\(X \sim \text{Pois}(\lambda)\)</span></li>
 </ul>
 <p><span class="math display">\[
@@ -448,7 +449,7 @@ X = \text{Number of successes in a given period}
 <li><p>in <span class="math inline">\(n\)</span> independent (Bernoulli) trials …</p></li>
 <li><p>that each have the same probability of success <span class="math inline">\(p\)</span>.</p></li>
 </ul></li>
-<li><p>Poisson r.v.’s are similar,</p>
+<li><p>Poisson RV’s are similar,</p>
 <ul>
 <li><p>except that instead of having <span class="math inline">\(n\)</span> discrete independent trials,</p></li>
 <li><p>there is a <strong>fixed time period</strong> (or space) during which the successes happen</p></li>
@@ -510,9 +511,9 @@ X = \text{Number of successes in a given period}
 </section>
 <section id="poisson-approximation-of-the-binomial" class="slide level2">
 <h2>Poisson Approximation of the Binomial</h2>
-<p>Both Poisson and Binomial r.v.’s are counting the number of successes</p>
+<p>Both Poisson and Binomial RV’s are counting the number of successes</p>
 <ul>
-<li><p>If for a Binomial r.v.</p>
+<li><p>If for a Binomial RV</p>
 <ul>
 <li><p>the number of trials <span class="math inline">\(n\)</span> is very large, and</p></li>
 <li><p>the probability of success <span class="math inline">\(p\)</span> is close to 0 or 1,</p></li>
@@ -545,8 +546,8 @@ X = \text{Number of successes in a given period}
 </div></div>
 </section></section>
 <section>
-<section id="chapter-19-hypergeometric-r.v.s" class="title-slide slide level1 unnumbered center">
-<h1>Chapter 19: Hypergeometric RVs</h1>
+<section id="chapter-19-hypergeometric-RVs" class="title-slide slide level1 unnumbered center">
+<h1>Hypergeometric RVs</h1>
 
 </section>
 <section id="hypergeometric-rvs" class="slide level2">
@@ -620,8 +621,8 @@ p_X(x) = P(X=x) = \dfrac{{M \choose x}{N-M \choose n-x}}{{N \choose n}}
 </div></div>
 </section></section>
 <section>
-<section id="chapter-20-discrete-uniform-r.v.s" class="title-slide slide level1 unnumbered center">
-<h1>Chapter 20: Discrete Uniform RVs</h1>
+<section id="chapter-20-discrete-uniform-RVs" class="title-slide slide level1 unnumbered center">
+<h1>Discrete Uniform RVs</h1>
 
 </section>
 <section id="discrete-uniform-rvs" class="slide level2">
@@ -652,6 +653,41 @@ p_X(x) = P(X=x) = \dfrac{1}{N} \text{ for } x=1, 2, 3, ..., N
 </div>
 </div>
 </div></div>
+</section>
+<section id="all-the-r-code-for-these" class="slide level2">
+<h2>All the R code for these!</h2>
+<p><a href="https://www.stat.umn.edu/geyer/old/5101/rlook.html">Check out this page with all the different functions for distributions in R</a></p>
+<p>Example of R commands for hypergeometric distribution with their <span style="color:#BF396F">input</span> and <span style="color:#367B79">output</span>:</p>
+<table class="caption-top" style="width:81%;">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>R code</th>
+<th>What does it return?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>rhyper()</code></td>
+<td>returns <span style="color:#367B79">sample of random variables</span> with <span style="color:#BF396F">specified distribution</span></td>
+</tr>
+<tr class="even">
+<td><code>dhyper()</code></td>
+<td>returns <span style="color:#367B79">value of probability density</span> at <span style="color:#BF396F">certain point of the distribution</span></td>
+</tr>
+<tr class="odd">
+<td><code>phyper()</code></td>
+<td>returns <span style="color:#367B79">cumulative probability</span> of getting <span style="color:#BF396F">certain point (or less) of the normal distribution</span></td>
+</tr>
+<tr class="even">
+<td><code>qhyper()</code></td>
+<td>returns <span style="color:#367B79">inverse CDF</span> corresponding to <span style="color:#BF396F">desired quantile</span></td>
+</tr>
+</tbody>
+</table>
 
 
 </section></section>
@@ -870,6 +906,44 @@ p_X(x) = P(X=x) = \dfrac{1}{N} \text{ for } x=1, 2, 3, ..., N
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

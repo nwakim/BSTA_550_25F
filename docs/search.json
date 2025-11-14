@@ -22901,7 +22901,7 @@
     "href": "lessons/16_Cont_RVs/16_Cont_RVs.html#helpful-r-code",
     "title": "Lesson 16: Some Important Continuous RVs",
     "section": "Helpful R code",
-    "text": "Helpful R code\nLet’s say we’re looking at equally likely arrival times between 10 am and 11 am.\n\nIf we want to know the probability that someone arrives at 10:30am or earlier:\n\npunif(q = 30, min = 0, max = 60)\n\n[1] 0.5\n\n\nIf we want to know the time, say \\(t\\), where the probability of arriving at \\(t\\) or earlier is 0.35:\n\nqunif(p = 0.35, min = 0, max = 60)\n\n[1] 21\n\n\nIf we want to know the probability that someone arrives between 10:14 and 10:16 am:\n\npunif(q = 16, min = 0, max = 60) - punif(q = 14, min = 0, max = 60)\n\n[1] 0.03333333\n\n\nIf we want to sample 20 arrival times from the distribution:\n\nrunif(n = 20, min = 0, max = 60)\n\n [1] 56.967469 25.212245 44.617616 55.886718 46.410880 51.556488 35.964274\n [8] 24.801642 54.770069 11.009484 29.763959  0.858973  5.604796 30.556963\n[15] 20.102669 57.362914 31.444034 53.743304 33.575800 10.399484"
+    "text": "Helpful R code\nLet’s say we’re looking at equally likely arrival times between 10 am and 11 am.\n\nIf we want to know the probability that someone arrives at 10:30am or earlier:\n\npunif(q = 30, min = 0, max = 60)\n\n[1] 0.5\n\n\nIf we want to know the time, say \\(t\\), where the probability of arriving at \\(t\\) or earlier is 0.35:\n\nqunif(p = 0.35, min = 0, max = 60)\n\n[1] 21\n\n\nIf we want to know the probability that someone arrives between 10:14 and 10:16 am:\n\npunif(q = 16, min = 0, max = 60) - punif(q = 14, min = 0, max = 60)\n\n[1] 0.03333333\n\n\nIf we want to sample 20 arrival times from the distribution:\n\nrunif(n = 20, min = 0, max = 60)\n\n [1] 11.537330 20.763566 41.149166 48.401013 10.840272 14.599941 30.785291\n [8] 48.322957 56.124869 36.098409  7.691958 10.762103 50.411925 14.916491\n[15] 54.756954 34.131878 51.982451 59.510464 38.949201 18.904117"
   },
   {
     "objectID": "lessons/16_Cont_RVs/16_Cont_RVs.html#bird-on-a-wire-tb-31.5",
@@ -22936,7 +22936,7 @@
     "href": "lessons/16_Cont_RVs/16_Cont_RVs.html#helpful-r-code-1",
     "title": "Lesson 16: Some Important Continuous RVs",
     "section": "Helpful R code",
-    "text": "Helpful R code\nLet’s say we’re sitting at the bus stop, measuring the time until our bus arrives. We know the bus comes every 10 minutes on average.\n\nIf we want to know the probability that the bus arrives in the next 5 minutes:\n\npexp(q = 5, rate = 1/10)\n\n[1] 0.3934693\n\n\nIf we want to know the time, say \\(t\\), where the probability of the bus arriving at \\(t\\) or earlier is 0.35:\n\nqexp(p = 0.35, rate = 1/10)\n\n[1] 4.307829\n\n\nIf we want to know the probability that the bus arrives between 3 and 5 minutes:\n\npexp(q = 5, rate = 1/10) - pexp(q = 3, rate = 1/10)\n\n[1] 0.1342876\n\n\nIf we want to sample 20 bus arrival times from the distribution:\n\nrexp(n = 20, rate = 1/10)\n\n [1] 10.6138038  0.9713137  5.6924229  6.9733424  0.1553849  0.4991276\n [7] 31.8796681 18.2965952 11.1036748 14.2118949  7.5463649  6.6624134\n[13] 11.0277946 24.8145046  3.6129072  0.3420258  1.1985957  0.9802446\n[19] 13.3355631 17.7267282"
+    "text": "Helpful R code\nLet’s say we’re sitting at the bus stop, measuring the time until our bus arrives. We know the bus comes every 10 minutes on average.\n\nIf we want to know the probability that the bus arrives in the next 5 minutes:\n\npexp(q = 5, rate = 1/10)\n\n[1] 0.3934693\n\n\nIf we want to know the time, say \\(t\\), where the probability of the bus arriving at \\(t\\) or earlier is 0.35:\n\nqexp(p = 0.35, rate = 1/10)\n\n[1] 4.307829\n\n\nIf we want to know the probability that the bus arrives between 3 and 5 minutes:\n\npexp(q = 5, rate = 1/10) - pexp(q = 3, rate = 1/10)\n\n[1] 0.1342876\n\n\nIf we want to sample 20 bus arrival times from the distribution:\n\nrexp(n = 20, rate = 1/10)\n\n [1] 10.2740927 11.0587855  0.6952628  0.6923004  8.3747546  4.9750368\n [7]  7.0696642 15.0921797  0.4031240 12.0909713  5.2511893 39.6633840\n[13] 22.2212875  0.6872283  4.1141095 14.7248950  1.0012084  2.7592241\n[19] 29.2912268 25.4325409"
   },
   {
     "objectID": "lessons/16_Cont_RVs/16_Cont_RVs.html#transformation-of-independent-exponential-rvs",
@@ -22964,7 +22964,7 @@
     "href": "lessons/16_Cont_RVs/16_Cont_RVs.html#helpful-r-code-2",
     "title": "Lesson 16: Some Important Continuous RVs",
     "section": "Helpful R code",
-    "text": "Helpful R code\nLet’s say we’re sitting at the bus stop, measuring the time until 4 buses arrive. We know the bus comes every 10 minutes on average.\n\nIf we want to know the probability that the 4 buses arrive in the next 50 minutes:\n\n\n\n\npgamma(q = 50, rate = 1/10, shape = 4)\n\n[1] 0.7349741\n\n\n\n\npgamma(q = 50, scale = 10, shape = 4)\n\n[1] 0.7349741\n\n\n\n\nIf we want to know the time, say \\(t\\), where the probability of the 4 buses arriving at \\(t\\) or earlier is 0.35:\n\nqgamma(p = 0.35, rate = 1/10, shape = 4)\n\n[1] 29.87645\n\n\nIf we want to know the probability that the 4 buses arrives between 30 and 50 minutes:\n\npgamma(q = 50, scale = 10, shape = 4) - pgamma(q = 30, scale = 10, shape = 4)\n\n[1] 0.382206\n\n\nIf we want to sample 20 arrival times for the 4 buses:\n\nrgamma(n = 20, scale = 10, shape = 4)\n\n [1] 37.953887 17.865779 37.322701 86.021247 17.643621 37.402933 27.319616\n [8] 48.865036 46.227215 40.532089 69.234528  8.749831 62.670010 33.202410\n[15] 32.498908 55.040896 37.787894 69.442107 57.481915 44.512683"
+    "text": "Helpful R code\nLet’s say we’re sitting at the bus stop, measuring the time until 4 buses arrive. We know the bus comes every 10 minutes on average.\n\nIf we want to know the probability that the 4 buses arrive in the next 50 minutes:\n\n\n\n\npgamma(q = 50, rate = 1/10, shape = 4)\n\n[1] 0.7349741\n\n\n\n\npgamma(q = 50, scale = 10, shape = 4)\n\n[1] 0.7349741\n\n\n\n\nIf we want to know the time, say \\(t\\), where the probability of the 4 buses arriving at \\(t\\) or earlier is 0.35:\n\nqgamma(p = 0.35, rate = 1/10, shape = 4)\n\n[1] 29.87645\n\n\nIf we want to know the probability that the 4 buses arrives between 30 and 50 minutes:\n\npgamma(q = 50, scale = 10, shape = 4) - pgamma(q = 30, scale = 10, shape = 4)\n\n[1] 0.382206\n\n\nIf we want to sample 20 arrival times for the 4 buses:\n\nrgamma(n = 20, scale = 10, shape = 4)\n\n [1] 25.48853 49.07734 20.35846 49.92988 56.04761 25.57237 55.38420  9.01671\n [9] 59.22275 24.66216 30.91312 24.03411 33.15909 20.86586 61.39410 95.95339\n[17] 33.70383 51.09711 49.81510 20.16700"
   },
   {
     "objectID": "lessons/16_Cont_RVs/16_Cont_RVs.html#remarks",
@@ -22999,7 +22999,7 @@
     "href": "lessons/16_Cont_RVs/16_Cont_RVs.html#helpful-r-code-3",
     "title": "Lesson 16: Some Important Continuous RVs",
     "section": "Helpful R code",
-    "text": "Helpful R code\nLet’s say we’re measuring the high temperature today. The average high temperature on this day across many, many years is 50 degrees with a standard deviation of 4 degrees.\n\nIf we want to know the probability that the high temperature is below 45 degrees:\n\npnorm(q = 45, mean = 50, sd = 4)\n\n[1] 0.1056498\n\n\nIf we want to know the temoerature, say \\(t\\), where the probability of that the temperature is at \\(t\\) or lower is 0.35:\n\nqnorm(p = 0.35, mean = 50, sd = 4)\n\n[1] 48.45872\n\n\nIf we want to know the probability that the temperature is between 45 and 50 degrees:\n\npnorm(q = 50, mean = 50, sd = 4) - pnorm(q = 45, mean = 50, sd = 4)\n\n[1] 0.3943502\n\n\nIf we want to sample 20 days’ temperature (over the years) from the distribution:\n\nrnorm(n = 20, mean = 50, sd = 4)\n\n [1] 49.41675 51.85025 41.93493 49.20527 49.04360 56.06757 49.86800 53.62689\n [9] 49.35725 51.31231 56.72893 55.69094 47.40846 50.10447 50.03346 53.57176\n[17] 49.55593 50.85721 42.08858 46.57249"
+    "text": "Helpful R code\nLet’s say we’re measuring the high temperature today. The average high temperature on this day across many, many years is 50 degrees with a standard deviation of 4 degrees.\n\nIf we want to know the probability that the high temperature is below 45 degrees:\n\npnorm(q = 45, mean = 50, sd = 4)\n\n[1] 0.1056498\n\n\nIf we want to know the temoerature, say \\(t\\), where the probability of that the temperature is at \\(t\\) or lower is 0.35:\n\nqnorm(p = 0.35, mean = 50, sd = 4)\n\n[1] 48.45872\n\n\nIf we want to know the probability that the temperature is between 45 and 50 degrees:\n\npnorm(q = 50, mean = 50, sd = 4) - pnorm(q = 45, mean = 50, sd = 4)\n\n[1] 0.3943502\n\n\nIf we want to sample 20 days’ temperature (over the years) from the distribution:\n\nrnorm(n = 20, mean = 50, sd = 4)\n\n [1] 50.69847 45.82029 50.23074 51.49632 38.83445 52.88795 47.35063 45.27866\n [9] 52.69936 49.40946 55.58152 47.19998 54.10182 45.85241 50.11604 57.26391\n[17] 50.75254 53.25402 46.90868 53.67786"
   },
   {
     "objectID": "lessons/16_Cont_RVs/16_Cont_RVs.html#movie-night-while-studying",
@@ -23223,7 +23223,7 @@
     "href": "lessons/15_Discrete_RVs/15_Discrete_RVs.html#learning-objectives",
     "title": "Lesson 15: Some Important Discrete RVs",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nDistinguish between Bernoulli, Binomial, Geometric, Hypergeometric, Discrete Uniform, Negative Binomial, and Poisson distributions when reading a story.\nIdentify the variable and the parameters in a story, and state what the variable and parameters mean.\nUse the formulas for the pmf/CDF, expected value, and variance to answer questions and find probabilities."
+    "text": "Learning Objectives\n\nDistinguish between Bernoulli, Binomial, Geometric, Hypergeometric, Discrete Uniform, Negative Binomial, and Poisson distributions when reading a world problem.\nIdentify the variable and the parameters in a world problem, and state what the variable and parameters mean.\nUse the formulas for the pmf/CDF, expected value, and variance to answer questions and find probabilities."
   },
   {
     "objectID": "lessons/15_Discrete_RVs/15_Discrete_RVs.html#where-are-we",
@@ -23265,7 +23265,7 @@
     "href": "lessons/15_Discrete_RVs/15_Discrete_RVs.html#geometric-rvs",
     "title": "Lesson 15: Some Important Discrete RVs",
     "section": "Geometric RVs",
-    "text": "Geometric RVs\n\nScenario: There are repeated independent trials, each resulting in a success or failure, with constant probability of success for each trial. We are counting the number of trials until the first success.\nShorthand: \\(X \\sim \\text{Geo}(p)\\) or \\(X \\sim \\text{Geometric}(p)\\) or \\(X \\sim \\text{G}(p)\\)\n\n\n\n\n\n\n\n\n\\(X =\\) Number of trials needed for first success (count \\(x\\) includes the success)\n\\(X =\\) Number of failures before first success (count \\(x\\) does not include the success)\n\n\n\n\n\\(p _\nX( x ) = P(X=x) = (1-p)^{x-1}p\\)\nfor \\(x=1,2, 3,...\\)\n\\[F_\nX(x ) = P(X\\leq x) = 1-(1-p)^x\\]\nfor \\(x=1,2, 3,...\\)\n\\(p _X (x)= P(X=x) = (1-p)^{x}p\\)\nfor \\(x=0, 1,2,...\\)\n\\[F_X ( x\n)\n= P(X\\leq x) = 1-(1-p)^{x+1}\\]\nfor \\(x=0, 1,2,...\\)\n\n\n\\(E(X)=\\dfrac{1}{p}\\)\n\\(Var(X)= \\dfrac{1-p}{p^2}\\)\n\\(E(X)=\\dfrac{1-p}{p}\\)\n\\(Var(X) = \\dfrac{1-p}{p^2}\\)"
+    "text": "Geometric RVs\n\nScenario: There are repeated independent trials, each resulting in a success or failure, with constant probability of success for each trial. We are counting the number of trials until the first success.\nShorthand: \\(X \\sim \\text{Geo}(p)\\) or \\(X \\sim \\text{Geometric}(p)\\) or \\(X \\sim \\text{G}(p)\\)\n\n\n\n\n\n\n\n\n\\(X =\\) Number of trials needed for first success (count \\(x\\) includes the success)\n\\(X =\\) Number of failures before first success (count \\(x\\) does not include the success)\n\n\n\n\n$p _\nX( x ) = P(X=x) = (1-p)^{x-1}p$\nfor \\(x=1,2, 3,...\\)\n$$F_ X ( x\n) = P(Xx) = 1-(1-p)^x$$\nfor \\(x=1,2, 3,...\\)\n$ p _X (x)= P(X=x) = (1-p)^{x}p$\nfor \\(x=0, 1,2,...\\)\n$$F_X ( x )\n= P(Xx) = 1-(1-p)^{x+1}$$\nfor \\(x=0, 1,2,...\\)\n\n\n\\(E(X)=\\dfrac{1}{p}\\)\n\\(Var(X)= \\dfrac{1-p}{p^2}\\)\n\\(E(X)=\\dfrac{1-p}{p}\\)\n\\(Var(X) = \\dfrac{1-p}{p^2}\\)"
   },
   {
     "objectID": "lessons/15_Discrete_RVs/15_Discrete_RVs.html#bullseye-14",
@@ -23328,14 +23328,14 @@
     "href": "lessons/15_Discrete_RVs/15_Discrete_RVs.html#properties-of-poisson-rvs",
     "title": "Lesson 15: Some Important Discrete RVs",
     "section": "Properties of Poisson RVs",
-    "text": "Properties of Poisson RVs\n\nScenario: We are counting the number of successes in a fixed time period, which has a constant rate of successes\nShorthand: \\(X \\sim \\text{Poisson}(\\lambda)\\) or \\(X \\sim \\text{Pois}(\\lambda)\\)\n\n\\[\nX = \\text{Number of successes in a given period}\n\\]\n\\[ p_X(x) = P(X=x) = \\dfrac{e^{-\\lambda}\\lambda^x}{x!} \\text{ for } x = 0, 1, 2,3, ...\\]\n\\[ \\text{E}(X) = \\lambda\\]\n\\[\\text{Var}(X) = \\lambda\\]"
+    "text": "Properties of Poisson RVs\n\nScenario: We are counting the number of successes in a fixed time period (or fixed space), which has a constant rate (\\(\\lambda\\)) of successes\nShorthand: \\(X \\sim \\text{Poisson}(\\lambda)\\) or \\(X \\sim \\text{Pois}(\\lambda)\\)\n\n\\[\nX = \\text{Number of successes in a given period}\n\\]\n\\[ p_X(x) = P(X=x) = \\dfrac{e^{-\\lambda}\\lambda^x}{x!} \\text{ for } x = 0, 1, 2,3, ...\\]\n\\[ \\text{E}(X) = \\lambda\\]\n\\[\\text{Var}(X) = \\lambda\\]"
   },
   {
     "objectID": "lessons/15_Discrete_RVs/15_Discrete_RVs.html#distinguishing-between-binomial-and-poisson-rvs",
     "href": "lessons/15_Discrete_RVs/15_Discrete_RVs.html#distinguishing-between-binomial-and-poisson-rvs",
     "title": "Lesson 15: Some Important Discrete RVs",
     "section": "Distinguishing between Binomial and Poisson RVs",
-    "text": "Distinguishing between Binomial and Poisson RVs\n\nRecall that if \\(X\\sim \\text{Binomial}(n,p)\\), then\n\n\\(X\\) models the number of successes …\nin \\(n\\) independent (Bernoulli) trials …\nthat each have the same probability of success \\(p\\).\n\nPoisson r.v.’s are similar,\n\nexcept that instead of having \\(n\\) discrete independent trials,\nthere is a fixed time period (or space) during which the successes happen"
+    "text": "Distinguishing between Binomial and Poisson RVs\n\nRecall that if \\(X\\sim \\text{Binomial}(n,p)\\), then\n\n\\(X\\) models the number of successes …\nin \\(n\\) independent (Bernoulli) trials …\nthat each have the same probability of success \\(p\\).\n\nPoisson RV’s are similar,\n\nexcept that instead of having \\(n\\) discrete independent trials,\nthere is a fixed time period (or space) during which the successes happen"
   },
   {
     "objectID": "lessons/15_Discrete_RVs/15_Discrete_RVs.html#examples-of-poisson-rvs",
@@ -23370,7 +23370,7 @@
     "href": "lessons/15_Discrete_RVs/15_Discrete_RVs.html#poisson-approximation-of-the-binomial",
     "title": "Lesson 15: Some Important Discrete RVs",
     "section": "Poisson Approximation of the Binomial",
-    "text": "Poisson Approximation of the Binomial\nBoth Poisson and Binomial r.v.’s are counting the number of successes\n\nIf for a Binomial r.v.\n\nthe number of trials \\(n\\) is very large, and\nthe probability of success \\(p\\) is close to 0 or 1,\n\nThen the Poisson distribution can be used to approximate Binomial probabilities\n\nand we use \\(\\lambda = np\\)\n\nRule of thumb: We can use the Poisson approximation when \\(\\dfrac{1}{10} \\leq np(1-p) \\leq 10\\)"
+    "text": "Poisson Approximation of the Binomial\nBoth Poisson and Binomial RV’s are counting the number of successes\n\nIf for a Binomial RV\n\nthe number of trials \\(n\\) is very large, and\nthe probability of success \\(p\\) is close to 0 or 1,\n\nThen the Poisson distribution can be used to approximate Binomial probabilities\n\nand we use \\(\\lambda = np\\)\n\nRule of thumb: We can use the Poisson approximation when \\(\\dfrac{1}{10} \\leq np(1-p) \\leq 10\\)"
   },
   {
     "objectID": "lessons/15_Discrete_RVs/15_Discrete_RVs.html#medical-lab-errors",
@@ -24232,5 +24232,12 @@
     "title": "Homework 8 Answers",
     "section": "",
     "text": "parameters: \\(\\sum_{i=1}^m n_i\\) and \\(p\\)\nNot given\n\\[p(1-p)\\sum_{i=1}^m n_i\\]\n\n\nExponential distribution\n\\(\\lambda = 240\\)\nNot given\n\n0.252\nFirst row given in homework problem\n#4: Poisson approximation of Binomial when \\(n\\) is large and \\(p\\) is small"
+  },
+  {
+    "objectID": "lessons/15_Discrete_RVs/15_Discrete_RVs.html#all-the-r-code-for-these",
+    "href": "lessons/15_Discrete_RVs/15_Discrete_RVs.html#all-the-r-code-for-these",
+    "title": "Lesson 15: Some Important Discrete RVs",
+    "section": "All the R code for these!",
+    "text": "All the R code for these!\nCheck out this page with all the different functions for distributions in R\nExample of R commands for hypergeometric distribution with their input and output:\n\n\n\n\n\n\n\nR code\nWhat does it return?\n\n\n\n\nrhyper()\nreturns sample of random variables with specified distribution\n\n\ndhyper()\nreturns value of probability density at certain point of the distribution\n\n\nphyper()\nreturns cumulative probability of getting certain point (or less) of the normal distribution\n\n\nqhyper()\nreturns inverse CDF corresponding to desired quantile"
   }
 ]

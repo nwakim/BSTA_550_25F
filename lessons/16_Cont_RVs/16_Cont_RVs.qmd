@@ -28,8 +28,8 @@ library(tidyverse)
 # Learning Objectives
 
 1.  Distinguish between Uniform, Exponential, Gamma, and Normal distributions when
-    reading a story.
-2.  Identify the variable and the parameters in a story, and state what
+    reading a word roblem.
+2.  Identify the variable and the parameters in a word problem, and state what
     the variable and parameters mean.
 3.  Use the formulas for the pdf/CDF, expected value, and variance to
     answer questions and find probabilities.
@@ -38,7 +38,7 @@ library(tidyverse)
 
 ![](../img_slides/course_map.png){fig-align="center"}
 
-# Chapter 31: Uniform RVs
+# Continuous uniform RVs
 
 ## Properties of continuous uniform RVs
 
@@ -131,7 +131,7 @@ less from one or the other of the poles?
 :::
 :::
 
-# Chapter 32: Exponential RVs
+# Exponential RVs
 
 ## Properties of exponential RVs
 
@@ -239,7 +239,7 @@ Let $X_i \sim \textrm{Exp}(\lambda_i)$ be independent RVs, for $i=1 \ldots n$. F
 :::
 :::
 
-# Chapter 33: Gamma RVs
+# Gamma RVs
 
 ## Properties of gamma RVs
 
@@ -360,7 +360,7 @@ On average, someone sends a money order once per 15 minutes. What is the probabi
 
 -   Another helpful site with R code: <https://rpubs.com/mpfoley73/459051>
 
-# Chapter 35: Normal RVs
+# Normal RVs
 
 ## Properties of Normal RVs
 
