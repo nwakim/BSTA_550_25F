@@ -1,6 +1,5 @@
 ---
 title: "Key Info"
-date: "10/16/2024"
 date-modified: "today"
 format: 
   html:
@@ -11,11 +10,16 @@ editor_options:
 
 ## Announcements
 
-- HW 01 assignments are graded!
-  - Solutions and videos are posted!
+- We will finish up the example from last class
+- No class on 12/1
+  - Majority voted for no class on 12/1 
+  - Vote 7 to 4
+- Biostatistics tutoring starts today
+  - [Schedule a meeting here](https://traccloud.go-redrock.com/ohsu)
+  - Or email Charles directly
 
 ## Key Dates
 
-- HW 02 Assignment due this Thursday at 11pm
-- No HW 01 Solutions
-
+- HW 7 dues Sunday 11/23
+- Quiz 3 opens 12/3
+- HW 8 due 12/7
