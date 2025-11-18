@@ -139,28 +139,28 @@ Example 2
 -   Shorthand: $X \sim \text{Geo}(p)$ or $X \sim \text{Geometric}(p)$ or
     $X \sim \text{G}(p)$
 
-+----------------------------------+----------------------------------+
-| $X =$ Number of trials needed    | $X =$ Number of failures before  |
-| for first success (count $x$     | first success (count $x$ *does   |
-| *includes* the success)          | not include* the success)        |
-+:================================:+:================================:+
-| \$p \_                           | \$ p \_X (x)= P(X=x) =           |
-|                                  | (1-p)\^{x}p\$                    |
-| X( x ) = P(X=x) =                |                                  |
-| (1-p)\^{x-1}p\$                  | for $x=0, 1,2,...$               |
-|                                  |                                  |
-| for $x=1,2, 3,...$               | \$\$F_X ( x )                    |
-|                                  |                                  |
-| \$\$F\_ X ( x                    | = P(X\leq x) =                   |
-|                                  | 1-(1-p)\^{x+1}\$\$               |
-| ) = P(X\leq x) = 1-(1-p)\^x\$\$  |                                  |
-|                                  | for $x=0, 1,2,...$               |
-| for $x=1,2, 3,...$               |                                  |
-+----------------------------------+----------------------------------+
-| $E(X)=\dfrac{1}{p}$              | $E(X)=\dfrac{1-p}{p}$            |
-|                                  |                                  |
-| $Var(X)= \dfrac{1-p}{p^2}$       | $Var(X) = \dfrac{1-p}{p^2}$      |
-+----------------------------------+----------------------------------+
++---------------------------------+---------------------------------+
+| $X =$ Number of trials needed   | $X =$ Number of failures before |
+| for first success (count $x$    | first success (count $x$ *does  |
+| *includes* the success)         | not include* the success)       |
++:===============================:+:===============================:+
+| \$p \_                          | \$ p \_X (x)= P(X=x) =          |
+|                                 | (1-p)\^{x}p\$                   |
+| X( x ) = P(X=x) =               |                                 |
+| (1-p)\^{x-1}p\$                 | for $x=0, 1,2,...$              |
+|                                 |                                 |
+| for $x=1,2, 3,...$              | \$\$F_X ( x )                   |
+|                                 |                                 |
+| \$\$F\_ X ( x                   | = P(X\leq x) =                  |
+|                                 | 1-(1-p)\^{x+1}\$\$              |
+| ) = P(X\leq x) = 1-(1-p)\^x\$\$ |                                 |
+|                                 | for $x=0, 1,2,...$              |
+| for $x=1,2, 3,...$              |                                 |
++---------------------------------+---------------------------------+
+| $E(X)=\dfrac{1}{p}$             | $E(X)=\dfrac{1-p}{p}$           |
+|                                 |                                 |
+| $Var(X)= \dfrac{1-p}{p^2}$      | $Var(X) = \dfrac{1-p}{p^2}$     |
++---------------------------------+---------------------------------+
 
 ## Bullseye (1/4)
 
@@ -266,6 +266,7 @@ probability of $X > k+j$ is just the probability that $X>k$.
  
 
 $P(X > k+j |X > j) = P(X > k)$
+
 $$ P(X > k+j |X > j) = \dfrac{P(X>k+j \text{ and } X>j)}{P(X>j)} = \dfrac{P(X>k+j)}{P(X>j)} = \dfrac{(1-p)^{k+j}}{(1-p)^{j}} = (1-p)^{k} $$
 
 # Negative Binomial RVs
@@ -619,9 +620,32 @@ in R](https://www.stat.umn.edu/geyer/old/5101/rlook.html)
 Example of R commands for hypergeometric distribution with their
 [input]{style="color:#BF396F"} and [output]{style="color:#367B79"}:
 
-| R code | What does it return? |
-|----|----|
-| `rhyper()` | returns [sample of random variables]{style="color:#367B79"} with [specified distribution]{style="color:#BF396F"} |
-| `dhyper()` | returns [value of probability density]{style="color:#367B79"} at [certain point of the distribution]{style="color:#BF396F"} |
-| `phyper()` | returns [cumulative probability]{style="color:#367B79"} of getting [certain point (or less) of the normal distribution]{style="color:#BF396F"} |
-| `qhyper()` | returns [inverse CDF]{style="color:#367B79"} corresponding to [desired quantile]{style="color:#BF396F"} |
++----------------------------------+----------------------------------+
+| R code                           | What does it return?             |
++==================================+==================================+
+| `rhyper()`                       | returns [sample of random        |
+|                                  | v                                |
+|                                  | ariables]{style="color:#367B79"} |
+|                                  | with [specified                  |
+|                                  | dist                             |
+|                                  | ribution]{style="color:#BF396F"} |
++----------------------------------+----------------------------------+
+| `dhyper()`                       | returns [value of probability    |
+|                                  | density]{style="color:#367B79"}  |
+|                                  | at [certain point of the         |
+|                                  | dist                             |
+|                                  | ribution]{style="color:#BF396F"} |
++----------------------------------+----------------------------------+
+| `phyper()`                       | returns [cumulative              |
+|                                  | pro                              |
+|                                  | bability]{style="color:#367B79"} |
+|                                  | of getting [certain point (or    |
+|                                  | less) of the normal              |
+|                                  | dist                             |
+|                                  | ribution]{style="color:#BF396F"} |
++----------------------------------+----------------------------------+
+| `qhyper()`                       | returns [inverse                 |
+|                                  | CDF]{style="color:#367B79"}      |
+|                                  | corresponding to [desired        |
+|                                  | quantile]{style="color:#BF396F"} |
++----------------------------------+----------------------------------+
