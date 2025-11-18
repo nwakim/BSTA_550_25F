@@ -22901,7 +22901,7 @@
     "href": "lessons/16_Cont_RVs/16_Cont_RVs.html#helpful-r-code",
     "title": "Lesson 16: Some Important Continuous RVs",
     "section": "Helpful R code",
-    "text": "Helpful R code\nLet’s say we’re looking at equally likely arrival times between 10 am and 11 am.\n\nIf we want to know the probability that someone arrives at 10:30am or earlier:\n\npunif(q = 30, min = 0, max = 60)\n\n[1] 0.5\n\n\nIf we want to know the time, say \\(t\\), where the probability of arriving at \\(t\\) or earlier is 0.35:\n\nqunif(p = 0.35, min = 0, max = 60)\n\n[1] 21\n\n\nIf we want to know the probability that someone arrives between 10:14 and 10:16 am:\n\npunif(q = 16, min = 0, max = 60) - punif(q = 14, min = 0, max = 60)\n\n[1] 0.03333333\n\n\nIf we want to sample 20 arrival times from the distribution:\n\nrunif(n = 20, min = 0, max = 60)\n\n [1] 11.537330 20.763566 41.149166 48.401013 10.840272 14.599941 30.785291\n [8] 48.322957 56.124869 36.098409  7.691958 10.762103 50.411925 14.916491\n[15] 54.756954 34.131878 51.982451 59.510464 38.949201 18.904117"
+    "text": "Helpful R code\nLet’s say we’re looking at equally likely arrival times between 10 am and 11 am.\n\nIf we want to know the probability that someone arrives at 10:30am or earlier:\n\npunif(q = 30, min = 0, max = 60)\n\n[1] 0.5\n\n\nIf we want to know the time, say \\(t\\), where the probability of arriving at \\(t\\) or earlier is 0.35:\n\nqunif(p = 0.35, min = 0, max = 60)\n\n[1] 21\n\n\nIf we want to know the probability that someone arrives between 10:14 and 10:16 am:\n\npunif(q = 16, min = 0, max = 60) - punif(q = 14, min = 0, max = 60)\n\n[1] 0.03333333\n\n\nIf we want to sample 20 arrival times from the distribution:\n\nrunif(n = 20, min = 0, max = 60)\n\n [1] 22.516273 17.081227 47.992683 44.762106 55.875406 46.192706  0.912091\n [8] 37.476170  4.826444 21.820632 47.692915 59.401106 54.357529 46.507787\n[15] 41.022321 30.327503 44.939132 30.671464 53.968239  9.681846"
   },
   {
     "objectID": "lessons/16_Cont_RVs/16_Cont_RVs.html#bird-on-a-wire-tb-31.5",
@@ -22936,21 +22936,21 @@
     "href": "lessons/16_Cont_RVs/16_Cont_RVs.html#helpful-r-code-1",
     "title": "Lesson 16: Some Important Continuous RVs",
     "section": "Helpful R code",
-    "text": "Helpful R code\nLet’s say we’re sitting at the bus stop, measuring the time until our bus arrives. We know the bus comes every 10 minutes on average.\n\nIf we want to know the probability that the bus arrives in the next 5 minutes:\n\npexp(q = 5, rate = 1/10)\n\n[1] 0.3934693\n\n\nIf we want to know the time, say \\(t\\), where the probability of the bus arriving at \\(t\\) or earlier is 0.35:\n\nqexp(p = 0.35, rate = 1/10)\n\n[1] 4.307829\n\n\nIf we want to know the probability that the bus arrives between 3 and 5 minutes:\n\npexp(q = 5, rate = 1/10) - pexp(q = 3, rate = 1/10)\n\n[1] 0.1342876\n\n\nIf we want to sample 20 bus arrival times from the distribution:\n\nrexp(n = 20, rate = 1/10)\n\n [1] 10.2740927 11.0587855  0.6952628  0.6923004  8.3747546  4.9750368\n [7]  7.0696642 15.0921797  0.4031240 12.0909713  5.2511893 39.6633840\n[13] 22.2212875  0.6872283  4.1141095 14.7248950  1.0012084  2.7592241\n[19] 29.2912268 25.4325409"
+    "text": "Helpful R code\nLet’s say we’re sitting at the bus stop, measuring the time until our bus arrives. We know the bus comes every 10 minutes on average.\n\nIf we want to know the probability that the bus arrives in the next 5 minutes:\n\npexp(q = 5, rate = 1/10)\n\n[1] 0.3934693\n\n\nIf we want to know the time, say \\(t\\), where the probability of the bus arriving at \\(t\\) or earlier is 0.35:\n\nqexp(p = 0.35, rate = 1/10)\n\n[1] 4.307829\n\n\nIf we want to know the probability that the bus arrives between 3 and 5 minutes:\n\npexp(q = 5, rate = 1/10) - pexp(q = 3, rate = 1/10)\n\n[1] 0.1342876\n\n\nIf we want to sample 20 bus arrival times from the distribution:\n\nrexp(n = 20, rate = 1/10)\n\n [1]  4.6449598  5.0546471  9.4573407  9.6026095  6.3181149 33.9370439\n [7]  0.5223296 46.1334267 28.2905622  8.9749521  0.5191406  8.8897180\n[13] 14.8482183 20.0878303 18.4782843  3.7034479  4.7386466 12.3107767\n[19] 10.1652630  5.1451133"
   },
   {
     "objectID": "lessons/16_Cont_RVs/16_Cont_RVs.html#transformation-of-independent-exponential-rvs",
     "href": "lessons/16_Cont_RVs/16_Cont_RVs.html#transformation-of-independent-exponential-rvs",
     "title": "Lesson 16: Some Important Continuous RVs",
     "section": "Transformation of independent exponential RVs",
-    "text": "Transformation of independent exponential RVs\n\n\nRevisit after joint notes:\n\n\nExample 1\n\n\nLet \\(X_i \\sim \\textrm{Exp}(\\lambda_i)\\) be independent RVs, for \\(i=1 \\ldots n\\). Find the pdf for the first of the arrival times."
+    "text": "Transformation of independent exponential RVs\n\n\nRevisit after joint notes:\n\n\nExample 2\n\n\nLet \\(X_i \\sim \\textrm{Exp}(\\lambda_i)\\) be independent RVs, for \\(i=1 \\ldots n\\). Find the pdf for the first of the arrival times."
   },
   {
     "objectID": "lessons/16_Cont_RVs/16_Cont_RVs.html#properties-of-gamma-rvs",
     "href": "lessons/16_Cont_RVs/16_Cont_RVs.html#properties-of-gamma-rvs",
     "title": "Lesson 16: Some Important Continuous RVs",
     "section": "Properties of gamma RVs",
-    "text": "Properties of gamma RVs\n\nScenario: Modeling the time until the \\(r^{th}\\) event.\nContinuous analog to the Negative Binomial distribution\nShorthand: \\(X \\sim \\text{Gamma}(r, \\lambda)\\)\n\n\\[\nf_X(x) = \\dfrac{\\lambda^r}{\\Gamma(r)}x^{r-1} e^{-\\lambda x}\\text{ for } x&gt;0, \\lambda&gt;0, \\Gamma(r) = (r-1)!\n\\]\n\\[\nF_X(x) = \\left\\{\n        \\begin{array}{ll}\n            0 & \\quad x&lt;0 \\quad \\\\\n            1 - e^{-\\lambda x}\\displaystyle\\sum_{j=0}^{r-1}\\dfrac{(\\lambda x)^j}{j!}  & \\quad x\\geq0 \\\\\n        \\end{array}\n    \\right.\n\\]\n\\[\\text{E}(X) = \\dfrac{r}{\\lambda}\\text{, }\\text{ Var}(X) = \\dfrac{r}{\\lambda^2}\\]\nCommon to see \\(\\alpha = r\\) and \\(\\beta = \\lambda\\)"
+    "text": "Properties of gamma RVs\n\nScenario: Modeling the time until the \\(r^{th}\\) event.\nContinuous analog to the Negative Binomial distribution\nShorthand: \\(X \\sim \\text{Gamma}(r, \\lambda)\\) or \\(X \\sim \\text{Gamma}(\\alpha, \\beta)\\)\n\n\\[\nf_X(x) = \\dfrac{\\lambda^r}{\\Gamma(r)}x^{r-1} e^{-\\lambda x}\\text{ for } x&gt;0, \\lambda&gt;0, \\Gamma(r) = (r-1)!\n\\]\n\\[\nF_X(x) = \\left\\{\n        \\begin{array}{ll}\n            0 & \\quad x&lt;0 \\quad \\\\\n            1 - e^{-\\lambda x}\\displaystyle\\sum_{j=0}^{r-1}\\dfrac{(\\lambda x)^j}{j!}  & \\quad x\\geq0 \\\\\n        \\end{array}\n    \\right.\n\\]\n\\[\\text{E}(X) = \\dfrac{r}{\\lambda}\\text{, }\\text{ Var}(X) = \\dfrac{r}{\\lambda^2}\\]\nCommon to see \\(\\alpha = r\\) and \\(\\beta = \\lambda\\)"
   },
   {
     "objectID": "lessons/16_Cont_RVs/16_Cont_RVs.html#identifying-gamma-rv-from-word-problems",
@@ -22964,7 +22964,7 @@
     "href": "lessons/16_Cont_RVs/16_Cont_RVs.html#helpful-r-code-2",
     "title": "Lesson 16: Some Important Continuous RVs",
     "section": "Helpful R code",
-    "text": "Helpful R code\nLet’s say we’re sitting at the bus stop, measuring the time until 4 buses arrive. We know the bus comes every 10 minutes on average.\n\nIf we want to know the probability that the 4 buses arrive in the next 50 minutes:\n\n\n\n\npgamma(q = 50, rate = 1/10, shape = 4)\n\n[1] 0.7349741\n\n\n\n\npgamma(q = 50, scale = 10, shape = 4)\n\n[1] 0.7349741\n\n\n\n\nIf we want to know the time, say \\(t\\), where the probability of the 4 buses arriving at \\(t\\) or earlier is 0.35:\n\nqgamma(p = 0.35, rate = 1/10, shape = 4)\n\n[1] 29.87645\n\n\nIf we want to know the probability that the 4 buses arrives between 30 and 50 minutes:\n\npgamma(q = 50, scale = 10, shape = 4) - pgamma(q = 30, scale = 10, shape = 4)\n\n[1] 0.382206\n\n\nIf we want to sample 20 arrival times for the 4 buses:\n\nrgamma(n = 20, scale = 10, shape = 4)\n\n [1] 25.48853 49.07734 20.35846 49.92988 56.04761 25.57237 55.38420  9.01671\n [9] 59.22275 24.66216 30.91312 24.03411 33.15909 20.86586 61.39410 95.95339\n[17] 33.70383 51.09711 49.81510 20.16700"
+    "text": "Helpful R code\nLet’s say we’re sitting at the bus stop, measuring the time until 4 buses arrive. We know the bus comes every 10 minutes on average.\n\nIf we want to know the probability that the 4 buses arrive in the next 50 minutes:\n\n\n\n\npgamma(q = 50, rate = 1/10, shape = 4)\n\n[1] 0.7349741\n\n\n\n\npgamma(q = 50, scale = 10, shape = 4)\n\n[1] 0.7349741\n\n\n\n\nIf we want to know the time, say \\(t\\), where the probability of the 4 buses arriving at \\(t\\) or earlier is 0.35:\n\nqgamma(p = 0.35, rate = 1/10, shape = 4)\n\n[1] 29.87645\n\n\nIf we want to know the probability that the 4 buses arrives between 30 and 50 minutes:\n\npgamma(q = 50, scale = 10, shape = 4) - pgamma(q = 30, scale = 10, shape = 4)\n\n[1] 0.382206\n\n\nIf we want to sample 20 arrival times for the 4 buses:\n\nrgamma(n = 20, scale = 10, shape = 4)\n\n [1] 48.64892 33.07492 38.31127 25.71795 15.36021 29.89488 60.26560 39.86267\n [9] 30.95258  9.01459 29.07031 30.61082 44.01609 18.72252 45.37357 31.61474\n[17] 71.00315 90.66471 89.51809 73.03925"
   },
   {
     "objectID": "lessons/16_Cont_RVs/16_Cont_RVs.html#remarks",
@@ -22978,7 +22978,7 @@
     "href": "lessons/16_Cont_RVs/16_Cont_RVs.html#sending-money-orders",
     "title": "Lesson 16: Some Important Continuous RVs",
     "section": "Sending money orders",
-    "text": "Sending money orders\n\n\n\n\nExample 1\n\n\nOn average, someone sends a money order once per 15 minutes. What is the probability someone sends 10 money orders in less than 3 hours?"
+    "text": "Sending money orders\n\n\n\n\nExample 3\n\n\nOn average, someone sends a money order once per 15 minutes. What is the probability someone sends 10 money orders in less than 3 hours?"
   },
   {
     "objectID": "lessons/16_Cont_RVs/16_Cont_RVs.html#additional-resource",
@@ -22992,28 +22992,28 @@
     "href": "lessons/16_Cont_RVs/16_Cont_RVs.html#properties-of-normal-rvs",
     "title": "Lesson 16: Some Important Continuous RVs",
     "section": "Properties of Normal RVs",
-    "text": "Properties of Normal RVs\n\nNo scenario description here because the Normal distribution is so universal\n\nCentral Limit Theorem (next class) makes it applicable to many types of events\n\nShorthand: \\(X \\sim \\text{Normal}(\\mu, \\sigma^2)\\)\n\n\\[\nf_X(x) = \\dfrac{1}{\\sqrt{2\\pi \\sigma^2}}e^{-(x-\\mu)^2/(2\\sigma^2)} \\text{, for} -inf &lt; x &lt; inf\n\\]\n\\[\\text{E}(X) = \\mu \\] \\[\\text{Var}(X) = \\sigma^2\\]"
+    "text": "Properties of Normal RVs\n\nNo scenario description here because the Normal distribution is so universal\n\nCentral Limit Theorem (next class) makes it applicable to many types of events\n\nShorthand: \\(X \\sim \\text{Normal}(\\mu, \\sigma^2)\\)\n\n\\[\nf_X(x) = \\dfrac{1}{\\sqrt{2\\pi \\sigma^2}}e^{-(x-\\mu)^2/(2\\sigma^2)} \\text{, for} -\\infty &lt; x &lt; \\infty\n\\]\n\\[\\text{E}(X) = \\mu \\] \\[\\text{Var}(X) = \\sigma^2\\]"
   },
   {
     "objectID": "lessons/16_Cont_RVs/16_Cont_RVs.html#helpful-r-code-3",
     "href": "lessons/16_Cont_RVs/16_Cont_RVs.html#helpful-r-code-3",
     "title": "Lesson 16: Some Important Continuous RVs",
     "section": "Helpful R code",
-    "text": "Helpful R code\nLet’s say we’re measuring the high temperature today. The average high temperature on this day across many, many years is 50 degrees with a standard deviation of 4 degrees.\n\nIf we want to know the probability that the high temperature is below 45 degrees:\n\npnorm(q = 45, mean = 50, sd = 4)\n\n[1] 0.1056498\n\n\nIf we want to know the temoerature, say \\(t\\), where the probability of that the temperature is at \\(t\\) or lower is 0.35:\n\nqnorm(p = 0.35, mean = 50, sd = 4)\n\n[1] 48.45872\n\n\nIf we want to know the probability that the temperature is between 45 and 50 degrees:\n\npnorm(q = 50, mean = 50, sd = 4) - pnorm(q = 45, mean = 50, sd = 4)\n\n[1] 0.3943502\n\n\nIf we want to sample 20 days’ temperature (over the years) from the distribution:\n\nrnorm(n = 20, mean = 50, sd = 4)\n\n [1] 50.69847 45.82029 50.23074 51.49632 38.83445 52.88795 47.35063 45.27866\n [9] 52.69936 49.40946 55.58152 47.19998 54.10182 45.85241 50.11604 57.26391\n[17] 50.75254 53.25402 46.90868 53.67786"
+    "text": "Helpful R code\nLet’s say we’re measuring the high temperature today. The average high temperature on this day across many, many years is 50 degrees with a standard deviation of 4 degrees.\n\nIf we want to know the probability that the high temperature is below 45 degrees:\n\npnorm(q = 45, mean = 50, sd = 4)\n\n[1] 0.1056498\n\n\nIf we want to know the temoerature, say \\(t\\), where the probability of that the temperature is at \\(t\\) or lower is 0.35:\n\nqnorm(p = 0.35, mean = 50, sd = 4)\n\n[1] 48.45872\n\n\nIf we want to know the probability that the temperature is between 45 and 50 degrees:\n\npnorm(q = 50, mean = 50, sd = 4) - pnorm(q = 45, mean = 50, sd = 4)\n\n[1] 0.3943502\n\n\nIf we want to sample 20 days’ temperature (over the years) from the distribution:\n\nrnorm(n = 20, mean = 50, sd = 4)\n\n [1] 50.13611 43.32263 39.38045 47.54952 51.56153 46.26966 55.80823 46.39630\n [9] 56.47067 48.81279 45.14764 50.65640 54.77784 53.59775 50.14180 50.46950\n[17] 47.28932 43.20128 50.62537 47.04460"
   },
   {
     "objectID": "lessons/16_Cont_RVs/16_Cont_RVs.html#movie-night-while-studying",
     "href": "lessons/16_Cont_RVs/16_Cont_RVs.html#movie-night-while-studying",
     "title": "Lesson 16: Some Important Continuous RVs",
     "section": "Movie night while studying",
-    "text": "Movie night while studying\n\n\n\n\nExample 1\n\n\nChildren’s movies run an average of 98 minutes with a standard deviation of 10 minutes. You check out a random movie from the library to entertain your kids so you can study for your test. Assume that your kids will be occupied for the entire length of the movie.\n\nWhat is the probability that your kids will be occupied for at least the 2 hours you would like to study?\nWhat is range for the bottom quartile (lowest 25%) of time they will be occupied?"
+    "text": "Movie night while studying\n\n\n\n\nExample 4\n\n\nChildren’s movies run an average of 98 minutes with a standard deviation of 10 minutes. You check out a random movie from the library to entertain your kids so you can study for your test. Assume that your kids will be occupied for the entire length of the movie.\n\nWhat is the probability that your kids will be occupied for at least the 2 hours you would like to study?\nWhat is range for the bottom quartile (lowest 25%) of time they will be occupied?"
   },
   {
     "objectID": "lessons/16_Cont_RVs/16_Cont_RVs.html#standard-normal-distribution",
     "href": "lessons/16_Cont_RVs/16_Cont_RVs.html#standard-normal-distribution",
     "title": "Lesson 16: Some Important Continuous RVs",
     "section": "Standard Normal Distribution",
-    "text": "Standard Normal Distribution\n\\[ Z \\sim \\text{Normal}(\\mu = 0, \\sigma^2 = 1)\\]\n\nUsed to be more helpful when computing was not as advanced\n\nUse tables of the standard normal\nYou can convert any normal distribution to a standard normal through transformation\n\n\\(Z = \\dfrac{X - \\mu_X}{\\sigma_X}\\)\n\nComes from \\(X = \\sigma_X Z + \\mu_X\\)\nSince \\(\\sigma_X\\) and \\(\\mu_X\\) are constants, then \\(E(X) = \\mu_X\\) and \\(SD(X) = \\sigma_X SD(Z) = \\sigma_X\\)"
+    "text": "Standard Normal Distribution\n\\[ Z \\sim \\text{Normal}(\\mu = 0, \\sigma^2 = 1)\\]\n\nUsed to be more helpful when computing was not as advanced\n\nUse tables of the standard normal\nYou can convert any normal distribution to a standard normal through transformation\n\n\\(Z = \\dfrac{X - \\mu_X}{\\sigma_X}\\)\n\nComes from \\(X = \\sigma_X Z + \\mu_X\\)\nSince \\(\\sigma_X\\) and \\(\\mu_X\\) are constants, then \\(E(X) = \\mu_X\\) and \\(SD(X) = \\sigma_X\\)"
   },
   {
     "objectID": "lessons/14_Variance/14_Variance.html",
@@ -23433,21 +23433,21 @@
     "href": "lessons/16_Cont_RVs/16_Cont_RVs_key_info.html",
     "title": "Key Info",
     "section": "",
-    "text": "HW 3 videos should be in!\n\nSome presentations today\n\nNeed to grade HW 4 solutions and HW 5 assignment STILL\n\nHappy to be flexible on the HW 5 solutions deadline\n\nAnything else?"
+    "text": "We will finish up the example from last class\nNo class on 11/26 and 12/1\nBiostatistics tutoring starts today\n\nSchedule a meeting here\nOr email Charles directly"
   },
   {
     "objectID": "lessons/16_Cont_RVs/16_Cont_RVs_key_info.html#announcements",
     "href": "lessons/16_Cont_RVs/16_Cont_RVs_key_info.html#announcements",
     "title": "Key Info",
     "section": "",
-    "text": "HW 3 videos should be in!\n\nSome presentations today\n\nNeed to grade HW 4 solutions and HW 5 assignment STILL\n\nHappy to be flexible on the HW 5 solutions deadline\n\nAnything else?"
+    "text": "We will finish up the example from last class\nNo class on 11/26 and 12/1\nBiostatistics tutoring starts today\n\nSchedule a meeting here\nOr email Charles directly"
   },
   {
     "objectID": "lessons/16_Cont_RVs/16_Cont_RVs_key_info.html#key-dates",
     "href": "lessons/16_Cont_RVs/16_Cont_RVs_key_info.html#key-dates",
     "title": "Key Info",
     "section": "Key Dates",
-    "text": "Key Dates\n\nThursday: HW 6 due\nSunday: HW 5 solutions due\n\nFLEXIBLE"
+    "text": "Key Dates\n\nHW 7 due Sunday 11/23\nQuiz 3 opens 12/3\nHW 8 due 12/7"
   },
   {
     "objectID": "lessons/11_Joint_distributions/11_Joint_distributions_review.html#where-are-we",

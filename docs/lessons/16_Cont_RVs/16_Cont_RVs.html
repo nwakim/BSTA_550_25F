@@ -210,7 +210,7 @@ Meike Niederhausen and Nicky Wakim
 <section id="learning-objectives" class="title-slide slide level1 center">
 <h1>Learning Objectives</h1>
 <ol type="1">
-<li>Distinguish between Uniform, Exponential, Gamma, and Normal distributions when reading a word roblem.</li>
+<li>Distinguish between Uniform, Exponential, Gamma, and Normal distributions when reading a word problem.</li>
 <li>Identify the variable and the parameters in a word problem, and state what the variable and parameters mean.</li>
 <li>Use the formulas for the pdf/CDF, expected value, and variance to answer questions and find probabilities.</li>
 </ol>
@@ -295,9 +295,9 @@ F_X(x) = \left\{
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">20</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">60</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 11.537330 20.763566 41.149166 48.401013 10.840272 14.599941 30.785291
- [8] 48.322957 56.124869 36.098409  7.691958 10.762103 50.411925 14.916491
-[15] 54.756954 34.131878 51.982451 59.510464 38.949201 18.904117</code></pre>
+<pre><code> [1] 22.516273 17.081227 47.992683 44.762106 55.875406 46.192706  0.912091
+ [8] 37.476170  4.826444 21.820632 47.692915 59.401106 54.357529 46.507787
+[15] 41.022321 30.327503 44.939132 30.671464 53.968239  9.681846</code></pre>
 </div>
 </div></li>
 </ul>
@@ -400,10 +400,10 @@ F_X(x) = \left\{
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">rexp</span>(<span class="at">n =</span> <span class="dv">20</span>, <span class="at">rate =</span> <span class="dv">1</span><span class="sc">/</span><span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 10.2740927 11.0587855  0.6952628  0.6923004  8.3747546  4.9750368
- [7]  7.0696642 15.0921797  0.4031240 12.0909713  5.2511893 39.6633840
-[13] 22.2212875  0.6872283  4.1141095 14.7248950  1.0012084  2.7592241
-[19] 29.2912268 25.4325409</code></pre>
+<pre><code> [1]  4.6449598  5.0546471  9.4573407  9.6026095  6.3181149 33.9370439
+ [7]  0.5223296 46.1334267 28.2905622  8.9749521  0.5191406  8.8897180
+[13] 14.8482183 20.0878303 18.4782843  3.7034479  4.7386466 12.3107767
+[19] 10.1652630  5.1451133</code></pre>
 </div>
 </div></li>
 </ul>
@@ -415,7 +415,7 @@ F_X(x) = \left\{
 <p>Revisit after joint notes:</p>
 <div class="example">
 <div class="ex-title">
-<p>Example 1</p>
+<p>Example 2</p>
 </div>
 <div class="ex-cont">
 <p>Let <span class="math inline">\(X_i \sim \textrm{Exp}(\lambda_i)\)</span> be independent RVs, for <span class="math inline">\(i=1 \ldots n\)</span>. Find the pdf for the first of the arrival times.</p>
@@ -433,7 +433,7 @@ F_X(x) = \left\{
 <ul>
 <li><strong>Scenario:</strong> Modeling the time until the <span class="math inline">\(r^{th}\)</span> event.</li>
 <li>Continuous analog to the Negative Binomial distribution</li>
-<li>Shorthand: <span class="math inline">\(X \sim \text{Gamma}(r, \lambda)\)</span></li>
+<li>Shorthand: <span class="math inline">\(X \sim \text{Gamma}(r, \lambda)\)</span> or <span class="math inline">\(X \sim \text{Gamma}(\alpha, \beta)\)</span></li>
 </ul>
 <p><span class="math display">\[
 f_X(x) = \dfrac{\lambda^r}{\Gamma(r)}x^{r-1} e^{-\lambda x}\text{ for } x&gt;0, \lambda&gt;0, \Gamma(r) = (r-1)!
@@ -507,9 +507,9 @@ F_X(x) = \left\{
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a><span class="fu">rgamma</span>(<span class="at">n =</span> <span class="dv">20</span>, <span class="at">scale =</span> <span class="dv">10</span>, <span class="at">shape =</span> <span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 25.48853 49.07734 20.35846 49.92988 56.04761 25.57237 55.38420  9.01671
- [9] 59.22275 24.66216 30.91312 24.03411 33.15909 20.86586 61.39410 95.95339
-[17] 33.70383 51.09711 49.81510 20.16700</code></pre>
+<pre><code> [1] 48.64892 33.07492 38.31127 25.71795 15.36021 29.89488 60.26560 39.86267
+ [9] 30.95258  9.01459 29.07031 30.61082 44.01609 18.72252 45.37357 31.61474
+[17] 71.00315 90.66471 89.51809 73.03925</code></pre>
 </div>
 </div></li>
 </ul>
@@ -543,7 +543,7 @@ F_X(x) = \left\{
 <div class="column" style="width:30%;">
 <div class="example">
 <div class="ex-title">
-<p>Example 1</p>
+<p>Example 3</p>
 </div>
 <div class="ex-cont">
 <p>On average, someone sends a money order once per 15 minutes. What is the probability someone sends 10 money orders in less than 3 hours?</p>
@@ -572,7 +572,7 @@ F_X(x) = \left\{
 <li><p>Shorthand: <span class="math inline">\(X \sim \text{Normal}(\mu, \sigma^2)\)</span></p></li>
 </ul>
 <p><span class="math display">\[
-f_X(x) = \dfrac{1}{\sqrt{2\pi \sigma^2}}e^{-(x-\mu)^2/(2\sigma^2)} \text{, for} -inf &lt; x &lt; inf
+f_X(x) = \dfrac{1}{\sqrt{2\pi \sigma^2}}e^{-(x-\mu)^2/(2\sigma^2)} \text{, for} -\infty &lt; x &lt; \infty
 \]</span></p>
 <p><span class="math display">\[\text{E}(X) = \mu \]</span> <span class="math display">\[\text{Var}(X) = \sigma^2\]</span></p>
 </section>
@@ -605,9 +605,9 @@ f_X(x) = \dfrac{1}{\sqrt{2\pi \sigma^2}}e^{-(x-\mu)^2/(2\sigma^2)} \text{, for} 
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a><span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">20</span>, <span class="at">mean =</span> <span class="dv">50</span>, <span class="at">sd =</span> <span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 50.69847 45.82029 50.23074 51.49632 38.83445 52.88795 47.35063 45.27866
- [9] 52.69936 49.40946 55.58152 47.19998 54.10182 45.85241 50.11604 57.26391
-[17] 50.75254 53.25402 46.90868 53.67786</code></pre>
+<pre><code> [1] 50.13611 43.32263 39.38045 47.54952 51.56153 46.26966 55.80823 46.39630
+ [9] 56.47067 48.81279 45.14764 50.65640 54.77784 53.59775 50.14180 50.46950
+[17] 47.28932 43.20128 50.62537 47.04460</code></pre>
 </div>
 </div></li>
 </ul>
@@ -618,7 +618,7 @@ f_X(x) = \dfrac{1}{\sqrt{2\pi \sigma^2}}e^{-(x-\mu)^2/(2\sigma^2)} \text{, for} 
 <div class="column" style="width:37%;">
 <div class="example">
 <div class="ex-title">
-<p>Example 1</p>
+<p>Example 4</p>
 </div>
 <div class="ex-cont">
 <p>Children’s movies run an average of 98 minutes with a standard deviation of 10 minutes. You check out a random movie from the library to entertain your kids so you can study for your test. Assume that your kids will be occupied for the entire length of the movie.</p>
@@ -642,7 +642,7 @@ f_X(x) = \dfrac{1}{\sqrt{2\pi \sigma^2}}e^{-(x-\mu)^2/(2\sigma^2)} \text{, for} 
 <li><p><span class="math inline">\(Z = \dfrac{X - \mu_X}{\sigma_X}\)</span></p>
 <ul>
 <li><p>Comes from <span class="math inline">\(X = \sigma_X Z + \mu_X\)</span></p></li>
-<li><p>Since <span class="math inline">\(\sigma_X\)</span> and <span class="math inline">\(\mu_X\)</span> are constants, then <span class="math inline">\(E(X) = \mu_X\)</span> and <span class="math inline">\(SD(X) = \sigma_X SD(Z) = \sigma_X\)</span></p></li>
+<li><p>Since <span class="math inline">\(\sigma_X\)</span> and <span class="math inline">\(\mu_X\)</span> are constants, then <span class="math inline">\(E(X) = \mu_X\)</span> and <span class="math inline">\(SD(X) = \sigma_X\)</span></p></li>
 </ul></li>
 </ul>
 

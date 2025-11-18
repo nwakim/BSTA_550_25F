@@ -1,6 +1,5 @@
 ---
 title: "Key Info"
-date: "11/13/2024"
 date-modified: "today"
 format: 
   html:
@@ -11,19 +10,17 @@ editor_options:
 
 ## Announcements
 
-- HW 3 videos should be in!
-  - Some presentations today
-
-- Need to grade HW 4 solutions and HW 5 assignment STILL
-  - Happy to be flexible on the HW 5 solutions deadline 
-
-- Anything else?
+- We will finish up the example from last class
+- No class on 11/26 and 12/1
+- Biostatistics tutoring starts today
+  - [Schedule a meeting here](https://traccloud.go-redrock.com/ohsu)
+  - Or email Charles directly
 
 ## Key Dates
 
-- Thursday: HW 6 due
-- Sunday: HW 5 solutions due
-  - FLEXIBLE
+- HW 7 due Sunday 11/23
+- Quiz 3 opens 12/3
+- HW 8 due 12/7
 
   
 
