@@ -82,21 +82,23 @@ graph TD
     Exp(Exponential)
     Gam(Gamma)
     Norm(Normal)
+    Chi(Chi-Squared)
     
     %% === CONNECTIONS ===
     Bern -- "1" --> Geo
     Bern -- "2" --> Bin
-    Norm -- "3" --> Bin
-    Pois -- "4" --> Bin
-    Bin -- "8" --> Hyper
+    Pois -- "3" --> Bin
+    Bin -- "9" --> Hyper
+    Norm -- "4" --> Bin
+    Norm -- "5" --> Chi
         
-    Geo -- "7" --> NegBin
-    Pois -- "5" --> Exp
+    Geo -- "8" --> NegBin
+    Pois -- "7" --> Exp
     Gam -- "6" --> Exp
 
 
 
     %% Apply Styles
     class Bern,Bin,Geo,NegBin,Hyper,DiscUnif,Pois discrete
-    class ContUnif,Exp,Gam,Norm continuous
+    class ContUnif,Exp,Gam,Norm,Chi continuous
 ```

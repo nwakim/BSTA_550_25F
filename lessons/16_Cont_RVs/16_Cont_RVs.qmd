@@ -445,3 +445,47 @@ $$ Z \sim \text{Normal}(\mu = 0, \sigma^2 = 1)$$
 
     -   Since $\sigma_X$ and $\mu_X$ are constants, then $E(X) = \mu_X$ and $SD(X) = \sigma_X$
 
+## Chi-squared distribution
+
+::: columns
+::: column
+-   If $Z \sim \text{Normal}(0,1)$, then $X = Z^2$ has a Chi-squared distribution with 1 degree of freedom
+
+    -   Shorthand: $X \sim \chi^2_{(1)}$
+
+-  If $Z_1, Z_2, \ldots, Z_n$ are independent standard normal RVs, then
+
+    $$X = \sum_{i=1}^n Z_i^2$$
+
+    has a Chi-squared distribution with $n$ degrees of freedom
+
+    -   Shorthand: $X \sim \chi^2_{(n)}$
+:::
+
+::: column
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 8
+
+library(ggplot2)
+library(dplyr)
+x <- seq(0, 30, length.out = 1000)
+df_values <- c(2, 3, 5, 10,
+                  20)
+df <- expand.grid(x = x, df = df_values)
+df <- df %>%
+  mutate(y = dchisq(x, df))
+ggplot(df, aes(x = x, y = y, color = as.factor(df))) +
+  geom_line(size = 2) +
+  labs(x = "x",
+       y = "Density",
+       color = element_blank()) +
+  theme_minimal() +
+  theme(legend.position = "inside", 
+        text = element_text(size = 30)) +
+  scale_color_discrete(labels = paste("n =", df_values))
+```
+
+:::
+:::
