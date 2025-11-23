@@ -18,7 +18,7 @@ Below is the general timing and lessons for each quiz:
 |---------------|---------------|---------------|---------------|---------------|
 | 1 | 1-5 | 1-2 | `r q1_open %>% format("%m/%d")` | `r q1_close %>% format("%m/%d")` |
 | 2 | 7-9 | 4 | `r q2_open %>% format("%m/%d")` | `r q2_close %>% format("%m/%d")` |
-| 3 | 10-17 | 5-7 | `r q3_open %>% format("%m/%d")` | `r q3_close %>% format("%m/%d")` |
+| 3 | 10-16 | 5-7 | `r q3_open %>% format("%m/%d")` | `r q3_close %>% format("%m/%d")` |
 
 Quizzes will be mostly conceptual questions with 10-15 multiple choice questions. Some calculations will need to be done for certain questions, but the focus will be on understanding concepts.
 
@@ -56,3 +56,9 @@ More information specific to each quiz will be posted below.
     -   Might have one question from Lesson 10 about process of transformations
 
 ## Quiz 3
+
+-   Includes lessons 10-16
+    -   Includes 15-16 since we extended from previous lessons to important distributions
+        -   Only 1 question about the relationships between distributions (so make sure to do the last problem in HW 8)
+    -   Transformations, joint distributions, independence and conditioning, expected values, and variance
+-   Just from the topics, I'd say this will be the hardest quiz

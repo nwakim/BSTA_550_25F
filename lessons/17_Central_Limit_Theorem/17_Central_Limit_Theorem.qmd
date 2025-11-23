@@ -1,7 +1,7 @@
 ---
-title: "Chapter 37: Central Limit Theorem"
+title: "Lesson 17: Central Limit Theorem"
 author: "Meike Niederhausen and Nicky Wakim"
-date: "12/2/2024"
+date: "`r library(here); source(here('class_dates.R')); w9d1`"
 title-slide-attributes:
     data-background-color: "#006a4e"
 format: 
@@ -11,11 +11,16 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Chapter 37 Slides
+    footer: Lesson 17 Slides
     html-math-method: mathjax
 ---
 
-## Learning Objectives
+```{r setup, include=FALSE}
+library(here)
+source(here("class_dates.R"))
+```
+
+# Learning Objectives
 
 1.  Calculate probability of a sample mean using a population mean and
     variance with unknown distribution
@@ -118,7 +123,7 @@ $$\sum_{i=1}^n X_i \rightarrow$$
 :::
 :::
 
-## At home example {.smaller}
+## Larger example (1/7) {.smaller} 
 
 ::: example
 ::: ex-title
@@ -156,3 +161,118 @@ women aged 40-49.
     previous question!
 :::
 :::
+
+## Larger example (2/7) {.smaller} 
+
+::: example
+::: ex-title
+Example 3
+:::
+
+::: ex-cont
+Suppose that the probability of developing a specific type of breast
+cancer in women aged 40-49 is 0.001. Assume the occurrences of cancer
+are independent. Suppose you have data from a random sample of 20,000
+women aged 40-49.
+
+1.  How many of the 20,000 women would you expect to develop this type
+    of breast cancer, and what is the standard deviation?
+:::
+:::
+
+## Larger example (3/7) {.smaller} 
+
+::: example
+::: ex-title
+Example 3
+:::
+
+::: ex-cont
+Suppose that the probability of developing a specific type of breast
+cancer in women aged 40-49 is 0.001. Assume the occurrences of cancer
+are independent. Suppose you have data from a random sample of 20,000
+women aged 40-49.
+
+2.  Find the **exact** probability that more than 15 of the 20,000 women
+    will develop this type of breast cancer.
+:::
+:::
+
+## Larger example (4/7) {.smaller} 
+
+::: example
+::: ex-title
+Example 3
+:::
+
+::: ex-cont
+Suppose that the probability of developing a specific type of breast
+cancer in women aged 40-49 is 0.001. Assume the occurrences of cancer
+are independent. Suppose you have data from a random sample of 20,000
+women aged 40-49.
+
+3.  Use the CLT to find the **approximate** probability that more than
+    15 of the 20,000 women will develop this type of breast cancer.
+:::
+:::
+
+## Larger example (5/7) {.smaller} 
+
+::: example
+::: ex-title
+Example 3
+:::
+
+::: ex-cont
+Suppose that the probability of developing a specific type of breast
+cancer in women aged 40-49 is 0.001. Assume the occurrences of cancer
+are independent. Suppose you have data from a random sample of 20,000
+women aged 40-49.
+
+4.  Use the CLT to approximate the following probabilities, where $X$ is
+    the number of women that will develop this type of breast cancer.
+
+    a.  $\mathbb{P}(15 \leq X \leq 22)$
+
+    b.  $\mathbb{P}(X > 20)$
+
+    c.  $\mathbb{P}(X < 20)$
+:::
+:::
+
+## Larger example (6/7) {.smaller} 
+
+::: example
+::: ex-title
+Example 3
+:::
+
+::: ex-cont
+Suppose that the probability of developing a specific type of breast
+cancer in women aged 40-49 is 0.001. Assume the occurrences of cancer
+are independent. Suppose you have data from a random sample of 20,000
+women aged 40-49.
+
+5.  Find the **approximate** probability that more than 15 of the 20,000
+    women will develop this type of breast cancer - not using the CLT!
+:::
+:::
+
+## Larger example (7/7) {.smaller} 
+
+::: example
+::: ex-title
+Example 3
+:::
+
+::: ex-cont
+Suppose that the probability of developing a specific type of breast
+cancer in women aged 40-49 is 0.001. Assume the occurrences of cancer
+are independent. Suppose you have data from a random sample of 20,000
+women aged 40-49.
+
+6.  Use the CLT to approximate the approximate probability in the
+    previous question!
+:::
+:::
+
