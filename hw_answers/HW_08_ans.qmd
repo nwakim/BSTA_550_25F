@@ -29,4 +29,4 @@ editor_options:
 4. First row given in homework problem
 
 
-5. #4: Poisson approximation of Binomial when $n$ is large and $p$ is small
+5. #3: Poisson approximation of Binomial when $n$ is large and $p$ is small
