@@ -1,7 +1,7 @@
 ---
-title: "Chapter 43: Moment Generating Functions"
+title: "Lesson 18: Moment Generating Functions"
 author: "Meike Niederhausen and Nicky Wakim"
-date: "12/4/2024"
+date: "`r library(here); source(here('class_dates.R')); w10d2`"
 title-slide-attributes:
     data-background-color: "#006a4e"
 format: 
@@ -11,14 +11,19 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Chapter 43 Slides
+    footer: Lesson 18 Slides
     html-math-method: mathjax
 ---
+
+```{r setup, include=FALSE}
+library(here)
+source(here("class_dates.R"))
+```
 
 ## Learning Objectives
 
 1. Learn the definition of a moment-generating function.
-2. Find the moment-generating function of a binomial random variable.
+2. Find the moment-generating function of a random variable.
 3. Use a moment-generating function to find the mean and variance of a random variable.
 
 ## Where are we?
@@ -37,6 +42,8 @@ The $j^{th}$ moment of a r.v. $X$ is $\mathbb{E}[X^j]$
 :::
 :::
 
+## Okay, but what are they?
+
 ::: example
 ::: ex-title
 Example 1
@@ -46,8 +53,22 @@ $1^{st}-4^{th}$ moments
 :::
 :::
 
+1. 1st moment: 
 
-## What is a *moment generating function* (mgf)??
+ 
+
+2. 2nd moment:
+
+ 
+
+3. 3rd moment:
+
+ 
+
+4. 4th moment:
+
+
+## What is a *moment generating function* (MGF)??
 
 ::: definition
 ::: def-title
@@ -55,7 +76,7 @@ Definition 3
 :::
 ::: def-cont
 If $X$ is a r.v., then the **moment generating function**
-(**mgf**) associated with $X$ is:
+(**MGF**) associated with $X$ is:
 $$M_X(t)= \mathbb{E}[e^{tX}]$$
 :::
 :::
@@ -64,14 +85,14 @@ $$M_X(t)= \mathbb{E}[e^{tX}]$$
 
 ::: columns
 ::: column
--   For a discrete r.v., the mgf of $X$ is
+-   For a discrete r.v., the MGF of $X$ is
     $$M_X(t)= \mathbb{E}[e^{tX}]=\sum_{all \ x}e^{tx}p_X(x)$$
 
--   For a continuous r.v., the mgf of $X$ is
+-   For a continuous r.v., the MGF of $X$ is
     $$M_X(t)= \mathbb{E}[e^{tX}]=\int_{-\infty}^{\infty}e^{tx}f_X(x)dx$$
 :::
 ::: column
--   The mgf $M_X(t)$ is a function of $t$, not of $X$, and it might not
+-   The MGF $M_X(t)$ is a function of $t$, not of $X$, and it might not
     be defined (i.e. finite) for all values of $t$. We just need it to
     be defined for $t=0$.
 :::
@@ -92,14 +113,14 @@ What is $M_X(t)$ for $t=0$?
 :::
 :::
 
-## Theorem 
+## How do MGFs give us moments? 
 
 ::: theorem
 ::: thm-title
 Theorem 5
 :::
 ::: thm-cont
-The moment generating function uniquely specifies a probability distribution.
+The moment generating function uniquely specifies a probability distribution. AKA **all moments can be found from the MGF through its derivatives at $t=0$.**
 :::
 :::
 
@@ -110,14 +131,14 @@ Theorem 6
 ::: thm-cont
 $$\mathbb{E}[X^r] = M_X^{(r)}(0)$$
 
-$(r)$ in this equation is the $r$th derivative with respect to $t$
+$(r)$ in this equation is the $r$th derivative with respect to $t$. We calculate the derivative at $t=0$
 :::
 :::
 
 - When $r=1$, we are taking the first derivative
 - When $r=4$, we are taking the fourth derivative
 
-## Using the mgf to uniquely describe a probability distribution
+## Using the MGF to uniquely describe a probability distribution
 
 ::: columns
 ::: {.column width="30%"}
@@ -128,7 +149,7 @@ Example 7
 ::: ex-cont
 Let $X \sim Poisson(\lambda)$
 
-1.  Find the mgf of $X$
+1.  Find the MGF of $X$
 
 2.  Find $\mathbb{E}[X]$
 
@@ -181,7 +202,7 @@ Let $X \sim Poisson(\lambda)$.
 :::
 :::
 
-## Using the mgf to uniquely describe the standard normal distribution
+## Using the MGF to uniquely describe the standard normal distribution
 
 ::: columns
 ::: {.column width="30%"}
@@ -193,7 +214,7 @@ Example 10
 Let $Z$ be a standard normal random variable, i.e.
 $Z \sim N(0,1)$.
 
-1.  Find the mgf of $Z$
+1.  Find the MGF of $Z$
 
 2.  Find $\mathbb{E}[Z]$
 
@@ -203,14 +224,16 @@ $Z \sim N(0,1)$.
 :::
 :::
 
-## Mgf's of sums of independent RV's
+## Using the MGF to uniquely describe the standard normal distribution
+
+## MGFs of sums of independent RV's
 
 ::: theorem
 ::: thm-title
 Theorem 9
 :::
 ::: thm-cont
-If $X$ and $Y$ are independent RV's with respective mgf's $M_X(t)$ and $M_Y(t)$, then
+If $X$ and $Y$ are independent RV's with respective MGFs $M_X(t)$ and $M_Y(t)$, then
 
 $$M_{X+Y}(t) = E[e^{t(X+Y)}] = E[e^{tX} e^{tY}] = E[e^{tX}]E[e^{tY}]=M_{X}(t)M_{Y}(t)$$
 :::
@@ -218,19 +241,19 @@ $$M_{X+Y}(t) = E[e^{t(X+Y)}] = E[e^{tX} e^{tY}] = E[e^{tX}]E[e^{tY}]=M_{X}(t)M_{
 
 ## Main takeaways
 
-- Mgf's are a purely mathematically definition
+- MGFs are a purely mathematically definition
   - We can't really relate it to our real world analysis
   
 - They are helpful mathematically because they are unique to a probability distribution
-  - We can find the unique mgf from for a probability distribution
-  - And we can find a distribution from an mgf
+  - We can find the unique MGF from for a probability distribution
+  - And we can find a distribution from an MGF
   
-- Mgf's can *sometimes* make it easier to find the mean and variance of an RV
+- MGFs can *sometimes* make it easier to find the mean and variance of an RV
 
-- Mgf's are most helpful when we are finding a joint distribution that is a sum or transformation of two RV's
+- MGFs are most helpful when we are finding a joint distribution that is a sum or transformation of two RV's
   - Make the calculation easier!
 
-- Mgf's are often used to prove certain distribution are sums of other ones!
+- MGFs are often used to prove certain distribution are sums of other ones!
   
 ## More resources
 

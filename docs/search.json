@@ -24047,91 +24047,91 @@
   {
     "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#learning-objectives",
     "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#learning-objectives",
-    "title": "Chapter 43: Moment Generating Functions",
-    "section": "",
-    "text": "Learn the definition of a moment-generating function.\nFind the moment-generating function of a binomial random variable.\nUse a moment-generating function to find the mean and variance of a random variable."
+    "title": "Lesson 18: Moment Generating Functions",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nLearn the definition of a moment-generating function.\nFind the moment-generating function of a random variable.\nUse a moment-generating function to find the mean and variance of a random variable."
   },
   {
     "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#where-are-we",
     "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#where-are-we",
-    "title": "Chapter 43: Moment Generating Functions",
+    "title": "Lesson 18: Moment Generating Functions",
     "section": "Where are we?",
     "text": "Where are we?"
   },
   {
     "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#what-are-moments",
     "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#what-are-moments",
-    "title": "Chapter 43: Moment Generating Functions",
+    "title": "Lesson 18: Moment Generating Functions",
     "section": "What are moments?",
-    "text": "What are moments?\n\n\nDefinition 1\n\n\nThe \\(j^{th}\\) moment of a r.v. \\(X\\) is \\(\\mathbb{E}[X^j]\\)\n\n\n\n\nExample 1\n\n\n\\(1^{st}-4^{th}\\) moments"
+    "text": "What are moments?\n\n\nDefinition 1\n\n\nThe \\(j^{th}\\) moment of a r.v. \\(X\\) is \\(\\mathbb{E}[X^j]\\)"
   },
   {
     "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#what-is-a-moment-generating-function-mgf",
     "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#what-is-a-moment-generating-function-mgf",
-    "title": "Chapter 43: Moment Generating Functions",
-    "section": "What is a moment generating function (mgf)??",
-    "text": "What is a moment generating function (mgf)??\n\n\nDefinition 3\n\n\nIf \\(X\\) is a r.v., then the moment generating function (mgf) associated with \\(X\\) is: \\[M_X(t)= \\mathbb{E}[e^{tX}]\\]\n\n\nRemarks\n\n\n\nFor a discrete r.v., the mgf of \\(X\\) is \\[M_X(t)= \\mathbb{E}[e^{tX}]=\\sum_{all \\ x}e^{tx}p_X(x)\\]\nFor a continuous r.v., the mgf of \\(X\\) is \\[M_X(t)= \\mathbb{E}[e^{tX}]=\\int_{-\\infty}^{\\infty}e^{tx}f_X(x)dx\\]\n\n\n\nThe mgf \\(M_X(t)\\) is a function of \\(t\\), not of \\(X\\), and it might not be defined (i.e. finite) for all values of \\(t\\). We just need it to be defined for \\(t=0\\)."
+    "title": "Lesson 18: Moment Generating Functions",
+    "section": "What is a moment generating function (MGF)??",
+    "text": "What is a moment generating function (MGF)??\n\n\nDefinition 3\n\n\nIf \\(X\\) is a r.v., then the moment generating function (MGF) associated with \\(X\\) is: \\[M_X(t)= \\mathbb{E}[e^{tX}]\\]\n\n\nRemarks\n\n\n\nFor a discrete r.v., the MGF of \\(X\\) is \\[M_X(t)= \\mathbb{E}[e^{tX}]=\\sum_{all \\ x}e^{tx}p_X(x)\\]\nFor a continuous r.v., the MGF of \\(X\\) is \\[M_X(t)= \\mathbb{E}[e^{tX}]=\\int_{-\\infty}^{\\infty}e^{tx}f_X(x)dx\\]\n\n\n\nThe MGF \\(M_X(t)\\) is a function of \\(t\\), not of \\(X\\), and it might not be defined (i.e. finite) for all values of \\(t\\). We just need it to be defined for \\(t=0\\)."
   },
   {
     "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#example",
     "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#example",
-    "title": "Chapter 43: Moment Generating Functions",
+    "title": "Lesson 18: Moment Generating Functions",
     "section": "Example",
     "text": "Example\n\n\n\n\nExample 4\n\n\nWhat is \\(M_X(t)\\) for \\(t=0\\)?"
   },
   {
     "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#theorem",
     "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#theorem",
-    "title": "Chapter 43: Moment Generating Functions",
+    "title": "Lesson 18: Moment Generating Functions",
     "section": "Theorem",
-    "text": "Theorem\n\n\nTheorem 5\n\n\nThe moment generating function uniquely specifies a probability distribution.\n\n\n\n\nTheorem 6\n\n\n\\[\\mathbb{E}[X^r] = M_X^{(r)}(0)\\]\n\\((r)\\) in this equation is the \\(r\\)th derivative with respect to \\(t\\)\n\n\n\nWhen \\(r=1\\), we are taking the first derivative\nWhen \\(r=4\\), we are taking the fourth derivative"
+    "text": "Theorem\nRemark: Finding the mean and variance is sometimes easier with the following trick\n\n\nTheorem 8\n\n\nLet \\(R_X(t) = \\ln[M_X(t)]\\). Then,\n\\[\\mu = \\mathbb{E}[X] = R_X'(0) \\text{, and}\\] \\[\\sigma^2 = Var(X) = R_X''(0)\\]\n\n\n\nProof."
   },
   {
     "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#using-the-mgf-to-uniquely-describe-a-probability-distribution",
     "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#using-the-mgf-to-uniquely-describe-a-probability-distribution",
-    "title": "Chapter 43: Moment Generating Functions",
-    "section": "Using the mgf to uniquely describe a probability distribution",
-    "text": "Using the mgf to uniquely describe a probability distribution\n\n\n\n\nExample 7\n\n\nLet \\(X \\sim Poisson(\\lambda)\\)\n\nFind the mgf of \\(X\\)\nFind \\(\\mathbb{E}[X]\\)\nFind \\(Var(X)\\)"
+    "title": "Lesson 18: Moment Generating Functions",
+    "section": "Using the MGF to uniquely describe a probability distribution",
+    "text": "Using the MGF to uniquely describe a probability distribution\n\n\n\n\nExample 7\n\n\nLet \\(X \\sim Poisson(\\lambda)\\)\n\nFind the MGF of \\(X\\)\nFind \\(\\mathbb{E}[X]\\)\nFind \\(Var(X)\\)"
   },
   {
     "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#theorem-1",
     "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#theorem-1",
-    "title": "Chapter 43: Moment Generating Functions",
+    "title": "Lesson 18: Moment Generating Functions",
     "section": "Theorem",
     "text": "Theorem\nRemark: Finding the mean and variance is sometimes easier with the following trick\n\n\nTheorem 8\n\n\nLet \\(R_X(t) = \\ln[M_X(t)]\\). Then,\n\\[\\mu = \\mathbb{E}[X] = R_X'(0) \\text{, and}\\] \\[\\sigma^2 = Var(X) = R_X''(0)\\]\n\n\n\nProof."
   },
   {
     "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#using-r_xt-to-uniquely-describe-a-probability-distribution",
     "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#using-r_xt-to-uniquely-describe-a-probability-distribution",
-    "title": "Chapter 43: Moment Generating Functions",
+    "title": "Lesson 18: Moment Generating Functions",
     "section": "Using \\(R_X(t)\\) to uniquely describe a probability distribution",
     "text": "Using \\(R_X(t)\\) to uniquely describe a probability distribution\n\n\n\n\nExample 9\n\n\nLet \\(X \\sim Poisson(\\lambda)\\).\n\nFind \\(\\mathbb{E}[X]\\) using \\(R_X(t)\\)\nFind \\(Var(X)\\) using \\(R_X(t)\\)"
   },
   {
     "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#using-the-mgf-to-uniquely-describe-the-standard-normal-distribution",
     "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#using-the-mgf-to-uniquely-describe-the-standard-normal-distribution",
-    "title": "Chapter 43: Moment Generating Functions",
-    "section": "Using the mgf to uniquely describe the standard normal distribution",
-    "text": "Using the mgf to uniquely describe the standard normal distribution\n\n\n\n\nExample 10\n\n\nLet \\(Z\\) be a standard normal random variable, i.e. \\(Z \\sim N(0,1)\\).\n\nFind the mgf of \\(Z\\)\nFind \\(\\mathbb{E}[Z]\\)\nFind \\(Var(Z)\\)"
+    "title": "Lesson 18: Moment Generating Functions",
+    "section": "Using the MGF to uniquely describe the standard normal distribution",
+    "text": "Using the MGF to uniquely describe the standard normal distribution\n\n\n\n\nExample 10\n\n\nLet \\(Z\\) be a standard normal random variable, i.e. \\(Z \\sim N(0,1)\\).\n\nFind the MGF of \\(Z\\)\nFind \\(\\mathbb{E}[Z]\\)\nFind \\(Var(Z)\\)"
   },
   {
     "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#mgfs-of-sums-of-independent-rvs",
     "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#mgfs-of-sums-of-independent-rvs",
-    "title": "Chapter 43: Moment Generating Functions",
-    "section": "Mgf’s of sums of independent RV’s",
-    "text": "Mgf’s of sums of independent RV’s\n\n\nTheorem 9\n\n\nIf \\(X\\) and \\(Y\\) are independent RV’s with respective mgf’s \\(M_X(t)\\) and \\(M_Y(t)\\), then\n\\[M_{X+Y}(t) = E[e^{t(X+Y)}] = E[e^{tX} e^{tY}] = E[e^{tX}]E[e^{tY}]=M_{X}(t)M_{Y}(t)\\]"
+    "title": "Lesson 18: Moment Generating Functions",
+    "section": "MGFs of sums of independent RV’s",
+    "text": "MGFs of sums of independent RV’s\n\n\nTheorem 9\n\n\nIf \\(X\\) and \\(Y\\) are independent RV’s with respective MGFs \\(M_X(t)\\) and \\(M_Y(t)\\), then\n\\[M_{X+Y}(t) = E[e^{t(X+Y)}] = E[e^{tX} e^{tY}] = E[e^{tX}]E[e^{tY}]=M_{X}(t)M_{Y}(t)\\]"
   },
   {
     "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#main-takeaways",
     "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#main-takeaways",
-    "title": "Chapter 43: Moment Generating Functions",
+    "title": "Lesson 18: Moment Generating Functions",
     "section": "Main takeaways",
-    "text": "Main takeaways\n\nMgf’s are a purely mathematically definition\n\nWe can’t really relate it to our real world analysis\n\nThey are helpful mathematically because they are unique to a probability distribution\n\nWe can find the unique mgf from for a probability distribution\nAnd we can find a distribution from an mgf\n\nMgf’s can sometimes make it easier to find the mean and variance of an RV\nMgf’s are most helpful when we are finding a joint distribution that is a sum or transformation of two RV’s\n\nMake the calculation easier!\n\nMgf’s are often used to prove certain distribution are sums of other ones!"
+    "text": "Main takeaways\n\nMGFs are a purely mathematically definition\n\nWe can’t really relate it to our real world analysis\n\nThey are helpful mathematically because they are unique to a probability distribution\n\nWe can find the unique MGF from for a probability distribution\nAnd we can find a distribution from an MGF\n\nMGFs can sometimes make it easier to find the mean and variance of an RV\nMGFs are most helpful when we are finding a joint distribution that is a sum or transformation of two RV’s\n\nMake the calculation easier!\n\nMGFs are often used to prove certain distribution are sums of other ones!"
   },
   {
     "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#more-resources",
     "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#more-resources",
-    "title": "Chapter 43: Moment Generating Functions",
+    "title": "Lesson 18: Moment Generating Functions",
     "section": "More resources",
     "text": "More resources\n\nhttps://online.stat.psu.edu/stat414/book/export/html/676\nhttps://www.youtube.com/watch/ez_vq23xWrQ\nhttps://www.youtube.com/watch/2p9J9ChTeFI\nhttps://www.youtube.com/watch/A5bWU8xcQkE\nhttps://www.youtube.com/watch/QeUrTGFTFm4\nhttps://www.youtube.com/watch/HhrkwyyRtgI"
   },
@@ -24386,5 +24386,47 @@
     "title": "Lesson 17: Central Limit Theorem",
     "section": "Larger example (7/7)",
     "text": "Larger example (7/7)\n\n\nExample 3\n\n\nSuppose that the probability of developing a specific type of breast cancer in women aged 40-49 is 0.001. Assume the occurrences of cancer are independent. Suppose you have data from a random sample of 20,000 women aged 40-49.\n\nUse the CLT to approximate the approximate probability in the previous question!"
+  },
+  {
+    "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#using-the-mgf-to-uniquely-describe-the-standard-normal-distribution-1",
+    "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#using-the-mgf-to-uniquely-describe-the-standard-normal-distribution-1",
+    "title": "Lesson 18: Moment Generating Functions",
+    "section": "Using the MGF to uniquely describe the standard normal distribution",
+    "text": "Using the MGF to uniquely describe the standard normal distribution"
+  },
+  {
+    "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#how-do-mgfs-give-us-moments",
+    "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#how-do-mgfs-give-us-moments",
+    "title": "Lesson 18: Moment Generating Functions",
+    "section": "How do MGFs give us moments?",
+    "text": "How do MGFs give us moments?\n\n\nTheorem 5\n\n\nThe moment generating function uniquely specifies a probability distribution. AKA all moments can be found from the MGF through its derivatives at \\(t=0\\).\n\n\n\n\nTheorem 6\n\n\n\\[\\mathbb{E}[X^r] = M_X^{(r)}(0)\\]\n\\((r)\\) in this equation is the \\(r\\)th derivative with respect to \\(t\\). We calculate the derivative at \\(t=0\\)\n\n\n\nWhen \\(r=1\\), we are taking the first derivative\nWhen \\(r=4\\), we are taking the fourth derivative"
+  },
+  {
+    "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#okay-but-what-are-they",
+    "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions.html#okay-but-what-are-they",
+    "title": "Lesson 18: Moment Generating Functions",
+    "section": "Okay, but what are they?",
+    "text": "Okay, but what are they?\n\n\nExample 1\n\n\n\\(1^{st}-4^{th}\\) moments\n\n\n\n1st moment:\n\n \n\n2nd moment:\n\n \n\n3rd moment:\n\n \n\n4th moment:"
+  },
+  {
+    "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions_key_info.html",
+    "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions_key_info.html",
+    "title": "Key Info",
+    "section": "",
+    "text": "LAST CLASS!!!!\nHomework 7and 6 solutions are graded\nHW 7 meetings are up on Calendly\n\nSee my announcement from Sakai\n\nI will be finalizing and posting HW 9 tomorrow\n\nOptional!\n\nPlease do your course evals!!\n\nEspecially in a small class\n\nFriday 12/13 is the absolute deadline for turning in materials if you are completing the course! _ Check Sakai that I have all your HW grades in!\nAnything else?"
+  },
+  {
+    "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions_key_info.html#announcements",
+    "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions_key_info.html#announcements",
+    "title": "Key Info",
+    "section": "",
+    "text": "LAST CLASS!!!!\nHomework 7and 6 solutions are graded\nHW 7 meetings are up on Calendly\n\nSee my announcement from Sakai\n\nI will be finalizing and posting HW 9 tomorrow\n\nOptional!\n\nPlease do your course evals!!\n\nEspecially in a small class\n\nFriday 12/13 is the absolute deadline for turning in materials if you are completing the course! _ Check Sakai that I have all your HW grades in!\nAnything else?"
+  },
+  {
+    "objectID": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions_key_info.html#key-dates",
+    "href": "lessons/18_Moment_Generating_Functions/18_Moment_Generating_Functions_key_info.html#key-dates",
+    "title": "Key Info",
+    "section": "Key Dates",
+    "text": "Key Dates\n\nThursday (12/5): HW 8 assignment due\nSunday (12/8): HW 7 presentations due at 11pm\n\nI can be pretty flexible until 12/13\n\nThursday (12/12): Optional HW 9 assignment due\nFriday (12/13): HW 8 solutions due"
   }
 ]
