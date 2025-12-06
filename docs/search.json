@@ -3399,14 +3399,14 @@
     "href": "homework/HW_09.html",
     "title": "Homework 9",
     "section": "",
-    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nTry to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later! Only turn in the ones listed in the “Turn In” column. Please submit problems in the order they are listed.\nYou must show all of your work to receive credit.\n\n\n\n\n\n\n\n\n\nChapter\nTurn In\nExtra Problems\n\n\n\n\n36\nTB # 121, 14\nTB # 4, 11, 13, 15, 16\n\n\n37\nTB # 24, 30\nTB # 2, 4, 13, 20, 29\n\n\n43\nNTB # 1-2\nTB # 1-4, 92, 103, 11, 124 NTB # 3-4"
+    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf or html format.\nYou can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nYou must show all of your work to receive credit.\nExtra problems do not need to be turned in!"
   },
   {
     "objectID": "homework/HW_09.html#directions",
     "href": "homework/HW_09.html#directions",
     "title": "Homework 9",
     "section": "",
-    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf format. You can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nTry to complete all of the problems listed below at some point this quarter! You may want to save some of them for studying later! Only turn in the ones listed in the “Turn In” column. Please submit problems in the order they are listed.\nYou must show all of your work to receive credit.\n\n\n\n\n\n\n\n\n\nChapter\nTurn In\nExtra Problems\n\n\n\n\n36\nTB # 121, 14\nTB # 4, 11, 13, 15, 16\n\n\n37\nTB # 24, 30\nTB # 2, 4, 13, 20, 29\n\n\n43\nNTB # 1-2\nTB # 1-4, 92, 103, 11, 124 NTB # 3-4"
+    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf or html format.\nYou can type your work on your computer or submit a photo of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nYou must show all of your work to receive credit.\nExtra problems do not need to be turned in!"
   },
   {
     "objectID": "homework/HW_09.html#non-textbook-problems-ntb",
@@ -24428,5 +24428,12 @@
     "title": "Key Info",
     "section": "Key Dates",
     "text": "Key Dates\n\nQuiz 3 opens TODAY at 3pm\nI posted some info on it\nHW 8 due 12/7\nIMPORTANT: ALL coursework due by 12/12 at 11pm"
+  },
+  {
+    "objectID": "homework/HW_09.html#questions",
+    "href": "homework/HW_09.html#questions",
+    "title": "Homework 9",
+    "section": "Questions",
+    "text": "Questions\n\nLet \\(R_X(t)=\\ln(M_X(t))\\). Show that \\(\\text{Var}(X)=R''_X(0)\\).\nThe mgf for a Gamma distribution is \\(M_X(t)=\\frac{1}{(1-t/\\lambda)^r}\\). Use the mgf of an Exponential distribution (from #43.9), to show that the sum of \\(n\\) i.i.d. Exponential(\\(\\lambda)\\) random variables has a Gamma(\\(r,\\lambda\\)) distribution.\n\n\nExtra problems\n\nUsing mgf’s, show that the sum of \\(n\\) i.i.d. Chi Square random variables with one degree of freedom (\\(\\chi^2_{(1)}\\)) r.v.’s has a Chi Square with \\(n\\) degrees of freedom (\\(\\chi^2_{(n)}\\)) distribution.\nHint: First, look up the pdf of a \\(\\chi^2_{(n)}\\). This is a special case of the Gamma distribution with what parameters? Based on that and the information from # 2 above, you can determine what the mgf of a \\(\\chi^2_{(n)}\\) is, which will help you determine whether the mgf of the sum of \\(n\\) i.i.d. \\(\\chi^2_{(1)}\\) r.v.’s has a \\(\\chi^2_{(n)}\\) distribution.\nUse the mgf of a Poisson distribution to find the mgf of the following distributions. If the mgf is that of a common named distribution, then name the distribution and state its parameter(s).\n\nThe distribution of \\(\\sum_{i=1}^nX_i\\), if \\(X_i\\sim\\)Poisson\\((\\lambda_i)\\) and are independent.\nThe distribution of \\(\\sum_{i=1}^3X_i\\), if \\(X_i\\sim\\)Poisson\\((\\lambda)\\) and are independent (i.i.d. in this case).\nThe distribution of \\(3X\\), if \\(X\\sim\\)Poisson\\((\\lambda)\\).\nWhy are the answers to (b) and (c) different?"
   }
 ]

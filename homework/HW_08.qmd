@@ -45,7 +45,7 @@ Extra problems do not need to be turned in!
 4.  I would like us to create a reference table for the important distributions. Fill out the following table and save it for future reference.
 
 | RV / Distribution | Type | Parameters | Possible values $X$ | PMF / PDF | Mean $E[X]$ | Variance $Var(X)$ |
-|:---|:---|:---|:---|:---|:---|:---|
+|:----------|:----------|:----------|:----------|:----------|:----------|:----------|
 | **Bernoulli** | Discrete | $p$ | $X = \{0, 1\}$ | $p^x(1-p)^{1-x}$ | $p$ | $p(1-p)$ |
 | **Binomial** |  |  |  |  |  |  |
 | **Geometric** |  |  |  |  |  |  |
